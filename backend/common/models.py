@@ -1,6 +1,8 @@
 from django.db import models
 from phone_field import PhoneField
 from localflavor.gr.forms import GRPostalCodeField
+from django_countries.fields import CountryField
+#from cities_light.models import City
 from PIL import Image
 #uncomment when ready
 #from ... import Owner
@@ -11,10 +13,10 @@ class Location(models.Model):
 	#ChargingPoint = models.ForeignKey(ChargingPoint, on_delete = models.CASCADE)
 	email = models.EmailField()
 	website = models.URLField()
-	telephone = models.PhoneField()
+	telephone = PhoneField(blank=True)
 	title = models.CharField(max_length = 15)
-	town = models.CharField(max_length = 15)
-	country = models.CharField(max_length = 15)
+	country = CountryField()
+	town = models.CharField(max_length = 20)
 	post_code = GRPostalCodeField()
 	address_line = models.CharField(max_length = 100)
 
@@ -37,7 +39,7 @@ class Provider(models.Model):
 
 class ChargingStation(models.Model):
 	######################
-	nr_charging_categories = models.IntegerField()
+	#nr_charging_categories = models.IntegerField()
 	######################
 	#charging_station_id = models.AutoField(primary_key = True)
 	cluster = models.ForeignKey(Cluster, on_delete = models.CASCADE)
@@ -121,35 +123,37 @@ class ChargingPoint(models.Model):
 		(7, 'Public - Notice Required'),
 		(5, 'Public - Pay At Location'),
 	]
+
 	CHARGER_TYPE_CHOICES = [
         (1, 'Low'),
         (2, 'Medium'),
         (3, 'High'),
-        ]
+	]
     
-    KW_POWER_CHOICES = [
-        (1, 'Under 2 kW'),
-        (2, 'Over 2 kW'),
-        (3, 'Over 40 kW'),
-    ]
+	KW_POWER_CHOICES = [
+    	(1, 'Under 2 kW'),
+    	(2, 'Over 2 kW'),
+    	(3, 'Over 40 kW'),
+	]
+
     #charging_point_id = models.AutoField(primary_key=True)
     #uncomment the next line when ready
     #owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
     #Test
-    owner = models.CharField(max_length = 15, defualt = "Tzourhs")
+	owner = models.CharField(max_length = 15, default = "Tzourhs")
     #EndTest
-    connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
-    current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
-    status_type = models.IntegerField(choices = STATUS_TYPE_CHOICES)
-    charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
-    location = models.ForeignKey(Location , on_delete = models.CASCADE)
-    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
-    type_ = models.IntegerField(,choices = CHARGER_TYPE_CHOICES)
-    usage_type_id = models.IntegerField(choices = USAGE_TYPE_CHOICES)
-    kw_power = models.IntegerField(choices = KW_POWER_CHOICES)
-    usage_cost = models.FloatField()
-    volts_power = models.FloatField()
-    amps_power = models.FloatField()
+	connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
+	current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
+	status_type = models.IntegerField(choices = STATUS_TYPE_CHOICES)
+	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
+	location = models.ForeignKey(Location , on_delete = models.CASCADE)
+	image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+	Type = models.IntegerField(choices = CHARGER_TYPE_CHOICES)
+	usage_type_id = models.IntegerField(choices = USAGE_TYPE_CHOICES)
+	kw_power = models.IntegerField(choices = KW_POWER_CHOICES)
+	usage_cost = models.FloatField()
+	volts_power = models.FloatField()
+	amps_power = models.FloatField()
 
-    def __str__(self):
-        return f'Id = {self.id}'
+	def __str__(self):
+	    return f'Id = {self.id}'
