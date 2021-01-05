@@ -2,10 +2,28 @@ from django.db import models
 from phone_field import PhoneField
 from localflavor.gr.forms import GRPostalCodeField
 from django_countries.fields import CountryField
+from django.contrib.auth.models import User
 #from cities_light.models import City
 from PIL import Image
 #uncomment when ready
 #from ... import Owner
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+
+    def __str__(self):
+        return f'{self.user.username} Profile'
+
+    def save(self, *args, **kwargs):
+        super().save(*args, **kwargs)
+
+        img = Image.open(self.image.path)
+
+        if img.height > 300 or img.width > 300:
+            output_size = (300, 300)
+            img.thumbnail(output_size)
+            img.save(self.image.path)
 
 
 class Location(models.Model):
@@ -147,7 +165,6 @@ class ChargingPoint(models.Model):
 	status_type = models.IntegerField(choices = STATUS_TYPE_CHOICES)
 	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
 	location = models.ForeignKey(Location , on_delete = models.CASCADE)
-	image = models.ImageField(default='default.jpg', upload_to='profile_pics')
 	Type = models.IntegerField(choices = CHARGER_TYPE_CHOICES)
 	usage_type_id = models.IntegerField(choices = USAGE_TYPE_CHOICES)
 	kw_power = models.IntegerField(choices = KW_POWER_CHOICES)
