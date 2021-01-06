@@ -1,3 +1,4 @@
+import uuid
 from django.conf import settings
 from django.db import models
 from multiselectfield import MultiselectField
@@ -24,6 +25,7 @@ class VehicleModel(models.Model):
     release_year = models.PositiveSmallIntegerField(null=True)
     brand = models.CharField(max_length=32)
     variant = models.CharField(max_length=32, blank=True)
+    model = models.CharField(64)
     # category? car,...
 
     ac_ports = MultiselectField(choices=AcCharger)
@@ -62,3 +64,11 @@ class Profile(models.Model):
 
     
 
+class Vehicle(models.Model):
+    model=models.ForeignKey(VehicleModel,on_delete= models.CASCADE,
+        related_name="vehicles"
+    )
+    owner= models.ForeignKey(Profile,on_delete=models.SET_NULL,
+        related_name="vehicles"
+    )
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
