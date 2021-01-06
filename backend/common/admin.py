@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Location, Cluster, ChargingPoint, Provider , ChargingStation, Profile, Owner
+from .models import Location, Cluster, ChargingPoint, Provider , ChargingStation, Profile, Owner, User
 #from .forms import LocationAdminForm
 
 admin.site.register(Location)
@@ -9,6 +9,7 @@ admin.site.register(ChargingStation)
 admin.site.register(Cluster)
 admin.site.register(Profile)
 admin.site.register(Owner)
+admin.site.register(User)
 
 #class LocationAdmin(admin.ModelAdmin):
 #    form = LocationAdminForm

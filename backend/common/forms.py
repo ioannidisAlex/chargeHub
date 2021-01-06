@@ -1,7 +1,7 @@
 #from cities_light.models import City
 from django import forms
 from django.contrib import admin
-from django.contrib.auth.models import User
+from .models import User
 from django.contrib.auth.forms import UserCreationForm
 from .models import Profile
 #from common.models import Location
@@ -13,27 +13,19 @@ from .models import Profile
 #			country = self.instance.country
 #			cities = City.objects.all().filter(country__name = country)
 #			self.fields["town"] = ChoiceField(choices = cities)
+USER_TYPE_CHOICES = [
+        (1, "Regular User"),
+        (2, "Station Owner"),
+        (3, "Energy Provider"),
+    ]
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
+    user_type = forms.ChoiceField(choices = USER_TYPE_CHOICES)
 
     class Meta:
         model = User
-        fields = ['username', 'email', 'password1', 'password2']
-
-class ProviderRegisterForm(UserCreationForm):
-    email = forms.EmailField()
-
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'password1', 'password2']
-
-class OwnerRegisterForm(UserCreationForm):
-    email = forms.EmailField()
-
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'password1', 'password2']
+        fields = ['user_type', 'username', 'email', 'password1', 'password2']
 
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
