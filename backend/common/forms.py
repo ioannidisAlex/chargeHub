@@ -13,6 +13,7 @@ from .models import Profile
 #			country = self.instance.country
 #			cities = City.objects.all().filter(country__name = country)
 #			self.fields["town"] = ChoiceField(choices = cities)
+
 USER_TYPE_CHOICES = [
         (1, "Regular User"),
         (2, "Station Owner"),

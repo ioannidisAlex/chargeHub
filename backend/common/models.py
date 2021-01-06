@@ -46,8 +46,8 @@ class Location(models.Model):
 	website = models.URLField()
 	telephone = PhoneField(blank=True)
 	title = models.CharField(max_length = 15)
-	country = CountryField()
 	town = models.CharField(max_length = 20)
+	country = CountryField()
 	post_code = GRPostalCodeField()
 	address_line = models.CharField(max_length = 100)
 
@@ -69,11 +69,7 @@ class Provider(models.Model):
 		return f'Provider name = {self.provider_name}'
 
 class ChargingStation(models.Model):
-	######################
-	#nr_charging_categories = models.IntegerField()
-	######################
 	#charging_station_id = models.AutoField(primary_key = True)
-	
 	owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
 	cluster = models.ForeignKey(Cluster, on_delete = models.CASCADE)
 	provider = models.ForeignKey(Provider , on_delete = models.CASCADE)
@@ -170,10 +166,10 @@ class ChargingPoint(models.Model):
 	]
 
     #charging_point_id = models.AutoField(primary_key=True)
+	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
 	connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
 	current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
 	status_type = models.IntegerField(choices = STATUS_TYPE_CHOICES)
-	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
 	location = models.ForeignKey(Location , on_delete = models.CASCADE)
 	charger_type = models.IntegerField(choices = CHARGER_TYPE_CHOICES)
 	usage_type_id = models.IntegerField(choices = USAGE_TYPE_CHOICES)
