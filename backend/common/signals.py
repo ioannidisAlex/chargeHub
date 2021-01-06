@@ -1,5 +1,5 @@
 from django.db.models.signals import post_save
-from .models import User, Profile, Owner, Provider
+from .models import User, Profile, Owner, Provider, VehicleOwner
 from django.dispatch import receiver
 
 @receiver(post_save, sender = User)

@@ -8,6 +8,21 @@ from django.contrib.auth.models import User as BaseUser
 from PIL import Image
 from multiselectfield import MultiSelectField
 
+class User(BaseUser):
+	USER_TYPE_CHOICES = [
+		(1, "Regular User"),
+		(2, "Station Owner"),
+		(3, "Energy Provider"),
+	]
+
+	user_type = models.IntegerField(choices=USER_TYPE_CHOICES)
+
+class VehicleOwner(models.Model):
+	user = models.OneToOneField(
+    	User,
+        on_delete=models.CASCADE,
+    )
+
 class VehicleModel(models.Model):
     class Engine(models.TextChoices):
         BATTERY_ELECTRIC_VEHICLE = "bev"
@@ -24,19 +39,19 @@ class VehicleModel(models.Model):
         TYPE1 = "type1"
         TYPE2 = "type2"
 
-    engine_type = models.CharField(max_length=8, choices=Engine)
+    engine_type = models.CharField(max_length=8, choices=Engine.choices)
     release_year = models.PositiveSmallIntegerField(null=True)
     brand = models.CharField(max_length=32)
     variant = models.CharField(max_length=32, blank=True)
-    model = models.CharField(64)
+    model = models.CharField(max_length=64)
     # category? car,...
 
-    ac_ports = MultiSelectField(choices=AcCharger)
+    ac_ports = MultiSelectField(choices=AcCharger.choices, max_choices=2, max_length=5)
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField()
     ac_charging_power = models.JSONField()
 
-    dc_ports = MultiSelectField(choices=DcCharger)
+    dc_ports = MultiSelectField(choices=DcCharger.choices, max_choices=4, max_length=12)
     dc_max_power = models.FloatField(null=True)
     dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
@@ -48,29 +63,10 @@ class Vehicle(models.Model):
     model=models.ForeignKey(VehicleModel,on_delete= models.CASCADE,
         related_name="vehicles"
     )
-    owner= models.ForeignKey(VehicleOwner,on_delete=models.SET_NULL,
+    owner= models.ForeignKey(VehicleOwner,on_delete=models.CASCADE,
         related_name="vehicles"
     )
     id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
-
-
-
-
-
-
-
-
-
-
-
-class User(BaseUser):
-	USER_TYPE_CHOICES = [
-		(1, "Regular User"),
-		(2, "Station Owner"),
-		(3, "Energy Provider"),
-	]
-
-	user_type = models.IntegerField(choices=USER_TYPE_CHOICES)
 
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, related_name='profile', on_delete=models.CASCADE)
@@ -88,39 +84,6 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
-
-class VehicleOwner(models.Model):
-	user = models.OneToOneField(
-    	User,
-        on_delete=models.CASCADE,
-    )
-    '''class Role(models.TextChoices):
-        VEHICLE_OWNER="vo"
-        STATION_OWNER="seo"'''
-
-   
-    #role=models.CharField(max_length=4,choices=Role,default="vo")
-
-    '''@property
-    def is_vehicle_owner(self):
-        return self.role == Profile.Role.VEHICLE_OWNER
-
-    @property
-    def is_station_owner(self):
-        return self.role == Profile.Role.STATION_OWNER'''
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 class Owner(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)

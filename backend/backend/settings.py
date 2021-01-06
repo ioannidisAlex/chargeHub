@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #'cities_light',
+    'multiselectfield',
     'django_countries',
     'crispy_forms',
     'phone_field',
