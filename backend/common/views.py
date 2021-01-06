@@ -7,6 +7,33 @@ def home(request):
     return render(request, 'common/home.html')
 
 def register(request):
+    return render(request, 'common/register.html')
+
+def register_provider(request):
+    if request.method == 'POST':
+        form = ProviderRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created! You are now able to log in')
+            return redirect('/login')
+    else:
+        form = ProviderRegisterForm()
+    return render(request, 'common/register_provider.html', {'form': form})
+
+def register_owner(request):
+    if request.method == 'POST':
+        form = OwnerRegisterForm(request.POST)
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data.get('username')
+            messages.success(request, f'Your account has been created! You are now able to log in')
+            return redirect('/login')
+    else:
+        form = OwnerRegisterForm()
+    return render(request, 'common/register_owner.html', {'form': form})
+
+def register_user(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
@@ -16,7 +43,7 @@ def register(request):
             return redirect('/login')
     else:
         form = UserRegisterForm()
-    return render(request, 'common/register.html', {'form': form})
+    return render(request, 'common/register_user.html', {'form': form})
 
 @login_required
 def profile(request):

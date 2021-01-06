@@ -25,10 +25,15 @@ class Profile(models.Model):
             img.thumbnail(output_size)
             img.save(self.image.path)
 
+class Owner(models.Model):
+	owner_name = models.CharField(max_length = 15)
+	user = models.OneToOneField(User, on_delete=models.CASCADE)
+
+	def __str__(self):
+		return f'{self.user.username} Profile'
 
 class Location(models.Model):
 	#location_id = models.AutoField(primary_key = True)
-	#ChargingPoint = models.ForeignKey(ChargingPoint, on_delete = models.CASCADE)
 	email = models.EmailField()
 	website = models.URLField()
 	telephone = PhoneField(blank=True)
@@ -51,6 +56,7 @@ class Cluster(models.Model):
 class Provider(models.Model):
 	#provider_id = models.AutoField(primary_key = True)
 	provider_name = models.CharField(max_length = 15)
+	user = models.OneToOneField(User, on_delete=models.CASCADE)	
 
 	def __str__(self):
 		return f'Provider name = {self.provider_name}'
@@ -60,6 +66,12 @@ class ChargingStation(models.Model):
 	#nr_charging_categories = models.IntegerField()
 	######################
 	#charging_station_id = models.AutoField(primary_key = True)
+	
+	#uncomment the next line when ready
+    #owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
+    #Test
+	owner = models.CharField(max_length = 15, default = "Tzourhs")
+    #EndTest
 	cluster = models.ForeignKey(Cluster, on_delete = models.CASCADE)
 	provider = models.ForeignKey(Provider , on_delete = models.CASCADE)
     
@@ -155,11 +167,6 @@ class ChargingPoint(models.Model):
 	]
 
     #charging_point_id = models.AutoField(primary_key=True)
-    #uncomment the next line when ready
-    #owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
-    #Test
-	owner = models.CharField(max_length = 15, default = "Tzourhs")
-    #EndTest
 	connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
 	current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
 	status_type = models.IntegerField(choices = STATUS_TYPE_CHOICES)

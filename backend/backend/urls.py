@@ -22,7 +22,10 @@ from common import views as common_views
 
 urlpatterns = [
     path('home/', common_views.home, name='home'),
-	path('register/', common_views.register, name='register'),
+    path('register/', common_views.register, name='register'),
+	path('register/provider/', common_views.register_provider, name='register_provider'),
+    path('register/owner/', common_views.register_owner, name='register_owner'),
+    path('register/user/', common_views.register_user, name='register_user'),
     path('admin/', admin.site.urls),
     path('login/', auth_views.LoginView.as_view(template_name='common/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='common/logout.html'), name='logout'),
