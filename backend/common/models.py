@@ -1,12 +1,67 @@
+import uuid
+from django.conf import settings
 from django.db import models
 from phone_field import PhoneField
 from localflavor.gr.forms import GRPostalCodeField
 from django_countries.fields import CountryField
 from django.contrib.auth.models import User as BaseUser
-#from cities_light.models import City
 from PIL import Image
-#uncomment when ready
-#from ... import Owner
+from multiselectfield import MultiSelectField
+
+class VehicleModel(models.Model):
+    class Engine(models.TextChoices):
+        BATTERY_ELECTRIC_VEHICLE = "bev"
+        PLUGIN_HYBRID_ELECTRIC_VEHICLE = "phev"
+        HYBRID_ELECTRIC_VEHICLE = "hev"
+
+    class DcCharger(models.TextChoices):
+        COMBINED_CHARGING_SYSTEM = "ccs"
+        CHADEMO = "chademo"
+        TESLA_COMBINED_CHARGING_SYSTEM = "tesla_ccs"
+        TESLA_SUPERCHARGER = "tesla_suc"
+
+    class AcCharger(models.TextChoices):
+        TYPE1 = "type1"
+        TYPE2 = "type2"
+
+    engine_type = models.CharField(max_length=8, choices=Engine)
+    release_year = models.PositiveSmallIntegerField(null=True)
+    brand = models.CharField(max_length=32)
+    variant = models.CharField(max_length=32, blank=True)
+    model = models.CharField(64)
+    # category? car,...
+
+    ac_ports = MultiSelectField(choices=AcCharger)
+    ac_usable_phaces = models.PositiveIntegerField()
+    ac_max_power = models.FloatField()
+    ac_charging_power = models.JSONField()
+
+    dc_ports = MultiSelectField(choices=DcCharger)
+    dc_max_power = models.FloatField(null=True)
+    dc_charging_curve = models.JSONField(null=True)
+    is_default_curve = models.BooleanField(null=True)
+
+    usable_battery_size = models.FloatField()
+    average_energy_consumption = models.FloatField()    
+
+class Vehicle(models.Model):
+    model=models.ForeignKey(VehicleModel,on_delete= models.CASCADE,
+        related_name="vehicles"
+    )
+    owner= models.ForeignKey(VehicleOwner,on_delete=models.SET_NULL,
+        related_name="vehicles"
+    )
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
+
+
+
+
+
+
+
+
+
+
 
 class User(BaseUser):
 	USER_TYPE_CHOICES = [
@@ -33,6 +88,39 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
+
+class VehicleOwner(models.Model):
+	user = models.OneToOneField(
+    	User,
+        on_delete=models.CASCADE,
+    )
+    '''class Role(models.TextChoices):
+        VEHICLE_OWNER="vo"
+        STATION_OWNER="seo"'''
+
+   
+    #role=models.CharField(max_length=4,choices=Role,default="vo")
+
+    '''@property
+    def is_vehicle_owner(self):
+        return self.role == Profile.Role.VEHICLE_OWNER
+
+    @property
+    def is_station_owner(self):
+        return self.role == Profile.Role.STATION_OWNER'''
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class Owner(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
@@ -80,47 +168,47 @@ class ChargingStation(models.Model):
 
 class ChargingPoint(models.Model):
 	CONNECTION_TYPE_CHOICES = [
-		(7,	'Avcon Connector'),
-		(4,	'Blue Commando (2P+E)'),
-		(3,	'BS1363 3 Pin 13 Amp'),
-		(32,	'CCS (Type 1)'),
+		(7,'Avcon Connector'),
+		(4,'Blue Commando (2P+E)'),
+		(3,'BS1363 3 Pin 13 Amp'),
+		(32,'CCS (Type 1)'),
 		(33,'CCS (Type 2)'),
-		(16,	'CEE 3 Pin'),
-		(17,	'CEE 5 Pin'),
-		(28,	'CEE 7/4 - Schuko - Type F'),
-		(23,	'CEE 7/5'),
-		(18,	'CEE+ 7 Pin'),
-		(2,	'CHAdeMO'),
-		(13,	'Europlug 2-Pin (CEE 7/16)'),
-		(1038,	'GB-T AC - GB/T 20234.2 (Socket)'),
-		(1039,	'GB-T AC - GB/T 20234.2 (Tethered Cable)'),
-		(1040,	'GB-T DC - GB/T 20234.3'),
-		(34,	'IEC 60309 3-pin'),
-		(35,	'IEC 60309 5-pin'),
-		(5,	'LP Inductive'),
-		(10,	'NEMA 14-30'),
-		(11, 'NEMA 14-50'),
-		(22,	'NEMA 5-15R'),
-		(9,	'NEMA 5-20R'),
-		(15,	'NEMA 6-15'),
-		(14,	'NEMA 6-20'),
-		(1042,	'NEMA TT-30R'),
-		(36,	'SCAME Type 3A (Low Power)'),
-		(26,	'SCAME Type 3C (Schneider-Legrand)'),
-		(6,	'SP Inductive'),
-		(1037,	'T13 - SEC1011 ( Swiss domestic 3-pin ) - Type J'),
-		(30,	'Tesla (Model S/X)'),
-		(8,	'Tesla (Roadster)'),
-		(31,	'Tesla Battery Swap'),
-		(27,	'Tesla Supercharger'),
-		(1041,	'Three Phase 5-Pin (AS/NZ 3123)'),
-		(1,	'Type 1 (J1772)'),
-		(25,	'Type 2 (Socket Only)'),
-		(1036,	'Type 2 (Tethered Connector)'),
-		(29,	'Type I (AS 3112)'),
-		(0,	'Unknown'),
-		(24,	'Wireless Charging'),
-		(21,	'XLR Plug (4 pin)'),
+		(16,'CEE 3 Pin'),
+		(17,'CEE 5 Pin'),
+		(28,'CEE 7/4 - Schuko - Type F'),
+		(23,'CEE 7/5'),
+		(18,'CEE+ 7 Pin'),
+		(2,'CHAdeMO'),
+		(13,'Europlug 2-Pin (CEE 7/16)'),
+		(1038,'GB-T AC - GB/T 20234.2 (Socket)'),
+		(1039,'GB-T AC - GB/T 20234.2 (Tethered Cable)'),
+		(1040,'GB-T DC - GB/T 20234.3'),
+		(34,'IEC 60309 3-pin'),
+		(35,'IEC 60309 5-pin'),
+		(5,'LP Inductive'),
+		(10,'NEMA 14-30'),
+		(11,'NEMA 14-50'),
+		(22,'NEMA 5-15R'),
+		(9,'NEMA 5-20R'),
+		(15,'NEMA 6-15'),
+		(14,'NEMA 6-20'),
+		(1042,'NEMA TT-30R'),
+		(36,'SCAME Type 3A (Low Power)'),
+		(26,'SCAME Type 3C (Schneider-Legrand)'),
+		(6,'SP Inductive'),
+		(1037,'T13 - SEC1011 ( Swiss domestic 3-pin ) - Type J'),
+		(30,'Tesla (Model S/X)'),
+		(8,'Tesla (Roadster)'),
+		(31,'Tesla Battery Swap'),
+		(27,'Tesla Supercharger'),
+		(1041,'Three Phase 5-Pin (AS/NZ 3123)'),
+		(1,'Type 1 (J1772)'),
+		(25,'Type 2 (Socket Only)'),
+		(1036,'Type 2 (Tethered Connector)'),
+		(29,'Type I (AS 3112)'),
+		(0,'Unknown'),
+		(24,'Wireless Charging'),
+		(21,'XLR Plug (4 pin)'),
 	]
 
 	CURRENT_TYPE_CHOICES = [

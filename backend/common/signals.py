@@ -2,13 +2,12 @@ from django.db.models.signals import post_save
 from .models import User, Profile, Owner, Provider
 from django.dispatch import receiver
 
-
 @receiver(post_save, sender = User)
 def create_profile(sender, instance, created, **kwargs):
 	if instance.user_type == 1:
 		if created:
 			Profile.objects.create(user = instance)
-			#####.objects.create(user = instance)
+			VehicleOwner.objects.create(user = instance)
 	if instance.user_type == 2:
 		if created:
 			Profile.objects.create(user = instance)
@@ -22,7 +21,7 @@ def create_profile(sender, instance, created, **kwargs):
 def save_profile(sender, instance, **kwargs):
 	if instance.user_type == 1:
 		instance.profile.save()
-		#####.objects.create(user = instance)
+		instance.vehicleowner.save()		
 	if instance.user_type == 2:
 		instance.profile.save()
 		instance.owner.save()
