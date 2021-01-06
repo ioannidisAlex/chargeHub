@@ -1,8 +1,13 @@
 import uuid
 from django.conf import settings
 from django.db import models
-from multiselectfield import MultiselectField
-# Create your models here.
+from multiselectfield import MultiSelectField
+
+
+
+
+
+
 
 
 class VehicleModel(models.Model):
@@ -28,12 +33,12 @@ class VehicleModel(models.Model):
     model = models.CharField(64)
     # category? car,...
 
-    ac_ports = MultiselectField(choices=AcCharger)
+    ac_ports = MultiSelectField(choices=AcCharger)
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField()
     ac_charging_power = models.JSONField()
 
-    dc_ports = MultiselectField(choices=DcCharger)
+    dc_ports = MultiSelectField(choices=DcCharger)
     dc_max_power = models.FloatField(null=True)
     dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
