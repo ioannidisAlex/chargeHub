@@ -1,2 +1,7 @@
+django_phone_field==1.8.1
 django_multiselectfield==0.1.12
+django_countries==7.0
 Django==3.1.5
+django_localflavor==3.0.1
+localflavor==1.8
+Pillow==8.1.0
