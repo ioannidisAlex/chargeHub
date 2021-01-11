@@ -20,8 +20,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 from common import views as common_views
 from ev_charging_api import views as api_views
+from rest_framework.authtoken import views
 
 urlpatterns = [
+    path('api-token-auth/', views.obtain_auth_token),
     path('api-auth/', include('rest_framework.urls')),
     path('home/', common_views.home, name='home'),
     path('register/', common_views.register, name='register'),
@@ -29,8 +31,8 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='common/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='common/logout.html'), name='logout'),
     path('api/', api_views.home, name='api_home'),
-    path('api/login/', auth_views.LoginView.as_view(template_name='rest_framework/login.html'), name='rest_login'),
-    path('api/logout/', auth_views.LogoutView.as_view(template_name='rest_framework/logout.html'), name='rest_logout'),
+    path('api/login/', api_views.UserLogin.as_view(), name='rest_login'),
+    path('api/logout/', api_views.Logout.as_view(), name='rest_logout'),
     path('profile/', common_views.profile, name='profile'),
     path('password-reset/',
          auth_views.PasswordResetView.as_view(
