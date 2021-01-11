@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django_countries',
     'crispy_forms',
     'phone_field',
+    'ev_charging_api.apps.EvChargingApiConfig',
     'common.apps.CommonConfig',
     'django.contrib.admin',
     'django.contrib.auth',
