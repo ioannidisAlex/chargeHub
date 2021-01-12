@@ -8,13 +8,13 @@ from rest_framework.views import APIView
 from rest_framework import status
 from rest_framework import permissions
 from rest_framework.authtoken.serializers import AuthTokenSerializer
-from knox.views import LoginView as KnoxLoginView
+#from knox.views import LoginView as KnoxLoginView
 from django.contrib.auth import logout
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
-from .serializers import UserTokenSerializer
 from common.models import User
 
+'''
 class UserLogin(APIView):
     """return user token if user credetials are correct"""
     serializer_class = UserTokenSerializer
@@ -42,7 +42,7 @@ class UserLogin(APIView):
 def home(request):
     return render(request, 'ev_charging_api/api.html')
 
-'''
+
 class LoginAPI(KnoxLoginView):
 	permission_classes = (permissions.AllowAny,)
 	renderer_classes = [TemplateHTMLRenderer]
@@ -54,7 +54,7 @@ class LoginAPI(KnoxLoginView):
 		user = serializer.validated_data['user']
 		login(request, user)
 		return super(LoginAPI, self).post(request, format=None)
-'''
+
 
 class Logout(APIView):
 	renderer_classes = [TemplateHTMLRenderer]
@@ -65,3 +65,4 @@ class Logout(APIView):
 		request.user.auth_token.delete()
 		logout(request)
 		return Response(status=status.HTTP_200_OK)
+'''

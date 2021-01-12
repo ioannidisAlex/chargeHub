@@ -32,9 +32,10 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     #'cities_light',
-    'rest_framework.authtoken',
-    'djoser',
+    #'djoser',
+    #'knox',
     'rest_framework',
+    'rest_framework.authtoken',
     'multiselectfield',
     'django_countries',
     'crispy_forms',
@@ -47,8 +48,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'knox',
-]
+    ]
 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': (
@@ -58,8 +58,8 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ),
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.BasicAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
+        #'rest_framework.authentication.BasicAuthentication',
+        #'rest_framework.authentication.SessionAuthentication',
         'rest_framework.authentication.TokenAuthentication'
     ]
 }
