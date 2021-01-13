@@ -35,26 +35,42 @@ class MultipleFieldLookupMixin:
 
 class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
                      mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
-                     mixins.DestroyModelMixin):
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    lookup_fields = ['username', 'password']  
+    #lookup_field = 'pk'  
     serializer_class = UserSerializers
     queryset = User.objects.all()
-    #lookup_fields = ['username', 'password']  
-    lookup_field = 'username'  
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
- 
-    def post(self, request, username):
-        #serializer = UserSerializers(user)
-        try:
-            User.objects.all().get(username=username)
-            return self.update(request)
-        except:
-            return self.create(request)
     
     '''
-    def put(self, request, username=None):
-        return self.update(request, username)
- 
+    def update(self, request):
+        user=self.request.user
+        serializer=UserSerializers(user)
+        serializer.data['password']=request.user.password        
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status=status.HTTP_201_CREATED)
+        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    '''
+
+    def post(self, request, username=None, password=None):
+        try:
+            #print(username,'!!!!!!!!!!!!!!!!!!!\n')
+            user=self.queryset.get(username=username)
+            request.user=user
+            request.user.password=password
+            return self.update(request)
+        except:
+            request.data['username']=username
+            request.data['password']=password
+            return self.create(request)
+        
+    
+    '''
+    def put(self, request, pk=None):
+        return self.update(request, pk)
+
     def delete(self, request, username):
         return self.destroy(request, username)
     '''
