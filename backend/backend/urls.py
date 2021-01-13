@@ -13,6 +13,7 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from rest_framework.routers import DefaultRouter
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import path, include
@@ -22,11 +23,20 @@ from common import views as common_views
 from ev_charging_api import views as api_views
 from rest_framework.authtoken import views
 
+users_router = DefaultRouter()
+users_router.register('users', api_views.UsersViewSet, basename='users')
+#usermod_router = DefaultRouter()
+#usermod_router.register('usermod', api_views.UsermodAPIView, basename='usermod')
+
 urlpatterns = [
     #path('api/', api_views.home, name='api_home'),
     #path('api/login/', api_views.UserLogin.as_view(), name='rest_login'),
     #path('api/logout/', api_views.Logout.as_view(), name='rest_logout'),
     #path('api-auth/', include('rest_framework.urls')),
+    #path('api/<str:username>/', include(router.urls)),
+    path('generate_csrf/', api_views.CSRFGeneratorView.as_view()),
+    path('api/', include(users_router.urls)),
+    path('api/usermod/<str:username>/', api_views.UsermodAPIView.as_view()),
     path('api-token-auth/', views.obtain_auth_token),
     path('home/', common_views.home, name='home'),
     path('register/', common_views.register, name='register'),

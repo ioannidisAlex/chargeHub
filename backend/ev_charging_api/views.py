@@ -1,68 +1,96 @@
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from django.contrib.auth.decorators import login_required
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework import status
-from rest_framework import permissions
+from rest_framework import status, permissions, generics, mixins, viewsets
 from rest_framework.authtoken.serializers import AuthTokenSerializer
-#from knox.views import LoginView as KnoxLoginView
-from django.contrib.auth import logout
 from rest_framework.renderers import TemplateHTMLRenderer
 from rest_framework.response import Response
-from common.models import User
+from .serializers import UserSerializers
+from django.contrib.auth.models import User
+from rest_framework.authentication import TokenAuthentication
+from django.shortcuts import get_object_or_404
+from django.middleware.csrf import get_token
 
-'''
-class UserLogin(APIView):
-    """return user token if user credetials are correct"""
-    serializer_class = UserTokenSerializer
+class CSRFGeneratorView(APIView):
+    def get(self, request):
+        csrf_token = get_token(request)
+        return Response(csrf_token)
 
-    def get(self, request, format=None):
-        """user sign in form"""
-        serializer = UserTokenSerializer()
-        return Response(status=status.HTTP_200_OK)
-
-    def post(self, request, format=None):
-        """post user request"""
-        serializer = UserTokenSerializer(data=request.data)
-        if serializer.is_valid():
-            user = authenticate(
-                username=serializer.data.get('username'),
-                password=serializer.data.get('password'))
-            if user is not None:
-                token, create_or_fetch = Token.objects.get_or_create(
-                    user=user)
-                return Response({'token': token.key}, status=status.HTTP_200_OK)
-            msg = 'Wrong credentials. Please try again'
-            return Response({'message': msg}, status=status.HTTP_400_BAD_REQUEST)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-def home(request):
-    return render(request, 'ev_charging_api/api.html')
+class MultipleFieldLookupMixin:
+    """
+    Apply this mixin to any view or viewset to get multiple field filtering
+    based on a `lookup_fields` attribute, instead of the default single field filtering.
+    """
+    def get_object(self):
+        queryset = self.get_queryset()             # Get the base queryset
+        queryset = self.filter_queryset(queryset)  # Apply any filter backends
+        filter = {}
+        for field in self.lookup_fields:
+            if self.kwargs[field]: # Ignore empty fields.
+                filter[field] = self.kwargs[field]
+        obj = get_object_or_404(queryset, **filter)  # Lookup the object
+        self.check_object_permissions(self.request, obj)
+        return obj
 
 
-class LoginAPI(KnoxLoginView):
-	permission_classes = (permissions.AllowAny,)
-	renderer_classes = [TemplateHTMLRenderer]
-	template_name='ev_charging_api/rest_login.html'
-
-	def post(self, request, format=None):
-		serializer = AuthTokenSerializer(data=request.data)
-		serializer.is_valid(raise_exception=True)
-		user = serializer.validated_data['user']
-		login(request, user)
-		return super(LoginAPI, self).post(request, format=None)
-
-
-class Logout(APIView):
-	renderer_classes = [TemplateHTMLRenderer]
-	template_name = 'ev_charging_api/rest_logout.html'
+class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin):
+    serializer_class = UserSerializers
+    queryset = User.objects.all()
+    #lookup_fields = ['username', 'password']  
+    lookup_field = 'username'  
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+ 
+    def post(self, request, username):
+        #serializer = UserSerializers(user)
+        try:
+            User.objects.all().get(username=username)
+            return self.update(request)
+        except:
+            return self.create(request)
     
-	def get(self, request, format=None):
-		# simply delete the token to force a login
-		request.user.auth_token.delete()
-		logout(request)
-		return Response(status=status.HTTP_200_OK)
+    '''
+    def put(self, request, username=None):
+        return self.update(request, username)
+ 
+    def delete(self, request, username):
+        return self.destroy(request, username)
+    '''
+
 '''
+class CreateOrUpdateUserViewSet(viewsets.ModelViewSet, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
+    #lookup_fields = ['username', 'password']  
+    lookup_field = 'username' 
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    
+    def post(self, request, username):
+        if User.objects.filter(username=username).exists():
+            if serializer_class.is_valid():
+                return self.update(request, password)
+        else:
+            return self.create(request)
+'''
+
+class UsersViewSet(viewsets.ViewSet):
+    '''
+    def list(self, request):
+        users = User.objects.all()
+        serializer = UserSerializer(users, many=True)
+        return Response(serializer.data)
+    '''
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    lookup_field = 'username'  
+    
+    def retrieve(self, request, username):
+        queryset = User.objects.all()
+        user = get_object_or_404(queryset, username=username)
+        serializer = UserSerializers(user)
+        return Response(serializer.data)

@@ -1,7 +1,8 @@
 from rest_framework import serializers
-'''
-class UserTokenSerializer(serializers.Serializer):
-    """get token for user"""
-    username = serializers.CharField(required=True, max_length=150)
-    password = serializers.CharField(required=True, style={'input_type': 'password'})
-'''
+from django.contrib.auth.models import User
+ 
+class UserSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = User
+        #fields = ['username', 'password']
+        fields = '__all__'
