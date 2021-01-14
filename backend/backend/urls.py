@@ -25,14 +25,14 @@ from rest_framework.authtoken import views
 
 router = DefaultRouter()
 router.register('users', api_views.UsersViewSet, basename='users')
-#usermod_router = DefaultRouter()
-#usermod_router.register('usermod', api_views.UsermodAPIView, basename='usermod')
+#router.register('usermod', api_views.UserViewSet, basename='usermod')
 
 urlpatterns = [
     #path('api/', api_views.home, name='api_home'),
     #path('api/login/', api_views.UserLogin.as_view(), name='rest_login'),
     #path('api/logout/', api_views.Logout.as_view(), name='rest_logout'),
     #path('api-auth/', include('rest_framework.urls')),
+    path("rest_login/", api_views.LoginView.as_view(), name="rest_login"),
     path('generate_csrf/', api_views.CSRFGeneratorView.as_view()),
     path('api/', include(router.urls)),
     path('api/usermod/<str:username>/<str:password>/', api_views.UsermodAPIView.as_view()),
