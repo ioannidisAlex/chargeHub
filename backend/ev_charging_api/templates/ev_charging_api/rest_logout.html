@@ -1,0 +1,5 @@
+{% extends "ev_charging_api/base.html" %}
+{% block content %}
+    <h2>You have been logged out</h2>
+    <meta http-equiv="refresh" content="1; URL={% url 'api_home' %}" />
+{% endblock content %}
