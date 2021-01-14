@@ -4,7 +4,7 @@ from django.db import models
 from phone_field import PhoneField
 from localflavor.gr.forms import GRPostalCodeField
 from django_countries.fields import CountryField
-from django.contrib.auth.models import User as BaseUser
+from django.contrib.auth.models import User as BaseUser# pylint: disable=E5142
 from PIL import Image
 from multiselectfield import MultiSelectField
 
