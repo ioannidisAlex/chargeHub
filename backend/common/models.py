@@ -24,6 +24,7 @@ class VehicleOwner(models.Model):
 	user = models.OneToOneField(
     	User,
         on_delete=models.CASCADE,
+        related_name="vehicle_owner"
     )
 
 class VehicleModel(models.Model):
