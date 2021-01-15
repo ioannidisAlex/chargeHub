@@ -1,12 +1,15 @@
 import uuid
-from django.conf import settings
-from django.db import models
-from phone_field import PhoneField
-from localflavor.gr.forms import GRPostalCodeField
-from django_countries.fields import CountryField
-from django.contrib.auth.models import User as BaseUser
+
 from PIL import Image
+
+from django.conf import settings
+from django.contrib.auth.models import User as BaseUser  # pylint: disable=E5142
+from django.db import models
+from django_countries.fields import CountryField
+from localflavor.gr.forms import GRPostalCodeField
 from multiselectfield import MultiSelectField
+from phone_field import PhoneField
+
 
 class User(BaseUser):
 	USER_TYPE_CHOICES = [
@@ -21,6 +24,7 @@ class VehicleOwner(models.Model):
 	user = models.OneToOneField(
     	User,
         on_delete=models.CASCADE,
+        related_name="vehicle_owner"
     )
 
 class VehicleModel(models.Model):
@@ -117,7 +121,7 @@ class Provider(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)	
 
 	def __str__(self):
-		return f'Provider name = {self.provider_name}'
+		return f'Provider name = {self.user.username}'
 
 class ChargingStation(models.Model):
 	#charging_station_id = models.AutoField(primary_key = True)

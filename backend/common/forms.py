@@ -14,15 +14,11 @@ from .models import Profile
 #			cities = City.objects.all().filter(country__name = country)
 #			self.fields["town"] = ChoiceField(choices = cities)
 
-USER_TYPE_CHOICES = [
-        (1, "Regular User"),
-        (2, "Station Owner"),
-        (3, "Energy Provider"),
-    ]
+
 
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
-    user_type = forms.ChoiceField(choices = USER_TYPE_CHOICES)
+    user_type = forms.ChoiceField(choices = User.USER_TYPE_CHOICES)
 
     class Meta:
         model = User
