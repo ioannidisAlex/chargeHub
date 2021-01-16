@@ -1,6 +1,7 @@
 import functools
 import click
 import inspect
+import requests
 
 
 options={
@@ -22,6 +23,20 @@ options={
 	"resetsessions":click.option("--resetsessions",is_flag=True),
 }
 
+
+
+def show_data(response:requests.Response,*arg,**kwargs):
+	if response.status_code == 200:
+		click.echo(response.text)
+	else:
+		click.echo( response.status_code)
+
+def store_token(response:requests.Response,*arg,**kwargs):
+	if response.status_code == 200:
+		with open("softeng20API.token", "w") as f:
+			f.write(response.json()["token"])
+	else:
+		click.echo( response.status_code)
 
 cli = click.Group()
 
