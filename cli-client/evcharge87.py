@@ -23,7 +23,10 @@ options={
 	"resetsessions":click.option("--resetsessions",is_flag=True),
 }
 
-
+def apply_options(f):
+	for k in reversed(inspect.signature(f).parameters):
+		f=options[k](f)
+	return f
 
 def show_data(response:requests.Response,*arg,**kwargs):
 	if response.status_code == 200:
