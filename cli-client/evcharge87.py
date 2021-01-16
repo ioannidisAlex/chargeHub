@@ -1,35 +1,27 @@
-from agithub.base import API, ConnectionProperties, Client
-
-class EvCharge(API):
-    def __init__(self, token=None, *args, **kwargs):
-        props = ConnectionProperties(
-            api_url="127.0.0.1:8765/evcharge/api",
-        )
-        self.setClient(Client(*args, **kwargs))
-        self.setConnectionProperties(props)
+import functools
+import click
+import inspect
 
 
-
-def get_token():
-	return ""
-
-class CommandLineInterface():
-	"""docstring for CommandLineInterface"""
-	def __init__(self):
-		self.client = EvCharge(token=get_token())
-
-	def healthcheck(self):
-		return self.client.healthcheck.get()
-
-	def resetsessions(self):
-		return self.client.resetsessions.post()
-
-
-		
-import fire	
-		
-	
+options={
+	"format": click.option("--format", required=True,type=click.Choice(["json","csv"])),
+	"apikey": click.option("--apikey", required=True),
+	"username": click.option("--username", required=True),
+	"passw": click.option("--passw", required=True),
+	"point": click.option("--point", required=True),
+	"station": click.option("--station", required=True),
+	"provider": click.option("--provider", required=True),
+	"source": click.option("--source", required=True,type=click.File("r")),
+	"ev": click.option("--ev", required=True),
+	"datefrom": click.option("--datefrom", required=True),
+	"datato": click.option("--datato", required=True),
+	"users":click.option("--users",is_flag=True),
+	"usermod":click.option("--usermod",is_flag=True),
+	"sessionupd":click.option("--sessionupd",is_flag=True),
+	"healthcheck":click.option("--healthcheck",is_flag=True),
+	"resetsessions":click.option("--resetsessions",is_flag=True),
+}
 
 
-if __name__=="__main__":
-	fire.Fire(CommandLineInterface)
+cli = click.Group()
+
