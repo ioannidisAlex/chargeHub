@@ -7,11 +7,6 @@ from django_countries.fields import CountryField
 from django.contrib.auth.models import User as BaseUser
 from PIL import Image
 from multiselectfield import MultiSelectField
-import hashlib
-def encrypt_string(hash_string):
-    sha_signature = \
-        hashlib.sha256(hash_string.encode()).hexdigest()
-    return sha_signature
 
 class User(BaseUser):
 	USER_TYPE_CHOICES = [
@@ -27,6 +22,9 @@ class VehicleOwner(models.Model):
     	User,
         on_delete=models.CASCADE,
     )
+
+	def __str__(self):
+		return f'{self.user.username}'
 
 class VehicleModel(models.Model):
     class Engine(models.TextChoices):
@@ -62,7 +60,10 @@ class VehicleModel(models.Model):
     is_default_curve = models.BooleanField(null=True)
 
     usable_battery_size = models.FloatField()
-    average_energy_consumption = models.FloatField()    
+    average_energy_consumption = models.FloatField() 
+
+    def __str__(self):
+        return "%s  %s"% (self.brand, self.model)   
 
 class Vehicle(models.Model):
     model=models.ForeignKey(VehicleModel,on_delete= models.CASCADE,
@@ -72,6 +73,9 @@ class Vehicle(models.Model):
         related_name="vehicles"
     )
     id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
+
+    def __str__(self):
+        return "%s's %s"%(self.owner, self.model)
 
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, related_name='profile', on_delete=models.CASCADE)
@@ -119,7 +123,8 @@ class Cluster(models.Model):
 
 class Provider(models.Model):
 	#provider_id = models.AutoField(primary_key = True)
-	user = models.OneToOneField(User, on_delete=models.CASCADE)	
+	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	provider_name = models.CharField(max_length = 20)
 
 	def __str__(self):
 		return f'Provider name = {self.provider_name}'

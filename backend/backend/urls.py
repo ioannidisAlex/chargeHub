@@ -22,26 +22,32 @@ from django.conf.urls.static import static
 from common import views as common_views
 from ev_charging_api import views as api_views
 from rest_framework.authtoken import views
+from django.utils import timezone
+import datetime
 
 router = DefaultRouter()
-router.register('users', api_views.RetrieveUserViewSet, basename='users')
-#router.register('users', api_views.ListUsersViewSet, basename='users')
+router.register('users', api_views.RetrieveUserViewSet,)
+#router2 = DefaultRouter()
+#router2.register('SessionsPerPoint', api_views.TestViewSet,)
 
 urlpatterns = [
     #path('api/', api_views.home, name='api_home'),
     #path('api/login/', api_views.UserLogin.as_view(), name='rest_login'),
     #path('api/logout/', api_views.Logout.as_view(), name='rest_logout'),
     #path('api-auth/', include('rest_framework.urls')),
-    path("rest_login/", api_views.LoginView.as_view(), name="rest_login"),
+    #path('api/usermod/<int:pk>/', api_views.UsermodAPIView.as_view()),
+    #path('api/', include(router2.urls)),
+    path('SessionsPerPoint/<int:id>/<str:date_from>/<str:date_to>/', api_views.SessionsPerPointView.as_view(), name='my_date'),
+    path('admin/', admin.site.urls),
+    path("example/", api_views.ExampleView.as_view(), name="example"),
     path('generate_csrf/', api_views.CSRFGeneratorView.as_view()),
+    path('rest_login/', views.obtain_auth_token, name='rest_login'),
+    path("rest_logout/", api_views.LogoutView.as_view(), name="rest_logout"),
     path('api/', include(router.urls)),
     path('api/usermod/<str:username>/<str:password>/', api_views.UsermodAPIView.as_view()),
-    path('api/usermod/<int:pk>/', api_views.UsermodAPIView.as_view()),
-    path('api-token-auth/', views.obtain_auth_token),
     path('home/', common_views.home, name='home'),
     path('register/', common_views.register, name='register'),
-	path('admin/', admin.site.urls),
-    path('login/', auth_views.LoginView.as_view(template_name='common/login.html'), name='login'),
+	path('login/', auth_views.LoginView.as_view(template_name='common/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(template_name='common/logout.html'), name='logout'),
     path('profile/', common_views.profile, name='profile'),
     path('password-reset/',

@@ -3,54 +3,30 @@ from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
 from rest_framework import status, permissions, generics, mixins, viewsets
 from rest_framework.authtoken.serializers import AuthTokenSerializer
-from rest_framework.renderers import TemplateHTMLRenderer
+from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
 from rest_framework.decorators import action
-from .serializers import UserSerializer, CreateUserSerializer, ChangePasswordSerializer
-#from django.contrib.auth.models import User
-from common.models import User
+from .serializers import UserSerializer, CreateUserSerializer, ChangePasswordSerializer, AuthUserSerializer, SessionSerializer
+from django.contrib.auth.models import User as AuthUser
+from common.models import User, Session
 from rest_framework.authentication import TokenAuthentication
 from django.shortcuts import get_object_or_404
 from django.middleware.csrf import get_token
 from rest_framework.views import APIView
 from rest_framework.generics import CreateAPIView, UpdateAPIView
-'''
-import hashlib
-def encrypt_string(hash_string):
-    sha_signature = \
-        hashlib.sha256(hash_string.encode()).hexdigest()
-    return sha_signature
-'''
+from datetime import datetime
+from django.utils import timezone
 
-class ChangePasswordView(UpdateAPIView):
-        """
-        An endpoint for changing password.
-        """
-        serializer_class = ChangePasswordSerializer
-        model = User
-        permission_classes = (IsAuthenticated,)
+class ExampleView(APIView):
+    authentication_classes = [SessionAuthentication, BasicAuthentication]
+    permission_classes = [IsAuthenticated]
 
-        def update(self, request, username, password, *args, **kwargs):
-            self.object = User.objects.get(username=username)
-            serializer = self.get_serializer(data={'new_password': password})
-
-            if serializer.is_valid():
-                # Check old password
-                #if not self.object.check_password(serializer.data.get("old_password")):
-                #    return Response({"old_password": ["Wrong password."]}, status=status.HTTP_400_BAD_REQUEST)
-                # set_password also hashes the password that the user will get
-                self.object.set_password(serializer.data.get("new_password"))
-                self.object.save()
-                response = {
-                    'status': 'success',
-                    'code': status.HTTP_200_OK,
-                    'message': 'Password updated successfully',
-                    'data': []
-                }
-
-                return Response(response)
-
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    def get(self, request, format=None):
+        content = {
+            'user': str(request.user),  # `django.contrib.auth.User` instance.
+            'auth': str(request.auth),  # None
+        }
+        return Response(content)
 
 class CSRFGeneratorView(APIView):
     def get(self, request):
@@ -78,22 +54,21 @@ class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
                      mixins.DestroyModelMixin, MultipleFieldLookupMixin):
     serializer_class = CreateUserSerializer
     queryset = User.objects.all()
-    #authentication_classes = [TokenAuthentication]
-    #permission_classes = [IsAuthenticated]
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
     #lookup_fields = ['username', 'password', 'id']  
     #lookup_field = 'id'  
     
     def post(self, request, username=None, password=None):
         try:
-            #print("HEREEEE!!!",request.values(),"\n")
             self.object = User.objects.get(username=username)
             serializer = ChangePasswordSerializer(data={'new_password': password})
 
             if serializer.is_valid():
-                # Check old password
+                #### Check old password
                 #if not self.object.check_password(serializer.data.get("old_password")):
                 #    return Response({"old_password": ["Wrong password."]}, status=status.HTTP_400_BAD_REQUEST)
-                # set_password also hashes the password that the user will get
+                #### set_password also hashes the password that the user will get
                 self.object.set_password(serializer.data.get("new_password"))
                 self.object.save()
                 response = {
@@ -121,23 +96,25 @@ class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
     def put(self, request, pk=None):
         return self.update(request, pk)
 
-class LoginView(APIView):
-
-    def post(self, request,):
-        username = request.data.get("username")
-        password = request.data.get("password")
-        user = authenticate(username=username, password=password)
-        if user:
-            return Response({"token": user.auth_token.key})
-        else:
-            return Response({"error": "Wrong Credentials"}, status=status.HTTP_400_BAD_REQUEST)
-
+class LogoutView(APIView):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    
+    def get(self, request,):
+        response = {
+                    'status': 'success',
+                    'code': status.HTTP_200_OK,
+                    'message': 'Logged out succesfully',
+                    'data': []
+                }
+        return Response(response)
+        
 class RetrieveUserViewSet(viewsets.ViewSet):
-    #authentication_classes = [TokenAuthentication]
-    #permission_classes = [IsAuthenticated]
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
     lookup_field = 'username'  
-    serializer_class = UserSerializer
-    queryset = User.objects.all()
+    serializer_class = AuthUserSerializer
+    queryset = AuthUser.objects.all()
     
     def retrieve(self, request, username=None):
         user = get_object_or_404(self.queryset, username=username)
@@ -146,4 +123,26 @@ class RetrieveUserViewSet(viewsets.ViewSet):
 
     def list(self, request):
         serializer = UserSerializer(self.queryset, many=True)
+        return Response(serializer.data)
+
+class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+    lookup_fields = ['id', 'date_from', 'date_to']  
+    
+    def get(self, request, id=None, date_from=None, date_to=None):
+        year_from = int(date_from[:4])
+        month_from = int(date_from[4:6])
+        day_from = int(date_from[6:8])
+        year_to = int(date_to[:4])
+        month_to = int(date_to[4:6])
+        day_to = int(date_to[6:8])
+        range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
+        range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
+        sessions = self.queryset.filter(charging_point__id=id).filter(connect_time__range=[range_left,range_right])
+        serializer = SessionSerializer(sessions, many=True)        
         return Response(serializer.data)
