@@ -59,7 +59,7 @@ def convert_to_command(target):
     def inner(f):
         f = convert_to_request(f)
         f = apply_options(f)
-        return target.command()(f)  
+        return target.command(f.__name__)(f)  
     return inner
 
 
