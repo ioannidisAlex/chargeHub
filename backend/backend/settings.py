@@ -31,9 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    #'cities_light',
-    #'djoser',
-    #'knox',
+    'rest_auth',
     'rest_framework',
     'rest_framework.authtoken',
     'multiselectfield',
@@ -48,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'allauth',
     ]
 
 REST_FRAMEWORK = {
@@ -58,11 +57,12 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
         #'rest_framework.permissions.IsAdminUser',
     ),
-    'DEFAULT_AUTHENTICATION_CLASSES': [
+    'DEFAULT_AUTHENTICATION_CLASSES': (
         #'rest_framework.authentication.BasicAuthentication',
         #'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.TokenAuthentication'
-    ]
+        'rest_framework.authentication.TokenAuthentication',
+        #'rest_framework.permissions.IsAdminUser',
+    ),
 }
 
 MIDDLEWARE = [

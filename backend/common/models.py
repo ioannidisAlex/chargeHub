@@ -7,6 +7,11 @@ from django_countries.fields import CountryField
 from django.contrib.auth.models import User as BaseUser
 from PIL import Image
 from multiselectfield import MultiSelectField
+import hashlib
+def encrypt_string(hash_string):
+    sha_signature = \
+        hashlib.sha256(hash_string.encode()).hexdigest()
+    return sha_signature
 
 class User(BaseUser):
 	USER_TYPE_CHOICES = [
@@ -14,8 +19,8 @@ class User(BaseUser):
 		(2, "Station Owner"),
 		(3, "Energy Provider"),
 	]
-
-	user_type = models.IntegerField(choices=USER_TYPE_CHOICES)
+	#username = models.CharField(max_length=15, unique=True, db_index=True, primary_key=True)
+	user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 class VehicleOwner(models.Model):
 	user = models.OneToOneField(

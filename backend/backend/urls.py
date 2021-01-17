@@ -24,8 +24,8 @@ from ev_charging_api import views as api_views
 from rest_framework.authtoken import views
 
 router = DefaultRouter()
-router.register('users', api_views.UsersViewSet, basename='users')
-#router.register('usermod', api_views.UserViewSet, basename='usermod')
+router.register('users', api_views.RetrieveUserViewSet, basename='users')
+#router.register('users', api_views.ListUsersViewSet, basename='users')
 
 urlpatterns = [
     #path('api/', api_views.home, name='api_home'),
@@ -36,6 +36,7 @@ urlpatterns = [
     path('generate_csrf/', api_views.CSRFGeneratorView.as_view()),
     path('api/', include(router.urls)),
     path('api/usermod/<str:username>/<str:password>/', api_views.UsermodAPIView.as_view()),
+    path('api/usermod/<int:pk>/', api_views.UsermodAPIView.as_view()),
     path('api-token-auth/', views.obtain_auth_token),
     path('home/', common_views.home, name='home'),
     path('register/', common_views.register, name='register'),
