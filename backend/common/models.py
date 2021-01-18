@@ -18,6 +18,7 @@ class User(BaseUser):
 	user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 class VehicleOwner(models.Model):
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	user = models.OneToOneField(
     	User,
         on_delete=models.CASCADE,
@@ -42,6 +43,7 @@ class VehicleModel(models.Model):
         TYPE1 = "type1"
         TYPE2 = "type2"
 
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     engine_type = models.CharField(max_length=8, choices=Engine.choices)
     release_year = models.PositiveSmallIntegerField(null=True)
     brand = models.CharField(max_length=32)
@@ -80,7 +82,7 @@ class Vehicle(models.Model):
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, related_name='profile', on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
-
+    
     def __str__(self):
         return f'{self.user.username} Profile'
 
@@ -96,12 +98,14 @@ class Profile(models.Model):
 
 class Owner(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 
 	def __str__(self):
 		return f'{self.user.username} Profile'
 
 class Location(models.Model):
 	#location_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	email = models.EmailField()
 	website = models.URLField()
 	telephone = PhoneField(blank=True)
@@ -116,6 +120,7 @@ class Location(models.Model):
 
 class Cluster(models.Model):
 	#cluster_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	cluster_name = models.CharField(max_length = 15)
 	
 	def __str__(self):
@@ -123,6 +128,7 @@ class Cluster(models.Model):
 
 class Provider(models.Model):
 	#provider_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
 	provider_name = models.CharField(max_length = 20)
 
@@ -131,6 +137,7 @@ class Provider(models.Model):
 
 class ChargingStation(models.Model):
 	#charging_station_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
 	cluster = models.ForeignKey(Cluster, on_delete = models.CASCADE)
 	provider = models.ForeignKey(Provider , on_delete = models.CASCADE)
@@ -227,6 +234,7 @@ class ChargingPoint(models.Model):
 	]
 
     #charging_point_id = models.AutoField(primary_key=True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
 	connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
 	current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
@@ -259,6 +267,7 @@ class Session(models.Model):
         return f'Id = {self.id}'
         
 class Payment(models.Model):
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     _PAYMENT_METHODS = [
         ('credit_card','credit card'),
         ('cash','cash'),

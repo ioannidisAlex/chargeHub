@@ -19,6 +19,8 @@ from django.utils import timezone
 from json import JSONEncoder
 import json
 from django.core.serializers.json import DjangoJSONEncoder
+from django.db import connections
+from django.db.utils import OperationalError
 
 class MyEncoder(JSONEncoder):
         def default(self, o):
@@ -100,8 +102,10 @@ class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
+    '''
     def put(self, request, pk=None):
         return self.update(request, pk)
+    '''
 
 class LogoutView(APIView):
     authentication_classes = [TokenAuthentication]
@@ -219,3 +223,55 @@ class SessionsPerProviderView(generics.GenericAPIView, mixins.ListModelMixin, mi
         sessions = self.queryset.filter(provider__id=id).filter(connect_time__range=[range_left,range_right])
         serializer = SessionSerializer(sessions, many=True)        
         return Response(serializer.data)
+
+class HealthcheckView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    
+    def get(self, request):
+        db_conn = connections['default']
+        try:
+            c = db_conn.cursor()   
+            response = {
+            "status": "OK"
+            } 
+            return Response(response)
+
+        except:
+            response = {
+            "status": "failed"
+            } 
+            return Response(response)
+
+class ResetSessionsView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]  
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+    
+    def post(self, request):
+        try:
+            self.queryset.delete()
+            admin_user = {
+            "username": "admin",
+            "password": "petrol4ever",
+            "is_superuser": True,
+            "is_staff": True,
+            }
+            response = {
+            "status": "OK",
+            }
+            serializer = UserSerializer(data=admin_user)
+            if serializer.is_valid():
+                serializer.save()
+            return Response(response)
+
+        except:
+            response = {
+            "status": "failed"
+            } 
+            return Response(response)
