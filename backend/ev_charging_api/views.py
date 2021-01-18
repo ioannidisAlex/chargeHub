@@ -1,7 +1,7 @@
 from rest_framework.authentication import SessionAuthentication, BasicAuthentication
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.views import APIView
-from rest_framework import status, permissions, generics, mixins, viewsets
+from rest_framework import status, permissions, generics, mixins, viewsets, serializers
 from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
@@ -16,6 +16,13 @@ from rest_framework.views import APIView
 from rest_framework.generics import CreateAPIView, UpdateAPIView
 from datetime import datetime
 from django.utils import timezone
+from json import JSONEncoder
+import json
+from django.core.serializers.json import DjangoJSONEncoder
+
+class MyEncoder(JSONEncoder):
+        def default(self, o):
+            return o.__dict__ 
 
 class ExampleView(APIView):
     authentication_classes = [SessionAuthentication, BasicAuthentication]
@@ -118,11 +125,12 @@ class RetrieveUserViewSet(viewsets.ViewSet):
     
     def retrieve(self, request, username=None):
         user = get_object_or_404(self.queryset, username=username)
-        serializer = UserSerializer(user)
+        serializer = AuthUserSerializer(user)
         return Response(serializer.data)
 
     def list(self, request):
-        serializer = UserSerializer(self.queryset, many=True)
+        print("This is the query set :",self.queryset.__dict__, "HIIIII!!!!!\n")
+        serializer = AuthUserSerializer(self.queryset, many=True)
         return Response(serializer.data)
 
 class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
@@ -132,7 +140,7 @@ class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixin
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
-    lookup_fields = ['id', 'date_from', 'date_to']  
+    #lookup_fields = ['id', 'date_from', 'date_to']  
     
     def get(self, request, id=None, date_from=None, date_to=None):
         year_from = int(date_from[:4])
@@ -144,5 +152,8 @@ class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixin
         range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
         range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
         sessions = self.queryset.filter(charging_point__id=id).filter(connect_time__range=[range_left,range_right])
+        #serialized_q = json.dumps(list(sessions.__dict__), cls=DjangoJSONEncoder)
+        #print("This is sessions: ", sessions.__dict__, "HIIIIIIII!!!!!!!\n")
         serializer = SessionSerializer(sessions, many=True)        
-        return Response(serializer.data)
+        #print("This is serializer: ", serializer, "HIIIIIIII!!!!!!!\n")
+        return Response(serializer.data)#Response(serializer.data)

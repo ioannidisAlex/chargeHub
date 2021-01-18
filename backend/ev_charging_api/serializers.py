@@ -4,18 +4,20 @@ from common.models import User, Session
 from django.contrib.auth.validators import UnicodeUsernameValidator
 from rest_framework import serializers
 
-class SessionSerializer(serializers.Serializer):
-    model = Session
-    fields = '__all__'
+class SessionSerializer(serializers.ModelSerializer):
+    class Meta:    
+        model = Session
+        fields = '__all__'
 
 class ChangePasswordSerializer(serializers.Serializer):
-    model = User
+    class Meta:    
+        model = User
 
-    """
-    Serializer for password change endpoint.
-    """
-    #old_password = serializers.CharField(required=True)
-    new_password = serializers.CharField(required=True)
+        """
+        Serializer for password change endpoint.
+        """
+        #old_password = serializers.CharField(required=True)
+        new_password = serializers.CharField(required=True)
 
 class AuthUserSerializer(serializers.ModelSerializer):
     class Meta:

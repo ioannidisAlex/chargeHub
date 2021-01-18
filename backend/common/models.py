@@ -255,7 +255,7 @@ class Session(models.Model):
     vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE, related_name="sessions")
 
     def __str__(self):
-        return str((self.vehicle_id, self.charging_point_id,self.connect_time,self.kwh_delivered))
+        return f'Id = {self.id}'
         
 class Payment(models.Model):
     _PAYMENT_METHODS = [
