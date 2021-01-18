@@ -140,7 +140,6 @@ class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixin
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
-    #lookup_fields = ['id', 'date_from', 'date_to']  
     
     def get(self, request, id=None, date_from=None, date_to=None):
         year_from = int(date_from[:4])
@@ -152,8 +151,71 @@ class SessionsPerPointView(generics.GenericAPIView, mixins.ListModelMixin, mixin
         range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
         range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
         sessions = self.queryset.filter(charging_point__id=id).filter(connect_time__range=[range_left,range_right])
+        serializer = SessionSerializer(sessions, many=True)        
+        return Response(serializer.data)
+
+class SessionsPerStationView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+    
+    def get(self, request, id=None, date_from=None, date_to=None):
+        year_from = int(date_from[:4])
+        month_from = int(date_from[4:6])
+        day_from = int(date_from[6:8])
+        year_to = int(date_to[:4])
+        month_to = int(date_to[4:6])
+        day_to = int(date_to[6:8])
+        range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
+        range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
+        sessions = self.queryset.filter(charging_point__charging_station=id).filter(connect_time__range=[range_left,range_right])
         #serialized_q = json.dumps(list(sessions.__dict__), cls=DjangoJSONEncoder)
         #print("This is sessions: ", sessions.__dict__, "HIIIIIIII!!!!!!!\n")
         serializer = SessionSerializer(sessions, many=True)        
         #print("This is serializer: ", serializer, "HIIIIIIII!!!!!!!\n")
         return Response(serializer.data)#Response(serializer.data)
+
+class SessionsPerVehicleView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+    
+    def get(self, request, id=None, date_from=None, date_to=None):
+        year_from = int(date_from[:4])
+        month_from = int(date_from[4:6])
+        day_from = int(date_from[6:8])
+        year_to = int(date_to[:4])
+        month_to = int(date_to[4:6])
+        day_to = int(date_to[6:8])
+        range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
+        range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
+        sessions = self.queryset.filter(vehicle__id=id).filter(connect_time__range=[range_left,range_right])
+        serializer = SessionSerializer(sessions, many=True)        
+        return Response(serializer.data)
+
+class SessionsPerProviderView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
+                     mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
+                     mixins.DestroyModelMixin, MultipleFieldLookupMixin):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+    
+    def get(self, request, id=None, date_from=None, date_to=None):
+        year_from = int(date_from[:4])
+        month_from = int(date_from[4:6])
+        day_from = int(date_from[6:8])
+        year_to = int(date_to[:4])
+        month_to = int(date_to[4:6])
+        day_to = int(date_to[6:8])
+        range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
+        range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
+        sessions = self.queryset.filter(provider__id=id).filter(connect_time__range=[range_left,range_right])
+        serializer = SessionSerializer(sessions, many=True)        
+        return Response(serializer.data)

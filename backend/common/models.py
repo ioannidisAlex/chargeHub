@@ -245,6 +245,7 @@ class ChargingPoint(models.Model):
 class Session(models.Model):
     id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     user_comments_ratings = models.TextField()
+    provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     #cluster = models.CharField(max_length=100)   #potential fk Null
     kwh_delivered = models.IntegerField() #check type
     site_id = models.UUIDField(editable=False,default=uuid.uuid4)
