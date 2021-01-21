@@ -9,13 +9,13 @@ options = {
     "apikey": click.option("--apikey", required=True),
     "username": click.option("--username", required=True),
     "passw": click.option("--passw", required=True),
-    "point": click.option("--point", required=True),
-    "station": click.option("--station", required=True),
-    "provider": click.option("--provider", required=True),
+    "point": click.option("--point", required=True,type= click.UUID),
+    "station": click.option("--station", required=True,type= click.UUID),
+    "provider": click.option("--provider", required=True,type= click.UUID),
     "source": click.option("--source", required=True, type=click.File("r")),
-    "ev": click.option("--ev", required=True),
-    "datefrom": click.option("--datefrom", required=True),
-    "dateto": click.option("--dateto", required=True),
+    "ev": click.option("--ev", required=True,type= click.UUID),
+    "datefrom": click.option("--datefrom", required=True,type= click.DateTime(["%Y%m%d"])),
+    "dateto": click.option("--dateto", required=True,type= click.DateTime(["%Y%m%d"])),
     "users": click.option("--users", is_flag=True),
     "usermod": click.option("--usermod", is_flag=True),
     "sessionupd": click.option("--sessionupd", is_flag=True),
@@ -76,29 +76,30 @@ def healthcheck():
 @convert_to_command(interface)
 def SessionsPerEv(ev, datefrom, dateto, format,apikey):
     return (
-        requests.get, f"{SessionsPerEv}/{ev}/{datefrom}/{dateto}", 
-        {"payload": dict(format=format)}, show_data
+        requests.get, f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
+        {"params": dict(format=format)}, show_data
     )
 
 @convert_to_command(interface)
 def SessionsPerStation(station, datefrom, dateto, format,apikey):
     return (
-        requests.get, f"{SessionsPerStation}/{station}/{datefrom}/{dateto}", 
-        {"payload": dict(format=format)}, show_data
+        requests.get, f"SessionsPerStation/{station}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
+        {"params": dict(format=format)}, show_data
     )
 
 @convert_to_command(interface)
 def SessionsPerPoint(point, datefrom, dateto, format,apikey):
     return (
-        requests.get, f"{SessionsPerPoint}/{point}/{datefrom}/{dateto}", 
-        {"payload": dict(format=format)}, show_data
+        requests.get, f"SessionsPerPoint/{point}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
+        {"params": dict(format=format)}, show_data
     )
 
 @convert_to_command(interface)
 def SessionsPerProvider(provider, datefrom, dateto, format,apikey):
+    print(provider,datefrom,dateto,format,apikey)
     return (
-        requests.get, f"{SessionsPerProvider}/{provider}/{datefrom}/{dateto}", 
-        {"payload": dict(format=format)}, show_data
+        requests.get, f"SessionsPerProvider/{provider}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
+        {"params": dict(format=format)}, show_data
     )
 
 
