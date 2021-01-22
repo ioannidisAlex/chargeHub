@@ -4,22 +4,29 @@ import os
 
 import click
 import requests
-from click_option_group import (AllOptionGroup,
-                                RequiredMutuallyExclusiveOptionGroup, optgroup)
+from click_option_group import (
+    AllOptionGroup,
+    RequiredMutuallyExclusiveOptionGroup,
+    optgroup,
+)
 
 options = {
-    "format": click.option("--format", required=True, type=click.Choice(["json", "csv"])),
+    "format": click.option(
+        "--format", required=True, type=click.Choice(["json", "csv"])
+    ),
     "apikey": click.option("--apikey", required=True),
     "username": click.option("--username", required=True),
     "passw": click.option("--passw", required=True),
-    "point": click.option("--point", required=True,type= click.UUID),
-    "station": click.option("--station", required=True,type= click.UUID),
-    "provider": click.option("--provider", required=True,type= click.UUID),
+    "point": click.option("--point", required=True, type=click.UUID),
+    "station": click.option("--station", required=True, type=click.UUID),
+    "provider": click.option("--provider", required=True, type=click.UUID),
     "source": click.option("--source", required=True, type=click.File("r")),
-    "ev": click.option("--ev", required=True,type= click.UUID),
-    "datefrom": click.option("--datefrom", required=True,type= click.DateTime(["%Y%m%d"])),
-    "dateto": click.option("--dateto", required=True,type= click.DateTime(["%Y%m%d"])),
-    "users": click.option("--users", ),
+    "ev": click.option("--ev", required=True, type=click.UUID),
+    "datefrom": click.option(
+        "--datefrom", required=True, type=click.DateTime(["%Y%m%d"])
+    ),
+    "dateto": click.option("--dateto", required=True, type=click.DateTime(["%Y%m%d"])),
+    "users": click.option("--users"),
     "usermod": click.option("--usermod", is_flag=True),
     "sessionsupd": click.option("--sessionsupd", is_flag=True),
     "healthcheck": click.option("--healthcheck", is_flag=True),
@@ -29,58 +36,62 @@ options = {
 BASE_URL = "http://localhost:8765/evcharge/api"
 
 
-
-
-
 def convert_to_request(f):
     @functools.wraps(f)
     def function(**kw):
         method, url, parameters, hook = f(**kw)
-        return method(f"{BASE_URL}/{url}", hooks=dict(response=hook), timeout=2, **parameters)
+        return method(
+            f"{BASE_URL}/{url}", hooks=dict(response=hook), timeout=2, **parameters
+        )
+
     return function
+
 
 def apply_options(f):
     for k in reversed(inspect.signature(f).parameters.keys()):
         f = options[k](f)
     return f
 
-def convert_to_command(target,name=None):
+
+def convert_to_command(target, name=None):
     def inner(f):
         f = convert_to_request(f)
         f = apply_options(f)
-        return target.command(name or f.__name__)(f)  
+        return target.command(name or f.__name__)(f)
+
     return inner
 
-def load_to_admin(*args,target):
-    def f(ctx,**kwargs):
+
+def load_to_admin(*args, target):
+    def f(ctx, **kwargs):
         sub = [x for x in args if kwargs.get(x.name)]
-        if len(sub)!=1:
+        if len(sub) != 1:
             click.echo(ctx.get_help())
-             
+
             ctx.abort()
-        ctx.invoke(sub[0],**{k:v for k,v in kwargs.items() if v})
+        ctx.invoke(sub[0], **{k: v for k, v in kwargs.items() if v})
+
     x = click.pass_context(f)
     x = options["apikey"](x)
     for arg in args:
         for p in arg.params:
-            if p.human_readable_name=="apikey":
+            if p.human_readable_name == "apikey":
                 continue
-            o = optgroup.option("--"+p.human_readable_name,type=p.type,is_flag=p.is_flag)
-            x=o(x)
-            
-        
+            o = optgroup.option(
+                "--" + p.human_readable_name, type=p.type, is_flag=p.is_flag
+            )
+            x = o(x)
+
         x = optgroup.group(f"{arg}", cls=AllOptionGroup)(x)
-    
+
     return target.command("Admin")(x)
 
 
 interface = click.Group()
 
 
-
-
-
 # Data endpoints
+
 
 def show_data(response: requests.Response, *arg, **kwargs):
     if response.status_code == 200:
@@ -88,36 +99,49 @@ def show_data(response: requests.Response, *arg, **kwargs):
     else:
         response.raise_for_status()
 
-@convert_to_command(interface)
-def SessionsPerEv(ev, datefrom, dateto, format,apikey):
-    return (
-        requests.get, f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
-        {"params": dict(format=format)}, show_data
-    )
 
 @convert_to_command(interface)
-def SessionsPerStation(station, datefrom, dateto, format,apikey):
+def SessionsPerEv(ev, datefrom, dateto, format, apikey):
     return (
-        requests.get, f"SessionsPerStation/{station}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
-        {"params": dict(format=format)}, show_data
+        requests.get,
+        f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
+        {"params": dict(format=format)},
+        show_data,
     )
 
-@convert_to_command(interface)
-def SessionsPerPoint(point, datefrom, dateto, format,apikey):
-    return (
-        requests.get, f"SessionsPerPoint/{point}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
-        {"params": dict(format=format)}, show_data
-    )
 
 @convert_to_command(interface)
-def SessionsPerProvider(provider, datefrom, dateto, format,apikey):
-    
+def SessionsPerStation(station, datefrom, dateto, format, apikey):
     return (
-        requests.get, f"SessionsPerProvider/{provider}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}", 
-        {"params": dict(format=format)}, show_data
+        requests.get,
+        f"SessionsPerStation/{station}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
+        {"params": dict(format=format)},
+        show_data,
     )
+
+
+@convert_to_command(interface)
+def SessionsPerPoint(point, datefrom, dateto, format, apikey):
+    return (
+        requests.get,
+        f"SessionsPerPoint/{point}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
+        {"params": dict(format=format)},
+        show_data,
+    )
+
+
+@convert_to_command(interface)
+def SessionsPerProvider(provider, datefrom, dateto, format, apikey):
+    return (
+        requests.get,
+        f"SessionsPerProvider/{provider}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
+        {"params": dict(format=format)},
+        show_data,
+    )
+
 
 # authentication point
+
 
 def store_token(response: requests.Response, *arg, **kwargs):
     if response.status_code == 200:
@@ -126,9 +150,16 @@ def store_token(response: requests.Response, *arg, **kwargs):
     else:
         response.raise_for_status()
 
+
 @convert_to_command(interface)
-def login(username,passw):
-    return requests.post,"login",dict(data=dict(username=username,password=passw)),store_token
+def login(username, passw):
+    return (
+        requests.post,
+        "login",
+        dict(data=dict(username=username, password=passw)),
+        store_token,
+    )
+
 
 def remove_token(response: requests.Response, *arg, **kwargs):
     if response.status_code == 200:
@@ -139,36 +170,43 @@ def remove_token(response: requests.Response, *arg, **kwargs):
     else:
         response.raise_for_status()
 
+
 @convert_to_command(interface)
-def logout(username,passw):
-    return requests.post,"logout",{},remove_token
+def logout(username, passw):
+    return requests.post, "logout", {}, remove_token
+
 
 # administrative endpoints
 
-@convert_to_command(click)
-def usermod(usermod,username,passw,apikey):
-    return requests.post,f"admin/usermod/{username}/{passw}",{},show_data
 
 @convert_to_command(click)
-def users(users,apikey):
-    return requests.post,f"admin/users/{users}",{},show_data
+def usermod(usermod, username, passw, apikey):
+    return requests.post, f"admin/usermod/{username}/{passw}", {}, show_data
+
 
 @convert_to_command(click)
-def sessionsupd(sessionsupd,source,apikey):
-    return requests.post,f"admin/system/sessionsupd",{},show_data
+def users(users, apikey):
+    return requests.post, f"admin/users/{users}", {}, show_data
+
 
 @convert_to_command(click)
-def healthcheck(healthcheck,apikey):
+def sessionsupd(sessionsupd, source, apikey):
+    return requests.post, f"admin/system/sessionsupd", {}, show_data
+
+
+@convert_to_command(click)
+def healthcheck(healthcheck, apikey):
     return requests.get, "healthcheck", {}, show_data
 
+
 @convert_to_command(click)
-def resetsessions(resetsessions,apikey):
+def resetsessions(resetsessions, apikey):
     return requests.post, "resetsessions", {}, show_data
 
-admin = load_to_admin(users,sessionsupd,resetsessions,healthcheck,usermod,target=interface)
 
-
-
+admin = load_to_admin(
+    users, sessionsupd, resetsessions, healthcheck, usermod, target=interface
+)
 
 
 if __name__ == "__main__":
