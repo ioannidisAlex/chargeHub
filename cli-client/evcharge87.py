@@ -1,10 +1,11 @@
 import functools
-import click
 import inspect
+import os
+
+import click
 import requests
-
-from click_option_group import optgroup, RequiredMutuallyExclusiveOptionGroup,AllOptionGroup
-
+from click_option_group import (AllOptionGroup,
+                                RequiredMutuallyExclusiveOptionGroup, optgroup)
 
 options = {
     "format": click.option("--format", required=True, type=click.Choice(["json", "csv"])),
@@ -129,9 +130,18 @@ def store_token(response: requests.Response, *arg, **kwargs):
 def login(username,passw):
     return requests.post,"login",dict(data=dict(username=username,password=passw)),store_token
 
+def remove_token(response: requests.Response, *arg, **kwargs):
+    if response.status_code == 200:
+        if os.path.exists("softeng20API.token"):
+            os.remove("softeng20API.token")
+        else:
+            click.echo("Token file not found")
+    else:
+        response.raise_for_status()
+
 @convert_to_command(interface)
 def logout(username,passw):
-    return requests.post,"logout",{},store_token
+    return requests.post,"logout",{},remove_token
 
 # administrative endpoints
 
