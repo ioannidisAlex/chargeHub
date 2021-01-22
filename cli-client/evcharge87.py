@@ -34,14 +34,24 @@ options = {
 }
 
 BASE_URL = "http://localhost:8765/evcharge/api"
+AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
 
 
 def convert_to_request(f):
     @functools.wraps(f)
     def function(**kw):
         method, url, parameters, hook = f(**kw)
+        if "apikey" in kw:
+            headers = {AUTHENTICATION_HEADER: "%s" % kw["apikey"]}
+        else:
+            headers = {}
+
         return method(
-            f"{BASE_URL}/{url}", hooks=dict(response=hook), timeout=2, **parameters
+            f"{BASE_URL}/{url}",
+            hooks=dict(response=hook),
+            timeout=2,
+            headers=headers,
+            **parameters,
         )
 
     return function
