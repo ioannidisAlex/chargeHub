@@ -4,11 +4,7 @@ import os
 
 import click
 import requests
-from click_option_group import (
-    AllOptionGroup,
-    RequiredMutuallyExclusiveOptionGroup,
-    optgroup,
-)
+from click_option_group import AllOptionGroup, optgroup
 
 options = {
     "format": click.option(
@@ -201,7 +197,7 @@ def users(users, apikey):
 
 @convert_to_command(click)
 def sessionsupd(sessionsupd, source, apikey):
-    return requests.post, f"admin/system/sessionsupd", {}, show_data
+    return requests.post, "admin/system/sessionsupd", {}, show_data
 
 
 @convert_to_command(click)
