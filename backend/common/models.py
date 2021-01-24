@@ -17,15 +17,19 @@ class User(BaseUser):
 		(2, "Station Owner"),
 		(3, "Energy Provider"),
 	]
-
-	user_type = models.IntegerField(choices=USER_TYPE_CHOICES)
+	#username = models.CharField(max_length=15, unique=True, db_index=True, primary_key=True)
+	user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 class VehicleOwner(models.Model):
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	user = models.OneToOneField(
     	User,
         on_delete=models.CASCADE,
         related_name="vehicle_owner"
     )
+
+	def __str__(self):
+		return f'{self.user.username}'
 
 class VehicleModel(models.Model):
     class Engine(models.TextChoices):
@@ -43,6 +47,7 @@ class VehicleModel(models.Model):
         TYPE1 = "type1"
         TYPE2 = "type2"
 
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     engine_type = models.CharField(max_length=8, choices=Engine.choices)
     release_year = models.PositiveSmallIntegerField(null=True)
     brand = models.CharField(max_length=32)
@@ -61,7 +66,10 @@ class VehicleModel(models.Model):
     is_default_curve = models.BooleanField(null=True)
 
     usable_battery_size = models.FloatField()
-    average_energy_consumption = models.FloatField()    
+    average_energy_consumption = models.FloatField() 
+
+    def __str__(self):
+        return "%s  %s"% (self.brand, self.model)   
 
 class Vehicle(models.Model):
     model=models.ForeignKey(VehicleModel,on_delete= models.CASCADE,
@@ -72,10 +80,13 @@ class Vehicle(models.Model):
     )
     id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 
+    def __str__(self):
+        return "%s's %s"%(self.owner, self.model)
+
 class Profile(models.Model):
     user = models.OneToOneField(User, unique=True, related_name='profile', on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
-
+    
     def __str__(self):
         return f'{self.user.username} Profile'
 
@@ -91,12 +102,14 @@ class Profile(models.Model):
 
 class Owner(models.Model):
 	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 
 	def __str__(self):
 		return f'{self.user.username} Profile'
 
 class Location(models.Model):
 	#location_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	email = models.EmailField()
 	website = models.URLField()
 	telephone = PhoneField(blank=True)
@@ -111,6 +124,7 @@ class Location(models.Model):
 
 class Cluster(models.Model):
 	#cluster_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	cluster_name = models.CharField(max_length = 15)
 	
 	def __str__(self):
@@ -118,13 +132,16 @@ class Cluster(models.Model):
 
 class Provider(models.Model):
 	#provider_id = models.AutoField(primary_key = True)
-	user = models.OneToOneField(User, on_delete=models.CASCADE)	
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
+	user = models.OneToOneField(User, on_delete=models.CASCADE)
+	provider_name = models.CharField(max_length = 20)
 
 	def __str__(self):
 		return f'Provider name = {self.user.username}'
 
 class ChargingStation(models.Model):
 	#charging_station_id = models.AutoField(primary_key = True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
 	cluster = models.ForeignKey(Cluster, on_delete = models.CASCADE)
 	provider = models.ForeignKey(Provider , on_delete = models.CASCADE)
@@ -221,6 +238,7 @@ class ChargingPoint(models.Model):
 	]
 
     #charging_point_id = models.AutoField(primary_key=True)
+	id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
 	charging_station = models.ForeignKey(ChargingStation , on_delete = models.CASCADE)
 	connection_type = models.IntegerField(choices = CONNECTION_TYPE_CHOICES)
 	current_type = models.IntegerField(choices = CURRENT_TYPE_CHOICES)
@@ -239,6 +257,7 @@ class ChargingPoint(models.Model):
 class Session(models.Model):
     id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     user_comments_ratings = models.TextField()
+    provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     #cluster = models.CharField(max_length=100)   #potential fk Null
     kwh_delivered = models.IntegerField() #check type
     site_id = models.UUIDField(editable=False,default=uuid.uuid4)
@@ -249,9 +268,10 @@ class Session(models.Model):
     vehicle = models.ForeignKey(Vehicle, on_delete=models.CASCADE, related_name="sessions")
 
     def __str__(self):
-        return str((self.vehicle_id, self.charging_point_id,self.connect_time,self.kwh_delivered))
+        return f'Id = {self.id}'
         
 class Payment(models.Model):
+    id = models.UUIDField(primary_key=True,editable=False,default=uuid.uuid4)
     _PAYMENT_METHODS = [
         ('credit_card','credit card'),
         ('cash','cash'),
