@@ -1,8 +1,8 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User as AuthUser
 from common.models import User, Session
-from django.contrib.auth.validators import UnicodeUsernameValidator
 from rest_framework import serializers
+from django.contrib.auth import authenticate
 
 class SessionSerializer(serializers.ModelSerializer):
     class Meta:    
@@ -30,21 +30,35 @@ class UserSerializer(serializers.ModelSerializer):
         model = User
         #fields = ['username', 'password']
         fields = '__all__'
-    '''   
-    def update(self, instance, validated_data):
 
-        password = validated_data.pop('password', None)
+'''
+class UserLoginSerializer(serializers.Serializer):
 
-        for (key, value) in validated_data.items():
-            setattr(instance, key, value)
+    username = serializers.CharField(max_length=20)
+    password = serializers.CharField(max_length=128, write_only=True)
+    #token = serializers.CharField(max_length=255, read_only=True)
 
-        if password is not None:
-            instance.set_password(password)
-
-        instance.save()
-
-        return instance
-    '''
+    def validate(self, data):
+        username = data.get("username", None)
+        password = data.get("password", None)
+        user = authenticate(username=username, password=password)
+        if user is None:
+            raise serializers.ValidationError(
+                'A user with this username and password is not found.'
+            )
+        try:
+            #payload = JWT_PAYLOAD_HANDLER(user)
+            token = Token.objects.get_or_create(user=user)
+            #update_last_login(None, user)
+        except User.DoesNotExist:
+            raise serializers.ValidationError(
+                'User with this username and password does not exist'
+            )
+        return {
+            'username':user.username,
+            'token': token
+        }
+'''
     
 class UserPasswordSerializer(serializers.ModelSerializer):
 

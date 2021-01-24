@@ -6,7 +6,7 @@ from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.renderers import TemplateHTMLRenderer, JSONRenderer
 from rest_framework.response import Response
 from rest_framework.decorators import action
-from .serializers import UserSerializer, CreateUserSerializer, ChangePasswordSerializer, AuthUserSerializer, SessionSerializer
+from ..serializers import UserSerializer, CreateUserSerializer, ChangePasswordSerializer, AuthUserSerializer, SessionSerializer
 from django.contrib.auth.models import User as AuthUser
 from common.models import User, Session
 from rest_framework.authentication import TokenAuthentication
@@ -21,6 +21,8 @@ import json
 from django.core.serializers.json import DjangoJSONEncoder
 from django.db import connections
 from django.db.utils import OperationalError
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
 
 class MyEncoder(JSONEncoder):
         def default(self, o):
@@ -65,9 +67,11 @@ class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
     queryset = User.objects.all()
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    #lookup_fields = ['username', 'password', 'id']  
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'ev_charging_api/detail.html'
+    lookup_fields = ['username', 'password',]  
     #lookup_field = 'id'  
-    
+
     def post(self, request, username=None, password=None):
         try:
             self.object = User.objects.get(username=username)
@@ -101,11 +105,6 @@ class UsermodAPIView(generics.GenericAPIView, mixins.ListModelMixin, mixins.Crea
                 serializer.save()
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-    '''
-    def put(self, request, pk=None):
-        return self.update(request, pk)
-    '''
 
 class LogoutView(APIView):
     authentication_classes = [TokenAuthentication]
@@ -176,11 +175,8 @@ class SessionsPerStationView(generics.GenericAPIView, mixins.ListModelMixin, mix
         range_left = datetime(year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc)
         range_right = datetime(year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc)
         sessions = self.queryset.filter(charging_point__charging_station=id).filter(connect_time__range=[range_left,range_right])
-        #serialized_q = json.dumps(list(sessions.__dict__), cls=DjangoJSONEncoder)
-        #print("This is sessions: ", sessions.__dict__, "HIIIIIIII!!!!!!!\n")
         serializer = SessionSerializer(sessions, many=True)        
-        #print("This is serializer: ", serializer, "HIIIIIIII!!!!!!!\n")
-        return Response(serializer.data)#Response(serializer.data)
+        return Response(serializer.data)
 
 class SessionsPerVehicleView(generics.GenericAPIView, mixins.ListModelMixin, mixins.CreateModelMixin,
                      mixins.UpdateModelMixin, mixins.RetrieveModelMixin,
@@ -275,3 +271,23 @@ class ResetSessionsView(generics.GenericAPIView, mixins.ListModelMixin, mixins.C
             "status": "failed"
             } 
             return Response(response)
+
+class CustomAuthToken(ObtainAuthToken):
+    renderer_classes = [TemplateHTMLRenderer]
+    template_name = 'ev_charging_api/detail.html'
+
+    def get(self, request):
+        serializer = UserLoginSerializer()
+        return Response({'serializer': serializer,})
+
+    def post(self, request, *args, **kwargs):
+        serializer = self.serializer_class(data=request.data,
+                                           context={'request': request})
+        serializer.is_valid(raise_exception=True)
+        user = serializer.validated_data['user']
+        token, created = Token.objects.get_or_create(user=user)
+        return Response({
+            'token': token.key,
+            'user_id': user.pk,
+            'email': user.email
+        })
