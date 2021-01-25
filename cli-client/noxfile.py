@@ -16,6 +16,6 @@ def flake8(session):
 
 @nox.session(reuse_venv=True)
 def style(session):
-    session.install("isort", "black", "flake8")
+    session.install("isort", "black")
     session.run("isort", "--check", "--diff", "--profile", "black", "evcharge87.py")
     session.run("black", "--check", "--diff", "evcharge87.py")
