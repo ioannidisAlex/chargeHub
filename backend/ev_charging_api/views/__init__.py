@@ -1,8 +1,21 @@
-from .views import ExampleView, CSRFGeneratorView, UsermodAPIView, LogoutView, RetrieveUserViewSet, SessionsPerPointView, SessionsPerStationView, SessionsPerVehicleView, SessionsPerProviderView, HealthcheckView, ResetSessionsView, CustomAuthToken
+from .views import (
+    CSRFGeneratorView,
+    CustomAuthToken,
+    ExampleView,
+    HealthcheckView,
+    LogoutView,
+    ResetSessionsView,
+    RetrieveUserViewSet,
+    SessionsPerPointView,
+    SessionsPerProviderView,
+    SessionsPerStationView,
+    SessionsPerVehicleView,
+    UsermodAPIView,
+)
 
-'''
+"""
 from django.shortcuts import render, redirect
 
 def home(request):
     return render(request, 'ev_charging_api/api.html')
-'''
+"""
