@@ -1,10 +1,25 @@
 from django.contrib import admin
-from .models import Location, Cluster, ChargingPoint, Provider , ChargingStation, Profile, Owner, User, Vehicle, VehicleModel, VehicleOwner, Session, Payment
+
+from .models import (
+    ChargingPoint,
+    ChargingStation,
+    Cluster,
+    Location,
+    Owner,
+    Payment,
+    Profile,
+    Provider,
+    Session,
+    User,
+    Vehicle,
+    VehicleModel,
+    VehicleOwner,
+)
 
 admin.site.register(Payment)
 admin.site.register(Session)
 admin.site.register(VehicleOwner)
-admin.site.register(Vehicle)  
+admin.site.register(Vehicle)
 admin.site.register(VehicleModel)
 admin.site.register(Location)
 admin.site.register(ChargingPoint)

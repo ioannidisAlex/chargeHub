@@ -1,37 +1,42 @@
-from rest_framework import serializers
-from django.contrib.auth.models import User as AuthUser
-from common.models import User, Session
-from rest_framework import serializers
 from django.contrib.auth import authenticate
+from django.contrib.auth.models import User as AuthUser
+from rest_framework import serializers
+
+from common.models import Session, User
+
 
 class SessionSerializer(serializers.ModelSerializer):
-    class Meta:    
+    class Meta:
         model = Session
-        fields = '__all__'
+        fields = "__all__"
+
 
 class ChangePasswordSerializer(serializers.Serializer):
-    class Meta:    
+    class Meta:
         model = User
 
         """
         Serializer for password change endpoint.
         """
-        #old_password = serializers.CharField(required=True)
+        # old_password = serializers.CharField(required=True)
         new_password = serializers.CharField(required=True)
+
 
 class AuthUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = AuthUser
-        #fields = ['username', 'password']
-        fields = '__all__'
+        # fields = ['username', 'password']
+        fields = "__all__"
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        #fields = ['username', 'password']
-        fields = '__all__'
+        # fields = ['username', 'password']
+        fields = "__all__"
 
-'''
+
+"""
 class UserLoginSerializer(serializers.Serializer):
 
     username = serializers.CharField(max_length=20)
@@ -58,15 +63,13 @@ class UserLoginSerializer(serializers.Serializer):
             'username':user.username,
             'token': token
         }
-'''
-    
-class UserPasswordSerializer(serializers.ModelSerializer):
+"""
 
+
+class UserPasswordSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = [
-            'password'
-        ]
+        fields = ["password"]
 
         extra_kwargs = {
             "password": {"write_only": True},
@@ -74,7 +77,7 @@ class UserPasswordSerializer(serializers.ModelSerializer):
 
     def update(self, instance, validated_data):
         for attr, value in validated_data.items():
-            if attr == 'password':
+            if attr == "password":
                 instance.set_password(value)
             else:
                 setattr(instance, attr, value)
@@ -83,15 +86,13 @@ class UserPasswordSerializer(serializers.ModelSerializer):
 
 
 class CreateUserSerializer(serializers.ModelSerializer):
-  class Meta:
-    model = User
-    fields = ('username', 'password')
-    extra_kwargs = {'password': {'write_only': True}}
+    class Meta:
+        model = User
+        fields = ("username", "password")
+        extra_kwargs = {"password": {"write_only": True}}
 
-  def create(self, validated_data):
-    user = User(
-        username=validated_data['username']
-    )
-    user.set_password(validated_data['password'])
-    user.save()
-    return user
+    def create(self, validated_data):
+        user = User(username=validated_data["username"])
+        user.set_password(validated_data["password"])
+        user.save()
+        return user
