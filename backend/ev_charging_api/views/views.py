@@ -98,11 +98,8 @@ class UsermodAPIView(
     def post(self, request, username, password):
         try:
             self.object = AuthUser.objects.get(username=username)
-            print('\n\nhi1\n\n')
             self.object.set_password(password)
-            print('\n\nhi1\n\n')
             self.object.save()
-            print('\n\nhi1\n\n')
             response = {
                 "status": "success",
                 "code": status.HTTP_200_OK,
