@@ -29,10 +29,10 @@ from common.models import Session, User
 
 from ..serializers import (
     AuthUserSerializer,
-    ChangePasswordSerializer,
     CreateUserSerializer,
     SessionSerializer,
     UserSerializer,
+    AdminUserSerializer
 )
 
 
@@ -90,42 +90,32 @@ class UsermodAPIView(
     queryset = User.objects.all()
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = "ev_charging_api/detail.html"
     lookup_fields = [
         "username",
         "password",
     ]
-    # lookup_field = 'id'
-
-    def post(self, request, username=None, password=None):
+    
+    def post(self, request, username, password):
         try:
-            self.object = User.objects.get(username=username)
-            serializer = ChangePasswordSerializer(data={"new_password": password})
-
-            if serializer.is_valid():
-                #### Check old password
-                # if not self.object.check_password(serializer.data.get("old_password")):
-                #    return Response({"old_password": ["Wrong password."]}, status=status.HTTP_400_BAD_REQUEST)
-                #### set_password also hashes the password that the user will get
-                self.object.set_password(serializer.data.get("new_password"))
-                self.object.save()
-                response = {
-                    "status": "success",
-                    "code": status.HTTP_200_OK,
-                    "message": "Password updated successfully",
-                    "data": [],
-                }
-
-                return Response(response)
-
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            self.object = AuthUser.objects.get(username=username)
+            print('\n\nhi1\n\n')
+            self.object.set_password(password)
+            print('\n\nhi1\n\n')
+            self.object.save()
+            print('\n\nhi1\n\n')
+            response = {
+                "status": "success",
+                "code": status.HTTP_200_OK,
+                "message": "Password updated successfully",
+                "data": [],
+            }
+            return Response(response)
 
         except:
             data = {"username": username, "password": password}
             serializer = CreateUserSerializer(data=data)
             if serializer.is_valid():
-                serializer.save()
+                serializer.create(serializer.validated_data)
                 return Response(serializer.data)
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
@@ -336,7 +326,7 @@ class ResetSessionsView(
 ):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    serializer_class = SessionSerializer
+    serializer_class = [SessionSerializer]
     queryset = Session.objects.all()
 
     def post(self, request):
@@ -351,16 +341,17 @@ class ResetSessionsView(
             response = {
                 "status": "OK",
             }
-            serializer = UserSerializer(data=admin_user)
+            serializer = AdminUserSerializer(data=admin_user)
             if serializer.is_valid():
-                serializer.save()
+                serializer.create(serializer.validated_data)
             return Response(response)
 
         except:
+            raise
             response = {"status": "failed"}
             return Response(response)
 
-
+'''
 class CustomAuthToken(ObtainAuthToken):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = "ev_charging_api/detail.html"
@@ -381,3 +372,4 @@ class CustomAuthToken(ObtainAuthToken):
         user = serializer.validated_data["user"]
         token, created = Token.objects.get_or_create(user=user)
         return Response({"token": token.key, "user_id": user.pk, "email": user.email})
+'''
