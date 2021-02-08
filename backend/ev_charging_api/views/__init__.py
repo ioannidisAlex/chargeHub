@@ -1,6 +1,5 @@
-from .views import (
+from .views import (  # CustomAuthToken,
     CSRFGeneratorView,
-    #CustomAuthToken,
     ExampleView,
     HealthcheckView,
     LogoutView,

@@ -28,11 +28,11 @@ from rest_framework.views import APIView
 from common.models import Session, User
 
 from ..serializers import (
+    AdminUserSerializer,
     AuthUserSerializer,
     CreateUserSerializer,
     SessionSerializer,
     UserSerializer,
-    AdminUserSerializer
 )
 
 
@@ -94,15 +94,15 @@ class UsermodAPIView(
         "username",
         "password",
     ]
-    
+
     def post(self, request, username, password):
         try:
             self.object = AuthUser.objects.get(username=username)
-            print('\n\nhi1\n\n')
+            print("\n\nhi1\n\n")
             self.object.set_password(password)
-            print('\n\nhi1\n\n')
+            print("\n\nhi1\n\n")
             self.object.save()
-            print('\n\nhi1\n\n')
+            print("\n\nhi1\n\n")
             response = {
                 "status": "success",
                 "code": status.HTTP_200_OK,
@@ -351,7 +351,8 @@ class ResetSessionsView(
             response = {"status": "failed"}
             return Response(response)
 
-'''
+
+"""
 class CustomAuthToken(ObtainAuthToken):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = "ev_charging_api/detail.html"
@@ -372,4 +373,4 @@ class CustomAuthToken(ObtainAuthToken):
         user = serializer.validated_data["user"]
         token, created = Token.objects.get_or_create(user=user)
         return Response({"token": token.key, "user_id": user.pk, "email": user.email})
-'''
+"""

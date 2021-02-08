@@ -74,7 +74,11 @@ urlpatterns = [
     path("rest_login/", views.obtain_auth_token, name="rest_login"),
     path("rest_logout/", api_views.LogoutView.as_view(), name="rest_logout"),
     path("api/", include(router.urls)),
-    path("api/usermod/<str:username>/<str:password>/", api_views.UsermodAPIView.as_view(), name="usermod"),
+    path(
+        "api/usermod/<str:username>/<str:password>/",
+        api_views.UsermodAPIView.as_view(),
+        name="usermod",
+    ),
     path("home/", common_views.home, name="home"),
     path("register/", common_views.register, name="register"),
     path(
