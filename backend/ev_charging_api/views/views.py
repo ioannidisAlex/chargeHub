@@ -25,6 +25,7 @@ from rest_framework.renderers import JSONRenderer, TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_csv import renderers as r
+from rest_framework import filters
 
 from common.models import Session, User
 
@@ -46,7 +47,7 @@ class ExampleView(APIView):
     authentication_classes = [SessionAuthentication, BasicAuthentication]
     permission_classes = [IsAuthenticated]
 
-    def get(self, request, format=None):
+    def get(self, request):
         content = {
             "user": str(request.user),  # `django.contrib.auth.User` instance.
             "auth": str(request.auth),  # None
@@ -97,7 +98,7 @@ class UsermodAPIView(
     ]
     
     def post(self, request, username, password):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         try:
             self.object = AuthUser.objects.get(username=username)
             self.object.set_password(password)
@@ -108,7 +109,7 @@ class UsermodAPIView(
                 "message": "Password updated successfully",
                 "data": [],
             }
-            if(format == "csv"):
+            if(form == "csv"):
                 renderer = r.CSVRenderer()
                 return Response(renderer.render(data = response))
             else:
@@ -119,7 +120,7 @@ class UsermodAPIView(
             serializer = CreateUserSerializer(data=data)
             if serializer.is_valid():
                 serializer.create(serializer.validated_data)
-                if(format == "csv"):
+                if(form == "csv"):
                     renderer = r.CSVRenderer()
                     return Response(renderer.render(data = serializer.data))
                 else:
@@ -135,13 +136,14 @@ class LogoutView(APIView):
         self,
         request,
     ):
+        form = request.GET.get('form', '')
         response = {
             "status": "success",
             "code": status.HTTP_200_OK,
             "message": "Logged out succesfully",
             "data": [],
         }
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = response))
         else:
@@ -151,29 +153,28 @@ class LogoutView(APIView):
 class RetrieveUserViewSet(viewsets.ViewSet):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    lookup_field = "username"
+    lookup_fields = ["username"]
     serializer_class = AuthUserSerializer
     queryset = AuthUser.objects.all()
 
     def retrieve(self, request, username=None):
-        request.GET.get('format', '')
+        form = request.query_params.get('form', None)
         user = get_object_or_404(self.queryset, username=username)
         serializer = AuthUserSerializer(user)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
             return Response(serializer.data)
 
     def list(self, request):
-        request.GET.get('format', '')
+        form = request.query_params.get('form', None)
         serializer = AuthUserSerializer(self.queryset, many=True)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
             return Response(serializer.data)
-
 
 class SessionsPerPointView(
     generics.GenericAPIView,
@@ -184,13 +185,15 @@ class SessionsPerPointView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
+    search_fields = ['question_text']
+    filter_backends = (filters.SearchFilter,)
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
     def get(self, request, id=None, date_from=None, date_to=None):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
         day_from = int(date_from[6:8])
@@ -207,7 +210,7 @@ class SessionsPerPointView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
@@ -229,7 +232,7 @@ class SessionsPerStationView(
     queryset = Session.objects.all()
 
     def get(self, request, id=None, date_from=None, date_to=None):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
         day_from = int(date_from[6:8])
@@ -246,7 +249,7 @@ class SessionsPerStationView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
@@ -268,7 +271,7 @@ class SessionsPerVehicleView(
     queryset = Session.objects.all()
 
     def get(self, request, id=None, date_from=None, date_to=None):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
         day_from = int(date_from[6:8])
@@ -285,7 +288,7 @@ class SessionsPerVehicleView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
@@ -307,7 +310,7 @@ class SessionsPerProviderView(
     queryset = Session.objects.all()
 
     def get(self, request, id=None, date_from=None, date_to=None):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
         day_from = int(date_from[6:8])
@@ -324,7 +327,7 @@ class SessionsPerProviderView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
-        if(format == "csv"):
+        if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
         else:
@@ -344,12 +347,12 @@ class HealthcheckView(
     permission_classes = [IsAuthenticated]
 
     def get(self, request):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         db_conn = connections["default"]
         try:
             c = db_conn.cursor()
             response = {"status": "OK"}
-            if(format == "csv"):
+            if(form == "csv"):
                 renderer = r.CSVRenderer()
                 return Response(renderer.render(data = response))
             else:
@@ -357,7 +360,7 @@ class HealthcheckView(
 
         except:
             response = {"status": "failed"}
-            if(format == "csv"):
+            if(form == "csv"):
                 renderer = r.CSVRenderer()
                 return Response(renderer.render(data = response))
             else:
@@ -379,7 +382,7 @@ class ResetSessionsView(
     queryset = Session.objects.all()
 
     def post(self, request):
-        request.GET.get('format', '')
+        form = request.GET.get('form', '')
         try:
             self.queryset.delete()
             admin_user = {
@@ -394,7 +397,7 @@ class ResetSessionsView(
             serializer = AdminUserSerializer(data=admin_user)
             if serializer.is_valid():
                 serializer.create(serializer.validated_data)
-            if(format == "csv"):
+            if(form == "csv"):
                 renderer = r.CSVRenderer()
                 return Response(renderer.render(data = response))
             else:
@@ -403,7 +406,7 @@ class ResetSessionsView(
         except:
             raise
             response = {"status": "failed"}
-            if(format == "csv"):
+            if(form == "csv"):
                 renderer = r.CSVRenderer()
                 return Response(renderer.render(data = response))
             else:

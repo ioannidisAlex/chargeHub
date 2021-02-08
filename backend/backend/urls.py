@@ -42,18 +42,25 @@ urlpatterns = [
     # path('api-auth/', include('rest_framework.urls')),
     # path('api/usermod/<int:pk>/', api_views.UsermodAPIView.as_view()),
     # path('api/', include(router2.urls)),
+    #path("hello/", api_views.hello.as_view(),),
     path(
         "admin/resetsessions/",
         api_views.ResetSessionsView.as_view(),
         name="resetsessions",
     ),
     path("admin/healthcheck/", api_views.HealthcheckView.as_view(), name="healthcheck"),
+    
+
+    #re_path(r'^SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/$',
+    # api_views.SessionsPerPointView.as_view(),
+    #  name='sessions_per_point'),
     path(
         "SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
-    #re_path(r'^sessions_per_point/(?P<format>\w{0,5})/$', api_views.SessionsPerPointView.as_view(),),
+    
+
     path(
         "SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerStationView.as_view(),
