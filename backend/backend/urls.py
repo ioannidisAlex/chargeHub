@@ -77,6 +77,7 @@ urlpatterns = [
         name="sessions_per_provider",
     ),
     path("admin/", admin.site.urls),
+    path("admin/system/sessionsupd/", api_views.SessionsupdView.as_view(), name = "sessionsupd"),
     path("example/", api_views.ExampleView.as_view(), name="example"),
     path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
     path("rest_login/", views.obtain_auth_token, name="rest_login"),

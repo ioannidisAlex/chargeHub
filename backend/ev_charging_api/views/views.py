@@ -1,3 +1,6 @@
+import io
+import csv
+import pysnooper
 import json
 from datetime import datetime
 from json import JSONEncoder
@@ -34,7 +37,8 @@ from ..serializers import (
     CreateUserSerializer,
     SessionSerializer,
     UserSerializer,
-    AdminUserSerializer
+    AdminUserSerializer,
+    FileUploadSerializer,
 )
 
 
@@ -412,25 +416,81 @@ class ResetSessionsView(
             else:
                 return Response(response)
 
-'''
-class CustomAuthToken(ObtainAuthToken):
-    renderer_classes = [TemplateHTMLRenderer]
-    template_name = "ev_charging_api/detail.html"
-
-    def get(self, request):
-        serializer = UserLoginSerializer()
-        return Response(
-            {
-                "serializer": serializer,
-            }
-        )
+#@pysnooper.snoop()
+class SessionsupdView(
+    generics.GenericAPIView,
+    mixins.ListModelMixin,
+    mixins.CreateModelMixin,
+    mixins.UpdateModelMixin,
+    mixins.RetrieveModelMixin,
+    mixins.DestroyModelMixin,
+    MultipleFieldLookupMixin,
+):
+    authentication_classes = [TokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = FileUploadSerializer
+    queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
-        serializer = self.serializer_class(
-            data=request.data, context={"request": request}
-        )
+        serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        user = serializer.validated_data["user"]
-        token, created = Token.objects.get_or_create(user=user)
-        return Response({"token": token.key, "user_id": user.pk, "email": user.email})
+        file = serializer.validated_data['file']
+        decoded_file = file.read().decode()
+        io_string = io.StringIO(decoded_file)
+        reader = csv.reader(io_string)
+        sessions_count = 0
+        imported_count = 0
+        for row in reader:
+            sessions_count += 1
+            imported_count += 1
+            c_year = int(row[3][:4])
+            c_month = int(row[3][4:6])
+            c_day = int(row[3][6:8])
+            c_hour = int(row[3][8:10])
+            c_minutes = int(row[3][10:12])
+            d_year = int(row[4][:4])
+            d_month = int(row[4][4:6])
+            d_day = int(row[4][6:8])
+            d_hour = int(row[4][8:10])
+            d_minutes = int(row[4][10:12])
+            done_year = int(row[5][:4])
+            done_month = int(row[5][4:6])
+            done_day = int(row[5][6:8])
+            done_hour = int(row[5][8:10])
+            done_minutes = int(row[5][10:12])
+            session = {
+            "user_comments_ratings": row[0],
+            "provider": row[1],
+            "kwh_delivered": row[2],
+            "connect_time": datetime(
+            c_year, c_month, c_day, c_hour, c_minutes, 0, 0, tzinfo=timezone.utc
+        ),
+            "disconnect_time": datetime(
+            d_year, d_month, d_day, d_hour, d_minutes, 0, 0, tzinfo=timezone.utc
+        ),
+            "done_charging_time": datetime(
+            done_year, done_month, done_day, done_hour, done_minutes, 0, 0, tzinfo=timezone.utc
+        ),
+            "charging_point": row[6],
+            "vehicle": row[7],
+            }
+            serializer = SessionSerializer(data = session)
+            if(serializer.is_valid()):
+
+                serializer.create(serializer.validated_data)
+        response = {
+                "SessionsInUploadedFile": sessions_count,
+                "SessionsImported": imported_count,
+                "TotalSessionsInDatabase": self.queryset.count(),
+            }
+        return Response(response)
+'''
+    def post(self, request):
+        form = request.GET.get('form', '')
+
+        if(form == "csv"):
+            renderer = r.CSVRenderer()
+            return Response(renderer.render(data = response))
+        else:
+            return Response(response)
 '''

@@ -11,6 +11,7 @@ from .views import (
     SessionsPerStationView,
     SessionsPerVehicleView,
     UsermodAPIView,
+    SessionsupdView,
 )
 
 """
