@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.utils import timezone
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
@@ -53,6 +53,7 @@ urlpatterns = [
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
+    #re_path(r'^sessions_per_point/(?P<format>\w{0,5})/$', api_views.SessionsPerPointView.as_view(),),
     path(
         "SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerStationView.as_view(),

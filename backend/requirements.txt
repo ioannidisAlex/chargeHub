@@ -7,3 +7,4 @@ localflavor==1.8
 Pillow==8.1.0
 django_crispy_forms
 django_rest_auth
+djangorestframework-csv
