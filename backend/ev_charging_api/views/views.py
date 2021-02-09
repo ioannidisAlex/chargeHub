@@ -5,6 +5,7 @@ import json
 from datetime import datetime
 from json import JSONEncoder
 
+from django.db.models import Sum
 from django.contrib.auth.models import User as AuthUser
 from django.core.serializers.json import DjangoJSONEncoder
 from django.db import connections
@@ -30,7 +31,7 @@ from rest_framework.views import APIView
 from rest_framework_csv import renderers as r
 from rest_framework import filters
 
-from common.models import Session, User
+from common.models import Session, User, ChargingPoint
 
 from ..serializers import (
     AuthUserSerializer,
@@ -194,7 +195,7 @@ class SessionsPerPointView(
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-    def get(self, request, id=None, date_from=None, date_to=None):
+    def get(self, request, id, date_from, date_to):
         form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
@@ -212,11 +213,21 @@ class SessionsPerPointView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
+        response = {
+        "Point": id,
+        "PointOperator": sessions.first().charging_point.charging_station.owner.id,
+        "RequestTimestamp": datetime.now(),
+        "PeriodFrom": range_left,
+        "PeriodTo": range_right,
+        "NumberOfChargingSessions": sessions.count(),
+        "ChargingSessionsList": serializer.data,
+        #sessions need more fields!!!
+        }
         if(form == "csv"):
             renderer = r.CSVRenderer()
-            return Response(renderer.render(data = serializer.data))
+            return Response(renderer.render(data = response))
         else:
-            return Response(serializer.data)
+            return Response(response)
 
 
 class SessionsPerStationView(
@@ -233,7 +244,7 @@ class SessionsPerStationView(
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-    def get(self, request, id=None, date_from=None, date_to=None):
+    def get(self, request, id, date_from, date_to):
         form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
@@ -247,15 +258,27 @@ class SessionsPerStationView(
         range_right = datetime(
             year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
         )
-        sessions = self.queryset.filter(charging_point__charging_station=id).filter(
+        sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
+        response = {
+        "StationID": id,
+        "PointOperator": sessions.first().charging_point.charging_station.owner.id,
+        "RequestTimestamp": datetime.now(),
+        "PeriodFrom": range_left,
+        "PeriodTo": range_right,
+        "TotalEnergyDelivered": sessions.aggregate(Sum('kwh_delivered'))['kwh_delivered__sum'],
+        "NumberOfChargingSessions": sessions.count(),
+        "NumberOfActivePoints": ChargingPoint.objects.all().filter(charging_station__id=id).count(),
+        "SessionsSummaryList": serializer.data,
+        #sessions need more fields!!!
+        }
         if(form == "csv"):
             renderer = r.CSVRenderer()
-            return Response(renderer.render(data = serializer.data))
+            return Response(renderer.render(data = response))
         else:
-            return Response(serializer.data)
+            return Response(response)
 
 
 class SessionsPerVehicleView(
@@ -272,7 +295,7 @@ class SessionsPerVehicleView(
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-    def get(self, request, id=None, date_from=None, date_to=None):
+    def get(self, request, id, date_from, date_to):
         form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
@@ -290,11 +313,22 @@ class SessionsPerVehicleView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
+        response = {
+        "VehicleID": id,
+        "RequestTimestamp": datetime.now(),
+        "PeriodFrom": range_left,
+        "PeriodTo": range_right,
+        "TotalEnergyDelivered": sessions.aggregate(Sum('kwh_delivered'))['kwh_delivered__sum'],
+        "NumberOfVisitedPoints": sessions.order_by().values('charging_point').distinct().count(),
+        "NumberOfVehicleChargingSessions": sessions.count(),
+        "VehicleChargingSessionsList": serializer.data,
+        #sessions need more fields!!!
+        }
         if(form == "csv"):
             renderer = r.CSVRenderer()
-            return Response(renderer.render(data = serializer.data))
+            return Response(renderer.render(data = response))
         else:
-            return Response(serializer.data)
+            return Response(response)
 
 
 class SessionsPerProviderView(
@@ -311,7 +345,7 @@ class SessionsPerProviderView(
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-    def get(self, request, id=None, date_from=None, date_to=None):
+    def get(self, request, id, date_from, date_to):
         form = request.GET.get('form', '')
         year_from = int(date_from[:4])
         month_from = int(date_from[4:6])
@@ -329,11 +363,18 @@ class SessionsPerProviderView(
             connect_time__range=[range_left, range_right]
         )
         serializer = SessionSerializer(sessions, many=True)
+        response = {
+        "ProviderID": id,
+        "providerName": sessions.first().provider.provider_name,
+        "RequestTimestamp": datetime.now(),
+        "SessionsList": serializer.data,
+        #sessions need more fields!!!
+        }
         if(form == "csv"):
             renderer = r.CSVRenderer()
-            return Response(renderer.render(data = serializer.data))
+            return Response(renderer.render(data = response))
         else:
-            return Response(serializer.data)
+            return Response(response)
 
 
 class HealthcheckView(
