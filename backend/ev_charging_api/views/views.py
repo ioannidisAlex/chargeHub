@@ -189,8 +189,6 @@ class SessionsPerPointView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    search_fields = ['question_text']
-    filter_backends = (filters.SearchFilter,)
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
@@ -432,6 +430,7 @@ class SessionsupdView(
     queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
+        form = request.GET.get('form', '')
         serializer = self.get_serializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         file = serializer.validated_data['file']
@@ -442,7 +441,6 @@ class SessionsupdView(
         imported_count = 0
         for row in reader:
             sessions_count += 1
-            imported_count += 1
             c_year = int(row[3][:4])
             c_month = int(row[3][4:6])
             c_day = int(row[3][6:8])
@@ -476,21 +474,16 @@ class SessionsupdView(
             }
             serializer = SessionSerializer(data = session)
             if(serializer.is_valid()):
-
+                imported_count += 1
                 serializer.create(serializer.validated_data)
+
         response = {
                 "SessionsInUploadedFile": sessions_count,
                 "SessionsImported": imported_count,
                 "TotalSessionsInDatabase": self.queryset.count(),
-            }
-        return Response(response)
-'''
-    def post(self, request):
-        form = request.GET.get('form', '')
-
+        }
         if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = response))
         else:
             return Response(response)
-'''
