@@ -262,9 +262,31 @@ class ChargingPoint(models.Model):
     def __str__(self):
         return f"Id = {self.id}"
 
+class Payment(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    _PAYMENT_METHODS = [
+        ("credit_card", "credit card"),
+        ("cash", "cash"),
+        ("paypal", "paypal"),
+        ("coupon", "coupon"),
+    ]
+
+    payment_req = models.BooleanField(default=False)
+    payment_method = models.CharField(
+        max_length=20, choices=_PAYMENT_METHODS, default="cash"
+    )
+    cost = models.FloatField(blank=True)
+    invoice = models.CharField(max_length=100)
+    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
+    #session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.id)
 
 class Session(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    payment = models.OneToOneField(Payment, on_delete=models.CASCADE)
+    protocol = models.TextField(default="Unknown")
     user_comments_ratings = models.TextField()
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     # cluster = models.CharField(max_length=100)   #potential fk Null
@@ -282,25 +304,3 @@ class Session(models.Model):
 
     def __str__(self):
         return f"Id = {self.id}"
-
-
-class Payment(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    _PAYMENT_METHODS = [
-        ("credit_card", "credit card"),
-        ("cash", "cash"),
-        ("paypal", "paypal"),
-        ("coupon", "coupon"),
-    ]
-
-    payment_req = models.BooleanField(default=False)
-    payment_method = models.CharField(
-        max_length=20, choices=_PAYMENT_METHODS, default="cash"
-    )
-    cost = models.FloatField(blank=True)
-    invoice = models.CharField(max_length=100)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return str((self.session_id, self.user_id))

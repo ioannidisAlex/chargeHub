@@ -212,7 +212,21 @@ class SessionsPerPointView(
         sessions = self.queryset.filter(charging_point__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        serializer = SessionSerializer(sessions, many=True)
+        #serializer = SessionSerializer(sessions, many=True)
+        sessions_list = []
+        session_index = 0
+        for s in sessions:
+            sessions_list.append({})
+            sessions_list[session_index]['SessionIndex'] = session_index
+            sessions_list[session_index]['SessionID'] = s.id
+            sessions_list[session_index]['StartedOn'] = s.connect_time
+            sessions_list[session_index]['FinishedOn'] = s.done_charging_time
+            sessions_list[session_index]['Protocol'] = s.protocol
+            sessions_list[session_index]['EnergyDelivered'] = s.kwh_delivered
+            sessions_list[session_index]['Payment'] = s.payment.payment_method
+            sessions_list[session_index]['VehicleType'] = s.vehicle.model.engine_type
+            session_index += 1
+
         response = {
         "Point": id,
         "PointOperator": sessions.first().charging_point.charging_station.owner.id,
@@ -220,7 +234,7 @@ class SessionsPerPointView(
         "PeriodFrom": range_left,
         "PeriodTo": range_right,
         "NumberOfChargingSessions": sessions.count(),
-        "ChargingSessionsList": serializer.data,
+        "ChargingSessionsList": sessions_list,
         #sessions need more fields!!!
         }
         if(form == "csv"):
@@ -261,17 +275,25 @@ class SessionsPerStationView(
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        serializer = SessionSerializer(sessions, many=True)
+        #serializer = SessionSerializer(sessions, many=True)
+        sessions_list = []
+        for s in sessions:
+            for d in sessions_list:
+                if(s.charging_point.id == d['PointID']):
+                    d['PointSessions'] += 1
+                    d['EnergyDelivered'] += s.kwh_delivered
+                    continue
+            sessions_list.append({"PointID": s.charging_point.id, "PointSessions": 1, "EnergyDelivered": s.kwh_delivered})
         response = {
         "StationID": id,
-        "PointOperator": sessions.first().charging_point.charging_station.owner.id,
+        "Operator": sessions.first().charging_point.charging_station.owner.id,
         "RequestTimestamp": datetime.now(),
         "PeriodFrom": range_left,
         "PeriodTo": range_right,
         "TotalEnergyDelivered": sessions.aggregate(Sum('kwh_delivered'))['kwh_delivered__sum'],
         "NumberOfChargingSessions": sessions.count(),
         "NumberOfActivePoints": ChargingPoint.objects.all().filter(charging_station__id=id).count(),
-        "SessionsSummaryList": serializer.data,
+        "SessionsSummaryList": sessions_list,
         #sessions need more fields!!!
         }
         if(form == "csv"):
@@ -312,7 +334,22 @@ class SessionsPerVehicleView(
         sessions = self.queryset.filter(vehicle__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        serializer = SessionSerializer(sessions, many=True)
+        #serializer = SessionSerializer(sessions, many=True)
+        sessions_list = []
+        session_index = 0
+        for s in sessions:
+            sessions_list.append({})
+            sessions_list[session_index]['SessionIndex'] = session_index
+            sessions_list[session_index]['SessionID'] = s.id
+            sessions_list[session_index]['EnergyProvider'] = s.provider.id
+            sessions_list[session_index]['StartedOn'] = s.connect_time
+            sessions_list[session_index]['FinishedOn'] = s.done_charging_time
+            sessions_list[session_index]['Protocol'] = s.protocol
+            sessions_list[session_index]['EnergyDelivered'] = s.kwh_delivered
+            sessions_list[session_index]['PricePolicyRef'] = s.payment.invoice
+            sessions_list[session_index]['CostPerKWh'] = s.payment.cost/s.kwh_delivered
+            sessions_list[session_index]['SessionCost'] = s.payment.cost
+            session_index += 1
         response = {
         "VehicleID": id,
         "RequestTimestamp": datetime.now(),
@@ -321,8 +358,7 @@ class SessionsPerVehicleView(
         "TotalEnergyDelivered": sessions.aggregate(Sum('kwh_delivered'))['kwh_delivered__sum'],
         "NumberOfVisitedPoints": sessions.order_by().values('charging_point').distinct().count(),
         "NumberOfVehicleChargingSessions": sessions.count(),
-        "VehicleChargingSessionsList": serializer.data,
-        #sessions need more fields!!!
+        "VehicleChargingSessionsList": sessions_list,
         }
         if(form == "csv"):
             renderer = r.CSVRenderer()
@@ -362,13 +398,26 @@ class SessionsPerProviderView(
         sessions = self.queryset.filter(provider__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        serializer = SessionSerializer(sessions, many=True)
+        #serializer = SessionSerializer(sessions, many=True)
+        sessions_list = []
+        session_index = 0
+        for s in sessions:
+            sessions_list.append({})
+            sessions_list[session_index]['StationID'] = s.charging_point.charging_station.id
+            sessions_list[session_index]['SessionID'] = s.id
+            sessions_list[session_index]['VehicleID'] = s.vehicle.id
+            sessions_list[session_index]['StartedOn'] = s.connect_time
+            sessions_list[session_index]['FinishedOn'] = s.done_charging_time
+            sessions_list[session_index]['Protocol'] = s.protocol
+            sessions_list[session_index]['EnergyDelivered'] = s.kwh_delivered
+            sessions_list[session_index]['PricePolicyRef'] = s.payment.invoice
+            sessions_list[session_index]['CostPerKWh'] = s.payment.cost/s.kwh_delivered
+            sessions_list[session_index]['SessionCost'] = s.payment.cost
+            session_index += 1
         response = {
         "ProviderID": id,
-        "providerName": sessions.first().provider.provider_name,
-        "RequestTimestamp": datetime.now(),
-        "SessionsList": serializer.data,
-        #sessions need more fields!!!
+        "ProviderName": sessions.first().provider.provider_name,
+        "SessionsList": sessions_list,
         }
         if(form == "csv"):
             renderer = r.CSVRenderer()
