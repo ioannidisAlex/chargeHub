@@ -278,12 +278,15 @@ class SessionsPerStationView(
         #serializer = SessionSerializer(sessions, many=True)
         sessions_list = []
         for s in sessions:
+            boolean = True
             for d in sessions_list:
                 if(s.charging_point.id == d['PointID']):
                     d['PointSessions'] += 1
                     d['EnergyDelivered'] += s.kwh_delivered
-                    continue
-            sessions_list.append({"PointID": s.charging_point.id, "PointSessions": 1, "EnergyDelivered": s.kwh_delivered})
+                    boolean  = False
+                    break
+            if(boolean):
+                sessions_list.append({"PointID": s.charging_point.id, "PointSessions": 1, "EnergyDelivered": s.kwh_delivered})
         response = {
         "StationID": id,
         "Operator": sessions.first().charging_point.charging_station.owner.id,
