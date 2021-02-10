@@ -9,6 +9,8 @@ from multiselectfield import MultiSelectField
 from phone_field import PhoneField
 from PIL import Image
 
+from .validators import validate_language, validate_positive
+
 
 class User(BaseUser):
     USER_TYPE_CHOICES = [
@@ -56,16 +58,16 @@ class VehicleModel(models.Model):
 
     ac_ports = MultiSelectField(choices=AcCharger.choices, max_choices=2, max_length=5)
     ac_usable_phaces = models.PositiveIntegerField()
-    ac_max_power = models.FloatField()
+    ac_max_power = models.FloatField(validators=[validate_positive])
     ac_charging_power = models.JSONField()
 
     dc_ports = MultiSelectField(choices=DcCharger.choices, max_choices=4, max_length=12)
-    dc_max_power = models.FloatField(null=True)
+    dc_max_power = models.FloatField(null=True, validators=[validate_positive])
     dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
 
-    usable_battery_size = models.FloatField()
-    average_energy_consumption = models.FloatField()
+    usable_battery_size = models.FloatField(validators=[validate_positive])
+    average_energy_consumption = models.FloatField(validators=[validate_positive])
 
     def __str__(self):
         return "%s  %s" % (self.brand, self.model)
@@ -255,9 +257,9 @@ class ChargingPoint(models.Model):
     charger_type = models.IntegerField(choices=CHARGER_TYPE_CHOICES)
     usage_type_id = models.IntegerField(choices=USAGE_TYPE_CHOICES)
     kw_power = models.IntegerField(choices=KW_POWER_CHOICES)
-    usage_cost = models.FloatField()
-    volts_power = models.FloatField()
-    amps_power = models.FloatField()
+    usage_cost = models.FloatField(validators=[validate_positive])
+    volts_power = models.FloatField(validators=[validate_positive])
+    amps_power = models.FloatField(validators=[validate_positive])
 
     def __str__(self):
         return f"Id = {self.id}"
@@ -265,10 +267,10 @@ class ChargingPoint(models.Model):
 
 class Session(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    user_comments_ratings = models.TextField()
+    user_comments_ratings = models.TextField(validators=[validate_language])
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     # cluster = models.CharField(max_length=100)   #potential fk Null
-    kwh_delivered = models.IntegerField()  # check type
+    kwh_delivered = models.IntegerField(validators=[validate_positive])  # check type
     site_id = models.UUIDField(editable=False, default=uuid.uuid4)
     connect_time = models.DateTimeField(null=True)
     disconnect_time = models.DateTimeField(null=True)
@@ -297,7 +299,7 @@ class Payment(models.Model):
     payment_method = models.CharField(
         max_length=20, choices=_PAYMENT_METHODS, default="cash"
     )
-    cost = models.FloatField(blank=True)
+    cost = models.FloatField(blank=True, validators=[validate_positive])
     invoice = models.CharField(max_length=100)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
