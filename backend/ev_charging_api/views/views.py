@@ -4,6 +4,7 @@ import pysnooper
 import json
 from datetime import datetime
 from json import JSONEncoder
+import shortuuid
 
 from django.db.models import Sum
 from django.contrib.auth.models import User as AuthUser
@@ -275,7 +276,11 @@ class SessionsPerStationView(
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        #serializer = SessionSerializer(sessions, many=True)
+        active_points = list(sessions.order_by().values('charging_point').distinct())
+        for p in active_points:
+            if(ChargingPoint.objects.all().get(id=p['charging_point']).is_active==2):
+                active_points.remove(p)
+
         sessions_list = []
         for s in sessions:
             boolean = True
@@ -295,7 +300,7 @@ class SessionsPerStationView(
         "PeriodTo": range_right,
         "TotalEnergyDelivered": sessions.aggregate(Sum('kwh_delivered'))['kwh_delivered__sum'],
         "NumberOfChargingSessions": sessions.count(),
-        "NumberOfActivePoints": ChargingPoint.objects.all().filter(charging_station__id=id).count(),
+        "NumberOfActivePoints": len(active_points),
         "SessionsSummaryList": sessions_list,
         #sessions need more fields!!!
         }
