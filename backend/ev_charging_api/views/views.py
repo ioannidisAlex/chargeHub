@@ -280,9 +280,9 @@ class SessionsPerStationView(
         points_to_remove = []
         for i in range(len(active_points)):
             if(ChargingPoint.objects.all().get(id=active_points[i]['charging_point']).is_active==2):
-                points_to_remove.append(i)
+                points_to_remove.append(active_points[i])
         for i in points_to_remove:
-            active_points.remove(active_points[i])
+            active_points.remove(i)
 
         sessions_list = []
         for s in sessions:
