@@ -277,9 +277,12 @@ class SessionsPerStationView(
             connect_time__range=[range_left, range_right]
         )
         active_points = list(sessions.order_by().values('charging_point').distinct())
-        for p in active_points:
-            if(ChargingPoint.objects.all().get(id=p['charging_point']).is_active==2):
-                active_points.remove(p)
+        points_to_remove = []
+        for i in range(len(active_points)):
+            if(ChargingPoint.objects.all().get(id=active_points[i]['charging_point']).is_active==2):
+                points_to_remove.append(i)
+        for i in points_to_remove:
+            active_points.remove(active_points[i])
 
         sessions_list = []
         for s in sessions:
