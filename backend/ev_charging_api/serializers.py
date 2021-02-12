@@ -1,5 +1,4 @@
 from django.contrib.auth import authenticate
-from django.contrib.auth.models import User as AuthUser
 from rest_framework import serializers
 
 from common.models import Session, User
@@ -9,13 +8,6 @@ class SessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Session
         fields = "__all__"
-
-class AuthUserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = AuthUser
-        # fields = ['username', 'password']
-        fields = "__all__"
-
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
@@ -37,12 +29,12 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
 class AdminUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AuthUser
-        fields = ("username", "password", 'is_staff', 'is_superuser')
+        model = User
+        fields = ("username", "password", "email", 'is_staff', 'is_superuser')
         extra_kwargs = {"password": {"write_only": True}}
 
     def create(self, validated_data):
-        user = User(username=validated_data["username"], is_staff=validated_data['is_staff'], is_superuser=validated_data['is_superuser'])
+        user = User(username=validated_data["username"], email=validated_data['email'] ,is_staff=validated_data['is_staff'], is_superuser=validated_data['is_superuser'])
         user.set_password(validated_data["password"])
         user.save()
         return user

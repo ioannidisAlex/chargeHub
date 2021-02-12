@@ -31,14 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "rest_auth",
-    "rest_framework",
-    "rest_framework.authtoken",
     "multiselectfield",
     "django_countries",
     "crispy_forms",
     "phone_field",
-    "ev_charging_api.apps.EvChargingApiConfig",
     "common.apps.CommonConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -47,23 +43,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 ]
-
-REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": (
-        "rest_framework.renderers.JSONRenderer",
-        #'rest_framework_csv.renderers.CSVRenderer',
-    ),
-    "DEFAULT_PERMISSION_CLASSES": (
-        "rest_framework.permissions.IsAuthenticated",
-        #'rest_framework.permissions.IsAdminUser',
-    ),
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        #'rest_framework.authentication.BasicAuthentication',
-        #'rest_framework.authentication.SessionAuthentication',
-        "rest_framework.authentication.TokenAuthentication",
-        #'rest_framework.permissions.IsAdminUser',
-    ),
-}
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
@@ -75,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "backend.urls"
+ROOT_URLCONF = "front_end.urls"
 
 TEMPLATES = [
     {
@@ -93,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "backend.wsgi.application"
+WSGI_APPLICATION = "front_end.wsgi.application"
 
 
 # Database

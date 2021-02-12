@@ -1,4 +1,4 @@
-"""backend URL Configuration
+"""front_end URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -13,61 +13,17 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-import datetime
-
+from django.contrib import admin
+from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from django.contrib import admin
 from django.contrib.auth import views as auth_views
 from django.urls import include, path, re_path
 from django.utils import timezone
-from rest_framework.authtoken import views
-from rest_framework.routers import DefaultRouter
-
 from common import views as common_views
-from ev_charging_api import views as api_views
-
-router = DefaultRouter()
-router.register(
-    "users",
-    api_views.RetrieveUserViewSet,
-)
 
 urlpatterns = [
-    path(
-        "evcharge/api/admin/resetsessions/",
-        api_views.ResetSessionsView.as_view(),
-        name="resetsessions",
-    ),
-    path("evcharge/api/admin/healthcheck/", api_views.HealthcheckView.as_view(), name="healthcheck"),
-    path(
-        "evcharge/api/SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
-        api_views.SessionsPerPointView.as_view(),
-        name="sessions_per_point",
-    ),
-    
-
-    path(
-        "evcharge/api/SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
-        api_views.SessionsPerStationView.as_view(),
-        name="sessions_per_station",
-    ),
-    path(
-        "evcharge/api/SessionsPerVehicle/<str:id>/<str:date_from>/<str:date_to>/",
-        api_views.SessionsPerVehicleView.as_view(),
-        name="sessions_per_vehicle",
-    ),
-    path(
-        "evcharge/api/SessionsPerProvider/<str:id>/<str:date_from>/<str:date_to>/",
-        api_views.SessionsPerProviderView.as_view(),
-        name="sessions_per_provider",
-    ),
-    path("admin/", admin.site.urls),
-    path("evcharge/api/admin/system/sessionsupd/", api_views.SessionsupdView.as_view(), name = "sessionsupd"),
-    path("evcharge/api/admin/login/", views.obtain_auth_token, name="rest_login"),
-    path("evcharge/api/admin/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
-    path("evcharge/api/admin/", include(router.urls)),
-    path("evcharge/api/admin/usermod/<str:username>/<str:password>/", api_views.UsermodAPIView.as_view(), name="usermod"),
+    path('admin/', admin.site.urls),
     path("home/", common_views.home, name="home"),
     path("register/", common_views.register, name="register"),
     path(
@@ -109,7 +65,6 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
-    #path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]
 
 if settings.DEBUG:

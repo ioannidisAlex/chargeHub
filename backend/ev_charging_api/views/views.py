@@ -7,7 +7,6 @@ from json import JSONEncoder
 import shortuuid
 
 from django.db.models import Sum
-from django.contrib.auth.models import User as AuthUser
 from django.core.serializers.json import DjangoJSONEncoder
 from django.db import connections
 from django.db.utils import OperationalError
@@ -35,37 +34,23 @@ from rest_framework import filters
 from common.models import Session, User, ChargingPoint
 
 from ..serializers import (
-    AuthUserSerializer,
     CreateUserSerializer,
     SessionSerializer,
     UserSerializer,
     AdminUserSerializer,
     FileUploadSerializer,
 )
-
-
+'''
 class MyEncoder(JSONEncoder):
     def default(self, o):
         return o.__dict__
-
-
-class ExampleView(APIView):
-    authentication_classes = [SessionAuthentication, BasicAuthentication]
-    permission_classes = [IsAuthenticated]
-
-    def get(self, request):
-        content = {
-            "user": str(request.user),  # `django.contrib.auth.User` instance.
-            "auth": str(request.auth),  # None
-        }
-        return Response(content)
 
 
 class CSRFGeneratorView(APIView):
     def get(self, request):
         csrf_token = get_token(request)
         return Response(csrf_token)
-
+'''
 
 class MultipleFieldLookupMixin:
     """
@@ -106,7 +91,7 @@ class UsermodAPIView(
     def post(self, request, username, password):
         form = request.GET.get('form', '')
         try:
-            self.object = AuthUser.objects.get(username=username)
+            self.object = User.objects.get(username=username)
             self.object.set_password(password)
             self.object.save()
             response = {
@@ -159,14 +144,14 @@ class LogoutView(APIView):
 class RetrieveUserViewSet(viewsets.ViewSet):
     authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
-    lookup_fields = ["username"]
-    serializer_class = AuthUserSerializer
-    queryset = AuthUser.objects.all()
+    lookup_field = "username"
+    serializer_class = UserSerializer
+    queryset = User.objects.all()
 
     def retrieve(self, request, username=None):
         form = request.query_params.get('form', None)
         user = get_object_or_404(self.queryset, username=username)
-        serializer = AuthUserSerializer(user)
+        serializer = UserSerializer(user)
         if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
@@ -175,7 +160,7 @@ class RetrieveUserViewSet(viewsets.ViewSet):
 
     def list(self, request):
         form = request.query_params.get('form', None)
-        serializer = AuthUserSerializer(self.queryset, many=True)
+        serializer = UserSerializer(self.queryset, many=True)
         if(form == "csv"):
             renderer = r.CSVRenderer()
             return Response(renderer.render(data = serializer.data))
@@ -490,6 +475,7 @@ class ResetSessionsView(
             self.queryset.delete()
             admin_user = {
                 "username": "admin",
+                "email": "somerandomemail123@hotmail.com",
                 "password": "petrol4ever",
                 "is_superuser": True,
                 "is_staff": True,
