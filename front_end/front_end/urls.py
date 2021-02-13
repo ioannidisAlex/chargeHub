@@ -21,6 +21,7 @@ from django.contrib.auth import views as auth_views
 from django.urls import include, path, re_path
 from django.utils import timezone
 from common import views as common_views
+from django.contrib.auth.decorators import login_required, permission_required
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -65,6 +66,62 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
+    path(
+        "rest_login/",
+        login_required(common_views.RestLoginView.as_view()),
+        name="rest_login",
+        ),
+    path(
+        "rest_logout/",
+        login_required(common_views.RestLogoutView.as_view()),
+        name="rest_logout",
+        ),
+    path(
+        "usermod/",
+        login_required(common_views.UsermodView.as_view()),
+        name="usermod",
+        ),
+    path(
+        "users/",
+        login_required(common_views.UsersView.as_view()),
+        name="users",
+        ),
+    path(
+        "healthcheck/",
+        login_required(common_views.HealthcheckView.as_view()),
+        name="healthcheck",
+        ),
+    path(
+        "resetsessions/",
+        login_required(common_views.ResetSessionsView.as_view()),
+        name="resetsessions",
+        ),
+    path(
+        "sessionsupd/",
+        login_required(common_views.SessionsupdView.as_view()),
+        name="sessionsupd",
+        ),
+    path(
+        "sessiosn_per_point/",
+        login_required(common_views.SessionsPerPointView.as_view()),
+        name="sessions_per_point",
+        ),
+    path(
+        "sessions_per_station/",
+        login_required(common_views.SessionsPerStationView.as_view()),
+        name="sessions_per_station",
+        ),
+    path(
+        "sessions_per_ev/",
+        login_required(common_views.SessionsPerEVView.as_view()),
+        name="sessions_per_ev",
+        ),
+    path(
+        "sessions_per_provider/",
+        login_required(common_views.SessionsPerProviderView.as_view()),
+        name="sessions_per_provider",
+        ),
+
 ]
 
 if settings.DEBUG:

@@ -16,7 +16,7 @@ class User(AbstractUser):
         (2, "Station Owner"),
         (3, "Energy Provider"),
     ]
-    email = models.EmailField(unique=True)
+    email = models.EmailField(unique=True, blank=True, null=True)
     user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 
