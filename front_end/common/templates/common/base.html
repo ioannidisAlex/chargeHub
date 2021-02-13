@@ -61,7 +61,7 @@
               {% if user.is_authenticated %}
                 {% if user.user_type != 1 %}
                   <div class="dropdown">
-                    <a class="nav-item nav-link">REST API</a>
+                    <a class="nav-item nav-link">RestAPI</a>
                     <div class="dropdown-content">
                       <a href="{% url 'rest_login' %}">Login</a>
                       <a href="{% url 'rest_logout' %}">Logout</a>

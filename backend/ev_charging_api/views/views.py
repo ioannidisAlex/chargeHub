@@ -475,7 +475,7 @@ class ResetSessionsView(
             self.queryset.delete()
             admin_user = {
                 "username": "admin",
-                "email": "somerandomemail123@hotmail.com",
+                #"email": "somerandomemail123@hotmail.com",
                 "password": "petrol4ever",
                 "is_superuser": True,
                 "is_staff": True,
