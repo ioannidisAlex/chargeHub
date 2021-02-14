@@ -39,14 +39,16 @@ urlpatterns = [
         api_views.ResetSessionsView.as_view(),
         name="resetsessions",
     ),
-    path("evcharge/api/admin/healthcheck/", api_views.HealthcheckView.as_view(), name="healthcheck"),
+    path(
+        "evcharge/api/admin/healthcheck/",
+        api_views.HealthcheckView.as_view(),
+        name="healthcheck",
+    ),
     path(
         "evcharge/api/SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
-    
-
     path(
         "evcharge/api/SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerStationView.as_view(),
@@ -63,11 +65,21 @@ urlpatterns = [
         name="sessions_per_provider",
     ),
     path("admin/", admin.site.urls),
-    path("evcharge/api/admin/system/sessionsupd/", api_views.SessionsupdView.as_view(), name = "sessionsupd"),
+    path(
+        "evcharge/api/admin/system/sessionsupd/",
+        api_views.SessionsupdView.as_view(),
+        name="sessionsupd",
+    ),
     path("evcharge/api/admin/login/", views.obtain_auth_token, name="rest_login"),
-    path("evcharge/api/admin/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
+    path(
+        "evcharge/api/admin/logout/", api_views.LogoutView.as_view(), name="rest_logout"
+    ),
     path("evcharge/api/admin/", include(router.urls)),
-    path("evcharge/api/admin/usermod/<str:username>/<str:password>/", api_views.UsermodAPIView.as_view(), name="usermod"),
+    path(
+        "evcharge/api/admin/usermod/<str:username>/<str:password>/",
+        api_views.UsermodAPIView.as_view(),
+        name="usermod",
+    ),
     path("home/", common_views.home, name="home"),
     path("register/", common_views.register, name="register"),
     path(
@@ -109,7 +121,7 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
-    #path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
+    # path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]
 
 if settings.DEBUG:
