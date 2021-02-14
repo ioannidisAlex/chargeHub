@@ -3,8 +3,7 @@ name: Software engineering project tests
 on:
   push:
     branches:
-      main
-      master
+      - master
   pull_request:
 
 

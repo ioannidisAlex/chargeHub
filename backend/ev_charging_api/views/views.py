@@ -102,6 +102,7 @@ class UsermodAPIView(
             self.object = User.objects.get(username=username)
             self.object.set_password(password)
             self.object.save()
+
             response = {
                 "status": "success",
                 "code": status.HTTP_200_OK,
@@ -532,6 +533,7 @@ class ResetSessionsView(
                 return Response(response)
 
 
+
 class SessionsupdView(
     generics.GenericAPIView,
     mixins.ListModelMixin,
@@ -611,3 +613,4 @@ class SessionsupdView(
             return Response(renderer.render(data=response))
         else:
             return Response(response)
+

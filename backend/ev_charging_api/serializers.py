@@ -10,6 +10,7 @@ class SessionSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -33,6 +34,7 @@ class CreateUserSerializer(serializers.ModelSerializer):
 class AdminUserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
+
         fields = ("username", "password", "is_staff", "is_superuser")
         extra_kwargs = {"password": {"write_only": True}}
 
