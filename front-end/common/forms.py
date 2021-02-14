@@ -40,7 +40,6 @@ class ProfileUpdateForm(forms.ModelForm):
 
 
 class UsermodForm(forms.Form):
-    token = forms.CharField(max_length=100)
     username = forms.CharField(max_length=20, required=True)
     password = forms.CharField(widget=forms.PasswordInput)
 
@@ -49,42 +48,26 @@ class UsermodForm(forms.Form):
             "password": forms.PasswordInput(),
         }
         fields = [
-            "token",
             "username",
             "password",
         ]
 
 
 class UsersForm(forms.Form):
-    token = forms.CharField(max_length=100)
     username = forms.CharField(max_length=20, required=True)
 
     class Meta:
         fields = [
-            "token",
             "username",
         ]
 
 
 class SessionsupdForm(forms.Form):
-    token = forms.CharField(max_length=100)
     file = forms.FileField()
 
     class Meta:
         fields = [
-            "token",
             "file",
-        ]
-
-
-class TokenForm(forms.Form):
-    token = forms.CharField(max_length=100)
-
-    class Meta:
-        fields = [
-            "token",
-            "username",
-            "password",
         ]
 
 

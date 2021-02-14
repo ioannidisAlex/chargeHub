@@ -8,7 +8,6 @@ from .forms import (
     ProfileUpdateForm,
     RestLoginForm,
     SessionsupdForm,
-    TokenForm,
     UsermodForm,
     UserRegisterForm,
     UsersForm,
@@ -94,10 +93,12 @@ class RestLogoutView(View):
 
 class HealthcheckView(View):
     template_name = "common/healthcheck.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -105,10 +106,12 @@ class HealthcheckView(View):
 
 class SessionsupdView(View):
     template_name = "common/sessionsupd.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -116,10 +119,12 @@ class SessionsupdView(View):
 
 class ResetSessionsView(View):
     template_name = "common/resetsessions.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -127,10 +132,12 @@ class ResetSessionsView(View):
 
 class SessionsPerPointView(View):
     template_name = "common/sessions_per_point.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -138,10 +145,12 @@ class SessionsPerPointView(View):
 
 class SessionsPerStationView(View):
     template_name = "common/sessions_per_station.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -149,10 +158,12 @@ class SessionsPerStationView(View):
 
 class SessionsPerEVView(View):
     template_name = "common/sessions_per_ev.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -160,10 +171,12 @@ class SessionsPerEVView(View):
 
 class SessionsPerProviderView(View):
     template_name = "common/sessions_per_provider.html"
-    form_class = TokenForm
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name, {"form": self.form_class()})
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
