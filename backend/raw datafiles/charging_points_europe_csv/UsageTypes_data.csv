@@ -1,0 +1,9 @@
+ID;Title;IsPayAtLocation;IsMembershipRequired;IsAccessKeyRequired
+0;(Unknown);None;None;None
+6;Private - For Staff, Visitors or Customers;False;False;False
+2;Private - Restricted Access;None;True;None
+3;Privately Owned - Notice Required;None;None;None
+1;Public;None;None;None
+4;Public - Membership Required;False;True;True
+7;Public - Notice Required;False;False;False
+5;Public - Pay At Location;True;False;False

@@ -41,6 +41,7 @@ class VehicleModel(models.Model):
         CHADEMO = "chademo"
         TESLA_COMBINED_CHARGING_SYSTEM = "tesla_ccs"
         TESLA_SUPERCHARGER = "tesla_suc"
+        NONE = "none"           
 
     class AcCharger(models.TextChoices):
         TYPE1 = "type1"

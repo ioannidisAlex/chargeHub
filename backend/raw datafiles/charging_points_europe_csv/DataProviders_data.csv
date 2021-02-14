@@ -1,0 +1,20 @@
+ID;Title;WebsiteURL;Comments;IsRestrictedEdit;IsOpenDataLicensed;IsApprovedImport;License
+1;Open Charge Map Contributors;http://openchargemap.org;None;False;True;True;Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+2;afdc.energy.gov;http://www.afdc.energy.gov/;None;False;True;True;This data is provided by the National Renewable Energy Laboratory ("NREL"), which is operated by the Alliance for Sustainable Energy, LLC ("Alliance"), for the U.S. Department of Energy ("DOE"), and may be used for any purpose whatsoever.
+7;Mobie.pt;http://www.mobie.pt;None;False;True;True;Public Data redistributed by agreement
+8;ev-charging.com;http://e-tankstellen-finder.com/;None;False;None;None;None
+13;www.uppladdning.nu;http://www.uppladdning.nu;This data provider has explicitly asked that OCM do not import their data. (Ref: Nikolay  Shishkov);False;None;None;None
+14;e-Laad;http://www.e-laad.nl;None;False;None;None;None
+15;CarStations.com;http://www.carstations.com;None;False;None;None;None
+17;BlinkNetwork.com;http://www.blinknetwork.com;None;False;None;None;None
+18;UK National Charge Point Registry;http://chargepoints.dft.gov.uk;None;False;True;True;Contains public sector information licensed under the Open Government Licence v2.0.
+19;NOBIL;https://nobil.no/;NOBIL is an open, publicly owned charging point database for the Nordic countries.;False;True;True;NOBIL by Enova is licensed under a Creative Commons Attribution 4.0 International (CC BY 4.0) License.
+20;Chargepoint.net;http://www.chargepoint.net/;Coulomb Chargepoint Network;False;None;None;None
+21;RWE Mobility;https://www.rwe-mobility.com/;None;False;None;None;None
+22;CHAdeMO.com;http://www.chademo.com;None;False;False;False;None
+23;ESB eCars;http://www.esb.ie/electric-cars/;None;False;False;False;None
+24;AddÉnergie Technologies Inc.;http://www.addenergietechnologies.com/;None;False;True;True;http://creativecommons.org/licenses/by/3.0
+25;Catalan Energy Institute (ICAEN);http://icaen.gencat.cat/;None;False;True;True;General public data
+26;Oplaadpalen.nl;http://www.oplaadpalen.nl/;None;False;True;True;Licensed under Attribution-NonCommercial-ShareAlike 3.0 : http://creativecommons.org/licenses/by-nc-sa/3.0/
+27;Place To Plug;https://www.placetoplug.com;None;False;False;False;None
+28;data.gouv.fr;https://www.data.gouv.fr/fr/datasets/fichier-consolide-des-bornes-de-recharge-pour-vehicules-electriques/;None;False;True;True;Open License: https://www.etalab.gouv.fr/wp-content/uploads/2014/05/Licence_Ouverte.pdf
