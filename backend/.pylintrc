@@ -7,5 +7,4 @@ load-plugins=pylint_django
 django-settings-module=backend.settings
 
 [MESSAGES CONTROL]
-disable=all
-enable=E,R,F
+disable=W,C,R1705,R0901,R0914,R0903
