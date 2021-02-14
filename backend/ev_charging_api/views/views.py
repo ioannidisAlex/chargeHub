@@ -533,7 +533,6 @@ class ResetSessionsView(
                 return Response(response)
 
 
-
 class SessionsupdView(
     generics.GenericAPIView,
     mixins.ListModelMixin,
@@ -613,4 +612,3 @@ class SessionsupdView(
             return Response(renderer.render(data=response))
         else:
             return Response(response)
-

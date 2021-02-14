@@ -77,7 +77,6 @@ urlpatterns = [
     path("evcharge/api/admin/", include(router.urls)),
     path(
         "evcharge/api/admin/usermod/<str:username>/<str:password>/",
-
         api_views.UsermodAPIView.as_view(),
         name="usermod",
     ),
