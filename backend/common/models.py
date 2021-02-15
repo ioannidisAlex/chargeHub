@@ -245,10 +245,10 @@ class ChargingPoint(models.Model):
         (3, "Over 40 kW"),
     ]
 
-    IS_ACTIVE_CHOICES = [
-        (1, "Active"),
-        (2, "Inactive"),
-    ]
+    # IS_ACTIVE_CHOICES = [
+    #    (1, "Active"),
+    #    (2, "Inactive"),
+    # ]
 
     # charging_point_id = models.AutoField(primary_key=True)
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
@@ -263,7 +263,7 @@ class ChargingPoint(models.Model):
     usage_cost = models.FloatField()
     volts_power = models.FloatField()
     amps_power = models.FloatField()
-    is_active = models.IntegerField(choices=IS_ACTIVE_CHOICES, default=2)
+    # is_active = models.IntegerField(choices=IS_ACTIVE_CHOICES, default=2)
 
     def __str__(self):
         return f"Id = {self.id}"

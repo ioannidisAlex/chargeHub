@@ -270,18 +270,18 @@ class SessionsPerStationView(
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
-        active_points = list(sessions.order_by().values("charging_point").distinct())
-        points_to_remove = []
-        for i in range(len(active_points)):
-            if (
-                ChargingPoint.objects.all()
-                .get(id=active_points[i]["charging_point"])
-                .is_active
-                == 2
-            ):
-                points_to_remove.append(active_points[i])
-        for i in points_to_remove:
-            active_points.remove(i)
+        # active_points = list(sessions.order_by().values("charging_point").distinct())
+        # points_to_remove = []
+        # for i in range(len(active_points)):
+        #    if (
+        #        ChargingPoint.objects.all()
+        #        .get(id=active_points[i]["charging_point"])
+        #        .is_active
+        #        == 2
+        #    ):
+        #        points_to_remove.append(active_points[i])
+        # for i in points_to_remove:
+        #    active_points.remove(i)
 
         sessions_list = []
         for s in sessions:
@@ -310,7 +310,7 @@ class SessionsPerStationView(
                 "kwh_delivered__sum"
             ],
             "NumberOfChargingSessions": sessions.count(),
-            "NumberOfActivePoints": len(active_points),
+            "NumberOfActivePoints": len(sessions_list),
             "SessionsSummaryList": sessions_list,
             # sessions need more fields!!!
         }
