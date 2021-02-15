@@ -31,7 +31,7 @@ from rest_framework.authtoken.serializers import AuthTokenSerializer
 from rest_framework.authtoken.views import ObtainAuthToken
 from rest_framework.decorators import action
 from rest_framework.generics import CreateAPIView, UpdateAPIView
-from rest_framework.permissions import IsAuthenticated
+from rest_framework.permissions import IsAdminUser, IsAuthenticated
 from rest_framework.renderers import JSONRenderer, TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -90,7 +90,7 @@ class UsermodAPIView(
     serializer_class = CreateUserSerializer
     queryset = User.objects.all()
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
     lookup_fields = [
         "username",
         "password",
@@ -151,7 +151,7 @@ class LogoutView(APIView):
 
 class RetrieveUserViewSet(viewsets.ViewSet):
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
     lookup_field = "username"
     serializer_class = UserSerializer
     queryset = User.objects.all()
@@ -464,7 +464,7 @@ class HealthcheckView(
     MultipleFieldLookupMixin,
 ):
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
 
     def get(self, request):
         form = request.GET.get("form", "")
@@ -497,7 +497,7 @@ class ResetSessionsView(
     MultipleFieldLookupMixin,
 ):
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
     serializer_class = [SessionSerializer]
     queryset = Session.objects.all()
 
@@ -543,7 +543,7 @@ class SessionsupdView(
     MultipleFieldLookupMixin,
 ):
     authentication_classes = [TokenAuthentication]
-    permission_classes = [IsAuthenticated]
+    permission_classes = [IsAdminUser]
     serializer_class = FileUploadSerializer
     queryset = Session.objects.all()
 
