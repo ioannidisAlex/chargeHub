@@ -7,7 +7,8 @@ from rest_framework.test import APIClient
 def admin_api_client(admin_user):
     token = Token.objects.create(user=admin_user)
     client = APIClient()
-    client.credentials(HTTP_AUTHORIZATION="Token " + token.key)
+    # client.credentials(HTTP_AUTHORIZATION="Token " + token.key)
+    client.credentials(HTTP_X_OBSERVATORY_AUTH="Token " + token.key)
     return client
 
 
@@ -16,7 +17,8 @@ def authenticated_api_client(django_user_model):
     user = django_user_model.objects.create(username="client", password="client")
     token = Token.objects.create(user=user)
     client = APIClient()
-    client.credentials(HTTP_AUTHORIZATION="Token " + token.key)
+    client.credentials(HTTP_X_OBSERVATORY_AUTH="Token " + token.key)
+    # client.credentials(HTTP_AUTHORIZATION="Token " + token.key)
     return client
 
 

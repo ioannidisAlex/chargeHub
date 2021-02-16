@@ -17,16 +17,6 @@ def test_an_admin_view(admin_api_client):
     assert response.status_code == 200
 
 
-# def test_external_admin_view(api_client):
-#     response = api_client.get(reverse("healthcheck"))
-#     assert response.status_code != 200
-
-
-# def test_admin_view(api_client):
-#     response = api_client.get(reverse("usermod"))
-#     assert response.status_code != 200
-
-
 def test_cors_same_origin(client):
     response = client.options("/", HTTP_ORIGIN="http://localhost:8000")
     assert response[ACCESS_CONTROL_ALLOW_ORIGIN] == "http://localhost:8000"

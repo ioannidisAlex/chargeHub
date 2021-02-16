@@ -89,7 +89,7 @@ class UsermodAPIView(
 ):
     serializer_class = CreateUserSerializer
     queryset = User.objects.all()
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
     lookup_fields = [
         "username",
@@ -128,7 +128,7 @@ class UsermodAPIView(
 
 
 class LogoutView(APIView):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
 
     def get(
@@ -150,7 +150,7 @@ class LogoutView(APIView):
 
 
 class RetrieveUserViewSet(viewsets.ViewSet):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
     lookup_field = "username"
     serializer_class = UserSerializer
@@ -185,7 +185,7 @@ class SessionsPerPointView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
@@ -248,7 +248,7 @@ class SessionsPerStationView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
@@ -330,7 +330,7 @@ class SessionsPerVehicleView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
@@ -401,7 +401,7 @@ class SessionsPerProviderView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
@@ -463,7 +463,7 @@ class HealthcheckView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
 
     def get(self, request):
@@ -496,7 +496,7 @@ class ResetSessionsView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
     serializer_class = [SessionSerializer]
     queryset = Session.objects.all()
@@ -542,7 +542,7 @@ class SessionsupdView(
     mixins.DestroyModelMixin,
     MultipleFieldLookupMixin,
 ):
-    authentication_classes = [TokenAuthentication]
+    # authentication_classes = [TokenAuthentication]
     permission_classes = [IsAdminUser]
     serializer_class = FileUploadSerializer
     queryset = Session.objects.all()
