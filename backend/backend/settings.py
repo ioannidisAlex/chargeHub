@@ -73,7 +73,7 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
     "x-observatory-auth",
 ]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000/"]
+CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",

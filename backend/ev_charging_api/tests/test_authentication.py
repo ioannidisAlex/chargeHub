@@ -28,8 +28,8 @@ def test_an_admin_view(admin_api_client):
 
 
 def test_cors_same_origin(client):
-    response = client.options("/", HTTP_ORIGIN="http://localhost:8000/")
-    assert response[ACCESS_CONTROL_ALLOW_ORIGIN] == "http://localhost:8000/"
+    response = client.options("/", HTTP_ORIGIN="http://localhost:8000")
+    assert response[ACCESS_CONTROL_ALLOW_ORIGIN] == "http://localhost:8000"
     assert response[ACCESS_CONTROL_ALLOW_HEADERS] == ", ".join(
         list(default_headers)
         + [
@@ -39,7 +39,7 @@ def test_cors_same_origin(client):
 
 
 def test_cors_different_origin(client):
-    response = client.options("/", HTTP_ORIGIN="http://localhost:8001/")
+    response = client.options("/", HTTP_ORIGIN="http://localhost:8001")
     assert ACCESS_CONTROL_ALLOW_ORIGIN not in response
     assert ACCESS_CONTROL_ALLOW_HEADERS not in response
 
