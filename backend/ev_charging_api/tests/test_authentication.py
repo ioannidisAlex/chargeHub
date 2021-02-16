@@ -70,3 +70,14 @@ def test_unauthenticated_cannot_access_admin_endpoints(
         status.HTTP_401_UNAUTHORIZED,
         status.HTTP_404_NOT_FOUND,
     )
+
+
+@pytest.mark.parametrize("url,method", test_data)
+def test_old_authorization_cannot_access_admin_endpoints(
+    url, method, old_admin_api_client
+):
+    response = getattr(old_admin_api_client, method)(url)
+    assert response.status_code in (
+        status.HTTP_401_UNAUTHORIZED,
+        status.HTTP_404_NOT_FOUND,
+    )
