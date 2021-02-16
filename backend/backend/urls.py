@@ -70,10 +70,8 @@ urlpatterns = [
         api_views.SessionsupdView.as_view(),
         name="sessionsupd",
     ),
-    path("evcharge/api/admin/login/", views.obtain_auth_token, name="rest_login"),
-    path(
-        "evcharge/api/admin/logout/", api_views.LogoutView.as_view(), name="rest_logout"
-    ),
+    path("evcharge/api/login/", views.obtain_auth_token, name="rest_login"),
+    path("evcharge/api/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
     path("evcharge/api/admin/", include(router.urls)),
     path(
         "evcharge/api/admin/usermod/<str:username>/<str:password>/",
