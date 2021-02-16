@@ -9,3 +9,4 @@ django_crispy_forms
 django_rest_auth
 djangorestframework-csv
 pysnooper
+django-cors-headers
