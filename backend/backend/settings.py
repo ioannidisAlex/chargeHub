@@ -61,7 +61,7 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         #'rest_framework.authentication.BasicAuthentication',
         #'rest_framework.authentication.SessionAuthentication',
-        "ev_charging_api.authentication.CustomTokenAuthentication",
+        # "ev_charging_api.authentication.CustomTokenAuthentication",
         #'rest_framework.permissions.IsAdminUser',
     ),
 }
