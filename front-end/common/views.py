@@ -76,7 +76,11 @@ class RestLoginView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request, *args, **kwargs):
-        return render(request, "common/home.html")
+        context = {
+            "username": request.POST["username"],
+            "password": request.POST["password"],
+        }
+        return render(request, "common/get_login_data.html", context)
 
 
 class RestLogoutView(View):
