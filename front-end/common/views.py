@@ -195,4 +195,7 @@ class UsersView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        pass
+        context = {
+            "username": request.POST["username"],
+        }
+        return render(request, "common/get_users.html", context)

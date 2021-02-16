@@ -163,3 +163,13 @@ EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
 SESSION_SERIALIZER = "django.contrib.sessions.serializers.PickleSerializer"
 
 CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+]
+
+CORS_ALLOW_HEADERS = [
+    "x-csrftoken",
+    "X-OBSERVATORY-AUTH",
+]

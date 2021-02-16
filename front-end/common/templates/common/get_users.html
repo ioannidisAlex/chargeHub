@@ -1,0 +1,54 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div id="users"></div>
+
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+		if('{{username}}' != ""){
+			axios.get(
+				'http://localhost:8001/evcharge/api/admin/users/{{username}}/',
+				{ headers: {
+   					"X-OBSERVATORY-AUTH": AuthStr
+ 				}
+			})
+			.then( (response) => {
+	            console.log(response)
+	        	var users = '<ul>'+'<li>';
+        		for(var key in response.data){
+        			users += '<br>' + key + ": " + response.data[key] + '</br>'; 
+        		}
+        		users += '</li>'+'</ul>';
+        		document.getElementById('users').innerHTML = users;
+	        })
+			.catch( (error) => {
+	           console.log(error);
+	        })	
+		}
+		else{
+			axios.get(
+				'http://localhost:8001/evcharge/api/admin/users/',
+				{ headers: {
+   					"X-OBSERVATORY-AUTH": AuthStr,
+ 				}
+ 			})
+	        .then( (response) => {
+	            console.log(response)
+	        	var users = '<ul>'
+	        	for(var i in response.data){
+	        		users += '<li>';
+	        		for(var key in response.data[i]){
+	        			users += '<br>' + key + ": " + response.data[i][key] + '</br>'; 
+	        		}
+	        		users += '</li>';
+	        	}
+	        	users += '</ul>';
+	        	document.getElementById('users').innerHTML = users;
+	        })
+	        .catch( (error) => {
+	           console.log(error);
+	        })		
+	    }	
+	</script>
+{% endblock content %}
