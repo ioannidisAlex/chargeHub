@@ -1,16 +1,43 @@
 {% extends "common/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-	<div class="content-section">
-        <form method="POST">
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Rest Login</legend>
-                {{ form|crispy }}
-            </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Submit</button>
-            </div>
-        </form>
+<div class="content-section">
+    {% csrf_token %}
+    <fieldset class="form-group">
+        <legend class="border-bottom mb-4">Rest Login</legend>
+        {{ form|crispy }}
+    </fieldset>
+    <div class="form-group">
+        <button class="btn btn-outline-info" type="submit" id="post-btn">Submit</button>
     </div>
+</div>
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer>
+	const postBtn = document.getElementById('post-btn');
+
+	const sendData = () => {
+		axios.post(
+			'http://localhost:8001/evcharge/api/admin/login/',
+			{
+				username: 'dimitris',
+				password: '1234',
+			},
+			{
+				headers: {
+					'X-CSRFToken': 
+					'{{ csrf_token }}'
+				}
+			}
+		)
+		.then(response => {
+			console.log(response);
+		})
+		.catch(err => {
+			console.log(err.response);
+		});
+	};
+
+	postBtn.addEventListener('click', sendData);
+</script>
 {% endblock content %}

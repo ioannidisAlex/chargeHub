@@ -64,7 +64,8 @@ class UsermodView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        pass
+        messages.success(request, f"ola popa")
+        return redirect("home")
 
 
 class RestLoginView(View):
@@ -74,8 +75,8 @@ class RestLoginView(View):
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"form": self.form_class()})
 
-    def post(self, request):
-        pass
+    def post(self, request, *args, **kwargs):
+        return render(request, "common/home.html")
 
 
 class RestLogoutView(View):
