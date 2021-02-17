@@ -14,6 +14,14 @@ def test_json_csv_get_routed_properly(client):
     )
 
 
+def test_csv_output_healthcheck(client):
+    response_csv = client.get(reverse("healthcheck"), {"format": "csv"})
+    assert (
+        response_csv.content
+        == b"detail\r\nAuthentication credentials were not provided.\r\n"
+    )
+
+
 def test_json_is_default(client):
     response_json = client.get(reverse("healthcheck"), {"format": "json"})
     response_raw = client.get(reverse("healthcheck"))
