@@ -63,6 +63,10 @@ REST_FRAMEWORK = {
         "rest_framework.authentication.TokenAuthentication",
         #'rest_framework.permissions.IsAdminUser',
     ),
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework_csv.renderers.CSVRenderer",
+    ),
 }
 
 MIDDLEWARE = [
