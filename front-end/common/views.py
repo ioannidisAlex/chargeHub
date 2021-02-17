@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import redirect, render
 from django.utils.decorators import method_decorator
 from django.views import View
@@ -190,6 +191,7 @@ class SessionsPerProviderView(View):
 class UsersView(View):
     template_name = "common/users.html"
     form_class = UsersForm
+    paginate_by = 7
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"form": self.form_class()})

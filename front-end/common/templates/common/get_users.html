@@ -1,7 +1,44 @@
 {% extends "common/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-	<div id="users"></div>
+	<font size="4" face="Courier New" >
+	<div id="light-pagination" class="pagination">
+		<table class="table" id="users"></table>
+	</div>
+	</font>
+	<!--!>
+	{% if is_paginated %}
+		{% if page_obj.has_previous %}
+			<a class="btn btn-outline-info mb4" href="?page=1">First</a>
+			<a class="btn btn-outline-info mb4" href="?page={{ page_obj.previous_page_number }}">Previous</a>
+		{% endif %}
+
+		{% for num in page_obj.paginator.page_range %}
+			{% if page_obj.number == num %}
+				<a class="btn btn-info mb4" href="?page={{ num }}">{{ num }}</a>
+			{% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+				<a class="btn btn-outline-info mb4" href="?page={{ num }}">{{ num }}</a>
+			{% endif %}
+		{% endfor %}
+
+		{% if page_obj.has_previous %}
+			<a class="btn btn-outline-info mb4" href="?page={{ page_obj.next_page_number }}">Next</a>
+			<a class="btn btn-outline-info mb4" href="?page={{ page_obj.paginator.num_pages }}">Last</a>
+		{% endif %}		
+	{% endif %}
+	<-->
+	<style>
+		.users{
+			word-break: break-all
+		}
+		/*table{
+			position: fixed;
+			left: 0;  
+    	}*/
+    	.div_scroll{
+    		left: 0%;
+    	}
+	</style>
 
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script defer>
@@ -15,12 +52,20 @@
 			})
 			.then( (response) => {
 	            console.log(response)
-	        	var users = '<ul>'+'<li>';
+	        	var table = '<thead><th scope="col">Users</th></thead>';
+	            var thead = '<thead>';
+	            for(var key in response.data){
+	            	thead += '<th scope="col">'+key+'</th>';
+	            }
+	            thead += '</thead>';
+	        	var tbody = '<tbody>';
         		for(var key in response.data){
-        			users += '<br>' + key + ": " + response.data[key] + '</br>'; 
+        			tbody += '<td style="word-break:break-all;">'+response.data[key]+'</td>'; 
         		}
-        		users += '</li>'+'</ul>';
-        		document.getElementById('users').innerHTML = users;
+        		tbody += '</tr>';
+	        	tbody += '</tbody>';
+	        	table += thead+tbody+'</table>';
+        		document.getElementById('users').innerHTML = table;
 	        })
 			.catch( (error) => {
 	           console.log(error);
@@ -35,16 +80,22 @@
  			})
 	        .then( (response) => {
 	            console.log(response)
-	        	var users = '<ul>'
+	            var table = '<thead><th scope="col">Users</th></thead>';
+	            var thead = '<thead>';
+	            for(var key in response.data[0]){
+	            	thead += '<th scope="col">'+key+'</th>';
+	            }
+	            thead += '</thead>';
+	        	var tbody = '<tbody>';
 	        	for(var i in response.data){
-	        		users += '<li>';
 	        		for(var key in response.data[i]){
-	        			users += '<br>' + key + ": " + response.data[i][key] + '</br>'; 
+	        			tbody += '<td style="word-break:break-all;">'+response.data[i][key]+'</td>'; 
 	        		}
-	        		users += '</li>';
+	        		tbody += '</tr>';
 	        	}
-	        	users += '</ul>';
-	        	document.getElementById('users').innerHTML = users;
+	        	tbody += '</tbody>';
+	        	table += thead+tbody+'</table>';
+	        	document.getElementById('users').innerHTML = table;
 	        })
 	        .catch( (error) => {
 	           console.log(error);
