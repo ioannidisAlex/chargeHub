@@ -112,11 +112,15 @@ class HealthcheckView(View):
 
 class SessionsupdView(View):
     template_name = "common/sessionsupd.html"
+    form_class = SessionsupdForm
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class,
+            },
         )
 
     def post(self, request):
@@ -191,7 +195,6 @@ class SessionsPerProviderView(View):
 class UsersView(View):
     template_name = "common/users.html"
     form_class = UsersForm
-    paginate_by = 7
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"form": self.form_class()})

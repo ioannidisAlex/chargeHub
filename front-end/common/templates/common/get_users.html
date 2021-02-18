@@ -1,11 +1,11 @@
 {% extends "common/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-	<font size="4" face="Courier New" >
-	<div id="light-pagination" class="pagination">
-		<table class="table" id="users"></table>
+	<div>
+		<font size="4" face="Courier New" >
+			<table width="100%" border="1" class="container-fluid" id="users"></table>
+		</font>
 	</div>
-	</font>
 	<!--!>
 	{% if is_paginated %}
 		{% if page_obj.has_previous %}
@@ -28,18 +28,16 @@
 	{% endif %}
 	<-->
 	<style>
-		.users{
+		body { margin:0;padding:0; }
+		table { width: 100%; }
+		/*#users{
 			word-break: break-all
-		}
-		/*table{
-			position: fixed;
+		}*/
+		#users{
+			position: relative;
 			left: 0;  
-    	}*/
-    	.div_scroll{
-    		left: 0%;
     	}
 	</style>
-
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script defer>
 		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
