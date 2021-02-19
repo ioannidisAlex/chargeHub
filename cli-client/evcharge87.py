@@ -31,7 +31,7 @@ options = {
 
 BASE_URL = "http://localhost:8765/evcharge/api"
 AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
-AUTHENTICATION_HEADER = "Authorization"
+# AUTHENTICATION_HEADER = "Authorization"
 
 
 def convert_to_request(f):
@@ -203,12 +203,12 @@ def sessionsupd(sessionsupd, source, apikey):
 
 @convert_to_command(click)
 def healthcheck(healthcheck, apikey):
-    return requests.get, "admin/healthcheck/", {}, show_data
+    return requests.get, "admin/healthcheck", {}, show_data
 
 
 @convert_to_command(click)
 def resetsessions(resetsessions, apikey):
-    return requests.post, "admin/resetsessions", {}, show_data
+    return requests.post, "admin/resetsessions/", {}, show_data
 
 
 admin = load_to_admin(
