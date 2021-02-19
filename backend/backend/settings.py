@@ -64,17 +64,11 @@ REST_FRAMEWORK = {
         #'rest_framework.authentication.BasicAuthentication',
         #'rest_framework.authentication.SessionAuthentication',
         # "rest_framework.authentication.TokenAuthentication",
-        "ev_charging_api.authenticate.EvTokenAuthentication",
+        "ev_charging_api.authentication.CustomTokenAuthentication",
         #'rest_framework.permissions.IsAdminUser',
     ),
 }
 
-
-CORS_ALLOW_HEADERS = list(default_headers) + [
-    "x-observatory-auth",
-]
-
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]
 
 MIDDLEWARE = [
     "corsheaders.middleware.CorsMiddleware",
@@ -170,3 +164,9 @@ EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
 
 SESSION_SERIALIZER = "django.contrib.sessions.serializers.PickleSerializer"
+
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "x-observatory-auth",
+]
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]

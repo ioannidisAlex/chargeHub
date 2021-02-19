@@ -19,7 +19,7 @@ def get_authorization_header(request):
     return auth
 
 
-class EvTokenAuthentication(TokenAuthentication):
+class CustomTokenAuthentication(TokenAuthentication):
     """DRF TokenAuthentication that uses X-OBSERVATORY-AUTH Authorization header."""
 
     def authenticate(self, request):
