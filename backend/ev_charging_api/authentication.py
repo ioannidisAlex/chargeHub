@@ -15,7 +15,6 @@ def get_authorization_header(request):
     if isinstance(auth, str):
         # Work around django test client oddness
         auth = auth.encode(HTTP_HEADER_ENCODING)
-    print(auth * 100)
     return auth
 
 
