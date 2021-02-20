@@ -14,12 +14,22 @@ def test_json_csv_get_routed_properly(client):
     )
 
 
-def test_csv_output_healthcheck(client):
+def test_csv_output_healthcheck_unauthenticated(client):
     response_csv = client.get(reverse("healthcheck"), {"format": "csv"})
     assert (
         response_csv.content
         == b"detail\r\nAuthentication credentials were not provided.\r\n"
     )
+
+
+def test_csv_output_healthcheck(admin_api_client):
+    response_csv = admin_api_client.get(reverse("healthcheck"), {"format": "csv"})
+    assert response_csv.content == b"status\r\nOK\r\n"
+
+
+def test_json_output_healthcheck(admin_api_client):
+    response_json = admin_api_client.get(reverse("healthcheck"), {"format": "json"})
+    assert response_json.content == b'{"status":"OK"}'
 
 
 def test_json_is_default(client):
