@@ -67,6 +67,10 @@ REST_FRAMEWORK = {
         "ev_charging_api.authentication.CustomTokenAuthentication",
         #'rest_framework.permissions.IsAdminUser',
     ),
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework_csv.renderers.CSVRenderer",
+    ),
 }
 
 
