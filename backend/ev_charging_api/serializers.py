@@ -1,5 +1,4 @@
 from django.contrib.auth import authenticate
-from django.contrib.auth.models import User as AuthUser
 from rest_framework import serializers
 
 from common.models import Session, User
@@ -8,13 +7,6 @@ from common.models import Session, User
 class SessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Session
-        fields = "__all__"
-
-
-class AuthUserSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = AuthUser
-        # fields = ['username', 'password']
         fields = "__all__"
 
 
@@ -40,7 +32,8 @@ class CreateUserSerializer(serializers.ModelSerializer):
 
 class AdminUserSerializer(serializers.ModelSerializer):
     class Meta:
-        model = AuthUser
+        model = User
+
         fields = ("username", "password", "is_staff", "is_superuser")
         extra_kwargs = {"password": {"write_only": True}}
 
@@ -53,3 +46,10 @@ class AdminUserSerializer(serializers.ModelSerializer):
         user.set_password(validated_data["password"])
         user.save()
         return user
+
+
+class FileUploadSerializer(serializers.Serializer):
+    file = serializers.FileField()
+
+    class Meta:
+        fields = ("file",)
