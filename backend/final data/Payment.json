@@ -1,0 +1,5502 @@
+[
+    {
+        "id": "64c3dec0-ba7f-4c61-9d81-c4a12d12dab9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.681089386045283,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "id": "c59a462a-b690-418c-a5b7-86dc2fd9a434",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.739274834682295,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "id": "4b8fc005-0f8d-4572-ad69-ac0f2817d342",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.80265352950159,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "c5bd9967-e631-40e7-89b3-49da68f8aa85",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.942584707661455,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "5eb8dadb-ffe7-483d-8abb-7933236fb6e1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.012351718817847,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "id": "613ec912-76e4-4013-ba39-c4cea76aa657",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.851386474629333,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "e6887987-2eb0-45b7-ad5f-c0d9714244cc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.496190800283218,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "id": "29a17cfc-1b1f-4967-964f-b44df67e444c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.933025607310203,
+            "invoice": "",
+            "user_id": "u64"
+        }
+    },
+    {
+        "id": "282580b0-1246-4413-a6bd-b92772ab0d63",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.568164987387476,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "id": "265eaa69-5ec3-4b98-9521-2d5973752afa",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.813887280908908,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "id": "4826d97d-da10-4439-afbf-26882c4f7f1f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.028578337344229,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "id": "ae32b509-e446-4919-90e5-709e03fdfb04",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.31565220470707,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "id": "437171db-3cac-4dde-be85-19153d3040fe",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.165822027015128,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "id": "93d54d28-ab92-41f3-a514-525f5b488b9c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.038134711038833,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "id": "8cc12e0a-fb4e-4e96-a1df-23afcef9e4e0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.036390844427682,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "id": "cc117420-36d6-448a-92a1-61c99cb55252",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.755347521157624,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "id": "8c97413c-98d5-4eaf-99d1-33c17f1e5c83",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.21943647026961,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "id": "8f769868-32cb-4ec8-a5fe-24cd30aa70db",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.34221247772711,
+            "invoice": "",
+            "user_id": "u137"
+        }
+    },
+    {
+        "id": "47e79f0c-b42f-4652-b1ac-0e22cea23d86",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.564854698249787,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "id": "3211beb2-8427-4939-bc9a-511a26338121",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.924387753688348,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "id": "f2ec4b58-d2dd-4153-811f-5c99e3d96f16",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.82354961176558,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "id": "70f0c9f6-4a8f-4ea5-b4e6-fe24ec379f8d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.312243522571075,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "id": "ce75fe1b-a619-4c86-bb39-ae4ecfa24f10",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.274777433059887,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "id": "c9492b52-73e9-41eb-9b18-00a7509a3f38",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.015707666852235,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "1630e301-3aa4-48ad-b9df-b62e4cc2a94d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.210584183156357,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "id": "7c9bb95a-5845-4188-9968-3684eccf21b9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.037910101208462,
+            "invoice": "",
+            "user_id": "u34"
+        }
+    },
+    {
+        "id": "c60a94a0-5b03-4cbd-adfb-b2bc12aa7af5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.70436090126327,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "d87d0787-16a1-484e-92ee-84e4ef042d04",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.6263362276718,
+            "invoice": "",
+            "user_id": "u111"
+        }
+    },
+    {
+        "id": "b49d2568-257b-426e-b251-274148833885",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.355043590979097,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "id": "54624f94-9ff9-4fbe-b39e-e6359a530672",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.716086306258731,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "id": "8e8e1daf-9433-48ec-ab21-82aff55aab68",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.887130236251092,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "id": "da1c5138-c803-46d1-8544-bd6e018e9981",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.727664243354935,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "cea7c412-604d-4f2b-9a48-3debd1425ecf",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.879905625063301,
+            "invoice": "",
+            "user_id": "u91"
+        }
+    },
+    {
+        "id": "1dfb7664-d5c4-4c62-881a-a94d04a97362",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.720429426509314,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "id": "bf3bb616-bcca-4f90-91d6-64423bb6cca3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.718860869474597,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "id": "03f919ce-0b98-43eb-97ee-edd8fb5288eb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.414944215640784,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "08fe6fa5-81f8-4ade-ba8e-51bee83a4160",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.299420080482733,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "id": "eb9eebd5-4621-44db-83ed-e11d75b12e39",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.256982962380052,
+            "invoice": "",
+            "user_id": "u48"
+        }
+    },
+    {
+        "id": "6a4129a7-c3af-4360-9c19-15cee4506ad0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.183729559462826,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "id": "3c1e52a3-3e5a-4709-9349-bf93ffb8669a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.481158539624008,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "id": "10b40e13-e59d-4a40-b943-4051939321f6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.50443719089144,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "cba2fa57-7a86-4325-83b0-1466d106850c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.6537935229236,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "id": "81d1f609-f9b8-4809-b5ea-632d80a1a1a4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.68590952810962,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "id": "b002e03e-fbfd-4b99-9ab8-858c11177348",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.88787799991086,
+            "invoice": "",
+            "user_id": "u64"
+        }
+    },
+    {
+        "id": "2b3a4eff-fcd1-43df-9373-0bfaf03da569",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.003447907581888,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "id": "16f5b207-145f-4ecc-b2a5-3c8dbda368e8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.018365940321278,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "id": "18cc6fd2-9c1d-4140-b05e-2137614380b0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.448455289192115,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "id": "3dd65f95-6f18-4211-997e-ebffa15227fb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.667185586288433,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "id": "fdffe32b-8c0a-4bb9-82f5-6de8b53078f0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.077682062017951,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "id": "1c8d2898-e158-483c-b671-8c03df17674a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.838435362380219,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "id": "742d77af-4ee5-4762-bc17-91f9b77de913",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.677340858134293,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "97517903-44a8-4f6f-be2a-6b8f1c8a9632",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.42556355782912,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "ff680d75-92af-4dcb-9ff7-2128341038f5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.069666724622174,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "id": "6dd6b254-86c4-4c12-8431-573502862cab",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.600948294661515,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "id": "004d2265-6270-40f0-8a6e-2dd50ab9278d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.474395610655131,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "id": "aa7d2245-fff7-4779-b31b-11e00b186996",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.447572129365703,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "id": "15f66c7d-11e8-490b-af26-cebe1bacc162",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.414166338947531,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "id": "1232046f-00db-48ec-8045-7a205b8cf162",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.600808204508425,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "id": "1509c8f5-4927-413d-b86d-05ddc6732fa5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.558115055188424,
+            "invoice": "",
+            "user_id": "u70"
+        }
+    },
+    {
+        "id": "88fb6bf0-9ea1-4624-8313-e6c6f6e0296b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.868931183634853,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "id": "d163468e-44bf-410f-af02-b9fcbbb6142b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.452167611775607,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "05e9ed29-9d5f-431f-9677-517c546c1aea",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.960449336461107,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "id": "0ad16e23-c575-4b0a-aec2-63b3aac43d4c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.67690602728371,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "id": "e178c246-c9eb-4d97-8e24-2dd71c3c119e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.412154242517854,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "id": "e9060a11-3b9e-475a-b9ef-8c8fa4acd5de",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.112189454691205,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "id": "554694c7-cd1d-4461-8c2e-777b286f153f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.368200337176265,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "id": "4a7519ae-1bc0-4964-8c35-9f0bf259e3db",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.482687808991319,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "id": "2dc5a4d6-d221-489e-8137-874258c4606b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.97549066629179,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "id": "6c292eb0-4c7c-4311-aebc-a16d689be86f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.789302764614664,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "id": "9fc76d40-fe25-452c-9b8c-5761c2c84f10",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.897082934379283,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "id": "e3fde1d1-0c7a-4757-a561-f8a917de455b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.212362984524985,
+            "invoice": "",
+            "user_id": "u111"
+        }
+    },
+    {
+        "id": "0ade7be1-b36d-42a7-a9e3-71bc6467cf07",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.18286174019061,
+            "invoice": "",
+            "user_id": "u10"
+        }
+    },
+    {
+        "id": "f449e099-5a3e-4c9f-bb3b-f2a77faba58f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.230294298321162,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "75157bcf-dba9-4c82-bed5-fbfd6abd62b9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.277619122174222,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "id": "da7f65ea-b7fc-42e0-adc7-9aab3cc86482",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.854588057925326,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "id": "6cbc9f44-1104-4a15-882c-50438e02c033",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.83500891917966,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "id": "55ceb555-46a7-4f47-a9c7-40b1b92711b0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.21155779905671,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "046594ac-ff04-4365-9dc0-be630033ed1c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.728176208429074,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "id": "60436bfe-ec11-4272-9bfa-25a74ec5a461",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.696588156230979,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "c472ad26-3471-4467-bf5a-bf75e80a38c0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.305119895263408,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "id": "1cd303b3-4eab-49e9-b7d3-37f53cbe4e55",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.173012951628474,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "id": "089ed4e6-bcf7-4789-9109-0e887a01dabc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.780522909051715,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "e3345461-ea76-4cb3-92a9-72907d0d5c00",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.689825268436365,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "74aa1d63-0d83-4c58-9f64-c24613c5dce3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.699605018570717,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "id": "2b3af8f4-e734-483d-b5a2-c47ffb2a9e33",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.930199184609117,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "id": "855625ed-a223-4f33-a58f-c66b71c67cf3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.885362867146716,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "id": "f42738f9-c437-4894-9feb-ad17eedb5961",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.340292051153916,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "id": "76ad5321-e764-41d7-acb5-d7ad129ed2b9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.89199290412247,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "id": "971c7012-55fd-453b-9c31-237d19fd5651",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.863226276344863,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "id": "1b5ce84c-0134-471b-b370-f4f526dae8b2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.605749814066105,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "id": "165007ba-e4db-4f1c-8b7b-792f8baa2039",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.56434114812085,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "id": "0e4f0a1d-2bf1-4c59-823b-43c4c9ca59d0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.441546303696239,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "id": "8ef2909a-13a1-47cb-a42c-0b10cfd78fb5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.255044856103247,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "id": "05354aab-deff-4d40-8eb4-8b191a47b070",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.807242542629316,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "id": "c65ce2c7-7901-4760-9167-3e32d00b1580",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.73793204379632,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "id": "11927af9-0931-4b40-91ca-2b0a979cb3e4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.415040224934842,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "id": "5cb79640-071a-4e63-85a3-83b55f592572",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.565989151023455,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "f89bec6c-2433-455c-a715-ecb116ae5a3b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.261745062854693,
+            "invoice": "",
+            "user_id": "u87"
+        }
+    },
+    {
+        "id": "0a7ef3aa-a6c8-447e-a9a9-6ba401942b09",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.952617769403394,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "id": "fc879035-c5e0-4263-87c3-35b698087d43",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.553489080466452,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "98163bb8-e67e-43b7-9f01-4414b05b9eee",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.231554547335191,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "id": "ae98ff94-a189-419a-bcb1-b113546afb65",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.28599542428393,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "id": "5ae77c13-c1d5-41fa-a979-48cff1c3728f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.476575785786896,
+            "invoice": "",
+            "user_id": "u93"
+        }
+    },
+    {
+        "id": "a99f8978-c869-469f-b649-63542bbf4cf0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.398924544624851,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "a1fc305a-fe1d-4fce-b7c6-e66a81240e94",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.171604615623634,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "4cc04d07-2536-4982-bb22-cc01c8a87872",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.699652715687554,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "id": "ca8c4833-e0e0-4f80-a0cd-708c9ae59fdb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.131818553312433,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "id": "d1b54b42-6409-47bf-9b57-208224c72644",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.632380712543572,
+            "invoice": "",
+            "user_id": "u124"
+        }
+    },
+    {
+        "id": "11562afd-f73b-4e4b-a796-e5b4a90c47bb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.613802692370951,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "447fa813-820e-4e19-8fb2-a2f2b023ab7a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.10332981322118,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "id": "40cc8a99-ddbf-4c86-b8ae-4e470bc6b44f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.74712515272201,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "id": "a414222e-25cd-40cb-a6f1-79108a3bf1e9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.02298489967241,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "id": "9ef352e9-d3f2-4c4d-a4c2-dbe4788f809f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.149360304292955,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "id": "78c0d68e-51ae-44b7-84ed-050210257014",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.69612174169427,
+            "invoice": "",
+            "user_id": "u112"
+        }
+    },
+    {
+        "id": "4d74b607-ad84-4e87-a8b4-6e1c61de9205",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.215218087763372,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "27965847-4b1d-47a0-805c-ca8f7daf90a2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.579888792239796,
+            "invoice": "",
+            "user_id": "u45"
+        }
+    },
+    {
+        "id": "c63cc1e5-7ea8-424c-a9a9-cbaf72c4a6f7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.253547203802713,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "id": "d17f819c-5951-4252-a019-a0ed52129588",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.258401798966391,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "id": "7edc384a-4bc0-4ed1-89ca-4e3228a49b93",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.266766444625517,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "id": "b45d47d0-50b1-4757-b5e1-fc87eb25d5d4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.404702197060884,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "id": "e16d75b2-711b-483c-b555-5d2c1b898cb0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.303418293714953,
+            "invoice": "",
+            "user_id": "u130"
+        }
+    },
+    {
+        "id": "0a4fae97-92a1-47e5-89e7-fbe804514baf",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.823518373082731,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "id": "1b18b630-c55f-4e2b-9f14-f4d2dffd0a23",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.719894772511012,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "id": "3c5b95ce-18e1-4346-8e1f-7d9acc6750b1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.398142181104701,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "id": "14c8ae39-b75b-4a00-923d-0d405cfe4820",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.55900148649937,
+            "invoice": "",
+            "user_id": "u136"
+        }
+    },
+    {
+        "id": "22b9d3de-3ded-4d0d-94cd-3de07d49f9e2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.760890355756587,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "id": "8236765e-d7b6-4c5a-8e81-31053493c2e5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.761404449381445,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "23c4a2ca-b539-4c08-a4bc-d9950d63cd2d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.525744883699291,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "id": "65591071-7344-440e-b6d7-b44fff609804",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.669115815340826,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "id": "eebbac59-3f69-4636-8184-927f02af59bc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.898148920095556,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "id": "a1962b79-8996-4454-90ad-91bba978575d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.830548397908824,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "id": "e33a54fa-08ba-451b-8e4c-e0f515a1993d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.110202474095505,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "id": "8eccbf14-aca8-4b0f-80a8-a6998f294b64",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.863380571063946,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "id": "97732019-e6aa-4c67-a25a-a8886e8c87d4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.20541629230459,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "id": "96911a7e-80fb-483c-86af-8eca6c6c5817",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.330736492936888,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "id": "8cee4aae-aae2-4a96-875a-d50e60848f05",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.83003745056165,
+            "invoice": "",
+            "user_id": "u133"
+        }
+    },
+    {
+        "id": "0c22de27-d046-49b3-8500-e781f2b4f59e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.50921626665405,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "id": "f8a772b6-2161-445e-bf11-b84be54028a9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.445602624168835,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "id": "abcb22bb-2295-42e2-bae2-48ef5a46ebc9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.872670218340483,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "1eaf03fd-70dc-4b01-b10c-0afa72b895b7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.47297492883246,
+            "invoice": "",
+            "user_id": "u65"
+        }
+    },
+    {
+        "id": "33304942-b08d-4618-862a-01bafa515ca7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.074871534044794,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "id": "2b0700b5-e13b-4523-9f7d-7a8a168bfa47",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.947276974186563,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "id": "85d63c62-27c3-4ca2-8afe-ee5d277cf24e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.892938687754016,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "85482287-2207-413e-a97e-9a5f6895e42e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.700834574386061,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "id": "13b9b175-7347-4946-a9ee-79ae7230326a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.792060920859075,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "id": "993a890b-d596-4d21-93c2-d48edacee902",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.235286995595624,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "id": "cd52bd6e-54a0-452d-9222-af02eafb8fba",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.203647046359446,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "id": "d8f8e295-637b-408c-a4b1-25020d0ecb9d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.047682477909424,
+            "invoice": "",
+            "user_id": "u130"
+        }
+    },
+    {
+        "id": "206df5a7-ec77-4a94-8699-eec2d6704c52",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.476350924693689,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "id": "7f43c5b3-261f-43cb-8cb9-624383d01661",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.890726702353362,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "id": "eadd72c5-3019-4de1-8b35-2e03df647e1b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.144807454073492,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "id": "67e8f552-59df-4579-90dd-e6b101f1b7b8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.010722273869458,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "id": "320cda0e-8397-4993-a3f0-c0b3ea75d299",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.088291990750198,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "e385f8ab-3be9-44f1-a41a-9aa1805ff1f8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.087842471621663,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "id": "7b61e2df-b482-4ef8-8e91-4d51394bfd36",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.754198625217995,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "id": "9382b074-2bbb-454d-917c-a7336bafc8ba",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.350482857108066,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "id": "fce93dd5-a5fb-47e1-be8d-2d93a5a07e80",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.041558332733478,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "id": "b650f33c-86c9-4228-88e9-696b0f1c8340",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.086186383127028,
+            "invoice": "",
+            "user_id": "u65"
+        }
+    },
+    {
+        "id": "62e9fe83-2115-4d3f-aba2-66dc5e7a519e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.382438821575754,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "id": "77f8d989-d0b1-464e-9e17-6e6048911bc1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.214244210384466,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "id": "21b7132e-0570-4953-9a16-65a4b56bda85",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.334749677807924,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "dc40d9c7-8ce3-49ab-b7b8-c7c248cf880f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.020765419316664,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "id": "17c672b0-1aa3-4303-86df-3b00dec93bef",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.280307402422167,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "id": "d8559896-2ee3-4cd0-9be2-d4edcfccc1fd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.022360677690662,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "aea4cebd-cf17-419d-b34b-b55f662c42d9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.587702538540027,
+            "invoice": "",
+            "user_id": "u77"
+        }
+    },
+    {
+        "id": "dde009ce-5be4-4063-a001-f5b47ada63be",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.050604418053455,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "id": "b12a50a3-7df4-4c3d-a0dd-faa504e4b8ae",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.647370098106384,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "2620f648-f3bc-4b98-8848-d8e00dacde39",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.095524270368335,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "id": "ccfe106c-538f-4e66-9816-572b62a2764c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.047179243955323,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "id": "fa7c47eb-cd5c-418f-9c06-ba529abd11d9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.261506881298196,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "id": "5e1eedf7-6e7f-4bb8-bbbe-74e328f71f4b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.96345195224599,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "id": "2594f721-8496-40f6-bbf5-b4abd308a187",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.267173821824871,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "de2d624f-2b56-435d-9943-81474e4b6810",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.594837785681593,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "id": "1bd5c243-584f-4ffe-bd59-a01615c57f40",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.314807546652915,
+            "invoice": "",
+            "user_id": "u101"
+        }
+    },
+    {
+        "id": "da0f583c-caf4-4eca-9561-6dd1674e8e94",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.317018724635526,
+            "invoice": "",
+            "user_id": "u22"
+        }
+    },
+    {
+        "id": "cf564543-bf2a-401c-b13d-2bd1c62a11a9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.189513985825089,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "id": "e2640fda-b7fe-40d4-9b2e-49acf72283a9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.315742202611382,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "id": "2a6b69d9-c97b-4db8-873c-c8a21eee7d81",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.799558783661556,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "id": "5f6ebca3-2378-4d2c-9f37-73f6c64aa617",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.582697077419368,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "70a70ce5-14d5-4036-b539-abaf3c5ef4cd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.301462969393835,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "id": "2c09bc4f-2e64-4b22-be2e-846aa535b7cd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.33448546341385,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "id": "249eaf5b-d522-40d2-8168-92591dcac0d9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.554853492890878,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "92a9d275-31b7-42e6-bbd3-bdf8e6f581fb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.494293637705228,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "id": "ca212828-4f00-49b8-aba3-7a54f0ccb358",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.124789848788183,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "4ee8f9ea-3793-4118-ae35-623c8a8c816a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.445770484944457,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "id": "017caffe-2677-4467-9b12-352314f3bb82",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.267568036024292,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "id": "47eeffa3-6014-47a6-96fc-1d8cd7a6c6bc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.318385274641393,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "id": "2597c3a0-74c3-41d6-a401-348c338f805a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.408031764349355,
+            "invoice": "",
+            "user_id": "u73"
+        }
+    },
+    {
+        "id": "8e33106f-9ab8-46cd-8fd9-8fadbc7e0f80",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.228808718102371,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "id": "835f1273-40db-4174-ad9f-6a732a227fe3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.157202807347195,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "id": "35266810-5c00-4e7b-95ea-cfbf0f9e8140",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.320074861336002,
+            "invoice": "",
+            "user_id": "u136"
+        }
+    },
+    {
+        "id": "0eb12316-305d-4fe0-951e-d090dbed8fbd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.381554592024937,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "4c0a9286-f292-454b-a565-9f9c9e47ff29",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.585128783090916,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "id": "d70fcbcd-b5a1-4a26-8d7c-60972aaaf735",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.545678334479055,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "ac1500a2-42f8-404b-999c-5e4db8cb93ee",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.18851393976329,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "id": "a95959ae-0875-451c-94dd-c6750ca8b4f5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.38743617790804,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "id": "4a4ea89d-3edf-4821-9188-730c0c8d92ad",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.776126199928381,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "id": "554f5fcd-7696-4645-9043-409dc9437683",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.900225468759038,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "id": "85a1d41c-ca43-4869-869a-0747b5681b1c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.098133176266874,
+            "invoice": "",
+            "user_id": "u103"
+        }
+    },
+    {
+        "id": "a2e185b2-74b4-453b-9a38-301a143f275c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.055261466964748,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "id": "6e39fe3b-70b6-4110-ae1c-27d0e9a3a40c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.564557436049212,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "id": "5c9bbec3-28b9-43ad-8914-b132a5cbd98a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.51911186140666,
+            "invoice": "",
+            "user_id": "u13"
+        }
+    },
+    {
+        "id": "1220bc09-35d5-44c1-9432-d45ba5391364",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.438889867629197,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "cd851143-3817-482d-a7b6-a7f1a5923bae",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.516263956398355,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "id": "d9838690-5784-4e3b-8b95-2ebd52b019da",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.09151041295694,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "id": "900f75a6-7ee4-4527-a8f8-9b2ce3237be5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.692371168126371,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "id": "fcea0858-5a21-402e-a83a-71391595ccfa",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.591881089925302,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "id": "c99bfd30-bdfe-40c8-8b26-0be5cf273d1e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.669818370218904,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "id": "52ca5f69-0b5f-4d4e-a679-e2edd009666e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.246431137186686,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "id": "0c87cc37-61dd-4a55-9d53-06c9bd807a53",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.88663281375728,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "id": "22c4a50f-cb87-4afc-8085-2c1c7b939429",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.62965695004673,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "id": "18acd8cd-55f3-4516-ab4f-83f247fad2cb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.383198318964256,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "id": "a107ec37-59dd-4d48-9070-06b359473acb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.856244483546467,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "id": "9b90bc4d-73f1-4aa3-aa21-02b964979aa8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.948850242050588,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "e63a9a93-c13c-4fb7-9ca6-7b059469cda7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.304055564440576,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "id": "1fba56e6-6c1c-4c29-97d6-539680136083",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.317643271320753,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "id": "b0316ecb-f8ee-4e2c-999a-db6b0060e9b4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.430333055868733,
+            "invoice": "",
+            "user_id": "u114"
+        }
+    },
+    {
+        "id": "47ca4112-f504-4926-a740-573bac1695c8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.42603959442424,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "caedf507-ac37-4681-8e47-77e99f7f7e6f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.000271476389559,
+            "invoice": "",
+            "user_id": "u65"
+        }
+    },
+    {
+        "id": "8cf0f5a3-4231-4be4-8514-72e3014ab8bd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.871675780928832,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "id": "054b7794-404b-44da-9807-33b565434d80",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.177451720768397,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "9ebed1b7-2858-4882-a855-3f39bb6494a9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.089087411200206,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "676af238-b820-4f61-94d2-1db3ac640c75",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.470315740613316,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "id": "87a14b36-d418-4273-bc80-1c04fa4cc22b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.111635370540334,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "id": "1cae860f-362f-463d-ab21-46d2ba5d0ed1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.775831927371609,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "id": "7a2d0ea6-0fe8-4627-90b5-7b59be7b12dd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.958526524579408,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "id": "75ae8c18-d3f9-4559-ab2f-429339165dc2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.21994214927164,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "id": "fc33f8be-68d0-4d99-b459-72bf5730acc1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.167146017098586,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "id": "6f93839e-a2f4-4c75-9edc-345dc6e5382e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.702910309252054,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "id": "6dc7dcbd-9053-448d-8b1f-941033c4c101",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.670997212920275,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "id": "5a0fde00-7a39-4aad-aef7-9373768541a0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.295092783152292,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "id": "23b7f920-b3d1-4940-9ac2-ffaae3b2711d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.15671267085395,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "id": "4a7ef1eb-b25a-4c61-a9dd-e0259fb59950",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.57308508576809,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "id": "af620651-bdb4-4c9e-86a2-0af42eeff82b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.375183765231046,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "id": "7e786721-68ee-4d10-9d1a-38aac9dd2bf7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.785474640976101,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "id": "32018763-9bcc-4408-af62-080b3383abab",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.271295202588124,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "id": "4b07b4fb-2533-4920-a73c-d86b0df42fd5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.948425115435512,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "id": "58d0fea0-0fac-4790-8795-236107a11060",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.027491722129277,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "id": "5fb3cecc-cb8e-4ca6-84cd-a4a9a8b0fcef",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.442029008785832,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "id": "ce0e2817-7609-4de7-814e-7721d252801b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.122136776358744,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "id": "a38982ab-8893-4bbc-adc9-e03b553c7d2c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.988877618107258,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "id": "f46c8fe4-269e-4eaa-80b6-5abfcc3f38e1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.986574038524285,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "597e2ba3-9980-43a5-9bb3-c172de94bbb0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.720008163532746,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "aabbf1ee-6d80-4745-8907-f8e11d099d4b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.889626886906186,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "00f08750-a07a-441f-aad3-6a6ac623aa93",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.559617335295814,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "id": "38479ef2-c0b0-4360-869a-54460d506b66",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.129287053572643,
+            "invoice": "",
+            "user_id": "u13"
+        }
+    },
+    {
+        "id": "f59ba314-79a1-48e5-94a8-d3096fc682a3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.086381070455802,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "id": "ef36a2ae-a952-41cc-83a7-856eddb5a445",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.274066244984388,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "id": "c4356ac9-0471-4bc5-833f-d9c36069157e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.637492880345887,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "id": "62689786-95db-44cb-a7dc-67047c5ce7ba",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.920891706908332,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "c5add6a1-ca85-4f4c-bed2-297745b3b61d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.180921286008978,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "id": "3f58aad7-b44f-4d85-b074-705232eb4c3c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.958048772462746,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "id": "924e33eb-bcf0-476a-9cef-8c4302062245",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.31720761596229,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "id": "7dd69a1c-29c8-4462-aa75-81bd6c1750ad",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.230377655989434,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "2da0fce3-8f2e-459a-8569-3aee6d444186",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.919198217393607,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "id": "2e878363-8372-4d1a-ac0e-58ca1e48effb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.88246592450732,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "id": "d9e4b2f9-0f00-4d8e-b722-f72c1756b634",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.57929804604531,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "2184d300-2bdb-4b96-9c6d-d3db960e8695",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.783844986144418,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "id": "fce40d0d-6734-4fe6-ad5c-436d6926ab4c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.008132868368264,
+            "invoice": "",
+            "user_id": "u91"
+        }
+    },
+    {
+        "id": "c1f8e87f-5b04-4b13-8376-104c4481075b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.774091052358123,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "id": "5ab4a4cf-38a0-4d69-966d-18fa647bc232",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.432828143083135,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "id": "9cc1c74e-6426-4bc2-bea4-31857aec9188",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.580667294094926,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "id": "d54f6122-95cb-4aed-a611-8d7885172b16",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.644810611005349,
+            "invoice": "",
+            "user_id": "u43"
+        }
+    },
+    {
+        "id": "cbbfb148-2f16-4191-9a4e-ad1acdaec5fe",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.451986716894918,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "id": "1e8819be-7be6-4ff4-b3bf-e503a07a6b78",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.983095379025064,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "5bc21b5e-cbc3-410f-b6d9-af84ca464740",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.917748140273032,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "id": "31aad1cc-52e3-442a-b180-7b3638d04b19",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.1160429906666,
+            "invoice": "",
+            "user_id": "u8"
+        }
+    },
+    {
+        "id": "1113e997-df13-46bf-8eaf-013357e6c92c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.913491087904875,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "0e6ae0e9-8888-4707-86de-48ca9c8fbe66",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.591959636110612,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "id": "bb46e644-6eaf-47ee-a2a2-762a689d428f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.687730865699372,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "id": "d9e714f5-e1d2-4c77-a975-278ee8dfa09b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.937594355348022,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "id": "13645f79-472e-4f1e-b203-190ea4492853",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.546603033911245,
+            "invoice": "",
+            "user_id": "u140"
+        }
+    },
+    {
+        "id": "c1a2da66-f507-447b-9dcc-06c7c4445fe8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.152211058711085,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "id": "240aee56-b6e6-44a8-bf3a-cef646541554",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.26593420558396,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "id": "76999697-5f16-44ed-8558-02424004cb8b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.227736030633775,
+            "invoice": "",
+            "user_id": "u73"
+        }
+    },
+    {
+        "id": "10adb13a-6f48-449a-b589-41331b18842a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.468547195555574,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "id": "1d24c472-4155-47cb-bcc6-4f46124adba4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.801714576608859,
+            "invoice": "",
+            "user_id": "u82"
+        }
+    },
+    {
+        "id": "505c54a0-c699-47ec-83a8-abd57ce57144",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.19727870926561,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "id": "d0f9b72d-6eab-441e-9b78-eb8db3d9655e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.260142246607227,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "ae70d4ca-8202-4a9f-9ae5-500b40855bea",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.132200939425928,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "id": "b469e703-4f5c-4eb9-be6d-720bae057fcf",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.23308176360047,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "id": "8af190a6-af50-46df-a045-2f74119aff2c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.17643535672677,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "id": "8e9fc089-4663-423a-b6df-a81a0534bbaf",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.161212858138638,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "id": "6c9ef7d2-b047-48b5-a362-55d58e3593a5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.325686238570453,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "3d08af76-9fbf-44f3-a4ab-76ce25172efc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.599210966948721,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "65d7d66c-671f-45a2-b0bd-ef23be7ee783",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.36208267054494,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "id": "ebd8bdad-6cd1-4ab5-bc8f-8e1d7d155e52",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.33184893506036,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "id": "420ce8bf-4caf-48ea-a51b-d05eb61479f7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.057391290326333,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "c35b03b1-96c9-45f5-9fd7-9fba2a2d3011",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.216704292181593,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "id": "43b6ad71-a711-4884-93a5-f8602adb9a9c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.871176348726959,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "id": "4744d55e-4c1d-44fb-9cae-d5a19e47acc4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.193547560306763,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "b5c9e6f8-8ce3-4fd7-a790-aa191f86078a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.862917360283078,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "id": "2453756b-dbe9-4e21-81af-84032f07bec1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.53156448347273,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "id": "4db3bd77-0f77-48ae-a0a7-0653926a436d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.193178871115744,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "id": "9efdf702-c581-4426-abae-a87264548786",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.807554264664713,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "a50199f8-56bd-4b85-ab33-83a1ee27f86a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.890290049880782,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "58a9932e-dc38-4bb7-a155-0f27bb9637e4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.3665203391863,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "id": "8c48fdbe-9c91-443b-92d8-f49f7584d13d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.115500889198515,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "id": "42a60fc2-f5b6-4834-91a4-a871d23c0c65",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.624764117009247,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "id": "54b6f85f-8a78-44fc-a29c-ac8f28fb3183",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.60966113445568,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "id": "4caf3c9c-c56c-4dad-b354-6f0252cc7dcb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.242660801429174,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "id": "56aa443b-3577-4cd5-af73-78de8ccd9c3e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.838440120242229,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "id": "efc4f351-0f1c-460b-88c0-df89ad6ba852",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.51004269290191,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "id": "6ee5f645-0a41-4ebb-8594-5511fa95c7cd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.87612119826339,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "id": "64a675e0-fb68-4f7c-b79f-efe3c52515af",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.592126288938735,
+            "invoice": "",
+            "user_id": "u10"
+        }
+    },
+    {
+        "id": "ab35dd42-b88b-49c4-8d64-a8413215062c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.300219966836774,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "8c42edf7-a330-4724-9b65-eb800c526d5e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.002155207110832,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "id": "d75b74d4-5319-4adf-bd57-72a9ea503969",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.291778773776995,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "43443ba5-47cd-442d-bd27-87e8e6864261",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.385486609368437,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "id": "3a9701a4-80d3-4c9d-8bf2-49b77daa91e1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.638792333172281,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "id": "69df9926-8449-4067-903b-321766ed44e9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.352525109528582,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "id": "ddfbc0b7-335a-4f17-93f2-840fa9a0dac1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.667616989244104,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "id": "556a650e-b8dc-40be-b6ac-364e8daf1810",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.830472504391896,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "a94e7def-e9ce-4bde-95d1-55398dc080e1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.09055261129672,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "id": "a2695de2-84ef-4711-a5d0-b37044e7ca05",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.554749519545888,
+            "invoice": "",
+            "user_id": "u116"
+        }
+    },
+    {
+        "id": "55afa6d7-f0a9-4bef-93c2-d8d881120eb4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.571169356623479,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "id": "12210cdc-74cd-4975-a2d3-84c8e23a3394",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.579399164542837,
+            "invoice": "",
+            "user_id": "u116"
+        }
+    },
+    {
+        "id": "6e10c34f-d474-4814-9e86-cdc179073aaf",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.298602618633032,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "id": "908000e1-8f69-4444-80f8-f38a708ed356",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.106823538384685,
+            "invoice": "",
+            "user_id": "u111"
+        }
+    },
+    {
+        "id": "72c715c0-81e9-4da2-9735-1b85747e1d8b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.820687751894834,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "id": "163bd2d1-97ca-4987-bf63-ca9e05339165",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.09921578371444,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "id": "7ea4d34a-3939-4884-9d10-ba5d587ea521",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.93060801887399,
+            "invoice": "",
+            "user_id": "u142"
+        }
+    },
+    {
+        "id": "f72b740c-c441-4340-a4fa-0ecff3f7b054",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.552717831861543,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "id": "7d7271f9-cb0f-4dcd-a51b-be4855818c7d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.752178836061848,
+            "invoice": "",
+            "user_id": "u83"
+        }
+    },
+    {
+        "id": "f5ca8611-39ff-4989-ae6d-cee911194d6b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.308298440208922,
+            "invoice": "",
+            "user_id": "u77"
+        }
+    },
+    {
+        "id": "1f4d693a-3c2d-4415-98e3-34fb726be283",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.369274620831264,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "id": "257f493c-9e1c-4b4e-adcc-d538414f52fb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.752866191157509,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "id": "066185e2-509f-44e0-9b79-16f327b3039b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.993721789248957,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "id": "172ae587-07c5-40c0-b5ff-38c692c098cd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.510651701163997,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "id": "52064b46-10f5-48ef-8824-d0a00ea62e57",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.308164360869744,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "id": "027e536e-d324-468d-8ad6-a907b46694e8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.790470091437625,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "id": "d294cf8e-199c-4dff-85c0-57b863840324",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.047927556412814,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "id": "06313039-3bb0-4aff-957e-9730ce8d578e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.503420017723379,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "id": "5e6a43f9-c621-433a-9a2a-26d42f51f843",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.495933771773625,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "id": "837e9df3-cd67-4acf-b34d-04144aabc0e0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.870723121998358,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "id": "0482dd76-ea99-4c54-869d-3d7cd7f1b381",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.487360658622332,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "id": "8f7ae28e-8159-4ece-9315-6f372ed781e9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.56911825480143,
+            "invoice": "",
+            "user_id": "u146"
+        }
+    },
+    {
+        "id": "814cbe91-9f9c-41d5-9bcb-7b680da78ead",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.565969178385377,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "be72188e-0f8d-4fa8-8bbd-3c2ab407cf43",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.155926365036692,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "524a0ecf-0a3d-486b-bd66-4ba88d5da8d5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.493483678986296,
+            "invoice": "",
+            "user_id": "u130"
+        }
+    },
+    {
+        "id": "76afeaf4-4700-4345-8023-9920e9435d5e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.71218567702587,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "id": "94097441-4df4-467a-997a-5af98525985e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.12215741744394,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "60ce16e1-a033-4fd8-aae1-22541295b248",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.303676524533149,
+            "invoice": "",
+            "user_id": "u20"
+        }
+    },
+    {
+        "id": "0e63db3b-87a3-450a-a7bc-79ad9776a927",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.80660781395869,
+            "invoice": "",
+            "user_id": "u20"
+        }
+    },
+    {
+        "id": "2858f68c-02f2-4c4a-baf6-eb98d19390dc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.10467338529888,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "3163c510-5faf-43f0-8860-a5afbde283ea",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.293688695168575,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "id": "5c4932e3-915d-4462-8aa6-e707523d89eb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.71898181283939,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "id": "9a03609d-366d-46c8-82a4-c91f9d7ac4af",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.212478871388901,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "id": "22d684de-9aca-4b57-ac9d-9e3e21bbb280",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.569504125912522,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "21751d5f-b25e-4217-836d-70110b443de0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.39437540945053,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "id": "86df52dc-2a4b-41e9-b3f8-e136c2748543",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.873799753451264,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "id": "4a3d4675-4a68-4f22-a132-46d89f7ec68c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.815961939878484,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "id": "72585a47-e516-48dc-9a91-f7d0a086bcea",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.833232230464208,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "id": "bde4cf08-69d5-4f5a-bc22-4979ca23740c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.83015825518944,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "id": "ab9d3f47-1456-45a0-89a1-f5c34a738033",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.848415438410633,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "d7df8d46-5e2d-4327-97a5-8158ac914d8e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.718665249815773,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "d5c66737-d6a3-446a-bd92-4b62baeff353",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.165835402882365,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "id": "bc083331-4169-474d-a75b-b5222909f370",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.406115771491265,
+            "invoice": "",
+            "user_id": "u103"
+        }
+    },
+    {
+        "id": "a691b531-590b-4f9d-bec4-2c2544e15b03",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.667945860659529,
+            "invoice": "",
+            "user_id": "u34"
+        }
+    },
+    {
+        "id": "8ec57b15-b709-409a-b8d9-ee22e73940a2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.228760403245989,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "id": "69571d47-9135-46ac-8ca9-50ea4d05c238",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.016412394476475,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "id": "c7daee1e-9bb0-43d1-8564-d6d2991c9cd9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.320411461796422,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "id": "cce5bea1-a134-4f77-8c2a-1d25b36e2355",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.798902660346913,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "id": "d344b772-abd9-489e-92f0-12c4adce010f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.030570634434714,
+            "invoice": "",
+            "user_id": "u136"
+        }
+    },
+    {
+        "id": "e2e2c46e-ab95-4933-aca0-8d00c788f490",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.573930990352876,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "dbe3d129-4f85-4787-a355-f746a0a500df",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.765549610191108,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "id": "7c1d4fd8-29ea-42f4-a2b5-cf4d08fd0081",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.472987364377378,
+            "invoice": "",
+            "user_id": "u30"
+        }
+    },
+    {
+        "id": "cc844414-0eda-4732-927c-6fd2461708f4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.587414770509547,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "id": "09f0dfbb-c794-4b80-9ebe-2aba88bff5f9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.645565535854665,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "id": "126c870e-dbea-4908-a999-52e74dbe459f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.797534675814806,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "id": "03e93812-653a-45e2-bf1f-fe3330dbd740",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.061988143441896,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "id": "e8e4bd09-658b-4d2e-ae5f-e07784c2e4c6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.273001162303323,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "id": "0cd1bc17-3882-4529-be47-3ba60113a252",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.87311794920861,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "6c9f8360-4e7b-444a-90df-138f0d5f91df",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.084083821204237,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "id": "cbb5b68c-ba02-4945-9a0c-1cb67ba3cc7b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.134135981986484,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "id": "6072ddd3-a9bc-4ad0-a4dd-0f66e2f5727c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.178635385913152,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "id": "47f0787d-0991-44ac-8e56-13160267d37d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.164472771087393,
+            "invoice": "",
+            "user_id": "u20"
+        }
+    },
+    {
+        "id": "2606cf40-f834-48c3-b31c-061dda4ade60",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.494468912862041,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "id": "586dbd28-3916-47b1-a7a2-d1c73a65f464",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.79533246686972,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "id": "16a1d356-a7d0-4d0f-960e-b8abaa94b411",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.581997927964,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "id": "cf0eea05-aa7e-4787-a75f-cb6aaf390c1a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.425081189541698,
+            "invoice": "",
+            "user_id": "u51"
+        }
+    },
+    {
+        "id": "7de9e1ed-c889-4467-a149-aa49ddb74da7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.517525375680263,
+            "invoice": "",
+            "user_id": "u70"
+        }
+    },
+    {
+        "id": "75c6f7bd-57a4-44e1-b83d-43ec2de1664a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.042771857121476,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "id": "ebd5156e-3fda-4ccc-ab4d-7dc53bc520e9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.5383216229612,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "id": "ca2d5414-763b-469a-aa3f-3f20f7a639de",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.453271342235329,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "id": "7b6f4eab-bf22-4a30-a423-acd3f08dd26b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.148431621497204,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "id": "84779e1e-44f7-42ae-be58-5e6ee99ea067",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.490903965959053,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "id": "b97bf73e-b1c9-47ad-8df9-5490c671d7a9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.195065477565455,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "id": "6b3c53aa-7e3a-4102-8c38-904fcae50a0c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.490961060191399,
+            "invoice": "",
+            "user_id": "u133"
+        }
+    },
+    {
+        "id": "084e8695-5f1e-4219-beb7-846c8ffebc17",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.4993299132152,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "id": "5499ffff-98c2-452d-9feb-be73115e65ea",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.466472874793515,
+            "invoice": "",
+            "user_id": "u82"
+        }
+    },
+    {
+        "id": "45dd7abc-14cc-4849-89a2-8334cca50177",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.146985234176181,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "id": "446ed548-856f-43a4-9184-a15f355d410b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.789376613019,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "id": "a35eeb76-b274-4c8d-8d9f-bb5bab897020",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.648074851723631,
+            "invoice": "",
+            "user_id": "u10"
+        }
+    },
+    {
+        "id": "3404350a-376e-4d03-bfb8-d1d1169f42d5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.874347782738358,
+            "invoice": "",
+            "user_id": "u51"
+        }
+    },
+    {
+        "id": "a5d00d01-7bed-4ccc-9f03-9df274e136ab",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.333075890962286,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "id": "43bfbfd7-104b-4f5f-b2f8-6952d7173880",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.393509221901116,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "id": "a3db3264-f32b-4e26-8c92-7536176eab7c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.654396283962509,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "id": "7f15cafc-0f08-48d5-8bda-07995c60774c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.013189295893495,
+            "invoice": "",
+            "user_id": "u8"
+        }
+    },
+    {
+        "id": "68a5ecfd-7bec-4dfe-87db-4524674b663a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.037792351948465,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "id": "8ce79bff-72e7-4916-a304-e5f2b6225a70",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.255439135738353,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "id": "195f6962-14a1-4bf5-8119-f63b20342ed6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.266047905575693,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "id": "daecfc0d-6f37-4ed5-9d45-d7cb743ae74d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.337744913277556,
+            "invoice": "",
+            "user_id": "u142"
+        }
+    },
+    {
+        "id": "999e52fe-de30-43ca-8d3d-22417d1b8b96",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.353200113733237,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "2c70dd58-3456-443c-8b88-a96c005580ac",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.652035547456931,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "id": "f758d098-9d9e-4748-a84a-46131550ef5d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.320989956567264,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "id": "2e15b2fe-3c26-4698-a98f-29e3b757541f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.152280038479413,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "id": "baee60d4-f807-47ca-8922-a3929573e020",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.334529307963184,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "id": "88f71e5e-5e1f-4edf-93ea-392601e6755e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.215848417255728,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "id": "be2ffa63-adf5-4bbc-b5d0-281b1b2c5d02",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.740308909591478,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "c0dc798b-dd86-422c-b0dc-98199b60bce8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.845402897138687,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "id": "97eaf1b5-ae74-44c7-b141-98e42fa3ea3f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.50147651382456,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "id": "f01f9900-e7c1-482f-8256-ae5ad06026b7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.097295924649508,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "d767c9c2-957f-4cee-bf11-3de30f287976",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.194960260121901,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "id": "3b1610b7-f439-4414-9ada-431518ccc718",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.979221551144335,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "86937897-9ab1-4e61-b017-aa428712ab4b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.749555104380063,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "id": "86ef2a55-4d20-4f4d-bc01-37779a615e03",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.258056026952623,
+            "invoice": "",
+            "user_id": "u20"
+        }
+    },
+    {
+        "id": "ecdb2e27-ca2e-4fb8-9ca7-3313d6f8df65",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.758226617663503,
+            "invoice": "",
+            "user_id": "u34"
+        }
+    },
+    {
+        "id": "27e76a40-94cd-48d2-a5ee-cbe9e6269795",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.67539467484076,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "id": "2ca2f1e4-16f5-46b9-bb2f-e4a1c6317288",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.135001164438505,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "id": "58d29271-39c8-41c6-9eab-faa6da111dde",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.818827412021276,
+            "invoice": "",
+            "user_id": "u43"
+        }
+    },
+    {
+        "id": "dc862029-e70d-44cc-aa9c-8c4d442f8e25",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.684169969220687,
+            "invoice": "",
+            "user_id": "u103"
+        }
+    },
+    {
+        "id": "ef206cfa-e002-4585-a8e8-2f58bf0581c3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.48361688167049,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "id": "1447c459-0f1d-402b-8744-58c11b9bcb43",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.094475895114451,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "id": "3b688b04-1648-4077-a52f-ed1be775c73e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.008435715694072,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "0ca567a0-ee57-4065-b808-36385b5a9185",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.713238636711377,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "id": "9daf5e5f-7220-4d93-8fbd-2a98fb1850e9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.129532107482612,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "id": "7e1420c2-e9fe-4f47-a1bd-11dfc9f3a514",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.869952917309902,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "c6da6f22-9238-4e3a-99d7-e920eebca81b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.388319406057864,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "id": "a41a3d0a-3ec3-4c7a-9f5c-df8230570027",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.234459470487733,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "id": "2ac00254-0c61-40e2-a337-0a373fba96fb",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.194791481273196,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "id": "d2b46837-375f-42bc-b572-1afd032cde17",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.16559389517242,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "id": "e06fade4-d56a-4b10-bbc5-0f03ca4d14fa",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.062923653674162,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "id": "833a9ad7-a548-48e7-89df-a9b8e4c12234",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.07228976975073,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "id": "51e2c1a8-6d13-4dc7-8007-9412e6da88e5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.761292927059351,
+            "invoice": "",
+            "user_id": "u70"
+        }
+    },
+    {
+        "id": "7a90ea8c-b7b1-49f4-9daf-a8e0cbb97f36",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.643291893642468,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "id": "c7aee12b-a291-4c43-a290-2d5f3d923dfc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.652989536259557,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "id": "5b31533d-56f6-481f-8a1b-9ef89b93e06b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.965305181032868,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "id": "d7abd13a-f2d6-4140-b863-c4d68f5e7942",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.652424088168782,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "id": "4845cdfe-1553-43a6-9481-aa38c87f77d9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.255946531082678,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "id": "0b036cfc-fc5b-4950-b253-a433ad2a5701",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.098697422494467,
+            "invoice": "",
+            "user_id": "u34"
+        }
+    },
+    {
+        "id": "b2ddb699-c2d0-403c-801d-79763e051209",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.921066857892505,
+            "invoice": "",
+            "user_id": "u38"
+        }
+    },
+    {
+        "id": "5af1f926-6a81-49d7-a5a8-40f912243bde",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.38060808577102,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "id": "aa211f12-dfec-44ce-823e-a66ee1e7b61f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.117537788493877,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "id": "7c2af718-5d4b-46b2-b76b-704303abf9aa",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.724927675153701,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "id": "ce3fd702-32b9-417c-8eac-a4f92e35afc5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.046729888493038,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "id": "e757987d-0fcf-45b8-9f4e-d8f6243ad5ce",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.407955258954555,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "id": "aef76642-0ebd-4f7e-ac63-dec8d6de5d78",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.122781007917329,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "id": "f9044b63-6eb6-40ea-954a-5fb08c35eca0",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.223605521104695,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "id": "17479da0-8bf8-40f2-9be7-ffc185d678a6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.930046099416938,
+            "invoice": "",
+            "user_id": "u30"
+        }
+    },
+    {
+        "id": "31131276-6e6e-4d10-b143-866f2a700188",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.504049767110645,
+            "invoice": "",
+            "user_id": "u136"
+        }
+    },
+    {
+        "id": "1f37b4dc-f37f-461d-9297-261548108720",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.352825248875428,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "id": "e91c95df-b946-49d8-9a10-45612c23898d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.845710967076641,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "a1ee7aef-802c-40ef-a574-7165d82efa52",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.870216147302257,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "id": "9e85a8ee-b2bc-447e-8ad1-5201b9285862",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.949049570832258,
+            "invoice": "",
+            "user_id": "u85"
+        }
+    },
+    {
+        "id": "1cfc9ab8-27f8-437c-ad62-50e939821ba2",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.897446785832503,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "id": "623e2d75-734c-4895-890c-37041c99132f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 10.898431871339476,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "id": "fcabe578-689c-41ca-bd0d-e9d8eb6464b7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.563638483223595,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "id": "b7a71bde-4a47-4cbe-a688-71fe42e7d759",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.686680699104736,
+            "invoice": "",
+            "user_id": "u82"
+        }
+    },
+    {
+        "id": "29a99a8e-9d75-4244-9a10-ce7497e12ff5",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.641561403690737,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "id": "e47524c9-2a13-4265-abd5-68d42c702b32",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.545252757073726,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "d4480569-c965-4993-a5ec-5ea5bfffc242",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.113285748487245,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "id": "aaf060e5-1c5c-4851-a239-15dc224b0cbc",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.919750827646768,
+            "invoice": "",
+            "user_id": "u73"
+        }
+    },
+    {
+        "id": "3e0953cb-33c5-431e-96fd-fd662eaa959f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.729967081612404,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "id": "28f9f6e4-dd4d-4674-9262-af711d384b3c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.140020458320464,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "id": "4a82aca3-aba0-49e5-9c00-56e942577dcd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.330205969135871,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "id": "1b461b0e-015a-4eb3-ae91-60493a9e71b6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.009518534786196,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "id": "65ac4763-5c7d-47de-9a2b-97feaf68019f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.72569591359589,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "id": "de5c0bd5-db1f-4e8c-8eeb-a9dd7fa86dca",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.67392900986028,
+            "invoice": "",
+            "user_id": "u43"
+        }
+    },
+    {
+        "id": "cd4193e2-3b49-48b4-9f96-1049e64adea4",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.072740096569124,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "id": "04e78245-221f-4b12-aad2-86334d4d9c16",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.501017937017902,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "45ddc925-b09e-4306-b221-fcc9dc806d20",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.09257338593705,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "id": "97044af7-189a-42d3-a02e-b9f7f1ce5429",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.63023098822951,
+            "invoice": "",
+            "user_id": "u111"
+        }
+    },
+    {
+        "id": "9028bf4e-5d28-49db-b706-9124e8234c2f",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.71352252168489,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "1c267df7-2901-487b-acbf-a916b462c882",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.769207638480632,
+            "invoice": "",
+            "user_id": "u83"
+        }
+    },
+    {
+        "id": "f6ad3916-d26f-444e-a720-3e19d8d1e65a",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.178113149175452,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "id": "c1b6a43d-de6e-4fe7-a88e-0078607117bd",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 9.398210417190759,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "id": "53f1b015-cdc7-4c00-aace-fac141fc6938",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.359403743026327,
+            "invoice": "",
+            "user_id": "u13"
+        }
+    },
+    {
+        "id": "7ad14892-01aa-45e8-a967-94b9007c080d",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.865562700348557,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "6e9209bd-fc02-4f05-9247-d7914365d458",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.612247758774032,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "id": "4307dd6d-50e1-4221-be7b-818dfba086c3",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 12.99412152879086,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "id": "e02e27b6-f8a9-49bb-a2ab-aad2c61e07fe",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.957898501636787,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "id": "e3b60152-d273-48b0-a6d1-f0976e459ff1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.236019257430339,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "id": "de5c2bbb-5684-40e9-9994-67c0570e565b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.896804777455028,
+            "invoice": "",
+            "user_id": "u48"
+        }
+    },
+    {
+        "id": "d69a6288-36a4-4194-90d5-424ab3e48b33",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.424537505905114,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "id": "6ff0a59c-f52c-4014-9a76-901c92adf896",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.722601909787546,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "id": "74886618-4309-4066-8755-65b889a76997",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.575831568784993,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "id": "8cc4f1d7-b85b-4cd3-8183-f5175ce91aff",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 8.497197428706608,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "id": "6a30c27b-44cb-48af-8240-7843d48e81a7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.36749731924484,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "id": "27fa7483-a5db-4444-a816-de34ebfcbdd6",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.969635397802945,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "id": "1aa7eb4c-fd40-47ab-a861-255bf3254b8b",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.06733282800057,
+            "invoice": "",
+            "user_id": "u126"
+        }
+    },
+    {
+        "id": "4c1a2653-2ea5-499e-94b1-924751e569ee",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.621839522563128,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "id": "881da92c-71b9-488d-ab25-37af9c3443f9",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.776978178182588,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "id": "77f26c4d-3adf-48be-9843-d06cafd4432c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.48345711346547,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "id": "64ec1c7e-1130-4d47-8652-2fd808ffafad",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.815919374046203,
+            "invoice": "",
+            "user_id": "u126"
+        }
+    },
+    {
+        "id": "46c37199-425d-4881-888c-5b7aca77775e",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.455101933743162,
+            "invoice": "",
+            "user_id": "u112"
+        }
+    },
+    {
+        "id": "5527349a-59be-4c7a-9e96-0e37f534eea7",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.321753414334317,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "id": "2dff5004-c896-42d8-92f5-a417e7f69ad8",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.426301444865757,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "id": "aa9381bf-9941-494a-b811-2d497a069c2c",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.477974001612743,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "id": "113d8fe1-2302-42c6-8d53-b08ce1cac6a1",
+        "model": "ivasimas.payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit card",
+            "cost": 11.13028490498327,
+            "invoice": "",
+            "user_id": "u142"
+        }
+    }
+]

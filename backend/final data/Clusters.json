@@ -1,0 +1,16 @@
+[
+    {
+        "id": "5230bebd-10b5-47d9-8eff-7574a01493c5",
+        "model": "ivasimas.Provider",
+        "fields": {
+            "provider_name": "cls0"
+        }
+    },
+    {
+        "id": "9c920903-067d-4465-a7e4-533b4480066c",
+        "model": "ivasimas.Provider",
+        "fields": {
+            "provider_name": "cls1"
+        }
+    }
+]
