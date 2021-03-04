@@ -96,10 +96,16 @@ with open('raw datafiles/poi3.json') as po:
     points = json.load(po)
 
 charging_stations=[]
-for i in range(500):
+for i in points['data']:
     station={}
-    station['id']=str(uuid.uuid4)
-    
+    # print(i)
+    station['id']=i['UUID']
+    station['model']='ivasimas.ChargingStation'
+    st={}
+    st['cluster']=clusters['data'][int(random.uniform(0.0,len(clusters['data'])))]['id']
+    st['owner']=str(uuid.uuid4())
+    station['fields']=st
+    charging_stations.append(station)
 
 with open('final data/ChargingStations.json','w') as out1:
-    json.dump(chs,out1,indent = 4)
+    json.dump(charging_stations,out1,indent = 4)
