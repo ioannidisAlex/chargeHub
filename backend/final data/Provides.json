@@ -1,6 +1,6 @@
 [
     {
-        "id": "edc78684-fb9c-43c3-862c-5fce79321ac6",
+        "id": "14736c00-509b-4dc4-b5c0-bc8b96cb4ce5",
         "model": "ivasimas.Provider",
         "fields": {
             "provider_name": "prv0",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "id": "220bfe93-bc57-4e0d-b884-5b452c368b29",
+        "id": "a739f9bc-e30b-4c28-a539-a69036a60156",
         "model": "ivasimas.Provider",
         "fields": {
             "provider_name": "prv1",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "id": "232515f6-fc8f-4d36-afae-f1247df69338",
+        "id": "94cfd314-693a-4b46-9368-8d19564d6b12",
         "model": "ivasimas.Provider",
         "fields": {
             "provider_name": "prv2",

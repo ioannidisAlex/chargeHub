@@ -221,3 +221,36 @@ with open('final data/ChargingStations.json','w') as out1:
     json.dump(charging_stations,out1,indent = 4)
 with open('final data/ChargingPoints.json','w') as out1:
     json.dump(charging_points,out1,indent = 4)
+
+with open('raw datafiles/acn_data/caltech_acndata_sessions_12month.json') as se:
+    sessions = json.load(se)    
+
+acn_data=[]
+
+cnt=0
+for s in sessions['_items']:
+    # print(s)
+    if s['userInputs']!=None:
+        session={}
+        session['id']=str(uuid.uuid4())
+        session['model']="ivasimas.Session"
+        se={}
+        se['payment']=payments[cnt]['id']
+        # se['protocol']=""
+        se['user_comments_ratings']=str(randomint(1,5))+"stars"
+        se['provider']=providers['data'][randomint(0,len(providers))]['id']
+        se['kwh_delivered']=s['kWhDelivered']
+        se['site_id']=str(uuid.uuid4())
+        se['connect_time']=s['connectionTime']
+        se['disconnect_time']=s['disconnectTime']
+        se['done_charging_time']=s['doneChargingTime']
+        se['charging_point']=charging_points[randomint(0,len(charging_points))]['id']
+        se['vehicle']=database_ve['actc'][randomint(0,len(database_ve['actc']))]['id']
+        session['fields']=se
+        acn_data.append(session)
+        cnt+=1
+        if cnt==500:
+            break
+
+with open('final data/Session.json','w') as out1:
+    json.dump(acn_data,out1,indent = 4)
