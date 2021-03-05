@@ -1,9 +1,18 @@
 from django.db import models
+from hypothesis import HealthCheck, Phase
 from hypothesis.extra.django import TestCase, from_model
 from rest_framework.authtoken.models import Token
 from rest_framework.test import APIClient
 
 from common.models import User
+
+USEFUL_SETTINGS = dict(
+    suppress_health_check=[
+        HealthCheck.too_slow,
+        HealthCheck.filter_too_much,
+    ],
+    phases=(Phase.explicit, Phase.reuse, Phase.generate, Phase.target),
+)
 
 
 def generate_single(m: models.Model, **kw):
