@@ -3,4000 +3,4000 @@
         "id": "0DEC69A1-CD73-41B3-99FE-AF37DC29B1CD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4a97f698-ecda-48eb-b1ba-e2d6afaf2b2a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2522a017-9787-4c1e-858d-4313214aeb82"
         }
     },
     {
         "id": "4F45220C-E16E-496A-9E9F-EDFD71BC679A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "579459bd-15fc-455a-abcb-8d022b223e5b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "27200c44-a43d-427d-92e5-77a820610e5b"
         }
     },
     {
         "id": "D7FC190B-FC68-44CB-BDF1-4B23865EEA75",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bf5e180c-2e02-48c5-b168-fa1bc280a73c"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "74d5b78d-ede7-4401-952d-40f8809aa0d1"
         }
     },
     {
         "id": "67D384CC-7DDD-4D21-88DE-368F084F4818",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "873c3adb-d499-46d3-8346-fe5bb3feb0e4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e0eb8e75-c86d-414c-9bba-ed35baad9d2e"
         }
     },
     {
         "id": "0DE06F9A-DAC0-48F1-9D87-9A5280C47237",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "4043c65a-17ef-4a73-af99-82ace628166c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b2ff9eb7-bca6-4aa0-969f-482c9efffba6"
         }
     },
     {
         "id": "9EA3760E-B2DE-4A6C-BB4B-61E2FF227098",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "61163a7d-51d4-4400-8207-69b170045a4b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "272f38e2-9584-448b-8b7e-3c1d0dbfd8b1"
         }
     },
     {
         "id": "8913A2E4-02D2-4A87-ABE9-AFA560B7D221",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "736c7f48-21af-4391-8616-faa819d85eca"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0b41c46a-7278-45e2-b510-c84a8b931255"
         }
     },
     {
         "id": "089C61D0-D2CC-49F1-B60C-60F1A7FBE568",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a52aa4ee-9ebd-4727-8074-4942f0e06511"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "29643144-1c68-4b0f-aaa3-6b12edab7ce5"
         }
     },
     {
         "id": "D164713B-86F7-474D-978F-9121C19E015F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6be74d99-2b70-417f-8f5a-6898a165b7d0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8bebf74d-e5d1-430e-95ea-4ff67c779421"
         }
     },
     {
         "id": "3AD7C90E-CB2A-440F-A620-C32702D2A3A9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2a6f6dd2-88ce-47d5-9117-acf68ea4b38a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5d45e562-868c-4935-ae23-3f35be46c10b"
         }
     },
     {
         "id": "9C04868C-592A-419D-83BA-D9A4B6442A95",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9aaa1c5e-3ef5-41ef-96da-4f18331577ef"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7c9c5ccc-0503-4927-9717-35675dfe2d5e"
         }
     },
     {
         "id": "79DD5F16-B9B6-4C9A-8146-C3638747BC6C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "31533b95-826f-4e6d-bc19-fd1f013b6c1f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8249ba89-1236-44d2-839d-f480e93cdb57"
         }
     },
     {
         "id": "4AE8B324-8216-41D1-92A2-9BAC5FE834D9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ebb21ac2-75a8-4715-9046-912e26497da9"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "13d6fef1-81f8-4f28-b4ca-0977d6a7c73c"
         }
     },
     {
         "id": "C8299F01-BF4C-427C-B0CA-392AE00C398B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "eedd661e-dcfc-446a-ab4d-5b2459eef9f7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2f3565df-2685-41fb-88f5-bcd725343e1c"
         }
     },
     {
         "id": "2D888788-33AC-4D1C-AB94-F03D4D0D353D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6d41117c-824b-4e5f-adc7-c393e650e6d3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3bef6f15-94db-4757-b015-6578fd3a554d"
         }
     },
     {
         "id": "4B1A87DB-5971-4C3C-82B1-DBDBCF581BB9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c807a0c7-54a8-4151-84eb-74fddb86451d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3ecfd01f-cfb3-4b28-b42c-e3a1f85c9a6d"
         }
     },
     {
         "id": "EAB258AF-48E1-4B9B-BE88-E5B9BB5E303A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a2e45716-8187-471f-a49e-bfd2ef1a571e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "020a8abd-4a2d-4ea2-a76b-a53d5fbcfd51"
         }
     },
     {
         "id": "7C577BAD-C8D4-43C6-899C-FAB50BDBFE18",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7ab9ae21-bfa6-430b-a4a9-405cf0c19022"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e2e01112-3dbc-4295-bf3c-bac0bdd5e8c1"
         }
     },
     {
         "id": "0A916ACC-3A93-4C4D-A23C-25DEF183C4FE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7287cbc9-efe6-4dba-8828-221cdd26a4a9"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "9a09c43f-8118-49af-933a-703a8ef0fae8"
         }
     },
     {
         "id": "1FC320F8-1ADB-4408-B935-499CE50D7AC0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "382f5579-efc1-4c94-86be-e7cde7dd68bd"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f19be241-5da0-4f13-b87a-f3be8aac0741"
         }
     },
     {
         "id": "BB3B152F-70CC-4F05-B9A1-64770BB8D8E9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9d6c8b57-2890-4286-aaef-a2c64db95e3c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "47740b3d-47b8-46fc-b3e1-8c67114d6359"
         }
     },
     {
         "id": "C24A6DEC-C4FA-4CF4-81D5-9F33C79463A7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e34108f4-3b64-4997-9268-c15517d51e81"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9a5a8a9a-202e-4e31-a16f-90d573ca2d60"
         }
     },
     {
         "id": "3ACC4F70-9A25-4D00-97B2-420FDC322E5E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3b848191-167c-46bf-ad16-5e84cbd729a5"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b156da50-4b38-4413-9778-c2b8889b3cb1"
         }
     },
     {
         "id": "2BF855D4-B416-4903-9769-15EA4071DF94",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7a5340d5-2e29-4ea8-8f41-0d79b4e9a9fb"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "1a672dee-84b4-4f18-b223-0206c2c0f0fe"
         }
     },
     {
         "id": "8736F2D8-D44B-4C6E-8B0F-5EACA87268E1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f2c3a7a9-853c-45b4-b059-eece25192fd0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d874a639-d653-43f3-b534-9ba5e1f2acaa"
         }
     },
     {
         "id": "253D3609-C206-4626-9512-671B6B3F4FCD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9689f8d5-79ae-49f3-878c-37a03e06b286"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3482ce9e-8601-49e0-bc97-20b005d7b456"
         }
     },
     {
         "id": "B7870AC2-662C-4B03-847C-E6977B4DA695",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ce61e148-60f0-469f-a6dd-7c851e2a33e7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "66e68f32-aed7-4bf6-bf00-fbb0af560843"
         }
     },
     {
         "id": "3E59631A-5200-4812-AB63-F3B5E9643B49",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "202f3009-5f40-4dd2-90bf-655824f34715"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "227f7096-cffe-405f-9b2f-b764940167a6"
         }
     },
     {
         "id": "3D06FC52-A678-473E-B00E-9E8E23418B9E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4bab10c9-d9f4-42e6-9d8e-a6162a530519"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "216df800-c4d2-429b-867b-ac2178c3057f"
         }
     },
     {
         "id": "4680D715-54ED-48C6-AC9D-FC92EE0BB5C4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "659826af-93b4-4d26-a126-1e76b1909296"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e0302b7e-7672-4e93-97f1-d0e991f4a801"
         }
     },
     {
         "id": "200AD385-DCEA-4DA1-853D-23CBC87DBA1B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ea20c97d-6bb3-40aa-90c6-769ae5495535"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "60cf8b63-18b3-4545-82b5-0edad82c3c7f"
         }
     },
     {
         "id": "CD6B4C64-AFD4-4C03-BF86-AC01B7C048D0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "af60aa0d-e3bc-4e75-a06e-b378d36cedd8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d8f1a060-e0d5-4627-b0f4-d297be2795a6"
         }
     },
     {
         "id": "E2051CD7-015A-47E4-82F5-AF1958E50490",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "cf1f297b-9e8b-44e7-b016-bbf7348bd6f1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "760cebbc-2e68-43e2-9e92-8163857389b3"
         }
     },
     {
         "id": "73431893-D671-4940-9C21-C8A2A5823F6F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c10b9f79-91aa-4bd1-9f44-c8e52b48f77e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a5625462-ba75-443e-aa12-9c03fc2bf344"
         }
     },
     {
         "id": "5471CDCB-4BEA-422F-BF86-F1F5A5689A95",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "16fcecfa-6b31-4921-9928-17b642055498"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "90babb60-5af3-435e-b570-01dd32712235"
         }
     },
     {
         "id": "1662BA94-1FE3-4C1E-B5DA-6C4A49033F21",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d743919d-87ba-4695-ad5d-a9747ca5fa3b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8b4b15c3-b628-4e56-b4bc-6143b8dce1ff"
         }
     },
     {
         "id": "CBE9B0D6-71E3-4804-BCAD-EDE5B18948CA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bee406b2-242d-4373-ad64-0e1b33789632"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6840cc28-6470-4251-a75e-15bbcd08626d"
         }
     },
     {
         "id": "A662B6EB-B5D6-4E9E-BAD2-3678FFDEA07F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "20beeb76-2e6e-446d-83d2-401481ecfdf3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "af8613e7-0aed-413e-be5d-57c1594c1ef9"
         }
     },
     {
         "id": "A77CA6BC-2DBA-4F0D-823A-726C8C099811",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "c1604dcb-e3ee-4fa5-90e0-742e8a6d0fd5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "68086ea0-3e86-4cbc-8ae1-ba29e0b84296"
         }
     },
     {
         "id": "2F6BB8CB-42F8-4B4E-92F5-BC8076FBFAF3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9514f973-8603-48af-98e1-806c36eea1ac"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7d2dcd19-43c8-44f0-93ad-0514249c518a"
         }
     },
     {
         "id": "4798BABD-598B-40F5-B114-AC9685923E3C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "428271e1-93e1-4cb8-ae5b-89eab7dadc25"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e595ef69-4a24-4d22-8adf-bbbfdf9979f6"
         }
     },
     {
         "id": "456D7CB1-6ADD-4D55-980F-20EA5D56F5BC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b5778967-525f-4da6-b543-2c60eb85c04b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d1a29e9e-b967-4bd9-b4e5-ffe306bf924f"
         }
     },
     {
         "id": "2234D26C-0083-411D-84A1-899A572E70D2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ea38da9a-f2b2-441c-9c46-fc357bee3f41"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "579705d9-32c2-4605-8a32-143b10758715"
         }
     },
     {
         "id": "53EB0E9B-FBDA-493B-ACB0-EAD4F2F4E71C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fe1c62a3-06de-4917-983f-e3c0bea5206b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cf00238b-c4cb-4be1-b1a4-f0c456be7f2c"
         }
     },
     {
         "id": "659F043C-4216-4B51-B6C9-2B33864C8209",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f99a951b-3cad-49b1-94b8-505d20916a7c"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "bf17cb5b-bf63-438f-a6d5-2e853a2e7002"
         }
     },
     {
         "id": "DD8E4A2F-B3A3-46A0-8642-27F0B94BC88D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6442695b-04fd-4156-880f-b72dbd56817d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ee025502-fcb6-404e-8c85-b7a2afebd7c9"
         }
     },
     {
         "id": "89002793-2737-42ED-8AED-61161E83F82B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8c93579c-a9aa-4133-92bf-5f69edd2b64e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8ffbdbe2-2fec-409e-9fd2-6f21bc1f03bc"
         }
     },
     {
         "id": "6A5A662A-2B4B-4542-9217-E95E5B80E4DB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "86422112-0ea9-4481-ad8f-58bcf297da4f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "81e9375b-82ca-4ca6-8eeb-75d93b2b1204"
         }
     },
     {
         "id": "426BF41B-148C-443D-96FF-3BDDC4ECF4FD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0ff27e31-a7d3-4544-9685-04f4c8013d23"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7546255b-223e-49ac-8eea-1138086ab810"
         }
     },
     {
         "id": "2C27BFF1-5EB1-4BA1-B39D-BF6EFBC19B59",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e7ca64d6-e5e5-4358-b2cb-c03960ee75f2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b0456e80-5eb6-4e48-97e7-90212b0eecf5"
         }
     },
     {
         "id": "CA189569-7F58-40E4-90CB-3D8DC0A5933A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "585b7b26-d70a-4450-b86d-81de3fad6a3c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f8c15f3b-fbf2-47b1-8c47-a0994b7352a0"
         }
     },
     {
         "id": "55A4C783-7B98-48DE-B268-7A74A58ABCB4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bf93f4e9-a024-480d-9226-ee30bec2d88a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "08a8b25f-7311-4c31-83fe-1e76762b9ff6"
         }
     },
     {
         "id": "D781576A-634B-4691-8E0A-0485B9EE9A07",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "40453a09-8bd6-4d3f-9232-ae703bf13e9c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c4f73dd2-a55c-4f30-9a98-87a85b4a5260"
         }
     },
     {
         "id": "4BB9EEF8-5663-4215-9698-BF091994F742",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9e33e0b3-871b-4801-8a20-f0af684e98f8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8a33282c-086c-44c2-b95b-3768077cb977"
         }
     },
     {
         "id": "9EB50A0B-06B1-46DC-8B1B-EBBB6B5BA62D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f6a9099d-c27a-43ca-8d87-0ae31af58c1a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "882a917f-2b76-48aa-80df-4e65497d0639"
         }
     },
     {
         "id": "71371118-6F55-4BF8-841E-3482E7A2CFA7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "321ba05e-603e-4573-99a6-0e7c6aaa099a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cad9c6e2-41e4-422c-8860-2ff3bea546db"
         }
     },
     {
         "id": "483E207D-A2B0-4382-88CF-B3ABF854AA03",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "db633a30-43f3-40d4-931c-4ccc2ab2c903"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d08e968b-5930-4f03-a6dc-ba2dd880c1ee"
         }
     },
     {
         "id": "16B82CBF-A73E-4F3A-A41F-ADAEADADF95A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3d2756b3-09ca-4527-8404-7e9e2a732e99"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c96d8dbe-7b95-4341-b829-d4bb31f141c2"
         }
     },
     {
         "id": "5C5CDB33-3788-40F3-88DF-FE7A9DF648EF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a44bf5fd-906f-4316-823d-01f05a9a6714"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2c155c0f-00d2-4a20-9f7d-57650da9b3db"
         }
     },
     {
         "id": "A2792479-B141-4F14-BB9F-B13B2CB328FA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "02e1f941-abd0-4c30-a1a1-94295777dd56"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "50bb4ee0-2415-4759-806a-cd192489e482"
         }
     },
     {
         "id": "E9445EBC-57A9-4A81-849F-1789DCD823D6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "28cd3684-0080-46f7-9023-ff78ee464921"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b04578a3-cd48-43a9-8e7c-39a699108353"
         }
     },
     {
         "id": "219C33B3-4C8C-4729-BC09-2544CAD9CF1D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9370f96b-91dc-4da0-8745-6cb7bb063353"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "844163fa-3520-4774-bae6-fe2edc27a0d2"
         }
     },
     {
         "id": "776094C1-8B08-405F-A181-520FC84E1FE5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d93d6018-b215-4e0e-9246-748d729c0ce0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8ff73248-2a6d-4ef7-a23a-55301edbb513"
         }
     },
     {
         "id": "8C24D322-9C86-48AA-9F38-588A8D33679C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "bdecd655-68c8-4071-b66f-c9792485d01b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "704eb4f0-6cad-4086-90e9-9719ef93a9f3"
         }
     },
     {
         "id": "C2FD12BE-4749-4466-87E3-6CF442B35C47",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "043a48ba-5e33-40cf-a024-65df20517172"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b3f66a4f-5759-4ee4-8373-7d8884e75a49"
         }
     },
     {
         "id": "80032492-15B4-4F3E-AD35-3A0DC756F250",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8fdf40e4-389e-4387-aa11-f8e7c52a5993"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9bfd8fa8-4a1f-4990-9d96-980eda75585b"
         }
     },
     {
         "id": "0ACBD796-D129-43B7-9DC9-2B98BB46C6D1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7f677ace-ea3d-4115-9fdf-04ecafbdbc0d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "19dee175-69a8-43eb-bbb2-aecae2402d8e"
         }
     },
     {
         "id": "46AEE3DC-7A88-480F-A5DA-238E26BF1594",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "aa73076f-01fc-44d9-a880-c3c1168ac8ae"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c859222a-52ad-4614-90ec-e2c30521a05c"
         }
     },
     {
         "id": "045B5A4A-469C-42EC-8167-F126473E81CD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "582423d2-71fd-4788-b52f-def8693cfad8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4c803800-bd09-4a39-a3b3-557d571508c0"
         }
     },
     {
         "id": "3E096B30-665B-4DD0-8D51-770DFC8BB124",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "948e3ea1-7c3b-48b3-bf60-85b7cc7139b0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c8796d4f-d5bf-49c7-a146-0f2c88c89f21"
         }
     },
     {
         "id": "BE618DD9-A065-4949-98D0-90EB218D83A7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b13e4d04-916b-45ff-b16b-37b82a37499b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9041943b-4d89-443e-b0a3-302d527ee910"
         }
     },
     {
         "id": "E6CE8F41-F6EF-4A60-A868-5460F2B95098",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ed6b7724-9289-41f0-b8e3-31a9a4ee18bd"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "083ae3c1-76fc-415f-89ba-790353813267"
         }
     },
     {
         "id": "0689BDF6-B124-47AB-8A57-9A720541A5F0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "98332502-e3a7-4bd7-9371-9e14163861f1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7907ad34-434b-4fa0-af30-487fe9553d33"
         }
     },
     {
         "id": "8D20DBA1-75DD-4C39-9E23-B955A039B076",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ec36ef2b-3105-4cc0-90bd-04ca0902b123"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a26643a6-ebf1-430e-9e28-c23e61acb91f"
         }
     },
     {
         "id": "32DA0F81-4915-4CB8-9234-9F2488F62FEA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "27f76b4c-d784-474e-89ed-287c7c0eb9c4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "91f93366-f815-43ac-a74b-779186372858"
         }
     },
     {
         "id": "D45515FA-7199-4277-ACF9-92E445C54709",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "dffd7f83-bf83-45a2-abc0-84ea59359648"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "59e88ed8-9625-4f1b-b793-1abecbf7d978"
         }
     },
     {
         "id": "2133707B-C4BC-45A1-8D20-4B20CCB945D6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "fdf34236-631e-4061-8bb3-f2b908f6c4f8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "49c3ab0e-59af-48b0-8e98-3cbe8a41c852"
         }
     },
     {
         "id": "EA0E7F09-755E-4ED0-8FF1-266A1B48B256",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d8208dac-0e54-4573-8b4b-5d2f6f827304"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "40280360-01de-4b16-b15b-b5501e4cfe6a"
         }
     },
     {
         "id": "3433DE00-A0E2-411C-90BE-11D87180F1B7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "605b30f8-03bd-49a0-9c5f-9924e08d08c1"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2e710204-0dcf-4613-b880-e6c32f401633"
         }
     },
     {
         "id": "92E8CFCE-2D30-41C2-A80B-63E0FA025A97",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0f99d5cf-dc6e-47c3-8951-b8e3eabbe0d0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "802fdb35-5234-4de8-9a0c-7eb109fd61fc"
         }
     },
     {
         "id": "F39A5FBD-92F8-4C07-8362-FC1EF97FBB1C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b1ba9d0b-8a98-443c-967e-db89d59e6594"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8df6f909-fad4-43ce-ab12-b46ecfd2aee9"
         }
     },
     {
         "id": "485F91A6-CC5F-4BA5-AF7E-F9DB4A7BBB4C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "59b406b1-8799-4b59-8671-7f795fb3615f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d57e2adb-2c1b-4c38-b4c6-c7ad1d42b74c"
         }
     },
     {
         "id": "458EEA10-5709-4672-8D72-1D63D79D5F50",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a27a2f15-66bd-4942-9d9c-e964a836dd57"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a37d8a4e-776a-489b-87aa-b247db8b25bb"
         }
     },
     {
         "id": "358AD7A4-6316-489C-8BCA-A16936850990",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "37c5b3ae-9dba-4579-ab87-f80685580215"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d77c879c-f004-4d64-8385-99a34509b4c1"
         }
     },
     {
         "id": "C7C04F01-1C62-4D86-AA2C-06A19C5698BC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3b451cf3-d2ec-4b8c-8419-1787c1950007"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "37a26609-c2fb-4097-a5bd-3eb9426b0268"
         }
     },
     {
         "id": "B305E941-14A0-488D-8555-FD6C96174A0B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "43214ffd-a8c9-42e5-a068-c36521e06b47"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "513e8bd5-52d0-428d-a08c-8229c6760673"
         }
     },
     {
         "id": "46D0228D-5743-4F7B-9A54-36D08AD40024",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "62d76e2f-71c3-4129-b388-9baa63e2ab29"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a83ff232-74f6-4db0-a483-6bf129d3c755"
         }
     },
     {
         "id": "B263A22D-5EA5-4828-B3AD-CD41A7CA88EE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0cc56c48-0c98-4ec6-b0f3-ddabe7ad2b59"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "891ceb5e-5755-4bda-aabe-eb0c9c35aa66"
         }
     },
     {
         "id": "590B2247-AEEA-4B46-8A6A-2B57E7634955",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d9122cf6-5b51-42c4-a202-c8f62294d63e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4acceb31-1647-4592-bd79-8bcc0fda40e9"
         }
     },
     {
         "id": "8C1BDCA8-C84A-44FE-9746-6509CDE3D691",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8acbee85-72d5-44a9-afa2-857a30de2d3a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2be40b9a-34b1-4ac0-8e1d-0be467448954"
         }
     },
     {
         "id": "C362C5AD-400D-4B06-AC59-07C98BABB2FA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "dc6e5c92-4946-43f8-a5b1-973e694a61e0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "1d5f31d0-89f2-4133-a4c9-e235bed72b67"
         }
     },
     {
         "id": "08A36368-0ACF-47AA-8E05-C9E154906955",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0e08dda0-a291-4900-83cd-fa46b77e6f29"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ac77dd52-cca6-4575-a758-241970648d6f"
         }
     },
     {
         "id": "1430A4E5-E181-484E-BA4A-3A8CF081F348",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5750393f-5f5f-4581-bd82-2203976a1202"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6b9d6726-425c-4069-aa8e-94d4d76704d2"
         }
     },
     {
         "id": "25228B9D-2C38-4061-9467-C681ECDE555A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "28ffedd7-e13b-4144-b09f-a8ab9f87a26f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ff3cca56-b539-4993-a3dd-b6bf1d9c0bcc"
         }
     },
     {
         "id": "6554FDB2-EEB4-40BF-8D63-9F186ECB4F02",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3de257fb-7ea4-4a81-a397-437fc3573903"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3d243e5e-b81d-4ce9-8702-ee33d0d6f068"
         }
     },
     {
         "id": "903669FB-3D05-47DD-B5C1-01EC5CF44ABC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d523cb3f-eec7-4d4e-9177-47e146940349"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e3b8d6bf-b553-40ae-90f5-d8e9fc4e0781"
         }
     },
     {
         "id": "CF7327BF-14AE-4150-851A-F0B8C7B19371",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0f578b34-9398-4dfb-badb-39baca456b0a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "562e99a6-7dde-4eae-bb3e-44da8c4ed5c7"
         }
     },
     {
         "id": "747D5FE3-DD31-4782-83DF-5178CFE5D8A2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "dd0b5cdd-325c-417d-835c-3490be6fe0ea"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f723b732-e4d6-415f-af24-5e0840262c7c"
         }
     },
     {
         "id": "E2BEAFAA-F15B-4936-AEED-B7C4258CA518",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e21df358-6995-446e-b319-f016d3fdaaf4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ef42b8f6-8418-4878-a0f1-94947579820e"
         }
     },
     {
         "id": "297228AB-C38B-4E7E-92BE-CE1231970016",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "39e8592e-655f-4e78-b57e-a920f6779977"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "56742422-0074-4349-8c54-1d52cf3c3bbd"
         }
     },
     {
         "id": "3DFFF1E5-AE64-4118-BD5D-D06C786A6750",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d1c44295-0dc9-4cb7-9cef-60e38ca3a943"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "20fa4981-409d-461f-b656-6bba1cd834f4"
         }
     },
     {
         "id": "5F07132C-6B90-48CE-814B-5C380ABB8FAA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c46f91cd-7633-47f8-9a14-9127aa199745"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d418640e-1312-4b3b-b529-2fa68049fecb"
         }
     },
     {
         "id": "F1A98B79-74FF-4FC7-B95C-62061FF60227",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "995e97d8-8c84-4dc7-b774-45aa6817003d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ebd6ed5e-9c87-4111-ac8b-e2bf40d46c8f"
         }
     },
     {
         "id": "1A767B0D-21D6-4AAB-979D-06E2B7D2D435",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "33580716-836d-4b5a-86f2-d8fc9d92e305"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "af4c466b-c1a7-4a2a-ad18-849f1849742a"
         }
     },
     {
         "id": "4671F585-34ED-4767-83D4-7C08098C4FAC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "254403b0-8541-4941-a303-ea2c63d39c6d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ace20cf1-08ed-4652-9df8-849fbcc37a18"
         }
     },
     {
         "id": "8988D068-6084-4E90-8F76-914431DEDC98",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "465f9739-1083-4fbe-a227-9dcee3413e8a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6f79e4b0-52a7-4023-b6f5-6cbe2fb3e5b5"
         }
     },
     {
         "id": "90319C29-276B-4A7A-8963-7F6480F7009E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f334f391-491c-4b88-9910-f57313a3f404"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "22182c77-6271-40d0-9aae-77ee9d28f133"
         }
     },
     {
         "id": "C7615DCC-1AC4-48D1-BF83-18F2FAC2896F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8b78ebad-a824-4325-ae26-546b8a22af15"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9287b63b-6372-4075-988a-7d9c3c362be1"
         }
     },
     {
         "id": "B6238AD2-B2AE-4943-82B8-0C117C373B6C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b5df8f37-2e54-4d1f-8b7a-44ef9cc0cb39"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d2124681-d332-470c-89c1-be5cf091e2d9"
         }
     },
     {
         "id": "05F91E5F-7407-4ECD-AAF2-9FF515478D51",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "aadf4213-5f21-47a7-b43a-a5109bff8c4b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8fc8e10a-9846-4d4f-a01e-eac10b428e68"
         }
     },
     {
         "id": "4A8AD5EC-6D4B-4943-B62F-B02343D2969A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "aba19613-327e-4bad-96f6-2ab459b2c6f2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "fa0fbc48-da31-4aa4-92e6-7ab46d585b5b"
         }
     },
     {
         "id": "3E0D8E3E-7E7B-4362-A55F-C984B597BAB7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "07399296-c6cd-4c27-b8dc-ba5f6d1bc5ee"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f2ddc200-ca3f-41dd-9af9-eeda7b49f942"
         }
     },
     {
         "id": "343AAF97-5B4A-4775-8CE7-0019EF13CB59",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a5f53a34-e42d-4ce4-bdcf-c97a667ad9e2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b67b9d85-5e2e-40d5-9a2b-a93701184b11"
         }
     },
     {
         "id": "F7769E3B-D477-4190-B4D5-C8550344FBDE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "fa67ecc4-da3d-488e-ac57-d4d7db7e98d4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9fd8c633-fe86-462e-883a-08404be063ad"
         }
     },
     {
         "id": "FB3F630D-C3E8-4C4C-9004-4EF2CBF34124",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "df84dc1e-b949-4080-8fbe-043b09bbbaa8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "050ff62f-62c2-4ca3-bd1b-c1c928e09b1f"
         }
     },
     {
         "id": "94AE6796-0819-4FCB-921E-649DD55ADBCE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "1e85f881-61d0-45c1-ae2a-70dd79289b86"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d11aaaa8-bcb6-4619-8cbd-9bacd54e655c"
         }
     },
     {
         "id": "03B4A48D-CF12-42F3-B325-70EF9C80676F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5195b820-3996-45aa-95e9-817488af1078"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a10b66b5-ce95-40d9-bf9c-451becbd5e45"
         }
     },
     {
         "id": "B6988319-51FF-465B-8441-676A717C3490",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e76f39a4-9c20-41cf-b302-d773c2fa8f6a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "756c7f96-99be-43bf-a8e2-164ae7674e96"
         }
     },
     {
         "id": "0ACA1F57-0D51-4D6B-A9BD-AB4F1C153A7B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "878c96f7-74ce-448b-bb1c-f5beee6225d6"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d184eea2-b266-4e2b-8863-cf5aaf1aa0a0"
         }
     },
     {
         "id": "4A104324-2670-4AB0-A8CF-CFB9E40D2A3C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "97fb5203-8032-4a33-accb-30572651779d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "1d01ad93-3b43-44c1-820c-38db96f0d9ec"
         }
     },
     {
         "id": "680D1A6B-2010-4053-9DD6-116B69BA47F4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8b38bcbb-6797-48f6-a386-c668968496f9"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8ef8947a-c803-4210-ac28-2f6e82ac0e8f"
         }
     },
     {
         "id": "5061DA53-66A2-4849-8AFE-5CD263C79ECF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1d479b9f-d520-4692-a4a5-b01cf4353a6b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ee4d0164-68eb-40ae-9165-fb61ac2e07ce"
         }
     },
     {
         "id": "8F7CEA60-16A6-4B98-B016-A056561428A9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "714d0728-48a4-4e83-931a-4ea29039c3b2"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b33c6d1d-1993-4155-836e-75c165cca510"
         }
     },
     {
         "id": "9B0C5372-2992-478A-9477-5A6E849F7F4C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3d6b0d11-1da3-4440-ada1-fd9a72bd8dae"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "5a861e1e-1312-42f2-8398-23881a6c92ba"
         }
     },
     {
         "id": "D61A3258-902B-4369-9447-80063ACB65E5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4238975c-5203-48e8-8f16-39682f19ee3e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d8b06212-4227-4583-bf66-48a5df15b609"
         }
     },
     {
         "id": "F37B97FB-622B-4BB1-B11E-5EA3081014C4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bdb2f8fb-b138-4bfd-809d-575ed65f7518"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "bb873357-c6d3-4f4c-81a4-33df67bacacc"
         }
     },
     {
         "id": "1C852AD7-B3BF-42A9-9520-2D8650905652",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "849f11b8-6482-49a1-8565-a3cc3c8a36ab"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "14674ff1-b9dd-4bd8-86ad-7a300a613bd3"
         }
     },
     {
         "id": "C670F464-7531-491E-BBC1-785ADDC2B518",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "4ea1d1c9-cb7c-49dc-965a-c37aaa3d6bc9"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d08b3d8c-8c7c-4243-b0b9-ee692f66c56b"
         }
     },
     {
         "id": "AA036120-D495-42E1-AD40-1428FDEBC61D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "fc14a427-8857-450b-a4ed-818f3555c659"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7b17e3e8-a87d-4d3a-a679-6af9b6442ca7"
         }
     },
     {
         "id": "2393D8A7-7D0A-4A0A-BF67-F00E61667F92",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c7d0d81b-a286-40cf-848d-55021c8326c1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "28ebc715-7f23-4b69-9e26-8a1676ae4499"
         }
     },
     {
         "id": "A4E1DF0E-6E29-4B4D-8602-AAABB2F689F9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f2784b23-08c6-409b-bf94-07c1cc85048e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4898a19a-8513-432d-915d-421204ce696d"
         }
     },
     {
         "id": "2AA4FBA5-001B-4FB5-A190-E381BA55740E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5d2e43a4-8533-4f30-a579-e680f57916e8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7f3a0539-c929-4b75-9d3c-8aae80e4ad74"
         }
     },
     {
         "id": "B0EB09F9-960A-4CF1-814B-ECAE035F1293",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "242a8fec-2826-40b9-967d-7424776f807f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6ebf703c-ed3f-4e88-9356-24063e90259b"
         }
     },
     {
         "id": "EE23B3F4-B3D3-4B9B-BBD4-97818C0E49C9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "77cebcc6-8685-450c-be84-c55a8df8d80e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3075462a-1431-46ff-8af9-9fb7b2c18e9b"
         }
     },
     {
         "id": "C49D34DA-35F9-4CE2-BB69-EDC0C4D0B926",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "eec6c8fb-5313-4a4c-9cbe-a3eb0f670748"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d15ec59c-1155-4f04-8383-fa1ce73d8ae7"
         }
     },
     {
         "id": "B7027E04-2E9C-427B-94AA-8AA55521119C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "aba07d01-0162-40bb-8e9a-023cefb5b173"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0ca44297-fc9e-4317-a82b-636ffbeaba54"
         }
     },
     {
         "id": "3D54B5CD-21D6-4B03-BBDF-337119291764",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d0648a63-f1f6-4f35-bedb-20babc0cb5e3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a2c2364e-2224-4a48-9624-a85d74828344"
         }
     },
     {
         "id": "90F65428-F9BD-430C-90B6-9EE57A0A83B4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e9ce9278-68b9-4e18-be77-d06a362c4fc7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "f20c0a20-08c9-4b5a-8faf-871d5d3c989a"
         }
     },
     {
         "id": "B204DA8C-979D-468C-AD50-A8E90104350E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "65a75702-67cc-40e9-9eb2-4e0a923281af"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8bc54c4c-7fa0-4f25-9425-374b4d0f8cb9"
         }
     },
     {
         "id": "9A07F560-FCE1-45D1-8F03-F13A128807A5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d5310eec-49ab-4b7a-acc0-93972d512ca8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "fe7592d0-13bc-4631-9293-fe8599f81298"
         }
     },
     {
         "id": "31075E5F-F57E-4883-A859-100357B5421E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "378ca73e-b889-49cc-a8bc-88626dcd2ad2"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3561fd8a-f667-4b78-a0f7-b8386a5e66b3"
         }
     },
     {
         "id": "DE117C5A-12A0-4422-912B-C17999776C35",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3ebe3cb0-7bee-4be5-ab48-2328dbb813a8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ac196b85-df20-4321-8a97-d988db560e4d"
         }
     },
     {
         "id": "32ABAE2C-0F86-4425-9D21-EA4E665CF916",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a61c1d8d-9b11-460d-8618-ac9e8c55efc4"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "67398c6f-9410-4db6-8617-dc95a05f3d64"
         }
     },
     {
         "id": "641085D5-AA04-46F4-A326-85DD3DEC6992",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6183863b-db07-42fc-ab38-6a9e4a5093b0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7ed8316c-13f7-4fd4-928b-a0efb56f39ea"
         }
     },
     {
         "id": "CD86CA90-5EDD-489B-B5FA-94BEF73B227D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fcf7db00-43c6-4a5e-b43f-3c0ffae8fabf"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "67f0b099-f687-415b-8e0a-6944775c20f8"
         }
     },
     {
         "id": "47EC1C39-CBC8-4858-9FF9-F8C32BDE7642",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "74f7d27e-a0f7-4c69-9223-e126891c1375"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "084365f2-025e-449b-a083-bac914e8fd3c"
         }
     },
     {
         "id": "EBDAD356-93E6-4F27-AB9F-0DCE3D903907",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "01509cd9-e1ca-4d35-8a2d-a3b467b3761e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "69f63e5d-908d-4b44-9791-c6fb90709d77"
         }
     },
     {
         "id": "BBFC7451-F905-4511-8E89-FB76DF2D6EC9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "074a81ec-e8b0-47d2-91f2-1f4e7e1fdcb7"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "1d80ac81-acf6-4297-afdf-f274e3aa84bb"
         }
     },
     {
         "id": "46AE7CE8-4427-44DF-B018-DAB6F6FFF08C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "232d7b4d-81c2-4a47-ac70-f7848cc7f165"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2d8d1e88-a859-4bf7-bde0-818488be7feb"
         }
     },
     {
         "id": "79740B77-D37E-49A5-BE4F-C1E7AA20ADA9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "415cd372-39b0-466f-9d19-6b9ad0219e9c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "bf9e2720-aae6-4b01-b182-7579bba4f500"
         }
     },
     {
         "id": "70F01523-0C4C-427B-8CC2-82D8732708F1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "162682e1-bece-44e9-9a69-bd3c41955b4f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6c76180f-903e-4971-b65a-baf4d7b15e5b"
         }
     },
     {
         "id": "D2339F9C-C00B-4BE4-A52C-62F2F28465FF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8bffd1f2-7e90-44af-92c3-31af74363265"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "26337d07-c8a2-453c-8775-134ace157ef0"
         }
     },
     {
         "id": "1AB9D2F7-7BCD-43A8-8903-D9209967CB8F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "523c9c89-edd3-4704-9e4e-1683dce2c6ae"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "f7df9150-00b2-489c-b9e5-0b5e630809ab"
         }
     },
     {
         "id": "B088485B-5A14-4506-914E-84FE8760C325",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7047d3f6-7a64-4c8c-ac07-32d06ba58373"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "433836e5-7b32-4d90-8ddc-f26c364dca01"
         }
     },
     {
         "id": "48E7840C-7AD7-4455-A95E-E6A4075297A8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "13a79a5d-6284-4a4e-ad6d-4c93c9a752fc"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "510bc9a1-b863-4960-86c1-6620e29155cc"
         }
     },
     {
         "id": "24A0D11A-51EB-4C83-8F8E-656B09A7DCAB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7fab899b-cd8f-409d-9ad3-954127593f42"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "40021d85-d3af-4129-bb54-a2764aa83b19"
         }
     },
     {
         "id": "E2DFA4A4-BFBE-4029-8ACD-8FE202D0EF18",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "893b7586-fc02-4c9b-b476-227e96da05d8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "481a5acf-8782-4261-b115-a0ffce3b1bb8"
         }
     },
     {
         "id": "67DB64AE-B5E9-480D-90A1-D34D1B9476ED",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8a0c6299-7f49-4b42-b87b-ee516a5fe3a8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8626a530-f29b-4323-a440-3ce03948f452"
         }
     },
     {
         "id": "A6630FCC-6C43-4319-966D-5BFE0A9B501F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "58331815-a1ef-4558-a0c3-42938f93b648"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "facfbf42-c6c1-4371-a2c5-40e4a4ad2209"
         }
     },
     {
         "id": "3B065E06-549B-44E1-AD89-8DB792AC8441",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "01bd0676-8c8a-4ec0-b9b6-d982980e85c2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2be5a6df-bb60-4313-a9be-c02556590941"
         }
     },
     {
         "id": "625FB056-7758-4FC5-924B-C1C5CFF890FF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e8397342-f87b-4427-a4ec-9658050c3be9"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9aefb44e-8d6c-480c-8b58-3d137c3e9393"
         }
     },
     {
         "id": "3E539303-6BFB-4800-9070-A27F4B03292E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f0cddab3-4cd8-4776-9e67-1dae5440ed72"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "39b26f6c-19e0-4b51-81dd-f9d05b0b64ef"
         }
     },
     {
         "id": "2B33003C-3B47-4AAC-8E13-7883844AE2AC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "72222938-7a49-496f-a10e-1f0a32c89f9a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3f7ca438-663d-4d46-80cb-267fa3ca2e01"
         }
     },
     {
         "id": "100B2980-EA04-454E-BA49-36A8E9222F1C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3044bbbe-d6b1-4235-a393-bff11b130e5d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f8cd6a37-5781-4b3b-867b-b9b5a9dfbfe2"
         }
     },
     {
         "id": "126833F2-8046-4225-AD82-A8B5CCFAC888",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7d5fcdc2-d2ae-476c-80de-c47d65336a7a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ce240023-6f76-4233-b535-5e13445e29ad"
         }
     },
     {
         "id": "6F9026A8-4228-4158-9D62-FA8947B8C0F9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f3d5619d-f43a-4628-a581-cc59f97b7f31"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c2b74715-2dc2-4ed1-b5d8-e798e769b8a5"
         }
     },
     {
         "id": "3C299A03-C52D-4254-A77A-045AB96E21AD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a7980c7c-2263-4681-bdd6-f188948b8e64"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b331102a-8ddc-4265-a2b7-95a2e9df93e5"
         }
     },
     {
         "id": "4D16F793-AE94-4251-8326-A15E0039E6D0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d817d6f3-68e2-4358-a880-987a70501a6f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "51f406c8-87f9-466e-9078-a502d7bbe6bb"
         }
     },
     {
         "id": "4804390C-4AAA-4DFC-8F84-F4D62FA7BB1D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5c3ccc2a-c7ac-4fee-a88d-86bbade777c6"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3feaeba8-a5fe-4230-9b73-d35f4b705f53"
         }
     },
     {
         "id": "BFA31BBC-7D4D-4FF5-B5EF-8678F5B31571",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ec9e0123-8c41-4742-8a70-dc38d0fb3061"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "90c5341b-43cf-440d-99bc-26cd1b79e20e"
         }
     },
     {
         "id": "3E408AAD-5DFB-4E00-B350-D6B92009DC7F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "09d331cf-412a-4c5d-acf3-1fba835eac1e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "76940a22-3538-40e0-99fe-0d8acfb7db11"
         }
     },
     {
         "id": "B62710EF-DCF9-446F-A911-8E91DAD625DE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2ca02657-dcfb-4875-9648-477b47c1e625"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "13b578aa-a289-402f-b9cb-7da83261addb"
         }
     },
     {
         "id": "D5D8238F-A318-414D-9BD3-5AE409A81E20",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ae4c86c7-154a-4068-b2d6-b518d47f4b35"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "1f5211e0-9f14-410b-badf-955234d44245"
         }
     },
     {
         "id": "19107A0E-0AA7-4624-A803-608C18A9143B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a769c2f3-8d3c-422a-9087-a30ec70872c1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f64c14f3-f0a7-4f43-8a7d-5e459e9068be"
         }
     },
     {
         "id": "67B47970-8B59-463E-9A69-0CFAF44816B7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a5de02e4-c002-4281-97f2-93cab51a5449"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8614de25-563b-46cd-9127-b782e0366dcc"
         }
     },
     {
         "id": "6F692D28-0117-47F6-A2A3-0A0F4A04435A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3fc0d071-adf1-4044-8696-90b52aff0869"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "91fa200d-6999-42e8-a097-3a5d014f5a58"
         }
     },
     {
         "id": "7D11D986-F0F5-4C60-920D-44878578299F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8af84d64-7839-431b-afb0-ebe2d21704ee"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2a11321d-5342-45cb-b69d-37307db188db"
         }
     },
     {
         "id": "550F42AD-010A-43BD-BB93-ED45A9276D99",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0c174438-475b-4bcf-91a8-1c02274f7dac"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "20081b6d-ef27-4edd-90ee-91de9abc26a3"
         }
     },
     {
         "id": "8708A1F4-FDD0-423B-A90E-D9C1627CB622",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "72000f66-e826-497a-b484-6736f8e4d734"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "75cf3bb7-88be-4f0e-8ac0-5dcd67656120"
         }
     },
     {
         "id": "08F3907A-386E-4990-B4D0-7D8433271D62",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "1884b6e0-c455-4894-992a-957178a21c58"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4d21332b-1512-4c6d-8b00-ea311f7dcad4"
         }
     },
     {
         "id": "93DA94FD-14AB-4AB2-8D09-FB7BE8BA2A2B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "1aea5ac7-1ca2-4b60-b0bc-c3bca94b7028"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9468cfa9-3b32-4989-974e-aa0477410f1a"
         }
     },
     {
         "id": "6641DA90-E592-425B-92E5-3DB7A5A167B1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "bebd02ed-91bd-4b2d-96f5-948962eea928"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "548f29de-5b84-4b3e-a3ae-c46613a3c2de"
         }
     },
     {
         "id": "A9E7C056-BFB0-484E-B2D9-32D50A69C443",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3d239be7-c25c-4b6e-bff7-c2bd7a8ed678"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "22048caa-3945-497b-bdd0-d69747b5e576"
         }
     },
     {
         "id": "C0D16B05-7B5E-447A-8A6F-28AA79C7D9D6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f826637e-9b59-4343-9aba-0d258ba619d6"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "12183cf3-8e9a-41c6-b7b4-5bab4e44b5ba"
         }
     },
     {
         "id": "F0370746-8E2D-4987-8DEE-77EE9ACDFD85",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a498e65d-8f3b-444b-b6e1-348321d60def"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "03176c9f-9d5c-484c-ad6a-6413dff7cf65"
         }
     },
     {
         "id": "3CAD7E95-152A-42D1-B226-3DCA9F25B389",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c63bcc1c-cc44-47de-bf8a-bfd06293892b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2e72da59-799f-4df8-93f0-476c035a313e"
         }
     },
     {
         "id": "14369892-DEEE-4A33-AF61-D642270B4FD4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "dc57a72a-8e1a-44f0-b3a3-208d103bca69"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b1d9f38d-cdde-41e3-bca3-b0d88cf3c2b4"
         }
     },
     {
         "id": "CB967246-F268-43C8-AB35-BE6DF106E782",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b0197b5c-ed44-462e-a80e-660bfb93230a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d8f1781e-e46b-49b2-9fd7-67240c1a7263"
         }
     },
     {
         "id": "0BC0A7CC-626F-4D42-AF6F-1147E2465BE5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9777f07a-ce85-4f46-93a9-019a89a4206f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c4a2691e-8a6c-4208-b58b-55c557eb11d1"
         }
     },
     {
         "id": "750447F3-9911-411B-996B-19A835A4B416",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bc840a0b-ea2c-4d1c-a140-6fdd1bdc7808"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "87e73ed6-bf71-4302-a8d4-198d0492a241"
         }
     },
     {
         "id": "79CEAA20-A779-4A87-8338-810DEF26C635",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "63e18960-e598-480c-b733-6454d00ef421"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "beac2a49-a398-4ec7-bd55-7d2d058ad0ee"
         }
     },
     {
         "id": "DB3A6BA3-358A-4394-A7C5-0E38031BD5B0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8a28920b-5e07-45e2-9cfd-6e88a74af65e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "814e52f4-be14-4750-bfb1-47fd15b00aee"
         }
     },
     {
         "id": "2A8636FC-A12C-4080-A056-C9DA426017AB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "13df9b04-1dad-4149-bdf9-0badb134ac75"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "391eab2a-52ed-4575-8f0d-a1dc8062f2d8"
         }
     },
     {
         "id": "CBBF315E-0849-4325-977A-666B0DC786D3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ebd66176-9ba7-41b1-9367-ccf25089f098"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "198d9a67-ad82-4998-b8ed-d04cfe3f7dbc"
         }
     },
     {
         "id": "94E8F510-AA49-4064-9A79-BAFEA8556880",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "dc59aed5-ff1a-4d4b-9866-7dc28897bd1b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "48e4d83e-b9d5-482a-a6f2-848ed66fe338"
         }
     },
     {
         "id": "0D3B969C-989E-44CE-83AE-54FA659BF97E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "99ab0cf7-9b01-4c78-b878-6740d372b5b7"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b6665cd6-fa7d-48b5-a872-65270a4425c4"
         }
     },
     {
         "id": "D06E0C32-FD98-4DF1-B25E-966E853C4157",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d6193746-f264-449a-b9e3-48fb6d933454"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8a6cb8ed-aab7-47e8-9fa3-eca5fa7480cb"
         }
     },
     {
         "id": "DE3F2FE1-22C9-4648-8038-97575D61EE5E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7849589c-94c7-44dc-96d9-8470b2819ad4"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "35f92f46-bd6e-47b6-b084-5c3f8ab12587"
         }
     },
     {
         "id": "7C4A2AEF-D234-4C6C-948B-6E4F7118796A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a72ee875-2224-48f0-b381-eb67a78d3d77"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a9eabda3-c792-4921-97fd-5768307cb943"
         }
     },
     {
         "id": "124E9364-393C-4136-935B-7B976EAACC11",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e06df985-bbe7-4faa-9647-72d13f2d47d3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "55d20eb2-7b9f-4b2b-bb41-fe53c70da27d"
         }
     },
     {
         "id": "9DFE8777-499B-4E37-8F5C-DBFCA830EE92",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e8bca97a-5df4-4a43-bbfd-704b2b0c14df"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "852b9e80-901d-43f0-8cc6-e84c1ddd5cb0"
         }
     },
     {
         "id": "AD3B1B33-6869-4CA2-B4F7-DCA26314FFBB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "13dd5b19-16b6-4cb7-975f-45858651c1ad"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "faa36d01-81ee-4294-aa57-eb2f1a973656"
         }
     },
     {
         "id": "040899F5-8F66-477D-A1D7-9E7A8CDC7C27",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "80f08e26-c9c3-4203-8fee-bd4f7a1b7756"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f6eddf22-db54-4cab-b0a8-0dfd4e05c989"
         }
     },
     {
         "id": "5592D737-1FFF-483D-8336-7CC6E2C85D81",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ff4e94f1-5e3f-417a-9659-3004061bf733"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "14d3a86c-8bfa-4d25-bd14-db0ec4610d69"
         }
     },
     {
         "id": "F3762545-80C1-47F1-A167-959C10FC1BBD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f5fee123-9287-4bac-bbce-6432d6aa3905"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0f680ef6-ea19-47c1-afbe-23a49f5c9c08"
         }
     },
     {
         "id": "ECDB5393-6BB1-4A2D-A0FC-D62025ECBE6F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e92cd60f-033a-43ca-ae27-5109c090455a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "93bc3dba-13d1-4da9-b9ae-de4a1bbd320b"
         }
     },
     {
         "id": "D52BA5ED-A9EB-41EC-BFCE-710893A08ADA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3b083f2c-2934-413a-a4be-d53edde16688"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "deb78794-2070-4e63-aefd-3d3a2cc0ccc3"
         }
     },
     {
         "id": "9787088F-6602-48D6-8030-BA5AFE8B633D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a754fdec-8b55-4f08-814b-be7cbbb88096"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "28c9271a-b196-4133-8784-b960081c043f"
         }
     },
     {
         "id": "0CD28525-64A8-4CDE-B2A0-3E5153700687",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "332543f0-e237-461f-ae9a-409a5c702adf"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b5c85ffb-ac8e-438d-8da6-e2c4f011cc6c"
         }
     },
     {
         "id": "006179C8-BB63-4ABF-AA8E-3A7528EDA91D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "06f55951-c84f-44b2-b6e5-e25c63784d6e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "39ea5bf6-8a15-4aa5-921c-0c228e737274"
         }
     },
     {
         "id": "D8E7B213-5783-4829-A027-A99448EDCB45",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3b5424b4-46b5-44be-b118-697e566d306d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7d52a5b0-1290-4531-87a0-5bbd37c00be6"
         }
     },
     {
         "id": "117220B1-C349-47BD-894C-BADCA99769DA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "092a9eee-33b3-40c2-afba-be4bf8da728f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "77fc2b63-45fc-4744-b1cf-09e3573cb186"
         }
     },
     {
         "id": "5E140288-FC58-4CBF-B5C9-AC43E0E3CB7A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "45959368-5181-4326-8aca-d12dacb41a1f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0c63afda-7bde-461e-b255-a02bb747cfec"
         }
     },
     {
         "id": "A85841D5-8F77-49E6-AB09-436256B69DA4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7b4a3a12-e4e7-47a4-af06-a403e40a0237"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a6f70a40-d6e7-445c-aff2-036c1afd316d"
         }
     },
     {
         "id": "432D252B-8307-4A33-B7A8-6CE2203CBAB7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "05a57aa5-5059-4f65-852e-dd73a8af3ce7"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ffe20132-8938-4d27-b3c4-6b093f0561d6"
         }
     },
     {
         "id": "7B8FDCC3-95E4-4A1A-A1BB-3A9B0899CDE9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "495147be-486e-4aca-909a-7e4e4c0adda1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "44c41142-5e76-4aa9-b4a0-4c11205eedb8"
         }
     },
     {
         "id": "1F7DBE18-C00E-4D0D-B3F6-44AA12C8F30D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "4ea9cd4c-3858-437b-9903-3fc2e1adb85a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ba30faac-0db5-4b1a-ae40-6bb1dc87295e"
         }
     },
     {
         "id": "24EB6D93-F15D-41CE-9B76-79F1A66AEF4C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c5f9ce21-e5a2-4b54-a7f9-cf6ffc055c32"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "523c5d47-dbd8-4f78-8c4d-81ddd0979c33"
         }
     },
     {
         "id": "FE2ABBAC-389D-4617-B065-F8632230058C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "499c8a79-f343-4dd4-a5a3-4f73ca334101"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "deb6b808-e861-415c-a47e-6cab5b4d7eeb"
         }
     },
     {
         "id": "F444AFBD-D83E-497B-9E13-DBEEB3D55FEB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b3e1708d-d403-46b9-9686-03fab31469ed"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7cd9be75-487b-42b6-84b5-5c01f453ae13"
         }
     },
     {
         "id": "658AF228-C04B-4210-B077-9E91CF8BEEC2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5002f423-b206-49c8-a1bd-9f2e7842ae64"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "bc09ce81-30ea-45e8-8e65-7bd7578ba548"
         }
     },
     {
         "id": "4CEB7CBC-02DE-498F-9BAC-A5DD0253812A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0628b584-46d4-486d-8eab-57ee03bc7ad3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "fdc2630d-96d6-4de2-aa23-e85e8eeacc51"
         }
     },
     {
         "id": "755700DB-2269-4F16-AF7D-DEAB8C0263DA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7781507d-b349-4587-9bb0-adc16c71925d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3d226978-2d57-4050-a9c4-ca8db8ad2b12"
         }
     },
     {
         "id": "D44AC9CA-556C-42BD-B1FB-BB5AB8A5B21A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6e3434ad-e1f7-42b6-b757-2b58ad322670"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b183305f-ff31-415d-abfa-fa98b9dc444a"
         }
     },
     {
         "id": "3D682FDA-5673-4869-97A5-7E8A563146B6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0a649ff8-90b2-4a4f-9104-9c189a4dfc85"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ecf31845-5ffc-4986-a4a9-fab38ba740aa"
         }
     },
     {
         "id": "5A9E49B2-946C-4085-85E7-B6FF981EFEBC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6075c0d6-08fb-4153-b5b7-14f9b62c30dc"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d7ac00ce-76b0-47b5-b761-48d8f4c488e6"
         }
     },
     {
         "id": "1D8E955E-673E-41F0-8F94-306467C422C0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "80de94bb-9877-47b9-8f7e-07bd6ae918b1"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "118b9488-c9c6-4cb4-b47a-ae4c60301c85"
         }
     },
     {
         "id": "1B84725A-78A1-42E3-97CF-A850B1D75F5F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "86ca3cfe-a6e3-4d61-ac9f-e419140c198c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "112cde59-c005-4f74-8569-127d030fbc11"
         }
     },
     {
         "id": "CF37E650-6B65-4421-B4C8-D71F5EC2127F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c9d20409-293f-470f-91a3-8a02ddc9dbd6"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5d7b3165-ee58-4647-97f6-a478b1148706"
         }
     },
     {
         "id": "DAE82B1D-0B07-47F6-923D-04EB49A3E110",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "273bc226-c790-4da6-9a3b-1ef06cc47474"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b89ccf7e-ef2e-4d6a-942a-0af703d40aba"
         }
     },
     {
         "id": "D7420C68-0C24-4027-8B0B-6152ED7F9805",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ec1c2f34-e0cb-4772-9e0c-c5cd1a94b41b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0a22edbb-4782-4986-897b-4e9a7c16a65a"
         }
     },
     {
         "id": "B25E8F88-DD0E-47E3-853F-2641BD1F1CAF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "28289e87-8c5e-41d5-8445-72092416fd1e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d6a13b3f-7899-4246-b86c-e5440bb89d87"
         }
     },
     {
         "id": "95EBE0DA-6E41-48DA-A5A2-632ED44B4B84",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "949d85aa-43ea-4389-9a3e-0a2a36ee2e77"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e3a844f6-8fb1-4afc-b6fa-4d82c81e4dde"
         }
     },
     {
         "id": "B3CF18CD-4EF2-47A9-BEFA-07FEE5E0B50F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fdd5247f-512c-4215-87e5-5304576a6c6b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e79e00c9-3516-43d3-8bd4-ae22473a9c19"
         }
     },
     {
         "id": "5086FDEE-3387-4C80-92EA-C3D5E5E70545",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "33e9f42b-bac7-44b0-83fc-fc5ee97fafdf"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "81427de7-873a-4b7c-bfca-eacce3113a3c"
         }
     },
     {
         "id": "C9C78B63-025E-4804-8B59-8588579C08EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "af97a831-6f60-4f96-a0f2-31e2eb1c52e1"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "1d5e3073-3856-483b-b2f1-abe93419e7c6"
         }
     },
     {
         "id": "1FA3F2EC-BDB5-4383-AF5A-7E6861008CEA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fa17adcf-4b8e-49e9-b31a-3e4e22be4fb6"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "de5ce646-8b92-4769-bbb5-bddb0e3d2390"
         }
     },
     {
         "id": "7A6041B9-E458-4651-8380-E627FA727B65",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8aed9bdc-2b6d-4bdc-b9b4-3c2263941054"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "62265eb2-b2c5-4622-90da-32368de45769"
         }
     },
     {
         "id": "9857A120-1ED0-4FFD-BB84-B2F0F3A5DE02",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "81d1b6e8-a258-47cd-b873-c49c9aafe35c"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7c3bd8e8-0972-4b5f-80e1-36e6db662a99"
         }
     },
     {
         "id": "A06CD2F9-79B7-4E8F-B1DA-EFAD4AE31185",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b5a548a7-a1f2-49ea-a2ab-a789fa998ead"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "77680c63-5ad8-49b7-b839-9f0929e9d243"
         }
     },
     {
         "id": "A6188C5F-2614-409E-BA9B-BB48955E678C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ed3fd014-e872-49db-a5f2-37d68214d945"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e9287b17-0fbc-4317-95d8-dfaab29607ea"
         }
     },
     {
         "id": "C63CFE69-944E-4AA9-8252-A3FF92401B75",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5ba4e9e6-4e91-48fd-8ea0-6d1dcd567ca0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ff1c9a38-1d2a-4f6f-874c-f578d361f3cb"
         }
     },
     {
         "id": "89823332-D4EB-48F1-9BAC-A3B20D4C673E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "66c5c53e-9cb1-471b-b467-e403b67c9ffd"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "08a9e195-b7bf-4507-8866-6cdedb4907c3"
         }
     },
     {
         "id": "8D93E608-B483-4538-B8F9-92DB2CB91B26",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6a2407fb-3189-49dd-a910-f5eba8296807"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cbc8f30c-1c37-4c08-9ef4-8d6949137c73"
         }
     },
     {
         "id": "50FBCDC5-89BC-4FC8-A7EC-AA8974A3DE2D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "63f4b321-999c-4541-b216-2ffb7bb3ac3e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "99de90f6-188d-4da0-9f75-2c9ed2561389"
         }
     },
     {
         "id": "C40E4609-4F57-4C8D-93FE-86FF26A04796",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a29217f3-eea2-4aba-90f9-04ff8c03c966"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "1cc7190a-6056-40b4-adc5-c93ee3ea4e3a"
         }
     },
     {
         "id": "3F8EE1A6-8975-4F5E-A05A-3601AAACD8F8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6af40072-9ebd-4195-817f-c22476bfc33d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "782cb335-d668-4509-81e5-2e14721b8e8f"
         }
     },
     {
         "id": "8B92CCF7-6E43-4255-8738-EF35E5E5B1D4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0ebebd90-a2b5-4646-8ec2-c17ff28c9e03"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "153bb218-a8c1-4e79-a496-a646875cbd6e"
         }
     },
     {
         "id": "0B3BB104-2C18-4119-8C16-ACC529D68A1C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8dffa790-b2ea-400c-88dc-b8efc8311ef1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9d396674-30b3-4c87-b4cb-41f451ef4e6a"
         }
     },
     {
         "id": "09082C7C-FB44-4167-9A39-03B8CB6A3F9C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "4d71d287-fbfe-484d-af90-95130433e3b3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e68f31c5-e3ba-464d-9f4f-3df4cf1782ce"
         }
     },
     {
         "id": "12C48709-630B-4F73-8BD6-1EE4AC0CA16D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1968731b-8f15-49f6-af90-2427c0013be0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d8662d17-ecae-48db-8fc1-08cb68898b9b"
         }
     },
     {
         "id": "20581834-3E11-4804-B336-F694E50E61B0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "cb2afa74-947c-4534-ac9d-f0ee3487787e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "434ceff7-67b6-4c97-b56e-784381aede06"
         }
     },
     {
         "id": "D92952BC-7521-4931-BCA5-D83F7776EEF8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6f1c8a1a-1300-46a8-a41e-2ddaa06d3be1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "fea14a07-9a54-496d-8134-2c52fe4f59a3"
         }
     },
     {
         "id": "2164137B-D07C-4AC5-8417-FDA11CD5D097",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9abd8a43-e68b-48f6-a59b-1d1f75c93368"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "56beb3f3-19c1-485c-9a4f-b7735ac72bb5"
         }
     },
     {
         "id": "908EBB2A-2876-4F1F-BE5A-A87010617E9A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d2bed608-c8df-4c58-9a36-a5dd4652427a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4491875e-343c-4f10-b615-d8dd42c23a07"
         }
     },
     {
         "id": "ED96D9A5-3EB1-4CD8-AD0B-DCB6234BF972",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "519e73ab-f5fe-421f-8f72-7c96fb6d478d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "76b3e467-0cf4-42b1-8bb8-61bb58a95216"
         }
     },
     {
         "id": "93C6295D-79A8-4EA7-A135-040F6278B60A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e80b7d1d-5f05-4504-ad20-d97b8de410ef"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "88d3f41a-9c96-4b09-bd80-fba36e4a3798"
         }
     },
     {
         "id": "DA9BF2F9-E3FC-4305-A9A7-6F9C56903AFC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5d53c595-6567-4d6c-a3c6-cca66a78d9cf"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "21f5a6bb-d86c-4f48-a465-b99d8783c3f1"
         }
     },
     {
         "id": "EB6B718D-8345-450C-855E-EDE6607EF163",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a60be618-57e7-432b-9880-0793ec8ea692"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6082b3db-510b-481f-9135-6d25ac3fb044"
         }
     },
     {
         "id": "56511A6E-3FA1-4507-9E54-FD1F220E69DD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "51655e15-ce5b-4734-9bf7-ee35de2b633b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6a11b955-2d34-4905-8496-5b8a2f7ec69c"
         }
     },
     {
         "id": "1DC5E118-D5BA-423A-9395-8963A611F4C0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "c709b074-5d38-4dbd-96ac-0080341416c0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "14e71fb8-1ff2-4b1e-8154-cca87b788779"
         }
     },
     {
         "id": "1E98E63E-240C-4D36-BA8C-FB2C5E9FE0FD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3597485f-e10d-40f3-969a-84dbcea5ec22"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d15aab1d-31b9-41b0-ac09-72efeb123465"
         }
     },
     {
         "id": "3C0CF079-7077-4B56-BF80-7A3875C10BB3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6034973a-f9dd-4b23-9e01-4b32e1c73046"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "26cfe2c6-9269-444d-aecc-d24e43b1ec26"
         }
     },
     {
         "id": "0C5DD059-3591-4396-B0D7-3A387E1FEA74",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b254f120-6310-4805-be34-d837c29e1272"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "060076d9-37d2-475d-a791-a52bb07ba640"
         }
     },
     {
         "id": "A75CDABB-6814-44E6-93FF-C9ED0552E461",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8f7d1f3e-36bb-4d87-bbbc-6eaa435302a5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5bb4e5dc-aa5d-468e-a0a8-693f6de90e39"
         }
     },
     {
         "id": "0EF6838E-B3EF-48DD-AB2A-130203FAD39A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a7061372-74d2-4f7e-8286-ea2bb6c0f294"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "065a58ff-2661-436b-8fc8-44e5a5d9a34e"
         }
     },
     {
         "id": "D427DAFE-7826-4435-8FEB-9FC0542DD962",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "731c2ef1-19db-4c9e-b7c8-2b34cf844857"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "785f27b9-6b0f-47b0-9f45-c2067d6086ef"
         }
     },
     {
         "id": "E21466FF-2316-4A83-929B-964D5B6BD4EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "82fb8c62-49ce-417b-b957-4a3ea16be0bb"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ea3e25e0-49e8-4baa-bfec-fe60bea86e2f"
         }
     },
     {
         "id": "6CFCB0A6-F61E-406E-876A-FAA64B4B3644",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f64982ac-c240-40b5-86fa-5e29cefd1cde"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "27ffcd2f-73b5-49bc-bbf3-9fd52ff5c698"
         }
     },
     {
         "id": "AFB8D241-D05D-40B2-BF50-2A7C4FB2DCB9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ef298cfc-dc97-4120-92cc-bccdd92a4f1a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c5d4335c-6ebb-48eb-9cca-ed126c219f18"
         }
     },
     {
         "id": "FE01DE0B-E5B6-47D3-A79D-81A153247913",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a013c54f-4ff1-47d0-b9a4-9df1c339342f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "53c50f96-b25e-4e2b-a47f-dd30c81deaf6"
         }
     },
     {
         "id": "66192E21-26C6-46D5-8E5F-005758AF718F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "027a87b9-1abb-45c1-bfcf-7c42beb9b759"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "75e4b6ab-edb9-4284-9a97-412516625d1b"
         }
     },
     {
         "id": "8183EB5A-12E5-443B-8C6A-BE8F4072CF20",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8623bda2-68f1-4620-b081-2740b5311ec4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8012427c-4c52-4f38-8917-d3cecf10ca9d"
         }
     },
     {
         "id": "08FF90DF-4CAC-4C42-A505-1F9005B78194",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0f61ea0c-5bfa-4eeb-93ef-8c7bfc813974"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a575d49c-8e63-4a7e-8e8c-3b03826242ae"
         }
     },
     {
         "id": "F97D7FA8-BB2E-49DA-B4A3-63D109F5CFBF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e50a4f87-b2e2-4b06-ba97-5eef9b2c7520"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "721fd610-fb00-4104-a6d0-449199efd314"
         }
     },
     {
         "id": "C6FDDF5B-F625-4F00-A51C-750A4C295B8A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "13f40689-bb7b-4397-a28a-0dc88a404676"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "04c2c989-6aa4-410f-ae83-777ae6166ce9"
         }
     },
     {
         "id": "4CDCB048-987D-4ECB-97BA-8FF1C8CD3E5A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5fa200e2-828b-498b-aaec-b100952eddf0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "75b1466b-121f-4db4-94d1-b061cfb4d311"
         }
     },
     {
         "id": "AD56422D-D236-4912-B37E-64C5167529FE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "dd81ad3f-99a0-4249-acc7-63dcdc86764d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "544518ad-6784-4a96-84ed-42685eda86a3"
         }
     },
     {
         "id": "528E55C1-84CD-4C38-9A4C-748FC01DC27D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ef13e942-4550-479c-8e4c-ea4e32bb1e05"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "92f4c663-2a47-4a8f-a685-2ea72fc632ee"
         }
     },
     {
         "id": "21C6CFD8-A6F8-472D-A670-D27879E6E2B8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "546944a0-35f8-458e-be54-d77cebcaff00"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ecdbb363-646c-4dd7-84ca-4a1b1fe59a5f"
         }
     },
     {
         "id": "1E0AD0A2-ED71-4A60-AD70-6F6A5BD7B5C4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f6dbccf1-c2f6-43db-b4ba-95221233ed22"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "dae56460-b90d-436f-aa1b-acd99e0b1bc4"
         }
     },
     {
         "id": "6BC41F3B-EC64-45C7-86D0-BA3333B39119",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fcce439b-6e65-426e-b485-8e537e4133d0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b4070954-30c6-4d3c-846b-17f7086246c2"
         }
     },
     {
         "id": "5E7F961C-1F88-4B2B-9301-0FEFB4E26911",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d66d29f8-6bfb-411a-801b-5513201f3874"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "87036825-ee73-4747-b50a-f4e07c44bad5"
         }
     },
     {
         "id": "452ABFF9-DC21-4F00-AF62-2985C5A5C860",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "846b30a2-8db8-476f-990a-d8f4e75805d0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e8814719-ba38-4642-8a41-d56fa28aedda"
         }
     },
     {
         "id": "DDCA8691-C292-4828-85F6-86EA8914E525",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "bef7c8c6-0349-49ab-a5b6-7ae423ae7f2e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "be36b22c-caf0-4f6d-bae5-0c4bfffab14e"
         }
     },
     {
         "id": "D5E01768-67D7-49C7-A2E9-19B16421DF55",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "be7e1330-2b97-4044-8428-c68f102e6c28"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "5d9617bb-ce8f-41ff-9cc8-6edb54de7ee6"
         }
     },
     {
         "id": "5D290BEB-C6F0-4D6A-BAEE-A01117B3DDEE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "77b8f478-edcc-4042-b5c0-c7063dcb9f6e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "389e2f23-75c2-41ad-aab7-e2795c544d3b"
         }
     },
     {
         "id": "A3A03C52-7FC3-47BD-B08B-15A2143F1F34",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1ef3561a-3b1f-4c7b-b475-e21e7165bbc0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f5589b9b-6866-497e-9c8a-c63606b39c8d"
         }
     },
     {
         "id": "A55A7643-0AC4-4FB8-A035-A624F1A9A93E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "212c7e8f-ecfb-4a20-bfad-39c9ea9d7c70"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "67ee9b61-3a24-4219-80eb-db0029f8a4b6"
         }
     },
     {
         "id": "974CA015-E3CD-41B3-A417-E9F214791BAD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3454eb63-01d9-43bf-b063-d0259770a31f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d2a04155-b870-4b35-ac23-ec4929034f8a"
         }
     },
     {
         "id": "D04BE5F2-05AD-4975-9716-9B0B661B91EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d3bc2497-2bb1-421b-860b-b2354cb8015a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "021b1d67-c62a-403f-a552-f70a200fac22"
         }
     },
     {
         "id": "35013315-A120-414B-A994-CFAD1B09CAA2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e17bf2ff-83a9-4ab9-b612-8eea024949a3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "311e8ffa-19b6-4389-8a78-1893210ed416"
         }
     },
     {
         "id": "65B2004D-82DF-4667-9AD6-ED3C4FC658DC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b7dbfbca-e3b7-4ff9-b4c2-4f7332e70c16"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "517c3b99-7438-4ef6-bb5f-6541fc10d051"
         }
     },
     {
         "id": "C33D66BD-EA39-4669-A8DB-1D7B265C8F43",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2ed18d37-842e-460c-9254-a75c6ed9e185"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f3746cf9-6823-4cbe-90ad-5d8028b6071c"
         }
     },
     {
         "id": "53DF08FC-F165-4E4F-A334-11F8147A24B0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ecf633ee-c148-42c4-ba3c-a69c7bc90009"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c1cafd02-c8ac-4ef2-b3a1-53fb0df56522"
         }
     },
     {
         "id": "85E291AC-0E81-4AF8-80A9-C505C1426CED",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8620f9ef-bc25-44b9-993e-85d73284369e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "88c3340b-b7d1-4f78-a2a6-8f6816ca4d7a"
         }
     },
     {
         "id": "B3D75F35-8EC6-4010-BB72-2D86932B73AB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "68a91e7d-64fb-4196-9d30-a8df7754d8ae"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ae83fd4e-e2a9-4296-be18-bb160c583102"
         }
     },
     {
         "id": "38557702-CD90-4B74-82DE-52937FDEC48F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "df79c5f1-4f2d-4e8f-b5e6-58043e6031bd"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "204f1bf8-fb71-4e6f-be44-0d0496c793a3"
         }
     },
     {
         "id": "A1333996-A224-4C52-9681-8F7EF8279D63",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7b9d1e43-fdbd-4ae6-926e-f63081880c97"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b1be47a1-3589-4188-92ad-a2464e117025"
         }
     },
     {
         "id": "73151B33-D688-4E3E-ACFB-05FDBC0C332A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "dffab34f-d714-4313-b0bf-e8e480c26fef"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "cac7c481-b44b-4106-a40d-581040c4856f"
         }
     },
     {
         "id": "7537E4B0-B0CA-4020-A1D0-B4215B614DB0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2adf8fa7-5855-47e7-ae78-7983180198e0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "89990f3e-b8ce-4d79-938d-5c415cbd9121"
         }
     },
     {
         "id": "F2876D07-BE07-4F00-96ED-6ED4A5FA6C7D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5f08a6e2-31e8-448d-89ed-7171c9eeba17"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c6d0966b-dd19-4c1e-8204-70dcec1bbedf"
         }
     },
     {
         "id": "C1CA2BEC-C22B-4397-B8DE-AE0ED1689947",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d5513a8e-64d8-44d6-967c-7f2ccfb0d557"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0d07cefd-3e92-4519-af2d-bcb4266685d5"
         }
     },
     {
         "id": "6AD11B97-5607-4D0C-B0A8-2C18F663D81D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b782ff43-74f5-4ef9-94fa-97edb5000578"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "121dc2c6-0281-4e9d-82f6-971d2b0e20f5"
         }
     },
     {
         "id": "D4983F37-20AA-4BED-8B64-F22881B3129C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8cac1c5f-d989-449c-9e28-71f311f6bb55"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "0d3927e2-33ab-4107-a3cf-3b26d99363ec"
         }
     },
     {
         "id": "9E2A703E-9BC7-42DD-8239-10FDD7DA4B3F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "18f74a4d-b585-4608-be5a-a88770904de0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3549b176-5fa8-43e0-8913-1e2aa15d1e24"
         }
     },
     {
         "id": "D9618B0F-BEB3-4B39-8234-0F985E67D1C1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "33d91b40-c8a9-4741-89b5-f946cfd2e8bd"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "35fe1bed-8471-4f39-a75c-b0a549d9b5e1"
         }
     },
     {
         "id": "1434AD30-7E78-474F-B925-8EE25345D99A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4956773a-7e2d-42c4-9c06-1e47f9a37f00"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4d50198c-ada4-4aaa-80d4-4c4a72c85bbe"
         }
     },
     {
         "id": "534CEB2F-D7AF-4655-9F76-CDACC4760BFC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a6eeac8d-04c4-4685-af17-c29ac437fa04"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6b335cee-f36d-4a65-9b59-35fa7359bd7f"
         }
     },
     {
         "id": "AB139C46-F5DA-4C12-B413-7F5C6E729649",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "330ef1bd-ccb8-4a28-8ed5-89ba0c711224"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "50ca6a19-014b-4e50-9547-25141192fc36"
         }
     },
     {
         "id": "2AA6DD46-013A-47BB-8BC1-A1E9AFB08122",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "795cb2fe-7ac5-4a58-a456-c5f52b662b17"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ba0c1284-4758-4b34-b1a8-e88dc4ee4fca"
         }
     },
     {
         "id": "971E8D6D-B6A6-4C45-A39B-A234524049DB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b7487e2e-0b19-4cd6-88cd-56a090115487"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "659229f5-d230-404a-b203-44a3222c6c07"
         }
     },
     {
         "id": "BD671D0F-6868-4F64-AFE8-4667808C1D2A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ec38c215-ef9e-4cc1-8fa4-7978f6f50cd7"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b52c684e-18af-4644-b5b1-c1828b82ec32"
         }
     },
     {
         "id": "883E5985-DDE8-4206-A9C6-E60E0E40523D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bd812d68-9d77-4b9d-9031-5df098e754f2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "752dd4d7-ba26-4468-a89f-4ec809528aef"
         }
     },
     {
         "id": "E0500B2E-35F2-4C69-887A-7A2E09DEEB57",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9e198f01-fd21-4163-8d17-7595448eb6de"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "15d02a45-7fa9-4ddd-8ed0-633c3f786294"
         }
     },
     {
         "id": "55FCB55E-D906-4872-B417-812CAE458BB9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a47d33b3-71b0-436f-870f-7cc70f864a2d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "591d323b-9d9a-4a37-bb8f-ccf807fbaa92"
         }
     },
     {
         "id": "7A770BD1-A04D-4A3C-A169-3CBBF1579C39",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a81520ea-c327-458f-b87f-2196d7dbd318"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3aeaeed9-776a-4c08-9672-4b2bbbf1b5b1"
         }
     },
     {
         "id": "D84E2B79-3196-4348-A218-0CFDF0684650",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "c925c533-f7ee-45a2-8917-dc7c2c203290"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2f1886ab-92c4-47b1-a809-eceab7091bc3"
         }
     },
     {
         "id": "DEABB04E-4EA8-46DA-A5AA-1D8AFD3DAA1A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c0c9af08-2916-4a4e-844d-ee05581f00b1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "bff8049f-5ad5-4d11-be05-14a4f4c13fbb"
         }
     },
     {
         "id": "04B8B7C0-3B65-4F78-BAA0-C3A6303A4366",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d619e3d3-0d06-406b-be9b-79748010db89"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "731e9778-3f68-4451-abc9-bbaae7aac6b2"
         }
     },
     {
         "id": "607C36D5-B82D-4FC8-ABAA-9EC5F72A69BC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "afc20592-bd6c-4c90-ae03-584b18c328d4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a40ecb17-1939-4bd6-8aa0-e2bf0e98f4e6"
         }
     },
     {
         "id": "672DE6F5-F23D-4E9D-A2C4-058332EE533F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "987dfbb8-ec8d-472d-b731-58dd04f1f764"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a7962a68-56c7-471b-a38d-a3357f1906e1"
         }
     },
     {
         "id": "25FAFDCB-72FB-42D9-9724-E5DE22AF7CF6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "cbea91a1-5640-4feb-8fc1-49b46bc9312c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6cfff250-ca6c-4f2b-981b-eecd706a8c17"
         }
     },
     {
         "id": "9483CACB-C496-497D-A6D6-FDFF187DF392",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d7c85efa-c8a6-4634-8876-663de1bdb56e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "9a28eb1f-dbe0-40cf-b6a9-3769166a043d"
         }
     },
     {
         "id": "2F118CB2-5FDB-43EA-9034-C29DDB1847A5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5960b555-d193-4d00-8b84-2f70d04bfe41"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "0933399b-8c70-445b-b470-24551522f0bc"
         }
     },
     {
         "id": "B2C20702-C8A4-41B5-A48F-87D9654C5253",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "97c0ac1c-60d5-4a0b-a90c-ecb56829fc04"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d9f8e997-c4fd-465a-9584-b99a24e32882"
         }
     },
     {
         "id": "4B981CFA-1845-430E-902B-D1931E0C836F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2bd4eb4f-7f1c-48cb-8d44-fe7d431124de"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ab24c463-01f1-44bb-93eb-6adac4124ae0"
         }
     },
     {
         "id": "C245A37C-CD62-4008-8B50-06277831381B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "97b33ca6-1da3-4d81-85ca-c004764989db"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c22b1a58-1a46-4945-8497-14ff50ac4189"
         }
     },
     {
         "id": "F8EE5DEC-862E-444F-9FC0-48D2512CCF3B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1f427fec-7971-406b-b96b-fc0a665f7c02"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "02ef835d-2242-49c2-8809-779a60e5905e"
         }
     },
     {
         "id": "307F28A9-1C31-4219-B610-BEEA23F7C1F5",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "635472b6-5015-439b-981c-4ff862b18bc1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "df66946c-c250-4334-8aa9-b798dfba737e"
         }
     },
     {
         "id": "D09632B7-D87A-4CF7-B359-0B51FD07FD17",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7eb1b3cb-0cf9-4393-ba4f-5a8f899914b1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "83fc12d4-9de3-46ec-99db-5abe0e85a845"
         }
     },
     {
         "id": "09928DC9-0AC7-4C2F-AD33-2947F0E08BF0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f418d5b1-1664-4dcf-aae5-9cc07a0a308c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "517e634e-32ee-42db-bb3b-98f66e03e309"
         }
     },
     {
         "id": "5B936251-0623-4824-8D42-FD7E92E5A56D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4f8d63f7-f7d8-4a92-991a-5bf7f9a87872"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "73f3f2c8-1265-4fe4-8090-b52a5b31402f"
         }
     },
     {
         "id": "67309113-32A9-4782-BC8D-61E3F104BE7D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "41769c3f-770e-4450-b3cf-49f9bf0c7b5a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "10ebb95e-75b9-4763-bbd4-16e95418a62d"
         }
     },
     {
         "id": "065DF900-C077-4F63-8D19-279A821D494D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "082cf576-7e76-441d-9a9d-04aab6e8e420"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "43845b33-d3f5-4730-9066-4c73aa9b30ea"
         }
     },
     {
         "id": "AF7148B6-5213-4DC5-8914-D286BA8607AB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1f613d3b-c788-4c3b-8812-88188319ae68"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "36b2d7cf-6a06-408c-af26-88e8fb94b81b"
         }
     },
     {
         "id": "F4039FF2-1783-4050-9394-E5C8A8AD4B94",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9c3124e6-c6c0-4b5b-8734-57e26fccb72a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "37432385-8434-4dd3-ac68-5aee1f674862"
         }
     },
     {
         "id": "E7868EB7-AB04-4629-821F-048B28C071EB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "557c67f2-1c2c-4ee7-b9b8-c71e6a34ea7c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "57098e66-555c-431d-aa79-8daea18dbc4c"
         }
     },
     {
         "id": "C58AD10A-459A-4DC1-BB87-C09CB6D2621C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d1ae20fd-0a4f-48e3-b938-f15b95c26ad3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5ed5f868-3249-4ea6-9d0a-ae6648344862"
         }
     },
     {
         "id": "7350623C-FAF7-46E7-A1E9-BE4DDE88BB2E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "154e760f-551d-4433-b871-e0e6ed2736f8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "40dbe3de-99d1-4310-aed8-8e40ffc2d189"
         }
     },
     {
         "id": "05E1F6E5-03C3-45EC-A236-255BC1BC2901",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "51c44ccc-e5ea-4cc5-9ae1-f25544cb5db0"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c725e940-84d7-4c8a-b38c-8abb682c7e81"
         }
     },
     {
         "id": "6CE5E158-3F13-41A1-BDE2-7C06D2B602D0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "62ed4136-3f39-4d9e-8461-428eea553059"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "70b280da-c54e-41e9-8daa-6f51cd28bea3"
         }
     },
     {
         "id": "7FDB4675-B09B-46E1-8421-5F9FF351CE01",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3c367dc5-ec23-4ce5-a60a-0da31a15afbf"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ceb1cae6-9f46-4037-897c-29fd9758e961"
         }
     },
     {
         "id": "CA092939-5109-443A-B18D-38725556C54F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0acdfe48-ca23-4a48-b6bd-35d708d24ae8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7b56a79f-e99a-441d-8cd2-7b782dd1359d"
         }
     },
     {
         "id": "29F1F879-926D-4F46-BD07-6436E3A40DCC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "967c900a-8781-451e-b60a-c141e3487118"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a4e18b3b-531a-4276-879d-d17a04556a05"
         }
     },
     {
         "id": "62ACF11B-DFB0-4ACB-AAAF-3E7CA9BC9C8A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2cdb3ac4-e148-45d4-b36a-bfb244226635"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "16e81ca1-cf41-421b-818a-e3c33dcbcd51"
         }
     },
     {
         "id": "D40BF69D-B95E-4206-8F55-2ED7B3A39799",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5fe493f8-6d5e-4371-b73d-bc2a7dc9da59"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b76f09d4-e035-4bcc-be83-70e0db7857d3"
         }
     },
     {
         "id": "39E067EE-ED1D-47FF-A252-780D31CC0127",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "49bb5a48-435f-4d85-a3bc-8aba4935e9d4"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3f0dda0b-5be7-4c10-a991-8e03253679bb"
         }
     },
     {
         "id": "3D9BF947-CD3A-4F0C-9A55-59A8F827F7EE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "347ca5e1-9691-4f36-9771-377a62550c38"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d7b8330d-d363-41ae-93d4-5cf4c7f5d8ee"
         }
     },
     {
         "id": "AFB01834-11DA-4EF0-AE24-E6D849556B45",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "43163df0-d0d6-4760-97bb-e4e96c71be8b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d811301f-5d67-4571-8c9c-97853d927de0"
         }
     },
     {
         "id": "B9AADDBE-C6A9-4FAE-80CF-DB2B09B4D85F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ccd65909-5fa6-449f-a6e4-c0c186cb1685"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8b995ced-a742-4cba-83ed-d1503bdd8221"
         }
     },
     {
         "id": "FFD78386-DEDC-4CBF-A8BB-2CC10239CDAE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2b86cb66-6759-48da-9a42-7b59a51a3e39"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "0c8305ab-e3d1-4eb5-8e35-746aac0e0704"
         }
     },
     {
         "id": "729916CC-9360-4B9B-8506-65E0B1D938DB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1de2497f-36e3-4f13-94ad-58387eebd2f5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "aeda2023-81da-461a-9578-08a791874914"
         }
     },
     {
         "id": "8190D11F-0483-4B93-A3C7-8B49EB831EE2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8b35784d-9012-4cb4-b214-a45c0e9e9ae3"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "eb2cb3b3-7672-45fa-8d71-fe38a1eb5d56"
         }
     },
     {
         "id": "D764E2A6-1F39-4D19-85E0-73983B8A93E2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "52cb67cf-f3ea-49f6-8e78-9df5e0bf3913"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "96b83dd6-d289-4757-b198-b632a0108b66"
         }
     },
     {
         "id": "6BAD072F-133B-4F46-819F-7E45FA21AA9B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "20abdfc6-506c-4438-804e-c36c71cd8a79"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cd3656df-4c74-47fb-a50d-2223074f8200"
         }
     },
     {
         "id": "6D1EED62-FBC0-4966-8144-104653DB849C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6d5410b9-2274-4070-a695-d0adcfaed152"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ccc5d88d-44d9-4fd8-b099-4cd368c4b9c4"
         }
     },
     {
         "id": "09155BF9-8E62-43A6-865D-CB66336BD690",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "233fe5e6-34ec-43f6-9261-479d6c8fb279"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4259dd3d-3f09-47c0-ac37-da0c00a97057"
         }
     },
     {
         "id": "9BDF479C-9196-4D19-93E2-0EEB0D5398F9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "36c9c147-4901-42ef-beb1-adbe1e38e20d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "26035928-1795-4758-98df-b0ce978dc1cd"
         }
     },
     {
         "id": "D13373A8-A733-47F8-B462-7E240F4F85EB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "a80eb63a-89f0-4756-b77d-4eb1a7f4dcb2"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6e1e297f-3aff-44ae-8c08-473850d3ecec"
         }
     },
     {
         "id": "80CF60A8-E1D7-45B7-92C5-527FA39E89CE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bcbe6358-6994-4e32-ae75-ee84ed1c1bb5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "37d087ce-fb1d-4bfc-be44-9baf1e8ada75"
         }
     },
     {
         "id": "9F92AA21-9583-489F-B84D-C1B4BA42A56A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3cc91345-ff35-4737-8920-5ec66a8fdb11"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "382527df-c8f1-4ad6-a559-3af179235adf"
         }
     },
     {
         "id": "40C03948-17D0-4657-95E0-1A1DC5FBBF31",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "35e988d0-4e6c-4fea-8eb8-553f2b1d7c85"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "afcd4f3a-7c12-4a8f-a40d-10605dbccd82"
         }
     },
     {
         "id": "D7C06D4F-0D43-4B70-9788-560B52197FDC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "73cc12e9-1cab-458c-998e-b9a34d0da661"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a3819950-33f0-46e2-a9ce-6fe6f77170fd"
         }
     },
     {
         "id": "BF584AD6-1204-4A25-A56F-8EF04600CF62",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "93f9d29b-3fda-44d4-8002-d738ec7d4397"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "578e1c8d-fa74-4b7c-81cb-52b3b9f4b583"
         }
     },
     {
         "id": "28916D44-BDCB-43B3-AC0E-34C1E172677D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "60ba3f82-3403-4362-a6d9-01eec1590eb7"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "43f9583f-284e-473c-b4f0-31ef45d09795"
         }
     },
     {
         "id": "7A0E57DE-327D-4069-B4DD-3CD27A9771B9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1587310b-f274-46dc-ae83-124708bd10d7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "fe9c0409-fd3a-4026-9b59-7ea8a4b62afa"
         }
     },
     {
         "id": "537BE017-541A-444B-B124-5D45A00C3671",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5fa9b3aa-80c4-4862-a3b4-064c037cc149"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "13d6e264-1473-431d-8493-ca5772cd53bf"
         }
     },
     {
         "id": "0437428C-4A83-4976-B3C7-B9FCD7ED24DE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "c3d819a8-6837-4c51-a27d-550e69edea32"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9a3ad2a0-74ca-4a1d-82eb-45ccebc70c05"
         }
     },
     {
         "id": "B30FF379-CFC7-4FAE-A0C0-FD4D4674E549",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e0b73c1a-ac3b-4839-820e-284ec6731dfb"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8e0131bc-e756-4660-8021-f03947f80927"
         }
     },
     {
         "id": "2E3E1596-0556-4587-85EB-FDE9D40702B6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "159f2a07-5b88-43b6-80b2-08bb96a8b0c4"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4730c785-1671-47d9-9b8d-06d70dce2c85"
         }
     },
     {
         "id": "61F1A631-B623-40EC-B4DE-7F5584519066",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "480b8947-c1aa-40d3-b499-a1d2472ef2e8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "168e357f-1a8d-4972-ab24-4088191d67cf"
         }
     },
     {
         "id": "6406C460-2F4E-4A8E-A4C9-0020B743A69D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2293121f-2670-4783-a9bc-e5d8d82ad185"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8e4f00b6-8288-4e9c-8e60-2aca6e454144"
         }
     },
     {
         "id": "150F834A-B9B2-4BB7-91A9-62F99643E98E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6d14d6d0-f7fb-4091-a378-691ad7ea2115"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ca47c22e-7a71-40c4-b96f-16974636032e"
         }
     },
     {
         "id": "61B1C806-2E83-43E7-997D-F1890BB7AA1D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "addd511c-aca3-4553-8024-a13c5b1b78a2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "92f8aec3-35c5-4486-b8f9-8e26b7aab146"
         }
     },
     {
         "id": "79AAFB64-DA90-4C42-BE22-B3169BD03462",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "830f4f73-2eaf-4a26-87de-e6874dada0f7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "bef30d2a-3111-40a5-8960-e41b6928b996"
         }
     },
     {
         "id": "318CDC65-83AB-4ADD-809D-691DE9C68732",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3f757ba2-51bc-4739-a01b-707354da9a34"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "df6c9464-6144-483b-9e41-6a306013594a"
         }
     },
     {
         "id": "D0920796-3229-4500-BF9A-A51A585317CF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d33c7837-297a-4bb9-a1d9-ec95060ebe5a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "cd01fad6-961f-4ac6-b8ee-9249e33969c7"
         }
     },
     {
         "id": "065A254A-E28D-441F-A06B-E75E8F57E187",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e761ab75-c88f-4ac7-a9e1-025340514237"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "fe9e5824-1eec-429f-aed0-cb96beead4b6"
         }
     },
     {
         "id": "974DF7B4-D556-4BDB-A31F-12C3A5C57EDE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "3a6074f5-968b-4347-94f5-641f70b9f153"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a1eb7f87-3159-4374-9c20-7d65f3b8f4af"
         }
     },
     {
         "id": "AB60E02B-6E57-4BEF-82C6-70C98EE9CD1D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "22b79c54-701d-4b51-aadd-154e3d5a5d6b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b2358f2d-40aa-4acf-9501-b3579d54ec0a"
         }
     },
     {
         "id": "7BDEC66B-E97E-43DD-BBF7-F3C3133F8C3F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6d0f2a65-e3b4-462c-a877-448002ac471c"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "bfb8738d-906a-4025-8f56-3f71e916f1e3"
         }
     },
     {
         "id": "6E0E9E1A-1D93-4BDD-A130-48E3DA73A82E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b792a555-98c4-42fc-9dfc-5a23ab78b81d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "9722b940-a92a-4d46-a283-e75e1819bd3c"
         }
     },
     {
         "id": "32C05055-0B2C-4634-AA22-19F01AFCFDA8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "12f9946f-0eaa-4673-b432-b7c0d845324e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "7ce1188c-9b5a-4bae-bc47-92e570210837"
         }
     },
     {
         "id": "FC8A1F17-F07D-474B-AE22-3C1655404586",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "166d39e1-0021-4029-8e93-46385d5d6a2b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "daa6b0c7-03a0-42ce-a02b-223b996d9608"
         }
     },
     {
         "id": "A2B9D460-1186-46C1-93D5-B92F7BEC7A0B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "1984314c-ee09-4e86-96e8-fb306ff5f919"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2cc000cb-7bf7-4737-b910-804d8c6a823a"
         }
     },
     {
         "id": "CC7EFA19-D73F-45C9-A990-5D1F5DEEC8DC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "284ec093-8762-4727-b6c5-32e3628dda90"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e45891a2-a8a3-4f76-8046-cac08cc07edd"
         }
     },
     {
         "id": "19DBB7B4-410B-48BA-B0BC-698231B34C2F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c85643df-09a5-435b-83ca-1c3f3b17b221"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "193cd394-dc8f-4dd0-8c90-8ec885575587"
         }
     },
     {
         "id": "49AE1BF3-CE52-4C17-AA64-AB6919FD00EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f9e2afd8-2e1c-4aac-b979-e10308baa730"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "aa07910f-502e-4dbe-9940-7d43101b8809"
         }
     },
     {
         "id": "6379E56A-97D0-4688-AEDE-86FD590D1E47",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6940aa4d-f237-4b32-9e7e-f9b3b1a6084a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "32b9c2dd-ca6f-4b3e-9e05-37d6c2df1343"
         }
     },
     {
         "id": "4A315B7D-9853-45CB-B9DC-8EB3DE2C265A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "b04ce292-d39b-43e7-a406-c9300e043442"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a18ee896-4483-48d8-a9a2-52e082cd93e0"
         }
     },
     {
         "id": "FD55658C-E95C-4A19-9033-D42D894EF85C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8c307d56-524a-4abd-9230-5273d83b5ac0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c5a2bb42-f701-4b5d-9eaa-f9ca6f8a254f"
         }
     },
     {
         "id": "05665E59-30E8-40E5-B05C-34F0DEE968C0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7a10bf7e-8b18-4540-a780-0abc25672a71"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b9b82b33-eb31-4fc5-8fe6-ef11aefed20a"
         }
     },
     {
         "id": "55152660-724E-4552-8FC9-F4E80C709AD8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7eaea1f4-8343-4532-b40e-86384309a7d8"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "eeb48146-f087-4490-b86b-8cac619c4e51"
         }
     },
     {
         "id": "1A7189B2-7E42-4DF3-8BC4-EF528DEA5915",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "04957ea6-556b-454c-b200-82565902d772"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3ffd4633-a5bb-4eb2-a588-2d9677fb2acb"
         }
     },
     {
         "id": "749DC021-A780-475F-B9C7-6C891D2A2C59",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b9396714-e376-404f-a9fc-783b89044108"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "715fee61-9929-4ff1-811f-e564391bdd68"
         }
     },
     {
         "id": "19F9A53E-E4D2-4223-A1F8-CE381E473FD4",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "c7eb6c53-fa40-4425-a642-10b8e057c615"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "274a0cd2-7027-4213-a733-e36823197cb5"
         }
     },
     {
         "id": "44903BB1-8E56-46D0-B114-988359B2DAF2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "20865bdc-4e58-4793-acdf-2f10cb5e35de"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cba1c923-ec39-44e1-a5c7-f4b7f15ee020"
         }
     },
     {
         "id": "8B01A00D-D5D6-41B8-824C-F83058016501",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "75414c8e-88da-44fd-a9b2-67c5026e8b9b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4cdc0f12-d8d9-4107-99b0-3a755b675a84"
         }
     },
     {
         "id": "2E713F53-73A8-4CFA-9478-87BC03495C0D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "dde192b8-6748-4fce-baff-aa5387cd6bc3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "843346bd-dfd8-4626-93c7-d2eb178b07a9"
         }
     },
     {
         "id": "534417FF-5BCC-48CA-9B24-F7B84EBA6753",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7ac9a2c7-0936-4ba4-93e2-9a002a6bd332"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a75e4bbf-6a71-40fa-bfe8-f8d12a44ff77"
         }
     },
     {
         "id": "E36AB4FD-FF3E-4B39-B503-EFA84B3AB1E9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2d51cf25-d205-46b4-9311-be633779683f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "98a05588-b8e8-4537-9dd9-551e249eb2a2"
         }
     },
     {
         "id": "3331379E-A015-40E3-9D2E-16DF043B519C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2fbb9abf-54f8-4d7b-b746-02bb9e4b33f6"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "3b420d71-8533-4f04-b2d1-762939dea328"
         }
     },
     {
         "id": "A677B0F6-ECED-4397-AC99-3EBF3FFA6EBF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1e5c2f24-ff5c-4880-b812-a35b216c2a22"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "cbe23b48-e0fa-4b6e-a3f3-34b6b622dbb4"
         }
     },
     {
         "id": "5C5C5600-B4ED-4B08-B1DC-F8D5BF0B05E8",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "dcdb3963-3205-4237-9a6d-fa13b6b35bd6"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "a07e5cbe-df54-4286-8313-edeba67b5fdf"
         }
     },
     {
         "id": "32F07D16-257B-4CD2-9F17-AF4C3CE6D3F9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6e2300aa-0537-476a-97cc-fd1c2aab4a23"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a17a2c0b-3ae6-444b-ae54-4a07ba7eb75a"
         }
     },
     {
         "id": "4F9C77FD-6FEE-492C-AD8E-ADA1CADF63F6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2ac588c1-4593-4921-bf5c-b4558cf0829c"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "9e6f8e9c-ed80-4cd9-96a8-c72d967758b1"
         }
     },
     {
         "id": "8CD550C0-C24B-4DE0-A6AA-BC9986672420",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2612b01e-62c1-424c-81cf-977c386d8607"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b3c9e7f4-dc70-451c-aeac-4de7228d4150"
         }
     },
     {
         "id": "B899BE21-62EB-46ED-8F7B-27784F6579EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "179306e9-c3cc-419f-8b0d-647c0ae13767"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b54ed95a-3607-4368-8d94-e6d318d18835"
         }
     },
     {
         "id": "23B4CC05-C37B-4EF3-9E42-2E420952AFE1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6166090f-bd17-4a9c-a7cd-65870b5cdc95"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "368047ee-d4cd-4930-9b38-902b2efadefc"
         }
     },
     {
         "id": "A72DEBB4-57E3-4E8B-99E3-236E1E82F623",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a4a4d1ed-1fda-4bfc-805e-2e205ee1a8f2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "87d2ca6e-db06-45e9-a096-7dc7549c130d"
         }
     },
     {
         "id": "1DAA86C9-E685-463A-BA8F-7426D9BF8450",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "9488a114-36c4-4c21-bfbf-586dc65a9ff8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e1f021b9-56be-4797-9071-35e93823ab4d"
         }
     },
     {
         "id": "BF83C218-293C-4AB7-BE54-C562BC68EE7F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8dc5fa2a-bbf8-4d58-b54d-f5e348029cdb"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "2c85a837-3956-4226-bc99-d2b09f28a5d5"
         }
     },
     {
         "id": "FE1A1905-6DA6-4FA4-BBE8-5F7DC37F0976",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b08f76e2-1a62-4091-8899-33698ed07673"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "651b67b7-61b1-43ac-90ef-c4e05f426891"
         }
     },
     {
         "id": "F1A37E2E-7A5B-49D1-BCC2-9A50AE407D2B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "46700467-54cf-46f8-ab8b-d2bd1de14329"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7833cbcb-3f7a-430b-b8c0-d60e4fbf3e45"
         }
     },
     {
         "id": "B7B3469F-AE58-4F32-964A-8F900C81C3B2",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "03aaf9e5-9f7e-4b91-8b38-1fa9bbcde79e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "56da6a10-fe2b-46aa-9bb6-6324a54fdd5b"
         }
     },
     {
         "id": "D4EDEC06-CD93-4510-A1ED-CE89618BFD27",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "72163fc0-ae13-4add-9bc9-947831e44ea6"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "cc440105-1536-4d21-92b1-e93e14349e66"
         }
     },
     {
         "id": "91C7C999-63BA-497D-BE81-8BC059C7D898",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ae5a8821-32d4-49c3-916c-8fb2b7b06965"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "54adbca3-509b-42bc-9640-26d5ac9f725b"
         }
     },
     {
         "id": "3AA8FA9D-E5F7-4CC5-8D47-5A3B2BB27967",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "c07d4db7-ded8-41d5-b572-231ecb5cf3ff"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "2cca1739-9ef9-4b58-beb7-58db3ed96890"
         }
     },
     {
         "id": "D852EAA7-8656-468B-A110-6F0394BB5CC0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "2ac3009e-4249-41bd-a91c-76b8d8bd05ec"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c078a40f-9798-47e1-be4d-2446deefd318"
         }
     },
     {
         "id": "FC026487-67F7-413B-9E7E-CDB95DDD837A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "49fa9542-9103-42b1-93a7-eb5267f6706d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "36b3df86-e22b-45b2-8bfb-093204901f45"
         }
     },
     {
         "id": "B9B040CF-62F5-4E8A-80C3-155081BCA4E3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2056371d-1fc8-4570-8ee4-b05b2c89e964"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "97fdfbdc-33cc-4b64-bf78-05556fabd180"
         }
     },
     {
         "id": "92AFB5BD-3523-4A35-9330-714DF39FEAD6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0e183f73-e70b-4286-a834-74d37f761508"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "38a2b901-c532-4bde-b217-a5f5b443dcef"
         }
     },
     {
         "id": "8EDD4450-AC05-4249-93C3-0DF76F5D619C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "fa6947ab-6bdf-48ad-a34a-2655f38e7234"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "d8fef4d2-2dae-4a11-970d-5dddb842cd8c"
         }
     },
     {
         "id": "2B70E565-62AA-47E2-8241-86168A2C1D40",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "7cc87fff-f92a-48c2-85a8-369ea48797a3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e52c2cd0-cb29-49f7-b386-74aa618e4d24"
         }
     },
     {
         "id": "DE7B34EF-94D7-4199-B8CD-62BD80950120",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fcb41311-2d53-4ada-8ac1-ab3c276cc12e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "f6085dba-7a99-4411-885a-b4b8bee1f267"
         }
     },
     {
         "id": "1502D197-B85B-463A-B145-9E82EA17F8DC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "8ab47c89-8a93-4a9f-8a4e-ae807b43800e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a5e1266d-be38-467b-8b81-3eb278528537"
         }
     },
     {
         "id": "4C800D8A-07C1-408F-A78E-6280CDE7F39D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "7f5a9f1f-06d4-4ba7-aa89-eb9330c324c9"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "26942c34-b71c-4d27-b9af-080b3444ff32"
         }
     },
     {
         "id": "C075E4DF-C7FA-4627-9830-F8DB557000F7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f739fec4-fe25-434d-a460-4785b621187f"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "0a5da36d-fedb-4051-9904-d66da55e8dc3"
         }
     },
     {
         "id": "D5F57364-CDD9-4670-9F48-BF3432101F4B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "90e06373-cd49-4ce1-b243-1dc8366f6dbe"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "29c42fcd-b503-4bb7-8be6-122474fcf973"
         }
     },
     {
         "id": "EE0D503C-886A-41D5-86AC-A8BA280D5D3C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a3e6c48a-c9ad-4995-8461-21dfab08b167"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "36ce5ce8-cb44-43e3-a8f7-3451be8dc263"
         }
     },
     {
         "id": "E4B1A97E-440A-4B54-BB82-743D4E48B5EB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "132108e7-e715-4aeb-8bba-0c3ebac34fad"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9e38aa5b-eb37-41d8-88bd-1ac53aadf390"
         }
     },
     {
         "id": "B56DAE3E-411B-4D21-91B5-F51730134373",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "354cc6f4-edc9-4d52-b071-882f5c6e3e8d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "45dbd88a-c101-4325-86b3-39986e7fa618"
         }
     },
     {
         "id": "278632EB-5BFF-493C-B501-A2F92875014C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "04bd155b-fc8d-457c-bc12-d2fe189fdbc9"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "278faa7e-3d1b-4d4e-af75-747d03084370"
         }
     },
     {
         "id": "FF15824A-6086-40BB-BE3F-30E5CA7F7E47",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d86a2bfa-6c52-46f3-ad11-be3fb3b36a35"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6f0197dd-246e-4d34-a919-d1706aae1f54"
         }
     },
     {
         "id": "F8A8B53A-B1A2-45FE-A4A9-A4EE1A42A609",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "0f866002-9867-4b6a-b8d9-9e417559fb42"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e43f1bf6-f972-4635-b927-231ee53ec5aa"
         }
     },
     {
         "id": "6ED8D336-71E5-4201-9981-1424C9F60D6F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "15b10077-d3d9-4861-aecd-ebe848e0c849"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ba428ee1-29c8-4bb2-aefb-5a33b583b7f2"
         }
     },
     {
         "id": "A3CD7E88-DFC4-464F-97F9-D7F91215DE0F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b6ddf021-34e2-4d4d-8092-6a039dbe08c5"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "036a366e-265e-4363-a1be-e137772df1d1"
         }
     },
     {
         "id": "0C3277FA-B16F-46F8-A244-670BC31663EC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d063e35e-2377-4516-85c9-a2362bdc4108"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "5f34cbf7-b946-4146-9b68-1806c28e8c8d"
         }
     },
     {
         "id": "8850625B-BE27-4858-B63A-3F3889340EBC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "016ce3a3-7c70-485f-825b-b3940e16b2b0"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "c23b4f25-dda9-41a1-a1f0-dafd8f52d227"
         }
     },
     {
         "id": "7563103E-3207-417A-B18D-40474CAF4024",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "95acca02-5227-40f7-bb03-5dc96693207a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4b16694f-3b70-4cf0-b44b-d0d8eea66f1e"
         }
     },
     {
         "id": "81B27B88-99D0-4199-A513-8F7FA4C145CF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b4490d13-fe94-4ced-8261-0fff94dc10a1"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "8e8ed94a-4fd6-484a-893f-54241af94451"
         }
     },
     {
         "id": "49BDE199-D462-44A3-B697-BA0566D03781",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "49c56261-cd8f-492d-a709-86cd6aebdaf3"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "55287f06-23ce-49fb-9068-b5195e41dd1c"
         }
     },
     {
         "id": "5491D151-2763-4A19-B543-923843A8B3AA",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "f2abb7f6-c752-465b-8cba-cd0e58c8c694"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "37b31bf2-fbf4-46a2-a478-1b68cfc36170"
         }
     },
     {
         "id": "455EC296-7123-4D31-9BB7-F974312F31CE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "1762e7a5-38fe-4d35-9b2d-e12fd0b4989b"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b8617c4b-7452-434c-b76a-7ba3b1b1c3f4"
         }
     },
     {
         "id": "318A5352-C6E6-4A82-B8F3-EE4AACC3ADC1",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "b1e39a80-67bb-4e7f-96bb-8666d3589eeb"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6d05d7d4-e3ac-4681-902c-09c64f2d58ad"
         }
     },
     {
         "id": "6D19E784-8EFF-48FF-BB2B-20BC9273E232",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fcad9e0e-5c5b-4b2a-a71b-277a025e7a7f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5eeff722-f51d-429c-af57-ca0f526c758b"
         }
     },
     {
         "id": "F1FE5868-4E00-4E32-8A56-BAF4831B059E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d5034cfe-d53e-4b1f-b392-3b4dd3c13cf4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "1b45a6c1-700d-425c-b3ff-e73cbff46c89"
         }
     },
     {
         "id": "7FB11F24-E3EC-4AEA-BD39-170F4A58A4C6",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bb45e492-f133-4992-9f00-99ad27a4e61f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e7c735e2-c942-4520-96bd-9ddd7a10ddfe"
         }
     },
     {
         "id": "064EE73F-88F9-4C7E-8B1C-9A73D3CA97FE",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "edef4064-6d78-4fcb-8e20-ad313b6b5238"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "7d4a8d6c-5a3c-47ac-a291-5e0881feb42a"
         }
     },
     {
         "id": "AB2465BB-DBAF-4AEA-BBF9-0E169E74432A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "edf21c7d-1ecd-4033-b9ca-ec7012d489c2"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5a4d140f-7d25-4983-bc9f-ce92c391750e"
         }
     },
     {
         "id": "8AF59FB3-2E69-4EC4-873C-2E7A4C037003",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "83b2752a-1937-4d16-9e8a-d91b06286386"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "64fb8685-347c-4e9a-863a-271ad21377e2"
         }
     },
     {
         "id": "50120310-30D4-46FA-A33F-0652E627C961",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "069384ad-15ce-4a39-beb4-abff03763f80"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f68b0912-4bfc-49f9-a1ce-53138f128610"
         }
     },
     {
         "id": "2DF10AAB-F674-437C-BFE6-74E7EF48DA83",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "48d4c7e1-5dfe-4faa-abf3-2815d021b482"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "1cae320d-8ff9-449c-aedc-90b8431900ae"
         }
     },
     {
         "id": "565420C4-C1A1-4AD1-A080-74B4A4C5283B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "711d99e0-bcfe-41e4-ab4f-ceb486b84fa7"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "df3f954e-b4ec-4260-aeae-250ac3e44f2e"
         }
     },
     {
         "id": "EAFA7408-4BD8-4407-AAE3-939F54C5D671",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "5d21804a-819f-444f-877f-dd25e59b63ba"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "6f280b39-7415-4b77-aaaf-0c5f3c0f7d3e"
         }
     },
     {
         "id": "2CDB8026-F740-4CFA-A44C-26B62D2E9A49",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "74557ac8-1cbe-4d81-8497-5901e24a903a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e645a283-e5f7-45a6-bcab-7c216bb8d77a"
         }
     },
     {
         "id": "353F9A24-68B9-4C93-89A8-DF8E6560FDEB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "21ce0f75-152a-4717-8f59-aaa20651eb04"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "dc39b857-e4b9-40fd-9b63-d7c2250cced2"
         }
     },
     {
         "id": "1A915DE3-4F8C-4EE2-8727-D45422299C8A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "81435d32-c9c5-4d54-a5b6-d30cb313555a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "ec49f879-99eb-4dd5-bd5a-a5b05b994cb1"
         }
     },
     {
         "id": "4A0DEE95-6877-4024-B066-D5371B8A6336",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ae55d331-6d30-48ed-b3d2-df0bdf5c1b3e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "e743cc7a-89e9-4285-8aa2-6ca35f48d683"
         }
     },
     {
         "id": "AC67867E-E05D-4EF2-8E3D-6A3335294354",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "bd7373f1-7266-4ee7-bd32-ec1a61f4c74f"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "54ea11b6-85e6-4fab-9351-e3451b75773c"
         }
     },
     {
         "id": "DBDE65BD-C5F5-46A6-B9E5-95D3D62C3A5F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9f28539b-c8d8-4125-b7e0-490d8869ae0d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ee0af167-4b0e-4825-9805-8a7f657b1804"
         }
     },
     {
         "id": "54A24E60-FA5E-4377-9677-D633CF18ECF3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "89af27e1-be13-4375-95ce-5151860d58db"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "072bba03-e307-41e0-9dc5-aecf6820eff3"
         }
     },
     {
         "id": "B153A80E-E26E-43A9-82A8-DDD0E0E093D3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "ad242153-3c7f-48c8-858f-ab0f449e86db"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "a6f39cd4-7993-482f-b9d7-5188a7fd91f1"
         }
     },
     {
         "id": "495CA06D-BCF2-414B-9E9F-94945DE26D1C",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d86db71e-4778-41d4-aa0b-c1abc7e1632d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "05c58977-a9cb-4d65-a251-c10f3cc81909"
         }
     },
     {
         "id": "7BF6E9D1-1D10-4C13-91C2-4164055C72AC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9f4ee78c-9314-4c45-bce0-cc76b956a0e2"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d7a2cb6d-c3dc-40b4-99df-7e0cd60d7beb"
         }
     },
     {
         "id": "A8EDBAB1-6AEC-44F3-B0FF-846C8FFCC798",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6f340a70-6948-4cf1-850a-73cce11a15ab"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "d88c3766-7154-4b3d-ae91-a26acdfc3c0f"
         }
     },
     {
         "id": "41AB4C6C-1A92-4C25-8CC9-E3F077372AAF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "d5426784-d212-4ca4-8cc4-e5cfa660fb61"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "9bb650c4-5a96-48f2-876a-3ee4aff1b183"
         }
     },
     {
         "id": "879D0713-B360-4D08-8095-105F6D7992F3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "df724bb7-3456-44eb-9ec4-faa82a5dc949"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "0511ad07-3e9d-4e1c-9c8e-7524e7e87caf"
         }
     },
     {
         "id": "47609896-99CE-4479-954A-303A24B123B9",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "e9e64788-671f-4692-a390-4fa6c5be99cc"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "148edf3c-bed4-4ad4-bc55-fac16c8a0c91"
         }
     },
     {
         "id": "D63873CC-86A5-44D7-AD60-FFF44051FCF7",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "5b9c25b5-17a6-4200-bd3d-b2221bc8832d"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "47c4c96a-9e02-47a6-a896-61c74598792f"
         }
     },
     {
         "id": "3BDC8ABA-764D-4878-9BD1-ED051DB3829A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3810a082-241c-45c4-b287-e7592964419b"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "f5dde1cd-e30f-400e-91e6-b111e0683746"
         }
     },
     {
         "id": "2ADC90B6-7053-4DCD-BF81-5F3D5CCCC2E0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "710c3475-366a-4300-902b-5beb9fa511b4"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c9521187-c520-42a4-8fec-8f427cc76e1c"
         }
     },
     {
         "id": "E8C44123-F361-41E4-A88C-DB981517A7CF",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2cd8ab95-1f9b-4d95-9b7e-cdaa37e7e359"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "6aebe5cb-ed60-4db8-a96e-80e3468b2370"
         }
     },
     {
         "id": "0C4037D1-2807-4A5B-934C-BD3093CBA93B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "eed34fcb-b4ad-4d83-a97f-6c2294d6b32c"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f9ea974d-a425-49e8-b3f8-636cd136d449"
         }
     },
     {
         "id": "89F6B785-6819-4EB9-B8E2-81B7E536B76E",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "53811a2a-baa7-436c-96d8-58298b898790"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f6b90e11-a8e3-49a1-9770-5d8bf3effb2d"
         }
     },
     {
         "id": "7559DD63-D561-4731-8D53-301A45A1CC11",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "0424c515-e9ae-468c-b693-7a3fdecaca4e"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "46d58fdf-cdcc-45e9-9ee7-872986fe2190"
         }
     },
     {
         "id": "89F8BB05-A4CE-4E0E-A492-1C7C81D84CB3",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f8e8eccb-489c-43d1-bd43-d4b238fcd490"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "f792684e-e4a0-4281-bbf5-634fe40bf9ea"
         }
     },
     {
         "id": "0F7E9386-1930-4866-BDDF-BF1B2E417D4F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "76666ba1-3124-4bf0-aacf-7f001bac6ea4"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "5e28a181-51eb-416f-910b-45a8f806bdc0"
         }
     },
     {
         "id": "082B91AF-C1DD-42A3-B733-4634C0874F04",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "822436ec-2cea-4847-9f49-a1b7014bf885"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "b9efdf49-fa2b-45a0-820a-c8fcb35a7bb8"
         }
     },
     {
         "id": "24B600DE-A788-4564-8B5D-BAB50CBF8F9F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "2b66697a-596f-4279-8cb2-ba3694991fc5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "4480858b-b64e-48eb-ba0d-f0f50736f59a"
         }
     },
     {
         "id": "E8AF573C-EE3C-4DE8-B118-7835B32E5B0B",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "4404b7af-b37f-47e4-b2e8-77f3dee53dc8"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "c9ebe777-fd21-45e5-99f3-bc1280b7f5b9"
         }
     },
     {
         "id": "33F0BA75-0FB8-4056-B580-5D4630EFD765",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "ba640bed-92df-4a8e-a876-dd9b14386bb5"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "3efa48c1-eea5-4538-a544-d30a417e4315"
         }
     },
     {
         "id": "333E4D14-8DFC-45D9-9699-133864191948",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "d8e9e6a1-99b0-44c7-98f2-d12b8b3b2fe9"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "da1fa48d-1688-4d36-a633-26769946682d"
         }
     },
     {
         "id": "099248D3-0F20-4889-96E8-05C21637FBB0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6f297149-1204-4e63-846d-4dcc4453c900"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "9f552d55-db4e-46d8-856e-c7db4027a323"
         }
     },
     {
         "id": "765654DA-CE88-4B46-AA1A-7D75F100DE2A",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "a2801749-a114-4825-82ac-bb8787d54cc2"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "965e1d47-e5ce-4bfb-ae3d-4b110f7cc760"
         }
     },
     {
         "id": "F7020381-3AF0-4348-861F-23307E464258",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "64b095d5-f934-4424-83a4-3ffcfdcd10ed"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "e9951d0e-c81b-4b1a-a193-5650cd0dafdb"
         }
     },
     {
         "id": "0ED4558E-6059-4338-B1BC-E1A9707DA989",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "46b0e669-64d3-4bc9-b2c4-b99eee08aaba"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "267dea46-b5a1-4a62-aa37-d1a4c9a0f62f"
         }
     },
     {
         "id": "453CAB5A-7041-4CDA-9D11-2A9FDDEFEF61",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "6869c94f-9648-4b79-8fa7-86bce487078d"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "1ecd52f2-cbfc-4c58-8927-5ea95f4557e5"
         }
     },
     {
         "id": "E8CCF857-DA73-4A4E-846C-FFDE8B6527BB",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "8e916758-bda1-4524-a7e5-1d95b0367459"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "dbf917b3-6b63-44c1-8608-95b4d1dbd451"
         }
     },
     {
         "id": "96F85F20-BFBE-44FE-B4F5-02DBDC0E2BAD",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "03103282-dd9b-4b35-b386-c08d1f415289"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "ef7206e9-2599-4f86-823a-904ff0cbf154"
         }
     },
     {
         "id": "435ACE14-502E-4D7B-B7E6-EEE35C45B29F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "9ac1b2e6-0f3f-4d59-bcf2-aa9847df8eab"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "50a1acf1-709e-4da5-94ff-7e8fbfdb6469"
         }
     },
     {
         "id": "17946796-C870-4E12-AEE6-CF765A49A91F",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "6ad87276-9738-4fbf-a9b4-76efb5264e94"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "8844527c-8334-44ca-824a-5bd5c952e07f"
         }
     },
     {
         "id": "A6E82C28-7FA8-4F42-B8EF-C1A3BF584732",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "f3bcabd5-9910-4334-9d60-d37baa9c3dd9"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "b9f49c80-26f8-48e9-b2be-3c65e3225bfd"
         }
     },
     {
         "id": "5FAE63DC-8C96-436F-AAE7-2F124A18AE3D",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "3623de53-44ed-468d-aad1-905301a23c78"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "14dbce68-ef26-4863-8ab1-ad2ce7cba77c"
         }
     },
     {
         "id": "9A5CC389-52A3-4742-BF0D-736CAFF898D0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "fac89fa9-8aad-45d8-89c3-8d49c2a6897a"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4b80a889-5c68-4e5a-b51d-f0bc97b370ce"
         }
     },
     {
         "id": "D3A5081E-5830-4942-9ACD-CC289EF021FC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "e9864b07-3c22-410f-a66b-701d3255114a"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "abd83935-0649-4c7b-9295-d7e9cb018ed5"
         }
     },
     {
         "id": "F218CB90-634D-46B2-96C1-6DEA7C9B97BC",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "0f60787d-bd7e-4e45-88e6-dbeb7af7d3fc",
-            "owner": "231beb92-2896-4528-82b5-e2dbc914176e"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "79844963-1f59-4637-9128-6fd73f5740e0"
         }
     },
     {
         "id": "881D9E4D-5057-4194-9481-27B2FA17F598",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "13ed7754-c4c5-490e-984f-8a42f3e9a627"
+            "cluster": "e60fb607-bb99-4905-8ebb-0d6be1450833",
+            "owner": "13a60860-1aaf-41e7-9d76-50d6b0dadc5b"
         }
     },
     {
         "id": "F9E1A1F1-A69F-4C32-ACB8-F80E1F8131E0",
         "model": "ivasimas.ChargingStation",
         "fields": {
-            "cluster": "df990841-b143-4e2a-b649-974eddaecade",
-            "owner": "322d7de7-548d-4d8d-8ec9-5384462d3703"
+            "cluster": "941cb560-9268-43de-b2e4-fd87cc7ffdef",
+            "owner": "4162c172-076e-4ee1-99a6-ae47ee5e213b"
         }
     }
 ]
