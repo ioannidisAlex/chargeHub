@@ -17,3 +17,4 @@ class MyTest(ApiClientTestCase):
     @given(s=generate_single(models.Session))
     def test_session_single_day(self, s):
         assert s.connect_time
+        assert False
