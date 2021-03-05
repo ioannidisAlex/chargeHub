@@ -1,5 +1,5 @@
 from django.urls import reverse
-from hypothesis import HealthCheck, given, settings
+from hypothesis import HealthCheck, Phase, Verbosity, given, settings
 from hypothesis.strategies import *
 
 from common import models
@@ -13,6 +13,8 @@ class MyTest(ApiClientTestCase):
             HealthCheck.too_slow,
             HealthCheck.filter_too_much,
         ],
+        verbosity=Verbosity.verbose,
+        phases=(Phase.explicit, Phase.reuse, Phase.generate, Phase.target),
     )
     @given(s=generate_single(models.Session))
     def test_session_single_day(self, s):
