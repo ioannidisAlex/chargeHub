@@ -21,7 +21,7 @@ class MyTest(ApiClientTestCase):
         response = self.api_client.get(
             reverse(
                 "sessions_per_provider",
-                args=[s.provider.id, t1.strftime("%Y%m%d"), t2.strftime("%Y%m%d")],
+                args=[s.provider.id, t1.date(), t2.date()],
             )
         )
         assert response.status_code == 200

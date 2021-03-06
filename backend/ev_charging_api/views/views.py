@@ -159,20 +159,8 @@ class SessionsPerPointView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        year_from = int(date_from[:4])
-        month_from = int(date_from[4:6])
-        day_from = int(date_from[6:8])
-        year_to = int(date_to[:4])
-        month_to = int(date_to[4:6])
-        day_to = int(date_to[6:8])
-        range_left = datetime(
-            year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
-        range_right = datetime(
-            year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
         sessions = self.queryset.filter(charging_point__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         # serializer = SessionSerializer(sessions, many=True)
         sessions_list = []
@@ -217,20 +205,8 @@ class SessionsPerStationView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        year_from = int(date_from[:4])
-        month_from = int(date_from[4:6])
-        day_from = int(date_from[6:8])
-        year_to = int(date_to[:4])
-        month_to = int(date_to[4:6])
-        day_to = int(date_to[6:8])
-        range_left = datetime(
-            year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
-        range_right = datetime(
-            year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         # active_points = list(sessions.order_by().values("charging_point").distinct())
         # points_to_remove = []
@@ -294,20 +270,8 @@ class SessionsPerVehicleView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        year_from = int(date_from[:4])
-        month_from = int(date_from[4:6])
-        day_from = int(date_from[6:8])
-        year_to = int(date_to[:4])
-        month_to = int(date_to[4:6])
-        day_to = int(date_to[6:8])
-        range_left = datetime(
-            year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
-        range_right = datetime(
-            year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
         sessions = self.queryset.filter(vehicle__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         # serializer = SessionSerializer(sessions, many=True)
         sessions_list = []
@@ -360,20 +324,8 @@ class SessionsPerProviderView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        year_from = int(date_from[:4])
-        month_from = int(date_from[4:6])
-        day_from = int(date_from[6:8])
-        year_to = int(date_to[:4])
-        month_to = int(date_to[4:6])
-        day_to = int(date_to[6:8])
-        range_left = datetime(
-            year_from, month_from, day_from, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
-        range_right = datetime(
-            year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
-        )
         sessions = self.queryset.filter(provider__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         sessions_list = []
         session_index = 0
