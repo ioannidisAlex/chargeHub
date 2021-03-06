@@ -33,6 +33,21 @@ router.register(
     api_views.RetrieveUserViewSet,
 )
 
+from django.urls import path, register_converter
+
+
+class YyyyMmDdConverter:
+    regex = "[0-9]{7,8}"
+
+    def to_python(self, value):
+        return datetime.datetime.strptime(value, "%Y%m%d").date()
+
+    def to_url(self, value):
+        return value.strftime("%Y%m%d")
+
+
+register_converter(YyyyMmDdConverter, "yyyymmdd")
+
 urlpatterns = [
     path(
         "evcharge/api/admin/resetsessions/",
@@ -45,22 +60,22 @@ urlpatterns = [
         name="healthcheck",
     ),
     path(
-        "evcharge/api/SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerPoint/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
     path(
-        "evcharge/api/SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerStation/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerStationView.as_view(),
         name="sessions_per_station",
     ),
     path(
-        "evcharge/api/SessionsPerVehicle/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerVehicle/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerVehicleView.as_view(),
         name="sessions_per_vehicle",
     ),
     path(
-        "evcharge/api/SessionsPerProvider/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerProvider/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerProviderView.as_view(),
         name="sessions_per_provider",
     ),
