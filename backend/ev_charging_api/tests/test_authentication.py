@@ -11,8 +11,9 @@ from corsheaders.middleware import (
 from django.urls import reverse
 from rest_framework import status
 
+
 def test_user_view(client):
-    url = reverse('healthcheck')
+    url = reverse("healthcheck")
     response = client.get(url)
     assert response.status_code == 401
 

@@ -38,4 +38,3 @@ def unauthenticated_api_client():
 @pytest.fixture
 def api_client(authenticated_api_client):
     return authenticated_api_client
-
