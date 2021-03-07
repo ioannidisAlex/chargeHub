@@ -5,3 +5,4 @@ hypothesis
 model_bakery
 pytest_sugar
 #pytest-html
+locust
