@@ -12,6 +12,12 @@ from django.urls import reverse
 from rest_framework import status
 
 
+def test_user_view(client):
+    url = reverse("healthcheck")
+    response = client.get(url)
+    assert response.status_code == 401
+
+
 def test_an_admin_view(admin_api_client):
     response = admin_api_client.get(reverse("healthcheck"))
     assert response.status_code == 200
