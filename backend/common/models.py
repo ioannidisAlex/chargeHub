@@ -1,7 +1,7 @@
 import uuid
 
 from django.conf import settings
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import User as BaseUser  # pylint: disable=E5142
 from django.db import models
 from django_countries.fields import CountryField
 from localflavor.gr.forms import GRPostalCodeField
@@ -12,13 +12,13 @@ from PIL import Image
 from .validators import validate_language, validate_positive
 
 
-class User(AbstractUser):
+class User(BaseUser):
     USER_TYPE_CHOICES = [
         (1, "Regular User"),
         (2, "Station Owner"),
         (3, "Energy Provider"),
     ]
-    email = models.EmailField(unique=True, blank=True, null=True)
+    # username = models.CharField(max_length=15, unique=True, db_index=True, primary_key=True)
     user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 
@@ -247,11 +247,6 @@ class ChargingPoint(models.Model):
         (3, "Over 40 kW"),
     ]
 
-    # IS_ACTIVE_CHOICES = [
-    #    (1, "Active"),
-    #    (2, "Inactive"),
-    # ]
-
     # charging_point_id = models.AutoField(primary_key=True)
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     charging_station = models.ForeignKey(ChargingStation, on_delete=models.CASCADE)
@@ -270,33 +265,9 @@ class ChargingPoint(models.Model):
         return f"Id = {self.id}"
 
 
-class Payment(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    _PAYMENT_METHODS = [
-        ("credit_card", "credit card"),
-        ("cash", "cash"),
-        ("paypal", "paypal"),
-        ("coupon", "coupon"),
-    ]
-
-    payment_req = models.BooleanField(default=False)
-    payment_method = models.CharField(
-        max_length=20, choices=_PAYMENT_METHODS, default="cash"
-    )
-    cost = models.FloatField(blank=True, validators=[validate_positive])
-    invoice = models.CharField(max_length=100)
-    user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    # session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
-
-    def __str__(self):
-        return str(self.id)
-
-
 class Session(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    payment = models.OneToOneField(Payment, on_delete=models.CASCADE)
-    protocol = models.TextField(default="Unknown")
-    user_comments_ratings = models.TextField()
+    user_comments_ratings = models.TextField(validators=[validate_language])
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     # cluster = models.CharField(max_length=100)   #potential fk Null
     kwh_delivered = models.IntegerField(validators=[validate_positive])  # check type
@@ -315,7 +286,6 @@ class Session(models.Model):
         return f"Id = {self.id}"
 
 
-"""
 class Payment(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     _PAYMENT_METHODS = [
@@ -336,4 +306,3 @@ class Payment(models.Model):
 
     def __str__(self):
         return str((self.session_id, self.user_id))
-"""

@@ -50,10 +50,7 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": (
-        "rest_framework.renderers.JSONRenderer",
-        #'rest_framework_csv.renderers.CSVRenderer',
-    ),
+    "DEFAULT_RENDERER_CLASSES": ("rest_framework.renderers.JSONRenderer",),
     "DEFAULT_PERMISSION_CLASSES": (
         "rest_framework.permissions.IsAuthenticated",
         #'rest_framework.permissions.IsAdminUser',
@@ -128,8 +125,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
-
-AUTH_USER_MODEL = "common.User"
 
 LANGUAGE_CODE = "en-us"
 
