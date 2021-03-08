@@ -4,7 +4,7 @@ import uuid
 
 from django.db import connection
 
-db_name = "default"
+db_name = "default."
 
 
 def randomint(fr, to):
@@ -288,7 +288,7 @@ for i in range(3):
     u["email"] = u["username"] + "@tlMpa.gr"
     u["user_type"] = 3
     us["fields"] = u
-    users.apppend(us)
+    users.append(us)
 
 for i in range(3, 148):
     us = {}
@@ -300,7 +300,7 @@ for i in range(3, 148):
     u["email"] = u["username"] + "@tlMpa.gr"
     u["user_type"] = 1
     us["fields"] = u
-    users.apppend(us)
+    users.append(us)
 
 for i in range(148, 648):
     us = {}
@@ -312,7 +312,7 @@ for i in range(148, 648):
     u["email"] = u["username"] + "@tlMpa.gr"
     u["user_type"] = 2
     us["fields"] = u
-    users.apppend(us)
+    users.append(us)
 
 with open("final data/Users.json", "w") as out1:
     json.dump(users, out1, indent=4)

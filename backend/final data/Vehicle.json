@@ -1,7 +1,7 @@
 [
     {
         "id": "a9a177bf-9ce5-4b67-b3ef-51af248b48c2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "a9a177bf-9ce5-4b67-b3ef-51af248b48c2",
             "owner": "u3"
@@ -9,7 +9,7 @@
     },
     {
         "id": "27d7610e-9a77-498a-b1b5-28d4bc92cbf2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "27d7610e-9a77-498a-b1b5-28d4bc92cbf2",
             "owner": "u4"
@@ -17,7 +17,7 @@
     },
     {
         "id": "c6a6bd26-6a8f-4ab7-baf3-6cfa057044e3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c6a6bd26-6a8f-4ab7-baf3-6cfa057044e3",
             "owner": "u5"
@@ -25,7 +25,7 @@
     },
     {
         "id": "059c028d-b2a6-4a8d-947a-158c7537b290",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "059c028d-b2a6-4a8d-947a-158c7537b290",
             "owner": "u6"
@@ -33,7 +33,7 @@
     },
     {
         "id": "c8e05c0b-05c0-4aac-9f12-35a6a3687e10",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c8e05c0b-05c0-4aac-9f12-35a6a3687e10",
             "owner": "u7"
@@ -41,7 +41,7 @@
     },
     {
         "id": "e67dc450-d658-4bee-bd0f-a750d445b2f9",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e67dc450-d658-4bee-bd0f-a750d445b2f9",
             "owner": "u8"
@@ -49,7 +49,7 @@
     },
     {
         "id": "0ec3f440-136c-49f1-8917-c629a27146c7",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "0ec3f440-136c-49f1-8917-c629a27146c7",
             "owner": "u9"
@@ -57,7 +57,7 @@
     },
     {
         "id": "dbf24ffc-3270-409b-b4da-ec386fa36657",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "dbf24ffc-3270-409b-b4da-ec386fa36657",
             "owner": "u10"
@@ -65,7 +65,7 @@
     },
     {
         "id": "4df1d4d6-f001-4d0a-b284-5ffc07e6ade2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "4df1d4d6-f001-4d0a-b284-5ffc07e6ade2",
             "owner": "u11"
@@ -73,7 +73,7 @@
     },
     {
         "id": "45b68c71-cd11-4bd7-a03f-fdaae259635d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "45b68c71-cd11-4bd7-a03f-fdaae259635d",
             "owner": "u12"
@@ -81,7 +81,7 @@
     },
     {
         "id": "2f2b159b-9b03-450f-9818-c139323d1735",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "2f2b159b-9b03-450f-9818-c139323d1735",
             "owner": "u13"
@@ -89,7 +89,7 @@
     },
     {
         "id": "22f521ce-42ca-40d7-bfdb-5d33b1bd9cbe",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "22f521ce-42ca-40d7-bfdb-5d33b1bd9cbe",
             "owner": "u14"
@@ -97,7 +97,7 @@
     },
     {
         "id": "c0a26929-1157-4fb4-a999-4f172df9cad7",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c0a26929-1157-4fb4-a999-4f172df9cad7",
             "owner": "u15"
@@ -105,7 +105,7 @@
     },
     {
         "id": "6cd5ba89-6523-4bca-9423-ea92227a8b8d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6cd5ba89-6523-4bca-9423-ea92227a8b8d",
             "owner": "u16"
@@ -113,7 +113,7 @@
     },
     {
         "id": "6cc437e9-b842-4c1b-9c08-9ca2d46d22a9",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6cc437e9-b842-4c1b-9c08-9ca2d46d22a9",
             "owner": "u17"
@@ -121,7 +121,7 @@
     },
     {
         "id": "e81564b0-46e3-41f6-b6a6-70370a37f685",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e81564b0-46e3-41f6-b6a6-70370a37f685",
             "owner": "u18"
@@ -129,7 +129,7 @@
     },
     {
         "id": "c576bee8-8066-4174-bc69-5fe9f2e666ee",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c576bee8-8066-4174-bc69-5fe9f2e666ee",
             "owner": "u19"
@@ -137,7 +137,7 @@
     },
     {
         "id": "3038b11b-2dfc-4f9f-b22c-4bfdc08d0c4b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "3038b11b-2dfc-4f9f-b22c-4bfdc08d0c4b",
             "owner": "u20"
@@ -145,7 +145,7 @@
     },
     {
         "id": "3667752d-17a5-4166-abaf-dcf227948bfd",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "3667752d-17a5-4166-abaf-dcf227948bfd",
             "owner": "u21"
@@ -153,7 +153,7 @@
     },
     {
         "id": "8df35b23-dcc6-4590-83c7-5578da4c4809",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8df35b23-dcc6-4590-83c7-5578da4c4809",
             "owner": "u22"
@@ -161,7 +161,7 @@
     },
     {
         "id": "c1fd1277-5d77-416b-bb25-84bd21f57963",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c1fd1277-5d77-416b-bb25-84bd21f57963",
             "owner": "u23"
@@ -169,7 +169,7 @@
     },
     {
         "id": "8da12395-cf7a-4ccf-886f-e25ade426457",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8da12395-cf7a-4ccf-886f-e25ade426457",
             "owner": "u24"
@@ -177,7 +177,7 @@
     },
     {
         "id": "66cb7bea-24b7-458f-ae3e-11d4a852568b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "66cb7bea-24b7-458f-ae3e-11d4a852568b",
             "owner": "u25"
@@ -185,7 +185,7 @@
     },
     {
         "id": "add28704-7b59-474d-bfa6-2338e54ccaef",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "add28704-7b59-474d-bfa6-2338e54ccaef",
             "owner": "u26"
@@ -193,7 +193,7 @@
     },
     {
         "id": "5e1746c9-56a2-4fb9-8a76-b75c95a037ee",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "5e1746c9-56a2-4fb9-8a76-b75c95a037ee",
             "owner": "u27"
@@ -201,7 +201,7 @@
     },
     {
         "id": "58661a4c-e1f9-4dc2-8d09-3bb42be62554",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "58661a4c-e1f9-4dc2-8d09-3bb42be62554",
             "owner": "u28"
@@ -209,7 +209,7 @@
     },
     {
         "id": "0f7eae0b-43be-48f8-b4a0-1a8266fd07a9",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "0f7eae0b-43be-48f8-b4a0-1a8266fd07a9",
             "owner": "u29"
@@ -217,7 +217,7 @@
     },
     {
         "id": "68cbedff-8994-4b77-bfb5-6aa22962e3a2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "68cbedff-8994-4b77-bfb5-6aa22962e3a2",
             "owner": "u30"
@@ -225,7 +225,7 @@
     },
     {
         "id": "3c933da2-1fa1-4094-825a-a181610dbfd0",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "3c933da2-1fa1-4094-825a-a181610dbfd0",
             "owner": "u31"
@@ -233,7 +233,7 @@
     },
     {
         "id": "87e73c44-93ba-4687-877c-32a3aa940a09",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "87e73c44-93ba-4687-877c-32a3aa940a09",
             "owner": "u32"
@@ -241,7 +241,7 @@
     },
     {
         "id": "5335d545-cfeb-4bca-bb11-cf0966f1b5ca",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "5335d545-cfeb-4bca-bb11-cf0966f1b5ca",
             "owner": "u33"
@@ -249,7 +249,7 @@
     },
     {
         "id": "71cc8552-391f-49b0-b106-2202fa222161",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "71cc8552-391f-49b0-b106-2202fa222161",
             "owner": "u34"
@@ -257,7 +257,7 @@
     },
     {
         "id": "2c7abcf4-0ba0-4feb-9e9b-b47661072feb",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "2c7abcf4-0ba0-4feb-9e9b-b47661072feb",
             "owner": "u35"
@@ -265,7 +265,7 @@
     },
     {
         "id": "1847e3aa-750c-4b12-a80a-56e792b3aadb",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1847e3aa-750c-4b12-a80a-56e792b3aadb",
             "owner": "u36"
@@ -273,7 +273,7 @@
     },
     {
         "id": "86290f48-f554-4db5-bd35-4a8b7828689a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "86290f48-f554-4db5-bd35-4a8b7828689a",
             "owner": "u37"
@@ -281,7 +281,7 @@
     },
     {
         "id": "2644bfd3-a593-4276-bb1f-c8965e33797e",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "2644bfd3-a593-4276-bb1f-c8965e33797e",
             "owner": "u38"
@@ -289,7 +289,7 @@
     },
     {
         "id": "daa3573d-60ea-4c7a-8048-79c575e3db4c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "daa3573d-60ea-4c7a-8048-79c575e3db4c",
             "owner": "u39"
@@ -297,7 +297,7 @@
     },
     {
         "id": "dc7d163b-29bc-45cf-8156-60eb3e3b1294",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "dc7d163b-29bc-45cf-8156-60eb3e3b1294",
             "owner": "u40"
@@ -305,7 +305,7 @@
     },
     {
         "id": "3b649ae3-935b-425b-b5d6-75c549b96d40",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "3b649ae3-935b-425b-b5d6-75c549b96d40",
             "owner": "u41"
@@ -313,7 +313,7 @@
     },
     {
         "id": "83ec0576-bfb8-400a-9af9-483b2684673c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "83ec0576-bfb8-400a-9af9-483b2684673c",
             "owner": "u42"
@@ -321,7 +321,7 @@
     },
     {
         "id": "74f2c3a5-f78f-459a-823a-dfc0a21e5aeb",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "74f2c3a5-f78f-459a-823a-dfc0a21e5aeb",
             "owner": "u43"
@@ -329,7 +329,7 @@
     },
     {
         "id": "77028f96-eb9b-4c65-b452-c92011b1fc1c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "77028f96-eb9b-4c65-b452-c92011b1fc1c",
             "owner": "u44"
@@ -337,7 +337,7 @@
     },
     {
         "id": "78b14a0f-5c62-4885-95ef-2e3f81197260",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "78b14a0f-5c62-4885-95ef-2e3f81197260",
             "owner": "u45"
@@ -345,7 +345,7 @@
     },
     {
         "id": "f33f0a4f-9b53-4e21-807b-f8b2ca4a24f6",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "f33f0a4f-9b53-4e21-807b-f8b2ca4a24f6",
             "owner": "u46"
@@ -353,7 +353,7 @@
     },
     {
         "id": "7f4bf402-f8e2-47da-b456-30f1bdfce8ac",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7f4bf402-f8e2-47da-b456-30f1bdfce8ac",
             "owner": "u47"
@@ -361,7 +361,7 @@
     },
     {
         "id": "28b61ff5-734a-412e-9241-dec4c27d1a38",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "28b61ff5-734a-412e-9241-dec4c27d1a38",
             "owner": "u48"
@@ -369,7 +369,7 @@
     },
     {
         "id": "9666138c-1d24-4fa8-9083-0ffba09ab1ef",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "9666138c-1d24-4fa8-9083-0ffba09ab1ef",
             "owner": "u49"
@@ -377,7 +377,7 @@
     },
     {
         "id": "b3fd3e84-4dd4-4ac0-914f-3c3c582fc600",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b3fd3e84-4dd4-4ac0-914f-3c3c582fc600",
             "owner": "u50"
@@ -385,7 +385,7 @@
     },
     {
         "id": "737441e8-6b5f-4185-9b0b-e51585ab6ea8",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "737441e8-6b5f-4185-9b0b-e51585ab6ea8",
             "owner": "u51"
@@ -393,7 +393,7 @@
     },
     {
         "id": "e604a056-9338-4044-93dd-5a595d4a3ef3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e604a056-9338-4044-93dd-5a595d4a3ef3",
             "owner": "u52"
@@ -401,7 +401,7 @@
     },
     {
         "id": "c53b5947-23a3-420c-9798-f3846732e41a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c53b5947-23a3-420c-9798-f3846732e41a",
             "owner": "u53"
@@ -409,7 +409,7 @@
     },
     {
         "id": "de3a8751-00c9-46d1-9e7a-ad830835c6a7",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "de3a8751-00c9-46d1-9e7a-ad830835c6a7",
             "owner": "u54"
@@ -417,7 +417,7 @@
     },
     {
         "id": "1c13fba9-2c09-4be1-b5c6-aecd2b253afb",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1c13fba9-2c09-4be1-b5c6-aecd2b253afb",
             "owner": "u55"
@@ -425,7 +425,7 @@
     },
     {
         "id": "8f6db2f5-1dd9-46f6-bb97-eba419dbaea4",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8f6db2f5-1dd9-46f6-bb97-eba419dbaea4",
             "owner": "u56"
@@ -433,7 +433,7 @@
     },
     {
         "id": "785c65be-3122-44ad-b574-9291c0793c37",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "785c65be-3122-44ad-b574-9291c0793c37",
             "owner": "u57"
@@ -441,7 +441,7 @@
     },
     {
         "id": "e3525b59-d3b9-4eef-9a01-1408358c5534",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e3525b59-d3b9-4eef-9a01-1408358c5534",
             "owner": "u58"
@@ -449,7 +449,7 @@
     },
     {
         "id": "1d43c981-02be-4d41-a34b-65a40ff25f7b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1d43c981-02be-4d41-a34b-65a40ff25f7b",
             "owner": "u59"
@@ -457,7 +457,7 @@
     },
     {
         "id": "f0b185de-9b9d-4a08-924f-450c4dadc7a6",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "f0b185de-9b9d-4a08-924f-450c4dadc7a6",
             "owner": "u60"
@@ -465,7 +465,7 @@
     },
     {
         "id": "6a3a76f6-a0d0-41ff-afc9-5ad2f0879b4d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6a3a76f6-a0d0-41ff-afc9-5ad2f0879b4d",
             "owner": "u61"
@@ -473,7 +473,7 @@
     },
     {
         "id": "805b5810-074c-449b-ad19-d6c852ebf8f6",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "805b5810-074c-449b-ad19-d6c852ebf8f6",
             "owner": "u62"
@@ -481,7 +481,7 @@
     },
     {
         "id": "93c82e06-1aa3-4c19-8f81-b9fac0c598c3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "93c82e06-1aa3-4c19-8f81-b9fac0c598c3",
             "owner": "u63"
@@ -489,7 +489,7 @@
     },
     {
         "id": "7de25a64-e9fa-484f-bf99-d02b02cfb17d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7de25a64-e9fa-484f-bf99-d02b02cfb17d",
             "owner": "u64"
@@ -497,7 +497,7 @@
     },
     {
         "id": "7dbad968-7058-4440-9c8f-8f483cdd973a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7dbad968-7058-4440-9c8f-8f483cdd973a",
             "owner": "u65"
@@ -505,7 +505,7 @@
     },
     {
         "id": "80e7ef22-27f8-4e93-8c86-7a6a0a227e5d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "80e7ef22-27f8-4e93-8c86-7a6a0a227e5d",
             "owner": "u66"
@@ -513,7 +513,7 @@
     },
     {
         "id": "ed3fe177-d852-49bd-84ca-8ecd8d7ec3b1",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ed3fe177-d852-49bd-84ca-8ecd8d7ec3b1",
             "owner": "u67"
@@ -521,7 +521,7 @@
     },
     {
         "id": "7f709186-39c3-420f-9caf-1fdb424f7953",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7f709186-39c3-420f-9caf-1fdb424f7953",
             "owner": "u68"
@@ -529,7 +529,7 @@
     },
     {
         "id": "0a663bbf-3b87-4e7a-bd7a-3e9c39961a2b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "0a663bbf-3b87-4e7a-bd7a-3e9c39961a2b",
             "owner": "u69"
@@ -537,7 +537,7 @@
     },
     {
         "id": "32922583-e434-4ed2-afc1-4d8fde67aeda",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "32922583-e434-4ed2-afc1-4d8fde67aeda",
             "owner": "u70"
@@ -545,7 +545,7 @@
     },
     {
         "id": "b5aa307e-a6b9-46e7-939e-2dd525870c13",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b5aa307e-a6b9-46e7-939e-2dd525870c13",
             "owner": "u71"
@@ -553,7 +553,7 @@
     },
     {
         "id": "d03d6e42-d6f8-4e3f-b527-a3c1d1e40f9d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "d03d6e42-d6f8-4e3f-b527-a3c1d1e40f9d",
             "owner": "u72"
@@ -561,7 +561,7 @@
     },
     {
         "id": "0aa5220a-6da7-4dc0-a0a1-714bea4fded3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "0aa5220a-6da7-4dc0-a0a1-714bea4fded3",
             "owner": "u73"
@@ -569,7 +569,7 @@
     },
     {
         "id": "908e578f-f890-4716-93e8-7c0f75e46bb5",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "908e578f-f890-4716-93e8-7c0f75e46bb5",
             "owner": "u74"
@@ -577,7 +577,7 @@
     },
     {
         "id": "355eadbb-0c97-4a66-993d-8fdc61a77ef5",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "355eadbb-0c97-4a66-993d-8fdc61a77ef5",
             "owner": "u75"
@@ -585,7 +585,7 @@
     },
     {
         "id": "7490520f-fe11-4148-a9b6-3882f06ee082",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7490520f-fe11-4148-a9b6-3882f06ee082",
             "owner": "u76"
@@ -593,7 +593,7 @@
     },
     {
         "id": "eb8d28ec-8df7-40a8-8dd7-badf738f0832",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "eb8d28ec-8df7-40a8-8dd7-badf738f0832",
             "owner": "u77"
@@ -601,7 +601,7 @@
     },
     {
         "id": "b7c4ddb8-4806-4328-a4e6-4abb4746016d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b7c4ddb8-4806-4328-a4e6-4abb4746016d",
             "owner": "u78"
@@ -609,7 +609,7 @@
     },
     {
         "id": "1b3105fa-527a-491f-ac26-5bfa94bfa45d",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1b3105fa-527a-491f-ac26-5bfa94bfa45d",
             "owner": "u79"
@@ -617,7 +617,7 @@
     },
     {
         "id": "92ffd46c-fe26-4805-81ba-fbadce4d524f",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "92ffd46c-fe26-4805-81ba-fbadce4d524f",
             "owner": "u80"
@@ -625,7 +625,7 @@
     },
     {
         "id": "f1b46b0a-b101-4072-a246-0b52f0cc51f5",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "f1b46b0a-b101-4072-a246-0b52f0cc51f5",
             "owner": "u81"
@@ -633,7 +633,7 @@
     },
     {
         "id": "f0132135-9415-4403-818b-cee07f81ceb2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "f0132135-9415-4403-818b-cee07f81ceb2",
             "owner": "u82"
@@ -641,7 +641,7 @@
     },
     {
         "id": "a0347619-a7fe-4dd2-be4e-3ef615783481",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "a0347619-a7fe-4dd2-be4e-3ef615783481",
             "owner": "u83"
@@ -649,7 +649,7 @@
     },
     {
         "id": "fda95cb7-d391-4344-851e-a1b5a548b42b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "fda95cb7-d391-4344-851e-a1b5a548b42b",
             "owner": "u84"
@@ -657,7 +657,7 @@
     },
     {
         "id": "bad55b90-4b4f-4760-83ea-fa96280e7310",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "bad55b90-4b4f-4760-83ea-fa96280e7310",
             "owner": "u85"
@@ -665,7 +665,7 @@
     },
     {
         "id": "bcd8700d-241c-43a1-b9df-24ee310ea8e4",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "bcd8700d-241c-43a1-b9df-24ee310ea8e4",
             "owner": "u86"
@@ -673,7 +673,7 @@
     },
     {
         "id": "57184038-ae77-4540-9367-ccb98beb8cc3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "57184038-ae77-4540-9367-ccb98beb8cc3",
             "owner": "u87"
@@ -681,7 +681,7 @@
     },
     {
         "id": "fc5b3c94-c0eb-4515-af3d-4a4106ffe29f",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "fc5b3c94-c0eb-4515-af3d-4a4106ffe29f",
             "owner": "u88"
@@ -689,7 +689,7 @@
     },
     {
         "id": "0a7e79c1-ecd6-4639-bac1-9c9e49fec84c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "0a7e79c1-ecd6-4639-bac1-9c9e49fec84c",
             "owner": "u89"
@@ -697,7 +697,7 @@
     },
     {
         "id": "d8044adf-2538-4d45-b2d8-2b2fd0951766",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "d8044adf-2538-4d45-b2d8-2b2fd0951766",
             "owner": "u90"
@@ -705,7 +705,7 @@
     },
     {
         "id": "cb995cc3-84d9-4c87-89dc-f9dee7a47156",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "cb995cc3-84d9-4c87-89dc-f9dee7a47156",
             "owner": "u91"
@@ -713,7 +713,7 @@
     },
     {
         "id": "15023eb9-eba6-436e-ad98-2086f1cb31c4",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "15023eb9-eba6-436e-ad98-2086f1cb31c4",
             "owner": "u92"
@@ -721,7 +721,7 @@
     },
     {
         "id": "ec3b0af7-67c6-400d-b3c2-aa2f3be24c8a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ec3b0af7-67c6-400d-b3c2-aa2f3be24c8a",
             "owner": "u93"
@@ -729,7 +729,7 @@
     },
     {
         "id": "926efa33-4c55-43df-80f3-4b8d2d65a00a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "926efa33-4c55-43df-80f3-4b8d2d65a00a",
             "owner": "u94"
@@ -737,7 +737,7 @@
     },
     {
         "id": "de7bac96-33ed-44f2-964e-21a4878e9f00",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "de7bac96-33ed-44f2-964e-21a4878e9f00",
             "owner": "u95"
@@ -745,7 +745,7 @@
     },
     {
         "id": "72695d36-29c4-4726-8ca8-5333fb3f9865",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "72695d36-29c4-4726-8ca8-5333fb3f9865",
             "owner": "u96"
@@ -753,7 +753,7 @@
     },
     {
         "id": "9d101a26-eaaa-4058-a251-5221b45ffd91",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "9d101a26-eaaa-4058-a251-5221b45ffd91",
             "owner": "u97"
@@ -761,7 +761,7 @@
     },
     {
         "id": "e60a8ec6-a6dd-46ae-846a-35cb57f1d8e3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e60a8ec6-a6dd-46ae-846a-35cb57f1d8e3",
             "owner": "u98"
@@ -769,7 +769,7 @@
     },
     {
         "id": "1cec7821-632f-4f17-8a58-644b6ab23f44",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1cec7821-632f-4f17-8a58-644b6ab23f44",
             "owner": "u99"
@@ -777,7 +777,7 @@
     },
     {
         "id": "6f96c616-e87a-4958-bbe7-b4278be00170",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6f96c616-e87a-4958-bbe7-b4278be00170",
             "owner": "u100"
@@ -785,7 +785,7 @@
     },
     {
         "id": "e8773876-6036-4a6c-926e-5490aae58971",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "e8773876-6036-4a6c-926e-5490aae58971",
             "owner": "u101"
@@ -793,7 +793,7 @@
     },
     {
         "id": "8cfce5f4-23b6-470a-87fa-a04095fe0334",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8cfce5f4-23b6-470a-87fa-a04095fe0334",
             "owner": "u102"
@@ -801,7 +801,7 @@
     },
     {
         "id": "d8c11860-a582-4784-9e58-d29e94a67fc2",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "d8c11860-a582-4784-9e58-d29e94a67fc2",
             "owner": "u103"
@@ -809,7 +809,7 @@
     },
     {
         "id": "5bfa9a87-7b35-4e3a-bd3f-dc2ac55e184b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "5bfa9a87-7b35-4e3a-bd3f-dc2ac55e184b",
             "owner": "u104"
@@ -817,7 +817,7 @@
     },
     {
         "id": "4c04db3b-c493-4b90-9859-21b7304a4ffc",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "4c04db3b-c493-4b90-9859-21b7304a4ffc",
             "owner": "u105"
@@ -825,7 +825,7 @@
     },
     {
         "id": "34b5ef32-efea-48fc-8386-3800d0b737f0",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "34b5ef32-efea-48fc-8386-3800d0b737f0",
             "owner": "u106"
@@ -833,7 +833,7 @@
     },
     {
         "id": "6990914a-6a0d-49d4-87f5-ee86ee33344c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6990914a-6a0d-49d4-87f5-ee86ee33344c",
             "owner": "u107"
@@ -841,7 +841,7 @@
     },
     {
         "id": "a12f033f-f2c2-44bd-b62c-7019898a72d0",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "a12f033f-f2c2-44bd-b62c-7019898a72d0",
             "owner": "u108"
@@ -849,7 +849,7 @@
     },
     {
         "id": "8b0195b6-5318-46d9-a6fd-1b5f75e8b495",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8b0195b6-5318-46d9-a6fd-1b5f75e8b495",
             "owner": "u109"
@@ -857,7 +857,7 @@
     },
     {
         "id": "2ae110f8-8906-4b03-b4bc-83e5577c1cc1",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "2ae110f8-8906-4b03-b4bc-83e5577c1cc1",
             "owner": "u110"
@@ -865,7 +865,7 @@
     },
     {
         "id": "c9025ab4-1c85-40d8-86ab-ee406de3b716",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "c9025ab4-1c85-40d8-86ab-ee406de3b716",
             "owner": "u111"
@@ -873,7 +873,7 @@
     },
     {
         "id": "2eea1ef2-0fd1-481d-adee-68044666614e",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "2eea1ef2-0fd1-481d-adee-68044666614e",
             "owner": "u112"
@@ -881,7 +881,7 @@
     },
     {
         "id": "ffcd3116-4e17-49ff-a926-941c062643ea",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ffcd3116-4e17-49ff-a926-941c062643ea",
             "owner": "u113"
@@ -889,7 +889,7 @@
     },
     {
         "id": "3b5bb8d1-0f34-4c05-861c-45d19a8883b9",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "3b5bb8d1-0f34-4c05-861c-45d19a8883b9",
             "owner": "u114"
@@ -897,7 +897,7 @@
     },
     {
         "id": "430ca2cd-bd4b-482a-8776-85a8c7d3435c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "430ca2cd-bd4b-482a-8776-85a8c7d3435c",
             "owner": "u115"
@@ -905,7 +905,7 @@
     },
     {
         "id": "6033b26c-1b3c-441b-9f78-7b7cd5512051",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6033b26c-1b3c-441b-9f78-7b7cd5512051",
             "owner": "u116"
@@ -913,7 +913,7 @@
     },
     {
         "id": "d97748b1-e384-4238-a225-d498bccd902c",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "d97748b1-e384-4238-a225-d498bccd902c",
             "owner": "u117"
@@ -921,7 +921,7 @@
     },
     {
         "id": "1c9126d4-24d6-4e9f-a49d-15813fa49728",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1c9126d4-24d6-4e9f-a49d-15813fa49728",
             "owner": "u118"
@@ -929,7 +929,7 @@
     },
     {
         "id": "98aacbc9-5a97-4fe4-abcf-4f7bb2910a9f",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "98aacbc9-5a97-4fe4-abcf-4f7bb2910a9f",
             "owner": "u119"
@@ -937,7 +937,7 @@
     },
     {
         "id": "4f408d10-82c3-4850-ae2b-141f21d745b3",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "4f408d10-82c3-4850-ae2b-141f21d745b3",
             "owner": "u120"
@@ -945,7 +945,7 @@
     },
     {
         "id": "975b064b-626e-4318-b60c-3ce0729743fd",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "975b064b-626e-4318-b60c-3ce0729743fd",
             "owner": "u121"
@@ -953,7 +953,7 @@
     },
     {
         "id": "ac812f08-3c8a-4af5-a07a-b520ec9e16cc",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ac812f08-3c8a-4af5-a07a-b520ec9e16cc",
             "owner": "u122"
@@ -961,7 +961,7 @@
     },
     {
         "id": "4ea0fb0a-8d77-4a03-a147-5e962f8ea766",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "4ea0fb0a-8d77-4a03-a147-5e962f8ea766",
             "owner": "u123"
@@ -969,7 +969,7 @@
     },
     {
         "id": "176af738-f385-4dc8-9243-9c701fbd7759",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "176af738-f385-4dc8-9243-9c701fbd7759",
             "owner": "u124"
@@ -977,7 +977,7 @@
     },
     {
         "id": "b8a76fa8-97f1-4f27-8f9f-80f26df230d1",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b8a76fa8-97f1-4f27-8f9f-80f26df230d1",
             "owner": "u125"
@@ -985,7 +985,7 @@
     },
     {
         "id": "7508892b-e7e7-42ba-9cca-57753426cd86",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7508892b-e7e7-42ba-9cca-57753426cd86",
             "owner": "u126"
@@ -993,7 +993,7 @@
     },
     {
         "id": "6a4c5e58-d1cb-49ad-a1cf-c0025fb7246f",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6a4c5e58-d1cb-49ad-a1cf-c0025fb7246f",
             "owner": "u127"
@@ -1001,7 +1001,7 @@
     },
     {
         "id": "09022e0a-c322-46e7-9171-b48fdd953cca",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "09022e0a-c322-46e7-9171-b48fdd953cca",
             "owner": "u128"
@@ -1009,7 +1009,7 @@
     },
     {
         "id": "7ba60564-7eda-457b-b7d5-46dd1b15cc0e",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "7ba60564-7eda-457b-b7d5-46dd1b15cc0e",
             "owner": "u129"
@@ -1017,7 +1017,7 @@
     },
     {
         "id": "f45de10a-764f-4a7e-9591-b974d0b87038",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "f45de10a-764f-4a7e-9591-b974d0b87038",
             "owner": "u130"
@@ -1025,7 +1025,7 @@
     },
     {
         "id": "46240342-6f7e-4767-b66d-3234ba874a30",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "46240342-6f7e-4767-b66d-3234ba874a30",
             "owner": "u131"
@@ -1033,7 +1033,7 @@
     },
     {
         "id": "1e8c0cc5-20db-491f-9242-12cf3bc7b962",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "1e8c0cc5-20db-491f-9242-12cf3bc7b962",
             "owner": "u132"
@@ -1041,7 +1041,7 @@
     },
     {
         "id": "ee64213e-fa1d-425e-b90e-6cff9c2a3469",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ee64213e-fa1d-425e-b90e-6cff9c2a3469",
             "owner": "u133"
@@ -1049,7 +1049,7 @@
     },
     {
         "id": "b97f749b-5361-4116-8103-c208dc601a0b",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b97f749b-5361-4116-8103-c208dc601a0b",
             "owner": "u134"
@@ -1057,7 +1057,7 @@
     },
     {
         "id": "84f2fcc1-cc73-4919-8d76-0f1ba8eaf685",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "84f2fcc1-cc73-4919-8d76-0f1ba8eaf685",
             "owner": "u135"
@@ -1065,7 +1065,7 @@
     },
     {
         "id": "a883bb35-270d-4f31-9169-ccf06ae3c0c5",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "a883bb35-270d-4f31-9169-ccf06ae3c0c5",
             "owner": "u136"
@@ -1073,7 +1073,7 @@
     },
     {
         "id": "6fa12374-6162-451e-8464-5e0e73091839",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "6fa12374-6162-451e-8464-5e0e73091839",
             "owner": "u137"
@@ -1081,7 +1081,7 @@
     },
     {
         "id": "b0da6660-c20e-40c3-9db7-0b19c478c6cb",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "b0da6660-c20e-40c3-9db7-0b19c478c6cb",
             "owner": "u138"
@@ -1089,7 +1089,7 @@
     },
     {
         "id": "41c9d96c-6a19-4db0-ba3a-931ab99c6f15",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "41c9d96c-6a19-4db0-ba3a-931ab99c6f15",
             "owner": "u139"
@@ -1097,7 +1097,7 @@
     },
     {
         "id": "ff261470-8556-4051-afec-c049abd5fe6a",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "ff261470-8556-4051-afec-c049abd5fe6a",
             "owner": "u140"
@@ -1105,7 +1105,7 @@
     },
     {
         "id": "4dc6b014-8612-4fa7-bb34-9ea4d7fa5220",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "4dc6b014-8612-4fa7-bb34-9ea4d7fa5220",
             "owner": "u141"
@@ -1113,7 +1113,7 @@
     },
     {
         "id": "55ac0aaf-6bae-4a8e-ba50-4a9a7ab5b4af",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "55ac0aaf-6bae-4a8e-ba50-4a9a7ab5b4af",
             "owner": "u142"
@@ -1121,7 +1121,7 @@
     },
     {
         "id": "18bb40bd-321b-4326-a404-e46652538830",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "18bb40bd-321b-4326-a404-e46652538830",
             "owner": "u143"
@@ -1129,7 +1129,7 @@
     },
     {
         "id": "aa69b5e8-fc4e-40f8-8060-2c96248f62ef",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "aa69b5e8-fc4e-40f8-8060-2c96248f62ef",
             "owner": "u144"
@@ -1137,7 +1137,7 @@
     },
     {
         "id": "8b51a06f-676a-46aa-9074-4d3364ea1cca",
-        "model": "ivasimas.Vehicle",
+        "model": "default..Vehicle",
         "fields": {
             "model": "8b51a06f-676a-46aa-9074-4d3364ea1cca",
             "owner": "u145"

@@ -1,14 +1,14 @@
 [
     {
-        "id": "97b21231-8f8b-470a-a4b1-5f576546467a",
-        "model": "ivasimas.Provider",
+        "id": "d134a8e0-89c6-46aa-bcb1-d63a43d31a59",
+        "model": "default..Provider",
         "fields": {
             "provider_name": "cls0"
         }
     },
     {
-        "id": "342dea03-1061-4140-b5b7-ede4f4c95c33",
-        "model": "ivasimas.Provider",
+        "id": "ab3fd344-7947-4f9f-a8df-4226d29e2c3c",
+        "model": "default..Provider",
         "fields": {
             "provider_name": "cls1"
         }

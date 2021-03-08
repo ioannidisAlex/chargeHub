@@ -1,23 +1,23 @@
 [
     {
-        "id": "14736c00-509b-4dc4-b5c0-bc8b96cb4ce5",
-        "model": "ivasimas.Provider",
+        "id": "4624895b-2013-43c0-a218-50be10f80d2c",
+        "model": "default..Provider",
         "fields": {
             "provider_name": "prv0",
             "user": "u0"
         }
     },
     {
-        "id": "a739f9bc-e30b-4c28-a539-a69036a60156",
-        "model": "ivasimas.Provider",
+        "id": "7d7e2324-2915-4c0c-822a-8d1148f898da",
+        "model": "default..Provider",
         "fields": {
             "provider_name": "prv1",
             "user": "u1"
         }
     },
     {
-        "id": "94cfd314-693a-4b46-9368-8d19564d6b12",
-        "model": "ivasimas.Provider",
+        "id": "2dcd931c-b5b4-4be5-9772-8bfea420ef7f",
+        "model": "default..Provider",
         "fields": {
             "provider_name": "prv2",
             "user": "u2"
