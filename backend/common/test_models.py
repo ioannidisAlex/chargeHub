@@ -18,8 +18,11 @@ def test_vehicle_owner_creation():
 @pytest.mark.django_db
 class TestPayment(TestCase):
     def test_validate_positive(self):
+
         payment = Payment(
             id=1, payment_req=False, payment_method="paypal", cost=-2, invoice="miltos"
         )
-        with self.assertRaises(ValidationError):
+        with self.assertRaisesRegex(
+            ValidationError, "Oups,non-positive values are not allowed"
+        ):
             payment.full_clean()
