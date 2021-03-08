@@ -54,12 +54,16 @@ class VehicleModel(models.Model):
     model = models.CharField(max_length=64)
     # category? car,...
 
-    ac_ports = MultiSelectField(choices=AcCharger.choices, max_choices=2, max_length=5)
+    ac_ports = MultiSelectField(
+        null=True, choices=AcCharger.choices, max_choices=2, max_length=5
+    )
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField()
-    ac_charging_power = models.JSONField()
+    ac_charging_power = models.JSONField(null=True)
 
-    dc_ports = MultiSelectField(choices=DcCharger.choices, max_choices=4, max_length=12)
+    dc_ports = MultiSelectField(
+        choices=DcCharger.choices, max_choices=4, max_length=12, null=True
+    )
     dc_max_power = models.FloatField(null=True)
     dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
@@ -117,10 +121,10 @@ class Location(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     email = models.EmailField()
     website = models.URLField()
-    telephone = PhoneField(blank=True)
+    telephone = PhoneField(blank=True, null=True)
     title = models.CharField(max_length=15)
     town = models.CharField(max_length=20)
-    country = CountryField()
+    country = CountryField(null=True)
     post_code = GRPostalCodeField()
     address_line = models.CharField(max_length=100)
 
@@ -300,7 +304,7 @@ class Session(models.Model):
     # cluster = models.CharField(max_length=100)   #potential fk Null
     kwh_delivered = models.IntegerField()  # check type
     site_id = models.UUIDField(editable=False, default=uuid.uuid4)
-    connect_time = models.DateTimeField(null=True)
+    connect_time = models.DateTimeField(null=False)
     disconnect_time = models.DateTimeField(null=True)
     done_charging_time = models.DateTimeField(null=True)
     charging_point = models.ForeignKey(

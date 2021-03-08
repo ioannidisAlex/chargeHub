@@ -1,5 +1,8 @@
 pytest
 pytest_django
 pytest_random
-hypothesis
+hypothesis[django]
 model_bakery
+pytest_sugar
+#pytest-html
+locust

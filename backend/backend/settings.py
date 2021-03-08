@@ -13,6 +13,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 
+from corsheaders.defaults import default_headers
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -61,12 +63,19 @@ REST_FRAMEWORK = {
     "DEFAULT_AUTHENTICATION_CLASSES": (
         #'rest_framework.authentication.BasicAuthentication',
         #'rest_framework.authentication.SessionAuthentication',
-        # "ev_charging_api.authentication.CustomTokenAuthentication",
+        # "rest_framework.authentication.TokenAuthentication",
+        "ev_charging_api.authentication.CustomTokenAuthentication",
         #'rest_framework.permissions.IsAdminUser',
+    ),
+    "DEFAULT_RENDERER_CLASSES": (
+        "rest_framework.renderers.JSONRenderer",
+        "rest_framework_csv.renderers.CSVRenderer",
     ),
 }
 
+
 MIDDLEWARE = [
+    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -162,10 +171,8 @@ EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
 
 SESSION_SERIALIZER = "django.contrib.sessions.serializers.PickleSerializer"
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]
-
-CORS_ALLOW_HEADERS = [
-    "x-csrftoken",
-    "X-OBSERVATORY-AUTH",
-    "content-type",
+CORS_ALLOW_HEADERS = list(default_headers) + [
+    "x-observatory-auth",
 ]
+
+CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]

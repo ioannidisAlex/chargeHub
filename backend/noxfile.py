@@ -11,7 +11,7 @@ def lint(session):
 
 @nox.session(reuse_venv=True)
 def style(session):
-    session.install("isort", "black")
+    session.install("isort==5.7.0", "black==20.8b1")
     session.run("isort", "--check", "--diff", "--profile", "black", ".")
     session.run("black", "--check", "--diff", ".")
 
