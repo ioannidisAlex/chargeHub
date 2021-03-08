@@ -279,6 +279,7 @@ USER_TYPE_CHOICES = [
 
 users = []
 vehicleowner = []
+owner = []
 for i in range(3):
     us = {}
     us["id"] = "u" + str(i)
@@ -323,9 +324,19 @@ for i in range(146, 646):
     u["user_type"] = 2
     us["fields"] = u
     users.append(us)
+    ow = {}
+    # print(i)
+    ow["id"] = charging_stations[i - 146]["fields"]["owner"]
+    ow["model"] = db_name + "Owner"
+    o = {"user": "u" + str(i)}
+    ow["fields"] = o
+    owner.append(ow)
 
 with open("final data/Users.json", "w") as out1:
     json.dump(users, out1, indent=4)
 
 with open("final data/VehicleOwner.json", "w") as out1:
     json.dump(vehicleowner, out1, indent=4)
+
+with open("final data/Owner.json", "w") as out1:
+    json.dump(owner, out1, indent=4)
