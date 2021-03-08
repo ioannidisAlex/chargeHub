@@ -3,6 +3,7 @@ pytest_django
 pytest_random
 hypothesis[django]
 model_bakery
+django_core
 pytest_sugar
 #pytest-html
 locust
