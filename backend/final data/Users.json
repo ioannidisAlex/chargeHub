@@ -1466,7 +1466,7 @@
             "username": "u146",
             "passward": "u146u146u146123",
             "email": "u146@tlMpa.gr",
-            "user_type": 1
+            "user_type": 2
         }
     },
     {
@@ -1476,7 +1476,7 @@
             "username": "u147",
             "passward": "u147u147u147123",
             "email": "u147@tlMpa.gr",
-            "user_type": 1
+            "user_type": 2
         }
     },
     {
@@ -6456,26 +6456,6 @@
             "username": "u645",
             "passward": "u645u645u645123",
             "email": "u645@tlMpa.gr",
-            "user_type": 2
-        }
-    },
-    {
-        "id": "u646",
-        "model": "default.User",
-        "fields": {
-            "username": "u646",
-            "passward": "u646u646u646123",
-            "email": "u646@tlMpa.gr",
-            "user_type": 2
-        }
-    },
-    {
-        "id": "u647",
-        "model": "default.User",
-        "fields": {
-            "username": "u647",
-            "passward": "u647u647u647123",
-            "email": "u647@tlMpa.gr",
             "user_type": 2
         }
     }

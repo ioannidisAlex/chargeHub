@@ -50,7 +50,7 @@ for v in vehicles["data"]:
     vehicle["fields"] = fil
     filauto = {}
     filauto["model"] = v["id"]
-    filauto["owner"] = "u" + str(i + 3)
+    filauto["owner"] = str(uuid.uuid4())
     auto["fields"] = filauto
     database_ve["cars"].append(vehicle)
     database_ve["actc"].append(auto)
@@ -278,6 +278,7 @@ USER_TYPE_CHOICES = [
 ]
 
 users = []
+vehicleowner = []
 for i in range(3):
     us = {}
     us["id"] = "u" + str(i)
@@ -290,7 +291,8 @@ for i in range(3):
     us["fields"] = u
     users.append(us)
 
-for i in range(3, 148):
+
+for i in range(3, 146):
     us = {}
     us["id"] = "u" + str(i)
     us["model"] = db_name + "User"
@@ -301,8 +303,16 @@ for i in range(3, 148):
     u["user_type"] = 1
     us["fields"] = u
     users.append(us)
+    vo = {}
+    # print(i)
+    vo["id"] = database_ve["actc"][i - 3]["fields"]["owner"]
+    vo["model"] = db_name + "VehicleOwner"
+    v = {"user": "u" + str(i)}
+    vo["fields"] = v
+    vehicleowner.append(vo)
 
-for i in range(148, 648):
+
+for i in range(146, 646):
     us = {}
     us["id"] = "u" + str(i)
     us["model"] = db_name + "User"
@@ -316,3 +326,6 @@ for i in range(148, 648):
 
 with open("final data/Users.json", "w") as out1:
     json.dump(users, out1, indent=4)
+
+with open("final data/VehicleOwner.json", "w") as out1:
+    json.dump(vehicleowner, out1, indent=4)
