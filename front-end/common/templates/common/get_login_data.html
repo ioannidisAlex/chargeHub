@@ -7,7 +7,7 @@
 		data['username'] = '{{ username }}';
 		data['password'] = '{{ password }}';
 		axios.post(
-			'http://localhost:8001/evcharge/api/admin/login/',
+			'http://localhost:8001/evcharge/api/login/',
 			data,
 		)
 		.then(response => {		
