@@ -4,7 +4,7 @@ import uuid
 
 from django.db import connection
 
-db_name = connection.settings_dict["NAME"]
+db_name = "default"
 
 
 def randomint(fr, to):
@@ -270,3 +270,49 @@ for s in sessions["_items"]:
 
 with open("final data/Session.json", "w") as out1:
     json.dump(acn_data, out1, indent=4)
+
+USER_TYPE_CHOICES = [
+    (1, "Regular User"),
+    (2, "Station Owner"),
+    (3, "Energy Provider"),
+]
+
+users = []
+for i in range(3):
+    us = {}
+    us["id"] = "u" + str(i)
+    us["model"] = db_name + "User"
+    u = {}
+    u["username"] = "u" + str(i)
+    u["passward"] = 3 * u["username"] + "123"
+    u["email"] = u["username"] + "@tlMpa.gr"
+    u["user_type"] = 3
+    us["fields"] = u
+    users.apppend(us)
+
+for i in range(3, 148):
+    us = {}
+    us["id"] = "u" + str(i)
+    us["model"] = db_name + "User"
+    u = {}
+    u["username"] = "u" + str(i)
+    u["passward"] = 3 * u["username"] + "123"
+    u["email"] = u["username"] + "@tlMpa.gr"
+    u["user_type"] = 1
+    us["fields"] = u
+    users.apppend(us)
+
+for i in range(148, 648):
+    us = {}
+    us["id"] = "u" + str(i)
+    us["model"] = db_name + "User"
+    u = {}
+    u["username"] = "u" + str(i)
+    u["passward"] = 3 * u["username"] + "123"
+    u["email"] = u["username"] + "@tlMpa.gr"
+    u["user_type"] = 2
+    us["fields"] = u
+    users.apppend(us)
+
+with open("final data/Users.json", "w") as out1:
+    json.dump(users, out1, indent=4)
