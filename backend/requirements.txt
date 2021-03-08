@@ -7,3 +7,6 @@ localflavor==1.8
 Pillow==8.1.0
 django_crispy_forms
 django_rest_auth
+djangorestframework-csv
+pysnooper
+django_cors_headers==3.7.0

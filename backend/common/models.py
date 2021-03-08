@@ -1,7 +1,7 @@
 import uuid
 
 from django.conf import settings
-from django.contrib.auth.models import User as BaseUser  # pylint: disable=E5142
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django_countries.fields import CountryField
 from localflavor.gr.forms import GRPostalCodeField
@@ -12,13 +12,13 @@ from PIL import Image
 from .validators import validate_positive
 
 
-class User(BaseUser):
+class User(AbstractUser):
     USER_TYPE_CHOICES = [
         (1, "Regular User"),
         (2, "Station Owner"),
         (3, "Energy Provider"),
     ]
-    # username = models.CharField(max_length=15, unique=True, db_index=True, primary_key=True)
+    email = models.EmailField(unique=True, blank=True, null=True)
     user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
 
 
@@ -56,12 +56,16 @@ class VehicleModel(models.Model):
     model = models.CharField(max_length=64)
     # category? car,...
 
-    ac_ports = MultiSelectField(choices=AcCharger.choices, max_choices=2, max_length=5)
+    ac_ports = MultiSelectField(
+        null=True, choices=AcCharger.choices, max_choices=2, max_length=5
+    )
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField(validators=[validate_positive])
-    ac_charging_power = models.JSONField()
+    ac_charging_power = models.JSONField(null=True)
 
-    dc_ports = MultiSelectField(choices=DcCharger.choices, max_choices=4, max_length=12)
+    dc_ports = MultiSelectField(
+        choices=DcCharger.choices, max_choices=4, max_length=12, null=True
+    )
     dc_max_power = models.FloatField(null=True, validators=[validate_positive])
     dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
@@ -119,10 +123,10 @@ class Location(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     email = models.EmailField()
     website = models.URLField()
-    telephone = PhoneField(blank=True)
+    telephone = PhoneField(blank=True, null=True)
     title = models.CharField(max_length=15)
     town = models.CharField(max_length=20)
-    country = CountryField()
+    country = CountryField(null=True)
     post_code = GRPostalCodeField()
     address_line = models.CharField(max_length=100)
 
@@ -155,6 +159,7 @@ class ChargingStation(models.Model):
     owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
     cluster = models.ForeignKey(Cluster, on_delete=models.CASCADE)
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Id = {self.id}"
@@ -247,40 +252,24 @@ class ChargingPoint(models.Model):
         (3, "Over 40 kW"),
     ]
 
+    # IS_ACTIVE_CHOICES = [
+    #    (1, "Active"),
+    #    (2, "Inactive"),
+    # ]
+
     # charging_point_id = models.AutoField(primary_key=True)
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     charging_station = models.ForeignKey(ChargingStation, on_delete=models.CASCADE)
     connection_type = models.IntegerField(choices=CONNECTION_TYPE_CHOICES)
     current_type = models.IntegerField(choices=CURRENT_TYPE_CHOICES)
     status_type = models.IntegerField(choices=STATUS_TYPE_CHOICES)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
     charger_type = models.IntegerField(choices=CHARGER_TYPE_CHOICES)
     usage_type_id = models.IntegerField(choices=USAGE_TYPE_CHOICES)
     kw_power = models.IntegerField(choices=KW_POWER_CHOICES)
     usage_cost = models.FloatField(validators=[validate_positive])
     volts_power = models.FloatField(validators=[validate_positive])
     amps_power = models.FloatField(validators=[validate_positive])
-
-    def __str__(self):
-        return f"Id = {self.id}"
-
-
-class Session(models.Model):
-    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    user_comments_ratings = models.TextField()
-    provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
-    # cluster = models.CharField(max_length=100)   #potential fk Null
-    kwh_delivered = models.IntegerField(validators=[validate_positive])  # check type
-    site_id = models.UUIDField(editable=False, default=uuid.uuid4)
-    connect_time = models.DateTimeField(null=True)
-    disconnect_time = models.DateTimeField(null=True)
-    done_charging_time = models.DateTimeField(null=True)
-    charging_point = models.ForeignKey(
-        ChargingPoint, on_delete=models.CASCADE, related_name="sessions"
-    )
-    vehicle = models.ForeignKey(
-        Vehicle, on_delete=models.CASCADE, related_name="sessions"
-    )
+    # is_active = models.IntegerField(choices=IS_ACTIVE_CHOICES, default=2)
 
     def __str__(self):
         return f"Id = {self.id}"
@@ -302,7 +291,30 @@ class Payment(models.Model):
     cost = models.FloatField(blank=True, validators=[validate_positive])
     invoice = models.CharField(max_length=100)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
-    session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
+    # session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
 
     def __str__(self):
-        return str((self.session_id, self.user_id))
+        return str(self.id)
+
+
+class Session(models.Model):
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
+    payment = models.OneToOneField(Payment, on_delete=models.CASCADE)
+    protocol = models.TextField(default="Unknown")
+    user_comments_ratings = models.TextField()
+    provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
+    # cluster = models.CharField(max_length=100)   #potential fk Null
+    kwh_delivered = models.IntegerField()  # check type
+    site_id = models.UUIDField(editable=False, default=uuid.uuid4)
+    connect_time = models.DateTimeField(null=False)
+    disconnect_time = models.DateTimeField(null=True)
+    done_charging_time = models.DateTimeField(null=True)
+    charging_point = models.ForeignKey(
+        ChargingPoint, on_delete=models.CASCADE, related_name="sessions"
+    )
+    vehicle = models.ForeignKey(
+        Vehicle, on_delete=models.CASCADE, related_name="sessions"
+    )
+
+    def __str__(self):
+        return f"Id = {self.id}"

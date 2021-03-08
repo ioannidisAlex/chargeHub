@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from django.urls import include, path
+from django.urls import include, path, re_path
 from django.utils import timezone
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
@@ -32,50 +32,49 @@ router.register(
     "users",
     api_views.RetrieveUserViewSet,
 )
-# router2 = DefaultRouter()
-# router2.register('SessionsPerPoint', api_views.TestViewSet,)
 
 urlpatterns = [
-    # path('api/', api_views.home, name='api_home'),
-    # path('api/login/', api_views.UserLogin.as_view(), name='rest_login'),
-    # path('api/logout/', api_views.Logout.as_view(), name='rest_logout'),
-    # path('api-auth/', include('rest_framework.urls')),
-    # path('api/usermod/<int:pk>/', api_views.UsermodAPIView.as_view()),
-    # path('api/', include(router2.urls)),
     path(
-        "admin/resetsessions/",
+        "evcharge/api/admin/resetsessions/",
         api_views.ResetSessionsView.as_view(),
         name="resetsessions",
     ),
-    path("admin/healthcheck/", api_views.HealthcheckView.as_view(), name="healthcheck"),
     path(
-        "SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/admin/healthcheck/",
+        api_views.HealthcheckView.as_view(),
+        name="healthcheck",
+    ),
+    path(
+        "evcharge/api/SessionsPerPoint/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
     path(
-        "SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerStation/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerStationView.as_view(),
         name="sessions_per_station",
     ),
     path(
-        "SessionsPerVehicle/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerVehicle/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerVehicleView.as_view(),
         name="sessions_per_vehicle",
     ),
     path(
-        "SessionsPerProvider/<str:id>/<str:date_from>/<str:date_to>/",
+        "evcharge/api/SessionsPerProvider/<str:id>/<str:date_from>/<str:date_to>/",
         api_views.SessionsPerProviderView.as_view(),
         name="sessions_per_provider",
     ),
     path("admin/", admin.site.urls),
-    path("example/", api_views.ExampleView.as_view(), name="example"),
-    path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
-    path("rest_login/", views.obtain_auth_token, name="rest_login"),
-    path("rest_logout/", api_views.LogoutView.as_view(), name="rest_logout"),
-    path("api/", include(router.urls)),
     path(
-        "api/usermod/<str:username>/<str:password>/",
+        "evcharge/api/admin/system/sessionsupd/",
+        api_views.SessionsupdView.as_view(),
+        name="sessionsupd",
+    ),
+    path("evcharge/api/login/", views.obtain_auth_token, name="rest_login"),
+    path("evcharge/api/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
+    path("evcharge/api/admin/", include(router.urls)),
+    path(
+        "evcharge/api/admin/usermod/<str:username>/<str:password>/",
         api_views.UsermodAPIView.as_view(),
         name="usermod",
     ),
@@ -120,4 +119,8 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
+    # path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
