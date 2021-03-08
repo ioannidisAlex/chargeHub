@@ -157,6 +157,7 @@ class ChargingStation(models.Model):
     owner = models.ForeignKey(Owner, on_delete=models.CASCADE)
     cluster = models.ForeignKey(Cluster, on_delete=models.CASCADE)
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
+    location = models.ForeignKey(Location, on_delete=models.CASCADE)
 
     def __str__(self):
         return f"Id = {self.id}"
@@ -260,7 +261,6 @@ class ChargingPoint(models.Model):
     connection_type = models.IntegerField(choices=CONNECTION_TYPE_CHOICES)
     current_type = models.IntegerField(choices=CURRENT_TYPE_CHOICES)
     status_type = models.IntegerField(choices=STATUS_TYPE_CHOICES)
-    location = models.ForeignKey(Location, on_delete=models.CASCADE)
     charger_type = models.IntegerField(choices=CHARGER_TYPE_CHOICES)
     usage_type_id = models.IntegerField(choices=USAGE_TYPE_CHOICES)
     kw_power = models.IntegerField(choices=KW_POWER_CHOICES)

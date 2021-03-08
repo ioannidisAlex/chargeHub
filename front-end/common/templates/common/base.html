@@ -58,9 +58,7 @@
             </div>
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
-              {% if user.is_authenticated %}
-                {% if user.user_type != 1 %}
-                  <div class="dropdown">
+                <div class="dropdown">
                     <a class="nav-item nav-link">RestAPI</a>
                     <div class="dropdown-content">
                       <a href="{% url 'rest_login' %}">Login</a>
@@ -75,8 +73,8 @@
                       <a href="{% url 'sessions_per_ev' %}">Sessions Per EV</a>
                       <a href="{% url 'sessions_per_provider' %}">Sessions Per Provider</a>
                     </div>
-                  </div>
-                {% endif %}
+                </div>
+              {% if user.is_authenticated %}
                 <a class="nav-item nav-link" href="{% url 'profile' %}">Profile</a>
                 <a class="nav-item nav-link" href="{% url 'logout' %}">Logout</a>
               {% else %}

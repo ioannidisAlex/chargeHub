@@ -54,7 +54,7 @@ class UsermodForm(forms.Form):
 
 
 class UsersForm(forms.Form):
-    username = forms.CharField(max_length=20, required=True)
+    username = forms.CharField(max_length=20, required=False)
 
     class Meta:
         fields = [

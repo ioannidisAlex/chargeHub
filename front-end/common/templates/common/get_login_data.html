@@ -1,0 +1,22 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		const data = {};
+		data['username'] = '{{ username }}';
+		data['password'] = '{{ password }}';
+		axios.post(
+			'http://localhost:8001/evcharge/api/login/',
+			data,
+		)
+		.then(response => {		
+			localStorage.setItem('token', response.data['token']);	
+			location.replace('{% url 'home' %}');
+			console.log(response);	
+		})
+		.catch(err => {
+			console.log(err.response);
+		});
+	</script>
+{% endblock content %}

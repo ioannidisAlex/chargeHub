@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.shortcuts import redirect, render
 from django.utils.decorators import method_decorator
 from django.views import View
@@ -64,7 +65,8 @@ class UsermodView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        pass
+        messages.success(request, f"ola popa")
+        return redirect("home")
 
 
 class RestLoginView(View):
@@ -74,8 +76,12 @@ class RestLoginView(View):
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"form": self.form_class()})
 
-    def post(self, request):
-        pass
+    def post(self, request, *args, **kwargs):
+        context = {
+            "username": request.POST["username"],
+            "password": request.POST["password"],
+        }
+        return render(request, "common/get_login_data.html", context)
 
 
 class RestLogoutView(View):
@@ -106,11 +112,15 @@ class HealthcheckView(View):
 
 class SessionsupdView(View):
     template_name = "common/sessionsupd.html"
+    form_class = SessionsupdForm
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class,
+            },
         )
 
     def post(self, request):
@@ -190,4 +200,7 @@ class UsersView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        pass
+        context = {
+            "username": request.POST["username"],
+        }
+        return render(request, "common/get_users.html", context)
