@@ -1,0 +1,947 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div class="pager"> 
+        <img src="https://mottie.github.io/tablesorter/addons/pager/icons/first.png" class="first"/> 
+        <img src="https://mottie.github.io/tablesorter/addons/pager/icons/prev.png" class="prev"/> 
+        <span class="pagedisplay"></span> <!-- this can be any element, including an input --> 
+        <img src="https://mottie.github.io/tablesorter/addons/pager/icons/next.png" class="next"/> 
+        <img src="https://mottie.github.io/tablesorter/addons/pager/icons/last.png" class="last"/> 
+        <select class="pagesize" title="Select page size"> 
+            <option elected="selected" value="10">10</option> 
+            <option value="20">20</option> 
+            <option value="30">30</option> 
+            <option value="all">All</option> 
+        </select>
+        <select class="gotoPage" title="Select page number"></select>
+	</div>
+	<table id="dtBasicExample" class="tablesorter"></table>
+	<!--
+	<style>
+		body { margin:0;padding:0; }
+		table { width: 100%; }
+		/*#users{
+			word-break: break-all
+		}*/
+		#users{
+			position: relative;
+			left: 0;  
+    	}
+	</style>
+	-->
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.29.0/js/jquery.tablesorter.widgets.js"></script>
+    <script src="https://mottie.github.io/tablesorter/addons/pager/jquery.tablesorter.pager.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <style>
+    	/*main css*/
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+ul {
+  margin: 0;
+}
+
+.bg-steel {
+  background-color: #5f788a;
+}
+
+.site-header .navbar-nav .nav-link {
+  color: #cbd5db;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #444444;
+}
+
+a.article-title:hover {
+  color: #428bca;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+
+
+/* drop down*/
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+
+/* apo codepen to prwto css*/
+/* pager wrapper, div */
+.tablesorter-pager {
+  padding: 5px;
+}
+/* pager wrapper, in thead/tfoot */
+td.tablesorter-pager {
+  background-color: #e6eeee;
+  margin: 0; /* needed for bootstrap .pager gets a 18px bottom margin */
+}
+/* pager navigation arrows */
+.tablesorter-pager img {
+  vertical-align: middle;
+  margin-right: 2px;
+  cursor: pointer;
+}
+
+/* pager output text */
+.tablesorter-pager .pagedisplay {
+  padding: 0 5px 0 5px;
+  width: auto;
+  white-space: nowrap;
+  text-align: center;
+}
+
+/* pager element reset (needed for bootstrap) */
+.tablesorter-pager select {
+  margin: 0;
+  padding: 0;
+}
+
+/*** css used when "updateArrows" option is true ***/
+/* the pager itself gets a disabled class when the number of rows is less than the size */
+.tablesorter-pager.disabled {
+  display: none;
+}
+/* hide or fade out pager arrows when the first or last row is visible */
+.tablesorter-pager .disabled {
+  /* visibility: hidden */
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: default;
+}
+
+.tablesorter-default {
+  width: 100%;
+  font: 12px/18px Arial, Sans-serif;
+  color: #333;
+  background-color: #fff;
+  border-spacing: 0;
+  margin: 10px 0 15px;
+  text-align: left;
+}
+
+/* header */
+.tablesorter-default th,
+.tablesorter-default thead td {
+  font-weight: bold;
+  color: #000;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-bottom: #ccc 2px solid;
+  padding: 0;
+}
+.tablesorter-default tfoot th,
+.tablesorter-default tfoot td {
+  border: 0;
+}
+.tablesorter-default .header,
+.tablesorter-default .tablesorter-header {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAJAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAkAAAIXjI+AywnaYnhUMoqt3gZXPmVg94yJVQAAOw==);
+  background-position: center right;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  white-space: normal;
+  padding: 4px 20px 4px 4px;
+}
+.tablesorter-default thead .headerSortUp,
+.tablesorter-default thead .tablesorter-headerSortUp,
+.tablesorter-default thead .tablesorter-headerAsc {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjI8Bya2wnINUMopZAQA7);
+  border-bottom: #000 2px solid;
+}
+.tablesorter-default thead .headerSortDown,
+.tablesorter-default thead .tablesorter-headerSortDown,
+.tablesorter-default thead .tablesorter-headerDesc {
+  background-image: url(data:image/gif;base64,R0lGODlhFQAEAIAAACMtMP///yH5BAEAAAEALAAAAAAVAAQAAAINjB+gC+jP2ptn0WskLQA7);
+  border-bottom: #000 2px solid;
+}
+.tablesorter-default thead .sorter-false {
+  background-image: none;
+  cursor: default;
+  padding: 4px;
+}
+
+/* tfoot */
+.tablesorter-default tfoot .tablesorter-headerSortUp,
+.tablesorter-default tfoot .tablesorter-headerSortDown,
+.tablesorter-default tfoot .tablesorter-headerAsc,
+.tablesorter-default tfoot .tablesorter-headerDesc {
+  border-top: #000 2px solid;
+}
+
+/* tbody */
+.tablesorter-default td {
+  background-color: #fff;
+  border-bottom: #ccc 1px solid;
+  padding: 4px;
+  vertical-align: top;
+}
+
+/* hovered row colors */
+.tablesorter-default tbody > tr.hover > td,
+.tablesorter-default tbody > tr:hover > td,
+.tablesorter-default tbody > tr.even:hover > td,
+.tablesorter-default tbody > tr.odd:hover > td {
+  background-color: #fff;
+  color: #000;
+}
+
+/* table processing indicator */
+.tablesorter-default .tablesorter-processing {
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  /* background-image: url(images/loading.gif) !important; */
+  background-image: url('data:image/gif;base64,R0lGODlhFAAUAKEAAO7u7lpaWgAAAAAAACH/C05FVFNDQVBFMi4wAwEAAAAh+QQBCgACACwAAAAAFAAUAAACQZRvoIDtu1wLQUAlqKTVxqwhXIiBnDg6Y4eyx4lKW5XK7wrLeK3vbq8J2W4T4e1nMhpWrZCTt3xKZ8kgsggdJmUFACH5BAEKAAIALAcAAAALAAcAAAIUVB6ii7jajgCAuUmtovxtXnmdUAAAIfkEAQoAAgAsDQACAAcACwAAAhRUIpmHy/3gUVQAQO9NetuugCFWAAAh+QQBCgACACwNAAcABwALAAACE5QVcZjKbVo6ck2AF95m5/6BSwEAIfkEAQoAAgAsBwANAAsABwAAAhOUH3kr6QaAcSrGWe1VQl+mMUIBACH5BAEKAAIALAIADQALAAcAAAIUlICmh7ncTAgqijkruDiv7n2YUAAAIfkEAQoAAgAsAAAHAAcACwAAAhQUIGmHyedehIoqFXLKfPOAaZdWAAAh+QQFCgACACwAAAIABwALAAACFJQFcJiXb15zLYRl7cla8OtlGGgUADs=') !important;
+}
+
+/* Zebra Widget - row alternating colors */
+.tablesorter-default tr.odd > td {
+  background-color: #dfdfdf;
+}
+.tablesorter-default tr.even > td {
+  background-color: #efefef;
+}
+
+/* Column Widget - column sort colors */
+.tablesorter-default tr.odd td.primary {
+  background-color: #bfbfbf;
+}
+.tablesorter-default td.primary,
+.tablesorter-default tr.even td.primary {
+  background-color: #d9d9d9;
+}
+.tablesorter-default tr.odd td.secondary {
+  background-color: #d9d9d9;
+}
+.tablesorter-default td.secondary,
+.tablesorter-default tr.even td.secondary {
+  background-color: #e6e6e6;
+}
+.tablesorter-default tr.odd td.tertiary {
+  background-color: #e6e6e6;
+}
+.tablesorter-default td.tertiary,
+.tablesorter-default tr.even td.tertiary {
+  background-color: #f2f2f2;
+}
+
+/* caption */
+.tablesorter-default > caption {
+  background-color: #fff;
+}
+
+/* filter widget */
+.tablesorter-default .tablesorter-filter-row {
+  background-color: #eee;
+}
+.tablesorter-default .tablesorter-filter-row td {
+  background-color: #eee;
+  border-bottom: #ccc 1px solid;
+  line-height: normal;
+  text-align: center; /* center the input */
+  -webkit-transition: line-height 0.1s ease;
+  -moz-transition: line-height 0.1s ease;
+  -o-transition: line-height 0.1s ease;
+  transition: line-height 0.1s ease;
+}
+/* optional disabled input styling */
+.tablesorter-default .tablesorter-filter-row .disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  cursor: not-allowed;
+}
+/* hidden filter row */
+.tablesorter-default .tablesorter-filter-row.hideme td {
+  /*** *********************************************** ***/
+  /*** change this padding to modify the thickness     ***/
+  /*** of the closed filter row (height = padding x 2) ***/
+  padding: 2px;
+  /*** *********************************************** ***/
+  margin: 0;
+  line-height: 0;
+  cursor: pointer;
+}
+.tablesorter-default .tablesorter-filter-row.hideme * {
+  height: 1px;
+  min-height: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  /* don't use visibility: hidden because it disables tabbing */
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+/* filters */
+.tablesorter-default input.tablesorter-filter,
+.tablesorter-default select.tablesorter-filter {
+  width: 95%;
+  height: auto;
+  margin: 4px auto;
+  padding: 4px;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  color: #333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: height 0.1s ease;
+  -moz-transition: height 0.1s ease;
+  -o-transition: height 0.1s ease;
+  transition: height 0.1s ease;
+}
+/* rows hidden by filtering (needed for child rows) */
+.tablesorter .filtered {
+  display: none;
+}
+
+/* ajax error row */
+.tablesorter .tablesorter-errorRow td {
+  text-align: center;
+  cursor: pointer;
+  background-color: #e6bf99;
+}
+	</style>
+	<script type="text/javascript">
+		/*	$('table').tablesorter({
+
+	    // *** APPEARANCE ***
+	    // Add a theme - try 'blackice', 'blue', 'dark', 'default'
+	    //  'dropbox', 'green', 'grey' or 'ice'
+	    // to use 'bootstrap' or 'jui', you'll need to add the "uitheme"
+	    // widget and also set it to the same name
+	    // this option only adds a table class name "tablesorter-{theme}"
+	    theme: 'blackice',
+
+	    // fix the column widths
+	    widthFixed: false,
+
+	    // Show an indeterminate timer icon in the header when the table
+	    // is sorted or filtered
+	    showProcessing: false,
+
+	    // header layout template (HTML ok); {content} = innerHTML,
+	    // {icon} = <i/> (class from cssIcon)
+	    headerTemplate: '{content}',
+
+	    // return the modified template string
+	    onRenderTemplate: null, // function(index, template){ return template; },
+
+	    // called after each header cell is rendered, use index to target the column
+	    // customize header HTML
+	    onRenderHeader: function (index) {
+	        // the span wrapper is added by default
+	        $(this).find('div.tablesorter-header-inner').addClass('roundedCorners');
+	    },
+
+	    // *** FUNCTIONALITY ***
+	    // prevent text selection in header
+	    cancelSelection: true,
+
+	    // other options: "ddmmyyyy" & "yyyymmdd"
+	    dateFormat: "mmddyyyy",
+
+	    // The key used to select more than one column for multi-column
+	    // sorting.
+	    sortMultiSortKey: "shiftKey",
+
+	    // key used to remove sorting on a column
+	    sortResetKey: 'ctrlKey',
+
+	    // false for German "1.234.567,89" or French "1 234 567,89"
+	    usNumberFormat: true,
+
+	    // If true, parsing of all table cell data will be delayed
+	    // until the user initializes a sort
+	    delayInit: false,
+
+	    // if true, server-side sorting should be performed because
+	    // client-side sorting will be disabled, but the ui and events
+	    // will still be used.
+	    serverSideSorting: false,
+
+	    // *** SORT OPTIONS ***
+	    // These are detected by default,
+	    // but you can change or disable them
+	    // these can also be set using data-attributes or class names
+	    headers: {
+	        // set "sorter : false" (no quotes) to disable the column
+	        0: {
+	            sorter: "text"
+	        },
+	        1: {
+	            sorter: "text"
+	        },
+	        3: {
+	            sorter: "digit"
+	        }
+	    },
+
+	    // ignore case while sorting
+	    ignoreCase: true,
+
+	    // forces the user to have this/these column(s) sorted first
+	    sortForce: null,
+	    // initial sort order of the columns, example sortList: [[0,0],[1,0]],
+	    // [[columnIndex, sortDirection], ... ]
+	    sortList: [
+	        [0, 0],
+	        [1, 0],
+	        [2, 0]
+	    ],
+	    // default sort that is added to the end of the users sort
+	    // selection.
+	    sortAppend: null,
+
+	    // starting sort direction "asc" or "desc"
+	    sortInitialOrder: "asc",
+
+	    // Replace equivalent character (accented characters) to allow
+	    // for alphanumeric sorting
+	    sortLocaleCompare: false,
+
+	    // third click on the header will reset column to default - unsorted
+	    sortReset: false,
+
+	    // restart sort to "sortInitialOrder" when clicking on previously
+	    // unsorted columns
+	    sortRestart: false,
+
+	    // sort empty cell to bottom, top, none, zero
+	    emptyTo: "bottom",
+
+	    // sort strings in numerical column as max, min, top, bottom, zero
+	    stringTo: "max",
+
+	    // extract text from the table - this is how is
+	    // it done by default
+	    textExtraction: {
+	        0: function (node) {
+	            return $(node).text();
+	        },
+	        1: function (node) {
+	            return $(node).text();
+	        }
+	    },
+
+	    // use custom text sorter
+	    // function(a,b){ return a.sort(b); } // basic sort
+	    textSorter: null,
+
+	    // *** WIDGETS ***
+
+	    // apply widgets on tablesorter initialization
+	    initWidgets: true,
+
+	    // include zebra and any other widgets, options:
+	    // 'columns', 'filter', 'stickyHeaders' & 'resizable'
+	    // 'uitheme' is another widget, but requires loading
+	    // a different skin and a jQuery UI theme.
+	    widgets: ['zebra', 'columns'],
+
+	    widgetOptions: {
+
+	        // zebra widget: adding zebra striping, using content and
+	        // default styles - the ui css removes the background
+	        // from default even and odd class names included for this
+	        // demo to allow switching themes
+	        // [ "even", "odd" ]
+	        zebra: [
+	            "ui-widget-content even",
+	            "ui-state-default odd"],
+
+	        // uitheme widget: * Updated! in tablesorter v2.4 **
+	        // Instead of the array of icon class names, this option now
+	        // contains the name of the theme. Currently jQuery UI ("jui")
+	        // and Bootstrap ("bootstrap") themes are supported. To modify
+	        // the class names used, extend from the themes variable
+	        // look for the "$.extend($.tablesorter.themes.jui" code below
+	        uitheme: 'jui',
+
+	        // columns widget: change the default column class names
+	        // primary is the 1st column sorted, secondary is the 2nd, etc
+	        columns: [
+	            "primary",
+	            "secondary",
+	            "tertiary"],
+
+	        // columns widget: If true, the class names from the columns
+	        // option will also be added to the table tfoot.
+	        columns_tfoot: true,
+
+	        // columns widget: If true, the class names from the columns
+	        // option will also be added to the table thead.
+	        columns_thead: true,
+
+	        // filter widget: If there are child rows in the table (rows with
+	        // class name from "cssChildRow" option) and this option is true
+	        // and a match is found anywhere in the child row, then it will make
+	        // that row visible; default is false
+	        filter_childRows: false,
+
+	        // filter widget: If true, a filter will be added to the top of
+	        // each table column.
+	        filter_columnFilters: true,
+
+	        // filter widget: css class applied to the table row containing the
+	        // filters & the inputs within that row
+	        filter_cssFilter: "tablesorter-filter",
+
+	        // filter widget: Customize the filter widget by adding a select
+	        // dropdown with content, custom options or custom filter functions
+	        // see http://goo.gl/HQQLW for more details
+	        filter_functions: null,
+
+	        // filter widget: Set this option to true to hide the filter row
+	        // initially. The rows is revealed by hovering over the filter
+	        // row or giving any filter input/select focus.
+	        filter_hideFilters: false,
+
+	        // filter widget: Set this option to false to keep the searches
+	        // case sensitive
+	        filter_ignoreCase: true,
+
+	        // filter widget: jQuery selector string of an element used to
+	        // reset the filters.
+	        filter_reset: null,
+
+	        // Delay in milliseconds before the filter widget starts searching;
+	        // This option prevents searching for every character while typing
+	        // and should make searching large tables faster.
+	        filter_searchDelay: 300,
+
+	        // Set this option to true if filtering is performed on the server-side.
+	        filter_serversideFiltering: false,
+
+	        // filter widget: Set this option to true to use the filter to find
+	        // text from the start of the column. So typing in "a" will find
+	        // "albert" but not "frank", both have a's; default is false
+	        filter_startsWith: false,
+
+	        // filter widget: If true, ALL filter searches will only use parsed
+	        // data. To only use parsed data in specific columns, set this option
+	        // to false and add class name "filter-parsed" to the header
+	        filter_useParsedData: false,
+
+	        // Resizable widget: If this option is set to false, resized column
+	        // widths will not be saved. Previous saved values will be restored
+	        // on page reload
+	        resizable: true,
+
+	        // saveSort widget: If this option is set to false, new sorts will
+	        // not be saved. Any previous saved sort will be restored on page
+	        // reload.
+	        saveSort: true,
+
+	        // stickyHeaders widget: css class name applied to the sticky header
+	        stickyHeaders: "tablesorter-stickyHeader"
+
+	    },
+
+	    // *** CALLBACKS ***
+	    // function called after tablesorter has completed initialization
+	    initialized: function (table) {},
+
+	    // *** CSS CLASS NAMES ***
+	    tableClass: 'tablesorter',
+	    cssAsc: "tablesorter-headerSortUp",
+	    cssDesc: "tablesorter-headerSortDown",
+	    cssHeader: "tablesorter-header",
+	    cssHeaderRow: "tablesorter-headerRow",
+	    cssIcon: "tablesorter-icon",
+	    cssChildRow: "tablesorter-childRow",
+	    cssInfoBlock: "tablesorter-infoOnly",
+	    cssProcessing: "tablesorter-processing",
+
+	    // *** SELECTORS ***
+	    // jQuery selectors used to find the header cells.
+	    selectorHeaders: '> thead th, > thead td',
+
+	    // jQuery selector of content within selectorHeaders
+	    // that is clickable to trigger a sort.
+	    selectorSort: "th, td",
+
+	    // rows with this class name will be removed automatically
+	    // before updating the table cache - used by "update",
+	    // "addRows" and "appendCache"
+	    selectorRemove: "tr.remove-me",
+
+	    // *** DEBUGING ***
+	    // send messages to console
+	    debug: false
+
+	}).tablesorterPager({
+
+	    // target the pager markup - see the HTML block below
+	    container: $(".pager"),
+
+	    // use this url format "http:/mydatabase.com?page={page}&size={size}" 
+	    ajaxUrl: null,
+
+	    // process ajax so that the data object is returned along with the
+	    // total number of rows; example:
+	    // {
+	    //   "data" : [{ "ID": 1, "Name": "Foo", "Last": "Bar" }],
+	    //   "total_rows" : 100 
+	    // } 
+	    ajaxProcessing: function(ajax) {
+	        if (ajax && ajax.hasOwnProperty('data')) {
+	            // return [ "data", "total_rows" ]; 
+	            return [ajax.data, ajax.total_rows];
+	        }
+	    },
+
+	    // output string - default is '{page}/{totalPages}';
+	    // possible variables:
+	    // {page}, {totalPages}, {startRow}, {endRow} and {totalRows}
+	    output: '{startRow} to {endRow} ({totalRows})',
+
+	    // apply disabled classname to the pager arrows when the rows at
+	    // either extreme is visible - default is true
+	    updateArrows: true,
+
+	    // starting page of the pager (zero based index)
+	    page: 0,
+
+	    // Number of visible rows - default is 10
+	    size: 10,
+
+	    // if true, the table will remain the same height no matter how many
+	    // records are displayed. The space is made up by an empty 
+	    // table row set to a height to compensate; default is false 
+	    fixedHeight: true,
+
+	    // remove rows from the table to speed up the sort of large tables.
+	    // setting this to false, only hides the non-visible rows; needed
+	    // if you plan to add/remove rows with the pager enabled.
+	    removeRows: false,
+
+	    // css class names of pager arrows
+	    // next page arrow
+	    cssNext: '.next',
+	    // previous page arrow
+	    cssPrev: '.prev',
+	    // go to first page arrow
+	    cssFirst: '.first',
+	    // go to last page arrow
+	    cssLast: '.last',
+	    // select dropdown to allow choosing a page
+	    cssGoto: '.gotoPage',
+	    // location of where the "output" is displayed
+	    cssPageDisplay: '.pagedisplay',
+	    // dropdown that sets the "size" option
+	    cssPageSize: '.pagesize',
+	    // class added to arrows when at the extremes 
+	    // (i.e. prev/first arrows are "disabled" when on the first page)
+	    // Note there is no period "." in front of this class name
+	    cssDisabled: 'disabled'
+
+	});
+
+	// Extend the themes to change any of the default class names ** NEW **
+	$.extend($.tablesorter.themes.jui, {
+	    // change default jQuery uitheme icons - find the full list of icons
+	    // here: http://jqueryui.com/themeroller/ (hover over them for their name)
+	    table: 'ui-widget ui-widget-content ui-corner-all', // table classes
+	    header: 'ui-widget-header ui-corner-all ui-state-default', // header classes
+	    icons: 'ui-icon', // icon class added to the <i> in the header
+	    sortNone: 'ui-icon-carat-2-n-s',
+	    sortAsc: 'ui-icon-carat-1-n',
+	    sortDesc: 'ui-icon-carat-1-s',
+	    active: 'ui-state-active', // applied when column is sorted
+	    hover: 'ui-state-hover', // hover class
+	    filterRow: '',
+	    even: 'ui-widget-content', // even row zebra striping
+	    odd: 'ui-state-default' // odd row zebra striping
+	}); */
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function() { 
+		    $("table") 
+		    .tablesorter({widthFixed: "true", widgets: ['zebra']}) 
+		    .tablesorterPager({container: $("#pager")}); 
+		});
+	</script>
+	<script>
+		$(function() {
+
+		  var $table = $('table'),
+		  // define pager options
+		  pagerOptions = {
+		    // target the pager markup - see the HTML block below
+		    container: $(".pager"),
+		    // output string - default is '{page}/{totalPages}';
+		    // possible variables: {size}, {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+		    // also {page:input} & {startRow:input} will add a modifiable input in place of the value
+		    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})',
+		    // if true, the table will remain the same height no matter how many records are displayed. The space is made up by an empty
+		    // table row set to a height to compensate; default is false
+		    fixedHeight: true,
+		    // remove rows from the table to speed up the sort of large tables.
+		    // setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+		    removeRows: false,
+		    // go to page selector - select dropdown that sets the current page
+		    cssGoto: '.gotoPage'
+		  };
+
+		  // Initialize tablesorter
+		  // ***********************
+		  $table
+		    .tablesorter({
+		      theme: 'blue',
+		      headerTemplate : '{content} {icon}', // new in v2.7. Needed to add the bootstrap icon!
+		      widthFixed: true,
+		      widgets: ['zebra', 'filter']
+		    })
+
+		    // initialize the pager plugin
+		    // ****************************
+		    .tablesorterPager(pagerOptions);
+
+		    // Add two new rows using the "addRows" method
+		    // the "update" method doesn't work here because not all rows are
+		    // present in the table when the pager is applied ("removeRows" is false)
+		    // ***********************************************************************
+		    var r, $row, num = 50,
+		      row = '<tr><td>Student{i}</td><td>{m}</td><td>{g}</td><td>{r}</td><td>{r}</td><td>{r}</td><td>{r}</td><td><button type="button" class="remove" title="Remove this row">X</button></td></tr>' +
+		        '<tr><td>Student{j}</td><td>{m}</td><td>{g}</td><td>{r}</td><td>{r}</td><td>{r}</td><td>{r}</td><td><button type="button" class="remove" title="Remove this row">X</button></td></tr>';
+		    $('button:contains(Add)').click(function() {
+		      // add two rows of random data!
+		      r = row.replace(/\{[gijmr]\}/g, function(m) {
+		        return {
+		          '{i}' : num + 1,
+		          '{j}' : num + 2,
+		          '{r}' : Math.round(Math.random() * 100),
+		          '{g}' : Math.random() > 0.5 ? 'male' : 'female',
+		          '{m}' : Math.random() > 0.5 ? 'Mathematics' : 'Languages'
+		        }[m];
+		      });
+		      num = num + 2;
+		      $row = $(r);
+		      $table
+		        .find('tbody').append($row)
+		        .trigger('addRows', [$row]);
+		      return false;
+		    });
+
+		    // Delete a row
+		    // *************
+		    $table.delegate('button.remove', 'click' ,function() {
+		      // NOTE this special treatment is only needed if `removeRows` is `true`
+		      // disabling the pager will restore all table rows
+		      $table.trigger('disablePager');
+		      // remove chosen row
+		      $(this).closest('tr').remove();
+		      // restore pager
+		      $table.trigger('enablePager');
+		    });
+
+		    // Destroy pager / Restore pager
+		    // **************
+		    $('button:contains(Destroy)').click(function() {
+		      // Exterminate, annhilate, destroy! http://www.youtube.com/watch?v=LOqn8FxuyFs
+		      var $t = $(this);
+		      if (/Destroy/.test( $t.text() )) {
+		        $table.trigger('destroyPager');
+		        $t.text('Restore Pager');
+		      } else {
+		        $table.tablesorterPager(pagerOptions);
+		        $t.text('Destroy Pager');
+		      }
+		      return false;
+		    });
+
+		    // Disable / Enable
+		    // **************
+		    $('.toggle').click(function() {
+		      var mode = /Disable/.test( $(this).text() );
+		      // triggering disablePager or enablePager
+		      $table.trigger( (mode ? 'disable' : 'enable') + 'Pager');
+		      $(this).text( ( mode ? 'Enable' : 'Disable' ) + ' Pager');
+		      return false;
+		    });
+		    $table.bind('pagerChange', function() {
+		      // pager automatically enables when table is sorted.
+		      $('.toggle').text( 'Disable Pager' );
+		    });
+
+		});
+	</script>
+	<script defer>
+		function alef() {
+			      $("table") 
+    				.tablesorter({widthFixed: "true", widgets: ['zebra']}) 
+    				.tablesorterPager({container: $("#pager")
+    				});
+    			} 
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+		if('{{username}}' != ""){
+			axios.get(
+				'http://localhost:8001/evcharge/api/admin/users/{{username}}/',
+				{ headers: {
+   					"X-OBSERVATORY-AUTH": AuthStr
+ 				}
+			})
+			.then( (response) => {
+	            console.log(response)
+	        	//var table = '<thead><th scope="col">Users</th></thead>';
+	            var thead = '<thead>';
+	            for(var key in response.data){
+	            	thead += '<th scope="col">'+key+'</th>';
+	            }
+	            thead += '</thead>';
+	        	var tbody = '<tbody>';
+        		for(var key in response.data){
+        			tbody += '<td style="word-break:normal;">'+response.data[key]+'</td>'; 
+        		}
+	        	tbody += '</tbody>';
+	        	table += thead+tbody+'</table>';
+        		document.getElementById('dtBasicExample').innerHTML = table;
+	        })
+			.catch( (error) => {
+	           console.log(error);
+	        })
+		}
+		else{
+			axios.get(
+				'http://localhost:8001/evcharge/api/admin/users/',
+				{ headers: {
+   					"X-OBSERVATORY-AUTH": AuthStr,
+ 				}
+ 			})
+	        .then( (response) => {
+	            console.log(response)
+	            var table = ''
+	            //= '<thead><th scope="col">Users</th></thead>';
+	            var thead = '<thead>';
+	            for(var key in response.data[0]){
+	            	thead += '<th scope="col">'+key+'</th>';
+	            }
+	            thead += '</thead>';
+	        	var tbody = '<tbody>';
+	        	for(var i in response.data){
+	        		tbody += '<tr>';
+	        		// skip first
+	        		for(var key in response.data[i]){
+	        			//console.log(key);
+	        			//if (key!="password" && key!="is_active")
+	        				tbody += '<td>'+response.data[i][key]+'</td>'; 
+	        		}
+	        		tbody += '</tr>';
+	        	}
+	        	tbody += '</tbody>';
+	        	table += thead+tbody;
+	        	document.getElementById('dtBasicExample').innerHTML = table;
+	        	console.log(table)
+	        })
+	        .catch( (error) => {
+	           console.log(error);
+	        })
+	        .finally(()=>{
+		        $("table") 
+	    				.tablesorter({
+	    					widgets: ['zebra']
+	    				}) 
+	    				.tablesorterPager({container: $("#pager")
+	    				});
+	        })
+	    }			
+	    	
+	</script>
+{% endblock content %}

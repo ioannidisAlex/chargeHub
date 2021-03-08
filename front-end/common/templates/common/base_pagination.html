@@ -2,7 +2,33 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- Bootstrap v4.x stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.min.css' %}">
+    <!-- bootstrap css theme -->
+    <link rel="stylesheet" href="{% static 'css/theme.bootstrap_4.min.css' %}">
+
+    <script src="{% static 'js/jquery.main.js' %}"></script>
+    <script src="{% static 'js/jquery.tablesorter.js' %}"></script>
+    <script src="{% static 'js/jquery.tablesorter.widgets.js' %}"></script>
+
+    <!-- pager plugin -->
+    <link rel="stylesheet" href="{% static 'css/jquery.tablesorter.pager.css' %}">
+    <script src="{% static 'js/extras/jquery.tablesorter.pager.min.js' %}"></script>
+    
     <style>
+    .tablesorter-pager .btn-group-sm .btn {
+      font-size: 1.2em; /* make pager arrows more visible */
+    }
+    </style>
+    <style>
+    select.form-control-sm {
+      display: inline-block;
+      width: 300px;
+    }
+    select.form-control-sm-one-num{
+      display: inline-block;
+      width: 74px;
+    }
     .dropdown {
       position: relative;
       display: inline-block;
@@ -107,7 +133,8 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
