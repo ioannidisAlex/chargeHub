@@ -3,3 +3,4 @@ pytest_django
 pytest_random
 hypothesis
 model_bakery
+django_core

@@ -1,3 +1,5 @@
+from math import inf, nan
+
 import pytest
 from django.core.exceptions import ValidationError
 from django.test import TestCase
@@ -24,5 +26,23 @@ class TestPayment(TestCase):
         )
         with self.assertRaisesRegex(
             ValidationError, "Oups,non-positive values are not allowed"
+        ):
+            payment.full_clean()
+
+    def test_infinity(self):
+        payment = Payment(
+            id=1, payment_req=False, payment_method="paypal", cost=inf, invoice="miltos"
+        )
+        with self.assertRaisesMessage(
+            ValidationError, "Oups, infinite values are not allowed"
+        ):
+            payment.full_clean()
+
+    def test_nan(self):
+        payment = Payment(
+            id=1, payment_req=False, payment_method="paypal", cost=nan, invoice="miltos"
+        )
+        with self.assertRaisesMessage(
+            ValidationError, "Oups, NaN values are not allowed"
         ):
             payment.full_clean()

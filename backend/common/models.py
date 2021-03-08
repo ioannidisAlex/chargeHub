@@ -9,7 +9,7 @@ from multiselectfield import MultiSelectField
 from phone_field import PhoneField
 from PIL import Image
 
-from .validators import validate_language, validate_positive
+from .validators import validate_positive
 
 
 class User(BaseUser):
@@ -267,7 +267,7 @@ class ChargingPoint(models.Model):
 
 class Session(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
-    user_comments_ratings = models.TextField(validators=[validate_language])
+    user_comments_ratings = models.TextField()
     provider = models.ForeignKey(Provider, on_delete=models.CASCADE)
     # cluster = models.CharField(max_length=100)   #potential fk Null
     kwh_delivered = models.IntegerField(validators=[validate_positive])  # check type
