@@ -31,6 +31,7 @@ options = {
 
 BASE_URL = "http://localhost:8765/evcharge/api"
 AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
+# AUTHENTICATION_HEADER = "Authorization"
 
 
 def convert_to_request(f):
@@ -38,7 +39,7 @@ def convert_to_request(f):
     def function(**kw):
         method, url, parameters, hook = f(**kw)
         if "apikey" in kw:
-            headers = {AUTHENTICATION_HEADER: "%s" % kw["apikey"]}
+            headers = {AUTHENTICATION_HEADER: "Token %s" % kw["apikey"]}
         else:
             headers = {}
 
@@ -161,7 +162,7 @@ def store_token(response: requests.Response, *arg, **kwargs):
 def login(username, passw):
     return (
         requests.post,
-        "login",
+        "login/",
         dict(data=dict(username=username, password=passw)),
         store_token,
     )
@@ -202,12 +203,12 @@ def sessionsupd(sessionsupd, source, apikey):
 
 @convert_to_command(click)
 def healthcheck(healthcheck, apikey):
-    return requests.get, "healthcheck", {}, show_data
+    return requests.get, "admin/healthcheck", {}, show_data
 
 
 @convert_to_command(click)
 def resetsessions(resetsessions, apikey):
-    return requests.post, "resetsessions", {}, show_data
+    return requests.post, "admin/resetsessions/", {}, show_data
 
 
 admin = load_to_admin(

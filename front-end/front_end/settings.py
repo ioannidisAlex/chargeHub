@@ -13,8 +13,6 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 import os
 from pathlib import Path
 
-from corsheaders.defaults import default_headers
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -33,14 +31,10 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "rest_auth",
-    "rest_framework",
-    "rest_framework.authtoken",
     "multiselectfield",
     "django_countries",
     "crispy_forms",
     "phone_field",
-    "ev_charging_api.apps.EvChargingApiConfig",
     "common.apps.CommonConfig",
     "django.contrib.admin",
     "django.contrib.auth",
@@ -48,34 +42,9 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "corsheaders",
 ]
 
-REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": (
-        "rest_framework.renderers.JSONRenderer",
-        #'rest_framework_csv.renderers.CSVRenderer',
-    ),
-    "DEFAULT_PERMISSION_CLASSES": (
-        "rest_framework.permissions.IsAuthenticated",
-        #'rest_framework.permissions.IsAdminUser',
-    ),
-    "DEFAULT_AUTHENTICATION_CLASSES": (
-        #'rest_framework.authentication.BasicAuthentication',
-        #'rest_framework.authentication.SessionAuthentication',
-        # "rest_framework.authentication.TokenAuthentication",
-        "ev_charging_api.authentication.CustomTokenAuthentication",
-        #'rest_framework.permissions.IsAdminUser',
-    ),
-    "DEFAULT_RENDERER_CLASSES": (
-        "rest_framework.renderers.JSONRenderer",
-        "rest_framework_csv.renderers.CSVRenderer",
-    ),
-}
-
-
 MIDDLEWARE = [
-    "corsheaders.middleware.CorsMiddleware",
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -85,7 +54,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "backend.urls"
+ROOT_URLCONF = "front_end.urls"
 
 TEMPLATES = [
     {
@@ -103,7 +72,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "backend.wsgi.application"
+WSGI_APPLICATION = "front_end.wsgi.application"
 
 
 # Database
@@ -168,9 +137,3 @@ EMAIL_HOST_USER = os.environ.get("EMAIL_USER")
 EMAIL_HOST_PASSWORD = os.environ.get("EMAIL_PASS")
 
 SESSION_SERIALIZER = "django.contrib.sessions.serializers.PickleSerializer"
-
-CORS_ALLOW_HEADERS = list(default_headers) + [
-    "x-observatory-auth",
-]
-
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000"]

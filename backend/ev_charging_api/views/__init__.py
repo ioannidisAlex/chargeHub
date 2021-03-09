@@ -1,6 +1,4 @@
-from .views import (  # CustomAuthToken,
-    CSRFGeneratorView,
-    ExampleView,
+from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,
     HealthcheckView,
     LogoutView,
     ResetSessionsView,
@@ -9,6 +7,7 @@ from .views import (  # CustomAuthToken,
     SessionsPerProviderView,
     SessionsPerStationView,
     SessionsPerVehicleView,
+    SessionsupdView,
     UsermodAPIView,
 )
 
