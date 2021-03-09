@@ -616,4 +616,4 @@ class SessionsupdView(
             "SessionsImported": imported_count,
             "TotalSessionsInDatabase": self.queryset.count(),
         }
-        return Response(response)
+        return Response(response, status.HTTP_200_OK)

@@ -35,15 +35,22 @@
                     }
             })
             .then( (response) => {
-                alert('Call made successfully!');
-                location.replace('{% url 'home' %}');
+                if(response.status == 200){
+                    alert('Call made successfully!');
+                    location.replace('{% url 'home' %}');
+                }
+                else{
+                    alert('Oops! Something went wrong..')
+                    return 0;
+                }
+                
             })
             .catch( (error) => {
                console.log(error);
                console.log(formData);
                alert('Oops! Something went wrong..')
-               return;
-            })
+               return 0;
+            });
             alert('Call made successfully!');
             location.replace('{% url 'home' %}');
         }
