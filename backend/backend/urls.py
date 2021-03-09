@@ -19,7 +19,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from django.urls import include, path, re_path
+from django.urls import include, path, re_path, register_converter
 from django.utils import timezone
 from rest_framework.authtoken import views
 from rest_framework.routers import DefaultRouter
@@ -33,9 +33,8 @@ router.register(
     api_views.RetrieveUserViewSet,
 )
 
-from django.urls import path, register_converter
 
-
+# pylint: disable=R0201
 class YyyyMmDdConverter:
     regex = "[0-9]{7,8}"
 
@@ -60,22 +59,22 @@ urlpatterns = [
         name="healthcheck",
     ),
     path(
-        "evcharge/api/SessionsPerPoint/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        "evcharge/api/SessionsPerPoint/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerPointView.as_view(),
         name="sessions_per_point",
     ),
     path(
-        "evcharge/api/SessionsPerStation/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        "evcharge/api/SessionsPerStation/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerStationView.as_view(),
         name="sessions_per_station",
     ),
     path(
-        "evcharge/api/SessionsPerVehicle/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        "evcharge/api/SessionsPerVehicle/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerVehicleView.as_view(),
         name="sessions_per_vehicle",
     ),
     path(
-        "evcharge/api/SessionsPerProvider/<str:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        "evcharge/api/SessionsPerProvider/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.SessionsPerProviderView.as_view(),
         name="sessions_per_provider",
     ),

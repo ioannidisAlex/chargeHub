@@ -1,3 +1,5 @@
+from datetime import datetime, timedelta
+
 from django.urls import reverse
 from hypothesis import assume, given, settings
 from hypothesis.strategies import *
@@ -11,11 +13,14 @@ from ev_charging_api.tests.utils import (
 
 
 class MyTest(ApiClientTestCase):
-    @settings(max_examples=10, **USEFUL_SETTINGS)
-    @given(s=generate_single(models.Session), d=timedeltas())
+    @settings(max_examples=30, **USEFUL_SETTINGS)
+    @given(
+        s=generate_single(models.Session, kwh_delivered=just(1)),
+        d=timedeltas(min_value=timedelta(), max_value=timedelta(days=10000)),
+    )
     def test_session_single_day(self, s, d):
         assert s.connect_time
-        assume((s.connect_time - d, s.connect_time + d))
+        assume((s.connect_time - d < s.connect_time + d))
         t1 = s.connect_time - d
         t2 = s.connect_time + d
         response = self.api_client.get(

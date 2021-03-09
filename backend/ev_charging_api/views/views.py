@@ -181,8 +181,8 @@ class SessionsPerPointView(
             "Point": id,
             "PointOperator": sessions.first().charging_point.charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "NumberOfChargingSessions": sessions.count(),
             "ChargingSessionsList": sessions_list,
             # sessions need more fields!!!
@@ -242,8 +242,8 @@ class SessionsPerStationView(
             "StationID": id,
             "Operator": sessions.first().charging_point.charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                 "kwh_delivered__sum"
             ],
@@ -294,8 +294,8 @@ class SessionsPerVehicleView(
         response = {
             "VehicleID": id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                 "kwh_delivered__sum"
             ],
