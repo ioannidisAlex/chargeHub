@@ -162,20 +162,19 @@ class SessionsPerPointView(
         sessions = self.queryset.filter(charging_point__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
-        # serializer = SessionSerializer(sessions, many=True)
-        sessions_list = []
-        session_index = 0
-        for s in sessions:
-            sessions_list.append({})
-            sessions_list[session_index]["SessionIndex"] = session_index
-            sessions_list[session_index]["SessionID"] = s.id
-            sessions_list[session_index]["StartedOn"] = s.connect_time
-            sessions_list[session_index]["FinishedOn"] = s.done_charging_time
-            sessions_list[session_index]["Protocol"] = s.protocol
-            sessions_list[session_index]["EnergyDelivered"] = s.kwh_delivered
-            sessions_list[session_index]["Payment"] = s.payment.payment_method
-            sessions_list[session_index]["VehicleType"] = s.vehicle.model.engine_type
-            session_index += 1
+        sessions_list = [
+            {
+                "SessionIndex": session_index,
+                "SessionID": s.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "Payment": s.payment.payment_method,
+                "VehicleType": s.vehicle.model.engine_type,
+            }
+            for session_index, s in enumerate(sessions, start=1)
+        ]
 
         response = {
             "Point": id,
@@ -208,29 +207,15 @@ class SessionsPerStationView(
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
-        # active_points = list(sessions.order_by().values("charging_point").distinct())
-        # points_to_remove = []
-        # for i in range(len(active_points)):
-        #    if (
-        #        ChargingPoint.objects.all()
-        #        .get(id=active_points[i]["charging_point"])
-        #        .is_active
-        #        == 2
-        #    ):
-        #        points_to_remove.append(active_points[i])
-        # for i in points_to_remove:
-        #    active_points.remove(i)
 
         sessions_list = []
         for s in sessions:
-            boolean = True
             for d in sessions_list:
                 if s.charging_point.id == d["PointID"]:
                     d["PointSessions"] += 1
                     d["EnergyDelivered"] += s.kwh_delivered
-                    boolean = False
                     break
-            if boolean:
+            else:
                 sessions_list.append(
                     {
                         "PointID": s.charging_point.id,
@@ -273,24 +258,23 @@ class SessionsPerVehicleView(
         sessions = self.queryset.filter(vehicle__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
-        # serializer = SessionSerializer(sessions, many=True)
-        sessions_list = []
-        session_index = 0
-        for s in sessions:
-            sessions_list.append({})
-            sessions_list[session_index]["SessionIndex"] = session_index
-            sessions_list[session_index]["SessionID"] = s.id
-            sessions_list[session_index]["EnergyProvider"] = s.provider.id
-            sessions_list[session_index]["StartedOn"] = s.connect_time
-            sessions_list[session_index]["FinishedOn"] = s.done_charging_time
-            sessions_list[session_index]["Protocol"] = s.protocol
-            sessions_list[session_index]["EnergyDelivered"] = s.kwh_delivered
-            sessions_list[session_index]["PricePolicyRef"] = s.payment.invoice
-            sessions_list[session_index]["CostPerKWh"] = (
-                s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
-            )
-            sessions_list[session_index]["SessionCost"] = s.payment.cost
-            session_index += 1
+        sessions_list = [
+            {
+                "SessionIndex": session_index,
+                "SessionID": s.id,
+                "EnergyProvider": s.provider.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "PricePolicyRef": s.payment.invoice,
+                "CostPerKWh": (
+                    s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
+                ),
+                "SessionCost": s.payment.cost,
+            }
+            for session_index, s in enumerate(sessions, start=1)
+        ]
         response = {
             "VehicleID": id,
             "RequestTimestamp": datetime.now(),
@@ -299,10 +283,9 @@ class SessionsPerVehicleView(
             "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                 "kwh_delivered__sum"
             ],
-            "NumberOfVisitedPoints": sessions.order_by()
-            .values("charging_point")
-            .distinct()
-            .count(),
+            "NumberOfVisitedPoints": (
+                sessions.order_by().values("charging_point").distinct().count()
+            ),
             "NumberOfVehicleChargingSessions": sessions.count(),
             "VehicleChargingSessionsList": sessions_list,
         }
@@ -327,25 +310,23 @@ class SessionsPerProviderView(
         sessions = self.queryset.filter(provider__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
-        sessions_list = []
-        session_index = 0
-        for s in sessions:
-            sessions_list.append({})
-            sessions_list[session_index][
-                "StationID"
-            ] = s.charging_point.charging_station.id
-            sessions_list[session_index]["SessionID"] = s.id
-            sessions_list[session_index]["VehicleID"] = s.vehicle.id
-            sessions_list[session_index]["StartedOn"] = s.connect_time
-            sessions_list[session_index]["FinishedOn"] = s.done_charging_time
-            sessions_list[session_index]["Protocol"] = s.protocol
-            sessions_list[session_index]["EnergyDelivered"] = s.kwh_delivered
-            sessions_list[session_index]["PricePolicyRef"] = s.payment.invoice
-            sessions_list[session_index]["CostPerKWh"] = (
-                (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
-            )
-            sessions_list[session_index]["SessionCost"] = s.payment.cost
-            session_index += 1
+        sessions_list = [
+            {
+                "StationID": s.charging_point.charging_station.id,
+                "SessionID": s.id,
+                "VehicleID": s.vehicle.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "PricePolicyRef": s.payment.invoice,
+                "CostPerKWh": (
+                    (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
+                ),
+                "SessionCost": s.payment.cost,
+            }
+            for session_index, s in enumerate(sessions, start=1)
+        ]
         response = {
             "ProviderID": id,
             "ProviderName": sessions.first().provider.provider_name,
