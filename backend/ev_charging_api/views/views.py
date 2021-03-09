@@ -107,9 +107,16 @@ class UsermodAPIView(
         except:
             data = {"username": username, "password": password}
             serializer = CreateUserSerializer(data=data)
-            if serializer.is_valid():
+            if(serializer.is_valid()):
                 serializer.create(serializer.validated_data)
-                return Response(serializer.data)
+                response = {
+                    "status": "success",
+                    "code": status.HTTP_200_OK,
+                    "message": "Password updated successfully",
+                    "data": [],
+                }
+                return Response(response)
+
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
 
 
@@ -174,6 +181,19 @@ class SessionsPerPointView(
         sessions = self.queryset.filter(charging_point__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
+        
+        if(sessions.count() == 0):
+            response = {
+                "Point": 'null',
+                "PointOperator": 'null',
+                "RequestTimestamp": 'null',
+                "PeriodFrom": 'null',
+                "PeriodTo": 'null',
+                "NumberOfChargingSessions": 'null',
+                "ChargingSessionsList": 'null',
+            }
+            return Response(response)
+
         # serializer = SessionSerializer(sessions, many=True)
         sessions_list = []
         session_index = 0
@@ -232,6 +252,21 @@ class SessionsPerStationView(
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
+        
+        if(sessions.count() == 0):
+            response = {
+                "StationID": 'null',
+                "Operator": 'null',
+                "RequestTimestamp": 'null',
+                "PeriodFrom": 'null',
+                "PeriodTo": 'null',
+                "TotalEnergyDelivered": 'null',
+                "NumberOfChargingSessions": 'null',
+                "NumberOfActivePoints": 'null',
+                "SessionsSummaryList": 'null',
+            }
+            return Response(response)
+
         # active_points = list(sessions.order_by().values("charging_point").distinct())
         # points_to_remove = []
         # for i in range(len(active_points)):
@@ -309,6 +344,20 @@ class SessionsPerVehicleView(
         sessions = self.queryset.filter(vehicle__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
+        
+        if(sessions.count() == 0):
+            response = {
+                "VehicleID": 'null',
+                "RequestTimestamp": 'null',
+                "PeriodFrom": 'null',
+                "PeriodTo": 'null',
+                "TotalEnergyDelivered": 'null',
+                "NumberOfVisitedPoints": 'null',
+                "NumberOfVehicleChargingSessions": 'null',
+                "VehicleChargingSessionsList": 'null',
+            }
+            return Response(response)
+
         # serializer = SessionSerializer(sessions, many=True)
         sessions_list = []
         session_index = 0
@@ -375,6 +424,15 @@ class SessionsPerProviderView(
         sessions = self.queryset.filter(provider__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
+        
+        if(sessions.count() == 0):
+            response = {
+                "ProviderID": 'null',
+                "ProviderName": 'null',
+                "SessionsList": 'null',
+            }
+        return Response(response)
+
         sessions_list = []
         session_index = 0
         for s in sessions:

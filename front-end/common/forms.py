@@ -83,3 +83,17 @@ class RestLoginForm(forms.Form):
             "username",
             "password",
         ]
+
+class SessionsPer_Form(forms.Form):
+    ID = forms.CharField(max_length=100)
+    date_from = forms.CharField(max_length=100)
+    date_to = forms.CharField(max_length=100)
+
+    class Meta:
+        widgets = {
+            "password": forms.PasswordInput(),
+        }
+        fields = [
+            "username",
+            "password",
+        ]

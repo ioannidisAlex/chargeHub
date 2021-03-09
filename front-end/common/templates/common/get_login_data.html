@@ -12,10 +12,13 @@
 		)
 		.then(response => {		
 			localStorage.setItem('token', response.data['token']);	
+			alert('Logged in succesfully!');	
 			location.replace('{% url 'home' %}');
-			console.log(response);	
+			console.log(response.status);	
 		})
 		.catch(err => {
+			alert("The username or password you entered doesn't match an account.");
+			location.replace('{% url 'home' %}');
 			console.log(err.response);
 		});
 	</script>
