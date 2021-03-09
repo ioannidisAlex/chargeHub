@@ -201,6 +201,8 @@ with open("raw datafiles/poi3.json") as po:
 
 charging_stations = []
 charging_points = []
+locations = []
+k = 146
 for i in points["data"]:
     station = {}
     # print(i)
@@ -230,11 +232,28 @@ for i in points["data"]:
         poi["amps_power"] = co["Amps"]
         c_points["fields"] = poi
         charging_points.append(c_points)
+        loc = {}
+        loc["id"] = poi["location"]
+        loc["model"] = db_name + "Location"
+        lo = {}
+        lo["email"] = "u" + str(k) + "@tlMpa.gr"
+        lo["website"] = i["AddressInfo"]["RelatedURL"]
+        lo["telephone"] = randomint(2100000000, 2109999999)
+        lo["title"] = i["AddressInfo"]["Title"]
+        lo["town"] = i["AddressInfo"]["Town"]
+        lo["country"] = i["AddressInfo"]["Country"]["Title"]
+        lo["postcode"] = i["AddressInfo"]["Postcode"]
+        lo["address_line"] = i["AddressInfo"]["AddressLine1"]
+        loc["fields"] = lo
+        locations.append(loc)
+    k += 1
 
 with open("final data/ChargingStations.json", "w") as out1:
     json.dump(charging_stations, out1, indent=4)
 with open("final data/ChargingPoints.json", "w") as out1:
     json.dump(charging_points, out1, indent=4)
+with open("final data/Locations.json", "w") as out1:
+    json.dump(locations, out1, indent=4)
 
 with open("raw datafiles/acn_data/caltech_acndata_sessions_12month.json") as se:
     sessions = json.load(se)
