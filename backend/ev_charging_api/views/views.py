@@ -287,7 +287,7 @@ class SessionsPerVehicleView(
             sessions_list[session_index]["EnergyDelivered"] = s.kwh_delivered
             sessions_list[session_index]["PricePolicyRef"] = s.payment.invoice
             sessions_list[session_index]["CostPerKWh"] = (
-                s.payment.cost / s.kwh_delivered
+                s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
             )
             sessions_list[session_index]["SessionCost"] = s.payment.cost
             session_index += 1
@@ -342,7 +342,7 @@ class SessionsPerProviderView(
             sessions_list[session_index]["EnergyDelivered"] = s.kwh_delivered
             sessions_list[session_index]["PricePolicyRef"] = s.payment.invoice
             sessions_list[session_index]["CostPerKWh"] = (
-                s.payment.cost / s.kwh_delivered
+                (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
             )
             sessions_list[session_index]["SessionCost"] = s.payment.cost
             session_index += 1
