@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 	<div class="content-section">
-        <form method="POST">
+        <form onsubmit="return makeSearch()" enctype="multipart/form-data">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Sessionsupd</legend>
@@ -13,4 +13,47 @@
             </div>
         </form>
     </div>
+
+    <table id="dtBasicExample" class="table table-bordered table-striped"></table>
+    <!--<table id="dtBasicExample" class="tablesorter"></table> -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        function makeSearch() {
+            const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+            var formData = new FormData();
+            var file = document.getElementsByName("file")[0];
+            console.log(file);
+            //alert(file);
+            formData.append("file", file.files[0]);
+            //alert(formData);
+            axios.post(
+                'http://localhost:8001/evcharge/api/admin/system/sessionsupd/', formData,
+                { headers: {
+                        "X-OBSERVATORY-AUTH": AuthStr,
+                        "content-type": "multipart/form-data",
+                    }
+            })
+            .then( (response) => {
+                if(response.status == 200){
+                    alert('Call made successfully!');
+                    location.replace('{% url 'home' %}');
+                }
+                else{
+                    alert('Oops! Something went wrong..')
+                    return 0;
+                }
+                
+            })
+            .catch( (error) => {
+               console.log(error);
+               console.log(formData);
+               alert('Oops! Something went wrong..')
+               return 0;
+            });
+            alert('Call made successfully!');
+            location.replace('{% url 'home' %}');
+        }
+        
+    </script>
 {% endblock content %}

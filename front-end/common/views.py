@@ -5,6 +5,10 @@ from django.shortcuts import redirect, render
 from django.utils.decorators import method_decorator
 from django.views import View
 
+from rest_framework import (
+    status,
+)
+
 from .forms import (
     ProfileUpdateForm,
     RestLoginForm,
@@ -13,6 +17,7 @@ from .forms import (
     UserRegisterForm,
     UsersForm,
     UserUpdateForm,
+    SessionsPer_Form,
 )
 
 
@@ -65,8 +70,11 @@ class UsermodView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        messages.success(request, f"ola popa")
-        return redirect("home")
+        context = {
+            "username": str(request.POST["username"]),
+            "password": str(request.POST["password"]),
+        }
+        return render(request, "common/usermod_data.html", context)
 
 
 class RestLoginView(View):
@@ -94,7 +102,7 @@ class RestLogoutView(View):
         )
 
     def post(self, request):
-        pass
+        return render(request, 'common/rest_logout_data.html')
 
 
 class HealthcheckView(View):
@@ -107,7 +115,7 @@ class HealthcheckView(View):
         )
 
     def post(self, request):
-        pass
+        return render(request, 'common/healthcheck_data.html')
 
 
 class SessionsupdView(View):
@@ -125,6 +133,7 @@ class SessionsupdView(View):
 
     def post(self, request):
         pass
+        #return render(request, 'common/sessionsupd_data.html', context)
 
 
 class ResetSessionsView(View):
@@ -137,59 +146,95 @@ class ResetSessionsView(View):
         )
 
     def post(self, request):
-        pass
+        return render(request, 'common/resetsessions_data.html')
 
 
 class SessionsPerPointView(View):
     template_name = "common/sessions_per_point.html"
+    form_class = SessionsPer_Form
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class
+            },
         )
 
     def post(self, request):
-        pass
+        context = {
+            'id': request.POST['ID'],
+            'date_from': request.POST['date_from'],
+            'date_to': request.POST['date_to'],
+        }
+        return render(request, 'common/sessions_per_provider_data.html', context)
 
 
 class SessionsPerStationView(View):
     template_name = "common/sessions_per_station.html"
+    form_class = SessionsPer_Form
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class
+            },
         )
 
     def post(self, request):
-        pass
+        context = {
+            'id': request.POST['ID'],
+            'date_from': request.POST['date_from'],
+            'date_to': request.POST['date_to'],
+        }
+        return render(request, 'common/sessions_per_provider_data.html', context)
 
 
 class SessionsPerEVView(View):
     template_name = "common/sessions_per_ev.html"
+    form_class = SessionsPer_Form
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class
+            },
         )
 
     def post(self, request):
-        pass
+        context = {
+            'id': request.POST['ID'],
+            'date_from': request.POST['date_from'],
+            'date_to': request.POST['date_to'],
+        }
+        return render(request, 'common/sessions_per_provider_data.html', context)
 
 
 class SessionsPerProviderView(View):
     template_name = "common/sessions_per_provider.html"
+    form_class = SessionsPer_Form
 
     def get(self, request, *args, **kwargs):
         return render(
             request,
             self.template_name,
+            {
+                "form": self.form_class
+            },
         )
 
     def post(self, request):
-        pass
+        context = {
+            'id': request.POST['ID'],
+            'date_from': request.POST['date_from'],
+            'date_to': request.POST['date_to'],
+        }
+        return render(request, 'common/sessions_per_provider_data.html', context)
 
 
 class UsersView(View):
