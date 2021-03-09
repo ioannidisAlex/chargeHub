@@ -184,7 +184,7 @@ class SessionsPerPointView(
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
         sessions = self.queryset.filter(charging_point__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         
         if(sessions.count() == 0):
@@ -218,8 +218,8 @@ class SessionsPerPointView(
             "Point": id,
             "PointOperator": sessions.first().charging_point.charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "NumberOfChargingSessions": sessions.count(),
             "ChargingSessionsList": sessions_list,
             # sessions need more fields!!!
@@ -259,9 +259,9 @@ class SessionsPerStationView(
             ChargingStation.objects.all().get(id=id)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-
+          
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         
         if(sessions.count() == 0):
@@ -290,17 +290,14 @@ class SessionsPerStationView(
         #        points_to_remove.append(active_points[i])
         # for i in points_to_remove:
         #    active_points.remove(i)
-
         sessions_list = []
         for s in sessions:
-            boolean = True
             for d in sessions_list:
                 if s.charging_point.id == d["PointID"]:
                     d["PointSessions"] += 1
                     d["EnergyDelivered"] += s.kwh_delivered
-                    boolean = False
                     break
-            if boolean:
+            else:
                 sessions_list.append(
                     {
                         "PointID": s.charging_point.id,
@@ -312,8 +309,8 @@ class SessionsPerStationView(
             "StationID": id,
             "Operator": sessions.first().charging_point.charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                 "kwh_delivered__sum"
             ],
@@ -359,9 +356,8 @@ class SessionsPerVehicleView(
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
         sessions = self.queryset.filter(vehicle__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
-        
         if(sessions.count() == 0):
             response = {
                 "VehicleID": 'null',
@@ -393,18 +389,18 @@ class SessionsPerVehicleView(
             )
             sessions_list[session_index]["SessionCost"] = s.payment.cost
             session_index += 1
+            
         response = {
             "VehicleID": id,
             "RequestTimestamp": datetime.now(),
-            "PeriodFrom": range_left,
-            "PeriodTo": range_right,
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
             "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                 "kwh_delivered__sum"
             ],
-            "NumberOfVisitedPoints": sessions.order_by()
-            .values("charging_point")
-            .distinct()
-            .count(),
+            "NumberOfVisitedPoints": (
+                sessions.order_by().values("charging_point").distinct().count()
+            ),
             "NumberOfVehicleChargingSessions": sessions.count(),
             "VehicleChargingSessionsList": sessions_list,
         }
@@ -445,7 +441,7 @@ class SessionsPerProviderView(
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
         sessions = self.queryset.filter(provider__id=id).filter(
-            connect_time__range=[range_left, range_right]
+            connect_time__date__range=[date_from, date_to]
         )
         
         if(sessions.count() == 0):
@@ -475,6 +471,7 @@ class SessionsPerProviderView(
             )
             sessions_list[session_index]["SessionCost"] = s.payment.cost
             session_index += 1
+            
         response = {
             "ProviderID": id,
             "ProviderName": sessions.first().provider.provider_name,

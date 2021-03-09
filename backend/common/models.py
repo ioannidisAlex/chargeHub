@@ -9,6 +9,8 @@ from multiselectfield import MultiSelectField
 from phone_field import PhoneField
 from PIL import Image
 
+from .validators import validate_positive
+
 
 class User(AbstractUser):
     #id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
@@ -59,18 +61,19 @@ class VehicleModel(models.Model):
         null=True, choices=AcCharger.choices, max_choices=2, max_length=5
     )
     ac_usable_phaces = models.PositiveIntegerField()
-    ac_max_power = models.FloatField()
     ac_charging_power = models.JSONField(null=True,blank=True)
+    ac_max_power = models.FloatField(validators=[validate_positive])
 
     dc_ports = MultiSelectField(
         choices=DcCharger.choices, max_choices=4, max_length=12, null=True
-    )
-    dc_max_power = models.FloatField(null=True)
+
     dc_charging_curve = models.JSONField(null=True, blank=True)
+
+    dc_max_power = models.FloatField(null=True, validators=[validate_positive])
     is_default_curve = models.BooleanField(null=True)
 
-    usable_battery_size = models.FloatField()
-    average_energy_consumption = models.FloatField()
+    usable_battery_size = models.FloatField(validators=[validate_positive])
+    average_energy_consumption = models.FloatField(validators=[validate_positive])
 
     def __str__(self):
         return "%s  %s" % (self.brand, self.model)
@@ -265,9 +268,9 @@ class ChargingPoint(models.Model):
     charger_type = models.IntegerField(choices=CHARGER_TYPE_CHOICES)
     usage_type_id = models.IntegerField(choices=USAGE_TYPE_CHOICES)
     kw_power = models.IntegerField(choices=KW_POWER_CHOICES)
-    usage_cost = models.FloatField()
-    volts_power = models.FloatField()
-    amps_power = models.FloatField()
+    usage_cost = models.FloatField(validators=[validate_positive])
+    volts_power = models.FloatField(validators=[validate_positive])
+    amps_power = models.FloatField(validators=[validate_positive])
     # is_active = models.IntegerField(choices=IS_ACTIVE_CHOICES, default=2)
 
     def __str__(self):
@@ -287,7 +290,7 @@ class Payment(models.Model):
     payment_method = models.CharField(
         max_length=20, choices=_PAYMENT_METHODS, default="cash"
     )
-    cost = models.FloatField(blank=True)
+    cost = models.FloatField(blank=True, validators=[validate_positive])
     invoice = models.CharField(max_length=100)
     user_id = models.ForeignKey(User, on_delete=models.CASCADE)
     # session_id = models.OneToOneField(Session, on_delete=models.CASCADE)
