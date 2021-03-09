@@ -42,7 +42,10 @@
                console.log(error);
                console.log(formData);
                alert('Oops! Something went wrong..')
+               return;
             })
+            alert('Call made successfully!');
+            location.replace('{% url 'home' %}');
         }
         
     </script>

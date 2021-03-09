@@ -36,7 +36,6 @@ from ev_charging_api.authentication import CustomTokenAuthentication
 from ..serializers import (
     AdminUserSerializer,
     CreateUserSerializer,
-    FileUploadSerializer,
     SessionSerializer,
     UserSerializer,
 )
@@ -554,19 +553,16 @@ class SessionsupdView(
 ):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
-    serializer_class = FileUploadSerializer
     queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
         file = request.FILES['file']
         decoded_file = file.read().decode()
         io_string = io.StringIO(decoded_file)
-        #print(io_string)
         reader = csv.reader(io_string)
         sessions_count = 0
         imported_count = 0
         for row in reader:
-            print(row)
             sessions_count += 1
             c_year = int(row[3][:4])
             c_month = int(row[3][4:6])
@@ -605,6 +601,7 @@ class SessionsupdView(
                 ),
                 "charging_point": row[6],
                 "vehicle": row[7],
+                "payment": row[8],
             }
             serializer = SessionSerializer(data=session)
             if serializer.is_valid():
