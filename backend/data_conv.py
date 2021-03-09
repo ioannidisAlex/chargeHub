@@ -21,9 +21,9 @@ i = 0
 for v in vehicles["data"]:
     vehicle = {}
     auto = {}
-    vehicle["id"] = v["id"]
+    vehicle["pk"] = v["id"]
     vehicle["model"] = db_name + ".VehicleModel"
-    auto["id"] = v["id"]
+    auto["pk"] = v["id"]
     auto["model"] = db_name + ".Vehicle"
     fil = {}
     fil["engine_type"] = v["type"]
@@ -67,7 +67,7 @@ with open("final data/Provides.json", "w") as out:
     providers["data"] = []
     for i in range(3):
         prov = {
-            "id": str(uuid.uuid4()),
+            "pk": str(uuid.uuid4()),
             "model": db_name + ".Provider",
             "fields": {"provider_name": "prv" + str(i), "user": "u" + str(i)},
         }
@@ -79,7 +79,7 @@ with open("final data/Clusters.json", "w") as out:
     clusters["data"] = []
     for i in range(2):
         cl = {
-            "id": str(uuid.uuid4()),
+            "pk": str(uuid.uuid4()),
             "model": db_name + ".Provider",
             "fields": {"provider_name": "cls" + str(i)},
         }
@@ -96,7 +96,7 @@ _PAYMENT_METHODS = [
 payments = []
 for i in range(500):
     pay = {}
-    pay["id"] = str(uuid.uuid4())
+    pay["pk"] = str(uuid.uuid4())
     pay["model"] = db_name + ".payments"
     filds = {}
     filds["payment_req"] = True
@@ -206,19 +206,19 @@ k = 146
 for i in points["data"]:
     station = {}
     # print(i)
-    station["id"] = i["UUID"]
+    station["pk"] = i["UUID"]
     station["model"] = db_name + ".ChargingStation"
     st = {}
-    st["cluster"] = clusters["data"][randomint(0, len(clusters["data"]))]["id"]
+    st["cluster"] = clusters["data"][randomint(0, len(clusters["data"]))]["pk"]
     st["owner"] = str(uuid.uuid4())
     station["fields"] = st
     charging_stations.append(station)
     for co in i["Connections"]:
         c_points = {}
-        c_points["id"] = str(uuid.uuid4())
+        c_points["pk"] = str(uuid.uuid4())
         c_points["model"] = db_name + ".ChargingPoint"
         poi = {}
-        poi["charging_station"] = station["id"]
+        poi["charging_station"] = station["pk"]
         poi["connection_type"] = co["ConnectionType"]["ID"]
         poi["current_type"] = co["CurrentTypeID"]
         poi["status_type"] = co["StatusTypeID"]
@@ -233,7 +233,7 @@ for i in points["data"]:
         c_points["fields"] = poi
         charging_points.append(c_points)
         loc = {}
-        loc["id"] = poi["location"]
+        loc["pk"] = poi["location"]
         loc["model"] = db_name + "Location"
         lo = {}
         lo["email"] = "u" + str(k) + "@tlMpa.gr"
@@ -265,21 +265,21 @@ for s in sessions["_items"]:
     # print(s)
     if s["userInputs"] != None:
         session = {}
-        session["id"] = str(uuid.uuid4())
+        session["pk"] = str(uuid.uuid4())
         session["model"] = db_name + ".Session"
         se = {}
-        se["payment"] = payments[cnt]["id"]
+        se["payment"] = payments[cnt]["pk"]
         # se['protocol']=""
         se["user_comments_ratings"] = str(randomint(1, 5)) + "stars"
-        se["provider"] = providers["data"][randomint(0, len(providers))]["id"]
+        se["provider"] = providers["data"][randomint(0, len(providers))]["pk"]
         se["kwh_delivered"] = s["kWhDelivered"]
         se["site_id"] = str(uuid.uuid4())
         se["connect_time"] = s["connectionTime"]
         se["disconnect_time"] = s["disconnectTime"]
         se["done_charging_time"] = s["doneChargingTime"]
-        se["charging_point"] = charging_points[randomint(0, len(charging_points))]["id"]
+        se["charging_point"] = charging_points[randomint(0, len(charging_points))]["pk"]
         se["vehicle"] = database_ve["actc"][randomint(0, len(database_ve["actc"]))][
-            "id"
+            "pk"
         ]
         session["fields"] = se
         acn_data.append(session)
@@ -301,7 +301,7 @@ vehicleowner = []
 owner = []
 for i in range(3):
     us = {}
-    us["id"] = "u" + str(i)
+    us["pk"] = "u" + str(i)
     us["model"] = db_name + "User"
     u = {}
     u["username"] = "u" + str(i)
@@ -314,7 +314,7 @@ for i in range(3):
 
 for i in range(3, 146):
     us = {}
-    us["id"] = "u" + str(i)
+    us["pk"] = "u" + str(i)
     us["model"] = db_name + "User"
     u = {}
     u["username"] = "u" + str(i)
@@ -325,7 +325,7 @@ for i in range(3, 146):
     users.append(us)
     vo = {}
     # print(i)
-    vo["id"] = database_ve["actc"][i - 3]["fields"]["owner"]
+    vo["pk"] = database_ve["actc"][i - 3]["fields"]["owner"]
     vo["model"] = db_name + "VehicleOwner"
     v = {"user": "u" + str(i)}
     vo["fields"] = v
@@ -334,7 +334,7 @@ for i in range(3, 146):
 
 for i in range(146, 646):
     us = {}
-    us["id"] = "u" + str(i)
+    us["pk"] = "u" + str(i)
     us["model"] = db_name + "User"
     u = {}
     u["username"] = "u" + str(i)
@@ -345,7 +345,7 @@ for i in range(146, 646):
     users.append(us)
     ow = {}
     # print(i)
-    ow["id"] = charging_stations[i - 146]["fields"]["owner"]
+    ow["pk"] = charging_stations[i - 146]["fields"]["owner"]
     ow["model"] = db_name + "Owner"
     o = {"user": "u" + str(i)}
     ow["fields"] = o

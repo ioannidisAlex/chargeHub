@@ -1,6 +1,6 @@
 [
     {
-        "id": "ba492d23-0d35-4594-b696-dc6df87f7363",
+        "pk": "acb226fe-2433-4d81-ae18-c5f2fb15ec1f",
         "model": "default..Provider",
         "fields": {
             "provider_name": "prv0",
@@ -8,7 +8,7 @@
         }
     },
     {
-        "id": "fe713b8c-f3fa-48f3-ba20-377a6c26f88c",
+        "pk": "2d8aece3-7ac2-4626-84f5-668f7d093010",
         "model": "default..Provider",
         "fields": {
             "provider_name": "prv1",
@@ -16,7 +16,7 @@
         }
     },
     {
-        "id": "a9aed7ac-095d-4420-8103-a942502be6ac",
+        "pk": "980d9a56-6528-4dc7-b464-f2c298083c95",
         "model": "default..Provider",
         "fields": {
             "provider_name": "prv2",

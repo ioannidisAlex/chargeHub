@@ -1,13 +1,13 @@
 [
     {
-        "id": "6c904b11-35ad-49dc-bb4b-13a9bb9d0c8e",
+        "pk": "f1fa7b6a-4aa5-4b54-9648-31c7d8d33000",
         "model": "default..Provider",
         "fields": {
             "provider_name": "cls0"
         }
     },
     {
-        "id": "be7c72dc-e84e-473a-a239-6e3a0bbb784d",
+        "pk": "5ad5f85d-d759-40f5-b9bc-14a9441513f8",
         "model": "default..Provider",
         "fields": {
             "provider_name": "cls1"
