@@ -1,5 +1,6 @@
 import json
 import uuid
+from datetime import date
 
 import pytest
 from corsheaders.defaults import default_headers
@@ -21,7 +22,8 @@ session_calls = [
     # (reverse("sessions_per_station",args=[str(uuid.uuid4()), "20140417", "20140618"]),"get"),
     (
         reverse(
-            "sessions_per_vehicle", args=[str(uuid.uuid4()), "20140417", "20140618"]
+            "sessions_per_vehicle",
+            args=[str(uuid.uuid4()), date(2014, 4, 17), date(2014, 6, 18)],
         ),
         "get",
     ),
