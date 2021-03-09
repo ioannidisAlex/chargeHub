@@ -1,23 +1,23 @@
 [
     {
-        "pk": "acb226fe-2433-4d81-ae18-c5f2fb15ec1f",
-        "model": "default..Provider",
+        "pk": "59ad39c8-5105-4204-afd5-00bfe58599e2",
+        "model": "common..Provider",
         "fields": {
             "provider_name": "prv0",
             "user": "u0"
         }
     },
     {
-        "pk": "2d8aece3-7ac2-4626-84f5-668f7d093010",
-        "model": "default..Provider",
+        "pk": "0cb04316-7d68-4189-a1a4-7c644b2601f4",
+        "model": "common..Provider",
         "fields": {
             "provider_name": "prv1",
             "user": "u1"
         }
     },
     {
-        "pk": "980d9a56-6528-4dc7-b464-f2c298083c95",
-        "model": "default..Provider",
+        "pk": "05653f77-b374-4a7c-9a9b-3bbbd068fdf4",
+        "model": "common..Provider",
         "fields": {
             "provider_name": "prv2",
             "user": "u2"

@@ -1,0 +1,26 @@
+[
+    {
+        "pk": "b91e0440-8c5f-4aad-9c0f-f99847eb7a52",
+        "model": "common.Provider",
+        "fields": {
+            "provider_name": "prv0",
+            "user": 0
+        }
+    },
+    {
+        "pk": "4de6d1e5-022c-40fc-b2ed-cc032d885040",
+        "model": "common.Provider",
+        "fields": {
+            "provider_name": "prv1",
+            "user": 1
+        }
+    },
+    {
+        "pk": "bf273583-a983-45aa-9343-bd34d7d9f3e3",
+        "model": "common.Provider",
+        "fields": {
+            "provider_name": "prv2",
+            "user": 2
+        }
+    }
+]

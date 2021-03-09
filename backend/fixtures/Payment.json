@@ -1,0 +1,5502 @@
+[
+    {
+        "pk": "29fc80ea-1a98-43b9-bbb8-6635bfd99171",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.226790526318267,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "989e4249-680b-4258-b8a6-3a6623f77cc7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.873976416541467,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "pk": "ab880a3b-964c-40d3-8bc3-b6dfca7dcd9c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.371950553197873,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "73958ffa-cbcf-4393-ae3f-e27fb3862944",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.084881993299508,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "pk": "1be22c3b-5eef-49fa-9754-58ba26f8f95f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.178520390518287,
+            "invoice": "",
+            "user_id": "u51"
+        }
+    },
+    {
+        "pk": "332cf47d-b0e9-4acc-9d31-fa35a181278d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.50642803180438,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "pk": "5f159d27-b954-4d96-a3e3-d7598230cb81",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.598499726573635,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "pk": "c415f669-c1b2-4459-b17f-36b16e0d74e0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.517001615318032,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "d3229b67-34f8-438e-8580-2f098bccbd1d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.543639826981632,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "pk": "00973b3e-88ce-4879-a603-6d671a7a721f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.588163005291452,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "pk": "830fd430-347b-429a-841e-fcddf859b914",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.19142973431488,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "8096e5ab-aae1-4d01-a7dd-670960969b56",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.618754313317515,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "a4d05933-1bd7-41b7-a40a-149f149dabcf",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.838903140565032,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "pk": "575d6e95-1e11-43c3-9682-262573867c96",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.015201967579246,
+            "invoice": "",
+            "user_id": "u114"
+        }
+    },
+    {
+        "pk": "eb99901c-0f99-48fc-8f98-65e5c6d2f9cd",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.44484010371265,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "pk": "a3eef415-e508-49b7-b84b-d23b9d5fadf9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.15963807055091,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "4a0f2db6-35d6-4f5d-bebf-48cf692a066f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.14473983877193,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "pk": "55a00380-2bb4-4684-8e6d-e7b9cc3133ef",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.889226363845381,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "pk": "903ac7ab-0433-4f8a-8fa6-f9b58429190e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.409201949946087,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "pk": "9c97351f-2f86-4fe8-92bc-81c23fa1cb10",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.439457495590734,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "pk": "83349e47-0d15-4e44-a0ad-d9591bc06489",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.187008937634902,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "pk": "092409aa-0375-49dd-8fca-70b5ef8ae772",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.082006317753137,
+            "invoice": "",
+            "user_id": "u45"
+        }
+    },
+    {
+        "pk": "fcb39088-2a1c-49f7-9fcf-b09edb6d6f8d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.76024161157823,
+            "invoice": "",
+            "user_id": "u138"
+        }
+    },
+    {
+        "pk": "7ebe6100-e8a3-4163-a4ef-fc620acff886",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.094299086071839,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "pk": "70480b2e-44c2-4e42-8dd5-e2332674c2e0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.573861878071927,
+            "invoice": "",
+            "user_id": "u124"
+        }
+    },
+    {
+        "pk": "491e914e-cbaa-4e19-895b-d188e534b2b0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.235436475966416,
+            "invoice": "",
+            "user_id": "u30"
+        }
+    },
+    {
+        "pk": "a72e6b96-14db-40a6-92df-ca3c470f0721",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.596257185270717,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "pk": "413bf574-ebb9-478d-9d0d-260a64d2c208",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.223536437006612,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "pk": "5793a203-20ff-42a2-858d-65835e8b1b28",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.337699220852077,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "pk": "b0db53ad-743c-4e4a-9478-203540e2862a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.622777946827535,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "pk": "669fe9a6-059f-45fd-8c7e-32aa947aa28f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.311523218272793,
+            "invoice": "",
+            "user_id": "u130"
+        }
+    },
+    {
+        "pk": "ed234d17-0f2c-4d04-9ec4-af1faeddaed7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.369131806008323,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "pk": "30b8a177-7015-4c17-91db-daa5a00b16b6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.20210249748347,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "pk": "0e41cb28-4101-4611-96db-fa2d06b2faab",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.720314693652085,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "a468849e-54a7-4c79-90d4-2aa0ca9418ff",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.359639625244995,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "pk": "e50df43e-4b35-449a-bb14-31de54383905",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.097420940233697,
+            "invoice": "",
+            "user_id": "u110"
+        }
+    },
+    {
+        "pk": "60e90d76-590f-4e42-a6bf-153f9bd5b113",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.82452885760115,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "pk": "22f07383-e96a-4a88-ad75-f6040f96836f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.753851704869913,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "e996e8ba-2c92-4dbe-8ea9-17006f5bdab3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.37474753555437,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "pk": "49fa0eb8-79d4-450c-8ad6-0635b99a9087",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.74356051816556,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "e51e3085-f11e-42ca-b09c-66a3f9c3d929",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.54499146697323,
+            "invoice": "",
+            "user_id": "u146"
+        }
+    },
+    {
+        "pk": "954538c6-53ec-4f5d-9aff-19b66bd5f598",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.799345482711935,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "pk": "9c83c73a-0385-4cae-a40b-cf5dc1d9755e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.328391502409337,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "744a4fc4-d9ed-4eb6-b4c3-a9d8f60074b6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.163404914212556,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "pk": "0e7f16a2-e7ee-4e8d-98a5-001b852722dd",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.703576898053889,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "pk": "c9dd948a-416d-4387-8716-c35276c34f76",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.094944545742361,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "8fbfc97b-9dc9-4e05-95c2-a950d13f5039",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.20254751466697,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "c610ec74-ab43-41a7-9400-479a654498f5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.143442077443275,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "3916a002-2940-49f7-8815-00c8c1029949",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.618503411715956,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "pk": "d34e9bc9-0bff-49d5-958d-55737bc6d95d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.819166328841463,
+            "invoice": "",
+            "user_id": "u126"
+        }
+    },
+    {
+        "pk": "b5c86798-1a2d-45ad-b56f-4ff6d61ddf0e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.223645502609745,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "9d608cd0-2053-4d3f-b7e7-f86c77a98e33",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.677494060067822,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "pk": "b0215938-5565-46ff-8178-c0e54c6f82d0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.519830249664192,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "8becd100-19b1-4626-af67-b6dc4ea35f6d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.189660175259785,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "7ea4dc71-ee70-43ed-972d-c4b732ede04e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.628718109543897,
+            "invoice": "",
+            "user_id": "u124"
+        }
+    },
+    {
+        "pk": "2e7eca05-5544-4572-879a-14f20348c79c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.159669715228109,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "pk": "a0046e65-02be-4714-81e9-c3eff2211722",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.895858357677774,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "499c98c3-0a8a-484b-8564-3357c2a82f4c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.319779895097533,
+            "invoice": "",
+            "user_id": "u10"
+        }
+    },
+    {
+        "pk": "c2042d07-4be5-4328-a809-4e847297e514",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.439815883009441,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "029b73ba-c3c2-4911-b971-4409ff4aad4c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.600563577453158,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "744fe894-38d9-45e3-b00f-38b823a34891",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.784300657098797,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "pk": "fb6dbdf7-9fce-4154-9098-9719deda7100",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.38975244401197,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "eff4a1fa-9f80-4f0a-a3b0-08376bcda1f2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.30752134074389,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "pk": "3839f51c-1dfe-45d0-a6b4-2c238c89a651",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.84445272061692,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "pk": "068721c8-9e97-4ea5-8825-5ae71566d144",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.146269115834114,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "pk": "44fc6978-e539-45a3-96d0-f9104cda8205",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.39330664207574,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "pk": "318e2f61-4053-4af2-b3f9-0b487ce2927a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.5114479586487,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "abdbcabf-bf2b-4b4b-8921-647a861536c5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.57933085449962,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "pk": "b41fd0ff-67eb-49c7-9c4e-a8899a08f914",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.7081561187028,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "pk": "e33763a7-3105-4879-8392-5a72c56a4627",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.321623322216666,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "pk": "f1122fdb-1e9c-4f6e-bc5c-70a8d00635ef",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.64411747869969,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "pk": "4f4cd911-6e6a-4267-bbfc-c11bd258a2a2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.409395411657801,
+            "invoice": "",
+            "user_id": "u93"
+        }
+    },
+    {
+        "pk": "85cbf712-9cba-469f-96f7-b017626972c9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.562008725870422,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "pk": "e6e36169-6da1-493c-8dab-fc9960d91b9a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.357922323405392,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "fb1d9111-fef4-4ac6-be91-5d2842012e5a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.671992809930765,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "pk": "112b50d7-97dd-4f87-b375-82e7fb5da4c7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.029503519669039,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "9e9924d6-4bbe-4b44-950d-6437d8925fa3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.65196975783186,
+            "invoice": "",
+            "user_id": "u30"
+        }
+    },
+    {
+        "pk": "a7194538-eac3-4a49-91f7-59356d5865be",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.381472416178358,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "pk": "c957ae29-688f-4c33-a2bb-ec9d2f7bba9f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.24698995458472,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "pk": "b6c58c48-638c-4959-91a7-e41406dd18fe",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.1891911005216,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "0d365606-a38f-4d44-826b-ef914c93df49",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.023227229268782,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "pk": "5ef0af81-a3be-4cc9-afb7-598afc08cb44",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.776398949554832,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "pk": "a960ca47-0213-4c27-9847-299562f4d574",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.202776286623369,
+            "invoice": "",
+            "user_id": "u48"
+        }
+    },
+    {
+        "pk": "4f553278-2606-4f55-824f-ccfc34eeb7db",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.40687620202222,
+            "invoice": "",
+            "user_id": "u124"
+        }
+    },
+    {
+        "pk": "b54a80f9-6051-4052-8f82-2fa3877047e3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.119660113560133,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "pk": "a13e662d-c07d-4544-8fc1-1a3ee379d217",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.449084422979386,
+            "invoice": "",
+            "user_id": "u73"
+        }
+    },
+    {
+        "pk": "dc2c0629-333c-4381-a54b-c8676de7634a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.536031965253017,
+            "invoice": "",
+            "user_id": "u64"
+        }
+    },
+    {
+        "pk": "19800bbf-7166-4a80-a7df-c7d920da84d9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.279957803633277,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "ec875d30-a852-43b5-9f42-caf6b5bdbf7d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.683968204227037,
+            "invoice": "",
+            "user_id": "u83"
+        }
+    },
+    {
+        "pk": "0c5feb44-924e-403a-81a7-de212c576160",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.935093654057411,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "c96b3447-d2a4-4df6-8034-938975125dfe",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.777637884419322,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "8276f3e7-8072-4a21-b8d4-1b341991018d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.786266826280688,
+            "invoice": "",
+            "user_id": "u93"
+        }
+    },
+    {
+        "pk": "2ce0f8e2-25ac-428f-930b-d6c2a9b58487",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.463225883158442,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "pk": "5f63b592-322a-432b-9686-a697f55fa7a7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.539218578183222,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "560aff9e-0f48-4c66-8089-0883633da8d2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.843792025749844,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "ea186bb5-0391-4443-af6f-bc549a645259",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.035454879284154,
+            "invoice": "",
+            "user_id": "u146"
+        }
+    },
+    {
+        "pk": "48fe9ca2-c756-427a-90f9-7515249db0a2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.969390877034316,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "45a3f83b-50f9-487e-b192-e8dca5ffc5e3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.031529153130801,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "pk": "2a9aa5dc-ef03-4c66-8c93-a50a417a42f6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.126486773161716,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "pk": "3888417b-8e68-4309-a20b-a0a0ed82180a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.722994937177582,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "pk": "3e4dccbe-9e85-464f-acfe-133245a756db",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.289500218975244,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "eec38d61-38ed-4544-b641-c7d0258b17af",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.469405899862545,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "pk": "1151d44e-25cb-460b-9309-cf7927bcda7b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.486745433522636,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "pk": "aeefb6a2-c1c8-4935-ae52-d26f6455a4d0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.561768447592367,
+            "invoice": "",
+            "user_id": "u137"
+        }
+    },
+    {
+        "pk": "f2e2220f-da47-4d17-aaa6-22915adcb101",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.800402582294371,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "pk": "f6b71724-704a-4be3-b7f0-13acfa1bc4f2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.138324600064388,
+            "invoice": "",
+            "user_id": "u142"
+        }
+    },
+    {
+        "pk": "9d33b3eb-64d0-44a2-8b12-e7ddf4378eba",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.155874098141386,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "f518cc80-80c9-473d-8162-b0d4bd95f73c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.305221766741525,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "75879ef7-4f2a-4c7e-a6b4-2d5c8ca54112",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.974846141239306,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "pk": "ff15292a-71e8-46a8-8640-ce14491fb1b8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.406467485326761,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "pk": "8ca2ce21-8b8b-4684-9183-66809821e6c7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.400293042332285,
+            "invoice": "",
+            "user_id": "u65"
+        }
+    },
+    {
+        "pk": "0c2023c3-6b68-4147-98af-d40a21ccde72",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.880354282573728,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "pk": "678d6ea0-ed67-479c-a739-3205eda2448d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.851055565578658,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "pk": "52765ac1-5a58-4e30-826f-881cb7efdada",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.696115301009188,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "32c66fa6-913d-4df2-b596-602b68cb611d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.162578357181921,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "pk": "ec433867-cda9-417e-a4dd-e18f4bca59b4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.128559623938743,
+            "invoice": "",
+            "user_id": "u28"
+        }
+    },
+    {
+        "pk": "8b728c92-a7a6-45b1-a669-d51782e92aa8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.90878033275855,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "fb8f39b3-9122-4d3a-bdb5-67f46bc85b5a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.107380394149219,
+            "invoice": "",
+            "user_id": "u110"
+        }
+    },
+    {
+        "pk": "b2c2ac3d-dcbd-472b-bfdb-3c153160beb1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.645647520874011,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "ca4dc857-9897-4c3d-9b8a-680b39820191",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.701381570511687,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "9d4dcf60-2793-4f9f-8f29-3b2efd391371",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.669907459106277,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "pk": "21ead21f-aae2-4a78-8b74-7cee9ebaf15a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.108613289901783,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "pk": "94a5f756-b82b-44ea-82e9-ca51a329050e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.311614751075833,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "pk": "ef21c4e1-6f66-440e-9a65-1e99d99ef19f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.341095473424726,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "pk": "a2d18fe2-3cd1-4afc-b606-890de1f18591",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.125600016833937,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "pk": "5418af41-8f49-44c7-a31f-2b2316485747",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.576560419735417,
+            "invoice": "",
+            "user_id": "u51"
+        }
+    },
+    {
+        "pk": "e5001a64-a815-4c40-8fbf-e416b778e21d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.668301872850495,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "dabcb428-996f-421a-8ea5-3187dbc94bd9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.696552255304477,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "pk": "cb36e46a-96d5-4396-9b11-6f1c6ab4de3a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.501351826607447,
+            "invoice": "",
+            "user_id": "u87"
+        }
+    },
+    {
+        "pk": "5a70afcd-dc2a-4563-a7e8-6e770779522f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.704135078888447,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "pk": "4dde7602-6e0c-40f7-a7b9-8244e1bb8377",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.630058541972726,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "8ca650dc-2a33-4d6f-aff5-da3dc27c8200",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.880008871088442,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "597298a5-ded3-4b10-aa11-cde3f4783563",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.540174359291138,
+            "invoice": "",
+            "user_id": "u135"
+        }
+    },
+    {
+        "pk": "d9989ae4-0b92-4e78-a92b-74dccc8cf3d2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.528928638345954,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "pk": "aa410d5b-7f21-434c-b70c-696115d36c84",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.873158048595194,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "4fea9dc3-3f07-41c7-bb0f-3b82c1094f6a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.009398890079972,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "716f36cc-b551-42e1-a2c1-9c55a795a9b5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.641343991865696,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "pk": "8da9a305-be1f-48ce-9800-b45b0bb95a95",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.215745892404646,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "pk": "0df4555e-76ff-4365-b0fc-76ae7ddd995e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.767498684595736,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "pk": "9805ed2f-bf61-4f5c-90c3-b2c4687212f1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.013540399508749,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "bc5c53aa-eaf8-407b-ab80-7ceea10a63aa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.051283209541383,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "pk": "2d6766f1-dc5e-4455-9310-df0a072bc187",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.408818376273052,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "pk": "e4b95c53-f2ab-467e-92b3-827d947c1318",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.281495996470063,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "pk": "4094d7b0-79a5-4f81-97af-f9a99299fef0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.961132244897229,
+            "invoice": "",
+            "user_id": "u108"
+        }
+    },
+    {
+        "pk": "1142bda5-0d69-4c80-9cba-1294cb0ce751",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.169383679435974,
+            "invoice": "",
+            "user_id": "u140"
+        }
+    },
+    {
+        "pk": "f421fb27-751b-42bd-bb42-0e7fb6d407c5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.553127090376687,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "pk": "3365c09e-2b95-4963-8948-291da31f2054",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.5459789761197,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "15588c91-080d-45b9-b0fc-12153460e596",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.049833650939116,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "pk": "3fd15643-21bc-4e59-9f99-4091bcd78a3b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.773491046668331,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "pk": "7ad131d0-10ef-447b-af27-a8cbc2d29b86",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.69453374680469,
+            "invoice": "",
+            "user_id": "u107"
+        }
+    },
+    {
+        "pk": "b05105d8-4526-4036-83cf-67bc674558c1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.55311215941817,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "pk": "811773af-3754-4d78-b5cd-46264bfa7c0a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.070075025100657,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "pk": "e7324bfa-8c9b-4674-bfc4-848fb8fa8aea",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.451885578508726,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "pk": "0be5fd49-6cd1-4376-a933-1d6d193d1383",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.564025184200672,
+            "invoice": "",
+            "user_id": "u38"
+        }
+    },
+    {
+        "pk": "636f7258-bec6-4759-84dd-ec014ff445cc",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.765236194329251,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "pk": "06fb6a02-4ed1-4633-8aee-dea0611ffe5e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.916478865571918,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "pk": "74597285-c833-4754-aae2-5ff51a8f1602",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.53754200846843,
+            "invoice": "",
+            "user_id": "u13"
+        }
+    },
+    {
+        "pk": "92e6efac-f714-4717-bee0-b64df0b2222e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.772419081255329,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "63502b18-2397-4cd2-8eca-8c40995c3692",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.531632231100527,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "b54a29ce-eefe-4fc0-91f5-ef90dd434f65",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.237697771677354,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "ace638e5-2cd1-46bf-b7f7-e8b18e9a916b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.119299033693173,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "15d94ec0-cd9a-459f-bc23-9fcabb9279d8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.23019357653343,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "pk": "84aa07e7-aba7-4312-821d-b54583a47c03",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.372272135481044,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "pk": "7ed772fb-4313-4f0a-8ded-47d12b192411",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.344758211150316,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "pk": "e0a343dc-16f7-4ce5-96c0-a42206a92395",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.688797209632494,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "pk": "4f2c3b12-d83e-44a6-a0a3-a5c88f75ee9c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.249999650013773,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "edb4d7e7-853b-420c-9ad2-6b77b3c1ca7d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.172122625310584,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "48f6036f-a21a-457a-a42a-c56906db3ece",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.754065561540404,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "37c02317-97d2-4287-a36e-fe9010e1f516",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.071664721686432,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "pk": "557e4f86-cb62-4011-a26c-8109d73ef904",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.220970813974645,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "pk": "a07fcdae-abac-4fd7-8c81-e9f40efaa530",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.760466395505036,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "pk": "5d69a025-a1a2-4a20-ba2b-b2b8287688b6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.936628256636478,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "a5aaf42c-f4bf-464f-87c1-dae0022ed877",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.642712899974462,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "pk": "e10b08a0-d803-4f5f-bc47-e6dc92ef134f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.076945185350606,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "pk": "a748527c-3b99-4ca2-af7b-63c22307ddd9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.95456995238565,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "pk": "ed33cea4-e576-471f-a7c3-a6deeafb771e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.277835948463194,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "0aa08473-6d6d-4194-bebd-53d5c041c2cd",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.625304359449146,
+            "invoice": "",
+            "user_id": "u107"
+        }
+    },
+    {
+        "pk": "f501b6e2-a5ab-426d-a49a-acd13f121da3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.2504243851294,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "f33601fb-e402-4652-9e0b-5618c8bfc190",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.14991184924363,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "pk": "71808ac5-9ad9-4842-bb0b-d4c48535f090",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.978240743867069,
+            "invoice": "",
+            "user_id": "u95"
+        }
+    },
+    {
+        "pk": "336dba9d-f0d7-4c10-9e78-1ce336b5a76e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.195838646368783,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "pk": "4432ece1-73dc-44c2-a331-ef2d8351c2c2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.61413614193016,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "pk": "8463967d-f38e-48f5-83b9-3765756138c0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.041567197460413,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "pk": "a078f1bf-7004-44bb-a10b-a855558aab31",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.37640112255427,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "pk": "771131e3-d924-4d4e-b74b-77331f0c07fa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.986891400676758,
+            "invoice": "",
+            "user_id": "u114"
+        }
+    },
+    {
+        "pk": "4aa59d18-3634-4fde-a318-c669adb22f35",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.405377185550929,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "pk": "8fb775fd-3107-4c66-9949-2d50ad87fb1b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.136755215511243,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "pk": "279e36d5-bdeb-4add-8828-9ce42c6016a8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.649840247398835,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "pk": "9b238a16-023f-4697-8efd-6f650967debb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.952484519136554,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "pk": "bb66d9b0-0e31-4dbf-a4f3-0cdf22e1995e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.217891856480012,
+            "invoice": "",
+            "user_id": "u45"
+        }
+    },
+    {
+        "pk": "5d04b039-8ab4-413e-ab45-cd73ba8b7636",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.943477636852338,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "pk": "416806cc-1903-454f-8c4c-0d591fdd9885",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.904731276282874,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "pk": "9668358c-e97e-45ec-9c2d-bbc0a5328536",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.759069456086404,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "pk": "69264811-7b1a-41e7-ac87-973101dcf279",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.62353887623368,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "b404bd90-30b4-4f88-bd9a-46506d08974d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.617433558153264,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "8f4939ca-6569-4490-92cd-614fc8d3efa4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.99709813184542,
+            "invoice": "",
+            "user_id": "u124"
+        }
+    },
+    {
+        "pk": "bfb7fa59-d65d-4f21-bb94-faf076b582f7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.323526523227315,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "pk": "09eac391-c22a-467d-9cb5-57374256b2bc",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.090443994528629,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "pk": "300cddce-896d-46d0-bfe0-65909ce5a7fb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.259159470012733,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "pk": "e270db3a-8f72-4f58-91ef-8d7663371450",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.669095031420309,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "2d066f06-19eb-4f9d-836c-c8bb08ab133d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.7815226283218,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "pk": "d130f48c-9bd9-44b6-8aed-23bd1a1992c7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.944766545125594,
+            "invoice": "",
+            "user_id": "u114"
+        }
+    },
+    {
+        "pk": "0af3288f-0cc5-4cf1-8d14-a337d2fda7ae",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.327306947999183,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "pk": "a0cba93d-bde0-48c1-acaf-d429cf3a6414",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.315524801007879,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "3f48ceb8-4de6-4b39-b76a-883a72d40441",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.988693842187807,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "4193e90f-1fcf-4145-8d20-f3021474c835",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.32805293763038,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "pk": "c47268c3-15cd-4b74-ade4-5072d8951dee",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.661700932889584,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "pk": "47fdeb32-11ce-40bc-b1d3-680c21046c33",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.591682188628628,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "41cad79a-8209-4fbf-8ef0-3c9de8052b6c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.953521413230726,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "pk": "2587f6c6-2793-46e9-bc25-b6c8afb54aa5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.306323897656597,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "pk": "c6533133-a2b0-4ce2-a095-b45e4c22dd27",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.063080053179444,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "pk": "323386e2-b3db-4322-ad99-8f0e1aae46d6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.499698269772216,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "pk": "185138ca-3204-484b-a862-3be97e7a3f24",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.052160484172127,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "pk": "63d82fe5-58ef-4c47-ba00-adc25da9b7a3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.885156616473877,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "pk": "d04a05b9-f999-4b2d-920c-f6e3ae8403e2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.716910637873317,
+            "invoice": "",
+            "user_id": "u89"
+        }
+    },
+    {
+        "pk": "f15ccbb9-8e67-48f0-9481-ed025425c6cf",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.728996724351607,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "pk": "1beec92a-031f-4f89-bf6a-f35d23e2309b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.941067015732596,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "pk": "ca035aef-1ed8-417c-99e7-86eb2d66410e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.234390125872178,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "793b15c3-6984-4ee1-a1a1-5e83518a41e1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.453648796621081,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "40053abb-77c4-4376-b122-0af067194327",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.40325958204135,
+            "invoice": "",
+            "user_id": "u20"
+        }
+    },
+    {
+        "pk": "a0b3095c-912f-4da3-b574-85e2a09e84db",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.904916508995175,
+            "invoice": "",
+            "user_id": "u87"
+        }
+    },
+    {
+        "pk": "b51070b1-f957-4d57-82f8-97873151ab1e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.070987047113043,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "pk": "4c060bb9-867b-47a0-b52e-30fb5c7270d5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.975628564552984,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "pk": "56ed0c57-4004-4d4e-8aaf-c5c1de0a3089",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.788168045263603,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "af825eac-3d36-4f39-b0c5-5d228c7471d6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.47010499357495,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "pk": "edfb11d4-c1d3-486c-9b7c-93b8b4e34b47",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.322561491090065,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "pk": "0adf2d64-bbe5-433c-bfb6-ef176baa087c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.157328831258983,
+            "invoice": "",
+            "user_id": "u7"
+        }
+    },
+    {
+        "pk": "59277729-8eb7-4b0a-b41a-3e43061d93d0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.970259816885306,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "pk": "00aa744f-8e6b-494c-87c6-2d8ee3aa66db",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.054224558379357,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "2f7e58df-0ad8-4dd8-9e64-344d2bdcb3d6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.26763739884244,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "pk": "e5c38fd4-2baa-4809-8772-146a982a919b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.546074611079623,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "ff0971c2-1c51-44e6-9165-a5adc0e86527",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.184447864521415,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "9d22b1f8-dce0-4d7d-a154-038507d04f45",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.993407683081498,
+            "invoice": "",
+            "user_id": "u101"
+        }
+    },
+    {
+        "pk": "a77780e0-78fa-4923-9e5b-d75bf0d6e7e7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.282657599518716,
+            "invoice": "",
+            "user_id": "u72"
+        }
+    },
+    {
+        "pk": "5ed3e350-f40f-4c29-a60f-05764d3d199f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.928754310491291,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "pk": "12f11c37-027c-4023-b0de-0e7a88ec64b8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.057089778741718,
+            "invoice": "",
+            "user_id": "u45"
+        }
+    },
+    {
+        "pk": "efb66a72-4510-441b-aa34-c5e6b9144d9e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.302550232862197,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "56e140c9-7f97-4619-a00c-4c3b1ee3aea1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.048764261229323,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "pk": "45d3ee32-c120-4a05-8a2b-d4f697490308",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.597464791419064,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "pk": "0ca029ec-e4ed-450c-8c5f-a819ad974eaa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.083629065009807,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "pk": "ad0980f4-c6f3-4e0e-aaf6-2d9fd2cfe22e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.730948134028225,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "pk": "9deee54d-4946-4400-83fb-17a03e5b48be",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.141049017638704,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "61959cb3-276e-4b46-889e-1c99c8f0ef3b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.960261277150067,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "pk": "5a516f35-e97f-44df-b616-92aabe4c1639",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.374568573448279,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "pk": "56b4215b-8df0-407e-a970-572eaa66197b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.852967606604853,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "pk": "201358ca-8e8c-4d96-8ad3-d678344b81a7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.521480920206049,
+            "invoice": "",
+            "user_id": "u134"
+        }
+    },
+    {
+        "pk": "12309897-8e7a-4b86-a3da-0feeee836cc0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.594798174866082,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "7bc96657-342b-4633-b152-776f9c7f81a7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.991281348582936,
+            "invoice": "",
+            "user_id": "u25"
+        }
+    },
+    {
+        "pk": "8ee9ddd3-69a0-43fa-b2dc-e802fe24c8e7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.313581106981047,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "pk": "68f35ad1-6313-44ee-ac32-f9cf2794ef84",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.786595955437251,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "pk": "34a89624-393b-4af2-8661-8adc35915097",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.300912841906223,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "pk": "9adb61f4-5004-446f-8ada-2bea304f6ffe",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.942651777869923,
+            "invoice": "",
+            "user_id": "u85"
+        }
+    },
+    {
+        "pk": "2b674cb7-6ed0-4603-a7be-70b69116f8b9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.90030244885996,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "bd90d047-bb3d-47eb-97cb-2ca18f385408",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.576802414703732,
+            "invoice": "",
+            "user_id": "u70"
+        }
+    },
+    {
+        "pk": "3db767c6-51ab-41f8-82f4-570d5e2ec700",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.19012926691468,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "6fa3ba9f-adae-49fa-9b3c-34e1eb21d762",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.386635979262685,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "pk": "0d328f75-a0ae-4309-ba90-9d37035f00c4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.458048893369382,
+            "invoice": "",
+            "user_id": "u51"
+        }
+    },
+    {
+        "pk": "b19ce769-752b-423e-ac4d-9655e9210cf0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.92871999433015,
+            "invoice": "",
+            "user_id": "u79"
+        }
+    },
+    {
+        "pk": "9ff26ec5-752a-42e9-b568-22094eeec5c8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.521421472218556,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "pk": "8e4c6063-3f39-4bb8-b467-fdcb301d3fad",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.7300780123244,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "pk": "cbf44f51-acb1-4ad9-88c6-1cd961b3c300",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.259854671702456,
+            "invoice": "",
+            "user_id": "u77"
+        }
+    },
+    {
+        "pk": "eaa4d39a-518a-48a7-a64f-ae57b54aac4a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.228145057406481,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "3059279d-bd1b-413b-9699-d5e065bd20c1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.687798466731905,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "pk": "bda81806-1903-4682-85f4-a8eee2d0fb2b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.26216385377174,
+            "invoice": "",
+            "user_id": "u52"
+        }
+    },
+    {
+        "pk": "2748e65e-8fd4-4b10-ab0b-1f24e2a23064",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.784499776414464,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "63664873-d01e-442a-af78-7f8429c8011c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.509612723512841,
+            "invoice": "",
+            "user_id": "u68"
+        }
+    },
+    {
+        "pk": "150a94c2-0a3f-4ac7-9900-f65cd9b45ecf",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.216126806531076,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "c1e605f7-d9fa-49dd-9d6d-4ee0bad6e4ba",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.669945646261391,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "pk": "fc48fe40-85a4-4af5-a653-3dc420c9374f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.344877859399253,
+            "invoice": "",
+            "user_id": "u21"
+        }
+    },
+    {
+        "pk": "3165fe91-69d5-4433-bb68-e8ad2f50ca4a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.504449076061324,
+            "invoice": "",
+            "user_id": "u110"
+        }
+    },
+    {
+        "pk": "09226147-9991-4f29-a61a-4613545145d6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.936800555833258,
+            "invoice": "",
+            "user_id": "u61"
+        }
+    },
+    {
+        "pk": "1e75e2a3-8f82-447b-ab51-3833c7846306",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.933440647721046,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "7e9852bf-ce25-4b03-bcb2-69e46204cc69",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.682965504268932,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "ac92f6f1-e856-4782-97e6-bcc25c2ef3df",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.160729431225878,
+            "invoice": "",
+            "user_id": "u57"
+        }
+    },
+    {
+        "pk": "81abd1c4-d181-4995-8abf-f126ca46ba48",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.022496963037089,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "394d0c09-16d1-4692-8696-a215d8193f9d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.019486905057137,
+            "invoice": "",
+            "user_id": "u126"
+        }
+    },
+    {
+        "pk": "96d5fe60-b20f-47fa-94fc-021ef7ec1a14",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.990137290177604,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "pk": "eaafc15f-8756-42ba-a178-0bf9e7c584b2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.197547637083765,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "pk": "8d1c7aa0-2c10-4336-8c15-634b55575125",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.00517146095945,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "pk": "e23f7683-1939-44b9-b0d7-7908965057e2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.740151228840347,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "pk": "c6d56d4b-1090-4f53-b77e-b677ac371bff",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.33954138710955,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "09f18f5a-1001-4e41-9a8a-1a9dcc8fc0aa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.243972741639556,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "3e0cbd05-28fd-402b-989f-65c87106ca10",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.527252148188396,
+            "invoice": "",
+            "user_id": "u77"
+        }
+    },
+    {
+        "pk": "6800adae-5192-47f4-881d-69e781f2a882",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.693605514848706,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "pk": "8ba9b57b-927a-4580-b734-a7e97ce65235",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.239212425606432,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "pk": "80030d28-b95b-4daf-9b22-84c4750199da",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.970346306716808,
+            "invoice": "",
+            "user_id": "u9"
+        }
+    },
+    {
+        "pk": "5693e3d2-7685-446d-801e-3c0acc9853a9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.936321735464139,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "b8743b8c-d7c7-4f1b-a21e-70c50189f000",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.469250175920216,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "pk": "7000d8ad-6668-4f43-ae34-85aeebcb7aad",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.547098825916159,
+            "invoice": "",
+            "user_id": "u7"
+        }
+    },
+    {
+        "pk": "97ac0ebc-aba3-48b0-8b60-f6ea15288a92",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.729617871827843,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "pk": "23028b04-3882-42ab-a03c-42e58926342c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.949377997803326,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "pk": "1c652a7f-07dd-4b83-8444-c1f3a0efd4d4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.582975780066505,
+            "invoice": "",
+            "user_id": "u105"
+        }
+    },
+    {
+        "pk": "6cde541b-4f34-4ad4-b637-7f9f5fcda809",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.340407729144722,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "72b408bf-96d8-434e-97f3-21a7f32cb172",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.993763231645408,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "pk": "0fc8939b-4d47-48b3-be23-ba6bebf2307e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.924030424176292,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "pk": "5f788f7c-293d-47ae-b710-04b09af350c0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.829517813198645,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "pk": "739a390a-60c6-4240-9640-616ea6818e29",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.706336759558106,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "9baed9fe-7e70-46ba-8fc8-43db0e5dd791",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.014142586712516,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "3e1790a6-d8f1-4d53-8b81-85034ac61c31",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.140541469392097,
+            "invoice": "",
+            "user_id": "u140"
+        }
+    },
+    {
+        "pk": "af35ea3f-be16-4582-8e04-d81de1eb6416",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.691281450289457,
+            "invoice": "",
+            "user_id": "u12"
+        }
+    },
+    {
+        "pk": "38445d89-9bae-4a3c-ace2-0dfa6c8fc9c7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.280327979550982,
+            "invoice": "",
+            "user_id": "u145"
+        }
+    },
+    {
+        "pk": "b131d969-b78c-493d-ad64-dbeef68c8b36",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.41042934569005,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "2103706a-8956-4522-a4c3-53dcb4484b28",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.760895483709913,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "a21e3856-4210-49c9-b8b9-2b457a1e3e7e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.623286387535654,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "pk": "38436bd4-9352-4c1d-8509-80c8db2c5907",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.772132234190826,
+            "invoice": "",
+            "user_id": "u70"
+        }
+    },
+    {
+        "pk": "074f10e0-4272-4a43-8a5a-f28e9af7f3a7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.674565277026757,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "bf4680ec-f86d-4ffc-99b2-e8989369fc2f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.737129852919697,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    },
+    {
+        "pk": "d8df60e5-76d3-433d-8163-6584df1b3bec",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.183014145007782,
+            "invoice": "",
+            "user_id": "u110"
+        }
+    },
+    {
+        "pk": "bd4cd7bd-c3a2-4a8d-99e1-e51d7404fe65",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.365005089458613,
+            "invoice": "",
+            "user_id": "u44"
+        }
+    },
+    {
+        "pk": "9c25c54e-b347-4792-b174-4a43242bb2b9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.011969496583419,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "pk": "53380eec-7590-498a-8c31-f93aefb1a3d0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.149137400765468,
+            "invoice": "",
+            "user_id": "u115"
+        }
+    },
+    {
+        "pk": "50173d18-3afd-433e-85bb-f72bdf010921",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.260770656539975,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "pk": "78173fef-d86e-456d-82e8-69a2753e44a9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.201604425518429,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "pk": "fa2488b9-2445-4b1d-9b4b-72a2f223c437",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.251485277965077,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "pk": "563a2901-9347-4c11-bcd1-52b96d4447ba",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.321250010331356,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "7df7faf8-8841-4548-8fa7-c36fde3e66bb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.310742066274436,
+            "invoice": "",
+            "user_id": "u34"
+        }
+    },
+    {
+        "pk": "03a8f61c-69b2-4132-bdf4-6d5305bcdd25",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.324065017857265,
+            "invoice": "",
+            "user_id": "u74"
+        }
+    },
+    {
+        "pk": "d0fd9efa-94fa-49d4-b50b-f0f63e4a67ef",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.637595415780352,
+            "invoice": "",
+            "user_id": "u146"
+        }
+    },
+    {
+        "pk": "69572466-5eba-4cb2-bed8-aece293741aa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.048189683523377,
+            "invoice": "",
+            "user_id": "u109"
+        }
+    },
+    {
+        "pk": "7820e9bd-a81c-45fd-8173-1c5d9afa858a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.753901298190486,
+            "invoice": "",
+            "user_id": "u140"
+        }
+    },
+    {
+        "pk": "6563e780-b616-4ae5-a939-7fdbf26fc536",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.118769684104718,
+            "invoice": "",
+            "user_id": "u120"
+        }
+    },
+    {
+        "pk": "0306f10c-583f-4aa4-9b4a-3dde264ec225",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.35745287597037,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "pk": "91e4b613-4f4b-410c-86e6-f49478f7089f",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.88746416176684,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "ff4f6b20-f7a9-4bdd-a410-eb9d251b84d1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.186152223787762,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "pk": "39d2357f-f8b2-4d48-a028-0e32e36a3b63",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.426098179552838,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "16504d93-d1d0-4a28-b21f-a5b69c830493",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.717455227952641,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "pk": "99b2b0cb-67b7-41e0-a2ba-c95f61b9a36a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.445844918711918,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "pk": "3663dda5-a010-44c2-85d4-7c10fcc9219e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.787125565830411,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "8be68fa2-e7d2-4987-b671-8c37548c7ec1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.583894155609176,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "1a044ae6-dc78-4b7d-a001-261c92b40ffc",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.954332996949164,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "02cd4c74-14ac-4eb9-92bf-fe045b6a0933",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.264607391360501,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "pk": "d73176f4-a08f-403e-aa66-c852ece826df",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.791848160207925,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "92ec25d5-7921-4bb4-9a62-346a6b44ce20",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.657381142589788,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "6529f73d-37a5-4d06-add9-bb81bf616f89",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.295944913927206,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "12fcf658-a129-4bae-a90c-ac07604372b6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.514489773487448,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "d7c0ee9c-b78d-4ff0-9f78-c97914a95bd3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.134903887303965,
+            "invoice": "",
+            "user_id": "u133"
+        }
+    },
+    {
+        "pk": "34e7ab1d-9c77-46ec-90a6-abacf8f9b944",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.833604743882688,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "a72f68c5-672f-4279-867c-43faf6ab5e11",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.929657760608988,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "pk": "ff312d88-da49-4303-9095-e6dfdd496d75",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.497866582210643,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "pk": "7fbff838-e631-4f1e-9de0-616e9ad1eec1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.203977797149456,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "pk": "3a1aaa22-8970-4113-b7dc-9fae1fc633d7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.809212158079626,
+            "invoice": "",
+            "user_id": "u30"
+        }
+    },
+    {
+        "pk": "0cc559bc-be6d-48f0-bf08-378c014925cc",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.084741504510813,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "215aac57-4065-4172-a178-660de4ac1ca9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.853353531765762,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "0a2de8ef-3804-4add-b5fc-59efa811027e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.357880787082664,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "e3822e7b-fd17-4dc6-bd20-52a7a13578d5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.897511823197021,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "bb3efc9e-882d-4baf-809f-43a803052aec",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.971241538498305,
+            "invoice": "",
+            "user_id": "u33"
+        }
+    },
+    {
+        "pk": "f9e4ba4f-1759-431b-abc5-8f8bc31b5d95",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.766531030349658,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "pk": "f701329b-b97c-47c4-a452-727d9ca89b97",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.205237970291526,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "pk": "b493a965-0d28-4cd0-9023-4843d56ca175",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.78010853553622,
+            "invoice": "",
+            "user_id": "u144"
+        }
+    },
+    {
+        "pk": "adc68e9f-b41a-4e69-9ba9-cf7656146ff9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.742048775106992,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "pk": "a5ea1960-6c0a-4f1d-ad95-1ea4ad0a7450",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.10745689071498,
+            "invoice": "",
+            "user_id": "u86"
+        }
+    },
+    {
+        "pk": "10d1f037-3344-49e5-b629-81f953a5cb10",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.31812640603996,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "a4941f3e-dffc-436f-ae47-7e4549edafea",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.391701564657414,
+            "invoice": "",
+            "user_id": "u116"
+        }
+    },
+    {
+        "pk": "d7316798-9217-4e71-bdf5-6739389759de",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.334626408306587,
+            "invoice": "",
+            "user_id": "u84"
+        }
+    },
+    {
+        "pk": "a9aaecd2-f594-4001-bdc0-6bd068057375",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.376928229157974,
+            "invoice": "",
+            "user_id": "u59"
+        }
+    },
+    {
+        "pk": "222f9a3a-843b-46ab-bfac-91603770b313",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.20730299407391,
+            "invoice": "",
+            "user_id": "u119"
+        }
+    },
+    {
+        "pk": "a460a60d-6434-413f-bdc2-bfa8224fc899",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.800794879507777,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "a2754e16-4f91-4ee6-a4d3-1454a711c69b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.852381388284837,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "c1673733-4bf5-4c2c-9fd3-a54804a7dab3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.505465298155402,
+            "invoice": "",
+            "user_id": "u19"
+        }
+    },
+    {
+        "pk": "5a7ad70f-967b-41ae-a208-896b5ba92ebe",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.553596454997457,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "pk": "933f2441-87af-4083-8347-bf650019f3aa",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.036658252073131,
+            "invoice": "",
+            "user_id": "u31"
+        }
+    },
+    {
+        "pk": "09344a7e-2747-42a1-bf69-36dac69ad6e9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.613387155597627,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "c2b6433c-e190-4a4c-9c0e-64d4acf13ed3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.861957849820602,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "pk": "09444493-bc36-4f4f-8ff9-c4b060bf6479",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.245987012984967,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "cc8258cb-e17d-4189-a256-f158350049e8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.910414309692165,
+            "invoice": "",
+            "user_id": "u112"
+        }
+    },
+    {
+        "pk": "01e8bba7-67be-475b-b15c-2ce48f012522",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.720614012230179,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "13025507-2a12-4e1e-af44-07a2ac8d6131",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.563644525064367,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "pk": "fc8822e2-ccce-473b-b90d-970b81b5ebf9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.260554050442682,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "38536f04-2baa-4b1f-97a9-563933afdaee",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.809142889852613,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "pk": "d278192a-0236-4816-9865-3efd4483b108",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.248631446547783,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "pk": "77b6b594-56fc-4c7a-84d9-0a43859867d5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.207938514847473,
+            "invoice": "",
+            "user_id": "u118"
+        }
+    },
+    {
+        "pk": "625b7312-f7c0-4449-87e1-8a0de8a56d78",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.976858070367854,
+            "invoice": "",
+            "user_id": "u67"
+        }
+    },
+    {
+        "pk": "2e015627-2116-4a98-986b-d8c36eb8dcd2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.008817025312778,
+            "invoice": "",
+            "user_id": "u125"
+        }
+    },
+    {
+        "pk": "871e07af-7d39-470e-8038-06f8b887bf64",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.760332808141102,
+            "invoice": "",
+            "user_id": "u131"
+        }
+    },
+    {
+        "pk": "5b6b154d-67fc-4730-93e2-9e666b076d30",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.824594160975092,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "pk": "4ea8f3eb-9763-41f3-8945-d8d6bf33d902",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.030542661124572,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "pk": "d0fa7635-f2ca-431a-a4f3-266ceb002788",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.719137901401178,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "pk": "4205e039-935b-4db7-88c8-a03020944b1b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.927596388090315,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "pk": "1f8d4185-79af-4e69-9186-3839554ea984",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.668448301006663,
+            "invoice": "",
+            "user_id": "u64"
+        }
+    },
+    {
+        "pk": "3d7ea6a6-4ba0-4e6d-8b16-4a10dd1346f1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.821032953051134,
+            "invoice": "",
+            "user_id": "u77"
+        }
+    },
+    {
+        "pk": "08480807-6a09-4b5d-86ee-a64b6b02bdac",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.436922515590066,
+            "invoice": "",
+            "user_id": "u40"
+        }
+    },
+    {
+        "pk": "c695d0a7-47d3-4f43-b13e-055acb75cef9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.342001820616549,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "pk": "ff344fcc-501c-4c22-9aab-a883047d3986",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.112486206620144,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "pk": "259dde53-725b-454e-8c5f-6595d5618057",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.915468405246797,
+            "invoice": "",
+            "user_id": "u129"
+        }
+    },
+    {
+        "pk": "4924cb9d-a3be-4f2f-82e3-cf01bc691289",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.53697712154352,
+            "invoice": "",
+            "user_id": "u97"
+        }
+    },
+    {
+        "pk": "c3759876-e23d-43fe-a9cc-5e85925095b7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.764199498655847,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "pk": "65ad821c-8eb8-4f9e-a305-23263b7edc39",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.732921329808615,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "pk": "6420f600-3f10-4f90-ac12-5903886a5e7b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.531432645104351,
+            "invoice": "",
+            "user_id": "u96"
+        }
+    },
+    {
+        "pk": "87062e04-cb6d-4519-8051-0ad9c92a46bf",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.50381871679762,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "pk": "5fc92f60-7c3b-4d41-98af-41aabcd82de5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.058403169485736,
+            "invoice": "",
+            "user_id": "u133"
+        }
+    },
+    {
+        "pk": "d7762667-7f2e-455e-a794-7a5bb65a1b10",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.953217396821543,
+            "invoice": "",
+            "user_id": "u123"
+        }
+    },
+    {
+        "pk": "3eae3dae-81e8-4df4-86d7-6f7688e25144",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.844479648694982,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "3d75ae7f-ba21-4cf7-8ef6-7a41150cf351",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.202049525740303,
+            "invoice": "",
+            "user_id": "u41"
+        }
+    },
+    {
+        "pk": "2dc4380d-f05d-4e10-a978-956d8d4cf3b4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.932119122801456,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "pk": "38c3bbf6-719a-4fd1-b672-f8fc44d813a6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.156505067399342,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "ce66ad48-f46a-4c97-a713-1fd68e140fb4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.264097662419644,
+            "invoice": "",
+            "user_id": "u48"
+        }
+    },
+    {
+        "pk": "79d22e5c-6685-462a-b8bf-addd7efd5119",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.796412135952778,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "pk": "f9bb79fe-36d8-4524-b477-69daba936145",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.123026729700399,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "101800ae-96eb-45b2-bd64-32fa3c4b5abd",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.756856411287997,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "pk": "c565ccd0-9cf0-46f2-9e78-db3f81c55ba8",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.363002278180172,
+            "invoice": "",
+            "user_id": "u29"
+        }
+    },
+    {
+        "pk": "1f38866a-3362-4239-881e-0bde14c61120",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.485745066005034,
+            "invoice": "",
+            "user_id": "u104"
+        }
+    },
+    {
+        "pk": "ffe60bb4-903c-466a-b765-d564c6dfa338",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.687831933891108,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "pk": "6a475bfc-99c5-4433-a5fd-0dfa371b75ef",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.565758580005086,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "pk": "3bd69b22-1456-4398-acd9-a758fec0ab70",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.697975145546177,
+            "invoice": "",
+            "user_id": "u16"
+        }
+    },
+    {
+        "pk": "9f1b6d3e-2c63-45b6-bad0-fe43b21fb8bb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.009693570380394,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "1e9b91cb-a14a-4d46-9c26-b3411161a37b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.736622925330098,
+            "invoice": "",
+            "user_id": "u82"
+        }
+    },
+    {
+        "pk": "c84c23eb-a772-4ae7-b025-245861fa646a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.712819395929273,
+            "invoice": "",
+            "user_id": "u37"
+        }
+    },
+    {
+        "pk": "be49cf17-f9ed-42bb-83e0-8275b180fb89",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.525093164746217,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "pk": "394d8aaf-9b21-41ba-83cd-cce35ba5a517",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.107445807136354,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "81623a56-8de3-44e1-a4c0-f1e5eb2caeac",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.888409444676801,
+            "invoice": "",
+            "user_id": "u13"
+        }
+    },
+    {
+        "pk": "d92dde9d-1da4-4211-9848-fa41e419021c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.404535896330051,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "pk": "e7c102ea-61b6-45b5-bf54-9762cf00b813",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.55380538884409,
+            "invoice": "",
+            "user_id": "u76"
+        }
+    },
+    {
+        "pk": "8f698698-fb02-4270-80fd-554362e0a480",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.306930730312345,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "pk": "89b3d6a5-1578-4738-94e4-64e3529cf3a9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.818801346245792,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "pk": "4ceb5c60-ccee-40d8-928e-2cd60f186aa6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.737945297341154,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "6ce4d43f-d6a6-4dee-89c8-8d927c0c2917",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.018666730482181,
+            "invoice": "",
+            "user_id": "u11"
+        }
+    },
+    {
+        "pk": "67cf3915-c97d-45a5-8a4b-a6219c610c89",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.97403969608228,
+            "invoice": "",
+            "user_id": "u116"
+        }
+    },
+    {
+        "pk": "54decf86-4527-4bab-a1e7-75b6de508e59",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.04479904115497,
+            "invoice": "",
+            "user_id": "u36"
+        }
+    },
+    {
+        "pk": "fb1d157b-c3ad-43fd-bad1-ed1e9c56e79c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.282362418421389,
+            "invoice": "",
+            "user_id": "u45"
+        }
+    },
+    {
+        "pk": "dfc03e6a-be0b-40e5-b4c1-2eb64c26e668",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.316126129888241,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "01deb4fb-0d24-49e4-8db6-cd546cf5ef97",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.775901293940251,
+            "invoice": "",
+            "user_id": "u122"
+        }
+    },
+    {
+        "pk": "9070c546-032b-4139-b0f0-b730df8c0429",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.761789077918072,
+            "invoice": "",
+            "user_id": "u132"
+        }
+    },
+    {
+        "pk": "779a8ea8-b611-443d-8a52-c8d399ce94b3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.906273974479648,
+            "invoice": "",
+            "user_id": "u94"
+        }
+    },
+    {
+        "pk": "cc2e6c71-88ea-4bc5-80a9-23acf4f83bd6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.700989210164188,
+            "invoice": "",
+            "user_id": "u99"
+        }
+    },
+    {
+        "pk": "c52160fd-de88-4a9c-828b-94aa35063030",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.638538823608199,
+            "invoice": "",
+            "user_id": "u43"
+        }
+    },
+    {
+        "pk": "4b26b9ec-5627-4325-a2ca-8eb11c50efce",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.53760506795278,
+            "invoice": "",
+            "user_id": "u98"
+        }
+    },
+    {
+        "pk": "4d18fd91-d8a2-4181-8590-fc1273a76286",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.125730593675808,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "pk": "e9a5c2b0-09cf-48a7-9d98-1d1ff62a013c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.998995516387374,
+            "invoice": "",
+            "user_id": "u110"
+        }
+    },
+    {
+        "pk": "003198d7-63be-4c34-b045-8ccfba93d62b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 11.609113516924403,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "6a3ad145-f6de-4bb1-bdb7-574a6bfa934b",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.60043133298041,
+            "invoice": "",
+            "user_id": "u54"
+        }
+    },
+    {
+        "pk": "2fe41875-5070-4f6e-803b-9eff625c8405",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.42786290962982,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "pk": "7ca80977-9e6a-4d90-984c-3c1b2e1e5746",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.442346931986272,
+            "invoice": "",
+            "user_id": "u10"
+        }
+    },
+    {
+        "pk": "0f1b1a29-0fc5-4e7e-a1aa-7df6bfdd609d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.947780445796894,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "a731db35-a2f1-4a09-9bf5-496a67cd8cd9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.597034586760065,
+            "invoice": "",
+            "user_id": "u26"
+        }
+    },
+    {
+        "pk": "74b507fb-5ff3-4136-969c-ad53bcc998e7",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.31791441474256,
+            "invoice": "",
+            "user_id": "u71"
+        }
+    },
+    {
+        "pk": "d0b4257b-f8da-458d-ba60-c1c4360e6413",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.399213585307905,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "6acf7a80-1876-4af9-9282-2eeb6f2b6e1d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.290751546988366,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "8b20be11-f2e6-4e35-9b4c-7c4a9007fc9d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.624290413063914,
+            "invoice": "",
+            "user_id": "u63"
+        }
+    },
+    {
+        "pk": "f614cc4c-6ad2-4ba3-949c-5746093e8df0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 9.112489289751277,
+            "invoice": "",
+            "user_id": "u75"
+        }
+    },
+    {
+        "pk": "7aee092b-c086-4635-aad6-c661d33cb120",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.866690200894318,
+            "invoice": "",
+            "user_id": "u49"
+        }
+    },
+    {
+        "pk": "11fe7404-4004-4892-92c3-1ade4e6d7914",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.162641175849416,
+            "invoice": "",
+            "user_id": "u6"
+        }
+    },
+    {
+        "pk": "d31c1591-0e28-48b0-bd17-f10ea6f840a6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.376928050385997,
+            "invoice": "",
+            "user_id": "u18"
+        }
+    },
+    {
+        "pk": "004e9e3c-93d1-4efc-8a1c-9f90159e9058",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.969024335734442,
+            "invoice": "",
+            "user_id": "u14"
+        }
+    },
+    {
+        "pk": "a870ca7c-977f-4fc9-a2b7-f84bfad92fa9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 8.706737325758002,
+            "invoice": "",
+            "user_id": "u100"
+        }
+    },
+    {
+        "pk": "29ef2f96-3eac-46b4-a5a5-2cc88f8904c2",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.533444400096492,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "62aebc62-5b41-46f1-950e-77451ecb9565",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.063874205160506,
+            "invoice": "",
+            "user_id": "u90"
+        }
+    },
+    {
+        "pk": "ed513da9-6581-49a0-b65e-3b184c084651",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.37939177327835,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "pk": "b0e17f55-5255-4633-8dd8-099cfdee75cb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.157163776850373,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "db0a258f-c555-4aec-b472-746615041f00",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.333838332294018,
+            "invoice": "",
+            "user_id": "u23"
+        }
+    },
+    {
+        "pk": "52ae2de3-746a-4904-8ed4-9d7e66982c30",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.877621378547124,
+            "invoice": "",
+            "user_id": "u22"
+        }
+    },
+    {
+        "pk": "c511ccad-c242-4455-84ce-9b8d4d3bda21",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.599285997184754,
+            "invoice": "",
+            "user_id": "u106"
+        }
+    },
+    {
+        "pk": "37c8465c-7b5b-460c-89d5-c310497f5d91",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.62607502048846,
+            "invoice": "",
+            "user_id": "u55"
+        }
+    },
+    {
+        "pk": "2aad28c6-dd03-4afe-873b-dffcadb33fa9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.090977720582867,
+            "invoice": "",
+            "user_id": "u8"
+        }
+    },
+    {
+        "pk": "cc7d6371-0a2b-4187-944a-74a57a6f6621",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.97235700548074,
+            "invoice": "",
+            "user_id": "u128"
+        }
+    },
+    {
+        "pk": "35461b0a-6b8f-4ce2-ad48-ee3a051e490c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.934707922859797,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "a6537b68-6b2b-4aed-83f1-bd24e0be5cae",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.262576830184678,
+            "invoice": "",
+            "user_id": "u80"
+        }
+    },
+    {
+        "pk": "ecd33c9b-4edc-4cdd-8b70-080a11217243",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.61161582611605,
+            "invoice": "",
+            "user_id": "u88"
+        }
+    },
+    {
+        "pk": "a074ef9b-8806-4c01-9f43-4afdde7f4543",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.184579489053288,
+            "invoice": "",
+            "user_id": "u85"
+        }
+    },
+    {
+        "pk": "eb0e7ccc-f250-4320-b818-57334928ac42",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.868419693565206,
+            "invoice": "",
+            "user_id": "u93"
+        }
+    },
+    {
+        "pk": "93068320-13a8-4fb0-869e-f0c6c2992c86",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.984263746871243,
+            "invoice": "",
+            "user_id": "u69"
+        }
+    },
+    {
+        "pk": "a4683dfe-dbcc-4aee-990f-52c7a2af0894",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.402390808836593,
+            "invoice": "",
+            "user_id": "u35"
+        }
+    },
+    {
+        "pk": "0316cb5b-b0f5-4078-9e15-e6183f0691f4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.853715731879216,
+            "invoice": "",
+            "user_id": "u92"
+        }
+    },
+    {
+        "pk": "04602948-fe7d-4a87-b912-ed0aefa4d34c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.516729931375203,
+            "invoice": "",
+            "user_id": "u46"
+        }
+    },
+    {
+        "pk": "1024178f-df9d-431f-a391-2005a5f82d0e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.35509390492908,
+            "invoice": "",
+            "user_id": "u50"
+        }
+    },
+    {
+        "pk": "09a5e8b3-8bca-4f3d-8315-58f101bbd17d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.254575724542365,
+            "invoice": "",
+            "user_id": "u32"
+        }
+    },
+    {
+        "pk": "43cebee6-2ce4-47e3-bfd4-608deaaa7b65",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.440633614725941,
+            "invoice": "",
+            "user_id": "u3"
+        }
+    },
+    {
+        "pk": "3ab633ab-4a4c-404c-8514-74f0397c7152",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 9.529423930554806,
+            "invoice": "",
+            "user_id": "u4"
+        }
+    },
+    {
+        "pk": "d2b6a597-60fe-42b8-a296-aeb1d60acb13",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.285271850887645,
+            "invoice": "",
+            "user_id": "u81"
+        }
+    },
+    {
+        "pk": "cad165ed-8a3a-43bf-a7a6-484601f1a9f9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.318488113532625,
+            "invoice": "",
+            "user_id": "u15"
+        }
+    },
+    {
+        "pk": "84c0d743-73a7-48f6-895f-a2b7736556e6",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.01045739452332,
+            "invoice": "",
+            "user_id": "u62"
+        }
+    },
+    {
+        "pk": "a844bda0-2cde-448d-84c9-2137da8a8e8a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.647420937283874,
+            "invoice": "",
+            "user_id": "u5"
+        }
+    },
+    {
+        "pk": "27e6da0f-e606-46b2-a7d0-399d7dff098d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.002036897413415,
+            "invoice": "",
+            "user_id": "u56"
+        }
+    },
+    {
+        "pk": "70127fbc-121a-4b98-8385-ea27886123ab",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.713678058190881,
+            "invoice": "",
+            "user_id": "u113"
+        }
+    },
+    {
+        "pk": "1db35e16-6992-4d76-93b9-3011210cccde",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 10.10430375039796,
+            "invoice": "",
+            "user_id": "u117"
+        }
+    },
+    {
+        "pk": "fe9d8570-80b4-45bc-acd2-784c84fcc218",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.951695703237874,
+            "invoice": "",
+            "user_id": "u42"
+        }
+    },
+    {
+        "pk": "735fb670-2152-4e85-b9a4-e5eeaa18fdfb",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 10.696466473558095,
+            "invoice": "",
+            "user_id": "u143"
+        }
+    },
+    {
+        "pk": "b0ccf84a-ffa6-4483-90d4-c17b2e54fa03",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.085641119382398,
+            "invoice": "",
+            "user_id": "u60"
+        }
+    },
+    {
+        "pk": "9a391f6d-efdb-4e11-983f-3ebc23a3d010",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.235529121044578,
+            "invoice": "",
+            "user_id": "u24"
+        }
+    },
+    {
+        "pk": "7f22805f-5baf-4bd5-b315-aac0230b6e1e",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.372461915285024,
+            "invoice": "",
+            "user_id": "u91"
+        }
+    },
+    {
+        "pk": "f3ad5830-b55c-4719-bec1-d27c0d9a4a80",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.210421543402724,
+            "invoice": "",
+            "user_id": "u141"
+        }
+    },
+    {
+        "pk": "7886f7b8-5e74-43c4-a76b-cf489e5ff0d1",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 12.205751613520313,
+            "invoice": "",
+            "user_id": "u64"
+        }
+    },
+    {
+        "pk": "db1eaed2-3bf4-4351-898c-3764fe69e02c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 12.388649708000194,
+            "invoice": "",
+            "user_id": "u147"
+        }
+    },
+    {
+        "pk": "cd42b454-632d-4a2d-9116-cef9e83b8283",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.520338318405422,
+            "invoice": "",
+            "user_id": "u47"
+        }
+    },
+    {
+        "pk": "f1a8b5c5-8447-47de-b7c3-48635215af24",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 10.959764923748104,
+            "invoice": "",
+            "user_id": "u137"
+        }
+    },
+    {
+        "pk": "60d85347-cb70-4eb2-9d89-fa3a2efacb28",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.179920763253476,
+            "invoice": "",
+            "user_id": "u139"
+        }
+    },
+    {
+        "pk": "1a923dc8-e5d5-43c1-97cb-47e63b9ec0f0",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.455603931542566,
+            "invoice": "",
+            "user_id": "u135"
+        }
+    },
+    {
+        "pk": "013b30e4-5f8d-434a-8e3c-e32489098ce4",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 10.339615468484649,
+            "invoice": "",
+            "user_id": "u38"
+        }
+    },
+    {
+        "pk": "169d442d-b2bb-4f06-b9d8-b4d3f33fd535",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 8.360030713591584,
+            "invoice": "",
+            "user_id": "u17"
+        }
+    },
+    {
+        "pk": "417b9202-f420-4d13-b599-c5f0c1c074ba",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.605899732918264,
+            "invoice": "",
+            "user_id": "u78"
+        }
+    },
+    {
+        "pk": "569e55a1-b0ae-4ce0-963e-290aaba2ff58",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "credit_card",
+            "cost": 11.328836507339075,
+            "invoice": "",
+            "user_id": "u39"
+        }
+    },
+    {
+        "pk": "f3a3a533-6feb-45b3-8ca5-5fe0c9d1870d",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.395171867521734,
+            "invoice": "",
+            "user_id": "u91"
+        }
+    },
+    {
+        "pk": "d871e8ee-2206-43ff-b41d-e3f53fa60eaf",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 11.480976994482393,
+            "invoice": "",
+            "user_id": "u66"
+        }
+    },
+    {
+        "pk": "5d9ef8d3-7b61-4fba-bb45-1a8c1be80de9",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.390849921062292,
+            "invoice": "",
+            "user_id": "u121"
+        }
+    },
+    {
+        "pk": "9e468a49-d44e-4ce8-ba7e-f9f868b6650a",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 8.945423937493493,
+            "invoice": "",
+            "user_id": "u137"
+        }
+    },
+    {
+        "pk": "f192cdc7-51d1-4199-85ef-95b7db5561c3",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 12.299423782564265,
+            "invoice": "",
+            "user_id": "u101"
+        }
+    },
+    {
+        "pk": "9dfb7d52-b0d1-40c1-9a61-32e9115e6172",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 9.465210239730691,
+            "invoice": "",
+            "user_id": "u53"
+        }
+    },
+    {
+        "pk": "494fc192-5802-4755-837e-a0507f7ff896",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 9.60383581352557,
+            "invoice": "",
+            "user_id": "u27"
+        }
+    },
+    {
+        "pk": "eb77c743-73d6-4c14-a75b-52a1881a0a11",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "coupon",
+            "cost": 8.722089140211194,
+            "invoice": "",
+            "user_id": "u102"
+        }
+    },
+    {
+        "pk": "fcce9e8e-23d4-466f-aaf4-d983153364c5",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "cash",
+            "cost": 11.278881340305421,
+            "invoice": "",
+            "user_id": "u58"
+        }
+    },
+    {
+        "pk": "525bb53a-0125-42ce-ba97-dd3efbcf810c",
+        "model": "common.Payments",
+        "fields": {
+            "payment_req": true,
+            "payment_method": "paypal",
+            "cost": 12.888774119151016,
+            "invoice": "",
+            "user_id": "u127"
+        }
+    }
+]
