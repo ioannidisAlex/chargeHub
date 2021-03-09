@@ -132,11 +132,8 @@ class SessionsupdView(View):
         )
 
     def post(self, request):
-        print("im here",request.FILES.getlist('file'))
-        context = {
-            'file': request.FILES.getlist('file')[0],
-        }
-        return render(request, 'common/sessionsupd_data.html', context)
+        pass
+        #return render(request, 'common/sessionsupd_data.html', context)
 
 
 class ResetSessionsView(View):

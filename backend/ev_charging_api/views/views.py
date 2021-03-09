@@ -558,20 +558,15 @@ class SessionsupdView(
     queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
-        serializer = self.get_serializer(data=request.data)
-        print(serializer.initial_data)
-        try:
-            serializer.is_valid(raise_exception=True)
-        except:
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-
-        file = serializer.validated_data["file"]
+        file = request.FILES['file']
         decoded_file = file.read().decode()
         io_string = io.StringIO(decoded_file)
+        #print(io_string)
         reader = csv.reader(io_string)
         sessions_count = 0
         imported_count = 0
         for row in reader:
+            print(row)
             sessions_count += 1
             c_year = int(row[3][:4])
             c_month = int(row[3][4:6])
@@ -615,6 +610,9 @@ class SessionsupdView(
             if serializer.is_valid():
                 imported_count += 1
                 serializer.create(serializer.validated_data)
+
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
         response = {
             "SessionsInUploadedFile": sessions_count,
