@@ -1,3 +1,5 @@
+from datetime import date
+
 from django.urls import resolve, reverse
 from hypothesis import assume, given, settings
 from hypothesis.strategies import *
@@ -14,8 +16,8 @@ from hypothesis.strategies import *
         ]
     ),
     uuids(),
-    dates(),
-    dates(),
+    dates(min_value=date(1000, 1, 1), max_value=date(9999, 12, 31)),
+    dates(min_value=date(1000, 1, 1), max_value=date(9999, 12, 31)),
 )
 def test_date_converter(endpoint, u, d1, d2):
     output_url = reverse(endpoint, args=[u, d1, d2])
