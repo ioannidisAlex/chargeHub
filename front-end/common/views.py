@@ -159,7 +159,7 @@ class SessionsPerPointView(View):
 
     def post(self, request):
         context = {
-            'id': request.POST['_id'],
+            'id': request.POST['ID'],
             'date_from': request.POST['date_from'],
             'date_to': request.POST['date_to'],
         }
@@ -181,7 +181,7 @@ class SessionsPerStationView(View):
 
     def post(self, request):
         context = {
-            'id': request.POST['_id'],
+            'id': request.POST['ID'],
             'date_from': request.POST['date_from'],
             'date_to': request.POST['date_to'],
         }
@@ -202,7 +202,7 @@ class SessionsPerEVView(View):
 
     def post(self, request):
         context = {
-            'id': request.POST['_id'],
+            'id': request.POST['ID'],
             'date_from': request.POST['date_from'],
             'date_to': request.POST['date_to'],
         }
