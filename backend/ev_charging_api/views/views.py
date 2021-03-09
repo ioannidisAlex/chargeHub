@@ -559,11 +559,12 @@ class SessionsupdView(
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
+        print(serializer.initial_data)
         try:
             serializer.is_valid(raise_exception=True)
         except:
             return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
-            
+
         file = serializer.validated_data["file"]
         decoded_file = file.read().decode()
         io_string = io.StringIO(decoded_file)

@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 	<div class="content-section">
-        <form onsubmit="return makeSearch()">
+        <form method="POST">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Sessionsupd</legend>
@@ -23,8 +23,8 @@
             const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
             var formData = new FormData();
             //alert('{{ form }}');
-            var file = document.querySelector("input[name = 'file']");
-            formData.append("file", imagefile.files[0]);
+            var file = document.querySelector('#file');
+            formData.append("file", file.files[0]);
             axios.post(
                 'http://localhost:8001/evcharge/api/admin/system/sessionsupd/', formData,
                 { headers: {
