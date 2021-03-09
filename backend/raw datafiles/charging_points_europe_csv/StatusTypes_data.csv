@@ -1,0 +1,11 @@
+ID;Title;IsOperational;IsUserSelectable
+0;Unknown;None;True
+10;Currently Available (Automated Status);True;False
+20;Currently In Use (Automated Status);True;False
+30;Temporarily Unavailable;True;True
+50;Operational;True;True
+75;Partly Operational (Mixed);True;True
+100;Not Operational;False;True
+150;Planned For Future Date;False;True
+200;Removed (Decommissioned);False;True
+210;Removed (Duplicate Listing);False;True

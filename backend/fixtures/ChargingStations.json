@@ -1,0 +1,4002 @@
+[
+    {
+        "pk": "0DEC69A1-CD73-41B3-99FE-AF37DC29B1CD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cb8cc712-4121-44b8-94bc-7d48fd96ca02"
+        }
+    },
+    {
+        "pk": "4F45220C-E16E-496A-9E9F-EDFD71BC679A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6eb690e0-1c8a-4cca-8c8f-7167c263384b"
+        }
+    },
+    {
+        "pk": "D7FC190B-FC68-44CB-BDF1-4B23865EEA75",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "86e658a2-a7cd-4967-b347-4cd3181bf016"
+        }
+    },
+    {
+        "pk": "67D384CC-7DDD-4D21-88DE-368F084F4818",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "59b0bf78-c217-4c67-bf09-8e2ac22003c9"
+        }
+    },
+    {
+        "pk": "0DE06F9A-DAC0-48F1-9D87-9A5280C47237",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "94d2b9bc-d877-48dc-9ed1-5e485642943f"
+        }
+    },
+    {
+        "pk": "9EA3760E-B2DE-4A6C-BB4B-61E2FF227098",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e64c5c7d-14bd-43e0-beac-789a18166ba7"
+        }
+    },
+    {
+        "pk": "8913A2E4-02D2-4A87-ABE9-AFA560B7D221",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "c42a471b-c1f6-4387-85f9-dfc485aa81e1"
+        }
+    },
+    {
+        "pk": "089C61D0-D2CC-49F1-B60C-60F1A7FBE568",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "7ec3dfc1-e493-4108-bfe5-90090e66ecce"
+        }
+    },
+    {
+        "pk": "D164713B-86F7-474D-978F-9121C19E015F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9453e5d7-c7da-4fc4-ae5a-9c9c8dcde177"
+        }
+    },
+    {
+        "pk": "3AD7C90E-CB2A-440F-A620-C32702D2A3A9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6d3bb828-44e8-43cc-b7c6-d26fa229752d"
+        }
+    },
+    {
+        "pk": "9C04868C-592A-419D-83BA-D9A4B6442A95",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b14b0700-d36c-4fea-8766-722a6ea2da6d"
+        }
+    },
+    {
+        "pk": "79DD5F16-B9B6-4C9A-8146-C3638747BC6C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "72347cbb-5416-4222-80cf-14b672af35b1"
+        }
+    },
+    {
+        "pk": "4AE8B324-8216-41D1-92A2-9BAC5FE834D9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d8d78053-9582-42bc-83f0-1217c2ff4e04"
+        }
+    },
+    {
+        "pk": "C8299F01-BF4C-427C-B0CA-392AE00C398B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a2a1df36-895a-4bfc-be0c-4f1aa4364cc1"
+        }
+    },
+    {
+        "pk": "2D888788-33AC-4D1C-AB94-F03D4D0D353D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "87aebe0c-f64b-4a12-915e-45addebda3c0"
+        }
+    },
+    {
+        "pk": "4B1A87DB-5971-4C3C-82B1-DBDBCF581BB9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8d720ccb-80e4-4570-9ca0-92c8d3fdb4f8"
+        }
+    },
+    {
+        "pk": "EAB258AF-48E1-4B9B-BE88-E5B9BB5E303A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a398061f-f247-459b-a2ec-94bd087567ff"
+        }
+    },
+    {
+        "pk": "7C577BAD-C8D4-43C6-899C-FAB50BDBFE18",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c8fa9d37-2117-417f-af8c-e859452e68a6"
+        }
+    },
+    {
+        "pk": "0A916ACC-3A93-4C4D-A23C-25DEF183C4FE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "74d3184f-e765-4bb2-b7c3-942592a02006"
+        }
+    },
+    {
+        "pk": "1FC320F8-1ADB-4408-B935-499CE50D7AC0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e814b4bd-4b70-4df8-b5cf-3a1d815a5aa3"
+        }
+    },
+    {
+        "pk": "BB3B152F-70CC-4F05-B9A1-64770BB8D8E9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d4d6d9c4-7ca5-42b2-b2fe-955a5b2ccf35"
+        }
+    },
+    {
+        "pk": "C24A6DEC-C4FA-4CF4-81D5-9F33C79463A7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "73cf8357-102b-428e-ae99-5c1b618c4e28"
+        }
+    },
+    {
+        "pk": "3ACC4F70-9A25-4D00-97B2-420FDC322E5E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a1967256-076a-4676-b526-2438f9b445b0"
+        }
+    },
+    {
+        "pk": "2BF855D4-B416-4903-9769-15EA4071DF94",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "51278e18-d381-4050-be9a-eb60232c7f69"
+        }
+    },
+    {
+        "pk": "8736F2D8-D44B-4C6E-8B0F-5EACA87268E1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b548e9e1-a18b-461a-9403-ded55cf752ee"
+        }
+    },
+    {
+        "pk": "253D3609-C206-4626-9512-671B6B3F4FCD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "bce47fb1-b207-4a72-aa58-8307cb805402"
+        }
+    },
+    {
+        "pk": "B7870AC2-662C-4B03-847C-E6977B4DA695",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1c06cb20-ef47-4373-83c4-b8a001690876"
+        }
+    },
+    {
+        "pk": "3E59631A-5200-4812-AB63-F3B5E9643B49",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9a633b0e-3920-42cd-88c8-6ef2679c7259"
+        }
+    },
+    {
+        "pk": "3D06FC52-A678-473E-B00E-9E8E23418B9E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d57b79ba-767d-4aad-b6e6-8831e7c07a79"
+        }
+    },
+    {
+        "pk": "4680D715-54ED-48C6-AC9D-FC92EE0BB5C4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "57c8fdf8-9c7a-441a-ae73-e3a042b96e90"
+        }
+    },
+    {
+        "pk": "200AD385-DCEA-4DA1-853D-23CBC87DBA1B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5632908d-1fef-44d8-80c6-a9de103e4465"
+        }
+    },
+    {
+        "pk": "CD6B4C64-AFD4-4C03-BF86-AC01B7C048D0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "af84834f-9688-41dd-895a-29512609f7d7"
+        }
+    },
+    {
+        "pk": "E2051CD7-015A-47E4-82F5-AF1958E50490",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4b95d57d-eeef-4fe9-9fc0-784dea89f705"
+        }
+    },
+    {
+        "pk": "73431893-D671-4940-9C21-C8A2A5823F6F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "90fb9c28-a50b-426c-905a-2c42a8b27959"
+        }
+    },
+    {
+        "pk": "5471CDCB-4BEA-422F-BF86-F1F5A5689A95",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "008bcbf0-9c47-4027-981c-71053b529fcb"
+        }
+    },
+    {
+        "pk": "1662BA94-1FE3-4C1E-B5DA-6C4A49033F21",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d46af0f6-dff1-483d-9637-5e37e3443e0e"
+        }
+    },
+    {
+        "pk": "CBE9B0D6-71E3-4804-BCAD-EDE5B18948CA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "1e374aa6-bdd1-4583-a568-6ec21c5a6a87"
+        }
+    },
+    {
+        "pk": "A662B6EB-B5D6-4E9E-BAD2-3678FFDEA07F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d0fe7a5c-a6c4-4458-b0be-2480221fe03a"
+        }
+    },
+    {
+        "pk": "A77CA6BC-2DBA-4F0D-823A-726C8C099811",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f0cdb9cb-a5ed-49db-85bd-0e493852e3ae"
+        }
+    },
+    {
+        "pk": "2F6BB8CB-42F8-4B4E-92F5-BC8076FBFAF3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2d1565a4-4284-41d4-88ae-e8f241c3f2bf"
+        }
+    },
+    {
+        "pk": "4798BABD-598B-40F5-B114-AC9685923E3C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4a0208ec-d680-4f14-be7a-d660361ab090"
+        }
+    },
+    {
+        "pk": "456D7CB1-6ADD-4D55-980F-20EA5D56F5BC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "42cb0c69-283d-420e-a909-dfe8bce28f2b"
+        }
+    },
+    {
+        "pk": "2234D26C-0083-411D-84A1-899A572E70D2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "774c3b0c-66d9-4f85-9f27-e28265b89f7e"
+        }
+    },
+    {
+        "pk": "53EB0E9B-FBDA-493B-ACB0-EAD4F2F4E71C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8156753e-2405-4ba5-bb19-b0d2b71d19b8"
+        }
+    },
+    {
+        "pk": "659F043C-4216-4B51-B6C9-2B33864C8209",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6e4dd940-eac0-4363-b335-cd6ee96dc94a"
+        }
+    },
+    {
+        "pk": "DD8E4A2F-B3A3-46A0-8642-27F0B94BC88D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9dbcecbf-bd6e-4767-bcf7-c9403e1cba24"
+        }
+    },
+    {
+        "pk": "89002793-2737-42ED-8AED-61161E83F82B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "261a4f5e-9003-4428-8295-161ca4462b4c"
+        }
+    },
+    {
+        "pk": "6A5A662A-2B4B-4542-9217-E95E5B80E4DB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9087b9f8-766e-4c81-82a4-512a6150c342"
+        }
+    },
+    {
+        "pk": "426BF41B-148C-443D-96FF-3BDDC4ECF4FD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ef28c127-6523-4649-a3a3-afcfa0072b79"
+        }
+    },
+    {
+        "pk": "2C27BFF1-5EB1-4BA1-B39D-BF6EFBC19B59",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "73a8c5e4-e1cc-4dab-a851-cb2c33df6a32"
+        }
+    },
+    {
+        "pk": "CA189569-7F58-40E4-90CB-3D8DC0A5933A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "41962707-0ca0-4c02-bcaf-8df3aa220923"
+        }
+    },
+    {
+        "pk": "55A4C783-7B98-48DE-B268-7A74A58ABCB4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "dc3d4f7b-b080-46eb-84b2-de7a00f2ce7d"
+        }
+    },
+    {
+        "pk": "D781576A-634B-4691-8E0A-0485B9EE9A07",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "28af43ff-07fe-4244-a486-058236cdb750"
+        }
+    },
+    {
+        "pk": "4BB9EEF8-5663-4215-9698-BF091994F742",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "93344796-ff61-405f-827a-342b15446e5d"
+        }
+    },
+    {
+        "pk": "9EB50A0B-06B1-46DC-8B1B-EBBB6B5BA62D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "621db7df-448b-449b-8877-e47f27be8391"
+        }
+    },
+    {
+        "pk": "71371118-6F55-4BF8-841E-3482E7A2CFA7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "48e0aacf-b3f7-4f93-91aa-04afb7ca4374"
+        }
+    },
+    {
+        "pk": "483E207D-A2B0-4382-88CF-B3ABF854AA03",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c9c0041b-4d86-4460-ad09-d05ad4042a0c"
+        }
+    },
+    {
+        "pk": "16B82CBF-A73E-4F3A-A41F-ADAEADADF95A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "40830315-23e8-4161-b5ee-0d62ae221121"
+        }
+    },
+    {
+        "pk": "5C5CDB33-3788-40F3-88DF-FE7A9DF648EF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c6039421-5ba0-444d-82ff-419d09f127f3"
+        }
+    },
+    {
+        "pk": "A2792479-B141-4F14-BB9F-B13B2CB328FA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "33a0412c-2342-45da-9803-b07f84c1e325"
+        }
+    },
+    {
+        "pk": "E9445EBC-57A9-4A81-849F-1789DCD823D6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e35fc015-371b-451b-be4f-86f10a11cee1"
+        }
+    },
+    {
+        "pk": "219C33B3-4C8C-4729-BC09-2544CAD9CF1D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ed748fc5-2262-47b6-ad69-232aa916b9cd"
+        }
+    },
+    {
+        "pk": "776094C1-8B08-405F-A181-520FC84E1FE5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9ddcb195-89bf-49b9-b3ed-59656653ce36"
+        }
+    },
+    {
+        "pk": "8C24D322-9C86-48AA-9F38-588A8D33679C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a5a60dab-43e6-4eba-9112-ace6fdf3beab"
+        }
+    },
+    {
+        "pk": "C2FD12BE-4749-4466-87E3-6CF442B35C47",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a642da8e-2301-4bbb-9e26-fd5b6fdb0929"
+        }
+    },
+    {
+        "pk": "80032492-15B4-4F3E-AD35-3A0DC756F250",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "61b8a15c-65a9-488f-a393-dd3319d34778"
+        }
+    },
+    {
+        "pk": "0ACBD796-D129-43B7-9DC9-2B98BB46C6D1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "93635d22-30d3-4d33-bc61-cf951bfa396e"
+        }
+    },
+    {
+        "pk": "46AEE3DC-7A88-480F-A5DA-238E26BF1594",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7bb57088-8c62-4db5-918c-53a99b65bf36"
+        }
+    },
+    {
+        "pk": "045B5A4A-469C-42EC-8167-F126473E81CD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "37139fd8-7d0e-4030-94c4-9065c94ccb98"
+        }
+    },
+    {
+        "pk": "3E096B30-665B-4DD0-8D51-770DFC8BB124",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "013b6d19-6ed8-460f-ae6c-b41df287f149"
+        }
+    },
+    {
+        "pk": "BE618DD9-A065-4949-98D0-90EB218D83A7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9717499d-eba9-4596-a211-52640d184d50"
+        }
+    },
+    {
+        "pk": "E6CE8F41-F6EF-4A60-A868-5460F2B95098",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "200c39ce-ea2b-4bc2-a60a-4da1ec7e29ab"
+        }
+    },
+    {
+        "pk": "0689BDF6-B124-47AB-8A57-9A720541A5F0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6d0671b8-47c8-47a7-87cd-261e26e27bbd"
+        }
+    },
+    {
+        "pk": "8D20DBA1-75DD-4C39-9E23-B955A039B076",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9083d19e-8a4d-4d00-b738-671e314bc479"
+        }
+    },
+    {
+        "pk": "32DA0F81-4915-4CB8-9234-9F2488F62FEA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0b5106e5-6009-476f-bca9-0bfd43cafb65"
+        }
+    },
+    {
+        "pk": "D45515FA-7199-4277-ACF9-92E445C54709",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "79165a5f-d70f-4424-a77c-d63999429890"
+        }
+    },
+    {
+        "pk": "2133707B-C4BC-45A1-8D20-4B20CCB945D6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "fe086bc0-30a9-42fa-bfbd-012116dbc790"
+        }
+    },
+    {
+        "pk": "EA0E7F09-755E-4ED0-8FF1-266A1B48B256",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "60897fc4-d19c-4e11-8b2a-69aba34ac970"
+        }
+    },
+    {
+        "pk": "3433DE00-A0E2-411C-90BE-11D87180F1B7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "bcc00a85-4d79-4879-acb4-6b57af251d65"
+        }
+    },
+    {
+        "pk": "92E8CFCE-2D30-41C2-A80B-63E0FA025A97",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5ca2b1ed-a3d8-452e-a1dc-b802fa9cd66e"
+        }
+    },
+    {
+        "pk": "F39A5FBD-92F8-4C07-8362-FC1EF97FBB1C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "28bd1287-9524-4fab-bdbd-35b5b892859b"
+        }
+    },
+    {
+        "pk": "485F91A6-CC5F-4BA5-AF7E-F9DB4A7BBB4C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ab52c10c-404b-4899-a858-7e6bc1c1912b"
+        }
+    },
+    {
+        "pk": "458EEA10-5709-4672-8D72-1D63D79D5F50",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d9684292-da33-4bb9-8d45-fbdbb58fca11"
+        }
+    },
+    {
+        "pk": "358AD7A4-6316-489C-8BCA-A16936850990",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "bbe4dbe4-6881-464f-b1c2-9c8f05471bce"
+        }
+    },
+    {
+        "pk": "C7C04F01-1C62-4D86-AA2C-06A19C5698BC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "10da4aa3-cd2a-4c75-918d-6630fddc6732"
+        }
+    },
+    {
+        "pk": "B305E941-14A0-488D-8555-FD6C96174A0B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6e809c3b-db2e-4872-a78b-a347db8888f3"
+        }
+    },
+    {
+        "pk": "46D0228D-5743-4F7B-9A54-36D08AD40024",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2366d15e-f12e-4c4a-ae09-cf59c12368e1"
+        }
+    },
+    {
+        "pk": "B263A22D-5EA5-4828-B3AD-CD41A7CA88EE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "94dc2f9a-d03e-4340-b74c-ca5e56f6804c"
+        }
+    },
+    {
+        "pk": "590B2247-AEEA-4B46-8A6A-2B57E7634955",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "385db4b7-f007-4255-b7af-65ce217702ce"
+        }
+    },
+    {
+        "pk": "8C1BDCA8-C84A-44FE-9746-6509CDE3D691",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "60be012e-b6c9-424e-94b0-9e51f20b86c2"
+        }
+    },
+    {
+        "pk": "C362C5AD-400D-4B06-AC59-07C98BABB2FA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0a8057a3-081b-4084-aa35-d19371992484"
+        }
+    },
+    {
+        "pk": "08A36368-0ACF-47AA-8E05-C9E154906955",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ddf34583-98f3-4f96-9c81-521758f6597d"
+        }
+    },
+    {
+        "pk": "1430A4E5-E181-484E-BA4A-3A8CF081F348",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "c1e7ca7d-07ee-4c3c-b4a0-8a07cd2304db"
+        }
+    },
+    {
+        "pk": "25228B9D-2C38-4061-9467-C681ECDE555A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4482eaad-82e4-407a-a159-882c14609e70"
+        }
+    },
+    {
+        "pk": "6554FDB2-EEB4-40BF-8D63-9F186ECB4F02",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "27f1ecc8-0c1b-4e07-b2a4-d9f1886cd753"
+        }
+    },
+    {
+        "pk": "903669FB-3D05-47DD-B5C1-01EC5CF44ABC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "fb8917e7-e57c-4293-b013-24d25f4217f8"
+        }
+    },
+    {
+        "pk": "CF7327BF-14AE-4150-851A-F0B8C7B19371",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d1e36b3b-b70d-450e-b650-48b7809eaaf2"
+        }
+    },
+    {
+        "pk": "747D5FE3-DD31-4782-83DF-5178CFE5D8A2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "27d9d3ce-cd9c-4e83-a9b3-9f1b4b4b1e1d"
+        }
+    },
+    {
+        "pk": "E2BEAFAA-F15B-4936-AEED-B7C4258CA518",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a13f83d9-d06f-4f22-8db4-3c4e3b42e938"
+        }
+    },
+    {
+        "pk": "297228AB-C38B-4E7E-92BE-CE1231970016",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8de367a8-65fe-4116-ab06-0707e272eb77"
+        }
+    },
+    {
+        "pk": "3DFFF1E5-AE64-4118-BD5D-D06C786A6750",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "20cb4c4d-b5e8-48df-8f7d-b574edd152a8"
+        }
+    },
+    {
+        "pk": "5F07132C-6B90-48CE-814B-5C380ABB8FAA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d004c975-ba15-4bbb-9b7d-80c3ce8e17f5"
+        }
+    },
+    {
+        "pk": "F1A98B79-74FF-4FC7-B95C-62061FF60227",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "37f70226-4f14-4e10-a528-0eeb69b718ed"
+        }
+    },
+    {
+        "pk": "1A767B0D-21D6-4AAB-979D-06E2B7D2D435",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "24a863c2-c499-404c-916d-c3967fa1b6b8"
+        }
+    },
+    {
+        "pk": "4671F585-34ED-4767-83D4-7C08098C4FAC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f30e211c-17be-439b-9d17-f89ba2ef1b1f"
+        }
+    },
+    {
+        "pk": "8988D068-6084-4E90-8F76-914431DEDC98",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "982c927e-0603-4660-bfb6-340a14154290"
+        }
+    },
+    {
+        "pk": "90319C29-276B-4A7A-8963-7F6480F7009E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "eede776e-bde7-439a-bea5-3d2454b7f755"
+        }
+    },
+    {
+        "pk": "C7615DCC-1AC4-48D1-BF83-18F2FAC2896F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "b4035d91-1255-4fb3-bc63-67ea52151418"
+        }
+    },
+    {
+        "pk": "B6238AD2-B2AE-4943-82B8-0C117C373B6C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "bbec6fda-440f-4d9b-bd37-cec1b9c18bd5"
+        }
+    },
+    {
+        "pk": "05F91E5F-7407-4ECD-AAF2-9FF515478D51",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "176bd7ea-fcea-42c9-8f09-17d522a7a392"
+        }
+    },
+    {
+        "pk": "4A8AD5EC-6D4B-4943-B62F-B02343D2969A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2ca800e1-b9b2-4418-a34a-0c61a9efe604"
+        }
+    },
+    {
+        "pk": "3E0D8E3E-7E7B-4362-A55F-C984B597BAB7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "977ce2d0-60ef-46cc-aeb1-1b4eb2e5a7e9"
+        }
+    },
+    {
+        "pk": "343AAF97-5B4A-4775-8CE7-0019EF13CB59",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a52f69ae-1579-463d-bdb2-e34ea6e8a03b"
+        }
+    },
+    {
+        "pk": "F7769E3B-D477-4190-B4D5-C8550344FBDE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "eb100595-1f1e-4960-b484-abd5e5527df0"
+        }
+    },
+    {
+        "pk": "FB3F630D-C3E8-4C4C-9004-4EF2CBF34124",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3871b1a0-18ed-45e4-b7f2-0a2660be1b37"
+        }
+    },
+    {
+        "pk": "94AE6796-0819-4FCB-921E-649DD55ADBCE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8596e581-0a05-45d1-aa85-8f484a0c3f33"
+        }
+    },
+    {
+        "pk": "03B4A48D-CF12-42F3-B325-70EF9C80676F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5558b118-d1db-4009-8b9f-fa8c469f8756"
+        }
+    },
+    {
+        "pk": "B6988319-51FF-465B-8441-676A717C3490",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d8097046-3e1a-4742-9d30-e7fbdd4c055d"
+        }
+    },
+    {
+        "pk": "0ACA1F57-0D51-4D6B-A9BD-AB4F1C153A7B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e10d7920-9ef7-4dc3-a656-a8c3076045fc"
+        }
+    },
+    {
+        "pk": "4A104324-2670-4AB0-A8CF-CFB9E40D2A3C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d5705b9b-1813-4225-a9ad-5c6267ed9599"
+        }
+    },
+    {
+        "pk": "680D1A6B-2010-4053-9DD6-116B69BA47F4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "19b218eb-257e-4683-9835-e53612bfb1d1"
+        }
+    },
+    {
+        "pk": "5061DA53-66A2-4849-8AFE-5CD263C79ECF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "27605039-7c9f-41f0-84fc-c7881ed160e8"
+        }
+    },
+    {
+        "pk": "8F7CEA60-16A6-4B98-B016-A056561428A9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "b4006c76-ecc9-477b-a3d7-b3a51a310606"
+        }
+    },
+    {
+        "pk": "9B0C5372-2992-478A-9477-5A6E849F7F4C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "62dbe2af-b9fc-43a5-a4e6-59761761f2bb"
+        }
+    },
+    {
+        "pk": "D61A3258-902B-4369-9447-80063ACB65E5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e48d0f71-121e-48b8-ab88-166af8f14b74"
+        }
+    },
+    {
+        "pk": "F37B97FB-622B-4BB1-B11E-5EA3081014C4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "54bf1709-2f8a-48f1-ae95-39860c4a505b"
+        }
+    },
+    {
+        "pk": "1C852AD7-B3BF-42A9-9520-2D8650905652",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "25400888-a7e8-40cb-bdc8-49578a9471f8"
+        }
+    },
+    {
+        "pk": "C670F464-7531-491E-BBC1-785ADDC2B518",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c435bdd9-ebc7-4488-bd45-f24949d22638"
+        }
+    },
+    {
+        "pk": "AA036120-D495-42E1-AD40-1428FDEBC61D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "fe73f3b0-a732-4942-8ff2-73db588de6a6"
+        }
+    },
+    {
+        "pk": "2393D8A7-7D0A-4A0A-BF67-F00E61667F92",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a47d8985-24b6-40c3-809e-411e4d0398ff"
+        }
+    },
+    {
+        "pk": "A4E1DF0E-6E29-4B4D-8602-AAABB2F689F9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0b18d55b-7d21-41b2-a0c3-fe6872c3b7e6"
+        }
+    },
+    {
+        "pk": "2AA4FBA5-001B-4FB5-A190-E381BA55740E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0577077d-5ff1-430b-a2a6-0d4e8f3a7a08"
+        }
+    },
+    {
+        "pk": "B0EB09F9-960A-4CF1-814B-ECAE035F1293",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "68a9164b-9e49-42df-b0f2-9c194238d17d"
+        }
+    },
+    {
+        "pk": "EE23B3F4-B3D3-4B9B-BBD4-97818C0E49C9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ac223f22-a2c1-43aa-956e-411dd8123cd0"
+        }
+    },
+    {
+        "pk": "C49D34DA-35F9-4CE2-BB69-EDC0C4D0B926",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "7cd93e97-3d80-4191-a063-48b59182c1c1"
+        }
+    },
+    {
+        "pk": "B7027E04-2E9C-427B-94AA-8AA55521119C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7c3a059b-75b7-42b3-96d7-44f512630208"
+        }
+    },
+    {
+        "pk": "3D54B5CD-21D6-4B03-BBDF-337119291764",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "105026c3-e3a1-4e7f-a052-3ecf33c83f6f"
+        }
+    },
+    {
+        "pk": "90F65428-F9BD-430C-90B6-9EE57A0A83B4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "28478edc-203f-4f92-b594-6c5ca5d743f2"
+        }
+    },
+    {
+        "pk": "B204DA8C-979D-468C-AD50-A8E90104350E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "896a9f8a-0d05-4fdf-9cae-882f4b95d0bb"
+        }
+    },
+    {
+        "pk": "9A07F560-FCE1-45D1-8F03-F13A128807A5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a12d8f80-2b40-40ea-a86a-9dc28af9c9dc"
+        }
+    },
+    {
+        "pk": "31075E5F-F57E-4883-A859-100357B5421E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e0c661bf-7d08-4cca-9c0f-f45be0c568d9"
+        }
+    },
+    {
+        "pk": "DE117C5A-12A0-4422-912B-C17999776C35",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "efb0a582-b31c-41ae-a446-a5385e698403"
+        }
+    },
+    {
+        "pk": "32ABAE2C-0F86-4425-9D21-EA4E665CF916",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "62b20003-9361-4b18-a9b8-65266f1b3e3a"
+        }
+    },
+    {
+        "pk": "641085D5-AA04-46F4-A326-85DD3DEC6992",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3dade70f-1802-4196-ad1c-78cc893ca36b"
+        }
+    },
+    {
+        "pk": "CD86CA90-5EDD-489B-B5FA-94BEF73B227D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "50dca3f1-8121-4891-86ad-fb82ce2cfc58"
+        }
+    },
+    {
+        "pk": "47EC1C39-CBC8-4858-9FF9-F8C32BDE7642",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d15514c1-e7d0-48b5-92ed-ca8147a86c53"
+        }
+    },
+    {
+        "pk": "EBDAD356-93E6-4F27-AB9F-0DCE3D903907",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d7609fb6-24e2-43cf-b768-9a513034143e"
+        }
+    },
+    {
+        "pk": "BBFC7451-F905-4511-8E89-FB76DF2D6EC9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6ce77383-91a0-463f-a1a0-4106db43072f"
+        }
+    },
+    {
+        "pk": "46AE7CE8-4427-44DF-B018-DAB6F6FFF08C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4b6fdf2f-8fe1-4759-9f1f-8d98b10754c5"
+        }
+    },
+    {
+        "pk": "79740B77-D37E-49A5-BE4F-C1E7AA20ADA9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8fc0fe08-63f9-4bdc-80a3-bb8dd4c93083"
+        }
+    },
+    {
+        "pk": "70F01523-0C4C-427B-8CC2-82D8732708F1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b9957e1f-16a9-41d8-ab60-c6eff27603aa"
+        }
+    },
+    {
+        "pk": "D2339F9C-C00B-4BE4-A52C-62F2F28465FF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8ab630e7-901f-4c3e-9245-5463d88badcf"
+        }
+    },
+    {
+        "pk": "1AB9D2F7-7BCD-43A8-8903-D9209967CB8F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "15db52d3-2f69-4dfc-b1a4-c8a81104c69f"
+        }
+    },
+    {
+        "pk": "B088485B-5A14-4506-914E-84FE8760C325",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9949ece2-673d-4a79-87ae-e5cb34daadde"
+        }
+    },
+    {
+        "pk": "48E7840C-7AD7-4455-A95E-E6A4075297A8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4991a7cb-ff95-40f1-b43a-485c445b352c"
+        }
+    },
+    {
+        "pk": "24A0D11A-51EB-4C83-8F8E-656B09A7DCAB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "706b1bde-e8b6-4ddc-a5c5-21ac03189657"
+        }
+    },
+    {
+        "pk": "E2DFA4A4-BFBE-4029-8ACD-8FE202D0EF18",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "28cf5ba3-337b-4b55-8e0c-eae43efd7fd4"
+        }
+    },
+    {
+        "pk": "67DB64AE-B5E9-480D-90A1-D34D1B9476ED",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a4a0c099-6196-4ba6-b4cd-573f5c3a153e"
+        }
+    },
+    {
+        "pk": "A6630FCC-6C43-4319-966D-5BFE0A9B501F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "aad16b86-03f6-4854-aa32-af4a4b69b0b6"
+        }
+    },
+    {
+        "pk": "3B065E06-549B-44E1-AD89-8DB792AC8441",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5c7eec99-66ba-433b-b5be-acc9b729ea0d"
+        }
+    },
+    {
+        "pk": "625FB056-7758-4FC5-924B-C1C5CFF890FF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "fc4bdb9c-e03e-4809-b0d9-e5c6dcdbb85e"
+        }
+    },
+    {
+        "pk": "3E539303-6BFB-4800-9070-A27F4B03292E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "bd89636e-387e-4041-8c21-7defa53cbe51"
+        }
+    },
+    {
+        "pk": "2B33003C-3B47-4AAC-8E13-7883844AE2AC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "33aeac91-0b6d-4904-9ef4-3e0acf954136"
+        }
+    },
+    {
+        "pk": "100B2980-EA04-454E-BA49-36A8E9222F1C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4d2fefb7-7c27-4c4c-854b-c220a6f47c86"
+        }
+    },
+    {
+        "pk": "126833F2-8046-4225-AD82-A8B5CCFAC888",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6db20f55-138b-4319-8463-25cce8355e99"
+        }
+    },
+    {
+        "pk": "6F9026A8-4228-4158-9D62-FA8947B8C0F9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d36c3781-585a-42de-be90-b3a095843a59"
+        }
+    },
+    {
+        "pk": "3C299A03-C52D-4254-A77A-045AB96E21AD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "595cf454-8185-4534-8509-8fed81f46d83"
+        }
+    },
+    {
+        "pk": "4D16F793-AE94-4251-8326-A15E0039E6D0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4b71a1ec-9eaf-42f6-8211-c601f061ddfd"
+        }
+    },
+    {
+        "pk": "4804390C-4AAA-4DFC-8F84-F4D62FA7BB1D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "dba06e87-2b5a-43ea-a3e0-38c0496b4f32"
+        }
+    },
+    {
+        "pk": "BFA31BBC-7D4D-4FF5-B5EF-8678F5B31571",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ab81c1be-5bfe-401d-b896-448af0f55b0e"
+        }
+    },
+    {
+        "pk": "3E408AAD-5DFB-4E00-B350-D6B92009DC7F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "593a3961-c71b-47a3-aa1f-ad391cb426ce"
+        }
+    },
+    {
+        "pk": "B62710EF-DCF9-446F-A911-8E91DAD625DE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "196bde45-d6c3-4108-8abf-849dc6879205"
+        }
+    },
+    {
+        "pk": "D5D8238F-A318-414D-9BD3-5AE409A81E20",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "40702bfe-9363-4915-89b5-4978850d6c63"
+        }
+    },
+    {
+        "pk": "19107A0E-0AA7-4624-A803-608C18A9143B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3ce629ef-f831-4b52-b05d-21b57e79849c"
+        }
+    },
+    {
+        "pk": "67B47970-8B59-463E-9A69-0CFAF44816B7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e7557c5d-e727-4f60-92fc-8490d008d382"
+        }
+    },
+    {
+        "pk": "6F692D28-0117-47F6-A2A3-0A0F4A04435A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d9604569-24fc-4e6a-9520-a858626315f5"
+        }
+    },
+    {
+        "pk": "7D11D986-F0F5-4C60-920D-44878578299F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "19d2ac98-a987-415e-a59d-ead69d519e17"
+        }
+    },
+    {
+        "pk": "550F42AD-010A-43BD-BB93-ED45A9276D99",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6b84d8b3-8c4d-417e-8e34-caec51c7ef79"
+        }
+    },
+    {
+        "pk": "8708A1F4-FDD0-423B-A90E-D9C1627CB622",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7264b4d7-768b-4c3d-b3c3-d44c2183a4fe"
+        }
+    },
+    {
+        "pk": "08F3907A-386E-4990-B4D0-7D8433271D62",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "603df4bc-a862-47d6-8f03-20cc39d11d94"
+        }
+    },
+    {
+        "pk": "93DA94FD-14AB-4AB2-8D09-FB7BE8BA2A2B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "58331105-5951-465a-a09b-79993bb296fa"
+        }
+    },
+    {
+        "pk": "6641DA90-E592-425B-92E5-3DB7A5A167B1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8432f485-643a-4e33-a1f7-8efce14ec625"
+        }
+    },
+    {
+        "pk": "A9E7C056-BFB0-484E-B2D9-32D50A69C443",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "13de25a7-1cdd-4eb0-bae2-d08cf53f4307"
+        }
+    },
+    {
+        "pk": "C0D16B05-7B5E-447A-8A6F-28AA79C7D9D6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6a79c62f-1cbd-455e-9167-4cd3c5a7fa41"
+        }
+    },
+    {
+        "pk": "F0370746-8E2D-4987-8DEE-77EE9ACDFD85",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0f96313e-9318-4858-bd33-ee7116a22b0d"
+        }
+    },
+    {
+        "pk": "3CAD7E95-152A-42D1-B226-3DCA9F25B389",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9fe880c1-fea1-4366-bd73-9042244ca471"
+        }
+    },
+    {
+        "pk": "14369892-DEEE-4A33-AF61-D642270B4FD4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "952dea95-24c3-4dea-81f6-33db42ee9802"
+        }
+    },
+    {
+        "pk": "CB967246-F268-43C8-AB35-BE6DF106E782",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2b11917f-dab2-48e4-a7e8-e87cfed6ed81"
+        }
+    },
+    {
+        "pk": "0BC0A7CC-626F-4D42-AF6F-1147E2465BE5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0d2ba062-07d1-4603-88cb-0cd1a337530f"
+        }
+    },
+    {
+        "pk": "750447F3-9911-411B-996B-19A835A4B416",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "21b721d3-68aa-4516-a917-028308d1369a"
+        }
+    },
+    {
+        "pk": "79CEAA20-A779-4A87-8338-810DEF26C635",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e31598d8-6e1c-4915-a1bc-94dd9de19687"
+        }
+    },
+    {
+        "pk": "DB3A6BA3-358A-4394-A7C5-0E38031BD5B0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4740ded9-bf5c-4155-b407-9da8f1e6ee57"
+        }
+    },
+    {
+        "pk": "2A8636FC-A12C-4080-A056-C9DA426017AB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "811f7b7b-d05d-4255-b0bf-c293fe21ed64"
+        }
+    },
+    {
+        "pk": "CBBF315E-0849-4325-977A-666B0DC786D3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "054b626f-c69f-4b06-9f75-0f7343d06dea"
+        }
+    },
+    {
+        "pk": "94E8F510-AA49-4064-9A79-BAFEA8556880",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "20032daa-a13a-49f7-a035-2eba3fb92c95"
+        }
+    },
+    {
+        "pk": "0D3B969C-989E-44CE-83AE-54FA659BF97E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "3754ddda-2bd4-4474-9207-2c83ae7809dc"
+        }
+    },
+    {
+        "pk": "D06E0C32-FD98-4DF1-B25E-966E853C4157",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c5ed7a4d-fa4e-4ca9-a07f-1f1318a9d759"
+        }
+    },
+    {
+        "pk": "DE3F2FE1-22C9-4648-8038-97575D61EE5E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "fe184da4-a26e-488e-811a-d0efbb42d57c"
+        }
+    },
+    {
+        "pk": "7C4A2AEF-D234-4C6C-948B-6E4F7118796A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "538093b2-f90a-4c30-9658-f75af3163228"
+        }
+    },
+    {
+        "pk": "124E9364-393C-4136-935B-7B976EAACC11",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "92b9ec5e-ad12-4682-b0ee-29ce8b81c624"
+        }
+    },
+    {
+        "pk": "9DFE8777-499B-4E37-8F5C-DBFCA830EE92",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "88b49534-9eaa-4525-a724-e8405765e620"
+        }
+    },
+    {
+        "pk": "AD3B1B33-6869-4CA2-B4F7-DCA26314FFBB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e5e81b6d-2f30-46f2-9982-55b2eea353fb"
+        }
+    },
+    {
+        "pk": "040899F5-8F66-477D-A1D7-9E7A8CDC7C27",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "13fb259c-fd03-4cc1-952d-745d522a1950"
+        }
+    },
+    {
+        "pk": "5592D737-1FFF-483D-8336-7CC6E2C85D81",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e0b8106d-975f-4f15-9e84-4bf0c189ec60"
+        }
+    },
+    {
+        "pk": "F3762545-80C1-47F1-A167-959C10FC1BBD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5fb7fb43-5c35-4d63-90fe-5ff553d3b065"
+        }
+    },
+    {
+        "pk": "ECDB5393-6BB1-4A2D-A0FC-D62025ECBE6F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "bc6de22a-726a-475c-acb7-2eb7ab1882b2"
+        }
+    },
+    {
+        "pk": "D52BA5ED-A9EB-41EC-BFCE-710893A08ADA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8a71e269-870e-4af8-8313-567a1f584ae4"
+        }
+    },
+    {
+        "pk": "9787088F-6602-48D6-8030-BA5AFE8B633D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ded4432b-729b-4447-9974-f09d8f536688"
+        }
+    },
+    {
+        "pk": "0CD28525-64A8-4CDE-B2A0-3E5153700687",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5b213359-afc3-4ab1-ae8a-e5e0e31c85a2"
+        }
+    },
+    {
+        "pk": "006179C8-BB63-4ABF-AA8E-3A7528EDA91D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a4cec13b-c898-4ced-921a-6de8642473eb"
+        }
+    },
+    {
+        "pk": "D8E7B213-5783-4829-A027-A99448EDCB45",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ef82ba4a-48c4-485d-aad6-15f27096bedb"
+        }
+    },
+    {
+        "pk": "117220B1-C349-47BD-894C-BADCA99769DA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "de77c785-036f-44f2-ab98-d86207f0f47f"
+        }
+    },
+    {
+        "pk": "5E140288-FC58-4CBF-B5C9-AC43E0E3CB7A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5ad31b52-c766-4e57-bdaa-61dbab77fa58"
+        }
+    },
+    {
+        "pk": "A85841D5-8F77-49E6-AB09-436256B69DA4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a39b1818-5bbc-40b8-a6d0-b44f02b5194f"
+        }
+    },
+    {
+        "pk": "432D252B-8307-4A33-B7A8-6CE2203CBAB7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0912a94d-58bd-4bfa-97c9-92eb850f0c6d"
+        }
+    },
+    {
+        "pk": "7B8FDCC3-95E4-4A1A-A1BB-3A9B0899CDE9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "bbacc4e4-87eb-49d0-b646-d6263bde0a61"
+        }
+    },
+    {
+        "pk": "1F7DBE18-C00E-4D0D-B3F6-44AA12C8F30D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d91ed320-5685-41bb-bbd6-fa3f05c8a5f4"
+        }
+    },
+    {
+        "pk": "24EB6D93-F15D-41CE-9B76-79F1A66AEF4C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e6947c5e-1ddd-4719-8204-93f53b23a856"
+        }
+    },
+    {
+        "pk": "FE2ABBAC-389D-4617-B065-F8632230058C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0caa182f-fcef-42da-91f9-55e55c60e414"
+        }
+    },
+    {
+        "pk": "F444AFBD-D83E-497B-9E13-DBEEB3D55FEB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "1d41098d-105a-4d44-9710-b2b4a35f37b8"
+        }
+    },
+    {
+        "pk": "658AF228-C04B-4210-B077-9E91CF8BEEC2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "998d7c53-0af3-409f-a3f3-7b383f87c930"
+        }
+    },
+    {
+        "pk": "4CEB7CBC-02DE-498F-9BAC-A5DD0253812A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1f36f763-8571-4ee9-92ba-5812b568df88"
+        }
+    },
+    {
+        "pk": "755700DB-2269-4F16-AF7D-DEAB8C0263DA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "69dbe02b-9ef0-492f-bd52-bfc9dd4ce156"
+        }
+    },
+    {
+        "pk": "D44AC9CA-556C-42BD-B1FB-BB5AB8A5B21A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6726dbb3-9459-425e-8773-969c4c5e4eda"
+        }
+    },
+    {
+        "pk": "3D682FDA-5673-4869-97A5-7E8A563146B6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "22b07e50-e80b-4fc3-ba1a-fb4d656c72e1"
+        }
+    },
+    {
+        "pk": "5A9E49B2-946C-4085-85E7-B6FF981EFEBC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "516bdbb8-3955-4e73-9d60-6168f4716e1c"
+        }
+    },
+    {
+        "pk": "1D8E955E-673E-41F0-8F94-306467C422C0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9cbffd1d-e1fe-4195-8414-ebb8d97572b9"
+        }
+    },
+    {
+        "pk": "1B84725A-78A1-42E3-97CF-A850B1D75F5F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a518cd81-3d35-4902-a0a1-071deca711e9"
+        }
+    },
+    {
+        "pk": "CF37E650-6B65-4421-B4C8-D71F5EC2127F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6761809c-1288-46d4-993b-6748e0ed1ee8"
+        }
+    },
+    {
+        "pk": "DAE82B1D-0B07-47F6-923D-04EB49A3E110",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e36392c7-835a-4ac6-b89d-148b0a1b6306"
+        }
+    },
+    {
+        "pk": "D7420C68-0C24-4027-8B0B-6152ED7F9805",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7d9468c9-ef20-4f23-94bc-c045071964a3"
+        }
+    },
+    {
+        "pk": "B25E8F88-DD0E-47E3-853F-2641BD1F1CAF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "461258ec-746a-455e-b208-c5481a298b06"
+        }
+    },
+    {
+        "pk": "95EBE0DA-6E41-48DA-A5A2-632ED44B4B84",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1f5c1cbc-d7f9-4095-8bc1-57a522b694f8"
+        }
+    },
+    {
+        "pk": "B3CF18CD-4EF2-47A9-BEFA-07FEE5E0B50F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4e52c007-79f9-4478-9916-a1338456a5d8"
+        }
+    },
+    {
+        "pk": "5086FDEE-3387-4C80-92EA-C3D5E5E70545",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d85d57fb-2329-4943-9d5f-aa30c886b878"
+        }
+    },
+    {
+        "pk": "C9C78B63-025E-4804-8B59-8588579C08EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0c1d48ca-bffc-4237-a9a5-ba53fc0f08e7"
+        }
+    },
+    {
+        "pk": "1FA3F2EC-BDB5-4383-AF5A-7E6861008CEA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6f9643ad-949a-4cba-aa7c-122deaff62fc"
+        }
+    },
+    {
+        "pk": "7A6041B9-E458-4651-8380-E627FA727B65",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a599342c-397d-418e-ab25-ec68b1455d69"
+        }
+    },
+    {
+        "pk": "9857A120-1ED0-4FFD-BB84-B2F0F3A5DE02",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f6ec1104-c1cf-4d07-acbf-d3f6f51c73cb"
+        }
+    },
+    {
+        "pk": "A06CD2F9-79B7-4E8F-B1DA-EFAD4AE31185",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f8d42146-aa37-4491-a763-7f2668f60ced"
+        }
+    },
+    {
+        "pk": "A6188C5F-2614-409E-BA9B-BB48955E678C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6b8aba8c-9fc0-4b78-b3f7-fea0a35002cf"
+        }
+    },
+    {
+        "pk": "C63CFE69-944E-4AA9-8252-A3FF92401B75",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a04c1c1c-eb0c-4265-86f3-6b045225ec1b"
+        }
+    },
+    {
+        "pk": "89823332-D4EB-48F1-9BAC-A3B20D4C673E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "6c560b39-161d-4b46-8637-e012755a88fc"
+        }
+    },
+    {
+        "pk": "8D93E608-B483-4538-B8F9-92DB2CB91B26",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8f628492-a787-41aa-beca-d855673ac6bc"
+        }
+    },
+    {
+        "pk": "50FBCDC5-89BC-4FC8-A7EC-AA8974A3DE2D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d152f48e-d564-4d5d-9b4a-644c59ce5c30"
+        }
+    },
+    {
+        "pk": "C40E4609-4F57-4C8D-93FE-86FF26A04796",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0b9ad663-8268-4a2e-8eb8-1699751bece0"
+        }
+    },
+    {
+        "pk": "3F8EE1A6-8975-4F5E-A05A-3601AAACD8F8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a849a628-56ea-4c65-b3bb-7d6c3f1a0a51"
+        }
+    },
+    {
+        "pk": "8B92CCF7-6E43-4255-8738-EF35E5E5B1D4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0f60964a-c79f-490b-967f-452cb626200e"
+        }
+    },
+    {
+        "pk": "0B3BB104-2C18-4119-8C16-ACC529D68A1C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "57e4a60a-f048-4711-a5ab-77a45dbb0480"
+        }
+    },
+    {
+        "pk": "09082C7C-FB44-4167-9A39-03B8CB6A3F9C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "89337f87-d6dd-4266-9cf6-9de1daa27a89"
+        }
+    },
+    {
+        "pk": "12C48709-630B-4F73-8BD6-1EE4AC0CA16D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "68d7e1e1-9815-409e-9f3a-ac83b76ab853"
+        }
+    },
+    {
+        "pk": "20581834-3E11-4804-B336-F694E50E61B0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e175557a-a40f-4625-9d65-ccf75e247942"
+        }
+    },
+    {
+        "pk": "D92952BC-7521-4931-BCA5-D83F7776EEF8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0297f493-542d-47af-bc87-056c16229272"
+        }
+    },
+    {
+        "pk": "2164137B-D07C-4AC5-8417-FDA11CD5D097",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d6b391eb-2645-4ebf-bd16-9a8337188b1b"
+        }
+    },
+    {
+        "pk": "908EBB2A-2876-4F1F-BE5A-A87010617E9A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f760beec-5ecf-45fa-895a-a16c7472bb27"
+        }
+    },
+    {
+        "pk": "ED96D9A5-3EB1-4CD8-AD0B-DCB6234BF972",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a7b067fb-1e0f-4c69-91e4-e27d61e61d21"
+        }
+    },
+    {
+        "pk": "93C6295D-79A8-4EA7-A135-040F6278B60A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cbcdfaa3-94e6-41e3-b6dd-ac8fc50c5a22"
+        }
+    },
+    {
+        "pk": "DA9BF2F9-E3FC-4305-A9A7-6F9C56903AFC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "97e99985-5381-4675-b16d-f0f2a32fe9f0"
+        }
+    },
+    {
+        "pk": "EB6B718D-8345-450C-855E-EDE6607EF163",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ebfedfc0-2ee4-404f-8823-964092648538"
+        }
+    },
+    {
+        "pk": "56511A6E-3FA1-4507-9E54-FD1F220E69DD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f09ceb9d-e935-4d29-8a67-b46bd126cf18"
+        }
+    },
+    {
+        "pk": "1DC5E118-D5BA-423A-9395-8963A611F4C0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5b881c0c-5546-49dc-8e73-8de46d9d8dd6"
+        }
+    },
+    {
+        "pk": "1E98E63E-240C-4D36-BA8C-FB2C5E9FE0FD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "25584caf-896a-4d5c-8ddc-aac4aa39c64b"
+        }
+    },
+    {
+        "pk": "3C0CF079-7077-4B56-BF80-7A3875C10BB3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "75ba5358-c61d-424c-bf71-8fe9f69282bb"
+        }
+    },
+    {
+        "pk": "0C5DD059-3591-4396-B0D7-3A387E1FEA74",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9737553e-a89a-4878-b440-6fa47eb6c509"
+        }
+    },
+    {
+        "pk": "A75CDABB-6814-44E6-93FF-C9ED0552E461",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "de651b92-d25b-4e19-ac10-291f03148209"
+        }
+    },
+    {
+        "pk": "0EF6838E-B3EF-48DD-AB2A-130203FAD39A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "07381969-61c4-41dd-9b3c-eee0ab4344c0"
+        }
+    },
+    {
+        "pk": "D427DAFE-7826-4435-8FEB-9FC0542DD962",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d47b87ca-d6ba-404b-a38c-be321ddb4eb1"
+        }
+    },
+    {
+        "pk": "E21466FF-2316-4A83-929B-964D5B6BD4EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "db4cc7a6-2744-4c91-8a78-db6c759d9333"
+        }
+    },
+    {
+        "pk": "6CFCB0A6-F61E-406E-876A-FAA64B4B3644",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2a025ced-12f9-41dd-aeb6-da5d122dbcc7"
+        }
+    },
+    {
+        "pk": "AFB8D241-D05D-40B2-BF50-2A7C4FB2DCB9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "bb7dfe30-dca5-4618-88be-cc8eaf1af20f"
+        }
+    },
+    {
+        "pk": "FE01DE0B-E5B6-47D3-A79D-81A153247913",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "1cfabec0-2e3e-4d9e-af84-e3340258d934"
+        }
+    },
+    {
+        "pk": "66192E21-26C6-46D5-8E5F-005758AF718F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cc2c6943-fc66-4abb-81ca-2e0d834a29d6"
+        }
+    },
+    {
+        "pk": "8183EB5A-12E5-443B-8C6A-BE8F4072CF20",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "0d477781-11a6-48ac-87e0-0a2aeeeea9a3"
+        }
+    },
+    {
+        "pk": "08FF90DF-4CAC-4C42-A505-1F9005B78194",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0da1cb90-0718-48d0-bf6a-2184c243162a"
+        }
+    },
+    {
+        "pk": "F97D7FA8-BB2E-49DA-B4A3-63D109F5CFBF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ada4b169-2203-403c-8bd9-a17cf13cf2f1"
+        }
+    },
+    {
+        "pk": "C6FDDF5B-F625-4F00-A51C-750A4C295B8A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cdb8b802-ae45-4ab3-af84-521eb84d00cf"
+        }
+    },
+    {
+        "pk": "4CDCB048-987D-4ECB-97BA-8FF1C8CD3E5A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "640a1aaa-5ffe-4c57-8dc8-c6f143abf859"
+        }
+    },
+    {
+        "pk": "AD56422D-D236-4912-B37E-64C5167529FE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ec91d326-e310-4b43-92fa-38bb5ba9419d"
+        }
+    },
+    {
+        "pk": "528E55C1-84CD-4C38-9A4C-748FC01DC27D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "35284a89-bd19-4cf3-965e-f42e96b6e570"
+        }
+    },
+    {
+        "pk": "21C6CFD8-A6F8-472D-A670-D27879E6E2B8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "59169e84-ac3b-4c93-8420-74b1feb08147"
+        }
+    },
+    {
+        "pk": "1E0AD0A2-ED71-4A60-AD70-6F6A5BD7B5C4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "750906fc-2787-471f-b897-585a35cc2647"
+        }
+    },
+    {
+        "pk": "6BC41F3B-EC64-45C7-86D0-BA3333B39119",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3ea62713-8b00-468a-87ea-e053eedc5f11"
+        }
+    },
+    {
+        "pk": "5E7F961C-1F88-4B2B-9301-0FEFB4E26911",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "70d4498d-18d6-43a1-9cd1-9a80ef5c5040"
+        }
+    },
+    {
+        "pk": "452ABFF9-DC21-4F00-AF62-2985C5A5C860",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7758ec9b-bb5a-4b44-ab89-576297119901"
+        }
+    },
+    {
+        "pk": "DDCA8691-C292-4828-85F6-86EA8914E525",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f4a1a252-986c-4216-8c2c-f4852b8d3f5b"
+        }
+    },
+    {
+        "pk": "D5E01768-67D7-49C7-A2E9-19B16421DF55",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "fd23efdc-b052-44b2-82e2-7ef064d8ff8a"
+        }
+    },
+    {
+        "pk": "5D290BEB-C6F0-4D6A-BAEE-A01117B3DDEE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "efc141fa-7f8d-43a6-acdd-0b3fbfcc0b63"
+        }
+    },
+    {
+        "pk": "A3A03C52-7FC3-47BD-B08B-15A2143F1F34",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4bf923b9-92f2-428a-b7bf-fd7f769245ac"
+        }
+    },
+    {
+        "pk": "A55A7643-0AC4-4FB8-A035-A624F1A9A93E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6e7aaf16-2338-4cff-b86f-ec8e6e7f8833"
+        }
+    },
+    {
+        "pk": "974CA015-E3CD-41B3-A417-E9F214791BAD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "975ab793-cff5-48c6-8b9d-853c5ed28952"
+        }
+    },
+    {
+        "pk": "D04BE5F2-05AD-4975-9716-9B0B661B91EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cf79e799-e43a-419f-a864-b8001261066e"
+        }
+    },
+    {
+        "pk": "35013315-A120-414B-A994-CFAD1B09CAA2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "fa4e08db-cffc-449d-8507-f9328ac1dcf7"
+        }
+    },
+    {
+        "pk": "65B2004D-82DF-4667-9AD6-ED3C4FC658DC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "218381ed-613a-42fc-8a41-5ac54b8306d6"
+        }
+    },
+    {
+        "pk": "C33D66BD-EA39-4669-A8DB-1D7B265C8F43",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8103629b-5ebd-4eae-a248-22f944e1824f"
+        }
+    },
+    {
+        "pk": "53DF08FC-F165-4E4F-A334-11F8147A24B0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b4b25b9d-b4de-44c6-8d55-ab37119693ed"
+        }
+    },
+    {
+        "pk": "85E291AC-0E81-4AF8-80A9-C505C1426CED",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "20c4b292-ff39-404a-980b-3537bfd11a3a"
+        }
+    },
+    {
+        "pk": "B3D75F35-8EC6-4010-BB72-2D86932B73AB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "294c0170-f609-4b97-a4ae-6d4440e96fbb"
+        }
+    },
+    {
+        "pk": "38557702-CD90-4B74-82DE-52937FDEC48F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4bc002aa-c09a-4819-ae12-92f00b53c68c"
+        }
+    },
+    {
+        "pk": "A1333996-A224-4C52-9681-8F7EF8279D63",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ba6b136d-549f-4869-84a0-76e957a2e07d"
+        }
+    },
+    {
+        "pk": "73151B33-D688-4E3E-ACFB-05FDBC0C332A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e716cef4-7648-4cbd-bdd4-50a823523810"
+        }
+    },
+    {
+        "pk": "7537E4B0-B0CA-4020-A1D0-B4215B614DB0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "a4ff3fa2-424b-4273-a3e8-2106184c623c"
+        }
+    },
+    {
+        "pk": "F2876D07-BE07-4F00-96ED-6ED4A5FA6C7D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2b48150b-58f6-47bb-a5c4-73889f0b7671"
+        }
+    },
+    {
+        "pk": "C1CA2BEC-C22B-4397-B8DE-AE0ED1689947",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "cd46fde3-4b80-4a4a-9011-1ee1fc551ad2"
+        }
+    },
+    {
+        "pk": "6AD11B97-5607-4D0C-B0A8-2C18F663D81D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4bd57df0-63c6-4df1-aa9d-30117bbb38ce"
+        }
+    },
+    {
+        "pk": "D4983F37-20AA-4BED-8B64-F22881B3129C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "31143b01-90d7-42c2-a330-757ae4fb7b12"
+        }
+    },
+    {
+        "pk": "9E2A703E-9BC7-42DD-8239-10FDD7DA4B3F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d46ef6ab-ad62-450a-94e5-4c782cbd9420"
+        }
+    },
+    {
+        "pk": "D9618B0F-BEB3-4B39-8234-0F985E67D1C1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5ef9b0a5-43f9-462b-bd9a-22c3d6d73786"
+        }
+    },
+    {
+        "pk": "1434AD30-7E78-474F-B925-8EE25345D99A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "34182d2f-28dc-420d-a731-851a8aa650d6"
+        }
+    },
+    {
+        "pk": "534CEB2F-D7AF-4655-9F76-CDACC4760BFC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "af6917d1-1662-4963-ac5c-88fb5d30b144"
+        }
+    },
+    {
+        "pk": "AB139C46-F5DA-4C12-B413-7F5C6E729649",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a5d60b0f-6aec-4221-a774-b6a2132b2007"
+        }
+    },
+    {
+        "pk": "2AA6DD46-013A-47BB-8BC1-A1E9AFB08122",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "c375b0b9-0986-419a-bb18-2f258dc2996e"
+        }
+    },
+    {
+        "pk": "971E8D6D-B6A6-4C45-A39B-A234524049DB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "dba709c5-ec70-4c3c-ad47-b848c7d4cf5a"
+        }
+    },
+    {
+        "pk": "BD671D0F-6868-4F64-AFE8-4667808C1D2A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "644ae6db-f323-4d1c-83e2-40662abd39a1"
+        }
+    },
+    {
+        "pk": "883E5985-DDE8-4206-A9C6-E60E0E40523D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ecd35690-cf54-447b-b32e-0c2bd3d95624"
+        }
+    },
+    {
+        "pk": "E0500B2E-35F2-4C69-887A-7A2E09DEEB57",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "61300fcb-54fc-4776-a682-48e625bf8ec3"
+        }
+    },
+    {
+        "pk": "55FCB55E-D906-4872-B417-812CAE458BB9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4f112e34-4187-44fe-9883-b3a92fc6f817"
+        }
+    },
+    {
+        "pk": "7A770BD1-A04D-4A3C-A169-3CBBF1579C39",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "eb046c8f-ff6d-4401-9332-809a463deccc"
+        }
+    },
+    {
+        "pk": "D84E2B79-3196-4348-A218-0CFDF0684650",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e54b3981-0c8e-4025-88f7-0be522157f9c"
+        }
+    },
+    {
+        "pk": "DEABB04E-4EA8-46DA-A5AA-1D8AFD3DAA1A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5183ddaf-793d-4dd4-b21a-5604bda47855"
+        }
+    },
+    {
+        "pk": "04B8B7C0-3B65-4F78-BAA0-C3A6303A4366",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "30f54b28-1d9b-4466-90a6-53c49f67d092"
+        }
+    },
+    {
+        "pk": "607C36D5-B82D-4FC8-ABAA-9EC5F72A69BC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "09f748b3-8af6-4443-b61f-80c1fc35d1bc"
+        }
+    },
+    {
+        "pk": "672DE6F5-F23D-4E9D-A2C4-058332EE533F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5278eaf1-9df8-434d-b743-93b37c6c0541"
+        }
+    },
+    {
+        "pk": "25FAFDCB-72FB-42D9-9724-E5DE22AF7CF6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ebf9dd1a-e670-4aed-b9cb-e7e640745e9a"
+        }
+    },
+    {
+        "pk": "9483CACB-C496-497D-A6D6-FDFF187DF392",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0b444ea9-9a2d-466a-950f-9a90799603fc"
+        }
+    },
+    {
+        "pk": "2F118CB2-5FDB-43EA-9034-C29DDB1847A5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "45789662-72cf-4df9-8655-74aad52bfdc0"
+        }
+    },
+    {
+        "pk": "B2C20702-C8A4-41B5-A48F-87D9654C5253",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "047213f5-0232-4184-a3bb-ee0a409acbfb"
+        }
+    },
+    {
+        "pk": "4B981CFA-1845-430E-902B-D1931E0C836F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "029c6fde-5568-490c-bbf0-9ab877d09a2c"
+        }
+    },
+    {
+        "pk": "C245A37C-CD62-4008-8B50-06277831381B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "e43a178e-b857-4cdd-ac13-06a1536da845"
+        }
+    },
+    {
+        "pk": "F8EE5DEC-862E-444F-9FC0-48D2512CCF3B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d86346cd-3ad4-4286-aded-416de6b4a55a"
+        }
+    },
+    {
+        "pk": "307F28A9-1C31-4219-B610-BEEA23F7C1F5",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "86df897a-2425-4f37-b76a-8a351fcaa404"
+        }
+    },
+    {
+        "pk": "D09632B7-D87A-4CF7-B359-0B51FD07FD17",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d7140541-66cc-42e2-b6f5-f0c935270f66"
+        }
+    },
+    {
+        "pk": "09928DC9-0AC7-4C2F-AD33-2947F0E08BF0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "60fedb4a-d506-4bff-b3e0-da01a324e7e6"
+        }
+    },
+    {
+        "pk": "5B936251-0623-4824-8D42-FD7E92E5A56D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cfe646c0-b317-41f8-9ac6-11c16c67d89e"
+        }
+    },
+    {
+        "pk": "67309113-32A9-4782-BC8D-61E3F104BE7D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "1dee28f8-3761-4a90-90cd-297785632328"
+        }
+    },
+    {
+        "pk": "065DF900-C077-4F63-8D19-279A821D494D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "74535c20-8d9e-4707-95ee-60a7adab27a3"
+        }
+    },
+    {
+        "pk": "AF7148B6-5213-4DC5-8914-D286BA8607AB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5ed7c597-3278-4957-85ce-4567279b3c6c"
+        }
+    },
+    {
+        "pk": "F4039FF2-1783-4050-9394-E5C8A8AD4B94",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9643ee52-0726-4f20-88ad-32f20aad9fa8"
+        }
+    },
+    {
+        "pk": "E7868EB7-AB04-4629-821F-048B28C071EB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b85b470c-dc19-42f0-844f-63393eb532cf"
+        }
+    },
+    {
+        "pk": "C58AD10A-459A-4DC1-BB87-C09CB6D2621C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9ac3f009-ef52-40b4-af05-58bb7e4fcb0f"
+        }
+    },
+    {
+        "pk": "7350623C-FAF7-46E7-A1E9-BE4DDE88BB2E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "18232339-a7ba-4cb2-9938-edf177247626"
+        }
+    },
+    {
+        "pk": "05E1F6E5-03C3-45EC-A236-255BC1BC2901",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1fa5ba84-4a49-42ea-9304-c593697c1f00"
+        }
+    },
+    {
+        "pk": "6CE5E158-3F13-41A1-BDE2-7C06D2B602D0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9688600f-a297-49f3-881f-51ccf00ced0e"
+        }
+    },
+    {
+        "pk": "7FDB4675-B09B-46E1-8421-5F9FF351CE01",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2fe7da85-5229-48a3-becc-7207ab461b59"
+        }
+    },
+    {
+        "pk": "CA092939-5109-443A-B18D-38725556C54F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "baf116e4-6562-4f56-9b57-dfc057580476"
+        }
+    },
+    {
+        "pk": "29F1F879-926D-4F46-BD07-6436E3A40DCC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4ae540f4-a129-4f7c-bd76-a446dc2c9d4a"
+        }
+    },
+    {
+        "pk": "62ACF11B-DFB0-4ACB-AAAF-3E7CA9BC9C8A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "84c8f88c-dad7-4540-9435-3bbb6fe3a60b"
+        }
+    },
+    {
+        "pk": "D40BF69D-B95E-4206-8F55-2ED7B3A39799",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "b167e802-b697-4c42-8cc4-7014a90930a1"
+        }
+    },
+    {
+        "pk": "39E067EE-ED1D-47FF-A252-780D31CC0127",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7fb6d830-bf72-4f9a-830c-45b2f6ff2ddf"
+        }
+    },
+    {
+        "pk": "3D9BF947-CD3A-4F0C-9A55-59A8F827F7EE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6e73f8d5-a1a9-49aa-b21e-aaf2edf92a23"
+        }
+    },
+    {
+        "pk": "AFB01834-11DA-4EF0-AE24-E6D849556B45",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9243e633-c042-446e-965c-940ebefa0eee"
+        }
+    },
+    {
+        "pk": "B9AADDBE-C6A9-4FAE-80CF-DB2B09B4D85F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5d718a45-0b14-4b77-a73d-89a1b72d44d2"
+        }
+    },
+    {
+        "pk": "FFD78386-DEDC-4CBF-A8BB-2CC10239CDAE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d9d2424d-2cee-4240-b7cf-8b45ffd25697"
+        }
+    },
+    {
+        "pk": "729916CC-9360-4B9B-8506-65E0B1D938DB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "373e5f88-ae1d-4bc9-831a-9241d662dc3f"
+        }
+    },
+    {
+        "pk": "8190D11F-0483-4B93-A3C7-8B49EB831EE2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "b980206c-b388-4554-b61e-a212b84ff944"
+        }
+    },
+    {
+        "pk": "D764E2A6-1F39-4D19-85E0-73983B8A93E2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ff1241f6-b784-4c5f-a688-25cf82c47399"
+        }
+    },
+    {
+        "pk": "6BAD072F-133B-4F46-819F-7E45FA21AA9B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8b2df07e-27c1-4378-953f-b197a2db2bcd"
+        }
+    },
+    {
+        "pk": "6D1EED62-FBC0-4966-8144-104653DB849C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "3688f155-58fe-4a75-a66b-4b20d825d98e"
+        }
+    },
+    {
+        "pk": "09155BF9-8E62-43A6-865D-CB66336BD690",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9d030a98-ce1f-46b9-b933-3c4a8188c27f"
+        }
+    },
+    {
+        "pk": "9BDF479C-9196-4D19-93E2-0EEB0D5398F9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2c0dbf64-89ef-4376-b2c8-9e65018c81d7"
+        }
+    },
+    {
+        "pk": "D13373A8-A733-47F8-B462-7E240F4F85EB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "36b75cdc-7f74-4b1d-8a61-bfff5036e52c"
+        }
+    },
+    {
+        "pk": "80CF60A8-E1D7-45B7-92C5-527FA39E89CE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ec11b628-52e8-4aa8-818b-ecf8399ed519"
+        }
+    },
+    {
+        "pk": "9F92AA21-9583-489F-B84D-C1B4BA42A56A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "24fc8a22-59fa-4a5f-9faa-31fac8be3a19"
+        }
+    },
+    {
+        "pk": "40C03948-17D0-4657-95E0-1A1DC5FBBF31",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "237c387b-246e-49b0-9591-4a134cab5c56"
+        }
+    },
+    {
+        "pk": "D7C06D4F-0D43-4B70-9788-560B52197FDC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9977c68b-8a12-48dc-b8d3-ae94d2cc824a"
+        }
+    },
+    {
+        "pk": "BF584AD6-1204-4A25-A56F-8EF04600CF62",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "72b209ec-b3c0-4f4c-a7d3-017010900faf"
+        }
+    },
+    {
+        "pk": "28916D44-BDCB-43B3-AC0E-34C1E172677D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "3b3bd911-beac-497c-9f12-a17ae383dc50"
+        }
+    },
+    {
+        "pk": "7A0E57DE-327D-4069-B4DD-3CD27A9771B9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f5297975-e977-4271-9aaf-5974de457bad"
+        }
+    },
+    {
+        "pk": "537BE017-541A-444B-B124-5D45A00C3671",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f10c7c17-7c02-4937-ae69-a36d4677cbbd"
+        }
+    },
+    {
+        "pk": "0437428C-4A83-4976-B3C7-B9FCD7ED24DE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8f3763c8-abd2-4623-9c3e-76b584503433"
+        }
+    },
+    {
+        "pk": "B30FF379-CFC7-4FAE-A0C0-FD4D4674E549",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "922711d5-9d28-4d3b-8ae2-9ef8b68cafb0"
+        }
+    },
+    {
+        "pk": "2E3E1596-0556-4587-85EB-FDE9D40702B6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "35ae32a6-370a-4bcd-adff-02df9281d523"
+        }
+    },
+    {
+        "pk": "61F1A631-B623-40EC-B4DE-7F5584519066",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "99a4c8b1-f01a-4313-875c-2a8f3e058ef6"
+        }
+    },
+    {
+        "pk": "6406C460-2F4E-4A8E-A4C9-0020B743A69D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0077b799-76fc-44a3-87fc-c2934c9d59a9"
+        }
+    },
+    {
+        "pk": "150F834A-B9B2-4BB7-91A9-62F99643E98E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9b303063-b2c1-4402-96fb-c00b43ad19a3"
+        }
+    },
+    {
+        "pk": "61B1C806-2E83-43E7-997D-F1890BB7AA1D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ffbf0be1-af5a-4868-85ae-7f6138f200f9"
+        }
+    },
+    {
+        "pk": "79AAFB64-DA90-4C42-BE22-B3169BD03462",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7e944e90-382f-422e-a4ac-8a0eb2d74f0a"
+        }
+    },
+    {
+        "pk": "318CDC65-83AB-4ADD-809D-691DE9C68732",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cbd2abeb-5e0c-4054-9538-9dda813cca8b"
+        }
+    },
+    {
+        "pk": "D0920796-3229-4500-BF9A-A51A585317CF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f489571b-3c14-41e6-8ead-2f4fce7b7dc4"
+        }
+    },
+    {
+        "pk": "065A254A-E28D-441F-A06B-E75E8F57E187",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "490c8be8-52a1-4f13-9cf4-eea4994719a6"
+        }
+    },
+    {
+        "pk": "974DF7B4-D556-4BDB-A31F-12C3A5C57EDE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "466b986c-d958-4eed-96c9-515dd06122c8"
+        }
+    },
+    {
+        "pk": "AB60E02B-6E57-4BEF-82C6-70C98EE9CD1D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "60dcee71-acff-48a4-8599-8b5872510a72"
+        }
+    },
+    {
+        "pk": "7BDEC66B-E97E-43DD-BBF7-F3C3133F8C3F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b3852763-3a19-4c3c-9a78-833b8e08b17c"
+        }
+    },
+    {
+        "pk": "6E0E9E1A-1D93-4BDD-A130-48E3DA73A82E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "043ef1e0-b0da-4b16-aa00-446706417aaf"
+        }
+    },
+    {
+        "pk": "32C05055-0B2C-4634-AA22-19F01AFCFDA8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "25d977c2-8836-4ba9-a5b1-315dda970770"
+        }
+    },
+    {
+        "pk": "FC8A1F17-F07D-474B-AE22-3C1655404586",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8ff46160-147a-461c-8ff3-37e17818d554"
+        }
+    },
+    {
+        "pk": "A2B9D460-1186-46C1-93D5-B92F7BEC7A0B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "824c64ea-1bf8-4a07-a4dd-fd19acbbec40"
+        }
+    },
+    {
+        "pk": "CC7EFA19-D73F-45C9-A990-5D1F5DEEC8DC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9ca205f5-2070-4cb1-ac64-9a116f5b8d63"
+        }
+    },
+    {
+        "pk": "19DBB7B4-410B-48BA-B0BC-698231B34C2F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "dfca5408-44a4-42a8-9ccf-afe499e8b374"
+        }
+    },
+    {
+        "pk": "49AE1BF3-CE52-4C17-AA64-AB6919FD00EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "47c580a5-b629-4874-a29e-09cb436d5c37"
+        }
+    },
+    {
+        "pk": "6379E56A-97D0-4688-AEDE-86FD590D1E47",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d147db93-96eb-43cb-bd96-6101692d2679"
+        }
+    },
+    {
+        "pk": "4A315B7D-9853-45CB-B9DC-8EB3DE2C265A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "6b47ddbb-f1dd-4ce7-86a0-c21f78351e65"
+        }
+    },
+    {
+        "pk": "FD55658C-E95C-4A19-9033-D42D894EF85C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2518fb9b-4ca0-4ebb-b56b-1b392efd4814"
+        }
+    },
+    {
+        "pk": "05665E59-30E8-40E5-B05C-34F0DEE968C0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "381c59d3-e21f-4deb-ba3f-f27b1119deab"
+        }
+    },
+    {
+        "pk": "55152660-724E-4552-8FC9-F4E80C709AD8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1ae46eb4-dac6-40e7-9835-177b44778a6f"
+        }
+    },
+    {
+        "pk": "1A7189B2-7E42-4DF3-8BC4-EF528DEA5915",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "b25a4ca5-88c4-4d17-9163-ca2dfc42c377"
+        }
+    },
+    {
+        "pk": "749DC021-A780-475F-B9C7-6C891D2A2C59",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9659ad3f-71f5-46d6-afe3-a713b5b281c8"
+        }
+    },
+    {
+        "pk": "19F9A53E-E4D2-4223-A1F8-CE381E473FD4",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "01966d65-050c-44b2-8d26-eac65e517e81"
+        }
+    },
+    {
+        "pk": "44903BB1-8E56-46D0-B114-988359B2DAF2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c98fdcb6-b01a-4922-90ae-de4f68257aa1"
+        }
+    },
+    {
+        "pk": "8B01A00D-D5D6-41B8-824C-F83058016501",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "de5fe573-42c1-4e71-bb28-05cabf4450c0"
+        }
+    },
+    {
+        "pk": "2E713F53-73A8-4CFA-9478-87BC03495C0D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "58275743-98c0-4516-bde9-ed6894c42841"
+        }
+    },
+    {
+        "pk": "534417FF-5BCC-48CA-9B24-F7B84EBA6753",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0ad57788-d648-4c84-ab79-ee3611dc585f"
+        }
+    },
+    {
+        "pk": "E36AB4FD-FF3E-4B39-B503-EFA84B3AB1E9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d7c502c9-e10c-490d-88c4-34590588192c"
+        }
+    },
+    {
+        "pk": "3331379E-A015-40E3-9D2E-16DF043B519C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "89c1d6af-a992-44a5-9343-ef8feb531dda"
+        }
+    },
+    {
+        "pk": "A677B0F6-ECED-4397-AC99-3EBF3FFA6EBF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "73f22504-03f4-4849-bcb4-9ea62264a267"
+        }
+    },
+    {
+        "pk": "5C5C5600-B4ED-4B08-B1DC-F8D5BF0B05E8",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8d7eeeb0-19c9-4c85-8b15-0f639a936e55"
+        }
+    },
+    {
+        "pk": "32F07D16-257B-4CD2-9F17-AF4C3CE6D3F9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "75fc5115-bf67-4ef1-9764-5002e86c9e41"
+        }
+    },
+    {
+        "pk": "4F9C77FD-6FEE-492C-AD8E-ADA1CADF63F6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "753f30db-8b37-41ce-bf80-e79551f36075"
+        }
+    },
+    {
+        "pk": "8CD550C0-C24B-4DE0-A6AA-BC9986672420",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5f270beb-7230-4c67-aa55-a5a556124d6a"
+        }
+    },
+    {
+        "pk": "B899BE21-62EB-46ED-8F7B-27784F6579EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9d46c162-8e83-414a-9659-fdaa1f7eb28d"
+        }
+    },
+    {
+        "pk": "23B4CC05-C37B-4EF3-9E42-2E420952AFE1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "443d3712-5029-4f65-bb86-fdc1ce17f12c"
+        }
+    },
+    {
+        "pk": "A72DEBB4-57E3-4E8B-99E3-236E1E82F623",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "630454ff-0e94-4097-b67a-0880a6e8f3c6"
+        }
+    },
+    {
+        "pk": "1DAA86C9-E685-463A-BA8F-7426D9BF8450",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8287ea5b-520d-477c-9f3c-4ca653cb4614"
+        }
+    },
+    {
+        "pk": "BF83C218-293C-4AB7-BE54-C562BC68EE7F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "072d39fe-89fb-4b87-8d60-10e3143b57c6"
+        }
+    },
+    {
+        "pk": "FE1A1905-6DA6-4FA4-BBE8-5F7DC37F0976",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d5c14aa1-9fd0-4942-9073-48c914035c6e"
+        }
+    },
+    {
+        "pk": "F1A37E2E-7A5B-49D1-BCC2-9A50AE407D2B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "af562efb-7115-46b7-b1d5-389759b07a99"
+        }
+    },
+    {
+        "pk": "B7B3469F-AE58-4F32-964A-8F900C81C3B2",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "570c7629-d80b-4659-9bcf-f0bd588e72f0"
+        }
+    },
+    {
+        "pk": "D4EDEC06-CD93-4510-A1ED-CE89618BFD27",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "31099b6f-5fae-46e6-b7be-795da006411a"
+        }
+    },
+    {
+        "pk": "91C7C999-63BA-497D-BE81-8BC059C7D898",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "de5dd6d2-d2ae-4953-8c3a-3c7630c77854"
+        }
+    },
+    {
+        "pk": "3AA8FA9D-E5F7-4CC5-8D47-5A3B2BB27967",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "cecd8323-2398-49ba-af0e-7eb8c79a30a6"
+        }
+    },
+    {
+        "pk": "D852EAA7-8656-468B-A110-6F0394BB5CC0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a29df878-8372-432a-97b5-d99ca8300c53"
+        }
+    },
+    {
+        "pk": "FC026487-67F7-413B-9E7E-CDB95DDD837A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4c05b8f9-cbcc-4d9b-87a4-7e4b9f9c17b9"
+        }
+    },
+    {
+        "pk": "B9B040CF-62F5-4E8A-80C3-155081BCA4E3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "9a6473e5-c1c4-4055-b55e-bfc6df031b12"
+        }
+    },
+    {
+        "pk": "92AFB5BD-3523-4A35-9330-714DF39FEAD6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "82fd37cf-ff5a-470d-97d4-01078b2cafa0"
+        }
+    },
+    {
+        "pk": "8EDD4450-AC05-4249-93C3-0DF76F5D619C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a627c225-ac08-4bae-a029-3c45a0e70d0f"
+        }
+    },
+    {
+        "pk": "2B70E565-62AA-47E2-8241-86168A2C1D40",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f6e52ab8-3fe4-4643-9811-e72d5107cb5c"
+        }
+    },
+    {
+        "pk": "DE7B34EF-94D7-4199-B8CD-62BD80950120",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f23dd33c-a85b-48d7-802f-46acfb0cde8a"
+        }
+    },
+    {
+        "pk": "1502D197-B85B-463A-B145-9E82EA17F8DC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "034d1c04-d59e-4cdb-805d-bce2bc838a60"
+        }
+    },
+    {
+        "pk": "4C800D8A-07C1-408F-A78E-6280CDE7F39D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0c86b575-6e96-4a6f-aa5d-fc7d32321228"
+        }
+    },
+    {
+        "pk": "C075E4DF-C7FA-4627-9830-F8DB557000F7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2dd03b78-e769-4a52-bb84-e41cd8c868f4"
+        }
+    },
+    {
+        "pk": "D5F57364-CDD9-4670-9F48-BF3432101F4B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "ae10e097-381f-49fa-a8d8-ef9a37c13f52"
+        }
+    },
+    {
+        "pk": "EE0D503C-886A-41D5-86AC-A8BA280D5D3C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d791d441-91b5-439a-8629-81643d6897ee"
+        }
+    },
+    {
+        "pk": "E4B1A97E-440A-4B54-BB82-743D4E48B5EB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "409d4ddb-c853-426a-966c-d4623fc63418"
+        }
+    },
+    {
+        "pk": "B56DAE3E-411B-4D21-91B5-F51730134373",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "fdeb986b-318d-4b74-b596-0a29639172c1"
+        }
+    },
+    {
+        "pk": "278632EB-5BFF-493C-B501-A2F92875014C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "92cb8e38-28f2-42d8-b33c-12b0776d4a66"
+        }
+    },
+    {
+        "pk": "FF15824A-6086-40BB-BE3F-30E5CA7F7E47",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "0c2d7193-357f-45e0-8426-8f86acd9fd71"
+        }
+    },
+    {
+        "pk": "F8A8B53A-B1A2-45FE-A4A9-A4EE1A42A609",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "82e86d8d-86ec-4ff2-b42a-956f7df082d2"
+        }
+    },
+    {
+        "pk": "6ED8D336-71E5-4201-9981-1424C9F60D6F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2a6925ce-e50e-4f2b-b731-33c5f0d6477e"
+        }
+    },
+    {
+        "pk": "A3CD7E88-DFC4-464F-97F9-D7F91215DE0F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a9af3a5f-a78b-4812-a109-737ba6a023a4"
+        }
+    },
+    {
+        "pk": "0C3277FA-B16F-46F8-A244-670BC31663EC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "66c37ced-3394-4d34-84e5-2db69f803de0"
+        }
+    },
+    {
+        "pk": "8850625B-BE27-4858-B63A-3F3889340EBC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "aecafc6e-0e82-4c50-905b-db013b296311"
+        }
+    },
+    {
+        "pk": "7563103E-3207-417A-B18D-40474CAF4024",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "12c3ed60-106a-47ff-a767-c3e49d688f07"
+        }
+    },
+    {
+        "pk": "81B27B88-99D0-4199-A513-8F7FA4C145CF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4f3b1fa5-8c75-47d6-a537-ae014ff3c737"
+        }
+    },
+    {
+        "pk": "49BDE199-D462-44A3-B697-BA0566D03781",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "76cf700a-92db-415c-932b-4ea1891d69b0"
+        }
+    },
+    {
+        "pk": "5491D151-2763-4A19-B543-923843A8B3AA",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "bf0553fb-eef5-4054-b56c-03d5ffa0c3fe"
+        }
+    },
+    {
+        "pk": "455EC296-7123-4D31-9BB7-F974312F31CE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "fe961e38-96ec-4d2a-abec-2dec5767be07"
+        }
+    },
+    {
+        "pk": "318A5352-C6E6-4A82-B8F3-EE4AACC3ADC1",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "32e27812-9b84-44ce-a3f7-ef54d802c257"
+        }
+    },
+    {
+        "pk": "6D19E784-8EFF-48FF-BB2B-20BC9273E232",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "f4606ba7-d727-4952-b688-aab898b52972"
+        }
+    },
+    {
+        "pk": "F1FE5868-4E00-4E32-8A56-BAF4831B059E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2bd4e3b0-5657-4a9f-9acc-fb9438640c92"
+        }
+    },
+    {
+        "pk": "7FB11F24-E3EC-4AEA-BD39-170F4A58A4C6",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2172fbe4-6a4d-424b-be2d-c1eb5d9fca8b"
+        }
+    },
+    {
+        "pk": "064EE73F-88F9-4C7E-8B1C-9A73D3CA97FE",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e5179554-8ad9-4798-b187-63580fa86a64"
+        }
+    },
+    {
+        "pk": "AB2465BB-DBAF-4AEA-BBF9-0E169E74432A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a505fe13-b323-492b-b313-7b7375b0ceab"
+        }
+    },
+    {
+        "pk": "8AF59FB3-2E69-4EC4-873C-2E7A4C037003",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "603520c0-b021-4246-9579-84e31aee0fb9"
+        }
+    },
+    {
+        "pk": "50120310-30D4-46FA-A33F-0652E627C961",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "bdc9d72f-7614-457c-bde8-363b3ee40583"
+        }
+    },
+    {
+        "pk": "2DF10AAB-F674-437C-BFE6-74E7EF48DA83",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "78f4d6c3-4797-4c32-93a4-ed975fe16bc0"
+        }
+    },
+    {
+        "pk": "565420C4-C1A1-4AD1-A080-74B4A4C5283B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "45e7be30-7d0b-4754-92c7-876360286de1"
+        }
+    },
+    {
+        "pk": "EAFA7408-4BD8-4407-AAE3-939F54C5D671",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4b1c7062-7aaa-48e3-94cc-19b72c61f1c5"
+        }
+    },
+    {
+        "pk": "2CDB8026-F740-4CFA-A44C-26B62D2E9A49",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "e5671fa2-c341-4a19-a808-c7a01a0560af"
+        }
+    },
+    {
+        "pk": "353F9A24-68B9-4C93-89A8-DF8E6560FDEB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "7a16b7ac-8ba3-4332-be20-03e274197b27"
+        }
+    },
+    {
+        "pk": "1A915DE3-4F8C-4EE2-8727-D45422299C8A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "37149a06-c371-4395-8da5-ebe96e66d06c"
+        }
+    },
+    {
+        "pk": "4A0DEE95-6877-4024-B066-D5371B8A6336",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f4b68fad-85b1-415b-b2ef-93a928bc85fc"
+        }
+    },
+    {
+        "pk": "AC67867E-E05D-4EF2-8E3D-6A3335294354",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ecbcc976-6359-420b-b3fa-d103e964655a"
+        }
+    },
+    {
+        "pk": "DBDE65BD-C5F5-46A6-B9E5-95D3D62C3A5F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "20bdbeb4-e54a-4112-9751-cf32fc208770"
+        }
+    },
+    {
+        "pk": "54A24E60-FA5E-4377-9677-D633CF18ECF3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "db7114d5-7dea-4cf2-8b1c-c92517d762f4"
+        }
+    },
+    {
+        "pk": "B153A80E-E26E-43A9-82A8-DDD0E0E093D3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d21eb7e1-04c9-4c17-a848-d3ae30d51b5e"
+        }
+    },
+    {
+        "pk": "495CA06D-BCF2-414B-9E9F-94945DE26D1C",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "8e5b6026-210a-4d0d-8dba-b0503effd21e"
+        }
+    },
+    {
+        "pk": "7BF6E9D1-1D10-4C13-91C2-4164055C72AC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "45f0e0f5-c28c-4b88-8fd8-3e4d31561b17"
+        }
+    },
+    {
+        "pk": "A8EDBAB1-6AEC-44F3-B0FF-846C8FFCC798",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "766d7eb5-e30c-47a2-8436-61a48b3b5f07"
+        }
+    },
+    {
+        "pk": "41AB4C6C-1A92-4C25-8CC9-E3F077372AAF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "ece06b7c-352c-458b-905f-02f467424725"
+        }
+    },
+    {
+        "pk": "879D0713-B360-4D08-8095-105F6D7992F3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "d7079e81-3c3d-457a-9081-f46108588c56"
+        }
+    },
+    {
+        "pk": "47609896-99CE-4479-954A-303A24B123B9",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "418f2504-071a-4f26-99c2-3e730a3abe20"
+        }
+    },
+    {
+        "pk": "D63873CC-86A5-44D7-AD60-FFF44051FCF7",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "5bf57914-b23e-4f1d-88e5-6999d2ae6781"
+        }
+    },
+    {
+        "pk": "3BDC8ABA-764D-4878-9BD1-ED051DB3829A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "a8f3f3be-547c-43fe-9cb3-c3b93fb2b88d"
+        }
+    },
+    {
+        "pk": "2ADC90B6-7053-4DCD-BF81-5F3D5CCCC2E0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d8b4d6a5-d586-44f7-b04b-3920156e87f3"
+        }
+    },
+    {
+        "pk": "E8C44123-F361-41E4-A88C-DB981517A7CF",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3c447a74-4153-42d5-bc48-af8e1cc84fd5"
+        }
+    },
+    {
+        "pk": "0C4037D1-2807-4A5B-934C-BD3093CBA93B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "9cf1ffaa-98e8-4f9e-805b-877ccae83a9d"
+        }
+    },
+    {
+        "pk": "89F6B785-6819-4EB9-B8E2-81B7E536B76E",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "f6dd3191-4f23-4631-bc52-a71754653fa0"
+        }
+    },
+    {
+        "pk": "7559DD63-D561-4731-8D53-301A45A1CC11",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "1eeae06d-7e18-42a8-bcc8-a26a9d03f38b"
+        }
+    },
+    {
+        "pk": "89F8BB05-A4CE-4E0E-A492-1C7C81D84CB3",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "3fe422d4-0634-4e68-a6f0-0715a2d81404"
+        }
+    },
+    {
+        "pk": "0F7E9386-1930-4866-BDDF-BF1B2E417D4F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "632257b4-a87e-4325-8e8d-dd2a06ddac5c"
+        }
+    },
+    {
+        "pk": "082B91AF-C1DD-42A3-B733-4634C0874F04",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "accb8efd-1168-48f9-8671-83ac9940d9e0"
+        }
+    },
+    {
+        "pk": "24B600DE-A788-4564-8B5D-BAB50CBF8F9F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "2723ae3e-1f2f-472c-9701-eeac9d688a22"
+        }
+    },
+    {
+        "pk": "E8AF573C-EE3C-4DE8-B118-7835B32E5B0B",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "5ecc04bd-1958-47e3-afac-e4993314b1b4"
+        }
+    },
+    {
+        "pk": "33F0BA75-0FB8-4056-B580-5D4630EFD765",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "1ce61640-4f70-4ef3-8e5a-a895d5dc629d"
+        }
+    },
+    {
+        "pk": "333E4D14-8DFC-45D9-9699-133864191948",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "19c80e85-169d-406f-9b47-a38d6b6e95e6"
+        }
+    },
+    {
+        "pk": "099248D3-0F20-4889-96E8-05C21637FBB0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "eae33e95-e1dd-46fb-88c7-a731742c5512"
+        }
+    },
+    {
+        "pk": "765654DA-CE88-4B46-AA1A-7D75F100DE2A",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "03a3d94c-e4ed-4664-9f6f-f6f1f514592c"
+        }
+    },
+    {
+        "pk": "F7020381-3AF0-4348-861F-23307E464258",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c840469b-c588-444e-b09a-74abf08f0e9d"
+        }
+    },
+    {
+        "pk": "0ED4558E-6059-4338-B1BC-E1A9707DA989",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "18eb9d7e-22db-407b-8920-9f3fcc35e7a9"
+        }
+    },
+    {
+        "pk": "453CAB5A-7041-4CDA-9D11-2A9FDDEFEF61",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "44a60659-7b6d-47a4-a80c-23dbc7d1b54c"
+        }
+    },
+    {
+        "pk": "E8CCF857-DA73-4A4E-846C-FFDE8B6527BB",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "c5fd2c8e-62a7-4c03-a80f-8ed9c430518b"
+        }
+    },
+    {
+        "pk": "96F85F20-BFBE-44FE-B4F5-02DBDC0E2BAD",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "2e8ab27a-c1ef-460e-a0cf-884320073bde"
+        }
+    },
+    {
+        "pk": "435ACE14-502E-4D7B-B7E6-EEE35C45B29F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "4b09d722-4a47-49b3-b969-49b309f55fc0"
+        }
+    },
+    {
+        "pk": "17946796-C870-4E12-AEE6-CF765A49A91F",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "82f6dd32-b8ed-4c30-85c9-2b5b3e11fbbe"
+        }
+    },
+    {
+        "pk": "A6E82C28-7FA8-4F42-B8EF-C1A3BF584732",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "36933052-573f-4909-89b2-c7799df0e6be"
+        }
+    },
+    {
+        "pk": "5FAE63DC-8C96-436F-AAE7-2F124A18AE3D",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d2cfebd7-2371-443f-b614-ed87bdbad5ed"
+        }
+    },
+    {
+        "pk": "9A5CC389-52A3-4742-BF0D-736CAFF898D0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "4ae25527-5032-4809-a687-07067c53e1eb"
+        }
+    },
+    {
+        "pk": "D3A5081E-5830-4942-9ACD-CC289EF021FC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "009f03d9-4e3d-4d0c-8bec-d44c6c988d95"
+        }
+    },
+    {
+        "pk": "F218CB90-634D-46B2-96C1-6DEA7C9B97BC",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "d0bef7d5-8191-482c-b4eb-839bb6373387"
+        }
+    },
+    {
+        "pk": "881D9E4D-5057-4194-9481-27B2FA17F598",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
+            "owner": "8b3d36a3-ff32-449b-8130-2ace6dfe009a"
+        }
+    },
+    {
+        "pk": "F9E1A1F1-A69F-4C32-ACB8-F80E1F8131E0",
+        "model": "common.ChargingStation",
+        "fields": {
+            "cluster": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
+            "owner": "cd8d5647-5fcd-4b0f-b2da-40a2be884759"
+        }
+    }
+]

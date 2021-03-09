@@ -1,0 +1,4 @@
+ID;Title;Comments;IsFastChargeCapable
+1;Level 1 : Low (Under 2kW);Under 2 kW, usually domestic socket types;False
+2;Level 2 : Medium (Over 2kW);Over 2 kW, usually non-domestic socket type;False
+3;Level 3:  High (Over 40kW);40KW and Higher;True

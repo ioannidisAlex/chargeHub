@@ -1,0 +1,251 @@
+ID;Title;ISOCode;ContinentCode
+5;Afghanistan;AF;AS
+6;Aland Islands;AX;EU
+7;Albania;AL;EU
+8;Algeria;DZ;AF
+9;American Samoa;AS;OC
+10;Andorra;AD;EU
+11;Angola;AO;AF
+12;Anguilla;AI;NA
+13;Antarctica;AQ;AN
+14;Antigua And Barbuda;AG;NA
+15;Argentina;AR;SA
+16;Armenia;AM;AS
+17;Aruba;AW;NA
+18;Australia;AU;OC
+19;Austria;AT;EU
+20;Azerbaijan;AZ;AS
+21;Bahamas;BS;NA
+22;Bahrain;BH;AS
+23;Bangladesh;BD;AS
+24;Barbados;BB;NA
+25;Belarus;BY;EU
+26;Belgium;BE;EU
+27;Belize;BZ;NA
+28;Benin;BJ;AF
+29;Bermuda;BM;NA
+30;Bhutan;BT;AS
+31;Bolivia, Plurinational State Of;BO;SA
+32;Bonaire, Saint Eustatius And Saba;BQ;None
+33;Bosnia And Herzegovina;BA;EU
+34;Botswana;BW;AF
+35;Bouvet Island;BV;AN
+36;Brazil;BR;SA
+37;British Indian Ocean Territory;IO;AS
+38;Brunei Darussalam;BN;AS
+39;Bulgaria;BG;EU
+40;Burkina Faso;BF;AF
+41;Burundi;BI;AF
+42;Cambodia;KH;AS
+43;Cameroon;CM;AF
+44;Canada;CA;NA
+45;Cape Verde;CV;AF
+46;Cayman Islands;KY;NA
+47;Central African Republic;CF;AF
+48;Chad;TD;AF
+49;Chile;CL;SA
+50;China;CN;AS
+51;Christmas Island;CX;AS
+52;Cocos (Keeling) Islands;CC;AS
+53;Colombia;CO;SA
+54;Comoros;KM;AF
+55;Congo;CG;AF
+56;Congo, Democratic Republic Of The;CD;AF
+57;Cook Islands;CK;OC
+58;Costa Rica;CR;NA
+59;Cote D'Ivoire;CI;AF
+60;Croatia;HR;EU
+61;Cuba;CU;NA
+62;Curacao;CW;None
+63;Cyprus;CY;AS
+64;Czech Republic;CZ;EU
+65;Denmark;DK;EU
+66;Djibouti;DJ;AF
+67;Dominica;DM;NA
+68;Dominican Republic;DO;NA
+69;Ecuador;EC;SA
+70;Egypt;EG;AF
+71;El Salvador;SV;NA
+72;Equatorial Guinea;GQ;AF
+73;Eritrea;ER;AF
+74;Estonia;EE;EU
+75;Ethiopia;ET;AF
+76;Falkland Islands (Malvinas);FK;SA
+77;Faroe Islands;FO;EU
+78;Fiji;FJ;OC
+79;Finland;FI;EU
+80;France;FR;EU
+81;French Guiana;GF;SA
+82;French Polynesia;PF;OC
+83;French Southern Territories;TF;AN
+84;Gabon;GA;AF
+85;Gambia;GM;AF
+86;Georgia;GE;AS
+87;Germany;DE;EU
+88;Ghana;GH;AF
+89;Gibraltar;GI;EU
+90;Greece;GR;EU
+91;Greenland;GL;NA
+92;Grenada;GD;NA
+93;Guadeloupe;GP;NA
+94;Guam;GU;OC
+95;Guatemala;GT;NA
+96;Guernsey;GG;EU
+97;Guinea;GN;AF
+98;Guinea-Bissau;GW;AF
+99;Guyana;GY;SA
+100;Haiti;HT;NA
+101;Heard Island And Mcdonald Islands;HM;AN
+102;Holy See (Vatican City State);VA;EU
+103;Honduras;HN;NA
+4;Hong Kong;HK;AS
+104;Hungary;HU;EU
+105;Iceland;IS;EU
+106;India;IN;AS
+107;Indonesia;ID;AS
+108;Iran, Islamic Republic Of;IR;AS
+109;Iraq;IQ;AS
+3;Ireland;IE;EU
+110;Isle Of Man;IM;EU
+111;Israel;IL;AS
+112;Italy;IT;EU
+113;Jamaica;JM;NA
+114;Japan;JP;AS
+115;Jersey;JE;EU
+116;Jordan;JO;AS
+117;Kazakhstan;KZ;AS
+118;Kenya;KE;AF
+119;Kiribati;KI;OC
+120;Korea, Democratic People's Rep.;KP;AS
+121;Korea, Republic Of;KR;AS
+250;Kosovo;XK;EU
+122;Kuwait;KW;AS
+123;Kyrgyzstan;KG;AS
+124;Lao People's Democratic Republic;LA;AS
+125;Latvia;LV;EU
+126;Lebanon;LB;AS
+127;Lesotho;LS;AF
+128;Liberia;LR;AF
+129;Libyan Arab Jamahiriya;LY;AF
+130;Liechtenstein;LI;EU
+131;Lithuania;LT;EU
+132;Luxembourg;LU;EU
+133;Macao;MO;AS
+134;Macedonia;MK;EU
+135;Madagascar;MG;AF
+136;Malawi;MW;AF
+137;Malaysia;MY;AS
+138;Maldives;MV;AS
+139;Mali;ML;AF
+140;Malta;MT;EU
+141;Marshall Islands;MH;OC
+142;Martinique;MQ;NA
+143;Mauritania;MR;AF
+144;Mauritius;MU;AF
+145;Mayotte;YT;AF
+146;Mexico;MX;NA
+147;Micronesia, Federated States Of;FM;OC
+148;Moldova, Republic Of;MD;EU
+149;Monaco;MC;EU
+150;Mongolia;MN;AS
+151;Montenegro;ME;EU
+152;Montserrat;MS;NA
+153;Morocco;MA;AF
+154;Mozambique;MZ;AF
+155;Myanmar;MM;AS
+156;Namibia;NA;AF
+157;Nauru;NR;OC
+158;Nepal;NP;AS
+159;Netherlands;NL;EU
+160;New Caledonia;NC;OC
+161;New Zealand;NZ;OC
+162;Nicaragua;NI;NA
+163;Niger;NE;AF
+164;Nigeria;NG;AF
+165;Niue;NU;OC
+166;Norfolk Island;NF;OC
+167;Northern Mariana Islands;MP;OC
+168;Norway;NO;EU
+169;Oman;OM;AS
+170;Pakistan;PK;AS
+171;Palau;PW;OC
+172;Palestinian Territory, Occupied;PS;AS
+173;Panama;PA;NA
+174;Papua New Guinea;PG;OC
+175;Paraguay;PY;SA
+176;Peru;PE;SA
+177;Philippines;PH;AS
+178;Pitcairn;PN;OC
+179;Poland;PL;EU
+180;Portugal;PT;EU
+181;Puerto Rico;PR;NA
+182;Qatar;QA;AS
+183;Reunion;RE;AF
+184;Romania;RO;EU
+185;Russian Federation;RU;EU
+186;Rwanda;RW;AF
+187;Saint Barthelemy;BL;NA
+188;Saint Helena;SH;AF
+189;Saint Kitts And Nevis;KN;NA
+190;Saint Lucia;LC;NA
+191;Saint Martin (French Part);MF;NA
+192;Saint Pierre And Miquelon;PM;NA
+193;Saint Vincent And The Grenadines;VC;NA
+194;Samoa;WS;OC
+195;San Marino;SM;EU
+196;Sao Tome And Principe;ST;AF
+197;Saudi Arabia;SA;AS
+198;Senegal;SN;AF
+199;Serbia;RS;EU
+200;Seychelles;SC;AF
+201;Sierra Leone;SL;AF
+202;Singapore;SG;AS
+203;Sint Maarten (Dutch Part);SX;None
+204;Slovakia;SK;EU
+205;Slovenia;SI;EU
+206;Solomon Islands;SB;OC
+207;Somalia;SO;AF
+208;South Africa;ZA;AF
+209;South Georgia;GS;AN
+249;South Sudan;SS;AF
+210;Spain;ES;EU
+211;Sri Lanka;LK;AS
+212;Sudan;SD;AF
+213;Suriname;SR;SA
+214;Svalbard And Jan Mayen;SJ;EU
+215;Swaziland;SZ;AF
+216;Sweden;SE;EU
+217;Switzerland;CH;EU
+218;Syrian Arab Republic;SY;AS
+219;Taiwan, Province Of China;TW;AS
+220;Tajikistan;TJ;AS
+221;Tanzania, United Republic Of;TZ;AF
+222;Thailand;TH;AS
+223;Timor-Leste;TL;AS
+224;Togo;TG;AF
+225;Tokelau;TK;OC
+226;Tonga;TO;OC
+227;Trinidad And Tobago;TT;NA
+228;Tunisia;TN;AF
+229;Turkey;TR;EU
+230;Turkmenistan;TM;AS
+231;Turks And Caicos Islands;TC;NA
+232;Tuvalu;TV;OC
+233;Uganda;UG;AF
+234;Ukraine;UA;EU
+235;United Arab Emirates;AE;AS
+1;United Kingdom;GB;EU
+2;United States;US;NA
+236;United States Minor Outlying Islands;UM;OC
+237;Uruguay;UY;SA
+238;Uzbekistan;UZ;AS
+239;Vanuatu;VU;OC
+240;Venezuela, Bolivarian Republic Of;VE;SA
+241;Viet Nam;VN;AS
+242;Virgin Islands, British;VG;NA
+243;Virgin Islands, U.S.;VI;NA
+244;Wallis And Futuna;WF;OC
+245;Western Sahara;EH;AF
+246;Yemen;YE;AS
+247;Zambia;ZM;AF
+248;Zimbabwe;ZW;AF
