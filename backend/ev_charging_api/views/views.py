@@ -178,6 +178,12 @@ class SessionsPerPointView(
         range_right = datetime(
             year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
         )
+        
+        try:
+            ChargingPoint.objects.all().get(id=id)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
         sessions = self.queryset.filter(charging_point__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
@@ -249,6 +255,12 @@ class SessionsPerStationView(
         range_right = datetime(
             year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
         )
+        
+        try:
+            ChargingStation.objects.all().get(id=id)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__range=[range_left, range_right]
         )
@@ -341,6 +353,12 @@ class SessionsPerVehicleView(
         range_right = datetime(
             year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
         )
+        
+        try:
+            Vehicle.objects.all().get(id=id)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
         sessions = self.queryset.filter(vehicle__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
@@ -421,6 +439,12 @@ class SessionsPerProviderView(
         range_right = datetime(
             year_to, month_to, day_to, 12, 0, 0, 0, tzinfo=timezone.utc
         )
+        
+        try:
+            Provider.objects.all().get(id=id)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
         sessions = self.queryset.filter(provider__id=id).filter(
             connect_time__range=[range_left, range_right]
         )
@@ -479,7 +503,7 @@ class HealthcheckView(
             response = {"status": "OK"}
         except:
             response = {"status": "failed"}
-        return Response(response)
+        return Response(response, status.HTTP_400_BAD_REQUEST)
 
 
 class ResetSessionsView(
@@ -513,8 +537,10 @@ class ResetSessionsView(
                 serializer.create(serializer.validated_data)
 
         except:
-            response = {"status": "failed"}
-        return Response(response)
+            response = {
+            "status": "failed",
+             }
+        return Response(response, status.HTTP_400_BAD_REQUEST)
 
 
 class SessionsupdView(
@@ -533,7 +559,11 @@ class SessionsupdView(
 
     def post(self, request, *args, **kwargs):
         serializer = self.get_serializer(data=request.data)
-        serializer.is_valid(raise_exception=True)
+        try:
+            serializer.is_valid(raise_exception=True)
+        except:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            
         file = serializer.validated_data["file"]
         decoded_file = file.read().decode()
         io_string = io.StringIO(decoded_file)

@@ -11,6 +11,7 @@ from PIL import Image
 
 
 class User(AbstractUser):
+    #id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     USER_TYPE_CHOICES = [
         (1, "Regular User"),
         (2, "Station Owner"),
@@ -59,13 +60,13 @@ class VehicleModel(models.Model):
     )
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField()
-    ac_charging_power = models.JSONField(null=True)
+    ac_charging_power = models.JSONField(null=True,blank=True)
 
     dc_ports = MultiSelectField(
         choices=DcCharger.choices, max_choices=4, max_length=12, null=True
     )
     dc_max_power = models.FloatField(null=True)
-    dc_charging_curve = models.JSONField(null=True)
+    dc_charging_curve = models.JSONField(null=True, blank=True)
     is_default_curve = models.BooleanField(null=True)
 
     usable_battery_size = models.FloatField()

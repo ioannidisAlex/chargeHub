@@ -2,7 +2,7 @@
 {% load crispy_forms_tags %}
 {% block content %}
 	<div class="content-section">
-        <form method="POST">
+        <form onsubmit="return makeSearch()">
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Sessionsupd</legend>
@@ -13,4 +13,38 @@
             </div>
         </form>
     </div>
+
+    <table id="dtBasicExample" class="table table-bordered table-striped"></table>
+    <!--<table id="dtBasicExample" class="tablesorter"></table> -->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script>
+        function makeSearch() {
+            const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+            var formData = new FormData();
+            //alert('{{ form }}');
+            var file = document.querySelector("input[name = 'file']");
+            formData.append("file", imagefile.files[0]);
+            axios.post(
+                'http://localhost:8001/evcharge/api/admin/system/sessionsupd/', formData,
+                { headers: {
+                        "X-OBSERVATORY-AUTH": AuthStr,
+                        "content-type": "multipart/form-data",
+                    }
+            })
+            .then( (response) => {
+                alert('Call made successfully!');
+                /*axios.post(
+                    'http://http://localhost:8000/sessionsupd/',data = response.data,
+                )*/
+                console.log(response);
+            })
+            .catch( (error) => {
+               alert('Oops! Something went wrong..')
+               console.log(error);
+               console.log(formData);
+            })
+        }
+        
+    </script>
 {% endblock content %}

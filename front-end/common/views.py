@@ -5,6 +5,10 @@ from django.shortcuts import redirect, render
 from django.utils.decorators import method_decorator
 from django.views import View
 
+from rest_framework import (
+    status,
+)
+
 from .forms import (
     ProfileUpdateForm,
     RestLoginForm,
@@ -128,7 +132,7 @@ class SessionsupdView(View):
         )
 
     def post(self, request):
-        return render(request, 'common/sessionsupd_data.html')
+        return render(request, 'common/sessionsupd_data.html',)
 
 
 class ResetSessionsView(View):

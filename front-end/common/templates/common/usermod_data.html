@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.post(
-		'http://localhost:8001/evcharge/api/admin/usermod/{{ username }}/{{ password }}/',
+		'http://localhost:8001/evcharge/api/admin/usermod/{{ username }}/{{ password }}/',{},
 		{ headers: {
 				"X-OBSERVATORY-AUTH": AuthStr
 			}
@@ -34,8 +34,9 @@
 		document.getElementById('dtBasicExample').innerHTML = table;
     })
 	.catch( (error) => {
-       alert('Oops! Something went wrong..')
-       console.log(error);
+    	alert('Oops! Something went wrong..');
+      	console.log(error);
+		console.log(AuthStr);
     })
 </script>
 
