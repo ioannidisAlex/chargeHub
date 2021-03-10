@@ -1,34 +1,15 @@
 import csv
 import io
-import json
 from datetime import datetime
-from json import JSONEncoder
 
-import pysnooper
-from django.core.serializers.json import DjangoJSONEncoder
 from django.db import connections
 from django.db.models import Sum
-from django.db.utils import OperationalError
-from django.middleware.csrf import get_token
 from django.shortcuts import get_object_or_404
 from django.utils import timezone
-from rest_framework import (
-    filters,
-    generics,
-    mixins,
-    permissions,
-    serializers,
-    status,
-    viewsets,
-)
-from rest_framework.authtoken.views import ObtainAuthToken
-from rest_framework.decorators import action
-from rest_framework.generics import CreateAPIView, UpdateAPIView
+from rest_framework import generics, mixins, status, viewsets
 from rest_framework.permissions import IsAdminUser, IsAuthenticated
-from rest_framework.renderers import JSONRenderer, TemplateHTMLRenderer
 from rest_framework.response import Response
 from rest_framework.views import APIView
-from rest_framework_csv import renderers as r
 
 from common.models import (
     ChargingPoint,
@@ -151,15 +132,7 @@ class RetrieveUserViewSet(viewsets.ViewSet):
         return Response(serializer.data)
 
 
-class SessionsPerPointView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class SessionsPerPointView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
@@ -196,15 +169,7 @@ class SessionsPerPointView(
         return Response(response)
 
 
-class SessionsPerStationView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class SessionsPerStationView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
@@ -248,15 +213,7 @@ class SessionsPerStationView(
         return Response(response)
 
 
-class SessionsPerVehicleView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class SessionsPerVehicleView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
@@ -301,15 +258,7 @@ class SessionsPerVehicleView(
         return Response(response)
 
 
-class SessionsPerProviderView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class SessionsPerProviderView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
     serializer_class = SessionSerializer
@@ -345,15 +294,7 @@ class SessionsPerProviderView(
         return Response(response)
 
 
-class HealthcheckView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class HealthcheckView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
 
@@ -367,15 +308,7 @@ class HealthcheckView(
         return Response(response)
 
 
-class ResetSessionsView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class ResetSessionsView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
     serializer_class = [SessionSerializer]
@@ -402,15 +335,7 @@ class ResetSessionsView(
         return Response(response)
 
 
-class SessionsupdView(
-    generics.GenericAPIView,
-    mixins.ListModelMixin,
-    mixins.CreateModelMixin,
-    mixins.UpdateModelMixin,
-    mixins.RetrieveModelMixin,
-    mixins.DestroyModelMixin,
-    MultipleFieldLookupMixin,
-):
+class SessionsupdView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
     serializer_class = FileUploadSerializer
