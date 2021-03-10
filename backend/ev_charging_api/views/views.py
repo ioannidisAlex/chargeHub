@@ -417,7 +417,9 @@ class SessionsupdView(
     queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
-        file = request.FILES["file"]
+        file = request.FILES.get("file")
+        if file is None:
+            return Response("no file provided", status=status.HTTP_400_BAD_REQUEST)
         decoded_file = file.read().decode()
         io_string = io.StringIO(decoded_file)
         reader = csv.reader(io_string)
