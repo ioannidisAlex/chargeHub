@@ -30,7 +30,14 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework_csv import renderers as r
 
-from common.models import ChargingPoint, Session, User
+from common.models import (
+    ChargingPoint,
+    ChargingStation,
+    Provider,
+    Session,
+    User,
+    Vehicle,
+)
 from ev_charging_api.authentication import CustomTokenAuthentication
 
 from ..serializers import (
@@ -159,6 +166,7 @@ class SessionsPerPointView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
+        charging_point = get_object_or_404(ChargingPoint, pk=id)
         sessions = self.queryset.filter(charging_point__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
@@ -178,13 +186,12 @@ class SessionsPerPointView(
 
         response = {
             "Point": id,
-            "PointOperator": sessions.first().charging_point.charging_station.owner.id,
+            "PointOperator": charging_point.charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
             "PeriodFrom": date_from,
             "PeriodTo": date_to,
-            "NumberOfChargingSessions": sessions.count(),
+            "NumberOfChargingSessions": len(sessions),
             "ChargingSessionsList": sessions_list,
-            # sessions need more fields!!!
         }
         return Response(response)
 
@@ -204,6 +211,7 @@ class SessionsPerStationView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
+        charging_station = get_object_or_404(ChargingStation, pk=id)
         sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
@@ -225,7 +233,7 @@ class SessionsPerStationView(
                 )
         response = {
             "StationID": id,
-            "Operator": sessions.first().charging_point.charging_station.owner.id,
+            "Operator": charging_station.owner.id,
             "RequestTimestamp": datetime.now(),
             "PeriodFrom": date_from,
             "PeriodTo": date_to,
@@ -255,6 +263,7 @@ class SessionsPerVehicleView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
+        vehicle = get_object_or_404(Vehicle, pk=id)
         sessions = self.queryset.filter(vehicle__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
@@ -307,6 +316,7 @@ class SessionsPerProviderView(
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
+        provider = get_object_or_404(Provider, pk=id)
         sessions = self.queryset.filter(provider__id=id).filter(
             connect_time__date__range=[date_from, date_to]
         )
@@ -329,7 +339,7 @@ class SessionsPerProviderView(
         ]
         response = {
             "ProviderID": id,
-            "ProviderName": sessions.first().provider.provider_name,
+            "ProviderName": provider.provider_name,
             "SessionsList": sessions_list,
         }
         return Response(response)
