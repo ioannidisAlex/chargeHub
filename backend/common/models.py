@@ -61,13 +61,13 @@ class VehicleModel(models.Model):
     )
     ac_usable_phaces = models.PositiveIntegerField()
     ac_max_power = models.FloatField(validators=[validate_positive])
-    ac_charging_power = models.JSONField(null=True)
+    ac_charging_power = models.JSONField(null=True, blank=True)
 
     dc_ports = MultiSelectField(
         choices=DcCharger.choices, max_choices=4, max_length=12, null=True
     )
     dc_max_power = models.FloatField(null=True, validators=[validate_positive])
-    dc_charging_curve = models.JSONField(null=True)
+    dc_charging_curve = models.JSONField(null=True, blank=True)
     is_default_curve = models.BooleanField(null=True)
 
     usable_battery_size = models.FloatField(validators=[validate_positive])
