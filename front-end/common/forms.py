@@ -84,6 +84,7 @@ class RestLoginForm(forms.Form):
             "password",
         ]
 
+
 class SessionsPer_Form(forms.Form):
     ID = forms.CharField(max_length=100)
     date_from = forms.CharField(max_length=100)

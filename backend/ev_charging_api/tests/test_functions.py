@@ -18,8 +18,20 @@ from rest_framework import status
 logout_data = [(reverse("logout"), "post")]
 login_data = [(reverse("login"), "post")]
 session_calls = [
-    # (reverse("sessions_per_point",args=[str(uuid.uuid4()), "20140417", "20140618"]),"get"),
-    # (reverse("sessions_per_station",args=[str(uuid.uuid4()), "20140417", "20140618"]),"get"),
+    (
+        reverse(
+            "sessions_per_point",
+            args=[str(uuid.uuid4()), date(2014, 4, 17), date(2014, 6, 18)],
+        ),
+        "get",
+    ),
+    (
+        reverse(
+            "sessions_per_station",
+            args=[str(uuid.uuid4()), date(2014, 4, 17), date(2014, 6, 18)],
+        ),
+        "get",
+    ),
     (
         reverse(
             "sessions_per_vehicle",
@@ -27,7 +39,13 @@ session_calls = [
         ),
         "get",
     ),
-    # (reverse("sessions_per_provider",args=[str(uuid.uuid4()), "20140517", "20140619"]),"get"),
+    (
+        reverse(
+            "sessions_per_provider",
+            args=[str(uuid.uuid4()), date(2014, 4, 17), date(2014, 6, 18)],
+        ),
+        "get",
+    ),
 ]
 
 
@@ -53,7 +71,7 @@ def test_login(client, url, method, django_user_model):
 @pytest.mark.parametrize("url,method", session_calls)
 def test_sessions_calls(authenticated_api_client, url, method):
     response = getattr(authenticated_api_client, method)(url)
-    assert response.status_code == 200
+    assert response.status_code == 404
 
 
 # sessions_per_point
