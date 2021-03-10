@@ -13,7 +13,6 @@ from .validators import validate_positive
 
 
 class User(AbstractUser):
-    #id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     USER_TYPE_CHOICES = [
         (1, "Regular User"),
         (2, "Station Owner"),
@@ -44,7 +43,6 @@ class VehicleModel(models.Model):
         CHADEMO = "chademo"
         TESLA_COMBINED_CHARGING_SYSTEM = "tesla_ccs"
         TESLA_SUPERCHARGER = "tesla_suc"
-        NONE = "none"
 
     class AcCharger(models.TextChoices):
         TYPE1 = "type1"
@@ -62,15 +60,14 @@ class VehicleModel(models.Model):
         null=True, choices=AcCharger.choices, max_choices=2, max_length=5
     )
     ac_usable_phaces = models.PositiveIntegerField()
-    ac_charging_power = models.JSONField(null=True,blank=True)
     ac_max_power = models.FloatField(validators=[validate_positive])
+    ac_charging_power = models.JSONField(null=True)
 
     dc_ports = MultiSelectField(
         choices=DcCharger.choices, max_choices=4, max_length=12, null=True
-
-    dc_charging_curve = models.JSONField(null=True, blank=True)
-
+    )
     dc_max_power = models.FloatField(null=True, validators=[validate_positive])
+    dc_charging_curve = models.JSONField(null=True)
     is_default_curve = models.BooleanField(null=True)
 
     usable_battery_size = models.FloatField(validators=[validate_positive])
