@@ -53,10 +53,6 @@ INSTALLED_APPS = [
 ]
 
 REST_FRAMEWORK = {
-    "DEFAULT_RENDERER_CLASSES": (
-        "rest_framework.renderers.JSONRenderer",
-        #'rest_framework_csv.renderers.CSVRenderer',
-    ),
     "DEFAULT_PERMISSION_CLASSES": (
         "rest_framework.permissions.IsAuthenticated",
         #'rest_framework.permissions.IsAdminUser',
@@ -66,7 +62,6 @@ REST_FRAMEWORK = {
         #'rest_framework.authentication.SessionAuthentication',
         # "rest_framework.authentication.TokenAuthentication",
         "ev_charging_api.authentication.CustomTokenAuthentication",
-        #'rest_framework.permissions.IsAdminUser',
     ),
     "DEFAULT_RENDERER_CLASSES": (
         "rest_framework.renderers.JSONRenderer",
@@ -84,8 +79,6 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    "corsheaders.middleware.CorsMiddleware",
-    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = "backend.urls"
