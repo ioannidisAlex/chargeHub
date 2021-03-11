@@ -11,6 +11,7 @@ from .forms import (
     RestLoginForm,
     SessionsPer_Form,
     SessionsupdForm,
+    StationsForm,
     UsermodForm,
     UserRegisterForm,
     UsersForm,
@@ -238,3 +239,18 @@ class UsersView(View):
             "username": request.POST["username"],
         }
         return render(request, "common/get_users.html", context)
+
+
+class StationsView(View):
+    template_name = "common/stations.html"
+    form_class = StationsForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+        print("HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO", request.POST["ID"])
+        context = {
+            "id": request.POST["ID"],
+        }
+        return render(request, "common/stations_data.html", context)

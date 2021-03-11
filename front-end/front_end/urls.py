@@ -122,6 +122,11 @@ urlpatterns = [
         common_views.SessionsPerProviderView.as_view(),
         name="sessions_per_provider",
     ),
+    path(
+        "find_stations/",
+        common_views.StationsView.as_view(),
+        name="stations",
+    ),
 ]
 
 if settings.DEBUG:

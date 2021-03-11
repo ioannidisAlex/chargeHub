@@ -98,3 +98,12 @@ class SessionsPer_Form(forms.Form):
             "username",
             "password",
         ]
+
+
+class StationsForm(forms.Form):
+    ID = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "id",
+        ]

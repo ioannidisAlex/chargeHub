@@ -86,6 +86,11 @@ urlpatterns = [
     ),
     path("evcharge/api/login/", views.obtain_auth_token, name="rest_login"),
     path("evcharge/api/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
+    path(
+        "evcharge/api/find_station/",
+        api_views.StationsView.as_view(),
+        name="find_station",
+    ),
     path("evcharge/api/admin/", include(router.urls)),
     path(
         "evcharge/api/admin/usermod/<str:username>/<str:password>/",

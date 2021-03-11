@@ -1,5 +1,6 @@
 import csv
 import io
+import uuid
 from datetime import datetime
 
 from django.db import connections
@@ -26,6 +27,7 @@ from ..serializers import (
     CreateUserSerializer,
     FileUploadSerializer,
     SessionSerializer,
+    StationSerializer,
     UserSerializer,
 )
 
@@ -404,3 +406,55 @@ class SessionsupdView(generics.GenericAPIView):
             "TotalSessionsInDatabase": self.queryset.count(),
         }
         return Response(response)
+
+
+class StationsView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    serializer_class = StationSerializer
+    queryset = ChargingStation.objects.all()
+
+    def post(self, request):
+        id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        print(id)
+        try:
+            stations = self.queryset.get(id=id)
+            print(stations)
+            serializer = self.serializer_class(stations)
+            # serializer.is_valid()
+            return Response(serializer.data, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+"""class CreateStationView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    serializer_class = [SessionSerializer]
+    queryset = Session.objects.all()
+        lookup_fields = [
+        "owner",
+        "cluster",
+        "provider"
+    ]
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = User.objects.get(username=username)
+            self.object.set_password(password)
+            self.object.save()
+
+            response = {
+                "status": "success",
+                "code": status.HTTP_200_OK,
+                "message": "Password updated successfully",
+                "data": [],
+            }
+            return Response(response)
+
+        except:
+            data = {"username": username, "password": password}
+            serializer = CreateUserSerializer(data=data)
+            if serializer.is_valid():
+                serializer.create(serializer.validated_data)
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)"""
