@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.utils.translation",
     "corsheaders",
+    "sslserver",
 ]
 
 REST_FRAMEWORK = {
