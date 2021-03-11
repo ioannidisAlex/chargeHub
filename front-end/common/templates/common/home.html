@@ -1,5 +1,152 @@
 {% extends "common/base.html" %}
+
 {% load crispy_forms_tags %}
 {% block content %}
-	<h1>Welcome to our site!</h1>
+<style type="text/css">
+
+img2 {
+  
+  top: 50px;
+  left: 50px;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+	float: left;
+	width: 600px;
+
+}
+.column2 {
+  float: right;
+  width: 50.00%;
+  /*width: 50.00%;*/
+  padding: 0px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.right {
+  float: right;
+  width: 300px;
+  border: 3px solid #73AD21;
+  padding: 10px;
+}
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+/* Style the tab buttons */
+.tablink {
+  background-color: rgb(42, 127, 153);
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  font-size: 20px;
+  width: 100%;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+/* Set default styles for tab content */
+.tabcontent {
+  color: #ffffff;
+  display: none;
+  padding: 0px;
+  text-align: center;
+}
+.headerz{
+
+background-image: url("../media/image2.jpg");
+
+}
+/* Style each tab content individually */
+
+</style>
+<h1>Welcome to our site!</h1>
+<p></p>
+<div class="container">
+	<div id="London" class="tabcontent">
+		<img src="../media/image1.jpg" class="img-responsive" alt="Paris" width="750" height="450"> 
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-info">Αναζήτηση Σταθμών</button>
+			<button type="button" class="btn btn-info">Αξιολόγηση Σταθμών</button>
+			<button type="button" class="btn btn-info">Εκτίμηση Κόστους</button>
+		</div>
+		<p>London is the capital city of England.</p>
+	  </div>
+	  
+	  <div id="Paris" class="tabcontent">
+		<img src="../media/image5.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-info">Φόρτιση</button>
+			<button type="button" class="btn btn-info">Στατιστικά Φόρτισης</button>
+			<button type="button" class="btn btn-info">Στατιστικά Οχήματος</button>
+		</div>
+		<p>London is the capital city of England.</p>
+	  </div>
+	  
+	  <div id="Tokyo" class="tabcontent">
+		<img src="../media/image3.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-info">Κόστος Φόρτισης</button>
+			<button type="button" class="btn btn-info">Πληρωμή με Κάρτα</button>
+			<button type="button" class="btn btn-info">Έκδοση Περιοδικού Τιμολογίου Οχήματος</button>
+		</div>
+		<p>Tokyo is the capital of Japan.</p>
+	  </div>
+	  
+	  <div id="Oslo" class="tabcontent">
+		<img src="../media/image44.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-info">Στατιστικά Φορτίσεων</button>
+			<button type="button" class="btn btn-info">Δεδομένα Κατανάλωσης Ενέργειας</button>
+		</div>
+		<p>Oslo is the capital of Norway.</p>
+	  </div>
+	  <div id="kOslo" class="tabcontent">
+		<img src="../media/image2.jpg" class="img-responsive" alt="Paris" width="750" height="450"> 
+		<div class="btn-group btn-group-lg">
+			<button type="button" class="btn btn-info">Δημιουργία Σημείου Φόρτισης</button>
+			<button type="button" class="btn btn-info">Επεξεργασία Σημείου Φόρτισης</button>
+			<button type="button" class="btn btn-info">Διαγραφή Σημείου Φόρτισης</button>
+		</div>
+		<p>Oslo is the capital of Norway.</p>
+	  </div>	  
+	  <button class="tablink" onclick="openCity('London', this)" id="defaultOpen">Σταθμοί Φόρτισης</button>
+	  <button class="tablink" onclick="openCity('Paris', this)">Φόρτιση Αυτοκινήτου</button>
+	  <button class="tablink" onclick="openCity('Tokyo', this)">Πληρωμή, έκδοση τιμολογίου</button>
+	  <button class="tablink" onclick="openCity('Oslo', this)">Δεδομένα Φόρτισης</button>
+	  <button class="tablink" onclick="openCity('kOslo', this)">Διαχείριση Σημείων Φόρτισης</button>
+	  <script>
+		function openCity(cityName,elmnt,color) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+			tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablink");
+		  for (i = 0; i < tablinks.length; i++) {
+			tablinks[i].style.backgroundColor = "";
+		  }
+		  document.getElementById(cityName).style.display = "block";
+		  elmnt.style.backgroundColor = color;
+		
+		}
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+		</script>
+  </div>
+
+
 {% endblock content %}
