@@ -4,6 +4,7 @@ import os
 
 import click
 import requests
+import urllib3
 from click_option_group import AllOptionGroup, optgroup
 
 options = {
@@ -29,9 +30,11 @@ options = {
     "resetsessions": click.option("--resetsessions", is_flag=True),
 }
 
-BASE_URL = "http://localhost:8765/evcharge/api"
+BASE_URL = "https://localhost:8765/evcharge/api"
 AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
 # AUTHENTICATION_HEADER = "Authorization"
+
+urllib3.disable_warnings(urllib3.exceptions.SubjectAltNameWarning)
 
 
 def convert_to_request(f):
@@ -48,6 +51,7 @@ def convert_to_request(f):
             hooks=dict(response=hook),
             timeout=2,
             headers=headers,
+            verify="development.cert",
             **parameters,
         )
 
@@ -154,6 +158,7 @@ def store_token(response: requests.Response, *arg, **kwargs):
     if response.status_code == 200:
         with open("softeng20API.token", "w") as f:
             f.write(response.json()["token"])
+        click.echo("Login successful!")
     else:
         response.raise_for_status()
 
