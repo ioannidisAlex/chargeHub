@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.get(
-		'http://localhost:8001/evcharge/api/admin/healthcheck/',
+		'http://localhost:8765/evcharge/api/admin/healthcheck/',
 		{ headers: {
 				"X-OBSERVATORY-AUTH": AuthStr
 			}
