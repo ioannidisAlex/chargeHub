@@ -232,7 +232,10 @@ for i in points["data"]:
             poi["status_type"] = co["StatusTypeID"]
         else:
             poi["status_type"] = STATUS_TYPE_CHOICES[randomint(0, 10)][0]
-        poi["charger_type"] = co["LevelID"]
+        if co["LevelID"] != None:
+            poi["charger_type"] = co["LevelID"]
+        else:
+            poi["charger_type"] = CHARGER_TYPE_CHOICES[randomint(0, 3)][0]
         if i["UsageType"] != None:
             poi["usage_type_id"] = i["UsageType"]["ID"]
         if co["PowerKW"]:
@@ -240,8 +243,14 @@ for i in points["data"]:
         else:
             poi["kw_power"] = randomint(15, 150)
         poi["usage_cost"] = random.uniform(0.06, 0.18)
-        poi["volts_power"] = co["Voltage"]
-        poi["amps_power"] = co["Amps"]
+        if co["Voltage"]:
+            poi["volts_power"] = co["Voltage"]
+        else:
+            poi["volts_power"] = randomint(110, 220)
+        if co["Amps"]:
+            poi["amps_power"] = co["Amps"]
+        else:
+            poi["amps_power"] = randomint(2, 20)
         c_points["fields"] = poi
         charging_points.append(c_points)
         loc = {}
@@ -274,6 +283,28 @@ with open("raw datafiles/acn_data/caltech_acndata_sessions_12month.json") as se:
     sessions = json.load(se)
 
 acn_data = []
+mnth = {
+    "Jan": "01",
+    "Feb": "02",
+    "Mar": "03",
+    "Apr": "04",
+    "May": "05",
+    "Jun": "06",
+    "Jul": "07",
+    "Aug": "08",
+    "Sep": "09",
+    "Oct": "10",
+    "Nov": "11",
+    "Dec": "12",
+}
+
+
+def dateify(datein):
+    arr = datein.split()
+    dateout = ""
+    dateout = arr[3] + "-" + mnth[arr[2]] + "-" + arr[1] + " " + arr[4]
+    return dateout
+
 
 cnt = 0
 for s in sessions["_items"]:
@@ -289,9 +320,9 @@ for s in sessions["_items"]:
         se["provider"] = providers["data"][randomint(0, len(providers))]["pk"]
         se["kwh_delivered"] = s["kWhDelivered"]
         se["site_id"] = str(uuid.uuid4())
-        se["connect_time"] = s["connectionTime"]
-        se["disconnect_time"] = s["disconnectTime"]
-        se["done_charging_time"] = s["doneChargingTime"]
+        se["connect_time"] = dateify(s["connectionTime"])
+        se["disconnect_time"] = dateify(s["disconnectTime"])
+        se["done_charging_time"] = dateify(s["doneChargingTime"])
         se["charging_point"] = charging_points[randomint(0, len(charging_points))]["pk"]
         se["vehicle"] = database_ve["actc"][randomint(0, len(database_ve["actc"]))][
             "pk"

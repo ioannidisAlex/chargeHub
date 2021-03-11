@@ -1,13 +1,13 @@
 [
     {
-        "pk": "cff97853-1c2f-4f74-bcc7-a605c4a13115",
+        "pk": "e8faaff6-1856-4985-8f79-e859724ea55c",
         "model": "common.Provider",
         "fields": {
             "provider_name": "cls0"
         }
     },
     {
-        "pk": "1f58c370-e6c2-475e-93b7-e4fad924bd1b",
+        "pk": "dbc89391-a68e-4b45-8000-c43fce421541",
         "model": "common.Provider",
         "fields": {
             "provider_name": "cls1"
