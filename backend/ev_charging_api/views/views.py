@@ -417,6 +417,7 @@ class StationsViewSet(viewsets.ViewSet):
     permission_classes = [IsAdminUser]
     serializer_class = StationSerializer
     queryset = ChargingStation.objects.all()
+    # lookup_field = "pk"
 
     def list(self, request):
         # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
@@ -495,6 +496,16 @@ class StationsViewSet(viewsets.ViewSet):
                 serializer.save()
                 return Response(serializer.data, status.HTTP_200_OK)
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+    def delete(self, request):
+        try:
+            print(request.data)
+            # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+            self.queryset.get(id=request.data["id"]).delete()
+            return Response({"status": "OK"}, status.HTTP_200_OK)
 
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
