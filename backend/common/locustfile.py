@@ -3,7 +3,7 @@ import time
 from locust import HttpUser, TaskSet, task
 
 LOGIN_URL = "/login/?next=/"
-DATA = {"username": "fedra", "password": "gggggggg8*"}
+DATA = {"username": "u0", "password": "u0u0u0123"}
 
 """
 class LoginAndGet(TaskSet):
@@ -61,7 +61,10 @@ class MyLocust(HttpUser):
         # id = 123e4567-e89b-12d3-a456-426614174000
         # {"X-CSRFToken": specialtoken, "X-OBSERVATORY-AUTH": specialauth}
         self.client.get(
-            "/evcharge/api/SessionsPerPoint/123e4567-e89b-12d3-a456-426614174000/19981111/19981212/",
+            "/evcharge/api/SessionsPerPoint/ab41792e-6819-49e9-bc63-813229a2c0d3/20190901/20190903/",
             data=DATA,
             headers=HEADERS,
         )
+
+
+#  123e4567-e89b-12d3-a456-426614174000
