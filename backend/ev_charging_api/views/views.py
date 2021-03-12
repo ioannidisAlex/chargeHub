@@ -15,6 +15,9 @@ from rest_framework.views import APIView
 from common.models import (
     ChargingPoint,
     ChargingStation,
+    Cluster,
+    Location,
+    Owner,
     Provider,
     Session,
     User,
@@ -26,6 +29,7 @@ from ..serializers import (
     AdminUserSerializer,
     CreateUserSerializer,
     FileUploadSerializer,
+    LocationSerializer,
     SessionSerializer,
     StationSerializer,
     UserSerializer,
@@ -425,6 +429,77 @@ class StationsView(generics.GenericAPIView):
             return Response(serializer.data, status.HTTP_200_OK)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+class InsertStationView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    serializer_class = StationSerializer
+    queryset = ChargingStation.objects.all()
+
+    def post(self, request):
+        # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        # print(request.POST)
+        l = list(request.POST.items())[0][0][1:-1].split(",")
+        print(l)
+        d = {}
+        for x in l:
+            if x.split(":")[0][1:-1] == "website" and len(x.split(":")[1:]) > 1:
+                y = ""
+                count = 0
+                for k in x.split(":")[1:]:
+                    if count > 0:
+                        y += ":" + k[:-1]
+                    else:
+                        y = k[1:]
+                    count += 1
+                d[x.split(":")[0][1:-1]] = y
+            else:
+                d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+
+        print(d)
+        location = {
+            "email": d["email"],
+            "website": d["website"],
+            "title": d["title"],
+            "town": d["town"],
+            "area": d["area"],
+            "country": d["country"],
+            "address_line": d["address_line"],
+        }
+        d2 = {}
+        for i, j in d.items():
+            if (
+                i != "email"
+                and i != "website"
+                and i != "town"
+                and i != "title"
+                and i != "area"
+                and i != "country"
+                and i != "address_line"
+            ):
+                d2[i] = j
+
+        location_serializer = LocationSerializer(data=location)
+        print("This is serializer", location_serializer)
+        if location_serializer.is_valid(raise_exception=True):
+            location_serializer.save()
+        else:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+        print("hello")
+        d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+        d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+        print("hi")
+        d2["location"] = location_serializer.data["id"]
+        print(d2)
+        serializer = self.serializer_class(data=d2)
+        if serializer.is_valid():
+            serializer.save()
+            return Response(serializer.data, status.HTTP_200_OK)
+        return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        # except:
+        #    return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 """class CreateStationView(generics.GenericAPIView):

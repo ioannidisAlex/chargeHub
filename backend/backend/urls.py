@@ -91,6 +91,11 @@ urlpatterns = [
         api_views.StationsView.as_view(),
         name="find_station",
     ),
+    path(
+        "evcharge/api/insert_station/",
+        api_views.InsertStationView.as_view(),
+        name="insert_station",
+    ),
     path("evcharge/api/admin/", include(router.urls)),
     path(
         "evcharge/api/admin/usermod/<str:username>/<str:password>/",

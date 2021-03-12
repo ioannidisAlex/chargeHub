@@ -7,6 +7,7 @@ from django.views import View
 from rest_framework import status
 
 from .forms import (
+    InsertStationForm,
     ProfileUpdateForm,
     RestLoginForm,
     SessionsPer_Form,
@@ -254,3 +255,27 @@ class StationsView(View):
             "id": request.POST["ID"],
         }
         return render(request, "common/stations_data.html", context)
+
+
+class InsertStationView(View):
+    template_name = "common/insert_stations.html"
+    form_class = InsertStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "owner": request.POST["owner"],
+            "cluster": request.POST["cluster"],
+            "provider": request.POST["provider"],
+            "email": request.POST["email"],
+            "website": request.POST["website"],
+            "title": request.POST["title"],
+            "town": request.POST["town"],
+            "area": request.POST["area"],
+            "country": request.POST["country"],
+            "address": request.POST["address"],
+        }
+        return render(request, "common/insert_station_data.html", context)

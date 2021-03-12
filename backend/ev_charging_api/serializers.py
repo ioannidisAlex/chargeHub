@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 
-from common.models import ChargingStation, Session, User
+from common.models import ChargingStation, Location, Session, User
 
 
 class SessionSerializer(serializers.ModelSerializer):
@@ -58,5 +58,12 @@ class FileUploadSerializer(serializers.Serializer):
 class StationSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChargingStation
+
+        fields = "__all__"
+
+
+class LocationSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Location
 
         fields = "__all__"
