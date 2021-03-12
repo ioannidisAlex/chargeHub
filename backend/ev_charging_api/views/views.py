@@ -444,12 +444,14 @@ class InsertStationView(generics.GenericAPIView):
         print(l)
         d = {}
         for x in l:
-            if x.split(":")[0][1:-1] == "website" and len(x.split(":")[1:]) > 1:
+            if len(x.split(":")[1:]) > 1:
                 y = ""
-                count = 0
+                count = 1
                 for k in x.split(":")[1:]:
-                    if count > 0:
+                    if count == len(x.split(":")[1:]):
                         y += ":" + k[:-1]
+                    elif count > 1:
+                        y += ":" + k
                     else:
                         y = k[1:]
                     count += 1
