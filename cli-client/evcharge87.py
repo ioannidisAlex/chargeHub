@@ -4,6 +4,7 @@ import os
 
 import click
 import requests
+from click_didyoumean import DYMGroup
 from click_option_group import AllOptionGroup, optgroup
 
 options = {
@@ -94,7 +95,9 @@ def load_to_admin(*args, target):
     return target.command("Admin")(x)
 
 
-interface = click.Group()
+@click.group(cls=DYMGroup)
+def interface():
+    pass
 
 
 # Data endpoints
