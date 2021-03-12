@@ -162,3 +162,32 @@ class DeleteStationForm(forms.Form):
             "country",
             "address",
         ]
+
+
+class UpdateStationForm(forms.Form):
+    ID = forms.CharField(max_length=100, required=True)
+    owner = forms.CharField(max_length=100, required=False)
+    cluster = forms.CharField(max_length=100, required=False)
+    provider = forms.CharField(max_length=100, required=False)
+    email = forms.CharField(max_length=100, required=False)
+    website = forms.CharField(max_length=100, required=False)
+    title = forms.CharField(max_length=100, required=False)
+    town = forms.CharField(max_length=100, required=False)
+    area = forms.CharField(max_length=100, required=False)
+    country = CountryField(null=True).formfield(required=False)
+    address = forms.CharField(max_length=100, required=False)
+
+    class Meta:
+        fields = [
+            "id",
+            "owner",
+            "cluster",
+            "provider",
+            "email",
+            "website",
+            "title",
+            "town",
+            "area",
+            "country",
+            "address",
+        ]

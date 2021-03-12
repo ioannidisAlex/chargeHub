@@ -433,7 +433,7 @@ class StationsViewSet(viewsets.ViewSet):
 
     def post(self, request):
         # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
-        # print(request.POST)
+        print(request.POST)
         l = list(request.POST.items())[0][0][1:-1].split(",")
         print(l)
         d = {}

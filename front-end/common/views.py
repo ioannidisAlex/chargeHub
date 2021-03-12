@@ -13,6 +13,7 @@ from .forms import (
     SessionsPer_Form,
     SessionsupdForm,
     StationsForm,
+    UpdateStationForm,
     UsermodForm,
     UserRegisterForm,
     UsersForm,
@@ -305,3 +306,27 @@ class DeleteStationView(View):
             "address": request.POST["address"],
         }
         return render(request, "common/delete_station_data.html", context)
+
+
+class UpdateStationView(View):
+    template_name = "common/update_stations.html"
+    form_class = UpdateStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "owner": request.POST["owner"],
+            "cluster": request.POST["cluster"],
+            "provider": request.POST["provider"],
+            "email": request.POST["email"],
+            "website": request.POST["website"],
+            "title": request.POST["title"],
+            "town": request.POST["town"],
+            "area": request.POST["area"],
+            "country": request.POST["country"],
+            "address": request.POST["address"],
+        }
+        return render(request, "common/update_station_data.html", context)
