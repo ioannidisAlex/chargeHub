@@ -3,6 +3,7 @@ import inspect
 import os
 
 import click
+import click_spinner
 import requests
 from click_didyoumean import DYMGroup
 from click_option_group import AllOptionGroup, optgroup
@@ -44,13 +45,15 @@ def convert_to_request(f):
         else:
             headers = {}
 
-        return method(
-            f"{BASE_URL}/{url}",
-            hooks=dict(response=hook),
-            timeout=2,
-            headers=headers,
-            **parameters,
-        )
+        with click_spinner.spinner():
+            response = method(
+                f"{BASE_URL}/{url}",
+                hooks=dict(response=hook),
+                timeout=2,
+                headers=headers,
+                **parameters,
+            )
+        return response
 
     return function
 
