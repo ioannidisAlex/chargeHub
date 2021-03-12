@@ -417,7 +417,7 @@ class StationsViewSet(viewsets.ViewSet):
     permission_classes = [IsAdminUser]
     serializer_class = StationSerializer
     queryset = ChargingStation.objects.all()
-    lookup_fields = ["title"]
+    #lookup_field = "pk"
 
     def list(self, request):
         # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
@@ -432,82 +432,83 @@ class StationsViewSet(viewsets.ViewSet):
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
-    def post(self, request, title= None):
-        print("title",title)
-        if(title== None) :
-            # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
-            # print(request.POST)
-            l = list(request.POST.items())[0][0][1:-1].split(",")
-            print(l)
-            d = {}
-            for x in l:
-                if len(x.split(":")[1:]) > 1:
-                    y = ""
-                    count = 1
-                    for k in x.split(":")[1:]:
-                        if count == len(x.split(":")[1:]):
-                            y += ":" + k[:-1]
-                        elif count > 1:
-                            y += ":" + k
-                        else:
-                            y = k[1:]
-                        count += 1
-                    d[x.split(":")[0][1:-1]] = y
-                else:
-                    d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+    def post(self, request):
+        # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        # print(request.POST)
+        l = list(request.POST.items())[0][0][1:-1].split(",")
+        print(l)
+        d = {}
+        for x in l:
+            if len(x.split(":")[1:]) > 1:
+                y = ""
+                count = 1
+                for k in x.split(":")[1:]:
+                    if count == len(x.split(":")[1:]):
+                        y += ":" + k[:-1]
+                    elif count > 1:
+                        y += ":" + k
+                    else:
+                        y = k[1:]
+                    count += 1
+                d[x.split(":")[0][1:-1]] = y
+            else:
+                d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
 
+        print(d)
+        location = {
+            "email": d["email"],
+            "website": d["website"],
+            "title": d["title"],
+            "town": d["town"],
+            "area": d["area"],
+            "country": d["country"],
+            "address_line": d["address_line"],
+        }
+        d2 = {}
+        for i, j in d.items():
+            if (
+                i != "email"
+                and i != "website"
+                and i != "town"
+                and i != "title"
+                and i != "area"
+                and i != "country"
+                and i != "address_line"
+            ):
+                d2[i] = j
+        try:
             print(d)
-            location = {
-                "email": d["email"],
-                "website": d["website"],
-                "title": d["title"],
-                "town": d["town"],
-                "area": d["area"],
-                "country": d["country"],
-                "address_line": d["address_line"],
-            }
-            d2 = {}
-            for i, j in d.items():
-                if (
-                    i != "email"
-                    and i != "website"
-                    and i != "town"
-                    and i != "title"
-                    and i != "area"
-                    and i != "country"
-                    and i != "address_line"
-                ):
-                    d2[i] = j
-            try:
-                print(d)
-                location_serializer = LocationSerializer(data=location)
-                print("This is serializer", location_serializer)
-                if location_serializer.is_valid(raise_exception=True):
-                    location_serializer.save()
-                else:
-                    return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-                d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
-                print("hello")
-                d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
-                d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
-                print("hi")
-                d2["location"] = location_serializer.data["id"]
-                print(d2)
-                serializer = self.serializer_class(data=d2)
-                if serializer.is_valid():
-                    serializer.save()
-                    return Response(serializer.data, status.HTTP_200_OK)
+            location_serializer = LocationSerializer(data=location)
+            print("This is serializer", location_serializer)
+            if location_serializer.is_valid(raise_exception=True):
+                location_serializer.save()
+            else:
                 return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+            print("hello")
+            d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+            d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+            print("hi")
+            d2["location"] = location_serializer.data["id"]
+            print(d2)
+            serializer = self.serializer_class(data=d2)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status.HTTP_200_OK)
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
-            except:
-                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-        else :
-            try :
-                self.queryset.get(title= title).delete()
-                return Response({"status": "OK"}, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
-            except:
-                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+    def delete(self, request):
+        try :
+            print(request.data)
+            #id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+            self.queryset.get(id=request.data['id']).delete()
+            return Response({"status": "OK"}, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 

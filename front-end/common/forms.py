@@ -138,9 +138,9 @@ class InsertStationForm(forms.Form):
 
 
 class DeleteStationForm(forms.Form):
-    title = forms.CharField(max_length=100)
+    ID = forms.CharField(max_length=100)
 
     class Meta:
         fields = [
-            "title",
+            "id",
         ]
