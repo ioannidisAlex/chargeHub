@@ -1,24 +1,27 @@
 [
     {
-        "pk": "45cdb9af-10b5-4a3e-97ca-58429cf6821e",
+        "id": "93d71f50991b4118bbd6f68ef102363e",
         "model": "common.Provider",
         "fields": {
+            "id": "93d71f50991b4118bbd6f68ef102363e",
             "provider_name": "prv0",
             "user": 0
         }
     },
     {
-        "pk": "dd1c3d6e-f94e-4f85-b491-077af39967e8",
+        "id": "fa980e7e7ad14974bc3c25d0f9cece75",
         "model": "common.Provider",
         "fields": {
+            "id": "fa980e7e7ad14974bc3c25d0f9cece75",
             "provider_name": "prv1",
             "user": 1
         }
     },
     {
-        "pk": "606319e6-ef9c-410b-9cd5-a75140289ebc",
+        "id": "587d58e6e7d34ec59adc4804c2e905a1",
         "model": "common.Provider",
         "fields": {
+            "id": "587d58e6e7d34ec59adc4804c2e905a1",
             "provider_name": "prv2",
             "user": 2
         }

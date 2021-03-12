@@ -1,6 +1,6 @@
 [
     {
-        "pk": "a9a177bf-9ce5-4b67-b3ef-51af248b48c2",
+        "id": "25e70635e29b46e58bee9d8586811b91",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -59,7 +59,7 @@
         }
     },
     {
-        "pk": "27d7610e-9a77-498a-b1b5-28d4bc92cbf2",
+        "id": "d3df57f7522b42d9b65fcfea94277a61",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -118,7 +118,7 @@
         }
     },
     {
-        "pk": "c6a6bd26-6a8f-4ab7-baf3-6cfa057044e3",
+        "id": "72e414e774964df996275993e281341d",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -165,7 +165,7 @@
         }
     },
     {
-        "pk": "059c028d-b2a6-4a8d-947a-158c7537b290",
+        "id": "6cf36605538c4f19a138357797a29e6e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -212,7 +212,7 @@
         }
     },
     {
-        "pk": "c8e05c0b-05c0-4aac-9f12-35a6a3687e10",
+        "id": "72020ee29a954cbabbd44a7f464b7595",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -244,7 +244,7 @@
         }
     },
     {
-        "pk": "e67dc450-d658-4bee-bd0f-a750d445b2f9",
+        "id": "25383ca99e8541be8128c98b4c5d29bb",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -299,7 +299,7 @@
         }
     },
     {
-        "pk": "0ec3f440-136c-49f1-8917-c629a27146c7",
+        "id": "a68f7f5b3810474b8a74e4b2c3b034fd",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -350,7 +350,7 @@
         }
     },
     {
-        "pk": "dbf24ffc-3270-409b-b4da-ec386fa36657",
+        "id": "1ace30106431419fb1f8d8e217d9ae1f",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -397,7 +397,7 @@
         }
     },
     {
-        "pk": "4df1d4d6-f001-4d0a-b284-5ffc07e6ade2",
+        "id": "8c829c200ae649c38457b14ba9d1df08",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -429,7 +429,7 @@
         }
     },
     {
-        "pk": "45b68c71-cd11-4bd7-a03f-fdaae259635d",
+        "id": "f7e289a7b0c04c0f8b6518c7be3a4e2a",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -476,7 +476,7 @@
         }
     },
     {
-        "pk": "2f2b159b-9b03-450f-9818-c139323d1735",
+        "id": "0f0513f4dcb34cd9bbf1ceeadb615128",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -508,7 +508,7 @@
         }
     },
     {
-        "pk": "22f521ce-42ca-40d7-bfdb-5d33b1bd9cbe",
+        "id": "61df7c122be74bfa82bf0321826dcf61",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -555,7 +555,7 @@
         }
     },
     {
-        "pk": "c0a26929-1157-4fb4-a999-4f172df9cad7",
+        "id": "459fda8a51214f2bb7cbc76fbf18d962",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -602,7 +602,7 @@
         }
     },
     {
-        "pk": "6cd5ba89-6523-4bca-9423-ea92227a8b8d",
+        "id": "a5d0552334194f51abdf2bd78a2b2e77",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -634,7 +634,7 @@
         }
     },
     {
-        "pk": "6cc437e9-b842-4c1b-9c08-9ca2d46d22a9",
+        "id": "07c4462fdd1f4cd9bfb1d38fe250e528",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -681,7 +681,7 @@
         }
     },
     {
-        "pk": "e81564b0-46e3-41f6-b6a6-70370a37f685",
+        "id": "911b8154890547448e21ed074dc068e9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -728,7 +728,7 @@
         }
     },
     {
-        "pk": "c576bee8-8066-4174-bc69-5fe9f2e666ee",
+        "id": "18e31e62ebae471581e76df56ae516b6",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -783,7 +783,7 @@
         }
     },
     {
-        "pk": "3038b11b-2dfc-4f9f-b22c-4bfdc08d0c4b",
+        "id": "daa911717c604eec9b5bdf88672168a7",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -830,7 +830,7 @@
         }
     },
     {
-        "pk": "3667752d-17a5-4166-abaf-dcf227948bfd",
+        "id": "3a552557d4c0498aad19c0af8f727b8e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -862,7 +862,7 @@
         }
     },
     {
-        "pk": "8df35b23-dcc6-4590-83c7-5578da4c4809",
+        "id": "8e993f29492f43009dcb6d987feda44d",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -941,7 +941,7 @@
         }
     },
     {
-        "pk": "c1fd1277-5d77-416b-bb25-84bd21f57963",
+        "id": "678d546071d240b5b378d3e1bfa7f504",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1020,7 +1020,7 @@
         }
     },
     {
-        "pk": "8da12395-cf7a-4ccf-886f-e25ade426457",
+        "id": "b543f5ab12e24d1f9a4bf58d3c3f2b13",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1075,7 +1075,7 @@
         }
     },
     {
-        "pk": "66cb7bea-24b7-458f-ae3e-11d4a852568b",
+        "id": "f6c59511cf6f489899aca1a874b317c1",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1122,7 +1122,7 @@
         }
     },
     {
-        "pk": "add28704-7b59-474d-bfa6-2338e54ccaef",
+        "id": "ba98d35c9af444448d92806bcbb58e18",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1169,7 +1169,7 @@
         }
     },
     {
-        "pk": "5e1746c9-56a2-4fb9-8a76-b75c95a037ee",
+        "id": "f72d04d5366f4f2fa72fb51042a8c863",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1216,7 +1216,7 @@
         }
     },
     {
-        "pk": "58661a4c-e1f9-4dc2-8d09-3bb42be62554",
+        "id": "9ddda22e9ace4b5db7f1947e14f08804",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1263,7 +1263,7 @@
         }
     },
     {
-        "pk": "0f7eae0b-43be-48f8-b4a0-1a8266fd07a9",
+        "id": "e5cc4f5ec0ca4fcfaeb29d97ea530ea3",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1342,7 +1342,7 @@
         }
     },
     {
-        "pk": "68cbedff-8994-4b77-bfb5-6aa22962e3a2",
+        "id": "fdfe5c5d0f3245ac9281d76c664d5174",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1421,7 +1421,7 @@
         }
     },
     {
-        "pk": "3c933da2-1fa1-4094-825a-a181610dbfd0",
+        "id": "7063486cf5ff4164bc42f677850c0e89",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1500,7 +1500,7 @@
         }
     },
     {
-        "pk": "87e73c44-93ba-4687-877c-32a3aa940a09",
+        "id": "a906ccb252704c34b9b20c3786d06825",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1547,7 +1547,7 @@
         }
     },
     {
-        "pk": "5335d545-cfeb-4bca-bb11-cf0966f1b5ca",
+        "id": "23a1535445be41d3a7b7c23c382f0430",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1602,7 +1602,7 @@
         }
     },
     {
-        "pk": "71cc8552-391f-49b0-b106-2202fa222161",
+        "id": "42646310b2b742f78e6f03721edbbc47",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1634,7 +1634,7 @@
         }
     },
     {
-        "pk": "2c7abcf4-0ba0-4feb-9e9b-b47661072feb",
+        "id": "b2a35871f80d40ba9b41abfc5677525f",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1681,7 +1681,7 @@
         }
     },
     {
-        "pk": "1847e3aa-750c-4b12-a80a-56e792b3aadb",
+        "id": "36c8726f02f3459a929ca424dc3527cf",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -1728,7 +1728,7 @@
         }
     },
     {
-        "pk": "86290f48-f554-4db5-bd35-4a8b7828689a",
+        "id": "09e26cae0abf463fa9c50e3c260b2d11",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1775,7 +1775,7 @@
         }
     },
     {
-        "pk": "2644bfd3-a593-4276-bb1f-c8965e33797e",
+        "id": "3d66d1fa380541b1a66043c26b675fe9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1822,7 +1822,7 @@
         }
     },
     {
-        "pk": "daa3573d-60ea-4c7a-8048-79c575e3db4c",
+        "id": "76e89551dcfb4ddc94367ce283852cd6",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1869,7 +1869,7 @@
         }
     },
     {
-        "pk": "dc7d163b-29bc-45cf-8156-60eb3e3b1294",
+        "id": "a444d958f4a44b5181a2cbd537e21253",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1916,7 +1916,7 @@
         }
     },
     {
-        "pk": "3b649ae3-935b-425b-b5d6-75c549b96d40",
+        "id": "ad28c4d6e97f495aa546d376764e00df",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -1963,7 +1963,7 @@
         }
     },
     {
-        "pk": "83ec0576-bfb8-400a-9af9-483b2684673c",
+        "id": "97165cd919a24a9d8c52e225f99644e2",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2014,7 +2014,7 @@
         }
     },
     {
-        "pk": "74f2c3a5-f78f-459a-823a-dfc0a21e5aeb",
+        "id": "2b28cad71bbf4b7a99d17049b82264df",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2065,7 +2065,7 @@
         }
     },
     {
-        "pk": "77028f96-eb9b-4c65-b452-c92011b1fc1c",
+        "id": "ae8575885f1e412b842ba507c9350f95",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2116,7 +2116,7 @@
         }
     },
     {
-        "pk": "78b14a0f-5c62-4885-95ef-2e3f81197260",
+        "id": "de648bfa446c497983d79096358d4e13",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2163,7 +2163,7 @@
         }
     },
     {
-        "pk": "f33f0a4f-9b53-4e21-807b-f8b2ca4a24f6",
+        "id": "09f604b59c8a41958cd624d7e211c188",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2210,7 +2210,7 @@
         }
     },
     {
-        "pk": "7f4bf402-f8e2-47da-b456-30f1bdfce8ac",
+        "id": "c70c677780a7411793ff86fa94460737",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2242,7 +2242,7 @@
         }
     },
     {
-        "pk": "28b61ff5-734a-412e-9241-dec4c27d1a38",
+        "id": "41d814a4ce3840f1aa9f9f5df3041aa5",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2289,7 +2289,7 @@
         }
     },
     {
-        "pk": "9666138c-1d24-4fa8-9083-0ffba09ab1ef",
+        "id": "850166d562594900b284103e67ed0886",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2321,7 +2321,7 @@
         }
     },
     {
-        "pk": "b3fd3e84-4dd4-4ac0-914f-3c3c582fc600",
+        "id": "8285ed7c805244b3bc6ffd6ef3003890",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2353,7 +2353,7 @@
         }
     },
     {
-        "pk": "737441e8-6b5f-4185-9b0b-e51585ab6ea8",
+        "id": "a61ec59c2e9b492184e6e43bae111238",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2385,7 +2385,7 @@
         }
     },
     {
-        "pk": "e604a056-9338-4044-93dd-5a595d4a3ef3",
+        "id": "19114e0bb0d04447984c308e4dc245e2",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2417,7 +2417,7 @@
         }
     },
     {
-        "pk": "c53b5947-23a3-420c-9798-f3846732e41a",
+        "id": "a9178a35d9844aed910996a619ecd732",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2464,7 +2464,7 @@
         }
     },
     {
-        "pk": "de3a8751-00c9-46d1-9e7a-ad830835c6a7",
+        "id": "bf5e6c01775942e58be99fc6c32a86e9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2515,7 +2515,7 @@
         }
     },
     {
-        "pk": "1c13fba9-2c09-4be1-b5c6-aecd2b253afb",
+        "id": "acbaa870d3624fadba4147e4c948cc46",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2547,7 +2547,7 @@
         }
     },
     {
-        "pk": "8f6db2f5-1dd9-46f6-bb97-eba419dbaea4",
+        "id": "49cc4989e00046e4b5423822f4f190f8",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2579,7 +2579,7 @@
         }
     },
     {
-        "pk": "785c65be-3122-44ad-b574-9291c0793c37",
+        "id": "1a3f2e29923144548e0a8f68da7065b4",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2611,7 +2611,7 @@
         }
     },
     {
-        "pk": "e3525b59-d3b9-4eef-9a01-1408358c5534",
+        "id": "2ff1146634b145318b80bb4ca720649e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2643,7 +2643,7 @@
         }
     },
     {
-        "pk": "1d43c981-02be-4d41-a34b-65a40ff25f7b",
+        "id": "f8fbcd5fddbd452fb08d0b167e53dd30",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2675,7 +2675,7 @@
         }
     },
     {
-        "pk": "f0b185de-9b9d-4a08-924f-450c4dadc7a6",
+        "id": "8afb25b193f44f7f8a9bbaad4a82a41e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2707,7 +2707,7 @@
         }
     },
     {
-        "pk": "6a3a76f6-a0d0-41ff-afc9-5ad2f0879b4d",
+        "id": "10095ca21d0f4b289797bbab11c3f401",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2739,7 +2739,7 @@
         }
     },
     {
-        "pk": "805b5810-074c-449b-ad19-d6c852ebf8f6",
+        "id": "548f0057eb7048688b1c3fed44581583",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2771,7 +2771,7 @@
         }
     },
     {
-        "pk": "93c82e06-1aa3-4c19-8f81-b9fac0c598c3",
+        "id": "88f7bf59922547439cac8af08b0921af",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2823,7 +2823,7 @@
         }
     },
     {
-        "pk": "7de25a64-e9fa-484f-bf99-d02b02cfb17d",
+        "id": "d6d0644f967948f8851b5f1461584a2c",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2875,7 +2875,7 @@
         }
     },
     {
-        "pk": "7dbad968-7058-4440-9c8f-8f483cdd973a",
+        "id": "216f3845823a4c76942b1ba0742bc9c1",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2927,7 +2927,7 @@
         }
     },
     {
-        "pk": "80e7ef22-27f8-4e93-8c86-7a6a0a227e5d",
+        "id": "632d7f4d80ec45e4a360087d836cd6f6",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -2976,7 +2976,7 @@
         }
     },
     {
-        "pk": "ed3fe177-d852-49bd-84ca-8ecd8d7ec3b1",
+        "id": "c6b85048c1c247dda1284ec2af59ed22",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3025,7 +3025,7 @@
         }
     },
     {
-        "pk": "7f709186-39c3-420f-9caf-1fdb424f7953",
+        "id": "a577b663bce24a09a4175f6adcfe6180",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3074,7 +3074,7 @@
         }
     },
     {
-        "pk": "0a663bbf-3b87-4e7a-bd7a-3e9c39961a2b",
+        "id": "118d14f047984c79ae144a64b2a2ba8f",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3127,7 +3127,7 @@
         }
     },
     {
-        "pk": "32922583-e434-4ed2-afc1-4d8fde67aeda",
+        "id": "89503282b0e34b798edde6a33a43e7ca",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3180,7 +3180,7 @@
         }
     },
     {
-        "pk": "b5aa307e-a6b9-46e7-939e-2dd525870c13",
+        "id": "ec6483764367457799ed9ef69adc4227",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3233,7 +3233,7 @@
         }
     },
     {
-        "pk": "d03d6e42-d6f8-4e3f-b527-a3c1d1e40f9d",
+        "id": "17fd1377cc9748e2be3a0e7ad432cceb",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3286,7 +3286,7 @@
         }
     },
     {
-        "pk": "0aa5220a-6da7-4dc0-a0a1-714bea4fded3",
+        "id": "801fa207d4ca4b78880dff09e6c03855",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3339,7 +3339,7 @@
         }
     },
     {
-        "pk": "908e578f-f890-4716-93e8-7c0f75e46bb5",
+        "id": "92f154ef0eb54127bc397c5401153025",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3392,7 +3392,7 @@
         }
     },
     {
-        "pk": "355eadbb-0c97-4a66-993d-8fdc61a77ef5",
+        "id": "ef53ec7d06d24727920788a620df0aaf",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3445,7 +3445,7 @@
         }
     },
     {
-        "pk": "7490520f-fe11-4148-a9b6-3882f06ee082",
+        "id": "be3b5e470cf34381b6dd2207b95b5cd9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3498,7 +3498,7 @@
         }
     },
     {
-        "pk": "eb8d28ec-8df7-40a8-8dd7-badf738f0832",
+        "id": "6f4ebf076e234b0d837fc80ab8931c65",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3551,7 +3551,7 @@
         }
     },
     {
-        "pk": "b7c4ddb8-4806-4328-a4e6-4abb4746016d",
+        "id": "b595a7bf4a8b45b5b881c1e699eef81e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3604,7 +3604,7 @@
         }
     },
     {
-        "pk": "1b3105fa-527a-491f-ac26-5bfa94bfa45d",
+        "id": "733268ff29bf4c2cbd67c09545623494",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3657,7 +3657,7 @@
         }
     },
     {
-        "pk": "92ffd46c-fe26-4805-81ba-fbadce4d524f",
+        "id": "bf2d376147e94dc999506f3c57125298",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3710,7 +3710,7 @@
         }
     },
     {
-        "pk": "f1b46b0a-b101-4072-a246-0b52f0cc51f5",
+        "id": "fa403f8d13ee434c97237a5dc9023c39",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3765,7 +3765,7 @@
         }
     },
     {
-        "pk": "f0132135-9415-4403-818b-cee07f81ceb2",
+        "id": "88f218b1b1644991b6e344daff0e31d6",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3816,7 +3816,7 @@
         }
     },
     {
-        "pk": "a0347619-a7fe-4dd2-be4e-3ef615783481",
+        "id": "30fe8b9a7e49497182e347e1c259d7b9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3871,7 +3871,7 @@
         }
     },
     {
-        "pk": "fda95cb7-d391-4344-851e-a1b5a548b42b",
+        "id": "f8766677240c4721aca96b949c897e83",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3903,7 +3903,7 @@
         }
     },
     {
-        "pk": "bad55b90-4b4f-4760-83ea-fa96280e7310",
+        "id": "af05884c467a4f2dbd63393929765e31",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3935,7 +3935,7 @@
         }
     },
     {
-        "pk": "bcd8700d-241c-43a1-b9df-24ee310ea8e4",
+        "id": "8ec241350db643cbbf8175bd5583dec7",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3967,7 +3967,7 @@
         }
     },
     {
-        "pk": "57184038-ae77-4540-9367-ccb98beb8cc3",
+        "id": "75ae74a08bba40c1b888b9a956fde926",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -3999,7 +3999,7 @@
         }
     },
     {
-        "pk": "fc5b3c94-c0eb-4515-af3d-4a4106ffe29f",
+        "id": "74a1fd6fdf664610bde508fcfe44505e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4050,7 +4050,7 @@
         }
     },
     {
-        "pk": "0a7e79c1-ecd6-4639-bac1-9c9e49fec84c",
+        "id": "afd32a8bcabc4c058d1545107d4a2929",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4097,7 +4097,7 @@
         }
     },
     {
-        "pk": "d8044adf-2538-4d45-b2d8-2b2fd0951766",
+        "id": "a89f182b8d4449c0a941ea4f1cd5efb8",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4144,7 +4144,7 @@
         }
     },
     {
-        "pk": "cb995cc3-84d9-4c87-89dc-f9dee7a47156",
+        "id": "8b8276a390a34a749100af69fbff22e0",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4191,7 +4191,7 @@
         }
     },
     {
-        "pk": "15023eb9-eba6-436e-ad98-2086f1cb31c4",
+        "id": "51923cc5f2f040d2b295eb5581ae2f05",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -4223,7 +4223,7 @@
         }
     },
     {
-        "pk": "ec3b0af7-67c6-400d-b3c2-aa2f3be24c8a",
+        "id": "27d433f2045c4505bc4919468d1ad437",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -4255,7 +4255,7 @@
         }
     },
     {
-        "pk": "926efa33-4c55-43df-80f3-4b8d2d65a00a",
+        "id": "f0ba75c12fa344a18eadbe2846d31556",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4330,7 +4330,7 @@
         }
     },
     {
-        "pk": "de7bac96-33ed-44f2-964e-21a4878e9f00",
+        "id": "42c6b01556be4e8a91e4170b4ec2c222",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4405,7 +4405,7 @@
         }
     },
     {
-        "pk": "72695d36-29c4-4726-8ca8-5333fb3f9865",
+        "id": "e539a203ce374cb28a8f23bbd78785aa",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4480,7 +4480,7 @@
         }
     },
     {
-        "pk": "9d101a26-eaaa-4058-a251-5221b45ffd91",
+        "id": "9158034d85da4426ae449c183e373494",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4527,7 +4527,7 @@
         }
     },
     {
-        "pk": "e60a8ec6-a6dd-46ae-846a-35cb57f1d8e3",
+        "id": "391fdbdeb89644948b52261a7ce01401",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4559,7 +4559,7 @@
         }
     },
     {
-        "pk": "1cec7821-632f-4f17-8a58-644b6ab23f44",
+        "id": "0fcbff3ae2334f8798aa16b30548ceac",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4634,7 +4634,7 @@
         }
     },
     {
-        "pk": "6f96c616-e87a-4958-bbe7-b4278be00170",
+        "id": "955b6d73331844fb8f29f35d83cd0fa2",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4709,7 +4709,7 @@
         }
     },
     {
-        "pk": "e8773876-6036-4a6c-926e-5490aae58971",
+        "id": "eae14e574ca144b3935018cec81d0ee1",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4741,7 +4741,7 @@
         }
     },
     {
-        "pk": "8cfce5f4-23b6-470a-87fa-a04095fe0334",
+        "id": "4686f3bfd1174b17b38d1192a1c29316",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -4773,7 +4773,7 @@
         }
     },
     {
-        "pk": "d8c11860-a582-4784-9e58-d29e94a67fc2",
+        "id": "172a2bcfb9d04e109b9079b6964102ad",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4820,7 +4820,7 @@
         }
     },
     {
-        "pk": "5bfa9a87-7b35-4e3a-bd3f-dc2ac55e184b",
+        "id": "f810a6e7e6d04aa78c33cc634e6651e0",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4867,7 +4867,7 @@
         }
     },
     {
-        "pk": "4c04db3b-c493-4b90-9859-21b7304a4ffc",
+        "id": "3293068a5a9b4fff9426b42dee704a55",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4914,7 +4914,7 @@
         }
     },
     {
-        "pk": "34b5ef32-efea-48fc-8386-3800d0b737f0",
+        "id": "629099b340e444949acdfc7e5c0d5b7c",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -4961,7 +4961,7 @@
         }
     },
     {
-        "pk": "6990914a-6a0d-49d4-87f5-ee86ee33344c",
+        "id": "05c6c85026d64bb598f1a5fa5749bcec",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5008,7 +5008,7 @@
         }
     },
     {
-        "pk": "a12f033f-f2c2-44bd-b62c-7019898a72d0",
+        "id": "fdeed5a8744d41e49c5c429d30f3dab3",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5055,7 +5055,7 @@
         }
     },
     {
-        "pk": "8b0195b6-5318-46d9-a6fd-1b5f75e8b495",
+        "id": "f8283a7b0bf74478a9ce975e797969f2",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5102,7 +5102,7 @@
         }
     },
     {
-        "pk": "2ae110f8-8906-4b03-b4bc-83e5577c1cc1",
+        "id": "82aa5bf0b29e4b489b3b57d8d7ec9e29",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5149,7 +5149,7 @@
         }
     },
     {
-        "pk": "c9025ab4-1c85-40d8-86ab-ee406de3b716",
+        "id": "95e286e519dd4cab827e0b0376ab51e8",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5196,7 +5196,7 @@
         }
     },
     {
-        "pk": "2eea1ef2-0fd1-481d-adee-68044666614e",
+        "id": "7cc8e146a9c6442c99b96b5b55d4f563",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5247,7 +5247,7 @@
         }
     },
     {
-        "pk": "ffcd3116-4e17-49ff-a926-941c062643ea",
+        "id": "71a4a894fe7641ad8e3fa363f2e46fe2",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5298,7 +5298,7 @@
         }
     },
     {
-        "pk": "3b5bb8d1-0f34-4c05-861c-45d19a8883b9",
+        "id": "056cf48613f74a52aef234d644d7d31b",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5345,7 +5345,7 @@
         }
     },
     {
-        "pk": "430ca2cd-bd4b-482a-8776-85a8c7d3435c",
+        "id": "6fba17284c184db79a8d666144a38a96",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5392,7 +5392,7 @@
         }
     },
     {
-        "pk": "6033b26c-1b3c-441b-9f78-7b7cd5512051",
+        "id": "618866a825f04686af3efe0cf68542bc",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5439,7 +5439,7 @@
         }
     },
     {
-        "pk": "d97748b1-e384-4238-a225-d498bccd902c",
+        "id": "f9f617a856674600b63d5bcc56277c69",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5471,7 +5471,7 @@
         }
     },
     {
-        "pk": "1c9126d4-24d6-4e9f-a49d-15813fa49728",
+        "id": "1a5d2cc83f1f4d52a1e3ace76690c809",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5503,7 +5503,7 @@
         }
     },
     {
-        "pk": "98aacbc9-5a97-4fe4-abcf-4f7bb2910a9f",
+        "id": "7aa693f735c14355b7d4f53d32356687",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5535,7 +5535,7 @@
         }
     },
     {
-        "pk": "4f408d10-82c3-4850-ae2b-141f21d745b3",
+        "id": "f836570fd1124014845beb062baed5dc",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5567,7 +5567,7 @@
         }
     },
     {
-        "pk": "975b064b-626e-4318-b60c-3ce0729743fd",
+        "id": "7aec9f71c2a14cac8dfbfd6179f7bfcc",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5599,7 +5599,7 @@
         }
     },
     {
-        "pk": "ac812f08-3c8a-4af5-a07a-b520ec9e16cc",
+        "id": "19aef21ebafc4e15910ba8708130d13b",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5631,7 +5631,7 @@
         }
     },
     {
-        "pk": "4ea0fb0a-8d77-4a03-a147-5e962f8ea766",
+        "id": "f593f0a4227a41fb8e30baeb3dc345b0",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5663,7 +5663,7 @@
         }
     },
     {
-        "pk": "176af738-f385-4dc8-9243-9c701fbd7759",
+        "id": "e37e7177028d4e55821638f65e588c3a",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5710,7 +5710,7 @@
         }
     },
     {
-        "pk": "b8a76fa8-97f1-4f27-8f9f-80f26df230d1",
+        "id": "7225278795354c859077485fe044afaa",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5766,7 +5766,7 @@
         }
     },
     {
-        "pk": "7508892b-e7e7-42ba-9cca-57753426cd86",
+        "id": "c9fe9c0a42b14763bcd6f165d7b0bce9",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5813,7 +5813,7 @@
         }
     },
     {
-        "pk": "6a4c5e58-d1cb-49ad-a1cf-c0025fb7246f",
+        "id": "68d0d6bf83de4680af236798336ddbbe",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -5860,7 +5860,7 @@
         }
     },
     {
-        "pk": "09022e0a-c322-46e7-9171-b48fdd953cca",
+        "id": "70cf228ed98141709847828096a4c73e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5892,7 +5892,7 @@
         }
     },
     {
-        "pk": "7ba60564-7eda-457b-b7d5-46dd1b15cc0e",
+        "id": "42736b4903204ae18f905defa154e742",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5924,7 +5924,7 @@
         }
     },
     {
-        "pk": "f45de10a-764f-4a7e-9591-b974d0b87038",
+        "id": "5e1ac90a0633463496b1e45382b14738",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5956,7 +5956,7 @@
         }
     },
     {
-        "pk": "46240342-6f7e-4767-b66d-3234ba874a30",
+        "id": "f217fddb72c34a10ae0faf679c133236",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -5988,7 +5988,7 @@
         }
     },
     {
-        "pk": "1e8c0cc5-20db-491f-9242-12cf3bc7b962",
+        "id": "ce6eaa7404b24617b2b426e2b54180d3",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6035,7 +6035,7 @@
         }
     },
     {
-        "pk": "ee64213e-fa1d-425e-b90e-6cff9c2a3469",
+        "id": "5dfc6a459b174e6ea72827727e692ddd",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6067,7 +6067,7 @@
         }
     },
     {
-        "pk": "b97f749b-5361-4116-8103-c208dc601a0b",
+        "id": "f37053d51f6e40c683105539aa1cf9b7",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6099,7 +6099,7 @@
         }
     },
     {
-        "pk": "84f2fcc1-cc73-4919-8d76-0f1ba8eaf685",
+        "id": "384110fb74494428922e37744a106329",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6131,7 +6131,7 @@
         }
     },
     {
-        "pk": "a883bb35-270d-4f31-9169-ccf06ae3c0c5",
+        "id": "dd18497bba554b5586d30cd4be73b502",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6163,7 +6163,7 @@
         }
     },
     {
-        "pk": "6fa12374-6162-451e-8464-5e0e73091839",
+        "id": "95cdbae62cd44e3dbd61310cf5954d99",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6195,7 +6195,7 @@
         }
     },
     {
-        "pk": "b0da6660-c20e-40c3-9db7-0b19c478c6cb",
+        "id": "48c22d9654994afdbb67189fb0da009c",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6227,7 +6227,7 @@
         }
     },
     {
-        "pk": "41c9d96c-6a19-4db0-ba3a-931ab99c6f15",
+        "id": "625fca9881464fdd8081561b73e43366",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
@@ -6259,7 +6259,7 @@
         }
     },
     {
-        "pk": "ff261470-8556-4051-afec-c049abd5fe6a",
+        "id": "ed5206411ae3400597f7af75fa7c682a",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -6306,7 +6306,7 @@
         }
     },
     {
-        "pk": "4dc6b014-8612-4fa7-bb34-9ea4d7fa5220",
+        "id": "4024662a7baa4190ae3ce37fd88dcf35",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -6353,7 +6353,7 @@
         }
     },
     {
-        "pk": "55ac0aaf-6bae-4a8e-ba50-4a9a7ab5b4af",
+        "id": "b84d7c20c2864762837b6aa1d21c861e",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -6400,7 +6400,7 @@
         }
     },
     {
-        "pk": "18bb40bd-321b-4326-a404-e46652538830",
+        "id": "4c37c5cd860e4d28a2a0351b615e50a5",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -6447,7 +6447,7 @@
         }
     },
     {
-        "pk": "aa69b5e8-fc4e-40f8-8060-2c96248f62ef",
+        "id": "8acbade1c0b14052897efca93e9d0f37",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "bev",
@@ -6494,7 +6494,7 @@
         }
     },
     {
-        "pk": "8b51a06f-676a-46aa-9074-4d3364ea1cca",
+        "id": "561f22d9a4ec4619a1ccd82d49502f96",
         "model": "common.VehicleModel",
         "fields": {
             "engine_type": "phev",
