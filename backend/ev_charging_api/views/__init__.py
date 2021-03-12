@@ -9,7 +9,7 @@ from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,
     SessionsPerStationView,
     SessionsPerVehicleView,
     SessionsupdView,
-    StationsView,
+    StationsViewSet,
     UsermodAPIView,
 )
 

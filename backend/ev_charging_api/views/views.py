@@ -412,20 +412,21 @@ class SessionsupdView(generics.GenericAPIView):
         return Response(response)
 
 
-class StationsView(generics.GenericAPIView):
+class StationsViewSet(viewsets.ViewSet):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
     serializer_class = StationSerializer
     queryset = ChargingStation.objects.all()
 
-    def post(self, request):
-        id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
-        print(id)
+    def list(self, request):
+        # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        # print(id)
         try:
-            stations = self.queryset.get(id=id)
-            print(stations)
-            serializer = self.serializer_class(stations)
-            # serializer.is_valid()
+            # stations = self.queryset.get(id=id)
+            # stations = self.get_queryset()
+            # print(stations)
+            serializer = StationSerializer(ChargingStation.objects.all(), many=True)
+            print(serializer.data)
             return Response(serializer.data, status.HTTP_200_OK)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)

@@ -135,3 +135,30 @@ class InsertStationForm(forms.Form):
             "country",
             "address",
         ]
+
+
+class DeleteStationForm(forms.Form):
+    owner = forms.CharField(max_length=100)
+    cluster = forms.CharField(max_length=100)
+    provider = forms.CharField(max_length=100)
+    email = forms.CharField(max_length=100)
+    website = forms.CharField(max_length=100)
+    title = forms.CharField(max_length=100)
+    town = forms.CharField(max_length=100)
+    area = forms.CharField(max_length=100)
+    country = CountryField(null=True).formfield()
+    address = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "owner",
+            "cluster",
+            "provider",
+            "email",
+            "website",
+            "title",
+            "town",
+            "area",
+            "country",
+            "address",
+        ]

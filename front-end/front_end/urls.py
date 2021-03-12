@@ -132,6 +132,11 @@ urlpatterns = [
         common_views.InsertStationView.as_view(),
         name="add_station",
     ),
+    path(
+        "delete_station/",
+        common_views.DeleteStationView.as_view(),
+        name="delete_station",
+    ),
 ]
 
 if settings.DEBUG:
