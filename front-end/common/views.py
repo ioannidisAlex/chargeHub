@@ -301,7 +301,7 @@ class DeleteStationView(View):
 
 
 class UpdateStationView(View):
-    template_name = "common/update_stations.html"
+    template_name = "common/update_station.html"
     form_class = UpdateStationForm
 
     def get(self, request, *args, **kwargs):
@@ -310,6 +310,7 @@ class UpdateStationView(View):
     def post(self, request):
 
         context = {
+            "id": request.POST["ID"],
             "owner": request.POST["owner"],
             "cluster": request.POST["cluster"],
             "provider": request.POST["provider"],

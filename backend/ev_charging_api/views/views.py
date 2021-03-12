@@ -500,6 +500,33 @@ class StationsViewSet(viewsets.ViewSet):
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
+    def put(self, request):
+
+        try:
+            print("DATA", request.data)
+            # print(d)
+            location_serializer = LocationSerializer(data=location)
+            print("This is serializer", location_serializer)
+            if location_serializer.is_valid(raise_exception=True):
+                location_serializer.update()
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+            print("hello")
+            d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+            d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+            print("hi")
+            d2["location"] = location_serializer.data["id"]
+            print(d2)
+            serializer = self.serializer_class(data=d2)
+            if serializer.is_valid():
+                serializer.update()
+                return Response(serializer.data, status.HTTP_200_OK)
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
     def delete(self, request):
         try:
             print(request.data)
