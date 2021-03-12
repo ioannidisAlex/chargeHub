@@ -1,16 +1,18 @@
 [
     {
-        "pk": "da4be074-d8e0-4cba-8caa-71bf48dec56e",
-        "model": "common.Provider",
+        "id": "ae34e7571e4a424b9ea4fa403940b22c",
+        "model": "common.Cluster",
         "fields": {
-            "provider_name": "cls0"
+            "id": "ae34e7571e4a424b9ea4fa403940b22c",
+            "cluster_name": "cls0"
         }
     },
     {
-        "pk": "dcaf6845-b208-4969-8b24-85b1d2a612f1",
-        "model": "common.Provider",
+        "id": "60d0de934d1e493d8f79c47ba2292a4c",
+        "model": "common.Cluster",
         "fields": {
-            "provider_name": "cls1"
+            "id": "60d0de934d1e493d8f79c47ba2292a4c",
+            "cluster_name": "cls1"
         }
     }
 ]

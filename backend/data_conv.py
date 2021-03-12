@@ -22,11 +22,12 @@ i = 0
 for v in vehicles["data"]:
     vehicle = {}
     auto = {}
-    vehicle["pk"] = v["id"]
+    vehicle["id"] = uuid.uuid4().hex
     vehicle["model"] = db_name + "VehicleModel"
-    auto["pk"] = v["id"]
+    auto["id"] = vehicle["id"]
     auto["model"] = db_name + "Vehicle"
     fil = {}
+    fil["id"] = vehicle["id"]
     fil["engine_type"] = v["type"]
     fil["release_year"] = v["release_year"]
     fil["brand"] = v["brand"]
@@ -50,8 +51,9 @@ for v in vehicles["data"]:
     fil["average_energy_consumption"] = v["energy_consumption"]["average_consumption"]
     vehicle["fields"] = fil
     filauto = {}
-    filauto["model"] = v["id"]
-    filauto["owner"] = str(uuid.uuid4())
+    filauto["model"] = vehicle["id"]
+    filauto["id"] = vehicle["id"]
+    filauto["owner"] = uuid.uuid4().hex
     auto["fields"] = filauto
     database_ve["cars"].append(vehicle)
     database_ve["actc"].append(auto)
@@ -67,10 +69,11 @@ with open("fixtures/Providers.json", "w") as out:
     providers = {}
     providers["data"] = []
     for i in range(3):
+        a = uuid.uuid4().hex
         prov = {
-            "pk": str(uuid.uuid4()),
+            "id": a,
             "model": db_name + "Provider",
-            "fields": {"provider_name": "prv" + str(i), "user": i},
+            "fields": {"id": a, "provider_name": "prv" + str(i), "user": i},
         }
         providers["data"].append(prov)
     json.dump(providers["data"], out, indent=4)
@@ -79,10 +82,11 @@ with open("fixtures/Clusters.json", "w") as out:
     clusters = {}
     clusters["data"] = []
     for i in range(2):
+        a = uuid.uuid4().hex
         cl = {
-            "pk": str(uuid.uuid4()),
-            "model": db_name + "Provider",
-            "fields": {"provider_name": "cls" + str(i)},
+            "id": a,
+            "model": db_name + "Cluster",
+            "fields": {"id": a, "cluster_name": "cls" + str(i)},
         }
         clusters["data"].append(cl)
     json.dump(clusters["data"], out, indent=4)
@@ -97,14 +101,15 @@ _PAYMENT_METHODS = [
 payments = []
 for i in range(500):
     pay = {}
-    pay["pk"] = str(uuid.uuid4())
-    pay["model"] = db_name + "Payments"
+    pay["id"] = uuid.uuid4().hex
+    pay["model"] = db_name + "Payment"
     filds = {}
+    filds["id"] = pay["id"]
     filds["payment_req"] = True
     filds["payment_method"] = _PAYMENT_METHODS[randomint(0, 4)][0]
     filds["cost"] = random.uniform(8.0, 13.0)
     filds["invoice"] = ""
-    filds["user_id"] = "u" + str(randomint(3, 148))
+    filds["user_id"] = randomint(3, 148)
     pay["fields"] = filds
     payments.append(pay)
 
@@ -207,46 +212,73 @@ k = 146
 for i in points["data"]:
     station = {}
     # print(i)
-    station["pk"] = i["UUID"]
+    station["id"] = uuid.uuid4().hex
     station["model"] = db_name + "ChargingStation"
     st = {}
-    st["cluster"] = clusters["data"][randomint(0, len(clusters["data"]))]["pk"]
-    st["owner"] = str(uuid.uuid4())
+    st["id"] = station["id"]
+    st["cluster"] = clusters["data"][randomint(0, len(clusters["data"]))]["id"]
+    st["owner"] = uuid.uuid4().hex
+    st["provider"] = providers["data"][randomint(0, len(providers))]["id"]
+    st["location"] = uuid.uuid4().hex
+    loc = {}
+    loc["id"] = st["location"]
+    loc["model"] = db_name + "Location"
+    lo = {}
+    lo["id"] = st["location"]
+    lo["email"] = "u" + str(k) + "@tlMpa.gr"
+    if i["AddressInfo"]["RelatedURL"] != None:
+        lo["website"] = i["AddressInfo"]["RelatedURL"]
+    else:
+        lo["website"] = "https://www.tlmpa.gr"
+    lo["telephone"] = randomint(2100000000, 2109999999)
+    lo["title"] = i["AddressInfo"]["Title"]
+    lo["town"] = i["AddressInfo"]["Town"]
+    lo["country"] = i["AddressInfo"]["Country"]["Title"]
+    # lo["post_code"] = i["AddressInfo"]["Postcode"]
+    lo["address_line"] = i["AddressInfo"]["AddressLine1"]
+    loc["fields"] = lo
+    locations.append(loc)
+    # st["location"] =
     station["fields"] = st
     charging_stations.append(station)
     for co in i["Connections"]:
         c_points = {}
-        c_points["pk"] = str(uuid.uuid4())
+        c_points["id"] = uuid.uuid4().hex
         c_points["model"] = db_name + "ChargingPoint"
         poi = {}
-        poi["charging_station"] = station["pk"]
+        poi["id"] = c_points["id"]
+        poi["charging_station"] = station["id"]
         poi["connection_type"] = co["ConnectionType"]["ID"]
-        poi["current_type"] = co["CurrentTypeID"]
-        poi["status_type"] = co["StatusTypeID"]
-        poi["location"] = str(uuid.uuid4())
-        poi["charger_type"] = co["LevelID"]
+        if co["CurrentTypeID"]:
+            poi["current_type"] = co["CurrentTypeID"]
+        else:
+            poi["current_type"] = CURRENT_TYPE_CHOICES[randomint(0, 3)][0]
+        if co["StatusTypeID"] != None:
+            poi["status_type"] = co["StatusTypeID"]
+        else:
+            poi["status_type"] = STATUS_TYPE_CHOICES[randomint(0, 10)][0]
+        if co["LevelID"] != None:
+            poi["charger_type"] = co["LevelID"]
+        else:
+            poi["charger_type"] = CHARGER_TYPE_CHOICES[randomint(0, 3)][0]
         if i["UsageType"] != None:
             poi["usage_type_id"] = i["UsageType"]["ID"]
-        poi["kw_power"] = co["PowerKW"]
+        if co["PowerKW"]:
+            poi["kw_power"] = co["PowerKW"]
+        else:
+            poi["kw_power"] = randomint(15, 150)
         poi["usage_cost"] = random.uniform(0.06, 0.18)
-        poi["volts_power"] = co["Voltage"]
-        poi["amps_power"] = co["Amps"]
+        if co["Voltage"]:
+            poi["volts_power"] = co["Voltage"]
+        else:
+            poi["volts_power"] = randomint(110, 220)
+        if co["Amps"]:
+            poi["amps_power"] = co["Amps"]
+        else:
+            poi["amps_power"] = randomint(2, 20)
         c_points["fields"] = poi
         charging_points.append(c_points)
-        loc = {}
-        loc["pk"] = poi["location"]
-        loc["model"] = db_name + "Location"
-        lo = {}
-        lo["email"] = "u" + str(k) + "@tlMpa.gr"
-        lo["website"] = i["AddressInfo"]["RelatedURL"]
-        lo["telephone"] = randomint(2100000000, 2109999999)
-        lo["title"] = i["AddressInfo"]["Title"]
-        lo["town"] = i["AddressInfo"]["Town"]
-        lo["country"] = i["AddressInfo"]["Country"]["Title"]
-        lo["postcode"] = i["AddressInfo"]["Postcode"]
-        lo["address_line"] = i["AddressInfo"]["AddressLine1"]
-        loc["fields"] = lo
-        locations.append(loc)
+
     k += 1
 
 with open("fixtures/ChargingStations.json", "w") as out1:
@@ -260,27 +292,50 @@ with open("raw datafiles/acn_data/caltech_acndata_sessions_12month.json") as se:
     sessions = json.load(se)
 
 acn_data = []
+mnth = {
+    "Jan": "01",
+    "Feb": "02",
+    "Mar": "03",
+    "Apr": "04",
+    "May": "05",
+    "Jun": "06",
+    "Jul": "07",
+    "Aug": "08",
+    "Sep": "09",
+    "Oct": "10",
+    "Nov": "11",
+    "Dec": "12",
+}
+
+
+def dateify(datein):
+    arr = datein.split()
+    dateout = ""
+    dateout = arr[3] + "-" + mnth[arr[2]] + "-" + arr[1] + " " + arr[4]
+    return dateout
+
 
 cnt = 0
 for s in sessions["_items"]:
     # print(s)
     if s["userInputs"] != None:
         session = {}
-        session["pk"] = str(uuid.uuid4())
+        session["id"] = uuid.uuid4().hex
         session["model"] = db_name + "Session"
         se = {}
-        se["payment"] = payments[cnt]["pk"]
+        se["id"] = session["id"]
+        se["payment"] = payments[cnt]["id"]
         # se['protocol']=""
         se["user_comments_ratings"] = str(randomint(1, 5)) + "stars"
-        se["provider"] = providers["data"][randomint(0, len(providers))]["pk"]
+        se["provider"] = providers["data"][randomint(0, len(providers))]["id"]
         se["kwh_delivered"] = s["kWhDelivered"]
-        se["site_id"] = str(uuid.uuid4())
-        se["connect_time"] = s["connectionTime"]
-        se["disconnect_time"] = s["disconnectTime"]
-        se["done_charging_time"] = s["doneChargingTime"]
-        se["charging_point"] = charging_points[randomint(0, len(charging_points))]["pk"]
+        se["site_id"] = uuid.uuid4().hex
+        se["connect_time"] = dateify(s["connectionTime"])
+        se["disconnect_time"] = dateify(s["disconnectTime"])
+        se["done_charging_time"] = dateify(s["doneChargingTime"])
+        se["charging_point"] = charging_points[randomint(0, len(charging_points))]["id"]
         se["vehicle"] = database_ve["actc"][randomint(0, len(database_ve["actc"]))][
-            "pk"
+            "id"
         ]
         session["fields"] = se
         acn_data.append(session)
@@ -297,43 +352,44 @@ USER_TYPE_CHOICES = [
     (3, "Energy Provider"),
 ]
 
-# from django.conf import settings
+from django.conf import settings
 
-# settings.configure()
+settings.configure()
 users = []
 vehicleowner = []
 owner = []
 for i in range(3):
     us = {}
-    us["pk"] = i
-    us["model"] = "auth.User"
+    us["id"] = i
+    us["model"] = "common.User"
     u = {}
+    u["id"] = us["id"]
     u["username"] = "u" + str(i)
     u["password"] = 3 * u["username"] + "123"
-    # u["password"] = make_password(u['password'])
+    u["password"] = make_password(u["password"])
     u["email"] = u["username"] + "@tlMpa.gr"
-    # u["user_type"] = 3
+    u["user_type"] = 3
     us["fields"] = u
     users.append(us)
 
-
 for i in range(3, 146):
     us = {}
-    us["pk"] = i
-    us["model"] = "auth.User"
+    us["id"] = i
+    us["model"] = "common.User"
     u = {}
+    u["id"] = us["id"]
     u["username"] = "u" + str(i)
     u["password"] = 3 * u["username"] + "123"
-    # u["password"] = make_password(u['password'])
+    u["password"] = make_password(u["password"])
     u["email"] = u["username"] + "@tlMpa.gr"
-    # u["user_type"] = 1
+    u["user_type"] = 1
     us["fields"] = u
     users.append(us)
     vo = {}
     # print(i)
-    vo["pk"] = database_ve["actc"][i - 3]["fields"]["owner"]
+    vo["id"] = database_ve["actc"][i - 3]["fields"]["owner"]
     vo["model"] = db_name + "VehicleOwner"
-    v = {"user": i}
+    v = {"id": vo["id"], "user": i}
     vo["fields"] = v
     vehicleowner.append(vo)
 
@@ -341,26 +397,27 @@ for i in range(3, 146):
 for i in range(146, 646):
     # print(i)
     us = {}
-    us["pk"] = i
-    us["model"] = "auth.User"
+    us["id"] = i
+    us["model"] = "common.User"
     u = {}
+    u["id"] = us["id"]
     u["username"] = "u" + str(i)
     u["password"] = 3 * u["username"] + "123"
-    # u["password"] = make_password(u['password'])
+    u["password"] = make_password(u["password"])
     u["email"] = u["username"] + "@tlMpa.gr"
-    # u["user_type"] = 2
+    u["user_type"] = 2
     us["fields"] = u
     users.append(us)
     ow = {}
     # print(i)
-    ow["pk"] = charging_stations[i - 146]["fields"]["owner"]
+    ow["id"] = charging_stations[i - 146]["fields"]["owner"]
     ow["model"] = db_name + "Owner"
-    o = {"user": i}
+    o = {"id": ow["id"], "user": i}
     ow["fields"] = o
     owner.append(ow)
 
-# with open("fixtures/authUsers.json", "w") as out1:
-#     json.dump(users, out1, indent=4)
+with open("fixtures/Users.json", "w") as out1:
+    json.dump(users, out1, indent=4)
 
 with open("fixtures/VehicleOwner.json", "w") as out1:
     json.dump(vehicleowner, out1, indent=4)
@@ -368,60 +425,60 @@ with open("fixtures/VehicleOwner.json", "w") as out1:
 with open("fixtures/Owner.json", "w") as out1:
     json.dump(owner, out1, indent=4)
 
-users = []
-vehicleowner = []
-owner = []
-for i in range(3):
-    us = {}
-    us["pk"] = i
-    us["model"] = db_name + "User"
-    u = {}
-    # u["username"] = "u" + str(i)
-    # u["password"] = 3 * u["username"] + "123"
-    # u["email"] = u["username"] + "@tlMpa.gr"
-    u["user_type"] = 3
-    us["fields"] = u
-    users.append(us)
+# users = []
+# vehicleowner = []
+# owner = []
+# for i in range(3):
+#     us = {}
+#     us["id"] = i
+#     us["model"] = db_name + "User"
+#     u = {}
+#     # u["username"] = "u" + str(i)
+#     # u["password"] = 3 * u["username"] + "123"
+#     # u["email"] = u["username"] + "@tlMpa.gr"
+#     u["user_type"] = 3
+#     us["fields"] = u
+#     users.append(us)
 
 
-for i in range(3, 146):
-    us = {}
-    us["pk"] = i
-    us["model"] = db_name + "User"
-    u = {}
-    # u["username"] = "u" + str(i)
-    # u["password"] = 3 * u["username"] + "123"
-    # u["email"] = u["username"] + "@tlMpa.gr"
-    u["user_type"] = 1
-    us["fields"] = u
-    users.append(us)
-    # vo = {}
-    # # print(i)
-    # vo["pk"] = database_ve["actc"][i - 3]["fields"]["owner"]
-    # vo["model"] = db_name + "VehicleOwner"
-    # v = {"user": "u" + str(i)}
-    # vo["fields"] = v
-    # vehicleowner.append(vo)
+# for i in range(3, 146):
+#     us = {}
+#     us["id"] = i
+#     us["model"] = db_name + "User"
+#     u = {}
+#     # u["username"] = "u" + str(i)
+#     # u["password"] = 3 * u["username"] + "123"
+#     # u["email"] = u["username"] + "@tlMpa.gr"
+#     u["user_type"] = 1
+#     us["fields"] = u
+#     users.append(us)
+#     # vo = {}
+#     # # print(i)
+#     # vo["id"] = database_ve["actc"][i - 3]["fields"]["owner"]
+#     # vo["model"] = db_name + "VehicleOwner"
+#     # v = {"user": "u" + str(i)}
+#     # vo["fields"] = v
+#     # vehicleowner.append(vo)
 
 
-for i in range(146, 646):
-    us = {}
-    us["pk"] = i
-    us["model"] = db_name + "User"
-    # u = {}
-    # u["username"] = "u" + str(i)
-    # u["password"] = 3 * u["username"] + "123"
-    # u["email"] = u["username"] + "@tlMpa.gr"
-    u["user_type"] = 2
-    us["fields"] = u
-    users.append(us)
-    # ow = {}
-    # # print(i)
-    # ow["pk"] = charging_stations[i - 146]["fields"]["owner"]
-    # ow["model"] = db_name + "Owner"
-    # o = {"user": "u" + str(i)}
-    # ow["fields"] = o
-    # owner.append(ow)
+# for i in range(146, 646):
+#     us = {}
+#     us["id"] = i
+#     us["model"] = db_name + "User"
+#     # u = {}
+#     # u["username"] = "u" + str(i)
+#     # u["password"] = 3 * u["username"] + "123"
+#     # u["email"] = u["username"] + "@tlMpa.gr"
+#     u["user_type"] = 2
+#     us["fields"] = u
+#     users.append(us)
+#     # ow = {}
+#     # # print(i)
+#     # ow["id"] = charging_stations[i - 146]["fields"]["owner"]
+#     # ow["model"] = db_name + "Owner"
+#     # o = {"user": "u" + str(i)}
+#     # ow["fields"] = o
+#     # owner.append(ow)
 
-with open("fixtures/Users.json", "w") as out1:
-    json.dump(users, out1, indent=4)
+# with open("fixtures/Users.json", "w") as out1:
+#     json.dump(users, out1, indent=4)
