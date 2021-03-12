@@ -295,7 +295,7 @@ class DeleteStationView(View):
     def post(self, request):
 
         context = {
-            "title": request.POST["title"],
+            "id": request.POST["ID"],
         }
         return render(request, "common/delete_station_data.html", context)
 
