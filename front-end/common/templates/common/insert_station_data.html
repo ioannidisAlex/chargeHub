@@ -1,0 +1,45 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+
+<table id="dtBasicExample" class="table table-bordered table-striped"></table>
+<!--<table id="dtBasicExample" class="tablesorter"></table>	-->
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+	var data ={owner: "{{  owner }}",cluster: "{{  cluster }}",provider: "{{  provider }}",email: "{{  email }}",website: "{{  website }}",title: "{{  title }}",town: "{{  town }}",area: "{{  area }}",country: "{{  country }}",address_line: "{{  address }}" };
+    axios.post(
+		'http://localhost:8765/evcharge/api/stations/', data,
+		{ headers: {
+				"X-OBSERVATORY-AUTH": AuthStr,
+                'Content-Type': 'application/x-www-form-urlencoded',
+			}
+	})
+	.then( (response) => {
+        console.log(response);
+        var table = ''
+    	//var thead = '<thead class="thead-dark">';
+        var thead = '<thead class="thead-light">';
+        for(var key in response.data){
+        	thead += '<th>'+key+'</th>';
+        }
+        thead += '</thead>';
+    	var tbody = '<tbody>';
+		for(var key in response.data){
+			//tbody += '<tr>';
+			tbody += '<td style="word-break:normal;">'+response.data[key]+'</td>'; 
+			//tbody += '</tr>';
+		}
+    	tbody += '</tbody>';
+    	table += thead+tbody;
+		document.getElementById('dtBasicExample').innerHTML = table;
+    })
+	.catch( (error) => {
+    	alert('Oops! Something went wrong..');
+      	console.log(error);
+		console.log(AuthStr);
+    })
+</script>
+
+{% endblock content %}

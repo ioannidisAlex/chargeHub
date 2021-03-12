@@ -34,7 +34,7 @@ router.register(
     api_views.RetrieveUserViewSet,
 )
 router2.register(
-    "find_station",
+    "stations",
     api_views.StationsViewSet,
 )
 
@@ -91,11 +91,6 @@ urlpatterns = [
     ),
     path("evcharge/api/login/", views.obtain_auth_token, name="rest_login"),
     path("evcharge/api/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
-    path(
-        "evcharge/api/insert_station/",
-        api_views.InsertStationView.as_view(),
-        name="insert_station",
-    ),
     path("evcharge/api/admin/", include(router.urls)),
     path("evcharge/api/", include(router2.urls)),
     path(

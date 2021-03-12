@@ -431,13 +431,6 @@ class StationsViewSet(viewsets.ViewSet):
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
-
-class InsertStationView(generics.GenericAPIView):
-    authentication_classes = [CustomTokenAuthentication]
-    permission_classes = [IsAdminUser]
-    serializer_class = StationSerializer
-    queryset = ChargingStation.objects.all()
-
     def post(self, request):
         # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
         # print(request.POST)
@@ -482,27 +475,29 @@ class InsertStationView(generics.GenericAPIView):
                 and i != "address_line"
             ):
                 d2[i] = j
-
-        location_serializer = LocationSerializer(data=location)
-        print("This is serializer", location_serializer)
-        if location_serializer.is_valid(raise_exception=True):
-            location_serializer.save()
-        else:
+        try:
+            print(d)
+            location_serializer = LocationSerializer(data=location)
+            print("This is serializer", location_serializer)
+            if location_serializer.is_valid(raise_exception=True):
+                location_serializer.save()
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+            print("hello")
+            d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+            d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+            print("hi")
+            d2["location"] = location_serializer.data["id"]
+            print(d2)
+            serializer = self.serializer_class(data=d2)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status.HTTP_200_OK)
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-        d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
-        print("hello")
-        d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
-        d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
-        print("hi")
-        d2["location"] = location_serializer.data["id"]
-        print(d2)
-        serializer = self.serializer_class(data=d2)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status.HTTP_200_OK)
-        return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-        # except:
-        #    return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 """class CreateStationView(generics.GenericAPIView):

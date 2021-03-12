@@ -1,6 +1,5 @@
-from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,
+from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,; InsertStationView,
     HealthcheckView,
-    InsertStationView,
     LogoutView,
     ResetSessionsView,
     RetrieveUserViewSet,

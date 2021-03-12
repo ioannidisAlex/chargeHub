@@ -260,7 +260,7 @@ class StationsView(View):
 
 
 class InsertStationView(View):
-    template_name = "common/delete_stations.html"
+    template_name = "common/insert_stations.html"
     form_class = InsertStationForm
 
     def get(self, request, *args, **kwargs):
@@ -280,7 +280,7 @@ class InsertStationView(View):
             "country": request.POST["country"],
             "address": request.POST["address"],
         }
-        return render(request, "common/delete_station_data.html", context)
+        return render(request, "common/insert_station_data.html", context)
 
 
 class DeleteStationView(View):
