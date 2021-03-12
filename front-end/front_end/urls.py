@@ -25,6 +25,7 @@ from common import views as common_views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", common_views.home, name="home"),
     path("home/", common_views.home, name="home"),
     path("register/", common_views.register, name="register"),
     path(
