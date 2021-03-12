@@ -5,5 +5,5 @@ class CommonConfig(AppConfig):
     name = "common"
 
     def ready(self):
-        pass
-        # import common.signals
+        # pass
+        import common.signals

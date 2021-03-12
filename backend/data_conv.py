@@ -27,6 +27,7 @@ for v in vehicles["data"]:
     auto["id"] = vehicle["id"]
     auto["model"] = db_name + "Vehicle"
     fil = {}
+    fil["id"] = vehicle["id"]
     fil["engine_type"] = v["type"]
     fil["release_year"] = v["release_year"]
     fil["brand"] = v["brand"]
@@ -84,7 +85,7 @@ with open("fixtures/Clusters.json", "w") as out:
         a = uuid.uuid4().hex
         cl = {
             "id": a,
-            "model": db_name + "Provider",
+            "model": db_name + "Cluster",
             "fields": {"id": a, "cluster_name": "cls" + str(i)},
         }
         clusters["data"].append(cl)
@@ -219,6 +220,24 @@ for i in points["data"]:
     st["owner"] = uuid.uuid4().hex
     st["provider"] = providers["data"][randomint(0, len(providers))]["id"]
     st["location"] = uuid.uuid4().hex
+    loc = {}
+    loc["id"] = st["location"]
+    loc["model"] = db_name + "Location"
+    lo = {}
+    lo["id"] = st["location"]
+    lo["email"] = "u" + str(k) + "@tlMpa.gr"
+    if i["AddressInfo"]["RelatedURL"] != None:
+        lo["website"] = i["AddressInfo"]["RelatedURL"]
+    else:
+        lo["website"] = "https://www.tlmpa.gr"
+    lo["telephone"] = randomint(2100000000, 2109999999)
+    lo["title"] = i["AddressInfo"]["Title"]
+    lo["town"] = i["AddressInfo"]["Town"]
+    lo["country"] = i["AddressInfo"]["Country"]["Title"]
+    # lo["post_code"] = i["AddressInfo"]["Postcode"]
+    lo["address_line"] = i["AddressInfo"]["AddressLine1"]
+    loc["fields"] = lo
+    locations.append(loc)
     # st["location"] =
     station["fields"] = st
     charging_stations.append(station)
@@ -259,24 +278,7 @@ for i in points["data"]:
             poi["amps_power"] = randomint(2, 20)
         c_points["fields"] = poi
         charging_points.append(c_points)
-        loc = {}
-        loc["id"] = st["location"]
-        loc["model"] = db_name + "Location"
-        lo = {}
-        lo["id"] = st["location"]
-        lo["email"] = "u" + str(k) + "@tlMpa.gr"
-        if i["AddressInfo"]["RelatedURL"] != None:
-            lo["website"] = i["AddressInfo"]["RelatedURL"]
-        else:
-            lo["website"] = "https://www.tlmpa.gr"
-        lo["telephone"] = randomint(2100000000, 2109999999)
-        lo["title"] = i["AddressInfo"]["Title"]
-        lo["town"] = i["AddressInfo"]["Town"]
-        lo["country"] = i["AddressInfo"]["Country"]["Title"]
-        # lo["post_code"] = i["AddressInfo"]["Postcode"]
-        lo["address_line"] = i["AddressInfo"]["AddressLine1"]
-        loc["fields"] = lo
-        locations.append(loc)
+
     k += 1
 
 with open("fixtures/ChargingStations.json", "w") as out1:
