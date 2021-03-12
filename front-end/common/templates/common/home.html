@@ -90,7 +90,9 @@ background-image: url("../media/image2.jpg");
 	  <div id="Paris" class="tabcontent">
 		<img src="../media/image5.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Φόρτιση</button>
+			<button type="button" class="btn btn-info">
+				<a href="{% url 'charge' %}" style="color:rgb(255, 255, 255)">Φόρτιση</a>
+			</button>
 			<button type="button" class="btn btn-info">Στατιστικά Φόρτισης</button>
 			<button type="button" class="btn btn-info">Στατιστικά Οχήματος</button>
 		</div>

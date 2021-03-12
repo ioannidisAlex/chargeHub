@@ -137,6 +137,11 @@ urlpatterns = [
         common_views.DeleteStationView.as_view(),
         name="delete_station",
     ),
+    path(
+        "charge/",
+        common_views.ChargeView.as_view(),
+        name="charge",
+    ),
 ]
 
 if settings.DEBUG:

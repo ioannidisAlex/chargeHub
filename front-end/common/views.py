@@ -297,3 +297,13 @@ class DeleteStationView(View):
             "title": request.POST["title"],
         }
         return render(request, "common/delete_stations_data.html", context)
+
+
+class ChargeView(View):
+    template_name = "common/charge.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name,)
+
+    def post(self, request):
+        pass
