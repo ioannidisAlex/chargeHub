@@ -7,6 +7,7 @@ from django.views import View
 from rest_framework import status
 
 from .forms import (
+    DeleteStationForm,
     InsertStationForm,
     ProfileUpdateForm,
     RestLoginForm,
@@ -285,7 +286,7 @@ class InsertStationView(View):
 
 class DeleteStationView(View):
     template_name = "common/delete_stations.html"
-    form_class = InsertStationForm
+    form_class = DeleteStationForm
 
     def get(self, request, *args, **kwargs):
         return render(request, self.template_name, {"form": self.form_class()})
@@ -293,15 +294,6 @@ class DeleteStationView(View):
     def post(self, request):
 
         context = {
-            "owner": request.POST["owner"],
-            "cluster": request.POST["cluster"],
-            "provider": request.POST["provider"],
-            "email": request.POST["email"],
-            "website": request.POST["website"],
             "title": request.POST["title"],
-            "town": request.POST["town"],
-            "area": request.POST["area"],
-            "country": request.POST["country"],
-            "address": request.POST["address"],
         }
-        return render(request, "common/delete_station_data.html", context)
+        return render(request, "common/delete_stations_data.html", context)

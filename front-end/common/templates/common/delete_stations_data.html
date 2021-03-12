@@ -1,0 +1,24 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		//const data = {};
+		//data['title'] = '{{ title }}';
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+		axios.post(
+			'http://localhost:8765/evcharge/api/stations/{{ title }}/',
+			{},
+			{headers: {
+				"X-OBSERVATORY-AUTH": AuthStr,
+				'Content-Type': 'application/x-www-form-urlencoded',
+			}}
+		)
+		.then(response => {		
+			console.log(response.status);	
+		})
+		.catch(err => {
+			console.log(err.response);
+		});
+	</script>
+{% endblock content %}
