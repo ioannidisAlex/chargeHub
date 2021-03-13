@@ -184,7 +184,7 @@ class SessionsPerStationView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         try:
-            charging_station = get_object_or_404(ChargingStation, pk=id)
+            charging_station = ChargingStation.objects.all().get(id=id)
             sessions = self.queryset.filter(
                 charging_point__charging_station_id=id
             ).filter(connect_time__date__range=[date_from, date_to])
