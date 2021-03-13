@@ -14,6 +14,7 @@ from .forms import (
     SessionsPer_Form,
     SessionsupdForm,
     StationsForm,
+    UpdateStationForm,
     UsermodForm,
     UserRegisterForm,
     UsersForm,
@@ -296,7 +297,26 @@ class DeleteStationView(View):
         context = {
             "id": request.POST["ID"],
         }
-        return render(request, "common/delete_stations_data.html", context)
+        return render(request, "common/delete_station_data.html", context)
+
+
+class UpdateStationView(View):
+    template_name = "common/update_station.html"
+    form_class = UpdateStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "id": request.POST["ID"],
+            "owner": request.POST["owner"],
+            "cluster": request.POST["cluster"],
+            "provider": request.POST["provider"],
+            "title": request.POST["location_title"],
+        }
+        return render(request, "common/update_station_data.html", context)
 
 
 class KiloWattsView(View):
@@ -313,7 +333,10 @@ class ChargeView(View):
     template_name = "common/charge.html"
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name,)
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass

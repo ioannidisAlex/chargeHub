@@ -144,3 +144,20 @@ class DeleteStationForm(forms.Form):
         fields = [
             "id",
         ]
+
+
+class UpdateStationForm(forms.Form):
+    ID = forms.CharField(max_length=100, required=True)
+    owner = forms.CharField(max_length=100, required=False)
+    cluster = forms.CharField(max_length=100, required=False)
+    provider = forms.CharField(max_length=100, required=False)
+    location_title = forms.CharField(max_length=100, required=False)
+
+    class Meta:
+        fields = [
+            "id",
+            "owner",
+            "cluster",
+            "provider",
+            "location_title",
+        ]
