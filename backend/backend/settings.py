@@ -171,4 +171,3 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
 ]
 
 CORS_ALLOWED_ORIGINS = ["https://localhost:8000", "https://127.0.0.1:8000"]
-
