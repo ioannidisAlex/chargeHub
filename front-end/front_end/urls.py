@@ -166,8 +166,8 @@ urlpatterns = [
         "charge_initial/",
         common_views.ChargeInitialView.as_view(),
         name="charge_initial",
-   ),
-   path(
+    ),
+    path(
         "cost_estimation/",
         common_views.CostEstimationView.as_view(),
         name="cost_estimation",

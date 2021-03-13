@@ -396,7 +396,6 @@ class ChargeInitialView(View):
         return render(request, "common/charge_initial_data.html", context)
 
 
-
 class CostEstimationView(View):
     template_name = "common/cost_estimation.html"
     form_class = StationsForm
@@ -413,4 +412,3 @@ class CostEstimationView(View):
             "id": request.POST["ID"],
         }
         return render(request, "common/cost_estimation_data.html", context)
-
