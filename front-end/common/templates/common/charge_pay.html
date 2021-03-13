@@ -6,42 +6,62 @@
             {% csrf_token %}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Payment</legend>
-                {{ form|crispy }}
-                
-            <!--
-                <text>Payment method</text>
-                <select id="hll">
-                  <option selected="selected">credit card</option>
-                  <option>cash</option>
-                  <option>paypal</option>
-                  <option>coupon</option>
-                </select>
-            -->
-                <text>Cost</text>
-                <div>
-                    <input id="price_to" value="0$" readonly="readonly"></input>
-                </div>
 
+                <text>Charging Cost:</text>
+                <div>
+                    <p id="price_to"></p>
+                </div>
+                {{ form | crispy}}
             </fieldset>
+
             <div class="form-group">
-                <button class="btn btn-outline-info" type="submit">Submit</button>
+                <button class="btn btn-outline-info" type="submit">Complete Payment</button>
             </div>
         </form>
     </div>
-
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script>
         $(document).ready(function() {
-            /* prospa8eia yia timi analoga
+           
             var time1=new Date();
             var time2=new Date();
             var time1=JSON.parse(localStorage.getItem("timeStart"));
             var time2=JSON.parse(localStorage.getItem("timeStop"));
-            //console.log(JSON.parse(time1))
-            var seconds = ((time2.getTime())%100000 - (time1.getTime())%100000);
-            console.log(seconds)
+            //console.log(time1.split(':')[1]);
+            //console.log(time1.split(':')[2].split('.')[0])
+            //console.log(time2.split(':')[1]);
+            //console.log(time2.split(':')[2].split('.')[0])
+            var t1 = time1.split(':')[1];
+            var t2 = time1.split(':')[2].split('.')[0];
+            var t3 = time2.split(':')[1];
+            var t4 = time2.split(':')[2].split('.')[0];
+            var duration = 60*(t3-t1) + t4-t2;
+            console.log(duration);
             console.log("aBrlef2");
-            */
+            localStorage.setItem('duration', duration);
+            const AuthStr = 'Token '.concat(localStorage.getItem("token"));
+            var id = localStorage.getItem('charging_point') ;
+            axios.get(
+                    'http://localhost:8765/evcharge/api/charging_cost/'+id+'/',
+                    { headers: {
+                        'X-CSRFToken': '{{ csrf_token }}',
+                        "X-OBSERVATORY-AUTH": AuthStr
+                    }
+                })
+            .then( (response) => {
+                console.log(response.data);
+                var us_cost = (response.data['Usage cost']);
+                var kw_power = (response.data['KW Power']);
+                var cost = 1.0*(us_cost * localStorage.getItem('duration'))/(1.0*(3600 * kw_power)) 
+                var kwh_delivered = localStorage.getItem('duration')*(1.0*(kw_power));
+                console.log(cost);
+                console.log(kwh_delivered);
+                localStorage.setItem('cost', cost);
+                localStorage.setItem('kwh_delivered', kwh_delivered)
+                document.getElementById('price_to').innerHTML=cost.toFixed(6) + ' €';
+            
         });
+    })
     </script>
 {% endblock content %}

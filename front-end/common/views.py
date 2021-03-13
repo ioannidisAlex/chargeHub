@@ -7,6 +7,9 @@ from django.views import View
 from rest_framework import status
 
 from .forms import (
+    ChargeCommentForm,
+    ChargeInitialForm,
+    ChargePayForm,
     DeleteStationForm,
     InsertStationForm,
     ProfileUpdateForm,
@@ -347,28 +350,50 @@ class ChargeView(View):
 
 class ChargePayView(View):
     template_name = "common/charge_pay.html"
+    form_class = ChargePayForm
 
     def get(self, request, *args, **kwargs):
-        return render(
-            request,
-            self.template_name,
-        )
+        return render(request, self.template_name, {"form": self.form_class})
 
     def post(self, request):
-        pass
+
+        context = {
+            "payment_method": request.POST["payment_method"],
+            "invoice": request.POST["invoice"],
+            "user_id": request.POST["user_id"],
+        }
+        return render(request, "common/charge_pay_data.html", context)
 
 
 class ChargeCommentView(View):
     template_name = "common/charge_comment.html"
+    form_class = ChargeCommentForm
 
     def get(self, request, *args, **kwargs):
-        return render(
-            request,
-            self.template_name,
-        )
+        return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
-        pass
+
+        context = {"user_comments_ratings": request.POST["user_comments_ratings"]}
+        return render(request, "common/insert_session_data.html", context)
+
+
+class ChargeInitialView(View):
+    template_name = "common/charge_initial.html"
+    form_class = ChargeInitialForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "protocol": request.POST["protocol"],
+            "provider": request.POST["provider"],
+            "charging_point": request.POST["charging_point"],
+            "vehicle": request.POST["vehicle"],
+        }
+        return render(request, "common/charge_initial_data.html", context)
 
 
 class CostEstimationView(View):

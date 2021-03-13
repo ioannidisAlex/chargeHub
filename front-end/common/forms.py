@@ -161,3 +161,46 @@ class UpdateStationForm(forms.Form):
             "provider",
             "location_title",
         ]
+
+
+class ChargeInitialForm(forms.Form):
+    protocol = forms.CharField(max_length=100, required=True)
+    provider = forms.CharField(max_length=100, required=True)
+    charging_point = forms.CharField(max_length=100, required=True)
+    vehicle = forms.CharField(max_length=100, required=True)
+
+    class Meta:
+        fields = [
+            "protocol",
+            "provider",
+            "charging_point",
+            "vehicle",
+        ]
+
+
+class ChargePayForm(forms.Form):
+    _PAYMENT_METHODS = [
+        ("credit_card", "credit card"),
+        ("cash", "cash"),
+        ("paypal", "paypal"),
+        ("coupon", "coupon"),
+    ]
+    payment_method = forms.ChoiceField(choices=_PAYMENT_METHODS)
+    invoice = forms.CharField(max_length=100, required=True)
+    user_id = forms.CharField(max_length=100, required=True)
+
+    class Meta:
+        fields = [
+            "payment_method",
+            "invoice",
+            "user_id",
+        ]
+
+
+class ChargeCommentForm(forms.Form):
+    user_comments_ratings = forms.CharField(widget=forms.Textarea)
+
+    class Meta:
+        fields = [
+            "user_comments_ratings",
+        ]

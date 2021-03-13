@@ -1,7 +1,7 @@
 from django.contrib.auth import authenticate
 from rest_framework import serializers
 
-from common.models import ChargingStation, Location, Session, User
+from common.models import ChargingStation, Location, Payment, Session, User
 
 
 class SessionSerializer(serializers.ModelSerializer):
@@ -71,5 +71,12 @@ class StationSerializer(serializers.ModelSerializer):
 class LocationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Location
+
+        fields = "__all__"
+
+
+class PaymentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Payment
 
         fields = "__all__"
