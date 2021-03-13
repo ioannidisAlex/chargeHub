@@ -130,14 +130,19 @@ class RetrieveUserViewSet(viewsets.ViewSet):
     queryset = User.objects.all()
 
     def retrieve(self, request, username=None):
-        user = get_object_or_404(self.queryset, username=username)
-        serializer = UserSerializer(user)
-        return Response(serializer.data)
+        try:
+            user = self.queryset.objects.all().get(username=username)
+            serializer = UserSerializer(user)
+            return Response(serializer.data, status.HTTP_200_OK)
+        except:
+            return Response({"status":"failed"}, status.HTTP_400_BAD_REQUEST)
 
     def list(self, request):
-        serializer = UserSerializer(self.queryset, many=True)
-        return Response(serializer.data)
-
+        try:
+            serializer = UserSerializer(self.queryset, many=True)
+            return Response(serializer.data)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 class SessionsPerPointView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
@@ -146,34 +151,37 @@ class SessionsPerPointView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        charging_point = get_object_or_404(ChargingPoint, pk=id)
-        sessions = self.queryset.filter(charging_point__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
-        )
-        sessions_list = [
-            {
-                "SessionIndex": session_index,
-                "SessionID": s.id,
-                "StartedOn": s.connect_time,
-                "FinishedOn": s.done_charging_time,
-                "Protocol": s.protocol,
-                "EnergyDelivered": s.kwh_delivered,
-                "Payment": s.payment.payment_method,
-                "VehicleType": s.vehicle.model.engine_type,
-            }
-            for session_index, s in enumerate(sessions, start=1)
-        ]
+        try:
+            charging_point = ChargingPoint.objects.all().get(id=id)
+            sessions = self.queryset.filter(charging_point__id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            sessions_list = [
+                {
+                    "SessionIndex": session_index,
+                    "SessionID": s.id,
+                    "StartedOn": s.connect_time,
+                    "FinishedOn": s.done_charging_time,
+                    "Protocol": s.protocol,
+                    "EnergyDelivered": s.kwh_delivered,
+                    "Payment": s.payment.payment_method,
+                    "VehicleType": s.vehicle.model.engine_type,
+                }
+                for session_index, s in enumerate(sessions, start=1)
+            ]
 
-        response = {
-            "Point": id,
-            "PointOperator": charging_point.charging_station.owner.id,
-            "RequestTimestamp": datetime.now(),
-            "PeriodFrom": date_from,
-            "PeriodTo": date_to,
-            "NumberOfChargingSessions": len(sessions),
-            "ChargingSessionsList": sessions_list,
-        }
-        return Response(response)
+            response = {
+                "Point": id,
+                "PointOperator": charging_point.charging_station.owner.id,
+                "RequestTimestamp": datetime.now(),
+                "PeriodFrom": date_from,
+                "PeriodTo": date_to,
+                "NumberOfChargingSessions": len(sessions),
+                "ChargingSessionsList": sessions_list,
+            }
+            return Response(response, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 class SessionsPerStationView(generics.GenericAPIView):
@@ -231,7 +239,7 @@ class CostEstimationView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         try:
-            charging_station = get_object_or_404(ChargingStation, pk=id)
+            charging_station = ChargingStation.objects.all().get(id=id)
             sessions = self.queryset.filter(
                 charging_point__charging_station_id=id
             ).filter(connect_time__date__range=[date_from, date_to])
@@ -261,42 +269,46 @@ class SessionsPerVehicleView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        vehicle = get_object_or_404(Vehicle, pk=id)
-        sessions = self.queryset.filter(vehicle__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
-        )
-        sessions_list = [
-            {
-                "SessionIndex": session_index,
-                "SessionID": s.id,
-                "EnergyProvider": s.provider.id,
-                "StartedOn": s.connect_time,
-                "FinishedOn": s.done_charging_time,
-                "Protocol": s.protocol,
-                "EnergyDelivered": s.kwh_delivered,
-                "PricePolicyRef": s.payment.invoice,
-                "CostPerKWh": (
-                    s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
+        try:
+            vehicle = Vehicle.objects.all().get(id=id)
+            sessions = self.queryset.filter(vehicle__id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            sessions_list = [
+                {
+                    "SessionIndex": session_index,
+                    "SessionID": s.id,
+                    "EnergyProvider": s.provider.id,
+                    "StartedOn": s.connect_time,
+                    "FinishedOn": s.done_charging_time,
+                    "Protocol": s.protocol,
+                    "EnergyDelivered": s.kwh_delivered,
+                    "PricePolicyRef": s.payment.invoice,
+                    "CostPerKWh": (
+                        s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
+                    ),
+                    "SessionCost": s.payment.cost,
+                }
+                for session_index, s in enumerate(sessions, start=1)
+            ]
+            response = {
+                "VehicleID": id,
+                "RequestTimestamp": datetime.now(),
+                "PeriodFrom": date_from,
+                "PeriodTo": date_to,
+                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                    "kwh_delivered__sum"
+                ],
+                "NumberOfVisitedPoints": (
+                    sessions.order_by().values("charging_point").distinct().count()
                 ),
-                "SessionCost": s.payment.cost,
+                "NumberOfVehicleChargingSessions": sessions.count(),
+                "VehicleChargingSessionsList": sessions_list,
             }
-            for session_index, s in enumerate(sessions, start=1)
-        ]
-        response = {
-            "VehicleID": id,
-            "RequestTimestamp": datetime.now(),
-            "PeriodFrom": date_from,
-            "PeriodTo": date_to,
-            "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
-                "kwh_delivered__sum"
-            ],
-            "NumberOfVisitedPoints": (
-                sessions.order_by().values("charging_point").distinct().count()
-            ),
-            "NumberOfVehicleChargingSessions": sessions.count(),
-            "VehicleChargingSessionsList": sessions_list,
-        }
-        return Response(response)
+            return Response(response, status.HTTP_200_OK)
+            
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 class SessionsPerProviderView(generics.GenericAPIView):
@@ -306,34 +318,36 @@ class SessionsPerProviderView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        provider = get_object_or_404(Provider, pk=id)
-        sessions = self.queryset.filter(provider__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
-        )
-        sessions_list = [
-            {
-                "StationID": s.charging_point.charging_station.id,
-                "SessionID": s.id,
-                "VehicleID": s.vehicle.id,
-                "StartedOn": s.connect_time,
-                "FinishedOn": s.done_charging_time,
-                "Protocol": s.protocol,
-                "EnergyDelivered": s.kwh_delivered,
-                "PricePolicyRef": s.payment.invoice,
-                "CostPerKWh": (
-                    (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
-                ),
-                "SessionCost": s.payment.cost,
+        try:
+            provider = Provider.objects.all().get(id=id)
+            sessions = self.queryset.filter(provider__id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            sessions_list = [
+                {
+                    "StationID": s.charging_point.charging_station.id,
+                    "SessionID": s.id,
+                    "VehicleID": s.vehicle.id,
+                    "StartedOn": s.connect_time,
+                    "FinishedOn": s.done_charging_time,
+                    "Protocol": s.protocol,
+                    "EnergyDelivered": s.kwh_delivered,
+                    "PricePolicyRef": s.payment.invoice,
+                    "CostPerKWh": (
+                        (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
+                    ),
+                    "SessionCost": s.payment.cost,
+                }
+                for session_index, s in enumerate(sessions, start=1)
+            ]
+            response = {
+                "ProviderID": id,
+                "ProviderName": provider.provider_name,
+                "SessionsList": sessions_list,
             }
-            for session_index, s in enumerate(sessions, start=1)
-        ]
-        response = {
-            "ProviderID": id,
-            "ProviderName": provider.provider_name,
-            "SessionsList": sessions_list,
-        }
-        return Response(response)
-
+            return Response(response, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 class HealthcheckView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
@@ -344,9 +358,10 @@ class HealthcheckView(generics.GenericAPIView):
         try:
             c = db_conn.cursor()
             response = {"status": "OK"}
+            return Response(response, status.HTTP_200_OK)
         except:
             response = {"status": "failed"}
-        return Response(response)
+            return Response(response, status.HTTP_400_BAD_REQUEST)
 
 
 class ResetSessionsView(generics.GenericAPIView):
@@ -370,10 +385,11 @@ class ResetSessionsView(generics.GenericAPIView):
             serializer = AdminUserSerializer(data=admin_user)
             if serializer.is_valid():
                 serializer.create(serializer.validated_data)
-
+            return Response(response, status.HTTP_200_OK)
+        
         except:
             response = {"status": "failed"}
-        return Response(response)
+            return Response(response, status.HTTP_400_BAD_REQUEST)
 
 
 class SessionsupdView(generics.GenericAPIView):
@@ -383,68 +399,70 @@ class SessionsupdView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def post(self, request, *args, **kwargs):
-        file = request.FILES.get("file")
-        if file is None:
-            return Response("no file provided", status=status.HTTP_400_BAD_REQUEST)
-        decoded_file = file.read().decode()
-        io_string = io.StringIO(decoded_file)
-        reader = csv.reader(io_string)
-        sessions_count = 0
-        imported_count = 0
-        for row in reader:
-            sessions_count += 1
-            c_year = int(row[3][:4])
-            c_month = int(row[3][4:6])
-            c_day = int(row[3][6:8])
-            c_hour = int(row[3][8:10])
-            c_minutes = int(row[3][10:12])
-            d_year = int(row[4][:4])
-            d_month = int(row[4][4:6])
-            d_day = int(row[4][6:8])
-            d_hour = int(row[4][8:10])
-            d_minutes = int(row[4][10:12])
-            done_year = int(row[5][:4])
-            done_month = int(row[5][4:6])
-            done_day = int(row[5][6:8])
-            done_hour = int(row[5][8:10])
-            done_minutes = int(row[5][10:12])
-            session = {
-                "user_comments_ratings": row[0],
-                "provider": row[1],
-                "kwh_delivered": row[2],
-                "connect_time": datetime(
-                    c_year, c_month, c_day, c_hour, c_minutes, 0, 0, tzinfo=timezone.utc
-                ),
-                "disconnect_time": datetime(
-                    d_year, d_month, d_day, d_hour, d_minutes, 0, 0, tzinfo=timezone.utc
-                ),
-                "done_charging_time": datetime(
-                    done_year,
-                    done_month,
-                    done_day,
-                    done_hour,
-                    done_minutes,
-                    0,
-                    0,
-                    tzinfo=timezone.utc,
-                ),
-                "charging_point": row[6],
-                "vehicle": row[7],
-                "payment": row[8],
-            }
-            serializer = SessionSerializer(data=session)
-            if serializer.is_valid():
-                imported_count += 1
-                serializer.create(serializer.validated_data)
-            else:
-                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        try:
+            file = request.FILES.get("file")
+            if file is None:
+                return Response("no file provided", status=status.HTTP_400_BAD_REQUEST)
+            decoded_file = file.read().decode()
+            io_string = io.StringIO(decoded_file)
+            reader = csv.reader(io_string)
+            sessions_count = 0
+            imported_count = 0
+            for row in reader:
+                sessions_count += 1
+                c_year = int(row[3][:4])
+                c_month = int(row[3][4:6])
+                c_day = int(row[3][6:8])
+                c_hour = int(row[3][8:10])
+                c_minutes = int(row[3][10:12])
+                d_year = int(row[4][:4])
+                d_month = int(row[4][4:6])
+                d_day = int(row[4][6:8])
+                d_hour = int(row[4][8:10])
+                d_minutes = int(row[4][10:12])
+                done_year = int(row[5][:4])
+                done_month = int(row[5][4:6])
+                done_day = int(row[5][6:8])
+                done_hour = int(row[5][8:10])
+                done_minutes = int(row[5][10:12])
+                session = {
+                    "user_comments_ratings": row[0],
+                    "provider": row[1],
+                    "kwh_delivered": row[2],
+                    "connect_time": datetime(
+                        c_year, c_month, c_day, c_hour, c_minutes, 0, 0, tzinfo=timezone.utc
+                    ),
+                    "disconnect_time": datetime(
+                        d_year, d_month, d_day, d_hour, d_minutes, 0, 0, tzinfo=timezone.utc
+                    ),
+                    "done_charging_time": datetime(
+                        done_year,
+                        done_month,
+                        done_day,
+                        done_hour,
+                        done_minutes,
+                        0,
+                        0,
+                        tzinfo=timezone.utc,
+                    ),
+                    "charging_point": row[6],
+                    "vehicle": row[7],
+                    "payment": row[8],
+                }
+                serializer = SessionSerializer(data=session)
+                if serializer.is_valid(raise_exception=True):
+                    imported_count += 1
+                    serializer.create(serializer.validated_data)
 
-        response = {
-            "SessionsInUploadedFile": sessions_count,
-            "SessionsImported": imported_count,
-            "TotalSessionsInDatabase": self.queryset.count(),
-        }
-        return Response(response)
+            response = {
+                "SessionsInUploadedFile": sessions_count,
+                "SessionsImported": imported_count,
+                "TotalSessionsInDatabase": self.queryset.count(),
+            }
+            return Response(response, status.HTTP_200_OK)
+            
+            except:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 class KWstatsView(generics.GenericAPIView):
@@ -455,24 +473,27 @@ class KWstatsView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request):
-        print("Helloo")
-        KW = []
-        index = 0
-        print(self.queryset.all())
-        for s in self.queryset.all():
-            KW.append(
-                {
-                    "SessionIndex": index,
-                    # "SessionID": s.id,
-                    "EnergyDelivered": s.kwh_delivered,
-                }
-            )
-            index += 1
-        response = {
-            "SessionKW": KW,
-        }
-        return Response(response)
+        try:
+            print("Helloo")
+            KW = []
+            index = 0
+            print(self.queryset.all())
+            for s in self.queryset.all():
+                KW.append(
+                    {
+                        "SessionIndex": index,
+                        # "SessionID": s.id,
+                        "EnergyDelivered": s.kwh_delivered,
+                    }
+                )
+                index += 1
+            response = {
+                "SessionKW": KW,
+            }
+            return Response(response, status.HTTP_200_OK)
 
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 class StationsViewSet(viewsets.ViewSet):
     authentication_classes = [CustomTokenAuthentication]
