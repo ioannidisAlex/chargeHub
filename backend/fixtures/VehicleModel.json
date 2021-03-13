@@ -1,8 +1,9 @@
 [
     {
-        "pk": "a9a177bf-9ce5-4b67-b3ef-51af248b48c2",
+        "id": "dabb4fb3ca7e4cef89b7385ae8022294",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "dabb4fb3ca7e4cef89b7385ae8022294",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Audi",
@@ -59,9 +60,10 @@
         }
     },
     {
-        "pk": "27d7610e-9a77-498a-b1b5-28d4bc92cbf2",
+        "id": "77242326de134be5aa38a21ba3451dc2",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "77242326de134be5aa38a21ba3451dc2",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Audi",
@@ -118,9 +120,10 @@
         }
     },
     {
-        "pk": "c6a6bd26-6a8f-4ab7-baf3-6cfa057044e3",
+        "id": "80daf2a21bfb4cd7acfcd3f5acf33f52",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "80daf2a21bfb4cd7acfcd3f5acf33f52",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Audi",
@@ -165,9 +168,10 @@
         }
     },
     {
-        "pk": "059c028d-b2a6-4a8d-947a-158c7537b290",
+        "id": "3852cf759e3a47e79284c28716e08b94",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3852cf759e3a47e79284c28716e08b94",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Audi",
@@ -212,9 +216,10 @@
         }
     },
     {
-        "pk": "c8e05c0b-05c0-4aac-9f12-35a6a3687e10",
+        "id": "ca2e9019a43e4b0ea92e3ab8f05862eb",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "ca2e9019a43e4b0ea92e3ab8f05862eb",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Audi",
@@ -244,9 +249,10 @@
         }
     },
     {
-        "pk": "e67dc450-d658-4bee-bd0f-a750d445b2f9",
+        "id": "a49887c9e16c4f8eac9e799b76893784",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "a49887c9e16c4f8eac9e799b76893784",
             "engine_type": "bev",
             "release_year": null,
             "brand": "BMW",
@@ -299,9 +305,10 @@
         }
     },
     {
-        "pk": "0ec3f440-136c-49f1-8917-c629a27146c7",
+        "id": "14de25dcd78b4b8b8c66b336ebb07efa",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "14de25dcd78b4b8b8c66b336ebb07efa",
             "engine_type": "bev",
             "release_year": null,
             "brand": "BMW",
@@ -350,9 +357,10 @@
         }
     },
     {
-        "pk": "dbf24ffc-3270-409b-b4da-ec386fa36657",
+        "id": "925acc3b10ab4c5889a1eefa84b964e6",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "925acc3b10ab4c5889a1eefa84b964e6",
             "engine_type": "bev",
             "release_year": null,
             "brand": "BMW",
@@ -397,9 +405,10 @@
         }
     },
     {
-        "pk": "4df1d4d6-f001-4d0a-b284-5ffc07e6ade2",
+        "id": "0a74256e7d81484e946aaaa97efbce19",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "0a74256e7d81484e946aaaa97efbce19",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "BMW",
@@ -429,9 +438,10 @@
         }
     },
     {
-        "pk": "45b68c71-cd11-4bd7-a03f-fdaae259635d",
+        "id": "9dad7fb3ccc14c11b76447d263785d0b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "9dad7fb3ccc14c11b76447d263785d0b",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Citroen",
@@ -476,9 +486,10 @@
         }
     },
     {
-        "pk": "2f2b159b-9b03-450f-9818-c139323d1735",
+        "id": "6c4feb31bc8240a382b2688c3c2d1279",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6c4feb31bc8240a382b2688c3c2d1279",
             "engine_type": "bev",
             "release_year": 2014,
             "brand": "Fiat",
@@ -508,9 +519,10 @@
         }
     },
     {
-        "pk": "22f521ce-42ca-40d7-bfdb-5d33b1bd9cbe",
+        "id": "f755c5eff73544aa984c189e32361b88",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "f755c5eff73544aa984c189e32361b88",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Fiat",
@@ -555,9 +567,10 @@
         }
     },
     {
-        "pk": "c0a26929-1157-4fb4-a999-4f172df9cad7",
+        "id": "421fbb9b9c0d42afb53e68223e84ee78",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "421fbb9b9c0d42afb53e68223e84ee78",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Ford",
@@ -602,9 +615,10 @@
         }
     },
     {
-        "pk": "6cd5ba89-6523-4bca-9423-ea92227a8b8d",
+        "id": "59bfab3d35d04d2da910e5b5dee6ef4d",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "59bfab3d35d04d2da910e5b5dee6ef4d",
             "engine_type": "bev",
             "release_year": 2013,
             "brand": "Ford",
@@ -634,9 +648,10 @@
         }
     },
     {
-        "pk": "6cc437e9-b842-4c1b-9c08-9ca2d46d22a9",
+        "id": "4ce88b929bda4031a67bc7e7312d7c52",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "4ce88b929bda4031a67bc7e7312d7c52",
             "engine_type": "bev",
             "release_year": 2018,
             "brand": "Hyundai",
@@ -681,9 +696,10 @@
         }
     },
     {
-        "pk": "e81564b0-46e3-41f6-b6a6-70370a37f685",
+        "id": "8e3dd8ea9b7e41bb901e6160b5743a1f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8e3dd8ea9b7e41bb901e6160b5743a1f",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Hyundai",
@@ -728,9 +744,10 @@
         }
     },
     {
-        "pk": "c576bee8-8066-4174-bc69-5fe9f2e666ee",
+        "id": "4cbb2f810aae4919ada0cab47c2453e4",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "4cbb2f810aae4919ada0cab47c2453e4",
             "engine_type": "bev",
             "release_year": 2016,
             "brand": "Hyundai",
@@ -783,9 +800,10 @@
         }
     },
     {
-        "pk": "3038b11b-2dfc-4f9f-b22c-4bfdc08d0c4b",
+        "id": "6a6ade6adc46497da1ae1bf579bf68d7",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6a6ade6adc46497da1ae1bf579bf68d7",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Hyundai",
@@ -830,9 +848,10 @@
         }
     },
     {
-        "pk": "3667752d-17a5-4166-abaf-dcf227948bfd",
+        "id": "a257d284662e49f8ac794aac5d95026f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "a257d284662e49f8ac794aac5d95026f",
             "engine_type": "phev",
             "release_year": 2016,
             "brand": "Hyundai",
@@ -862,9 +881,10 @@
         }
     },
     {
-        "pk": "8df35b23-dcc6-4590-83c7-5578da4c4809",
+        "id": "d7d0e2c4554143fda966c7943723bae8",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d7d0e2c4554143fda966c7943723bae8",
             "engine_type": "bev",
             "release_year": 2018,
             "brand": "Hyundai",
@@ -941,9 +961,10 @@
         }
     },
     {
-        "pk": "c1fd1277-5d77-416b-bb25-84bd21f57963",
+        "id": "89dc9a2ab25b477089b4a479f9cb1f42",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "89dc9a2ab25b477089b4a479f9cb1f42",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Hyundai",
@@ -1020,9 +1041,10 @@
         }
     },
     {
-        "pk": "8da12395-cf7a-4ccf-886f-e25ade426457",
+        "id": "9976b2f07f2c4af88541390758a6ceac",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "9976b2f07f2c4af88541390758a6ceac",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Jaguar",
@@ -1075,9 +1097,10 @@
         }
     },
     {
-        "pk": "66cb7bea-24b7-458f-ae3e-11d4a852568b",
+        "id": "c2613ccca31b4d929dafdbe35cfebedd",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "c2613ccca31b4d929dafdbe35cfebedd",
             "engine_type": "bev",
             "release_year": 2018,
             "brand": "Kia",
@@ -1122,9 +1145,10 @@
         }
     },
     {
-        "pk": "add28704-7b59-474d-bfa6-2338e54ccaef",
+        "id": "f7955ee76ca940e7a7fa18016191eebf",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "f7955ee76ca940e7a7fa18016191eebf",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Kia",
@@ -1169,9 +1193,10 @@
         }
     },
     {
-        "pk": "5e1746c9-56a2-4fb9-8a76-b75c95a037ee",
+        "id": "ffba4376dc20415bb023f64444227ab6",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "ffba4376dc20415bb023f64444227ab6",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Kia",
@@ -1216,9 +1241,10 @@
         }
     },
     {
-        "pk": "58661a4c-e1f9-4dc2-8d09-3bb42be62554",
+        "id": "11c44f1cab794a19b86c4c281aab602b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "11c44f1cab794a19b86c4c281aab602b",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Kia",
@@ -1263,9 +1289,10 @@
         }
     },
     {
-        "pk": "0f7eae0b-43be-48f8-b4a0-1a8266fd07a9",
+        "id": "05ace1e0726a4d68b5d4916c0b19e81f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "05ace1e0726a4d68b5d4916c0b19e81f",
             "engine_type": "bev",
             "release_year": 2018,
             "brand": "Kia",
@@ -1342,9 +1369,10 @@
         }
     },
     {
-        "pk": "68cbedff-8994-4b77-bfb5-6aa22962e3a2",
+        "id": "728d33662b684a4e864cb7277c47f37d",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "728d33662b684a4e864cb7277c47f37d",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Kia",
@@ -1421,9 +1449,10 @@
         }
     },
     {
-        "pk": "3c933da2-1fa1-4094-825a-a181610dbfd0",
+        "id": "0b38adc8e8374976948ba20ceb4498bb",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "0b38adc8e8374976948ba20ceb4498bb",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Kia",
@@ -1500,9 +1529,10 @@
         }
     },
     {
-        "pk": "87e73c44-93ba-4687-877c-32a3aa940a09",
+        "id": "df79826c8aaf4cb587b23e66b420cbbc",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "df79826c8aaf4cb587b23e66b420cbbc",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Kia",
@@ -1547,9 +1577,10 @@
         }
     },
     {
-        "pk": "5335d545-cfeb-4bca-bb11-cf0966f1b5ca",
+        "id": "96d03f4a09634d31958a587f459c30b9",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "96d03f4a09634d31958a587f459c30b9",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Mercedes Benz",
@@ -1602,9 +1633,10 @@
         }
     },
     {
-        "pk": "71cc8552-391f-49b0-b106-2202fa222161",
+        "id": "c6af91cfe7854110b3e9ada6ec124b96",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "c6af91cfe7854110b3e9ada6ec124b96",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Mercedes Benz",
@@ -1634,9 +1666,10 @@
         }
     },
     {
-        "pk": "2c7abcf4-0ba0-4feb-9e9b-b47661072feb",
+        "id": "938a159a7668439e87730b4ed67570e6",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "938a159a7668439e87730b4ed67570e6",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Mitsubishi",
@@ -1681,9 +1714,10 @@
         }
     },
     {
-        "pk": "1847e3aa-750c-4b12-a80a-56e792b3aadb",
+        "id": "3bdeaf57f071429daad8476a10344dc6",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3bdeaf57f071429daad8476a10344dc6",
             "engine_type": "phev",
             "release_year": 2018,
             "brand": "Mitsubishi",
@@ -1728,9 +1762,10 @@
         }
     },
     {
-        "pk": "86290f48-f554-4db5-bd35-4a8b7828689a",
+        "id": "4a2cc2f7dd1a4d39b0a58632ccb0aa80",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "4a2cc2f7dd1a4d39b0a58632ccb0aa80",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Nissan",
@@ -1775,9 +1810,10 @@
         }
     },
     {
-        "pk": "2644bfd3-a593-4276-bb1f-c8965e33797e",
+        "id": "39e738a18b1442e9869adfd13ee8321c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "39e738a18b1442e9869adfd13ee8321c",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Nissan",
@@ -1822,9 +1858,10 @@
         }
     },
     {
-        "pk": "daa3573d-60ea-4c7a-8048-79c575e3db4c",
+        "id": "44f7810ecbce4e77a6c8e0f0f29741f4",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "44f7810ecbce4e77a6c8e0f0f29741f4",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Nissan",
@@ -1869,9 +1906,10 @@
         }
     },
     {
-        "pk": "dc7d163b-29bc-45cf-8156-60eb3e3b1294",
+        "id": "b5eadf8b27b5432ea621f6b6ac0b0e2f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "b5eadf8b27b5432ea621f6b6ac0b0e2f",
             "engine_type": "bev",
             "release_year": 2011,
             "brand": "Nissan",
@@ -1916,9 +1954,10 @@
         }
     },
     {
-        "pk": "3b649ae3-935b-425b-b5d6-75c549b96d40",
+        "id": "abd7c40659a748199bbf0a8b092c8c0a",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "abd7c40659a748199bbf0a8b092c8c0a",
             "engine_type": "bev",
             "release_year": 2011,
             "brand": "Nissan",
@@ -1963,9 +2002,10 @@
         }
     },
     {
-        "pk": "83ec0576-bfb8-400a-9af9-483b2684673c",
+        "id": "3627565346944c999d5c6a051ae25f7a",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3627565346944c999d5c6a051ae25f7a",
             "engine_type": "bev",
             "release_year": 2015,
             "brand": "Nissan",
@@ -2014,9 +2054,10 @@
         }
     },
     {
-        "pk": "74f2c3a5-f78f-459a-823a-dfc0a21e5aeb",
+        "id": "3ec10dc028a642efa33fdde0f4edbb9f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3ec10dc028a642efa33fdde0f4edbb9f",
             "engine_type": "bev",
             "release_year": 2015,
             "brand": "Nissan",
@@ -2065,9 +2106,10 @@
         }
     },
     {
-        "pk": "77028f96-eb9b-4c65-b452-c92011b1fc1c",
+        "id": "b0ae9749e56d449cb92274dbc5b9542e",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "b0ae9749e56d449cb92274dbc5b9542e",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Nissan",
@@ -2116,9 +2158,10 @@
         }
     },
     {
-        "pk": "78b14a0f-5c62-4885-95ef-2e3f81197260",
+        "id": "985b5200dbda4488818368044f61e522",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "985b5200dbda4488818368044f61e522",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Nissan",
@@ -2163,9 +2206,10 @@
         }
     },
     {
-        "pk": "f33f0a4f-9b53-4e21-807b-f8b2ca4a24f6",
+        "id": "2052032e4f1340eda9c9a870cd3ccde2",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2052032e4f1340eda9c9a870cd3ccde2",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Opel",
@@ -2210,9 +2254,10 @@
         }
     },
     {
-        "pk": "7f4bf402-f8e2-47da-b456-30f1bdfce8ac",
+        "id": "b505fadf899d4668ac56396f01dda08a",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "b505fadf899d4668ac56396f01dda08a",
             "engine_type": "bev",
             "release_year": 2012,
             "brand": "Opel",
@@ -2242,9 +2287,10 @@
         }
     },
     {
-        "pk": "28b61ff5-734a-412e-9241-dec4c27d1a38",
+        "id": "24e679d8a67a467aa4ab9a25fd9babb3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "24e679d8a67a467aa4ab9a25fd9babb3",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Peugeot",
@@ -2289,9 +2335,10 @@
         }
     },
     {
-        "pk": "9666138c-1d24-4fa8-9083-0ffba09ab1ef",
+        "id": "8b8de1474d48456f8bc241442cbcd822",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8b8de1474d48456f8bc241442cbcd822",
             "engine_type": "bev",
             "release_year": 2013,
             "brand": "Renault",
@@ -2321,9 +2368,10 @@
         }
     },
     {
-        "pk": "b3fd3e84-4dd4-4ac0-914f-3c3c582fc600",
+        "id": "baa3e429ce1d4993abd82024a38d3f85",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "baa3e429ce1d4993abd82024a38d3f85",
             "engine_type": "bev",
             "release_year": 2015,
             "brand": "Renault",
@@ -2353,9 +2401,10 @@
         }
     },
     {
-        "pk": "737441e8-6b5f-4185-9b0b-e51585ab6ea8",
+        "id": "5e5752bcfe344981bbf0a211cc90c053",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "5e5752bcfe344981bbf0a211cc90c053",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Renault",
@@ -2385,9 +2434,10 @@
         }
     },
     {
-        "pk": "e604a056-9338-4044-93dd-5a595d4a3ef3",
+        "id": "265652f535a940df8ef6ef332a05cadc",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "265652f535a940df8ef6ef332a05cadc",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Renault",
@@ -2417,9 +2467,10 @@
         }
     },
     {
-        "pk": "c53b5947-23a3-420c-9798-f3846732e41a",
+        "id": "9daf2b30fbd841eb981696f3af2dc33e",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "9daf2b30fbd841eb981696f3af2dc33e",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Renault",
@@ -2464,9 +2515,10 @@
         }
     },
     {
-        "pk": "de3a8751-00c9-46d1-9e7a-ad830835c6a7",
+        "id": "855d66384b8e4d1bbda806c695bde4f5",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "855d66384b8e4d1bbda806c695bde4f5",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Renault",
@@ -2515,9 +2567,10 @@
         }
     },
     {
-        "pk": "1c13fba9-2c09-4be1-b5c6-aecd2b253afb",
+        "id": "8f44ca7db8254cfc8739d636fe0e476c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8f44ca7db8254cfc8739d636fe0e476c",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Renault",
@@ -2547,9 +2600,10 @@
         }
     },
     {
-        "pk": "8f6db2f5-1dd9-46f6-bb97-eba419dbaea4",
+        "id": "923f1f9738454bf1b9ff2f8686120a71",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "923f1f9738454bf1b9ff2f8686120a71",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Renault",
@@ -2579,9 +2633,10 @@
         }
     },
     {
-        "pk": "785c65be-3122-44ad-b574-9291c0793c37",
+        "id": "d9b8c47731c542dcb75cf10d6f4744eb",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d9b8c47731c542dcb75cf10d6f4744eb",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2611,9 +2666,10 @@
         }
     },
     {
-        "pk": "e3525b59-d3b9-4eef-9a01-1408358c5534",
+        "id": "2e085dfde85e47269e9687713cc3d2da",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2e085dfde85e47269e9687713cc3d2da",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2643,9 +2699,10 @@
         }
     },
     {
-        "pk": "1d43c981-02be-4d41-a34b-65a40ff25f7b",
+        "id": "c089ab6c7b154953ad2983554794f9e8",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "c089ab6c7b154953ad2983554794f9e8",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2675,9 +2732,10 @@
         }
     },
     {
-        "pk": "f0b185de-9b9d-4a08-924f-450c4dadc7a6",
+        "id": "5ba9f52223b546b2bfb81e69e93db28d",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "5ba9f52223b546b2bfb81e69e93db28d",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2707,9 +2765,10 @@
         }
     },
     {
-        "pk": "6a3a76f6-a0d0-41ff-afc9-5ad2f0879b4d",
+        "id": "5331765e2caf48d1ba9f66128f241597",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "5331765e2caf48d1ba9f66128f241597",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2739,9 +2798,10 @@
         }
     },
     {
-        "pk": "805b5810-074c-449b-ad19-d6c852ebf8f6",
+        "id": "b4cfff6697d74ee0866f43db42c8c739",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "b4cfff6697d74ee0866f43db42c8c739",
             "engine_type": "bev",
             "release_year": null,
             "brand": "smart",
@@ -2771,9 +2831,10 @@
         }
     },
     {
-        "pk": "93c82e06-1aa3-4c19-8f81-b9fac0c598c3",
+        "id": "56f506ca86404fa28e0e030d5e09d933",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "56f506ca86404fa28e0e030d5e09d933",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -2823,9 +2884,10 @@
         }
     },
     {
-        "pk": "7de25a64-e9fa-484f-bf99-d02b02cfb17d",
+        "id": "cf497f23dd6b473baef07ce9615193a7",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "cf497f23dd6b473baef07ce9615193a7",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -2875,9 +2937,10 @@
         }
     },
     {
-        "pk": "7dbad968-7058-4440-9c8f-8f483cdd973a",
+        "id": "a9f668939e584000b50701971d207ca0",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "a9f668939e584000b50701971d207ca0",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -2927,9 +2990,10 @@
         }
     },
     {
-        "pk": "80e7ef22-27f8-4e93-8c86-7a6a0a227e5d",
+        "id": "d3c9b74e43ae48e2b164e0c56573e43f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d3c9b74e43ae48e2b164e0c56573e43f",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -2976,9 +3040,10 @@
         }
     },
     {
-        "pk": "ed3fe177-d852-49bd-84ca-8ecd8d7ec3b1",
+        "id": "701422026c4745a58f50cff1399845a3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "701422026c4745a58f50cff1399845a3",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -3025,9 +3090,10 @@
         }
     },
     {
-        "pk": "7f709186-39c3-420f-9caf-1fdb424f7953",
+        "id": "07de4b4c614e44b0846058b5c6c49613",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "07de4b4c614e44b0846058b5c6c49613",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -3074,9 +3140,10 @@
         }
     },
     {
-        "pk": "0a663bbf-3b87-4e7a-bd7a-3e9c39961a2b",
+        "id": "ac02f066211141e3b3e739da3e49a30e",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "ac02f066211141e3b3e739da3e49a30e",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -3127,9 +3194,10 @@
         }
     },
     {
-        "pk": "32922583-e434-4ed2-afc1-4d8fde67aeda",
+        "id": "64e7bd09aa9a413e8b1ea24b2ca52b33",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "64e7bd09aa9a413e8b1ea24b2ca52b33",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -3180,9 +3248,10 @@
         }
     },
     {
-        "pk": "b5aa307e-a6b9-46e7-939e-2dd525870c13",
+        "id": "44445220ff654636bf2e9049e726a937",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "44445220ff654636bf2e9049e726a937",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Tesla",
@@ -3233,9 +3302,10 @@
         }
     },
     {
-        "pk": "d03d6e42-d6f8-4e3f-b527-a3c1d1e40f9d",
+        "id": "21ef9477c9ea4c3eb4a7ddf2eaf3a38c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "21ef9477c9ea4c3eb4a7ddf2eaf3a38c",
             "engine_type": "bev",
             "release_year": 2016,
             "brand": "Tesla",
@@ -3286,9 +3356,10 @@
         }
     },
     {
-        "pk": "0aa5220a-6da7-4dc0-a0a1-714bea4fded3",
+        "id": "565e8e75021a4cf3accdb1ce0f8db343",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "565e8e75021a4cf3accdb1ce0f8db343",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Tesla",
@@ -3339,9 +3410,10 @@
         }
     },
     {
-        "pk": "908e578f-f890-4716-93e8-7c0f75e46bb5",
+        "id": "badc14ce96754546a8a1cde94a235d85",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "badc14ce96754546a8a1cde94a235d85",
             "engine_type": "bev",
             "release_year": 2016,
             "brand": "Tesla",
@@ -3392,9 +3464,10 @@
         }
     },
     {
-        "pk": "355eadbb-0c97-4a66-993d-8fdc61a77ef5",
+        "id": "52e7189afecc41d1b12cdb67f0a8edab",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "52e7189afecc41d1b12cdb67f0a8edab",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Tesla",
@@ -3445,9 +3518,10 @@
         }
     },
     {
-        "pk": "7490520f-fe11-4148-a9b6-3882f06ee082",
+        "id": "cf832d0b9d364c2bb401002a3c2fd928",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "cf832d0b9d364c2bb401002a3c2fd928",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Tesla",
@@ -3498,9 +3572,10 @@
         }
     },
     {
-        "pk": "eb8d28ec-8df7-40a8-8dd7-badf738f0832",
+        "id": "54cd7e4abdc2419f85dd0199ef9aba8a",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "54cd7e4abdc2419f85dd0199ef9aba8a",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Tesla",
@@ -3551,9 +3626,10 @@
         }
     },
     {
-        "pk": "b7c4ddb8-4806-4328-a4e6-4abb4746016d",
+        "id": "949c213c41f64d70bf9f5bdf9ef4ed21",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "949c213c41f64d70bf9f5bdf9ef4ed21",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Tesla",
@@ -3604,9 +3680,10 @@
         }
     },
     {
-        "pk": "1b3105fa-527a-491f-ac26-5bfa94bfa45d",
+        "id": "63b0e5bbf0434c9a9711df7ebe65fd69",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "63b0e5bbf0434c9a9711df7ebe65fd69",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "Tesla",
@@ -3657,9 +3734,10 @@
         }
     },
     {
-        "pk": "92ffd46c-fe26-4805-81ba-fbadce4d524f",
+        "id": "1540c2b5c42a4ac8a93c5c778d2763bc",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1540c2b5c42a4ac8a93c5c778d2763bc",
             "engine_type": "bev",
             "release_year": 2016,
             "brand": "Tesla",
@@ -3710,9 +3788,10 @@
         }
     },
     {
-        "pk": "f1b46b0a-b101-4072-a246-0b52f0cc51f5",
+        "id": "1cdf0d8f4f8c4b3dbd7c4e93c1709bb0",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1cdf0d8f4f8c4b3dbd7c4e93c1709bb0",
             "engine_type": "bev",
             "release_year": 2014,
             "brand": "Volkswagen",
@@ -3765,9 +3844,10 @@
         }
     },
     {
-        "pk": "f0132135-9415-4403-818b-cee07f81ceb2",
+        "id": "a2ecaf23c57e403f81ecdabbee97b6d0",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "a2ecaf23c57e403f81ecdabbee97b6d0",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Volkswagen",
@@ -3816,9 +3896,10 @@
         }
     },
     {
-        "pk": "a0347619-a7fe-4dd2-be4e-3ef615783481",
+        "id": "af19b062a3a740dfba8b4926d49798ab",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "af19b062a3a740dfba8b4926d49798ab",
             "engine_type": "bev",
             "release_year": 2013,
             "brand": "Volkswagen",
@@ -3871,9 +3952,10 @@
         }
     },
     {
-        "pk": "fda95cb7-d391-4344-851e-a1b5a548b42b",
+        "id": "4725d76aaeac4a059afee27855b62a2b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "4725d76aaeac4a059afee27855b62a2b",
             "engine_type": "bev",
             "release_year": 2014,
             "brand": "Volkswagen",
@@ -3903,9 +3985,10 @@
         }
     },
     {
-        "pk": "bad55b90-4b4f-4760-83ea-fa96280e7310",
+        "id": "ddc3382ec98b47dda079b64c4c9eaa3f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "ddc3382ec98b47dda079b64c4c9eaa3f",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Volkswagen",
@@ -3935,9 +4018,10 @@
         }
     },
     {
-        "pk": "bcd8700d-241c-43a1-b9df-24ee310ea8e4",
+        "id": "59493982c3314d58b06903f8ff770f6c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "59493982c3314d58b06903f8ff770f6c",
             "engine_type": "bev",
             "release_year": 2013,
             "brand": "Volkswagen",
@@ -3967,9 +4051,10 @@
         }
     },
     {
-        "pk": "57184038-ae77-4540-9367-ccb98beb8cc3",
+        "id": "e62c80804ee548df91dff264f6c99b73",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "e62c80804ee548df91dff264f6c99b73",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Volkswagen",
@@ -3999,9 +4084,10 @@
         }
     },
     {
-        "pk": "fc5b3c94-c0eb-4515-af3d-4a4106ffe29f",
+        "id": "6b92095dfef14fb1bbb4bd92bb7c1492",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6b92095dfef14fb1bbb4bd92bb7c1492",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Volkswagen",
@@ -4050,9 +4136,10 @@
         }
     },
     {
-        "pk": "0a7e79c1-ecd6-4639-bac1-9c9e49fec84c",
+        "id": "1771d7be4d7b4d109eb555fe0d40d03c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1771d7be4d7b4d109eb555fe0d40d03c",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Volkswagen",
@@ -4097,9 +4184,10 @@
         }
     },
     {
-        "pk": "d8044adf-2538-4d45-b2d8-2b2fd0951766",
+        "id": "f78dfb03626f401cb25af1ba473763d8",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "f78dfb03626f401cb25af1ba473763d8",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Volkswagen",
@@ -4144,9 +4232,10 @@
         }
     },
     {
-        "pk": "cb995cc3-84d9-4c87-89dc-f9dee7a47156",
+        "id": "95c3bd0917d74a2f89fdf1c462cc5052",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "95c3bd0917d74a2f89fdf1c462cc5052",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Volkswagen",
@@ -4191,9 +4280,10 @@
         }
     },
     {
-        "pk": "15023eb9-eba6-436e-ad98-2086f1cb31c4",
+        "id": "7d2ae5f1f79d4041b479c70da9bfcfe3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "7d2ae5f1f79d4041b479c70da9bfcfe3",
             "engine_type": "phev",
             "release_year": 2017,
             "brand": "Volkswagen",
@@ -4223,9 +4313,10 @@
         }
     },
     {
-        "pk": "ec3b0af7-67c6-400d-b3c2-aa2f3be24c8a",
+        "id": "7b0593ec1c614128b16620767be7a063",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "7b0593ec1c614128b16620767be7a063",
             "engine_type": "phev",
             "release_year": 2019,
             "brand": "Volkswagen",
@@ -4255,9 +4346,10 @@
         }
     },
     {
-        "pk": "926efa33-4c55-43df-80f3-4b8d2d65a00a",
+        "id": "8ef72ea9c86f43f3a1cd605b47195e51",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8ef72ea9c86f43f3a1cd605b47195e51",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -4330,9 +4422,10 @@
         }
     },
     {
-        "pk": "de7bac96-33ed-44f2-964e-21a4878e9f00",
+        "id": "eb6cf1443ca0453ebf4d573876bfff5d",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "eb6cf1443ca0453ebf4d573876bfff5d",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -4405,9 +4498,10 @@
         }
     },
     {
-        "pk": "72695d36-29c4-4726-8ca8-5333fb3f9865",
+        "id": "2ebaaf953e7348b3bd52939d00c3e339",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2ebaaf953e7348b3bd52939d00c3e339",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -4480,9 +4574,10 @@
         }
     },
     {
-        "pk": "9d101a26-eaaa-4058-a251-5221b45ffd91",
+        "id": "bafbb3ff1a79490daf0cfc598a86e663",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "bafbb3ff1a79490daf0cfc598a86e663",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -4527,9 +4622,10 @@
         }
     },
     {
-        "pk": "e60a8ec6-a6dd-46ae-846a-35cb57f1d8e3",
+        "id": "27d1050d1fd249a39f0c98a84d1417c3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "27d1050d1fd249a39f0c98a84d1417c3",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Peugeot",
@@ -4559,9 +4655,10 @@
         }
     },
     {
-        "pk": "1cec7821-632f-4f17-8a58-644b6ab23f44",
+        "id": "61d5fcdb63fa4b6b911682d1e66342a1",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "61d5fcdb63fa4b6b911682d1e66342a1",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Opel",
@@ -4634,9 +4731,10 @@
         }
     },
     {
-        "pk": "6f96c616-e87a-4958-bbe7-b4278be00170",
+        "id": "d303648cf3ef42aabfc82d4d75eb44b8",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d303648cf3ef42aabfc82d4d75eb44b8",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Opel",
@@ -4709,9 +4807,10 @@
         }
     },
     {
-        "pk": "e8773876-6036-4a6c-926e-5490aae58971",
+        "id": "7c00357838354583b920a3fea2edb73c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "7c00357838354583b920a3fea2edb73c",
             "engine_type": "bev",
             "release_year": null,
             "brand": "Citroen",
@@ -4741,9 +4840,10 @@
         }
     },
     {
-        "pk": "8cfce5f4-23b6-470a-87fa-a04095fe0334",
+        "id": "642100a3dc0843b791e802dd705257b3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "642100a3dc0843b791e802dd705257b3",
             "engine_type": "phev",
             "release_year": 2019,
             "brand": "Mini",
@@ -4773,9 +4873,10 @@
         }
     },
     {
-        "pk": "d8c11860-a582-4784-9e58-d29e94a67fc2",
+        "id": "4c56e74d2c744cc18ebb658e9e9ff7a1",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "4c56e74d2c744cc18ebb658e9e9ff7a1",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Mini",
@@ -4820,9 +4921,10 @@
         }
     },
     {
-        "pk": "5bfa9a87-7b35-4e3a-bd3f-dc2ac55e184b",
+        "id": "57886fbfb80b4702a23e4e0d65240d27",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "57886fbfb80b4702a23e4e0d65240d27",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Honda",
@@ -4867,9 +4969,10 @@
         }
     },
     {
-        "pk": "4c04db3b-c493-4b90-9859-21b7304a4ffc",
+        "id": "2c19565cf54a4640a6a18bf05ba67229",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2c19565cf54a4640a6a18bf05ba67229",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Porsche",
@@ -4914,9 +5017,10 @@
         }
     },
     {
-        "pk": "34b5ef32-efea-48fc-8386-3800d0b737f0",
+        "id": "31cbfedba00f468aba864befda068daa",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "31cbfedba00f468aba864befda068daa",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Porsche",
@@ -4961,9 +5065,10 @@
         }
     },
     {
-        "pk": "6990914a-6a0d-49d4-87f5-ee86ee33344c",
+        "id": "836ef1d2df944f43b20a92d5320804f2",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "836ef1d2df944f43b20a92d5320804f2",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Porsche",
@@ -5008,9 +5113,10 @@
         }
     },
     {
-        "pk": "a12f033f-f2c2-44bd-b62c-7019898a72d0",
+        "id": "63421cb882f74560b2a665745d4e9fa1",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "63421cb882f74560b2a665745d4e9fa1",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Porsche",
@@ -5055,9 +5161,10 @@
         }
     },
     {
-        "pk": "8b0195b6-5318-46d9-a6fd-1b5f75e8b495",
+        "id": "73cb65890120464db9e9ed02162daf04",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "73cb65890120464db9e9ed02162daf04",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "MG",
@@ -5102,9 +5209,10 @@
         }
     },
     {
-        "pk": "2ae110f8-8906-4b03-b4bc-83e5577c1cc1",
+        "id": "023bed3c8864405cbb6db8f719a00773",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "023bed3c8864405cbb6db8f719a00773",
             "engine_type": "bev",
             "release_year": 2018,
             "brand": "Maxus",
@@ -5149,9 +5257,10 @@
         }
     },
     {
-        "pk": "c9025ab4-1c85-40d8-86ab-ee406de3b716",
+        "id": "8242c89ae5eb4f92a51e7701b65594f8",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8242c89ae5eb4f92a51e7701b65594f8",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Polestar",
@@ -5196,9 +5305,10 @@
         }
     },
     {
-        "pk": "2eea1ef2-0fd1-481d-adee-68044666614e",
+        "id": "2e6a3336a8c24fed89f0765b54285554",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2e6a3336a8c24fed89f0765b54285554",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Seat",
@@ -5247,9 +5357,10 @@
         }
     },
     {
-        "pk": "ffcd3116-4e17-49ff-a926-941c062643ea",
+        "id": "d005e0902a42410fb4e5d4d187e54277",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d005e0902a42410fb4e5d4d187e54277",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -5298,9 +5409,10 @@
         }
     },
     {
-        "pk": "3b5bb8d1-0f34-4c05-861c-45d19a8883b9",
+        "id": "c83009d4bac9441fbfd654e4df54f802",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "c83009d4bac9441fbfd654e4df54f802",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "DS",
@@ -5345,9 +5457,10 @@
         }
     },
     {
-        "pk": "430ca2cd-bd4b-482a-8776-85a8c7d3435c",
+        "id": "8966b371338647b887a29193ea2a28bb",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "8966b371338647b887a29193ea2a28bb",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "DS",
@@ -5392,9 +5505,10 @@
         }
     },
     {
-        "pk": "6033b26c-1b3c-441b-9f78-7b7cd5512051",
+        "id": "3cc1a616b78f429cbaf180d67ea5586b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3cc1a616b78f429cbaf180d67ea5586b",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Aiways",
@@ -5439,9 +5553,10 @@
         }
     },
     {
-        "pk": "d97748b1-e384-4238-a225-d498bccd902c",
+        "id": "ef2a7dea93e64d4a9dbcce946c445b58",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "ef2a7dea93e64d4a9dbcce946c445b58",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Artega",
@@ -5471,9 +5586,10 @@
         }
     },
     {
-        "pk": "1c9126d4-24d6-4e9f-a49d-15813fa49728",
+        "id": "e6dcc6215bf64e0eb01c105c52e84dc4",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "e6dcc6215bf64e0eb01c105c52e84dc4",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Artega",
@@ -5503,9 +5619,10 @@
         }
     },
     {
-        "pk": "98aacbc9-5a97-4fe4-abcf-4f7bb2910a9f",
+        "id": "68be32c82c364762958a055a3f56bf0b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "68be32c82c364762958a055a3f56bf0b",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "e.GO Mobile",
@@ -5535,9 +5652,10 @@
         }
     },
     {
-        "pk": "4f408d10-82c3-4850-ae2b-141f21d745b3",
+        "id": "3dc72a26ab344fe584888d15ed437632",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3dc72a26ab344fe584888d15ed437632",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "e.GO Mobile",
@@ -5567,9 +5685,10 @@
         }
     },
     {
-        "pk": "975b064b-626e-4318-b60c-3ce0729743fd",
+        "id": "2a2b639b00cc43cd8d3f5682a29b9617",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2a2b639b00cc43cd8d3f5682a29b9617",
             "engine_type": "bev",
             "release_year": 2019,
             "brand": "e.GO Mobile",
@@ -5599,9 +5718,10 @@
         }
     },
     {
-        "pk": "ac812f08-3c8a-4af5-a07a-b520ec9e16cc",
+        "id": "d1e573c2ab5440f98944ce5b8aa916b3",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d1e573c2ab5440f98944ce5b8aa916b3",
             "engine_type": "phev",
             "release_year": 2018,
             "brand": "Volvo",
@@ -5631,9 +5751,10 @@
         }
     },
     {
-        "pk": "4ea0fb0a-8d77-4a03-a147-5e962f8ea766",
+        "id": "1b5ea74cc3f8418cbd863f09a04b987d",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1b5ea74cc3f8418cbd863f09a04b987d",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Ford",
@@ -5663,9 +5784,10 @@
         }
     },
     {
-        "pk": "176af738-f385-4dc8-9243-9c701fbd7759",
+        "id": "69e43b79d29b4f27bf04f3406b5d7bbd",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "69e43b79d29b4f27bf04f3406b5d7bbd",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Mazda",
@@ -5710,9 +5832,10 @@
         }
     },
     {
-        "pk": "b8a76fa8-97f1-4f27-8f9f-80f26df230d1",
+        "id": "3ed6ccd0a90b49bea5fe54ef12940338",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "3ed6ccd0a90b49bea5fe54ef12940338",
             "engine_type": "bev",
             "release_year": 2017,
             "brand": "Chevrolet",
@@ -5766,9 +5889,10 @@
         }
     },
     {
-        "pk": "7508892b-e7e7-42ba-9cca-57753426cd86",
+        "id": "fe9573722d774e12be18cc114c63b737",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "fe9573722d774e12be18cc114c63b737",
             "engine_type": "bev",
             "release_year": 2013,
             "brand": "Chevrolet",
@@ -5813,9 +5937,10 @@
         }
     },
     {
-        "pk": "6a4c5e58-d1cb-49ad-a1cf-c0025fb7246f",
+        "id": "82d10fd91d194d37ae52315b377aeb2e",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "82d10fd91d194d37ae52315b377aeb2e",
             "engine_type": "bev",
             "release_year": 2015,
             "brand": "Chevrolet",
@@ -5860,9 +5985,10 @@
         }
     },
     {
-        "pk": "09022e0a-c322-46e7-9171-b48fdd953cca",
+        "id": "2326e87c98014010b4eb733036087b76",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "2326e87c98014010b4eb733036087b76",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -5892,9 +6018,10 @@
         }
     },
     {
-        "pk": "7ba60564-7eda-457b-b7d5-46dd1b15cc0e",
+        "id": "feb1ae30304a4819980590aeca695558",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "feb1ae30304a4819980590aeca695558",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Peugeot",
@@ -5924,9 +6051,10 @@
         }
     },
     {
-        "pk": "f45de10a-764f-4a7e-9591-b974d0b87038",
+        "id": "15ff45ad32fe4ac98f5cb659ad7a5d9b",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "15ff45ad32fe4ac98f5cb659ad7a5d9b",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Mercedes Benz",
@@ -5956,9 +6084,10 @@
         }
     },
     {
-        "pk": "46240342-6f7e-4767-b66d-3234ba874a30",
+        "id": "7f51c21518d74d80b877cf2f346ffb73",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "7f51c21518d74d80b877cf2f346ffb73",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Mercedes Benz",
@@ -5988,9 +6117,10 @@
         }
     },
     {
-        "pk": "1e8c0cc5-20db-491f-9242-12cf3bc7b962",
+        "id": "74c003b1c2c842ebb460385ef2e67288",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "74c003b1c2c842ebb460385ef2e67288",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Mercedes Benz",
@@ -6035,9 +6165,10 @@
         }
     },
     {
-        "pk": "ee64213e-fa1d-425e-b90e-6cff9c2a3469",
+        "id": "1ab221716e1c4c4fbc104273927748c5",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1ab221716e1c4c4fbc104273927748c5",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "DS",
@@ -6067,9 +6198,10 @@
         }
     },
     {
-        "pk": "b97f749b-5361-4116-8103-c208dc601a0b",
+        "id": "f548ae569a274a038ef6975dcfde94a6",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "f548ae569a274a038ef6975dcfde94a6",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Kia",
@@ -6099,9 +6231,10 @@
         }
     },
     {
-        "pk": "84f2fcc1-cc73-4919-8d76-0f1ba8eaf685",
+        "id": "572a939678c344b79764bfb4577c79b0",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "572a939678c344b79764bfb4577c79b0",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Kia",
@@ -6131,9 +6264,10 @@
         }
     },
     {
-        "pk": "a883bb35-270d-4f31-9169-ccf06ae3c0c5",
+        "id": "d156a3cc33f8478e98657f24f0cfe9fd",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d156a3cc33f8478e98657f24f0cfe9fd",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Kia",
@@ -6163,9 +6297,10 @@
         }
     },
     {
-        "pk": "6fa12374-6162-451e-8464-5e0e73091839",
+        "id": "73c66dc833e341768731a7d64a9b5515",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "73c66dc833e341768731a7d64a9b5515",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Renault",
@@ -6195,9 +6330,10 @@
         }
     },
     {
-        "pk": "b0da6660-c20e-40c3-9db7-0b19c478c6cb",
+        "id": "1c6259b601a54bc4a84ae83bd9e959bd",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "1c6259b601a54bc4a84ae83bd9e959bd",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Mercedes Benz",
@@ -6227,9 +6363,10 @@
         }
     },
     {
-        "pk": "41c9d96c-6a19-4db0-ba3a-931ab99c6f15",
+        "id": "d28c950088ad41a28e2d80a0499cb003",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "d28c950088ad41a28e2d80a0499cb003",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6259,9 +6396,10 @@
         }
     },
     {
-        "pk": "ff261470-8556-4051-afec-c049abd5fe6a",
+        "id": "6a38608ec1d94b91aaeea35a678256d1",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6a38608ec1d94b91aaeea35a678256d1",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6306,9 +6444,10 @@
         }
     },
     {
-        "pk": "4dc6b014-8612-4fa7-bb34-9ea4d7fa5220",
+        "id": "6b1c51895a2c422397dfdd77236a5b63",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6b1c51895a2c422397dfdd77236a5b63",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6353,9 +6492,10 @@
         }
     },
     {
-        "pk": "55ac0aaf-6bae-4a8e-ba50-4a9a7ab5b4af",
+        "id": "a807b9daa8e04a99a9bc75cecd67c718",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "a807b9daa8e04a99a9bc75cecd67c718",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6400,9 +6540,10 @@
         }
     },
     {
-        "pk": "18bb40bd-321b-4326-a404-e46652538830",
+        "id": "096ad6afc0c04748bdfbc6cdde2d358f",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "096ad6afc0c04748bdfbc6cdde2d358f",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6447,9 +6588,10 @@
         }
     },
     {
-        "pk": "aa69b5e8-fc4e-40f8-8060-2c96248f62ef",
+        "id": "c21c6916458442d38163516fa111ff8c",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "c21c6916458442d38163516fa111ff8c",
             "engine_type": "bev",
             "release_year": 2020,
             "brand": "Skoda",
@@ -6494,9 +6636,10 @@
         }
     },
     {
-        "pk": "8b51a06f-676a-46aa-9074-4d3364ea1cca",
+        "id": "6c33314617264456b3f7985dbf29c5b9",
         "model": "common.VehicleModel",
         "fields": {
+            "id": "6c33314617264456b3f7985dbf29c5b9",
             "engine_type": "phev",
             "release_year": 2020,
             "brand": "Mercedes Benz",

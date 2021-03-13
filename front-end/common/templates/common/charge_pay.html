@@ -1,0 +1,47 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Payment</legend>
+                {{ form|crispy }}
+                
+            <!--
+                <text>Payment method</text>
+                <select id="hll">
+                  <option selected="selected">credit card</option>
+                  <option>cash</option>
+                  <option>paypal</option>
+                  <option>coupon</option>
+                </select>
+            -->
+                <text>Cost</text>
+                <div>
+                    <input id="price_to" value="0$" readonly="readonly"></input>
+                </div>
+
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            /* prospa8eia yia timi analoga
+            var time1=new Date();
+            var time2=new Date();
+            var time1=JSON.parse(localStorage.getItem("timeStart"));
+            var time2=JSON.parse(localStorage.getItem("timeStop"));
+            //console.log(JSON.parse(time1))
+            var seconds = ((time2.getTime())%100000 - (time1.getTime())%100000);
+            console.log(seconds)
+            console.log("aBrlef2");
+            */
+        });
+    </script>
+{% endblock content %}

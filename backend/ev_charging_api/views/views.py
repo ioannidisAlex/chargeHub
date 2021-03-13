@@ -1,5 +1,6 @@
 import csv
 import io
+import uuid
 from datetime import datetime
 
 from django.db import connections
@@ -14,6 +15,9 @@ from rest_framework.views import APIView
 from common.models import (
     ChargingPoint,
     ChargingStation,
+    Cluster,
+    Location,
+    Owner,
     Provider,
     Session,
     User,
@@ -25,7 +29,10 @@ from ..serializers import (
     AdminUserSerializer,
     CreateUserSerializer,
     FileUploadSerializer,
+    KWSerializer,
+    LocationSerializer,
     SessionSerializer,
+    StationSerializer,
     UserSerializer,
 )
 
@@ -404,3 +411,253 @@ class SessionsupdView(generics.GenericAPIView):
             "TotalSessionsInDatabase": self.queryset.count(),
         }
         return Response(response)
+
+
+class KWstatsView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    # notAdminUser
+    serializer_class = KWSerializer
+    queryset = Session.objects.all()
+
+    def get(self, request):
+        print("Helloo")
+        KW = []
+        index = 0
+        print(self.queryset.all())
+        for s in self.queryset.all():
+            KW.append(
+                {
+                    "SessionIndex": index,
+                    # "SessionID": s.id,
+                    "EnergyDelivered": s.kwh_delivered,
+                }
+            )
+            index += 1
+        response = {
+            "SessionKW": KW,
+        }
+        return Response(response)
+
+
+class StationsViewSet(viewsets.ViewSet):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    serializer_class = StationSerializer
+    queryset = ChargingStation.objects.all()
+    # lookup_field = "pk"
+
+    def list(self, request):
+        # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        # print(id)
+        try:
+            # stations = self.queryset.get(id=id)
+            # stations = self.get_queryset()
+            # print(stations)
+            serializer = StationSerializer(ChargingStation.objects.all(), many=True)
+            print(serializer.data)
+            return Response(serializer.data, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+    def post(self, request):
+        # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+        print(request.POST)
+        l = list(request.POST.items())[0][0][1:-1].split(",")
+        print(l)
+        d = {}
+        for x in l:
+            if len(x.split(":")[1:]) > 1:
+                y = ""
+                count = 1
+                for k in x.split(":")[1:]:
+                    if count == len(x.split(":")[1:]):
+                        y += ":" + k[:-1]
+                    elif count > 1:
+                        y += ":" + k
+                    else:
+                        y = k[1:]
+                    count += 1
+                d[x.split(":")[0][1:-1]] = y
+            else:
+                d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+
+        print(d)
+        location = {
+            "email": d["email"],
+            "website": d["website"],
+            "title": d["title"],
+            "town": d["town"],
+            "area": d["area"],
+            "country": d["country"],
+            "address_line": d["address_line"],
+        }
+        d2 = {}
+        for i, j in d.items():
+            if (
+                i != "email"
+                and i != "website"
+                and i != "town"
+                and i != "title"
+                and i != "area"
+                and i != "country"
+                and i != "address_line"
+            ):
+                d2[i] = j
+        try:
+            print(d)
+            location_serializer = LocationSerializer(data=location)
+            print("This is serializer", location_serializer)
+            if location_serializer.is_valid(raise_exception=True):
+                location_serializer.save()
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+            print("hello")
+            d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+            d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+            print("hi")
+            d2["location"] = location_serializer.data["id"]
+            print(d2)
+            serializer = self.serializer_class(data=d2)
+            if serializer.is_valid():
+                serializer.save()
+                return Response(serializer.data, status.HTTP_200_OK)
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+    def put(self, request):
+        try:
+            print("POST", request.POST)
+            # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+            l = list(request.POST.items())[0][0][1:-1].split(",")
+            id = l[0].split(":")[1][1:-1]
+            print("ID", id)
+            print("HERE WE ARE")
+            d = {}
+            for x in l:
+                if len(x.split(":")[1:]) > 1:
+                    y = ""
+                    count = 1
+                    for k in x.split(":")[1:]:
+                        if count == len(x.split(":")[1:]):
+                            y += ":" + k[:-1]
+                        elif count > 1:
+                            y += ":" + k
+                        else:
+                            y = k[1:]
+                        count += 1
+                    if y != "":
+                        d[x.split(":")[0][1:-1]] = y
+                else:
+                    if x.split(":")[1][1:-1] != "":
+                        d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+            print("are you here?")
+            print(d)
+            if "owner" in d.keys():
+                d["owner"] = Owner.objects.all().get(user__username=d["owner"])
+            if "cluster" in d.keys():
+                d["cluster"] = Cluster.objects.all().get(cluster_name=d["cluster"])
+            if "provider" in d.keys():
+                d["provider"] = Provider.objects.all().get(provider_name=d["provider"])
+            if "title" in d.keys():
+                d["location"] = Location.objects.all().get(title=d["title"])
+                d.pop("title")
+            print("Are we ok?", d)
+            ChargingStation.objects.update_or_create(d)
+            return Response({"status": "ok"}, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        """location = {
+            "email": d["email"],
+            "website": d["website"],
+            "title": d["title"],
+            "town": d["town"],
+            "area": d["area"],
+            "country": d["country"],
+            "address_line": d["address_line"],
+        }
+        d2 = {}
+        for i, j in d.items():
+            if (
+                i != "email"
+                and i != "website"
+                and i != "town"
+                and i != "title"
+                and i != "area"
+                and i != "country"
+                and i != "address_line"
+            ):
+                if j!='':
+                    d2[i] = j
+        try:
+            print("DATA", request.data)
+            # print(d)
+            location_serializer = LocationSerializer(data=location)
+            print("This is serializer", location_serializer)
+            if location_serializer.is_valid(raise_exception=True):
+                location_serializer.update()
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            d2["owner"] = Owner.objects.all().get(user__username=d["owner"]).id
+            print("hello")
+            d2["provider"] = Provider.objects.all().get(provider_name=d["provider"]).id
+            d2["cluster"] = Cluster.objects.all().get(cluster_name=d2["cluster"]).id
+            print("hi")
+            d2["location"] = location_serializer.data["id"]
+            print(d2)
+            serializer = self.serializer_class(data=d2)
+            if serializer.is_valid():
+                serializer.update()
+                return Response(serializer.data, status.HTTP_200_OK)
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)"""
+
+    def delete(self, request):
+        try:
+            print(request.data)
+            # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+            self.queryset.get(id=request.data["id"]).delete()
+            return Response({"status": "OK"}, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+"""class CreateStationView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAdminUser]
+    serializer_class = [SessionSerializer]
+    queryset = Session.objects.all()
+        lookup_fields = [
+        "owner",
+        "cluster",
+        "provider"
+    ]
+    def post(self, request, *args, **kwargs):
+        try:
+            self.object = User.objects.get(username=username)
+            self.object.set_password(password)
+            self.object.save()
+
+            response = {
+                "status": "success",
+                "code": status.HTTP_200_OK,
+                "message": "Password updated successfully",
+                "data": [],
+            }
+            return Response(response)
+
+        except:
+            data = {"username": username, "password": password}
+            serializer = CreateUserSerializer(data=data)
+            if serializer.is_valid():
+                serializer.create(serializer.validated_data)
+                return Response(serializer.data)
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)"""

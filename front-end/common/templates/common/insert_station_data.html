@@ -8,10 +8,12 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
-	axios.post(
-		'http://localhost:8765/evcharge/api/admin/resetsessions/', {},
+	var data ={owner: "{{  owner }}",cluster: "{{  cluster }}",provider: "{{  provider }}",email: "{{  email }}",website: "{{  website }}",title: "{{  title }}",town: "{{  town }}",area: "{{  area }}",country: "{{  country }}",address_line: "{{  address }}" };
+    axios.post(
+		'http://localhost:8765/evcharge/api/stations/', data,
 		{ headers: {
-				"X-OBSERVATORY-AUTH": AuthStr
+				"X-OBSERVATORY-AUTH": AuthStr,
+                'Content-Type': 'application/x-www-form-urlencoded',
 			}
 	})
 	.then( (response) => {
@@ -34,8 +36,9 @@
 		document.getElementById('dtBasicExample').innerHTML = table;
     })
 	.catch( (error) => {
-       alert('Oops! Something went wrong..')
-       console.log(error);
+    	alert('Oops! Something went wrong..');
+      	console.log(error);
+		console.log(AuthStr);
     })
 </script>
 
