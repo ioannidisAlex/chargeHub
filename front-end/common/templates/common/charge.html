@@ -42,7 +42,7 @@
 
  	<script src="https://cdn.jsdelivr.net/npm/p5@1.3.0/lib/p5.js"></script>
 	
-	<script src="{% static 'js/sketchcharge.js' %}"></script>
+	<!--<script src="{% static 'js/sketchcharge.js' %}"></script>-->
 
     {% if title %}
         <title>common - {{ title }}</title>
@@ -110,14 +110,27 @@
         </div>
       </div>
       <div id='anime'></div>
-	  <!--<script src="{% static 'js/sketchdivcharge.js' %}"></script>-->
-	  <button type="button" display="inline-block" class="btn btn-outline-info">Charge</button>
-	  <button type="button"  display="inline-block" class="btn btn-outline-info">Stop</button>
+	  <script src="{% static 'js/sketchdivcharge.js' %}"></script>
+	  <button type="button" onclick="click1()" id="startButton" display="inline-block" class="btn btn-outline-info">Charge</button>
+	  <button type="button" onclick="click2()" id="stopButton" display="inline-block" class="btn btn-outline-info">Stop</button>
 	  <script>
-	  	//on submit 
-	  	/*var now = new Date();
-		now.format("dd/mm/yyyy hh:MM TT");*/
-		//console.log(now);
+      var time1
+      var flag=0
+      const click1 = () => {
+        //console.log("alef");
+        time1 = new Date();
+        flag=1
+      }
+      const click2 = ()=> {
+        time2 = new Date()
+        if(flag===1){
+          //timeON= time2-time1
+          localStorage.setItem('timeStart',JSON.stringify(time1));
+          localStorage.setItem('timeStop',JSON.stringify(time2));
+          window.location.replace("http://localhost:8000/charge_pay/")
+          //window.location.replace(`http://stackoverflow.com/${timeON}`);
+          }
+      }
 	  </script>
     </main>
 

@@ -142,6 +142,16 @@ urlpatterns = [
         common_views.ChargeView.as_view(),
         name="charge",
     ),
+    path(
+        "charge_pay/",
+        common_views.ChargePayView.as_view(),
+        name="charge_pay",
+    ),
+    path(
+        "charge_comment/",
+        common_views.ChargeCommentView.as_view(),
+        name="charge_comment",
+    ),
 ]
 
 if settings.DEBUG:
