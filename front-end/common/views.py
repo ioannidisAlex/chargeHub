@@ -314,13 +314,7 @@ class UpdateStationView(View):
             "owner": request.POST["owner"],
             "cluster": request.POST["cluster"],
             "provider": request.POST["provider"],
-            "email": request.POST["email"],
-            "website": request.POST["website"],
-            "title": request.POST["title"],
-            "town": request.POST["town"],
-            "area": request.POST["area"],
-            "country": request.POST["country"],
-            "address": request.POST["address"],
+            "title": request.POST["location_title"],
         }
         return render(request, "common/update_station_data.html", context)
 

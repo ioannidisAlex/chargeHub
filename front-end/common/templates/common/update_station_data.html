@@ -8,7 +8,7 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
-	var data ={id: "{{ id }}",owner: "{{  owner }}",cluster: "{{  cluster }}",provider: "{{  provider }}",email: "{{  email }}",website: "{{  website }}",title: "{{  title }}",town: "{{  town }}",area: "{{  area }}",country: "{{  country }}",address_line: "{{  address }}" };
+	var data ={id: "{{ id }}",owner: "{{  owner }}",cluster: "{{  cluster }}",provider: "{{  provider }}",title: "{{  title }}"};
     axios.put(
 		'http://localhost:8765/evcharge/api/stations/', data,
 		{ headers: {

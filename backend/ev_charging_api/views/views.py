@@ -501,33 +501,48 @@ class StationsViewSet(viewsets.ViewSet):
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
     def put(self, request):
-        id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
-        l = list(request.POST.items())[0][0][1:-1].split(",")
-        print("ID", id)
-        print("HERE WE ARE")
-        d = {}
-        for x in l:
-            if len(x.split(":")[1:]) > 1:
-                y = ""
-                count = 1
-                for k in x.split(":")[1:]:
-                    if count == len(x.split(":")[1:]):
-                        y += ":" + k[:-1]
-                    elif count > 1:
-                        y += ":" + k
-                    else:
-                        y = k[1:]
-                    count += 1
-                if y != "":
-                    d[x.split(":")[0][1:-1]] = y
-            else:
-                if x.split(":")[1][1:-1] != "":
-                    d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
-        d["owner"] = Owner.objects.all().get(user__username=d["owner"])
-        print("Are we ok?", d)
-        ChargingStation.objects.update_or_create(d)
-        return Response({"status": "ok"}, status.HTTP_200_OK)
-        return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        try:
+            print("POST", request.POST)
+            # id = str(list(request.POST.items())[0][0].split(":")[1][1:-2])
+            l = list(request.POST.items())[0][0][1:-1].split(",")
+            id = l[0].split(":")[1][1:-1]
+            print("ID", id)
+            print("HERE WE ARE")
+            d = {}
+            for x in l:
+                if len(x.split(":")[1:]) > 1:
+                    y = ""
+                    count = 1
+                    for k in x.split(":")[1:]:
+                        if count == len(x.split(":")[1:]):
+                            y += ":" + k[:-1]
+                        elif count > 1:
+                            y += ":" + k
+                        else:
+                            y = k[1:]
+                        count += 1
+                    if y != "":
+                        d[x.split(":")[0][1:-1]] = y
+                else:
+                    if x.split(":")[1][1:-1] != "":
+                        d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+            print("are you here?")
+            print(d)
+            if "owner" in d.keys():
+                d["owner"] = Owner.objects.all().get(user__username=d["owner"])
+            if "cluster" in d.keys():
+                d["cluster"] = Cluster.objects.all().get(cluster_name=d["cluster"])
+            if "provider" in d.keys():
+                d["provider"] = Provider.objects.all().get(provider_name=d["provider"])
+            if "title" in d.keys():
+                d["location"] = Location.objects.all().get(title=d["title"])
+                d.pop("title")
+            print("Are we ok?", d)
+            ChargingStation.objects.update_or_create(d)
+            return Response({"status": "ok"}, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
         """location = {
             "email": d["email"],

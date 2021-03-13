@@ -151,13 +151,7 @@ class UpdateStationForm(forms.Form):
     owner = forms.CharField(max_length=100, required=False)
     cluster = forms.CharField(max_length=100, required=False)
     provider = forms.CharField(max_length=100, required=False)
-    email = forms.CharField(max_length=100, required=False)
-    website = forms.CharField(max_length=100, required=False)
-    title = forms.CharField(max_length=100, required=False)
-    town = forms.CharField(max_length=100, required=False)
-    area = forms.CharField(max_length=100, required=False)
-    country = CountryField(null=True).formfield(required=False)
-    address = forms.CharField(max_length=100, required=False)
+    location_title = forms.CharField(max_length=100, required=False)
 
     class Meta:
         fields = [
@@ -165,11 +159,5 @@ class UpdateStationForm(forms.Form):
             "owner",
             "cluster",
             "provider",
-            "email",
-            "website",
-            "title",
-            "town",
-            "area",
-            "country",
-            "address",
+            "location_title",
         ]
