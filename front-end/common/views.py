@@ -372,7 +372,7 @@ class ChargeCommentView(View):
 
 
 class CostEstimationView(View):
-    template_name = "common/update_station.html"
+    template_name = "common/cost_estimation.html"
     form_class = StationsForm
 
     def get(self, request, *args, **kwargs):
