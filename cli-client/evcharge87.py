@@ -31,6 +31,9 @@ options = {
 }
 
 BASE_URL = "https://localhost:8765/evcharge/api"
+CERTIFICATE_FILE = os.path.join(
+    os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "localhost.crt"
+)
 AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
 # AUTHENTICATION_HEADER = "Authorization"
 
@@ -51,7 +54,7 @@ def convert_to_request(f):
             hooks=dict(response=hook),
             timeout=2,
             headers=headers,
-            verify="development.cert",
+            verify=CERTIFICATE_FILE,
             **parameters,
         )
 
