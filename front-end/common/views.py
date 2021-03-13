@@ -323,3 +323,16 @@ class UpdateStationView(View):
             "address": request.POST["address"],
         }
         return render(request, "common/update_station_data.html", context)
+
+
+class ChargeView(View):
+    template_name = "common/charge.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+        )
+
+    def post(self, request):
+        pass
