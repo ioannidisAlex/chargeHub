@@ -442,21 +442,6 @@ class KWstatsView(generics.GenericAPIView):
         return Response(response)
 
 
-class KWstatsViewSet(viewsets.ViewSet):
-    authentication_classes = [CustomTokenAuthentication]
-    permission_classes = [IsAdminUser]
-    serializer_class = KWSerializer
-    queryset = Session.objects.all()
-
-    def list(self, request):
-        try:
-            serializer = KWSerializer(Session.objects.all(), many=True)
-            print(serualizer.data)
-            return Response(serializer.data, status.HTTP_200_OK)
-        except:
-            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-
-
 class StationsViewSet(viewsets.ViewSet):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]

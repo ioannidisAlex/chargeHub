@@ -1,7 +1,6 @@
 from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,; InsertStationView,
     HealthcheckView,
     KWstatsView,
-    #KWstatsViewSet,
     LogoutView,
     ResetSessionsView,
     RetrieveUserViewSet,
