@@ -68,7 +68,7 @@ class VehicleModel(models.Model):
     average_energy_consumption = models.FloatField()
 
     def __str__(self):
-        return "%s  %s" % (self.brand, self.model)
+        return "%s  %s" % (self.id)
 
 
 class Vehicle(models.Model):
@@ -81,7 +81,7 @@ class Vehicle(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
-        return "%s's %s" % (self.owner, self.model)
+        return "%s's %s" % (self.id)
 
 
 class Profile(models.Model):

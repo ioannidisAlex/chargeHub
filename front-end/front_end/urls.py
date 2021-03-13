@@ -162,6 +162,11 @@ urlpatterns = [
         common_views.ChargeCommentView.as_view(),
         name="charge_comment",
     ),
+    path(
+        "charge_initial/",
+        common_views.ChargeInitialView.as_view(),
+        name="charge_initial",
+    ),
 ]
 
 if settings.DEBUG:

@@ -1,0 +1,18 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		const data = {};
+        data['protocol'] = '{{ protocol }}';
+		data['provider'] = '{{ provider }}';
+		data['charging_point'] = '{{ charging_point }}';
+		data['vehicle'] = '{{ vehicle }}';
+        localStorage.setItem('protocol', data['protocol']);
+        localStorage.setItem('provider', data['provider']);
+        localStorage.setItem('charging_point', data['charging_point']);
+        localStorage.setItem('vehicle', data['vehicle']);	
+        location.replace('{% url 'charge' %}');
+		console.log(response.status);
+	</script>
+{% endblock content %}

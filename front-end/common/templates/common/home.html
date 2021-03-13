@@ -81,8 +81,8 @@ background-image: url("../media/image2.jpg");
 		<img src="../media/image1.jpg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
 			<button type="button" class="btn btn-info" ><a href="{% url 'stations' %}" style="color:rgb(255, 255, 255)">Αναζήτηση Σταθμών</a></button>
-			<button type="button" class="btn btn-info">Αξιολόγηση Σταθμών</button>
 			<button type="button" class="btn btn-info">Εκτίμηση Κόστους</button>
+			<button type="button" class="btn btn-info">Έκδοση Περιοδικού Τιμολογίου Οχήματος</button>
 		</div>
 		<p>London is the capital city of England.</p>
 	  </div>
@@ -91,22 +91,12 @@ background-image: url("../media/image2.jpg");
 		<img src="../media/image5.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
 			<button type="button" class="btn btn-info">
-				<a href="{% url 'charge' %}" style="color:rgb(255, 255, 255)">Φόρτιση</a>
+				<a href="{% url 'charge_initial' %}" style="color:rgb(255, 255, 255)">Φόρτιση</a>
 			</button>
 			<button type="button" class="btn btn-info">Στατιστικά Φόρτισης</button>
 			<button type="button" class="btn btn-info">Στατιστικά Οχήματος</button>
 		</div>
 		<p>London is the capital city of England.</p>
-	  </div>
-	  
-	  <div id="Tokyo" class="tabcontent">
-		<img src="../media/image3.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
-		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Κόστος Φόρτισης</button>
-			<button type="button" class="btn btn-info">Πληρωμή με Κάρτα</button>
-			<button type="button" class="btn btn-info">Έκδοση Περιοδικού Τιμολογίου Οχήματος</button>
-		</div>
-		<p>Tokyo is the capital of Japan.</p>
 	  </div>
 	  
 	  <div id="Oslo" class="tabcontent">
@@ -126,8 +116,7 @@ background-image: url("../media/image2.jpg");
 		<p>Oslo is the capital of Norway.</p>
 	  </div>	  
 	  <button class="tablink" onclick="openCity('London', this)" id="defaultOpen">Σταθμοί Φόρτισης</button>
-	  <button class="tablink" onclick="openCity('Paris', this)">Φόρτιση Αυτοκινήτου</button>
-	  <button class="tablink" onclick="openCity('Tokyo', this)">Πληρωμή, έκδοση τιμολογίου</button>
+	  <button class="tablink" onclick="openCity('Paris', this)">Φόρτιση Αυτοκινήτου, Πληρωμή</button>
 	  <button class="tablink" onclick="openCity('Oslo', this)">Δεδομένα Φόρτισης</button>
 	  <button class="tablink" onclick="openCity('kOslo', this)">Διαχείριση Σημείων Φόρτισης</button>
 	  <script>

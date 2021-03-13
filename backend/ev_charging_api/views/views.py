@@ -18,6 +18,7 @@ from common.models import (
     Cluster,
     Location,
     Owner,
+    Payment,
     Provider,
     Session,
     User,
@@ -31,6 +32,7 @@ from ..serializers import (
     FileUploadSerializer,
     KWSerializer,
     LocationSerializer,
+    PaymentSerializer,
     SessionSerializer,
     StationSerializer,
     UserSerializer,
@@ -630,34 +632,129 @@ class StationsViewSet(viewsets.ViewSet):
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
-"""class CreateStationView(generics.GenericAPIView):
+class ChargingCostView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
-    permission_classes = [IsAdminUser]
-    serializer_class = [SessionSerializer]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
     queryset = Session.objects.all()
-        lookup_fields = [
-        "owner",
-        "cluster",
-        "provider"
-    ]
-    def post(self, request, *args, **kwargs):
+
+    def get(self, request, id):
         try:
-            self.object = User.objects.get(username=username)
-            self.object.set_password(password)
-            self.object.save()
-
+            charging_point = ChargingPoint.objects.all().get(id=id)
             response = {
-                "status": "success",
-                "code": status.HTTP_200_OK,
-                "message": "Password updated successfully",
-                "data": [],
+                "Usage cost": charging_point.usage_cost,
+                "KW Power": charging_point.kw_power,
             }
-            return Response(response)
-
+            return Response(response, status.HTTP_200_OK)
         except:
-            data = {"username": username, "password": password}
-            serializer = CreateUserSerializer(data=data)
-            if serializer.is_valid():
-                serializer.create(serializer.validated_data)
-                return Response(serializer.data)
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)"""
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+class InsertPaymentView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = PaymentSerializer
+    queryset = Payment.objects.all()
+
+    def post(self, request):
+        print(request.POST)
+        l = list(request.POST.items())[0][0][1:-1].split(",")
+        print(l)
+        d = {}
+        for x in l:
+            if len(x.split(":")[1:]) > 1:
+                y = ""
+                count = 1
+                for k in x.split(":")[1:]:
+                    if count == len(x.split(":")[1:]):
+                        y += ":" + k[:-1]
+                    elif count > 1:
+                        y += ":" + k
+                    else:
+                        y = k[1:]
+                    count += 1
+                d[x.split(":")[0][1:-1]] = y
+            else:
+                d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+
+        d["cost"] = d["charging_cost"]
+        d.pop("charging_cost")
+        print(d)
+
+        try:
+            payment_serializer = self.serializer_class(data=d)
+            print("This is serializer", payment_serializer)
+            if payment_serializer.is_valid(raise_exception=True):
+                payment_serializer.save()
+                return Response(
+                    {"Payment ID": payment_serializer.data["id"]}, status.HTTP_200_OK
+                )
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+class InsertSessionView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+
+    def post(self, request):
+        print(request.POST)
+        l = list(request.POST.items())[0][0][1:-1].split(",")
+        print(l)
+        d = {}
+        for x in l:
+            if len(x.split(":")[1:]) > 1:
+                y = ""
+                count = 1
+                for k in x.split(":")[1:]:
+                    if count == len(x.split(":")[1:]):
+                        y += ":" + k[:-1]
+                    elif count > 1:
+                        y += ":" + k
+                    else:
+                        y = k[1:]
+                    count += 1
+                d[x.split(":")[0][1:-1]] = y
+            else:
+                d[x.split(":")[0][1:-1]] = x.split(":")[1][1:-1]
+
+        c_year = int(d["connect_time"][2:6])
+        c_month = int(d["connect_time"][7:9])
+        c_day = int(d["connect_time"][10:12])
+        c_hour = int(d["connect_time"][13:15])
+        c_minutes = int(d["connect_time"][16:18])
+        c_seconds = int(d["connect_time"][19:21])
+        d_year = int(d["disconnect_time"][2:6])
+        d_month = int(d["disconnect_time"][7:9])
+        d_day = int(d["disconnect_time"][10:12])
+        d_hour = int(d["disconnect_time"][13:15])
+        d_minutes = int(d["disconnect_time"][16:18])
+        d_seconds = int(d["disconnect_time"][19:21])
+        d["provider"] = str(Provider.objects.all().get(provider_name=d["provider"]).id)
+        d["connect_time"] = datetime(
+            c_year, c_month, c_day, c_hour, c_minutes, c_seconds, 0
+        )
+        d["disconnect_time"] = datetime(
+            d_year, d_month, d_day, d_hour, d_minutes, d_seconds, 0
+        )
+        d["done_charging_time"] = datetime(
+            d_year, d_month, d_day, d_hour, d_minutes, d_seconds, 0
+        )
+        print(d)
+
+        try:
+            session_serializer = self.serializer_class(data=d)
+            print("This is serializer", session_serializer)
+            if session_serializer.is_valid(raise_exception=True):
+                session_serializer.save()
+                return Response(
+                    {"Session ID": session_serializer.data["id"]}, status.HTTP_200_OK
+                )
+            else:
+                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)

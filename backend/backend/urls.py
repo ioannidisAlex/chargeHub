@@ -149,6 +149,21 @@ urlpatterns = [
         ),
         name="password_reset_complete",
     ),
+    path(
+        "evcharge/api/charging_cost/<uuid:id>/",
+        api_views.ChargingCostView.as_view(),
+        name="charging_cost",
+    ),
+    path(
+        "evcharge/api/insert_payment/",
+        api_views.InsertPaymentView.as_view(),
+        name="insert_payment",
+    ),
+    path(
+        "evcharge/api/insert_session/",
+        api_views.InsertSessionView.as_view(),
+        name="insert_session",
+    ),
     # path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]
 
