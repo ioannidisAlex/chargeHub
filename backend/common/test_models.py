@@ -46,3 +46,19 @@ class TestPayment(TestCase):
             ValidationError, "Oups, NaN values are not allowed"
         ):
             payment.full_clean()
+
+
+@pytest.mark.django_db
+def test_owner_creation():
+    user = User.objects.create(user_type=2, username="user", password="password345")
+    assert user.owner
+    assert not getattr(user, "provider", None)
+    assert not getattr(user, "vehicle_owner", None)
+
+
+@pytest.mark.django_db
+def test_provider_creation():
+    user = User.objects.create(user_type=3, username="user", password="password345")
+    assert user.provider
+    assert not getattr(user, "owner", None)
+    assert not getattr(user, "vehicle_owner", None)
