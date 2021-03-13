@@ -10,6 +10,11 @@ class SessionSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class KWSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Session
+        fields = ("kwh_delivered")
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User

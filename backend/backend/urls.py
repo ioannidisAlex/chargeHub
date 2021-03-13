@@ -29,6 +29,7 @@ from ev_charging_api import views as api_views
 
 router = DefaultRouter()
 router2 = DefaultRouter()
+router_KWatts = DefaultRouter()
 router.register(
     "users",
     api_views.RetrieveUserViewSet,
@@ -37,6 +38,11 @@ router2.register(
     "stations",
     api_views.StationsViewSet,
 )
+#router_KWatts.register(
+#    "KWstats",
+#    api_views.KWstatsViewSet,
+#)
+
 
 
 # pylint: disable=R0201
@@ -62,6 +68,11 @@ urlpatterns = [
         "evcharge/api/admin/healthcheck/",
         api_views.HealthcheckView.as_view(),
         name="healthcheck",
+    ),
+    path(
+        "evcharge/api/KWstats/",
+        api_views.KWstatsView.as_view(),
+        name="KWstats",
     ),
     path(
         "evcharge/api/SessionsPerPoint/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",

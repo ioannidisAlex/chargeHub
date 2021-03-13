@@ -299,6 +299,16 @@ class DeleteStationView(View):
         return render(request, "common/delete_stations_data.html", context)
 
 
+class KiloWattsView(View):
+    template_name = "common/kiloWatts.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name,)
+
+    def post(self, request):
+        pass
+
+
 class ChargeView(View):
     template_name = "common/charge.html"
 

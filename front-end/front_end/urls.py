@@ -138,6 +138,11 @@ urlpatterns = [
         name="delete_station",
     ),
     path(
+        "kiloWatts/",
+        common_views.KiloWattsView.as_view(),
+        name="kiloWatts",
+    ),
+    path(
         "charge/",
         common_views.ChargeView.as_view(),
         name="charge",
