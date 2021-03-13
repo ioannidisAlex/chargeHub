@@ -183,42 +183,72 @@ class SessionsPerStationView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        charging_station = get_object_or_404(ChargingStation, pk=id)
-        sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-            connect_time__date__range=[date_from, date_to]
-        )
+        try:
+            charging_station = get_object_or_404(ChargingStation, pk=id)
+            sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
 
-        sessions_list = []
-        for s in sessions:
-            for d in sessions_list:
-                if s.charging_point.id == d["PointID"]:
-                    d["PointSessions"] += 1
-                    d["EnergyDelivered"] += s.kwh_delivered
-                    break
-            else:
-                sessions_list.append(
-                    {
-                        "PointID": s.charging_point.id,
-                        "PointSessions": 1,
-                        "EnergyDelivered": s.kwh_delivered,
-                    }
-                )
-        response = {
-            "StationID": id,
-            "Operator": charging_station.owner.id,
-            "RequestTimestamp": datetime.now(),
-            "PeriodFrom": date_from,
-            "PeriodTo": date_to,
-            "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
-                "kwh_delivered__sum"
-            ],
-            "NumberOfChargingSessions": sessions.count(),
-            "NumberOfActivePoints": len(sessions_list),
-            "SessionsSummaryList": sessions_list,
-            # sessions need more fields!!!
-        }
-        return Response(response)
+            sessions_list = []
+            for s in sessions:
+                for d in sessions_list:
+                    if s.charging_point.id == d["PointID"]:
+                        d["PointSessions"] += 1
+                        d["EnergyDelivered"] += s.kwh_delivered
+                        break
+                else:
+                    sessions_list.append(
+                        {
+                            "PointID": s.charging_point.id,
+                            "PointSessions": 1,
+                            "EnergyDelivered": s.kwh_delivered,
+                        }
+                    )
+            response = {
+                "StationID": id,
+                "Operator": charging_station.owner.id,
+                "RequestTimestamp": datetime.now(),
+                "PeriodFrom": date_from,
+                "PeriodTo": date_to,
+                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                    "kwh_delivered__sum"
+                ],
+                "NumberOfChargingSessions": sessions.count(),
+                "NumberOfActivePoints": len(sessions_list),
+                "SessionsSummaryList": sessions_list,
+                # sessions need more fields!!!
+            }
+            return Response(response, status.HTTP_200_OK)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
+class CostEstimationView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+
+    def get(self, request, id, date_from, date_to):
+        try:
+            charging_station = get_object_or_404(ChargingStation, pk=id)
+            sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            if(sessions.count() == 0):
+                return Response({"Estimated Cost": "Not enough data to estimate."}, status.HTTP_200_OK)
+            total_cost = 0
+            for session in sessions:
+                total_cost += session.payment.cost
+            estimated_cost = total_cost / sessions.count()
+            
+            response = {
+                "Estimated Cost": estimated_cost,
+            }
+            return Response(response, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            
 
 class SessionsPerVehicleView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]

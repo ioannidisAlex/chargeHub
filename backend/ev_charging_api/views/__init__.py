@@ -11,6 +11,7 @@ from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,; Inse
     SessionsupdView,
     StationsViewSet,
     UsermodAPIView,
+    CostEstimationView,
 )
 
 """

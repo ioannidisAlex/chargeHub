@@ -162,6 +162,11 @@ urlpatterns = [
         common_views.ChargeCommentView.as_view(),
         name="charge_comment",
     ),
+    path(
+        "cost_estimation/",
+        common_views.CostEstimationView.as_view(),
+        name="cost_estimation",
+    ),
 ]
 
 if settings.DEBUG:
