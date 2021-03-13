@@ -3,6 +3,7 @@ rm db.sqlite3
 cd common/migrations
 rm 0*
 cd ../../
+export BASE_DATA_LOADING_VAR=1
 python manage.py makemigrations
 python manage.py migrate
 python manage.py loaddata fixtures/Users.json
@@ -28,5 +29,4 @@ echo "pay"
 python manage.py loaddata fixtures/Payment.json
 echo "session"
 python manage.py loaddata fixtures/Session.json
-
-
+unset BASE_DATA_LOADING_VAR
