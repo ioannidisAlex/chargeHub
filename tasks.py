@@ -17,6 +17,10 @@ def inside_virtual(e, *commands):
                 "cd ..",
             ]
         )
+    else:
+        return " & ".join(
+            [f"cd {e}", "source ./.venv/bin/activate", *commands, "deactivate", "cd .."]
+        )
 
 
 @task
