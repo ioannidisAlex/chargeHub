@@ -135,7 +135,7 @@ class RetrieveUserViewSet(viewsets.ViewSet):
             serializer = UserSerializer(user)
             return Response(serializer.data, status.HTTP_200_OK)
         except:
-            return Response({"status":"failed"}, status.HTTP_400_BAD_REQUEST)
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
     def list(self, request):
         try:
@@ -143,6 +143,7 @@ class RetrieveUserViewSet(viewsets.ViewSet):
             return Response(serializer.data)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
 
 class SessionsPerPointView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
@@ -306,7 +307,7 @@ class SessionsPerVehicleView(generics.GenericAPIView):
                 "VehicleChargingSessionsList": sessions_list,
             }
             return Response(response, status.HTTP_200_OK)
-            
+
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
@@ -334,7 +335,9 @@ class SessionsPerProviderView(generics.GenericAPIView):
                     "EnergyDelivered": s.kwh_delivered,
                     "PricePolicyRef": s.payment.invoice,
                     "CostPerKWh": (
-                        (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
+                        (s.payment.cost / s.kwh_delivered)
+                        if s.kwh_delivered > 0
+                        else 0.0
                     ),
                     "SessionCost": s.payment.cost,
                 }
@@ -348,6 +351,7 @@ class SessionsPerProviderView(generics.GenericAPIView):
             return Response(response, status.HTTP_200_OK)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
 
 class HealthcheckView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
@@ -386,7 +390,7 @@ class ResetSessionsView(generics.GenericAPIView):
             if serializer.is_valid():
                 serializer.create(serializer.validated_data)
             return Response(response, status.HTTP_200_OK)
-        
+
         except:
             response = {"status": "failed"}
             return Response(response, status.HTTP_400_BAD_REQUEST)
@@ -430,10 +434,24 @@ class SessionsupdView(generics.GenericAPIView):
                     "provider": row[1],
                     "kwh_delivered": row[2],
                     "connect_time": datetime(
-                        c_year, c_month, c_day, c_hour, c_minutes, 0, 0, tzinfo=timezone.utc
+                        c_year,
+                        c_month,
+                        c_day,
+                        c_hour,
+                        c_minutes,
+                        0,
+                        0,
+                        tzinfo=timezone.utc,
                     ),
                     "disconnect_time": datetime(
-                        d_year, d_month, d_day, d_hour, d_minutes, 0, 0, tzinfo=timezone.utc
+                        d_year,
+                        d_month,
+                        d_day,
+                        d_hour,
+                        d_minutes,
+                        0,
+                        0,
+                        tzinfo=timezone.utc,
                     ),
                     "done_charging_time": datetime(
                         done_year,
@@ -460,7 +478,7 @@ class SessionsupdView(generics.GenericAPIView):
                 "TotalSessionsInDatabase": self.queryset.count(),
             }
             return Response(response, status.HTTP_200_OK)
-        
+
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
@@ -494,6 +512,7 @@ class KWstatsView(generics.GenericAPIView):
 
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
 
 class StationsViewSet(viewsets.ViewSet):
     authentication_classes = [CustomTokenAuthentication]
