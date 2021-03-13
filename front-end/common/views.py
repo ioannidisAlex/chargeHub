@@ -370,6 +370,7 @@ class ChargeCommentView(View):
     def post(self, request):
         pass
 
+
 class CostEstimationView(View):
     template_name = "common/update_station.html"
     form_class = StationsForm
@@ -386,4 +387,3 @@ class CostEstimationView(View):
             "id": request.POST["ID"],
         }
         return render(request, "common/cost_estimation_data.html", context)
-

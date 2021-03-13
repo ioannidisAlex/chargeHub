@@ -185,9 +185,9 @@ class SessionsPerStationView(generics.GenericAPIView):
     def get(self, request, id, date_from, date_to):
         try:
             charging_station = get_object_or_404(ChargingStation, pk=id)
-            sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-                connect_time__date__range=[date_from, date_to]
-            )
+            sessions = self.queryset.filter(
+                charging_point__charging_station_id=id
+            ).filter(connect_time__date__range=[date_from, date_to])
 
             sessions_list = []
             for s in sessions:
@@ -222,6 +222,7 @@ class SessionsPerStationView(generics.GenericAPIView):
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
+
 class CostEstimationView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
@@ -231,16 +232,19 @@ class CostEstimationView(generics.GenericAPIView):
     def get(self, request, id, date_from, date_to):
         try:
             charging_station = get_object_or_404(ChargingStation, pk=id)
-            sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-                connect_time__date__range=[date_from, date_to]
-            )
-            if(sessions.count() == 0):
-                return Response({"Estimated Cost": "Not enough data to estimate."}, status.HTTP_200_OK)
+            sessions = self.queryset.filter(
+                charging_point__charging_station_id=id
+            ).filter(connect_time__date__range=[date_from, date_to])
+            if sessions.count() == 0:
+                return Response(
+                    {"Estimated Cost": "Not enough data to estimate."},
+                    status.HTTP_200_OK,
+                )
             total_cost = 0
             for session in sessions:
                 total_cost += session.payment.cost
             estimated_cost = total_cost / sessions.count()
-            
+
             response = {
                 "Estimated Cost": estimated_cost,
             }
@@ -248,7 +252,7 @@ class CostEstimationView(generics.GenericAPIView):
 
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
-            
+
 
 class SessionsPerVehicleView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
