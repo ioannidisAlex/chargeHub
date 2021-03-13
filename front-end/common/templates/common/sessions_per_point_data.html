@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.get(
-		'http://localhost:8001/evcharge/api/SessionsPerPoint/{{ id }}/{{ date_from }}/{{ date_to }}/',
+		'http://localhost:8765/evcharge/api/SessionsPerPoint/{{ id }}/{{ date_from }}/{{ date_to }}/',
 		{ headers: {
 				"X-OBSERVATORY-AUTH": AuthStr
 			}

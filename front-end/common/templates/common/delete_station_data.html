@@ -1,0 +1,30 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		//const data = {};
+		//data['id'] = '{{ id }}';
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+		axios.delete(
+			'http://localhost:8765/evcharge/api/stations/',
+			{ 
+				headers: {
+					"X-OBSERVATORY-AUTH": AuthStr,
+					},
+				data: {
+					id: '{{ id }}'
+				}
+			}
+			
+		)
+		.then(response => {		
+			alert("Successfull deletion!");
+			console.log(response.status);	
+		})
+		.catch(err => {
+			alert("Oops! Something went wrong.");
+			console.log(err.response);
+		});
+	</script>
+{% endblock content %}

@@ -48,7 +48,7 @@ img2 {
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 12px 14px;
+  padding: 11.5px 13.5px;
   font-size: 20px;
   width: 100%;
 }
@@ -70,6 +70,7 @@ img2 {
 background-image: url("../media/image2.jpg");
 
 }
+
 /* Style each tab content individually */
 
 </style>
@@ -79,7 +80,7 @@ background-image: url("../media/image2.jpg");
 	<div id="London" class="tabcontent">
 		<img src="../media/image1.jpg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Αναζήτηση Σταθμών</button>
+			<button type="button" class="btn btn-info" ><a href="{% url 'stations' %}" style="color:rgb(255, 255, 255)">Αναζήτηση Σταθμών</a></button>
 			<button type="button" class="btn btn-info">Αξιολόγηση Σταθμών</button>
 			<button type="button" class="btn btn-info">Εκτίμηση Κόστους</button>
 		</div>
@@ -89,7 +90,9 @@ background-image: url("../media/image2.jpg");
 	  <div id="Paris" class="tabcontent">
 		<img src="../media/image5.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Φόρτιση</button>
+			<button type="button" class="btn btn-info">
+				<a href="{% url 'charge' %}" style="color:rgb(255, 255, 255)">Φόρτιση</a>
+			</button>
 			<button type="button" class="btn btn-info">Στατιστικά Φόρτισης</button>
 			<button type="button" class="btn btn-info">Στατιστικά Οχήματος</button>
 		</div>
@@ -109,17 +112,16 @@ background-image: url("../media/image2.jpg");
 	  <div id="Oslo" class="tabcontent">
 		<img src="../media/image44.jpeg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Στατιστικά Φορτίσεων</button>
-			<button type="button" class="btn btn-info">Δεδομένα Κατανάλωσης Ενέργειας</button>
+			<button type="button" class="btn btn-info"><a href="{% url 'kiloWatts' %}" style="color:rgb(255, 255, 255)">Στατιστικά κατανάλωσης ενέργειας των φορτίσεων</a></button>
 		</div>
 		<p>Oslo is the capital of Norway.</p>
 	  </div>
 	  <div id="kOslo" class="tabcontent">
 		<img src="../media/image2.jpg" class="img-responsive" alt="Paris" width="750" height="450"> 
 		<div class="btn-group btn-group-lg">
-			<button type="button" class="btn btn-info">Δημιουργία Σημείου Φόρτισης</button>
-			<button type="button" class="btn btn-info">Επεξεργασία Σημείου Φόρτισης</button>
-			<button type="button" class="btn btn-info">Διαγραφή Σημείου Φόρτισης</button>
+			<button type="button" class="btn btn-info" ><a href="{% url 'add_station' %}" style="color:rgb(255, 255, 255)">Δημιουργία Σημείου Φόρτισης</a></button>
+			<button type="button" class="btn btn-info" ><a href="{% url 'update_station' %}" style="color:rgb(255, 255, 255)">Επεξεργασία Σημείου Φόρτισης</a></button>
+			<button type="button" class="btn btn-info" ><a href="{% url 'delete_station' %}" style="color:rgb(255, 255, 255)">Διαγραφή Σημείου Φόρτισης</a></button>
 		</div>
 		<p>Oslo is the capital of Norway.</p>
 	  </div>	  
