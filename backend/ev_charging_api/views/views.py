@@ -460,9 +460,9 @@ class SessionsupdView(generics.GenericAPIView):
                 "TotalSessionsInDatabase": self.queryset.count(),
             }
             return Response(response, status.HTTP_200_OK)
-            
-            except:
-                return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
 
 
 class KWstatsView(generics.GenericAPIView):
