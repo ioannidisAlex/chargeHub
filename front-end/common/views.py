@@ -373,6 +373,7 @@ class ChargeCommentView(View):
         return render(request, self.template_name, {"form": self.form_class()})
 
     def post(self, request):
+
         context = {"user_comments_ratings": request.POST["user_comments_ratings"]}
         return render(request, "common/insert_session_data.html", context)
 
@@ -393,3 +394,23 @@ class ChargeInitialView(View):
             "vehicle": request.POST["vehicle"],
         }
         return render(request, "common/charge_initial_data.html", context)
+
+
+
+class CostEstimationView(View):
+    template_name = "common/cost_estimation.html"
+    form_class = StationsForm
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+            {"form": self.form_class},
+        )
+
+    def post(self, request):
+        context = {
+            "id": request.POST["ID"],
+        }
+        return render(request, "common/cost_estimation_data.html", context)
+
