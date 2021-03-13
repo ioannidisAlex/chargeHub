@@ -13,7 +13,8 @@ class SessionSerializer(serializers.ModelSerializer):
 class KWSerializer(serializers.ModelSerializer):
     class Meta:
         model = Session
-        fields = ("kwh_delivered")
+        fields = "kwh_delivered"
+
 
 class UserSerializer(serializers.ModelSerializer):
     class Meta:

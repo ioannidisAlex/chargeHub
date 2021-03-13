@@ -323,7 +323,10 @@ class KiloWattsView(View):
     template_name = "common/kiloWatts.html"
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name,)
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -346,7 +349,10 @@ class ChargePayView(View):
     template_name = "common/charge_pay.html"
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name,)
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass
@@ -356,7 +362,10 @@ class ChargeCommentView(View):
     template_name = "common/charge_comment.html"
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name,)
+        return render(
+            request,
+            self.template_name,
+        )
 
     def post(self, request):
         pass

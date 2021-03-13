@@ -38,11 +38,10 @@ router2.register(
     "stations",
     api_views.StationsViewSet,
 )
-#router_KWatts.register(
+# router_KWatts.register(
 #    "KWstats",
 #    api_views.KWstatsViewSet,
-#)
-
+# )
 
 
 # pylint: disable=R0201

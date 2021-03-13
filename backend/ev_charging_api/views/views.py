@@ -145,8 +145,6 @@ class SessionsPerPointView(generics.GenericAPIView):
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-
-
     def get(self, request, id, date_from, date_to):
         charging_point = get_object_or_404(ChargingPoint, pk=id)
         sessions = self.queryset.filter(charging_point__id=id).filter(
@@ -418,26 +416,26 @@ class SessionsupdView(generics.GenericAPIView):
 class KWstatsView(generics.GenericAPIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAdminUser]
-    #notAdminUser
+    # notAdminUser
     serializer_class = KWSerializer
     queryset = Session.objects.all()
 
     def get(self, request):
         print("Helloo")
         KW = []
-        index = 0;
+        index = 0
         print(self.queryset.all())
-        for s in (self.queryset.all()):
+        for s in self.queryset.all():
             KW.append(
-            {
-                "SessionIndex": index,
-                #"SessionID": s.id,
-                "EnergyDelivered": s.kwh_delivered,
-            }
+                {
+                    "SessionIndex": index,
+                    # "SessionID": s.id,
+                    "EnergyDelivered": s.kwh_delivered,
+                }
             )
             index += 1
         response = {
-                "SessionKW": KW,
+            "SessionKW": KW,
         }
         return Response(response)
 
