@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.post(
-		'http://localhost:8765/evcharge/api/admin/resetsessions/', {},
+		'https://localhost:8765/evcharge/api/admin/resetsessions/', {},
 		{ headers: {
 				'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr

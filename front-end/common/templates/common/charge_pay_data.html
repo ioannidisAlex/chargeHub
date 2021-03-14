@@ -11,7 +11,7 @@
     var cost = localStorage.getItem("cost");
 	var data ={charging_cost: cost, payment_method: "{{  payment_method }}",invoice: "{{  invoice }}",user_id: "{{  user_id }}"}
     axios.post(
-		'http://localhost:8765/evcharge/api/insert_payment/', data,
+		'https://localhost:8765/evcharge/api/insert_payment/', data,
 		{ headers: {
                 'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr,

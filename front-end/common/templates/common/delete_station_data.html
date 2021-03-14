@@ -7,7 +7,7 @@
 		//data['id'] = '{{ id }}';
 		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 		axios.delete(
-			'http://localhost:8765/evcharge/api/stations/',
+			'https://localhost:8765/evcharge/api/stations/',
 			{ 
 				headers: {
 					'X-CSRFToken': '{{ csrf_token }}',
@@ -21,7 +21,8 @@
 		)
 		.then(response => {		
 			alert("Successfull deletion!");
-			console.log(response.status);	
+			console.log(response.status);
+			location.replace('{% url 'home' %}');	
 		})
 		.catch(err => {
 			alert("Oops! Something went wrong.");

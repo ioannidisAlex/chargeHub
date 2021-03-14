@@ -19,7 +19,7 @@
 	now = now.split("/")[2].split(",")[0]+month+day;
 	//alert(now);
 	axios.get(
-		'http://localhost:8765/evcharge/api/cost_estimation/{{ id }}/19981021/'+now+'/',
+		'https://localhost:8765/evcharge/api/cost_estimation/{{ id }}/19981021/'+now+'/',
 		{ headers: {
 			'X-CSRFToken': '{{ csrf_token }}',
 			"X-OBSERVATORY-AUTH": AuthStr,

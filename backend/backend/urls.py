@@ -146,7 +146,7 @@ urlpatterns = [
         name="password_reset_complete",
     ),
     path(
-        "evcharge/api/charging_cost/<uuid:id>/",
+        "evcharge/api/charging_cost/<uuid:id>/<uuid:vehicle_id>/",
         api_views.ChargingCostView.as_view(),
         name="charging_cost",
     ),

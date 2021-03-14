@@ -27,7 +27,7 @@
             charging_point : charging_point_,
             vehicle : vehicle_ };
     axios.post(
-		'http://localhost:8765/evcharge/api/insert_session/', data,
+		'https://localhost:8765/evcharge/api/insert_session/', data,
 		{ headers: {
                 'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr,
