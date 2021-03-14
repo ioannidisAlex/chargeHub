@@ -1,43 +1,123 @@
-{% extends "common/base.html" %}
+{% extends "common/base_pagination.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
 
-<table id="dtBasicExample" class="table table-bordered table-striped"></table>
-<!--<table id="dtBasicExample" class="tablesorter"></table>	-->
+	
+	<table id="dtBasicExample" class="table table-bordered table-striped"></table>
+	<!--<table id="dtBasicExample" class="tablesorter"></table>	-->
 
-<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-<script>
-	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
-	axios.get(
-		'https://localhost:8765/evcharge/api/SessionsPerPoint/{{ id }}/{{ date_from }}/{{ date_to }}/',
-		{ headers: {
-				'X-CSRFToken': '{{ csrf_token }}',
-				"X-OBSERVATORY-AUTH": AuthStr
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script>
+		function alef() {
+			      $("#dtBasicExample") 
+    				.tablesorter({widthFixed: "true", widgets: ['zebra']}) 
+    				.tablesorterPager({container: $("#pager")
+    				});
+    			} 
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+
+		axios.get(
+			'https://localhost:8765/evcharge/api/SessionsPerPoint/{{ id }}/{{ date_from }}/{{ date_to }}/',
+			{ headers: {
+				"X-OBSERVATORY-AUTH": AuthStr,
 			}
-	})
-	.then( (response) => {
-        console.log(response);
-        var table = ''
-    	//var thead = '<thead class="thead-dark">';
-        var thead = '<thead class="thead-light">';
-        for(var key in response.data){
-        	thead += '<th>'+key+'</th>';
-        }
-        thead += '</thead>';
-    	var tbody = '<tbody>';
-		for(var key in response.data){
-			//tbody += '<tr>';
-			tbody += '<td style="word-break:normal;">'+response.data[key]+'</td>'; 
-			//tbody += '</tr>';
-		}
-    	tbody += '</tbody>';
-    	table += thead+tbody;
-		document.getElementById('dtBasicExample').innerHTML = table;
-    })
-	.catch( (error) => {
-       alert('Oops! Something went wrong..')
-       console.log(error);
-    })
-</script>
+		})
+		.then( (response) => {
+			console.log(response)
+			var table = ''
+			
+			var thead = '<thead class="thead-light">';
+			for(var key in response.data){
+				thead += '<th class="filter-exact" data-placeholder="** Finder **">'+key+'</th>';
+			}
+			thead += '</thead>';
+			//var tfoot="<tfoot></tfoot>"
+			var tfoot= '<tfoot><tr><th colspan="14" class="ts-pager"><div class="form-inline"><div class="btn-group btn-group-sm mx-1" role="group"><button type="button" class="btn btn-secondary first" title="first">⇤</button><button type="button" class="btn btn-secondary prev" title="previous">←</button></div><span class="pagedisplay"></span><div class="btn-group btn-group-sm mx-1" role="group"><button type="button" class="btn btn-secondary next" title="next">→</button><button type="button" class="btn btn-secondary last" title="last">⇥</button></div><select class=" form-control-sm-one-num custom-select px-1 pagesize" title="Select page size"><option selected="selected" value="7">by  7</option><option value="12">by  12</option><option value="30">by  30</option><option value="all">All</option></select><select class="form-control-sm custom-select px-4 mx-1 pagenum" title="Select page number"></select></div></th></tr></tfoot>' ;
+			
+			var tbody = '<tbody>';
+			for(var i in response.data['ChargingSessionsList']){
+				tbody += '<tr>';
+				// skip first
+				for(var key in response.data){
+					//console.log(key);
+					//if (key!="password" && key!="is_active")
+					if((key == 'ChargingSessionsList')){
+						tbody += '<td>';
+						for(var key2 in response.data[key][i]){
+							tbody +=key2 + ':' + response.data[key][i][key2]+'<br></br>';
+						}
+						tbody += '</td>';
+					}
 
+					else{
+						tbody += '<td>'+response.data[key]+'</td>';
+
+					}
+					 
+				}
+				tbody += '</tr>';
+			}
+			tbody += '</tbody>';
+			table += thead+tfoot;
+			table += tbody;
+			document.getElementById('dtBasicExample').innerHTML = table;
+			console.log(table)
+		})
+		.catch( (error) => {
+			alert("Oops!! Something went wrong :(");
+			console.log(error);
+		})
+		.finally(()=>{
+			$("#dtBasicExample") 
+					.tablesorter({
+						theme : "jui",
+
+						widthFixed: true,
+
+						// widget code contained in the jquery.tablesorter.widgets.js file
+						// use the zebra stripe widget if you plan on hiding any rows (filter widget)
+						// the uitheme widget is NOT REQUIRED!
+						widgets : [ "filter", "columns", "zebra" ],
+
+						widgetOptions : {
+							// using the default zebra striping class name, so it actually isn't included in the theme variable above
+							// this is ONLY needed for bootstrap theming if you are using the filter widget, because rows are hidden
+							zebra : ["even", "odd"],
+
+							// class names added to columns when sorted
+							columns: [ "primary", "secondary", "tertiary" ],
+
+							// reset filters button
+							filter_reset : ".reset",
+
+							// extra css class name (string or array) added to the filter element (input or select)
+							filter_cssFilter: [
+							'form-control',
+							'form-control',
+							'form-control custom-select', // select needs custom class names :(
+							'form-control',
+							'form-control',
+							'form-control',
+							'form-control'
+							]
+						}
+					}) 
+					.tablesorterPager({
+						// target the pager markup - see the HTML block below
+						container: $(".ts-pager"),
+
+						// target the pager page select dropdown - choose a page
+						cssGoto  : ".pagenum",
+
+						// remove rows from the table to speed up the sort of large tables.
+						// setting this to false, only hides the non-visible rows; needed if you plan to add/remove rows with the pager enabled.
+						removeRows: false,
+
+						// output string - default is '{page}/{totalPages}';
+						// possible variables: {page}, {totalPages}, {filteredPages}, {startRow}, {endRow}, {filteredRows} and {totalRows}
+						output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
+					});
+		})
+	    	
+	</script>
 {% endblock content %}
