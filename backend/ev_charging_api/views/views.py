@@ -155,9 +155,10 @@ class SessionsPerPointView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         charging_point = get_object_or_404(ChargingPoint, pk=id)
-        # charging_point = get_object_or_404(ChargingPoint.objects.select_related('charging_station'), pk=id)
-        sessions = self.queryset.filter(charging_point__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
+        sessions = (
+            self.queryset.filter(charging_point__id=id)
+            .select_related("payment")
+            .filter(connect_time__date__range=[date_from, date_to])
         )
         sessions_list = [
             {
@@ -193,9 +194,10 @@ class SessionsPerStationView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         charging_station = get_object_or_404(ChargingStation, pk=id)
-        # charging_station = get_object_or_404(ChargingStation.objects.select_related('provider__location'), pk=id)
-        sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
-            connect_time__date__range=[date_from, date_to]
+        sessions = (
+            self.queryset.filter(charging_point__charging_station_id=id)
+            .select_related("charging_station__charging_point")
+            .filter(connect_time__date__range=[date_from, date_to])
         )
 
         sessions_list = []
@@ -239,9 +241,11 @@ class CostEstimationView(generics.GenericAPIView):
     def get(self, request, id, date_from, date_to):
         try:
             charging_station = ChargingStation.objects.all().get(id=id)
-            sessions = self.queryset.filter(
-                charging_point__charging_station_id=id
-            ).filter(connect_time__date__range=[date_from, date_to])
+            sessions = (
+                self.queryset.filter(charging_point__charging_station_id=id)
+                .select_related("payment")
+                .filter(connect_time__date__range=[date_from, date_to])
+            )
             if sessions.count() == 0:
                 return Response(
                     {"Estimated Cost": "Not enough data to estimate."},
@@ -269,9 +273,10 @@ class SessionsPerVehicleView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         vehicle = get_object_or_404(Vehicle, pk=id)
-        # vehicle = get_object_or_404(Vehicle.objects.select_related('model__owner'), pk=id)
-        sessions = self.queryset.filter(vehicle__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
+        sessions = (
+            self.queryset.filter(vehicle__id=id)
+            .select_related("payment__provider")
+            .filter(connect_time__date__range=[date_from, date_to])
         )
         sessions_list = [
             {
@@ -315,9 +320,10 @@ class SessionsPerProviderView(generics.GenericAPIView):
 
     def get(self, request, id, date_from, date_to):
         provider = get_object_or_404(Provider, pk=id)
-        # provider = get_object_or_404(Provider.objects.select_related('charging_station'), pk=id)
-        sessions = self.queryset.filter(provider__id=id).filter(
-            connect_time__date__range=[date_from, date_to]
+        sessions = (
+            self.queryset.filter(provider__id=id)
+            .select_related("vehicle__payment")
+            .filter(connect_time__date__range=[date_from, date_to])
         )
         sessions_list = [
             {
@@ -832,8 +838,10 @@ class InvoiceForVehicleView(generics.GenericAPIView):
     def get(self, request, id, date_from, date_to):
         try:
             vehicle = Vehicle.objects.all().get(id=id)
-            sessions = self.queryset.filter(vehicle__id=id).filter(
-                connect_time__date__range=[date_from, date_to]
+            sessions = (
+                self.queryset.filter(vehicle__id=id)
+                .select_related("payment__provider")
+                .filter(connect_time__date__range=[date_from, date_to])
             )
             sessions_list = [
                 {
