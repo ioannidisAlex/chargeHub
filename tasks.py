@@ -20,8 +20,14 @@ def inside_virtual(e, *commands):
             ]
         )
     else:
-        return " & ".join(
-            [f"cd {e}", "source ./.venv/bin/activate", *commands, "deactivate", "cd .."]
+        return " && ".join(
+            [
+                f"cd {e}/",
+                "source ./.venv/bin/activate",
+                *commands,
+                "deactivate",
+                "cd ..",
+            ]
         )
 
 
