@@ -155,7 +155,7 @@ def test_all_model_creation():
         user_comments_ratings="",
         provider=user3.provider,
         kwh_delivered=1,
-        connect_time="1998-03-03 00:00:00",
+        connect_time="1998-03-03 00:00:00+00:00",
         charging_point=chargingpoint,
         vehicle=vehicle,
     )
