@@ -4,7 +4,7 @@ function setup(){
     }
     
 function draw(){
-    background(251);
+    background(250);
     var raf = [4.9, 3.2, 4.55, 2.92, 0.47, 0.81];
     let c = color('#1f8056');
     noFill()
