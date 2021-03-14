@@ -36,7 +36,7 @@
             var t2 = time1.split(':')[2].split('.')[0];
             var t3 = time2.split(':')[1].substring(0,2);
             var t4 = time2.split(':')[2].split('.')[0];
-            var duration = 60*(t3-t1) + t4-t2;
+            var duration = 60*(parseInt(t3)-parseInt(t1)) + parseInt(t4)-parseInt(t2);
             console.log(duration);
             console.log("aBrlef2");
             localStorage.setItem('duration', duration);
