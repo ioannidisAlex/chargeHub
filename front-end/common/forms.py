@@ -110,6 +110,28 @@ class StationsForm(forms.Form):
         ]
 
 
+class StatsVehicleForm(forms.Form):
+    ID = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "id",
+        ]
+
+
+class InvoiceForm(forms.Form):
+    ID = forms.CharField(max_length=100)
+    date_from = forms.CharField(max_length=100)
+    date_to = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "id",
+            "date_from",
+            "date_to",
+        ]
+
+
 class InsertStationForm(forms.Form):
     owner = forms.CharField(max_length=100)
     cluster = forms.CharField(max_length=100)

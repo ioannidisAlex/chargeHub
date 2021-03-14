@@ -172,6 +172,16 @@ urlpatterns = [
         common_views.CostEstimationView.as_view(),
         name="cost_estimation",
     ),
+    path(
+        "seasonal_invoice/",
+        common_views.SeasonalInvoiceView.as_view(),
+        name="seasonal_invoice",
+    ),
+    path(
+        "stats_vehicle/",
+        common_views.StatsVehicle.as_view(),
+        name="stats_vehicle",
+    ),
 ]
 
 if settings.DEBUG:

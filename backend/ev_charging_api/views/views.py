@@ -832,3 +832,50 @@ class InsertSessionView(generics.GenericAPIView):
                 return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+class InvoiceForVehicleView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+
+    def get(self, request, id, date_from, date_to):
+        try:
+            vehicle = Vehicle.objects.all().get(id=id)
+            sessions = self.queryset.filter(vehicle__id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            sessions_list = [
+                {
+                    "SessionIndex": session_index,
+                    "SessionID": s.id,
+                    "EnergyProvider": s.provider.id,
+                    "StartedOn": s.connect_time,
+                    "FinishedOn": s.done_charging_time,
+                    "Protocol": s.protocol,
+                    "EnergyDelivered": s.kwh_delivered,
+                    "PricePolicyRef": s.payment.invoice,
+                    "CostPerKWh": (
+                        s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
+                    ),
+                    "SessionCost": s.payment.cost if s.kwh_delivered > 0 else 0.0,
+                }
+                for session_index, s in enumerate(sessions, start=1)
+            ]
+            response = {
+                "VehicleID": id,
+                "RequestTimestamp": datetime.now(),
+                "PeriodFrom": date_from,
+                "PeriodTo": date_to,
+                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                    "kwh_delivered__sum"
+                ],
+                "TotalCost": (sessions.values_list("payment").aggregate(Sum("cost"))),
+                "NumberOfVehicleChargingSessions": sessions.count(),
+                "VehicleChargingSessionsList": sessions_list,
+            }
+            return Response(response, status.HTTP_200_OK)
+
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
