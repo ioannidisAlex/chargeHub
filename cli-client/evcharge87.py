@@ -3,7 +3,9 @@ import inspect
 import os
 
 import click
+import click_spinner
 import requests
+from click_didyoumean import DYMGroup
 from click_option_group import AllOptionGroup, optgroup
 
 options = {
@@ -43,13 +45,15 @@ def convert_to_request(f):
         else:
             headers = {}
 
-        return method(
-            f"{BASE_URL}/{url}",
-            hooks=dict(response=hook),
-            timeout=2,
-            headers=headers,
-            **parameters,
-        )
+        with click_spinner.spinner():
+            response = method(
+                f"{BASE_URL}/{url}/",
+                hooks=dict(response=hook),
+                timeout=os.getenv("EVCHARGING_TIMEOUT", 2),
+                headers=headers,
+                **parameters,
+            )
+        return response
 
     return function
 
@@ -94,7 +98,9 @@ def load_to_admin(*args, target):
     return target.command("Admin")(x)
 
 
-interface = click.Group()
+@click.group(cls=DYMGroup)
+def interface():
+    pass
 
 
 # Data endpoints
@@ -162,7 +168,7 @@ def store_token(response: requests.Response, *arg, **kwargs):
 def login(username, passw):
     return (
         requests.post,
-        "login/",
+        "login",
         dict(data=dict(username=username, password=passw)),
         store_token,
     )
@@ -208,7 +214,7 @@ def healthcheck(healthcheck, apikey):
 
 @convert_to_command(click)
 def resetsessions(resetsessions, apikey):
-    return requests.post, "admin/resetsessions/", {}, show_data
+    return requests.post, "admin/resetsessions", {}, show_data
 
 
 admin = load_to_admin(

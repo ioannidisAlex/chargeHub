@@ -311,7 +311,7 @@ mnth = {
 def dateify(datein):
     arr = datein.split()
     dateout = ""
-    dateout = arr[3] + "-" + mnth[arr[2]] + "-" + arr[1] + " " + arr[4]
+    dateout = arr[3] + "-" + mnth[arr[2]] + "-" + arr[1] + " " + arr[4] + "+00:00"
     return dateout
 
 
