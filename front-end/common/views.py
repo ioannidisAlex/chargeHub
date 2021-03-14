@@ -291,7 +291,7 @@ class InsertStationView(View):
 
 
 class DeleteStationView(View):
-    template_name = "common/delete_stations.html"
+    template_name = "common/delete_station.html"
     form_class = DeleteStationForm
 
     def get(self, request, *args, **kwargs):

@@ -45,7 +45,12 @@
 						tbody += '<td>'+response.data[key]+'</td>'; 
 					}	
 					else{
-						tbody += '<td>'+response.data[key][i]+'</td>';
+						tbody += '<td>';
+						for(var key2 in response.data[key][i]){
+							tbody +=key2 + ':' + response.data[key][i][key2]+'<br></br>';
+						}
+						tbody += '</td>';
+
 					}
 					 
 				}

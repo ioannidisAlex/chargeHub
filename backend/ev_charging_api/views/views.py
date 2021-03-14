@@ -134,8 +134,11 @@ class RetrieveUserViewSet(viewsets.ViewSet):
 
     def retrieve(self, request, username=None):
         try:
-            user = self.queryset.objects.all().get(username=username)
+            print(username)
+            user = self.queryset.get(username=username)
+            print("USER", user)
             serializer = self.serializer_class(user)
+            print("SERIALIZER", serializer)
             return Response(serializer.data, status.HTTP_200_OK)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
@@ -643,7 +646,7 @@ class StationsViewSet(viewsets.ViewSet):
                 d["location"] = Location.objects.all().get(title=d["title"])
                 d.pop("title")
             print("Are we ok?", d)
-            ChargingStation.objects.update_or_create(d)
+            ChargingStation.objects.update_or_create(d, id=id)
             return Response({"status": "ok"}, status.HTTP_200_OK)
 
         except:

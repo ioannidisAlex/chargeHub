@@ -21,7 +21,8 @@
 		)
 		.then(response => {		
 			alert("Successfull deletion!");
-			console.log(response.status);	
+			console.log(response.status);
+			location.replace('{% url 'home' %}');	
 		})
 		.catch(err => {
 			alert("Oops! Something went wrong.");
