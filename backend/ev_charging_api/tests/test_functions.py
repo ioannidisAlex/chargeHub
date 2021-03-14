@@ -73,7 +73,7 @@ def test_login(client, url, method, django_user_model):
 @pytest.mark.parametrize("url,method", session_calls)
 def test_sessions_calls(authenticated_api_client, url, method):
     response = getattr(authenticated_api_client, method)(url)
-    assert response.status_code == 400
+    assert response.status_code == 404
 
 
 @pytest.mark.parametrize("url,method", session_calls[:-1])
