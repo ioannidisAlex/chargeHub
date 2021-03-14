@@ -871,9 +871,7 @@ class InvoiceForVehicleView(generics.GenericAPIView):
                 "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
                     "kwh_delivered__sum"
                 ],
-                "TotalCost": (
-                    sessions.values_list("payment").aggregate(Sum("cost"))
-                ),
+                "TotalCost": (sessions.values_list("payment").aggregate(Sum("cost"))),
                 "NumberOfVehicleChargingSessions": sessions.count(),
                 "VehicleChargingSessionsList": sessions_list,
             }
