@@ -91,7 +91,7 @@ class Vehicle(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
-        return "%s's %s %s" % (self.owner, self.model, self.id)
+        return f"ID = {self.id}"
 
 
 class Profile(models.Model):
@@ -101,7 +101,7 @@ class Profile(models.Model):
     image = models.ImageField(default="default.jpg", upload_to="profile_pics")
 
     def __str__(self):
-        return f"{self.user.username} Profile"
+        return f"{self.user.username}"
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)
@@ -119,7 +119,7 @@ class Owner(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
-        return f"{self.id} Profile"
+        return f"{self.id}"
 
 
 class Location(models.Model):
@@ -135,7 +135,7 @@ class Location(models.Model):
     address_line = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"Title = {self.title, self.id}"
+        return f"ID = {self.id}"
 
 
 class Cluster(models.Model):
@@ -144,7 +144,7 @@ class Cluster(models.Model):
     cluster_name = models.CharField(max_length=15)
 
     def __str__(self):
-        return f"Cluster name = {self.cluster_name, self.id}"
+        return f"Cluster ID = {self.id}"
 
 
 class Provider(models.Model):
@@ -154,7 +154,7 @@ class Provider(models.Model):
     provider_name = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"Provider name = {self.id}"
+        return f"Provider ID = {self.id}"
 
 
 class ChargingStation(models.Model):
