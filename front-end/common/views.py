@@ -12,11 +12,13 @@ from .forms import (
     ChargePayForm,
     DeleteStationForm,
     InsertStationForm,
+    InvoiceForm,
     ProfileUpdateForm,
     RestLoginForm,
     SessionsPer_Form,
     SessionsupdForm,
     StationsForm,
+    StatsVehicleForm,
     UpdateStationForm,
     UsermodForm,
     UserRegisterForm,
@@ -412,3 +414,41 @@ class CostEstimationView(View):
             "id": request.POST["ID"],
         }
         return render(request, "common/cost_estimation_data.html", context)
+
+
+class SeasonalInvoiceView(View):
+    template_name = "common/seasonal_invoice.html"
+    form_class = InvoiceForm
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+            {"form": self.form_class},
+        )
+
+    def post(self, request):
+        context = {
+            "id": request.POST["ID"],
+            "date_from": request.POST["date_from"],
+            "date_to": request.POST["date_to"],
+        }
+        return render(request, "common/seasonal_invoice_data.html", context)
+
+
+class StatsVehicle(View):
+    template_name = "common/stats_vehicle.html"
+    form_class = StatsVehicleForm
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+            {"form": self.form_class},
+        )
+
+    def post(self, request):
+        context = {
+            "id": request.POST["ID"],
+        }
+        return render(request, "common/stats_vehicle_data.html", context)

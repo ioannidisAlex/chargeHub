@@ -38,10 +38,6 @@ router2.register(
     "stations",
     api_views.StationsViewSet,
 )
-# router_KWatts.register(
-#    "KWstats",
-#    api_views.KWstatsViewSet,
-# )
 
 
 # pylint: disable=R0201
@@ -168,6 +164,11 @@ urlpatterns = [
         "evcharge/api/cost_estimation/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
         api_views.CostEstimationView.as_view(),
         name="cost_estimation",
+    ),
+    path(
+        "evcharge/api/InvoiceForVehicle/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        api_views.InvoiceForVehicleView.as_view(),
+        name="invoice_for_vehicle",
     ),
     # path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]

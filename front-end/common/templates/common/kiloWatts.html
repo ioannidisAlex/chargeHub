@@ -49,7 +49,7 @@
             // initiate chart display
             chart.draw();
         
-            document.getElementById("TitleSessionsContainer").innerHTML = `<h1>${accumulate}kWh delivered in ${response.data.SessionKW.length} sessions</h1>`;
+            document.getElementById("TitleSessionsContainer").innerHTML = `<h2>${accumulate}kWh delivered in ${response.data.SessionKW.length} sessions</h2>`;
         })
 		.catch( (error) => {
 			alert("Oops!! Something went wrong :(");

@@ -82,7 +82,7 @@ background-image: url("../media/image2.jpg");
 		<div class="btn-group btn-group-lg">
 			<button type="button" class="btn btn-info" ><a href="{% url 'stations' %}" style="color:rgb(255, 255, 255)">Αναζήτηση Σταθμών</a></button>
 			<button type="button" class="btn btn-info" ><a href="{% url 'cost_estimation' %}" style="color:rgb(255, 255, 255)">Εκτίμηση Κόστους</a></button>
-			<button type="button" class="btn btn-info">Έκδοση Περιοδικού Τιμολογίου Οχήματος</button>
+			<button type="button" class="btn btn-info"><a href="{% url 'seasonal_invoice' %}" style="color:rgb(255, 255, 255)">Έκδοση Περιοδικού Τιμολογίου Οχήματος</a></button>
 
 		</div>
 		<p>London is the capital city of England.</p>
@@ -93,9 +93,8 @@ background-image: url("../media/image2.jpg");
 		<div class="btn-group btn-group-lg">
 			<button type="button" class="btn btn-info">
 				<a href="{% url 'charge_initial' %}" style="color:rgb(255, 255, 255)">Φόρτιση</a>
-			</button>
-			<button type="button" class="btn btn-info">Στατιστικά Φόρτισης</button>
-			<button type="button" class="btn btn-info">Στατιστικά Οχήματος</button>
+			</button>			
+			<button type="button" class="btn btn-info"><a href="{% url 'stats_vehicle' %}" style="color:rgb(255, 255, 255)">Συλλογή Δεδομένων Οχήματος</button>
 		</div>
 		<p>London is the capital city of England.</p>
 	  </div>

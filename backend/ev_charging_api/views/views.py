@@ -154,37 +154,34 @@ class SessionsPerPointView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        try:
-            charging_point = ChargingPoint.objects.all().get(id=id)
-            sessions = self.queryset.filter(charging_point__id=id).filter(
-                connect_time__date__range=[date_from, date_to]
-            )
-            sessions_list = [
-                {
-                    "SessionIndex": session_index,
-                    "SessionID": s.id,
-                    "StartedOn": s.connect_time,
-                    "FinishedOn": s.done_charging_time,
-                    "Protocol": s.protocol,
-                    "EnergyDelivered": s.kwh_delivered,
-                    "Payment": s.payment.payment_method,
-                    "VehicleType": s.vehicle.model.engine_type,
-                }
-                for session_index, s in enumerate(sessions, start=1)
-            ]
-
-            response = {
-                "Point": id,
-                "PointOperator": charging_point.charging_station.owner.id,
-                "RequestTimestamp": datetime.now(),
-                "PeriodFrom": date_from,
-                "PeriodTo": date_to,
-                "NumberOfChargingSessions": len(sessions),
-                "ChargingSessionsList": sessions_list,
+        charging_point = get_object_or_404(ChargingPoint, pk=id)
+        sessions = self.queryset.filter(charging_point__id=id).filter(
+            connect_time__date__range=[date_from, date_to]
+        )
+        sessions_list = [
+            {
+                "SessionIndex": session_index,
+                "SessionID": s.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "Payment": s.payment.payment_method,
+                "VehicleType": s.vehicle.model.engine_type,
             }
-            return Response(response, status.HTTP_200_OK)
-        except:
-            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            for session_index, s in enumerate(sessions, start=1)
+        ]
+
+        response = {
+            "Point": id,
+            "PointOperator": charging_point.charging_station.owner.id,
+            "RequestTimestamp": datetime.now(),
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
+            "NumberOfChargingSessions": len(sessions),
+            "ChargingSessionsList": sessions_list,
+        }
+        return Response(response)
 
 
 class SessionsPerStationView(generics.GenericAPIView):
@@ -194,44 +191,41 @@ class SessionsPerStationView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        try:
-            charging_station = ChargingStation.objects.all().get(id=id)
-            sessions = self.queryset.filter(
-                charging_point__charging_station_id=id
-            ).filter(connect_time__date__range=[date_from, date_to])
+        charging_station = get_object_or_404(ChargingStation, pk=id)
+        sessions = self.queryset.filter(charging_point__charging_station_id=id).filter(
+            connect_time__date__range=[date_from, date_to]
+        )
 
-            sessions_list = []
-            for s in sessions:
-                for d in sessions_list:
-                    if s.charging_point.id == d["PointID"]:
-                        d["PointSessions"] += 1
-                        d["EnergyDelivered"] += s.kwh_delivered
-                        break
-                else:
-                    sessions_list.append(
-                        {
-                            "PointID": s.charging_point.id,
-                            "PointSessions": 1,
-                            "EnergyDelivered": s.kwh_delivered,
-                        }
-                    )
-            response = {
-                "StationID": id,
-                "Operator": charging_station.owner.id,
-                "RequestTimestamp": datetime.now(),
-                "PeriodFrom": date_from,
-                "PeriodTo": date_to,
-                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
-                    "kwh_delivered__sum"
-                ],
-                "NumberOfChargingSessions": sessions.count(),
-                "NumberOfActivePoints": len(sessions_list),
-                "SessionsSummaryList": sessions_list,
-                # sessions need more fields!!!
-            }
-            return Response(response, status.HTTP_200_OK)
-        except:
-            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        sessions_list = []
+        for s in sessions:
+            for d in sessions_list:
+                if s.charging_point.id == d["PointID"]:
+                    d["PointSessions"] += 1
+                    d["EnergyDelivered"] += s.kwh_delivered
+                    break
+            else:
+                sessions_list.append(
+                    {
+                        "PointID": s.charging_point.id,
+                        "PointSessions": 1,
+                        "EnergyDelivered": s.kwh_delivered,
+                    }
+                )
+        response = {
+            "StationID": id,
+            "Operator": charging_station.owner.id,
+            "RequestTimestamp": datetime.now(),
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
+            "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                "kwh_delivered__sum"
+            ],
+            "NumberOfChargingSessions": sessions.count(),
+            "NumberOfActivePoints": len(sessions_list),
+            "SessionsSummaryList": sessions_list,
+            # sessions need more fields!!!
+        }
+        return Response(response)
 
 
 class CostEstimationView(generics.GenericAPIView):
@@ -272,46 +266,42 @@ class SessionsPerVehicleView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        try:
-            vehicle = Vehicle.objects.all().get(id=id)
-            sessions = self.queryset.filter(vehicle__id=id).filter(
-                connect_time__date__range=[date_from, date_to]
-            )
-            sessions_list = [
-                {
-                    "SessionIndex": session_index,
-                    "SessionID": s.id,
-                    "EnergyProvider": s.provider.id,
-                    "StartedOn": s.connect_time,
-                    "FinishedOn": s.done_charging_time,
-                    "Protocol": s.protocol,
-                    "EnergyDelivered": s.kwh_delivered,
-                    "PricePolicyRef": s.payment.invoice,
-                    "CostPerKWh": (
-                        s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
-                    ),
-                    "SessionCost": s.payment.cost,
-                }
-                for session_index, s in enumerate(sessions, start=1)
-            ]
-            response = {
-                "VehicleID": id,
-                "RequestTimestamp": datetime.now(),
-                "PeriodFrom": date_from,
-                "PeriodTo": date_to,
-                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
-                    "kwh_delivered__sum"
-                ],
-                "NumberOfVisitedPoints": (
-                    sessions.order_by().values("charging_point").distinct().count()
+        vehicle = get_object_or_404(Vehicle, pk=id)
+        sessions = self.queryset.filter(vehicle__id=id).filter(
+            connect_time__date__range=[date_from, date_to]
+        )
+        sessions_list = [
+            {
+                "SessionIndex": session_index,
+                "SessionID": s.id,
+                "EnergyProvider": s.provider.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "PricePolicyRef": s.payment.invoice,
+                "CostPerKWh": (
+                    s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
                 ),
-                "NumberOfVehicleChargingSessions": sessions.count(),
-                "VehicleChargingSessionsList": sessions_list,
+                "SessionCost": s.payment.cost,
             }
-            return Response(response, status.HTTP_200_OK)
-
-        except:
-            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            for session_index, s in enumerate(sessions, start=1)
+        ]
+        response = {
+            "VehicleID": id,
+            "RequestTimestamp": datetime.now(),
+            "PeriodFrom": date_from,
+            "PeriodTo": date_to,
+            "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                "kwh_delivered__sum"
+            ],
+            "NumberOfVisitedPoints": (
+                sessions.order_by().values("charging_point").distinct().count()
+            ),
+            "NumberOfVehicleChargingSessions": sessions.count(),
+            "VehicleChargingSessionsList": sessions_list,
+        }
+        return Response(response)
 
 
 class SessionsPerProviderView(generics.GenericAPIView):
@@ -321,38 +311,33 @@ class SessionsPerProviderView(generics.GenericAPIView):
     queryset = Session.objects.all()
 
     def get(self, request, id, date_from, date_to):
-        try:
-            provider = Provider.objects.all().get(id=id)
-            sessions = self.queryset.filter(provider__id=id).filter(
-                connect_time__date__range=[date_from, date_to]
-            )
-            sessions_list = [
-                {
-                    "StationID": s.charging_point.charging_station.id,
-                    "SessionID": s.id,
-                    "VehicleID": s.vehicle.id,
-                    "StartedOn": s.connect_time,
-                    "FinishedOn": s.done_charging_time,
-                    "Protocol": s.protocol,
-                    "EnergyDelivered": s.kwh_delivered,
-                    "PricePolicyRef": s.payment.invoice,
-                    "CostPerKWh": (
-                        (s.payment.cost / s.kwh_delivered)
-                        if s.kwh_delivered > 0
-                        else 0.0
-                    ),
-                    "SessionCost": s.payment.cost,
-                }
-                for session_index, s in enumerate(sessions, start=1)
-            ]
-            response = {
-                "ProviderID": id,
-                "ProviderName": provider.provider_name,
-                "SessionsList": sessions_list,
+        provider = get_object_or_404(Provider, pk=id)
+        sessions = self.queryset.filter(provider__id=id).filter(
+            connect_time__date__range=[date_from, date_to]
+        )
+        sessions_list = [
+            {
+                "StationID": s.charging_point.charging_station.id,
+                "SessionID": s.id,
+                "VehicleID": s.vehicle.id,
+                "StartedOn": s.connect_time,
+                "FinishedOn": s.done_charging_time,
+                "Protocol": s.protocol,
+                "EnergyDelivered": s.kwh_delivered,
+                "PricePolicyRef": s.payment.invoice,
+                "CostPerKWh": (
+                    (s.payment.cost / s.kwh_delivered) if s.kwh_delivered > 0 else 0.0
+                ),
+                "SessionCost": s.payment.cost,
             }
-            return Response(response, status.HTTP_200_OK)
-        except:
-            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+            for session_index, s in enumerate(sessions, start=1)
+        ]
+        response = {
+            "ProviderID": id,
+            "ProviderName": provider.provider_name,
+            "SessionsList": sessions_list,
+        }
+        return Response(response)
 
 
 class HealthcheckView(generics.GenericAPIView):
@@ -830,5 +815,52 @@ class InsertSessionView(generics.GenericAPIView):
                 )
             else:
                 return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+        except:
+            return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
+
+
+class InvoiceForVehicleView(generics.GenericAPIView):
+    authentication_classes = [CustomTokenAuthentication]
+    permission_classes = [IsAuthenticated]
+    serializer_class = SessionSerializer
+    queryset = Session.objects.all()
+
+    def get(self, request, id, date_from, date_to):
+        try:
+            vehicle = Vehicle.objects.all().get(id=id)
+            sessions = self.queryset.filter(vehicle__id=id).filter(
+                connect_time__date__range=[date_from, date_to]
+            )
+            sessions_list = [
+                {
+                    "SessionIndex": session_index,
+                    "SessionID": s.id,
+                    "EnergyProvider": s.provider.id,
+                    "StartedOn": s.connect_time,
+                    "FinishedOn": s.done_charging_time,
+                    "Protocol": s.protocol,
+                    "EnergyDelivered": s.kwh_delivered,
+                    "PricePolicyRef": s.payment.invoice,
+                    "CostPerKWh": (
+                        s.payment.cost / s.kwh_delivered if s.kwh_delivered > 0 else 0.0
+                    ),
+                    "SessionCost": s.payment.cost if s.kwh_delivered > 0 else 0.0,
+                }
+                for session_index, s in enumerate(sessions, start=1)
+            ]
+            response = {
+                "VehicleID": id,
+                "RequestTimestamp": datetime.now(),
+                "PeriodFrom": date_from,
+                "PeriodTo": date_to,
+                "TotalEnergyDelivered": sessions.aggregate(Sum("kwh_delivered"))[
+                    "kwh_delivered__sum"
+                ],
+                "TotalCost": (sessions.values_list("payment").aggregate(Sum("cost"))),
+                "NumberOfVehicleChargingSessions": sessions.count(),
+                "VehicleChargingSessionsList": sessions_list,
+            }
+            return Response(response, status.HTTP_200_OK)
+
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
