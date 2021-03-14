@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "django.utils.translation",
     "corsheaders",
+    "sslserver",
 ]
 
 REST_FRAMEWORK = {
@@ -169,4 +170,4 @@ CORS_ALLOW_HEADERS = list(default_headers) + [
     "x-observatory-auth",
 ]
 
-CORS_ALLOWED_ORIGINS = ["http://localhost:8000", "http://127.0.0.1:8000"]
+CORS_ALLOWED_ORIGINS = ["https://localhost:8000", "https://127.0.0.1:8000"]
