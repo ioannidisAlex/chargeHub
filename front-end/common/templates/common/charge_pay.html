@@ -28,13 +28,13 @@
             var time2=new Date();
             var time1=JSON.parse(localStorage.getItem("timeStart"));
             var time2=JSON.parse(localStorage.getItem("timeStop"));
-            //console.log(time1.split(':')[1]);
-            //console.log(time1.split(':')[2].split('.')[0])
-            //console.log(time2.split(':')[1]);
-            //console.log(time2.split(':')[2].split('.')[0])
-            var t1 = time1.split(':')[1];
+            console.log(time1.split(':')[1].substring(0,2));
+            console.log(time1.split(':')[2].split('.')[0])
+            console.log(time2.split(':')[1].substring(0,2));
+            console.log(time2.split(':')[2].split('.')[0])
+            var t1 = time1.split(':')[1].substring(0,2);
             var t2 = time1.split(':')[2].split('.')[0];
-            var t3 = time2.split(':')[1];
+            var t3 = time2.split(':')[1].substring(0,2);
             var t4 = time2.split(':')[2].split('.')[0];
             var duration = 60*(t3-t1) + t4-t2;
             console.log(duration);
@@ -53,7 +53,8 @@
                 console.log(response.data);
                 var us_cost = (response.data['Usage cost']);
                 var kw_power = (response.data['KW Power']);
-                var cost = 1.0*(us_cost * localStorage.getItem('duration'))/(1.0*(3600 * kw_power)) 
+                // basic is not 60 * kw_power
+                var cost = 1.0*(us_cost * localStorage.getItem('duration'))/(1.0*(kw_power)) 
                 var kwh_delivered = localStorage.getItem('duration')*(1.0*(kw_power));
                 console.log(cost);
                 console.log(kwh_delivered);

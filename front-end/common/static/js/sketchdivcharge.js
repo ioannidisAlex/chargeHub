@@ -11,11 +11,11 @@ function draw(){
     stroke(c);
     for (let i = 0; i < 5; i++) {
       strokeWeight(1+raf[i]/10);
-      arc(75,height/2, raf[i]*30,raf[i]*30, 0+i+(frameCount/36),PI+HALF_PI+i+(frameCount/36));
+      arc(135,height/2-12, raf[i]*54,raf[i]*54, 0+i+(frameCount/36),PI+HALF_PI+i+(frameCount/36));
     }
     for (let i = 5; i < 6; i++) {
       strokeWeight(1+raf[i]/10);
-      arc(75,height/2, raf[i]*30,raf[i]*30, 0+i-(frameCount/36),PI+HALF_PI+i-(frameCount/36));
+      arc(135,height/2-12, raf[i]*54,raf[i]*54, 0+i-(frameCount/36),PI+HALF_PI+i-(frameCount/36));
     }
     //strokeWeight(1+4/10);
     //arc(width/2,height/2,4*30,4*30,PI,PI+HALF_PI);
