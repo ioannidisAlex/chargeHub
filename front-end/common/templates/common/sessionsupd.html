@@ -28,7 +28,7 @@
             formData.append("file", file.files[0]);
             //alert(formData);
             axios.post(
-                'http://localhost:8001/evcharge/api/admin/system/sessionsupd/', formData,
+                'https://localhost:8001/evcharge/api/admin/system/sessionsupd/', formData,
                 { headers: {
                         "X-OBSERVATORY-AUTH": AuthStr,
                         "content-type": "multipart/form-data",

@@ -172,7 +172,7 @@ class SessionsPerPointView(View):
             "date_from": request.POST["date_from"],
             "date_to": request.POST["date_to"],
         }
-        return render(request, "common/sessions_per_provider_data.html", context)
+        return render(request, "common/sessions_per_point_data.html", context)
 
 
 class SessionsPerStationView(View):
@@ -192,7 +192,7 @@ class SessionsPerStationView(View):
             "date_from": request.POST["date_from"],
             "date_to": request.POST["date_to"],
         }
-        return render(request, "common/sessions_per_provider_data.html", context)
+        return render(request, "common/sessions_per_station_data.html", context)
 
 
 class SessionsPerEVView(View):
@@ -212,7 +212,7 @@ class SessionsPerEVView(View):
             "date_from": request.POST["date_from"],
             "date_to": request.POST["date_to"],
         }
-        return render(request, "common/sessions_per_provider_data.html", context)
+        return render(request, "common/sessions_per_ev_data.html", context)
 
 
 class SessionsPerProviderView(View):

@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.post(
-		'http://localhost:8001/evcharge/api/admin/usermod/{{ username }}/{{ password }}/',{},
+		'https://localhost:8001/evcharge/api/admin/usermod/{{ username }}/{{ password }}/',{},
 		{ headers: {
 				'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr

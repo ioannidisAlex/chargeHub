@@ -9,7 +9,7 @@
 <script>
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	axios.get(
-		'http://localhost:8765/evcharge/api/SessionsPerVehicle/{{ id }}/{{ date_from }}/{{ date_to }}/',
+		'https://localhost:8765/evcharge/api/SessionsPerVehicle/{{ id }}/{{ date_from }}/{{ date_to }}/',
 		{ headers: {
 				'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr

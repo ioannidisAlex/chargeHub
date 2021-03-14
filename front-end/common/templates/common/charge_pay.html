@@ -1,6 +1,8 @@
 {% extends "common/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
+    <legend class="border-bottom mb-4">Στοιχεία οχήματος:</legend>
+    <table id="dtBasicExample" class="table table-bordered table-striped"></table>
 	<div class="content-section">
         <form method="POST">
             {% csrf_token %}
@@ -29,9 +31,9 @@
             var time1=JSON.parse(localStorage.getItem("timeStart"));
             var time2=JSON.parse(localStorage.getItem("timeStop"));
             console.log(time1.split(':')[1].substring(0,2));
-            console.log(time1.split(':')[2].split('.')[0])
+            console.log(time1.split(':')[2].split('.')[0]);
             console.log(time2.split(':')[1].substring(0,2));
-            console.log(time2.split(':')[2].split('.')[0])
+            console.log(time2.split(':')[2].split('.')[0]);
             var t1 = time1.split(':')[1].substring(0,2);
             var t2 = time1.split(':')[2].split('.')[0];
             var t3 = time2.split(':')[1].substring(0,2);
@@ -42,11 +44,13 @@
             localStorage.setItem('duration', duration);
             const AuthStr = 'Token '.concat(localStorage.getItem("token"));
             var id = localStorage.getItem('charging_point') ;
+            var vehicle = localStorage.getItem('vehicle') ;
+            
             axios.get(
-                    'http://localhost:8765/evcharge/api/charging_cost/'+id+'/',
+                    'https://localhost:8765/evcharge/api/charging_cost/'+id+'/'+vehicle+'/',
                     { headers: {
                         'X-CSRFToken': '{{ csrf_token }}',
-                        "X-OBSERVATORY-AUTH": AuthStr
+                        "X-OBSERVATORY-AUTH": AuthStr,
                     }
                 })
             .then( (response) => {
@@ -61,6 +65,24 @@
                 localStorage.setItem('cost', cost);
                 localStorage.setItem('kwh_delivered', kwh_delivered)
                 document.getElementById('price_to').innerHTML=cost.toFixed(6) + ' €';
+
+
+                var table = ''
+                //var thead = '<thead class="thead-dark">';
+                var thead = '<thead class="thead-light">';
+                for(var key in response.data['vehicle_data']){
+                    thead += '<th>'+key+'</th>';
+                }
+                thead += '</thead>';
+                var tbody = '<tbody>';
+                for(var key in response.data['vehicle_data']){
+                    //tbody += '<tr>';
+                    tbody += '<td style="word-break:normal;">'+response.data['vehicle_data'][key]+'</td>'; 
+                    //tbody += '</tr>';
+                }
+                tbody += '</tbody>';
+                table += thead+tbody;
+                document.getElementById('dtBasicExample').innerHTML = table;
             
         });
     })

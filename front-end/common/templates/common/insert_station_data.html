@@ -10,7 +10,7 @@
 	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 	var data ={owner: "{{  owner }}",cluster: "{{  cluster }}",provider: "{{  provider }}",email: "{{  email }}",website: "{{  website }}",title: "{{  title }}",town: "{{  town }}",area: "{{  area }}",country: "{{  country }}",address_line: "{{  address }}" };
     axios.post(
-		'http://localhost:8765/evcharge/api/stations/', data,
+		'https://localhost:8765/evcharge/api/stations/', data,
 		{ headers: {
 				'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr,

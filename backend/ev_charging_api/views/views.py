@@ -36,6 +36,7 @@ from ..serializers import (
     SessionSerializer,
     StationSerializer,
     UserSerializer,
+    VehicleSerializer,
 )
 
 """
@@ -134,7 +135,7 @@ class RetrieveUserViewSet(viewsets.ViewSet):
     def retrieve(self, request, username=None):
         try:
             user = self.queryset.objects.all().get(username=username)
-            serializer = UserSerializer(user)
+            serializer = self.serializer_class(user)
             return Response(serializer.data, status.HTTP_200_OK)
         except:
             return Response({"status": "failed"}, status.HTTP_400_BAD_REQUEST)
@@ -712,12 +713,17 @@ class ChargingCostView(generics.GenericAPIView):
     serializer_class = SessionSerializer
     queryset = Session.objects.all()
 
-    def get(self, request, id):
+    def get(self, request, id, vehicle_id):
         try:
             charging_point = ChargingPoint.objects.all().get(id=id)
+
+            vehicle_data = Vehicle.objects.all().get(id=vehicle_id)
+            vehicle_serializer = VehicleSerializer(vehicle_data)
+
             response = {
                 "Usage cost": charging_point.usage_cost,
                 "KW Power": charging_point.kw_power,
+                "vehicle_data": vehicle_serializer.data,
             }
             return Response(response, status.HTTP_200_OK)
         except:

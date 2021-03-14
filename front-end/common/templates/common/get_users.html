@@ -17,7 +17,7 @@
 		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
 		if('{{username}}' != ""){
 			axios.get(
-				'http://localhost:8765/evcharge/api/admin/users/{{username}}/',
+				'https://localhost:8765/evcharge/api/admin/users/{{username}}/',
 				{ headers: {
    					"X-OBSERVATORY-AUTH": AuthStr
  				}
@@ -48,7 +48,7 @@
 		}
 		else{
 			axios.get(
-				'http://localhost:8765/evcharge/api/admin/users/',
+				'https://localhost:8765/evcharge/api/admin/users/',
 				{ headers: {
    					"X-OBSERVATORY-AUTH": AuthStr,
  				}
