@@ -3,7 +3,7 @@ import time
 from locust import HttpUser, TaskSet, task
 
 LOGIN_URL = "/login/?next=/"
-DATA = {"username": "u0", "password": "u0u0u0123"}
+DATA = {"username": "ilias", "password": "iiiiii6^"}
 
 """
 class LoginAndGet(TaskSet):
@@ -16,7 +16,7 @@ class LoginAndGet(TaskSet):
 
     task(1)
     def lessson(l):
-        l.client.get("http://127.0.0.1:8000/profile")
+        l.client.get("http://127.0.0.1:8765/profile")
 """
 
 
@@ -29,11 +29,11 @@ class MyLocust(HttpUser):
     x_observatory_auth = "m"
 
     def on_start(self):
-        response = self.client.get("http://127.0.0.1:8000/login/?next=/")
+        response = self.client.get("http://127.0.0.1:8765/login/?next=/")
         global csrftoken
         csrftoken = response.cookies["csrftoken"]
         self.client.post(
-            "http://127.0.0.1:8000/login/",
+            "http://127.0.0.1:8765/login/",
             data=DATA,
             headers={"X-CSRFToken": csrftoken},
         )
@@ -61,7 +61,7 @@ class MyLocust(HttpUser):
         # id = 123e4567-e89b-12d3-a456-426614174000
         # {"X-CSRFToken": specialtoken, "X-OBSERVATORY-AUTH": specialauth}
         self.client.get(
-            "/evcharge/api/SessionsPerPoint/ab41792e-6819-49e9-bc63-813229a2c0d3/20190901/20190903/",
+            "/evcharge/api/SessionsPerPoint/de512cc4-047d-4ea4-b12a-1060dbdfef46/20190901/20190903/",
             data=DATA,
             headers=HEADERS,
         )
