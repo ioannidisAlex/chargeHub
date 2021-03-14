@@ -175,7 +175,12 @@ urlpatterns = [
     path(
         "seasonal_invoice/",
         common_views.SeasonalInvoiceView.as_view(),
-        name="seasonal_invoice",    
+        name="seasonal_invoice",
+    ),
+    path(
+        "stats_vehicle/",
+        common_views.StatsVehicle.as_view(),
+        name="stats_vehicle",
     ),
 ]
 

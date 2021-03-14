@@ -1,0 +1,43 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div id="Chartcontainer" style="width: 500px; height: 400px;"></div>
+<div id="TotalPay" style="width: 500px; height: 400px;"></div>
+<script src="https://cdn.anychart.com/releases/8.9.0/js/anychart-base.min.js" type="text/javascript"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script defer>
+	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+	axios.get(
+		'http://localhost:8765/evcharge/api/SessionsPerVehicle/{{ id }}/19980101/20230410/',
+		{ headers: {
+			//'X-CSRFToken': '{{ csrf_token }}',
+			"X-OBSERVATORY-AUTH": AuthStr,
+		}
+	})
+	.then(response => {
+		console.log(response);
+		var raf = new Array(response.data.VehicleChargingSessionsList.length).fill(0).map(() => new Array(2).fill(0));
+		var totalKW= 0;
+		for (var i=0; i<response.data.VehicleChargingSessionsList.length; i++)
+		{
+			raf[i][1]= response.data.VehicleChargingSessionsList[i].EnergyDelivered;
+			totalKW+= raf[i][1];
+			raf[i][1]= raf[i][1].toFixed(5);
+			console.log(response.data.VehicleChargingSessionsList[i].CostPerKWh)
+			raf[i][0]= response.data.VehicleChargingSessionsList[i].CostPerKWh.toFixed(3);
+		}
+		console.log(totalKW);
+		var kommenoTotalCost = totalKW//.toFixed(2);
+	    var chart = anychart.pie();
+        chart.data(raf);
+        //show the values not the percentage
+        chart.labels().format("{%value}");
+        chart.title("KWhs delivered and its Cost per KWh");
+        chart.container("Chartcontainer");
+        chart.draw(); 
+
+		//document.getElementById("TotalPay").innerHTML = `<h3><br><br>${kommenoTotalCost}  €  <br></h3>`;
+	})
+
+</script>
+{% endblock content %}
