@@ -12,6 +12,7 @@
     axios.post(
 		'http://localhost:8765/evcharge/api/stations/', data,
 		{ headers: {
+				'X-CSRFToken': '{{ csrf_token }}',
 				"X-OBSERVATORY-AUTH": AuthStr,
                 'Content-Type': 'application/x-www-form-urlencoded',
 			}
