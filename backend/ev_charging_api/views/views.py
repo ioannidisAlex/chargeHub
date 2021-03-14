@@ -196,7 +196,7 @@ class SessionsPerStationView(generics.GenericAPIView):
         charging_station = get_object_or_404(ChargingStation, pk=id)
         sessions = (
             self.queryset.filter(charging_point__charging_station_id=id)
-            .select_related("charging_station__charging_point")
+            .select_related("charging_point__charging_station")
             .filter(connect_time__date__range=[date_from, date_to])
         )
 
@@ -275,7 +275,8 @@ class SessionsPerVehicleView(generics.GenericAPIView):
         vehicle = get_object_or_404(Vehicle, pk=id)
         sessions = (
             self.queryset.filter(vehicle__id=id)
-            .select_related("payment__provider")
+            .select_related("payment")
+            .select_related("provider")
             .filter(connect_time__date__range=[date_from, date_to])
         )
         sessions_list = [
@@ -322,7 +323,8 @@ class SessionsPerProviderView(generics.GenericAPIView):
         provider = get_object_or_404(Provider, pk=id)
         sessions = (
             self.queryset.filter(provider__id=id)
-            .select_related("vehicle__payment")
+            .select_related("vehicle")
+            .select_related("payment")
             .filter(connect_time__date__range=[date_from, date_to])
         )
         sessions_list = [
@@ -840,7 +842,8 @@ class InvoiceForVehicleView(generics.GenericAPIView):
             vehicle = Vehicle.objects.all().get(id=id)
             sessions = (
                 self.queryset.filter(vehicle__id=id)
-                .select_related("payment__provider")
+                .select_related("payment")
+                .select_related("provider")
                 .filter(connect_time__date__range=[date_from, date_to])
             )
             sessions_list = [
