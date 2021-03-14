@@ -4,6 +4,7 @@ from .views import (  # CSRFGeneratorView,; CustomAuthToken,; ExampleView,; Inse
     HealthcheckView,
     InsertPaymentView,
     InsertSessionView,
+    InvoiceForVehicleView,
     KWstatsView,
     LogoutView,
     ResetSessionsView,
