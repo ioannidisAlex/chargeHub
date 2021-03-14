@@ -5,9 +5,10 @@ from math import inf, nan
 
 import pytest
 from django.core.exceptions import ValidationError
+from django.shortcuts import get_list_or_404, get_object_or_404
 from django.test import TestCase
 
-from common.models import ChargingPoint, Payment, User
+from common.models import ChargingPoint, Payment, Provider, User
 
 # Create your tests here.
 
@@ -166,3 +167,29 @@ def test_all_model_creation():
     assert chargingpoint.charging_station.owner
     assert chargingpoint.charging_station.location
     assert session.payment
+
+
+class TestSomething(TestCase):
+    def setUp(self):
+        from django.conf import settings
+
+        settings.DEBUG = True
+
+    def test_something(self):
+        user75 = User(user_type=2, username="mitsous", password="gurou")
+        user75.save()
+        prov75 = Provider(user=user75, provider_name="kopal")
+        prov75.save()
+        # papari = get_object_or_404(Provider.objects.select_related('user'), provider_name="kopal")
+        # papari = get_object_or_404(Provider, provider_name="kopal")
+        p = get_object_or_404(
+            Provider.objects.select_related("user"), provider_name="kopal"
+        )
+        master = p.user.username
+        assert master == "mitsous"
+
+    def tearDown(self):
+        from django.db import connection
+
+        for query in connection.queries:
+            print(f"{query['sql']}\n")
