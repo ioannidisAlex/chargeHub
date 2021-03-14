@@ -122,6 +122,56 @@ urlpatterns = [
         common_views.SessionsPerProviderView.as_view(),
         name="sessions_per_provider",
     ),
+    path(
+        "find_stations/",
+        common_views.StationsView.as_view(),
+        name="stations",
+    ),
+    path(
+        "add_station/",
+        common_views.InsertStationView.as_view(),
+        name="add_station",
+    ),
+    path(
+        "delete_station/",
+        common_views.DeleteStationView.as_view(),
+        name="delete_station",
+    ),
+    path(
+        "kiloWatts/",
+        common_views.KiloWattsView.as_view(),
+        name="kiloWatts",
+    ),
+    path(
+        "update_station/",
+        common_views.UpdateStationView.as_view(),
+        name="update_station",
+    ),
+    path(
+        "charge/",
+        common_views.ChargeView.as_view(),
+        name="charge",
+    ),
+    path(
+        "charge_pay/",
+        common_views.ChargePayView.as_view(),
+        name="charge_pay",
+    ),
+    path(
+        "charge_comment/",
+        common_views.ChargeCommentView.as_view(),
+        name="charge_comment",
+    ),
+    path(
+        "charge_initial/",
+        common_views.ChargeInitialView.as_view(),
+        name="charge_initial",
+    ),
+    path(
+        "cost_estimation/",
+        common_views.CostEstimationView.as_view(),
+        name="cost_estimation",
+    ),
 ]
 
 if settings.DEBUG:

@@ -2,6 +2,7 @@
 from django import forms
 from django.contrib import admin
 from django.contrib.auth.forms import UserCreationForm
+from django_countries.fields import CountryField
 
 from .models import Profile, User
 
@@ -97,4 +98,109 @@ class SessionsPer_Form(forms.Form):
         fields = [
             "username",
             "password",
+        ]
+
+
+class StationsForm(forms.Form):
+    ID = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "id",
+        ]
+
+
+class InsertStationForm(forms.Form):
+    owner = forms.CharField(max_length=100)
+    cluster = forms.CharField(max_length=100)
+    provider = forms.CharField(max_length=100)
+    email = forms.CharField(max_length=100)
+    website = forms.CharField(max_length=100)
+    title = forms.CharField(max_length=100)
+    town = forms.CharField(max_length=100)
+    area = forms.CharField(max_length=100)
+    country = CountryField(null=True).formfield()
+    address = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "owner",
+            "cluster",
+            "provider",
+            "email",
+            "website",
+            "title",
+            "town",
+            "area",
+            "country",
+            "address",
+        ]
+
+
+class DeleteStationForm(forms.Form):
+    ID = forms.CharField(max_length=100)
+
+    class Meta:
+        fields = [
+            "id",
+        ]
+
+
+class UpdateStationForm(forms.Form):
+    ID = forms.CharField(max_length=100, required=True)
+    owner = forms.CharField(max_length=100, required=False)
+    cluster = forms.CharField(max_length=100, required=False)
+    provider = forms.CharField(max_length=100, required=False)
+    location_title = forms.CharField(max_length=100, required=False)
+
+    class Meta:
+        fields = [
+            "id",
+            "owner",
+            "cluster",
+            "provider",
+            "location_title",
+        ]
+
+
+class ChargeInitialForm(forms.Form):
+    protocol = forms.CharField(max_length=100, required=True)
+    provider = forms.CharField(max_length=100, required=True)
+    charging_point = forms.CharField(max_length=100, required=True)
+    vehicle = forms.CharField(max_length=100, required=True)
+
+    class Meta:
+        fields = [
+            "protocol",
+            "provider",
+            "charging_point",
+            "vehicle",
+        ]
+
+
+class ChargePayForm(forms.Form):
+    _PAYMENT_METHODS = [
+        ("credit_card", "credit card"),
+        ("cash", "cash"),
+        ("paypal", "paypal"),
+        ("coupon", "coupon"),
+    ]
+    payment_method = forms.ChoiceField(choices=_PAYMENT_METHODS)
+    invoice = forms.CharField(max_length=100, required=True)
+    user_id = forms.CharField(max_length=100, required=True)
+
+    class Meta:
+        fields = [
+            "payment_method",
+            "invoice",
+            "user_id",
+        ]
+
+
+class ChargeCommentForm(forms.Form):
+    user_comments_ratings = forms.CharField(widget=forms.Textarea)
+
+    class Meta:
+        fields = [
+            "user_comments_ratings",
         ]

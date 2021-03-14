@@ -2,53 +2,14 @@
 {% load crispy_forms_tags %}
 {% block content %}
 
-	
-	<table id="dtBasicExample" class="table table-bordered table-striped"></table>
-	<!--<table id="dtBasicExample" class="tablesorter"></table>	-->
+<table id="dtBasicExample" class="table table-bordered table-striped"></table>
+<!--<table id="dtBasicExample" class="tablesorter"></table>	-->
 
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script>
-		function alef() {
-			      $("#dtBasicExample") 
-    				.tablesorter({widthFixed: "true", widgets: ['zebra']}) 
-    				.tablesorterPager({container: $("#pager")
-    				});
-    			} 
-		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
-		if('{{username}}' != ""){
-			axios.get(
-				'http://localhost:8765/evcharge/api/admin/users/{{username}}/',
-				{ headers: {
-   					"X-OBSERVATORY-AUTH": AuthStr
- 				}
-			})
-			.then( (response) => {
-	            console.log(response);
-	            var table = ''
-	        	//var thead = '<thead class="thead-dark">';
-	            var thead = '<thead class="thead-light">';
-	            for(var key in response.data){
-	            	thead += '<th class="filter-exact" data-placeholder="** Finder **">'+key+'</th>';
-	            }
-	            thead += '</thead>';
-	        	var tbody = '<tbody>';
-        		for(var key in response.data){
-        			//tbody += '<tr>';
-        			tbody += '<td style="word-break:normal;">'+response.data[key]+'</td>'; 
-        			//tbody += '</tr>';
-        		}
-	        	tbody += '</tbody>';
-	        	table += thead+tbody;
-        		document.getElementById('dtBasicExample').innerHTML = table;
-	        })
-			.catch( (error) => {
-				alert("Oops!! Something went wrong :(");
-	            console.log(error);
-	        })
-		}
-		else{
-			axios.get(
-				'http://localhost:8765/evcharge/api/admin/users/',
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script>
+	const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+	axios.get(
+				'http://localhost:8765/evcharge/api/stations/',
 				{ headers: {
    					"X-OBSERVATORY-AUTH": AuthStr,
  				}
@@ -137,7 +98,6 @@
 						    output: '{startRow} - {endRow} / {filteredRows} ({totalRows})'
 	    				});
 	        })
-	    }			
-	    	
-	</script>
+</script>
+
 {% endblock content %}

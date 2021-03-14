@@ -28,10 +28,20 @@ from common import views as common_views
 from ev_charging_api import views as api_views
 
 router = DefaultRouter()
+router2 = DefaultRouter()
+router_KWatts = DefaultRouter()
 router.register(
     "users",
     api_views.RetrieveUserViewSet,
 )
+router2.register(
+    "stations",
+    api_views.StationsViewSet,
+)
+# router_KWatts.register(
+#    "KWstats",
+#    api_views.KWstatsViewSet,
+# )
 
 
 # pylint: disable=R0201
@@ -57,6 +67,11 @@ urlpatterns = [
         "evcharge/api/admin/healthcheck/",
         api_views.HealthcheckView.as_view(),
         name="healthcheck",
+    ),
+    path(
+        "evcharge/api/KWstats/",
+        api_views.KWstatsView.as_view(),
+        name="KWstats",
     ),
     path(
         "evcharge/api/SessionsPerPoint/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
@@ -87,6 +102,7 @@ urlpatterns = [
     path("evcharge/api/login/", views.obtain_auth_token, name="rest_login"),
     path("evcharge/api/logout/", api_views.LogoutView.as_view(), name="rest_logout"),
     path("evcharge/api/admin/", include(router.urls)),
+    path("evcharge/api/", include(router2.urls)),
     path(
         "evcharge/api/admin/usermod/<str:username>/<str:password>/",
         api_views.UsermodAPIView.as_view(),
@@ -132,6 +148,26 @@ urlpatterns = [
             template_name="common/password_reset_complete.html"
         ),
         name="password_reset_complete",
+    ),
+    path(
+        "evcharge/api/charging_cost/<uuid:id>/",
+        api_views.ChargingCostView.as_view(),
+        name="charging_cost",
+    ),
+    path(
+        "evcharge/api/insert_payment/",
+        api_views.InsertPaymentView.as_view(),
+        name="insert_payment",
+    ),
+    path(
+        "evcharge/api/insert_session/",
+        api_views.InsertSessionView.as_view(),
+        name="insert_session",
+    ),
+    path(
+        "evcharge/api/cost_estimation/<uuid:id>/<yyyymmdd:date_from>/<yyyymmdd:date_to>/",
+        api_views.CostEstimationView.as_view(),
+        name="cost_estimation",
     ),
     # path("generate_csrf/", api_views.CSRFGeneratorView.as_view()),
 ]

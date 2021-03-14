@@ -18,8 +18,12 @@ class User(AbstractUser):
         (2, "Station Owner"),
         (3, "Energy Provider"),
     ]
+    id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
     email = models.EmailField(unique=True, blank=True, null=True)
     user_type = models.IntegerField(choices=USER_TYPE_CHOICES, default=1)
+
+    def __str__(self):
+        return f"{self.id}"
 
 
 class VehicleOwner(models.Model):
@@ -29,7 +33,7 @@ class VehicleOwner(models.Model):
     )
 
     def __str__(self):
-        return f"{self.user.username}"
+        return f"{self.id}"
 
 
 class VehicleModel(models.Model):
@@ -74,7 +78,7 @@ class VehicleModel(models.Model):
     average_energy_consumption = models.FloatField(validators=[validate_positive])
 
     def __str__(self):
-        return "%s  %s" % (self.brand, self.model)
+        return "%s %s %s" % (self.brand, self.model, self.id)
 
 
 class Vehicle(models.Model):
@@ -87,7 +91,7 @@ class Vehicle(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
-        return "%s's %s" % (self.owner, self.model)
+        return "%s's %s %s" % (self.owner, self.model, self.id)
 
 
 class Profile(models.Model):
@@ -115,7 +119,7 @@ class Owner(models.Model):
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
-        return f"{self.user.username} Profile"
+        return f"{self.id} Profile"
 
 
 class Location(models.Model):
@@ -131,7 +135,7 @@ class Location(models.Model):
     address_line = models.CharField(max_length=100)
 
     def __str__(self):
-        return f"Title = {self.title}"
+        return f"Title = {self.title, self.id}"
 
 
 class Cluster(models.Model):
@@ -140,7 +144,7 @@ class Cluster(models.Model):
     cluster_name = models.CharField(max_length=15)
 
     def __str__(self):
-        return f"Cluster name = {self.cluster_name}"
+        return f"Cluster name = {self.cluster_name, self.id}"
 
 
 class Provider(models.Model):
@@ -150,7 +154,7 @@ class Provider(models.Model):
     provider_name = models.CharField(max_length=20)
 
     def __str__(self):
-        return f"Provider name = {self.user.username}"
+        return f"Provider name = {self.id}"
 
 
 class ChargingStation(models.Model):

@@ -7,10 +7,17 @@ from django.views import View
 from rest_framework import status
 
 from .forms import (
+    ChargeCommentForm,
+    ChargeInitialForm,
+    ChargePayForm,
+    DeleteStationForm,
+    InsertStationForm,
     ProfileUpdateForm,
     RestLoginForm,
     SessionsPer_Form,
     SessionsupdForm,
+    StationsForm,
+    UpdateStationForm,
     UsermodForm,
     UserRegisterForm,
     UsersForm,
@@ -238,3 +245,170 @@ class UsersView(View):
             "username": request.POST["username"],
         }
         return render(request, "common/get_users.html", context)
+
+
+class StationsView(View):
+    template_name = "common/stations.html"
+    form_class = StationsForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name)
+        # {"form": self.form_class()}
+
+    def post(self, request):
+        # print("HELLOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO", request.POST["ID"])
+        # context = {
+        #    "id": request.POST["ID"],
+        # }
+        return render(request, "common/stations_data.html")
+        # , context
+
+
+class InsertStationView(View):
+    template_name = "common/insert_stations.html"
+    form_class = InsertStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "owner": request.POST["owner"],
+            "cluster": request.POST["cluster"],
+            "provider": request.POST["provider"],
+            "email": request.POST["email"],
+            "website": request.POST["website"],
+            "title": request.POST["title"],
+            "town": request.POST["town"],
+            "area": request.POST["area"],
+            "country": request.POST["country"],
+            "address": request.POST["address"],
+        }
+        return render(request, "common/insert_station_data.html", context)
+
+
+class DeleteStationView(View):
+    template_name = "common/delete_stations.html"
+    form_class = DeleteStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "id": request.POST["ID"],
+        }
+        return render(request, "common/delete_station_data.html", context)
+
+
+class UpdateStationView(View):
+    template_name = "common/update_station.html"
+    form_class = UpdateStationForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "id": request.POST["ID"],
+            "owner": request.POST["owner"],
+            "cluster": request.POST["cluster"],
+            "provider": request.POST["provider"],
+            "title": request.POST["location_title"],
+        }
+        return render(request, "common/update_station_data.html", context)
+
+
+class KiloWattsView(View):
+    template_name = "common/kiloWatts.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+        )
+
+    def post(self, request):
+        pass
+
+
+class ChargeView(View):
+    template_name = "common/charge.html"
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+        )
+
+    def post(self, request):
+        pass
+
+
+class ChargePayView(View):
+    template_name = "common/charge_pay.html"
+    form_class = ChargePayForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class})
+
+    def post(self, request):
+
+        context = {
+            "payment_method": request.POST["payment_method"],
+            "invoice": request.POST["invoice"],
+            "user_id": request.POST["user_id"],
+        }
+        return render(request, "common/charge_pay_data.html", context)
+
+
+class ChargeCommentView(View):
+    template_name = "common/charge_comment.html"
+    form_class = ChargeCommentForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {"user_comments_ratings": request.POST["user_comments_ratings"]}
+        return render(request, "common/insert_session_data.html", context)
+
+
+class ChargeInitialView(View):
+    template_name = "common/charge_initial.html"
+    form_class = ChargeInitialForm
+
+    def get(self, request, *args, **kwargs):
+        return render(request, self.template_name, {"form": self.form_class()})
+
+    def post(self, request):
+
+        context = {
+            "protocol": request.POST["protocol"],
+            "provider": request.POST["provider"],
+            "charging_point": request.POST["charging_point"],
+            "vehicle": request.POST["vehicle"],
+        }
+        return render(request, "common/charge_initial_data.html", context)
+
+
+class CostEstimationView(View):
+    template_name = "common/cost_estimation.html"
+    form_class = StationsForm
+
+    def get(self, request, *args, **kwargs):
+        return render(
+            request,
+            self.template_name,
+            {"form": self.form_class},
+        )
+
+    def post(self, request):
+        context = {
+            "id": request.POST["ID"],
+        }
+        return render(request, "common/cost_estimation_data.html", context)
