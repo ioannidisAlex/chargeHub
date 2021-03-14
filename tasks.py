@@ -37,6 +37,8 @@ def run(c, front=False, back=False):
     c.run(
         inside_virtual(
             d,
-            f"python manage.py runsslserver {port} --certificate ..\\localhost.crt --key ..\\localhost.key",
+            f"python manage.py runsslserver {port} "
+            + f"--certificate {os.path.join('..','localhost.crt')} "
+            + f"--key {os.path.join('..','localhost.key')}",
         )
     )
