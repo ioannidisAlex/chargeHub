@@ -115,7 +115,7 @@ class Profile(models.Model):
 
 
 class Owner(models.Model):
-    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="owner")
     id = models.UUIDField(primary_key=True, editable=False, default=uuid.uuid4)
 
     def __str__(self):
