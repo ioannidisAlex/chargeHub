@@ -47,9 +47,9 @@ def convert_to_request(f):
 
         with click_spinner.spinner():
             response = method(
-                f"{BASE_URL}/{url}",
+                f"{BASE_URL}/{url}/",
                 hooks=dict(response=hook),
-                timeout=2,
+                timeout=os.getenv("EVCHARGING_TIMEOUT", 2),
                 headers=headers,
                 **parameters,
             )
@@ -117,7 +117,7 @@ def show_data(response: requests.Response, *arg, **kwargs):
 def SessionsPerEv(ev, datefrom, dateto, format, apikey):
     return (
         requests.get,
-        f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}/",
+        f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
         {"params": dict(format=format)},
         show_data,
     )
@@ -127,7 +127,7 @@ def SessionsPerEv(ev, datefrom, dateto, format, apikey):
 def SessionsPerStation(station, datefrom, dateto, format, apikey):
     return (
         requests.get,
-        f"SessionsPerStation/{station}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}/",
+        f"SessionsPerStation/{station}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
         {"params": dict(format=format)},
         show_data,
     )
@@ -137,7 +137,7 @@ def SessionsPerStation(station, datefrom, dateto, format, apikey):
 def SessionsPerPoint(point, datefrom, dateto, format, apikey):
     return (
         requests.get,
-        f"SessionsPerPoint/{point}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}/",
+        f"SessionsPerPoint/{point}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
         {"params": dict(format=format)},
         show_data,
     )
@@ -147,7 +147,7 @@ def SessionsPerPoint(point, datefrom, dateto, format, apikey):
 def SessionsPerProvider(provider, datefrom, dateto, format, apikey):
     return (
         requests.get,
-        f"SessionsPerProvider/{provider}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}/",
+        f"SessionsPerProvider/{provider}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
         {"params": dict(format=format)},
         show_data,
     )
@@ -168,7 +168,7 @@ def store_token(response: requests.Response, *arg, **kwargs):
 def login(username, passw):
     return (
         requests.post,
-        "login/",
+        "login",
         dict(data=dict(username=username, password=passw)),
         store_token,
     )
@@ -186,7 +186,7 @@ def remove_token(response: requests.Response, *arg, **kwargs):
 
 @convert_to_command(interface)
 def logout(username, passw):
-    return requests.post, "logout/", {}, remove_token
+    return requests.post, "logout", {}, remove_token
 
 
 # administrative endpoints
@@ -194,27 +194,27 @@ def logout(username, passw):
 
 @convert_to_command(click)
 def usermod(usermod, username, passw, apikey):
-    return requests.post, f"admin/usermod/{username}/{passw}/", {}, show_data
+    return requests.post, f"admin/usermod/{username}/{passw}", {}, show_data
 
 
 @convert_to_command(click)
 def users(users, apikey):
-    return requests.post, f"admin/users/{users}/", {}, show_data
+    return requests.post, f"admin/users/{users}", {}, show_data
 
 
 @convert_to_command(click)
 def sessionsupd(sessionsupd, source, apikey):
-    return requests.post, "admin/system/sessionsupd/", {}, show_data
+    return requests.post, "admin/system/sessionsupd", {}, show_data
 
 
 @convert_to_command(click)
 def healthcheck(healthcheck, apikey):
-    return requests.get, "admin/healthcheck/", {}, show_data
+    return requests.get, "admin/healthcheck", {}, show_data
 
 
 @convert_to_command(click)
 def resetsessions(resetsessions, apikey):
-    return requests.post, "admin/resetsessions/", {}, show_data
+    return requests.post, "admin/resetsessions", {}, show_data
 
 
 admin = load_to_admin(
