@@ -1,0 +1,17 @@
+{% extends "common/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script defer>
+		const AuthStr = 'Token '.concat(localStorage.getItem("token")); 
+		axios.get(
+				'http://localhost:8765/evcharge/api/KWstats/',
+				{ headers: {
+                    'X-CSRFToken': '{{ csrf_token }}',
+   					"X-OBSERVATORY-AUTH": AuthStr
+ 				}
+			})
+		.then( (response) => {
+            //console.log(response)
+	</script>
+{% endblock content %}
