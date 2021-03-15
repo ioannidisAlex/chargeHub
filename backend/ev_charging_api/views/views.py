@@ -115,7 +115,7 @@ class LogoutView(APIView):
     authentication_classes = [CustomTokenAuthentication]
     permission_classes = [IsAuthenticated]
 
-    def get(self, request):
+    def post(self, request):
         response = {
             "status": "success",
             "code": status.HTTP_200_OK,

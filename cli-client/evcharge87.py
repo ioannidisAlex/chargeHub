@@ -57,7 +57,7 @@ def convert_to_request(f):
                 hooks=dict(response=hook),
                 timeout=os.getenv("EVCHARGING_TIMEOUT", 2),
                 headers=headers,
-                verify=CERTIFICATE_FILE,
+                verify=False,
                 **parameters,
             )
         return response
@@ -124,7 +124,7 @@ def show_data(response: requests.Response, *arg, **kwargs):
 def SessionsPerEv(ev, datefrom, dateto, format, apikey):
     return (
         requests.get,
-        f"SessionsPerEv/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
+        f"SessionsPerVehicle/{ev}/{datefrom:%Y%m%d}/{dateto:%Y%m%d}",
         {"params": dict(format=format)},
         show_data,
     )
@@ -193,7 +193,7 @@ def remove_token(response: requests.Response, *arg, **kwargs):
 
 
 @convert_to_command(interface)
-def logout(username, passw):
+def logout(apikey):
     return requests.post, "logout", {}, remove_token
 
 
@@ -212,7 +212,12 @@ def users(users, apikey):
 
 @convert_to_command(click)
 def sessionsupd(sessionsupd, source, apikey):
-    return requests.post, "admin/system/sessionsupd", {}, show_data
+    return (
+        requests.post,
+        "admin/system/sessionsupd",
+        {"files": {"file": source}},
+        show_data,
+    )
 
 
 @convert_to_command(click)
