@@ -39,7 +39,7 @@ CERTIFICATE_FILE = os.path.join(
 AUTHENTICATION_HEADER = "X-OBSERVATORY-AUTH"
 # AUTHENTICATION_HEADER = "Authorization"
 
-urllib3.disable_warnings(urllib3.exceptions.SubjectAltNameWarning)
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 
 def convert_to_request(f):
